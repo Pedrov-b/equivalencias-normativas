@@ -1,0 +1,1125 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Resolução nº 709, de 27 de março de 2019</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1261-resolucao-709">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Regulamento, Numeração, RGN, Serviço Móvel Pessoal, TelefoniaMovel, Serviço Telefônico Fixo Comutado, TelefoniaFixa, RecursosPrestacao, ResolucaoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprova o Regulamento Geral de Numeração - RGN.">
+	<title>Anatel - Resolução nº 709, de 27 de março de 2019</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=725018026" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=327250541" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"8c0be25a5a70f825d18cd2bc113484bf","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=251246610" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025015440" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/resolucoes/2019">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/resolucoes/2019">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/resolucoes/2019">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/resolucoes/2019" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes" class="pathway">Resoluções</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes/2019" class="pathway">2019</a> <span class="separator">&gt;</span> <span>Resolução nº 709, de 27 de março de 2019</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 active deeper parent"><a href="/legislacao/resolucoes">Resoluções</a><ul><li class="item-516"><a href="/legislacao/resolucoes/2025">2025</a></li><li class="item-501"><a href="/legislacao/resolucoes/2024">2024</a></li><li class="item-493"><a href="/legislacao/resolucoes/2023">2023</a></li><li class="item-488"><a href="/legislacao/resolucoes/2022">2022</a></li><li class="item-438"><a href="/legislacao/resolucoes/2021">2021</a></li><li class="item-430"><a href="/legislacao/resolucoes/2020">2020</a></li><li class="item-367 current active"><a href="/legislacao/resolucoes/2019">2019</a></li><li class="item-312"><a href="/legislacao/resolucoes/2018">2018</a></li><li class="item-299"><a href="/legislacao/resolucoes/2017">2017</a></li><li class="item-294"><a href="/legislacao/resolucoes/2016">2016</a></li><li class="item-255"><a href="/legislacao/resolucoes/2015">2015</a></li><li class="item-226"><a href="/legislacao/resolucoes/2014">2014</a></li><li class="item-164"><a href="/legislacao/resolucoes/2013">2013</a></li><li class="item-165"><a href="/legislacao/resolucoes/2012">2012</a></li><li class="item-166"><a href="/legislacao/resolucoes/2011">2011</a></li><li class="item-167"><a href="/legislacao/resolucoes/2010">2010</a></li><li class="item-168"><a href="/legislacao/resolucoes/2009">2009</a></li><li class="item-169"><a href="/legislacao/resolucoes/2008">2008</a></li><li class="item-170"><a href="/legislacao/resolucoes/2007">2007</a></li><li class="item-171"><a href="/legislacao/resolucoes/2006">2006</a></li><li class="item-172"><a href="/legislacao/resolucoes/2005">2005</a></li><li class="item-173"><a href="/legislacao/resolucoes/2004">2004</a></li><li class="item-174"><a href="/legislacao/resolucoes/2003">2003</a></li><li class="item-175"><a href="/legislacao/resolucoes/2002">2002</a></li><li class="item-176"><a href="/legislacao/resolucoes/2001">2001</a></li><li class="item-177"><a href="/legislacao/resolucoes/2000">2000</a></li><li class="item-178"><a href="/legislacao/resolucoes/1999">1999</a></li><li class="item-179"><a href="/legislacao/resolucoes/1998">1998</a></li><li class="item-180"><a href="/legislacao/resolucoes/1997">1997</a></li><li class="item-181"><a href="/legislacao/resolucoes/resolucoes-conjuntas">Resoluções Conjuntas</a></li></ul></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948c1d484b2f6f91&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Resolução nº 709, de 27 de março de 2019		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quinta, 28 Março 2019 15:46			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quinta, 10 Outubro 2024 15:36			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 25703			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Aprova o Regulamento Geral de Numeração - RGN.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de <a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/03/2019&amp;jornal=515&amp;pagina=8">28/3/2019</a>, retificado em&nbsp;<a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/04/2019&amp;jornal=515&amp;pagina=3">4/4/2019</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram conferidas pelo<a title="Acesse o Artigo" href="http://legislacao.anatel.gov.br/leis/2-lei-9472#art22"> art. 22</a> da&nbsp;Lei nº 9.472, de 16 de julho de 1997, e pelo <a title="Acesse o Artigo" href="http://legislacao.anatel.gov.br/decretos/3-decreto-2338#art35">art. 35</a> do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo&nbsp;Decreto nº 2.338, de 7 de outubro de 1997,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO que a Agência regulará e administrará os Recursos de Numeração de forma a garantir a sua utilização eficiente e adequada;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO que a padronização dos Recursos de Numeração em âmbito nacional é premissa básica na estruturação dos Planos de Numeração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO os comentários recebidos decorrentes da<a title="Acesse a Consulta Pública" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=6&amp;data=31/08/2017"> Consulta Pública nº 22, de 30 de agosto de 2017</a>, publicada no Diário Oficial da União do dia 31 de agosto de 2017;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO deliberação tomada em sua <a title="Acesse a Pauta da Reunião" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO6nQYWh40TFixvOHyle4dz8N3_3YarQu56bnfFiUxTjPWN5pcYIcI_kBE56XJg9JupkMrqp9l5N7IBsTq8IWNLa">Reunião nº 867, de 21&nbsp;de março de 2019</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do<a title="Acesse o Processo " href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?5gYoR1KAsC6DjRCbPhmMOOVg9zRBSU6KM_dMM2dffV6uXABkpM3AC_FvsJjJLZawJGpS7XJ2Cix36pBUfTFiDW_CkxARvabTloZuKZZiquAMonQCnNc64TGht21DNpXh"> Processo nº 53500.008466/2016-54</a>,</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1"></a>Art. 1º Aprovar, na forma do <a title="Acesse o Anexo" href="#anexo">Anexo</a>, o Regulamento Geral de Numeração - RGN.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2"></a><span style="text-decoration: line-through;">Art. 2º Determinar às prestadoras de Serviço Telefônico Fixo Comutado – STFC que promovam a migração de todos os Códigos Não Geográficos de seus assinantes para o formato definido no<a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/13-1998/336-resolucao-86#art44"> art.&nbsp;44</a> do Regulamento de Numeração do Serviço Telefônico Fixo Comutado, aprovado pela Resolução nº 86, de 30 de dezembro de 1998, em até 18 (dezoito) meses contados a partir da entrada em vigor desta Resolução.</span>&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">(Revogado pela Resolução nº 769, de 30 de setembro de 2024)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art3"></a><span style="text-decoration: line-through;">Art. 3º Alterar o <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/13-1998/336-resolucao-86#art24Anexo">art.&nbsp;24</a> do Regulamento de Numeração do Serviço Telefônico Fixo Comutado, aprovado pela Resolução nº 86, de 30 de dezembro de 1998, passando a vigorar com a seguinte redação:</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;"><span style="text-decoration: line-through;">“Art. 24. A cada prestadora será atribuído um único código, ressalvado o disposto no <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/13-1998/336-resolucao-86#art25Anexo">art.&nbsp;25</a> deste Regulamento.</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;"><span style="text-decoration: line-through;">Parágrafo único. Somente serão atribuídos Códigos de Seleção de Prestadoras às empresas que não puderem se valer dos procedimentos de marcação alternativa descritos nos arts. <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/13-1998/336-resolucao-86#art30">30</a> e<a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/13-1998/336-resolucao-86#art31"> 31</a> do presente Regulamento. (NR)"</span>&nbsp;<a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1641-resolucao-749">(Revogado pela Resolução nº 749, de 15 de março de 2022)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art4"></a><span style="text-decoration: line-through;">Art. 4º Alterar o <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/2006/379-resolucao-451#art9">art.&nbsp;9º</a> do Regulamento do Preço Público Relativo à Administração dos Recursos de Numeração, aprovado pela Resolução nº 451, de 8 de dezembro de 2006, passando a vigorar com a seguinte redação:</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;"><span style="text-decoration: line-through;">“Art. 9º (...)</span><br><span style="text-decoration: line-through;">t<sub>a</sub>&nbsp;= tempo decorrido entre o mês de atribuição, inclusive, e o 18º mês da publicação da Resolução nº 709, de 27 de março de 2019, em meses;</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;"><span style="text-decoration: line-through;">t<sub>ref</sub>&nbsp;= tempo decorrido entre o mês de janeiro de 2018 e o 18º mês da publicação da Resolução&nbsp;nº 709, de 27 de março de 2019, em meses.” (NR)</span>&nbsp;<a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1641-resolucao-749">(Revogado pela Resolução nº 749, de 15 de março de 2022)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art5"></a><span style="text-decoration: line-through;">Art. 5º Alterar o <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/2006/379-resolucao-451#art10">art.&nbsp;10</a> do Regulamento do Preço Público Relativo à Administração dos Recursos de Numeração, aprovado pela Resolução nº 451, de 8 de dezembro de 2006, passando a vigorar com a seguinte redação:</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;"><span style="text-decoration: line-through;">“Art. 10. O valor de referência (Vr), calculado levando-se em consideração as despesas necessárias à Administração dos Recursos de Numeração, é de&nbsp;R$&nbsp;0,87&nbsp;(oitenta e sete centavos).” (NR)</span>&nbsp;<a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1641-resolucao-749">(Revogado pela Resolução nº 749, de 15 de março de 2022)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art6"></a><span style="text-decoration: line-through;">Art. 6º Alterar o <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/2006/379-resolucao-451#art12">art.&nbsp;12</a> do Regulamento do Preço Público Relativo à Administração dos Recursos de Numeração, aprovado pela Resolução nº 451, de 8 de dezembro de 2006, passando a vigorar com a seguinte redação:</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;"><span style="text-decoration: line-through;">“Art. 12. Deve ser considerado o mês de janeiro de 2018 como o mês de atribuição para o cálculo dos valores do preço público relativos à Administração dos Recursos de Numeração atribuídos até 31 de dezembro de 2017.” (NR)</span>&nbsp;<a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1641-resolucao-749">(Revogado pela Resolução nº 749, de 15 de março de 2022)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art7"></a><span style="text-decoration: line-through;">Art. 7º Alterar o <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/2006/379-resolucao-451#art13">art.&nbsp;13 </a>do Regulamento do Preço Público Relativo à Administração dos Recursos de Numeração, aprovado pela Resolução nº 451, de 8 de dezembro de 2006, passando a vigorar com a seguinte redação:</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;"><span style="text-decoration: line-through;">“Art. 13. O disposto no art. 9º se aplica às atribuições efetuadas até o 18º mês da publicação da Resolução&nbsp;nº 709, de 27 de março de 2019.” (NR)</span>&nbsp;<a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1641-resolucao-749">(Revogado pela Resolução nº 749, de 15 de março de 2022)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art8"></a><span style="text-decoration: line-through;">Art. 8º Alterar o inciso IV do <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/2004/389-resolucao-357#art4">art.&nbsp;4º&nbsp;</a>do&nbsp;Regulamento sobre as Condições de Acesso e Fruição dos Serviços de Utilidade Pública e de Apoio ao STFC, aprovado pela&nbsp;Resolução nº 357, de 15 de março de 2004, passando a vigorar com a seguinte redação:</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;"><span style="text-decoration: line-through;">"XIV - Serviço Público de Emergência: modalidade de Serviço de Utilidade Pública que possibilita atendimento imediato à pessoa sob risco iminente da vida, ou de ter&nbsp;sua segurança pessoal violada;" (NR)</span>&nbsp;<a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1641-resolucao-749">(Revogado pela Resolução nº 749, de 15 de março de 2022)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art9"></a><span style="text-decoration: line-through;">Art. 9º Revogar:</span>&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">(Revogado pela Resolução nº 769, de 30 de setembro de 2024)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">I - o § 3º do <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/13-1998/336-resolucao-86#art25Anexo">art.&nbsp;25</a> e os arts.<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/13-1998/336-resolucao-86#art21Anexo">&nbsp;21</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/13-1998/336-resolucao-86#art26Anexo">26</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/13-1998/336-resolucao-86#art28Anexo">28</a>, todos do Regulamento de Numeração do Serviço Telefônico Fixo Comutado, aprovado pela Resolução nº 86, de 30 de dezembro de 1998;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">II - a <a title="Acesse a Resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/1998/330-resolucao-83">Resolução nº 83, de 30 de dezembro de 1998</a>;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">III - a <a title="Acesse a Resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/13-1998/334-resolucao-84">Resolução nº 84, de 30 de dezembro de 1998</a>; e,</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">IV - a <a title="Acesse a Resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2006/379-resolucao-451">Resolução nº 451, de 8 de dezembro de 2006</a>, a partir do 19º mês da publicação desta Resolução.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art10"></a>Art. 10. Esta Resolução entra em vigor na data de sua publicação.</p>
+<p style="text-align: center;">LEONARDO EULER DE MORAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Presidente do Conselho</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="anexo"></a>ANEXO</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;">REGULAMENTO GERAL DE NUMERAÇÃO - RGN</p>
+<p align="center">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">TÍTULO I</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DISPOSIÇÕES GERAIS</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO I</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DA ABRANGÊNCIA E DOS OBJETIVOS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1Anexo"></a>Art. 1º&nbsp;Os Recursos de Numeração destinados aos serviços de telecomunicações são regidos pela <a title="Acesse a Lei" href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472">Lei nº 9.472, de 16 de julho de 1997</a>, por este Regulamento e&nbsp;pelos regulamentos de serviço&nbsp;e consideram as Recomendações da União Internacional de Telecomunicações (UIT) e demais organismos internacionais dos quais o Brasil seja integrante.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2Anexo"></a>Art. 2º&nbsp;Este Regulamento estabelece os princípios e regras básicas para a definição, a administração, o acesso, a utilização e a cobrança pela Administração dos Recursos de Numeração necessários à prestação de serviços de telecomunicações, aplicando-se a todas as prestadoras de serviços de telecomunicações.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">(Revogado pela Resolução nº 769, de 30 de setembro de 2024)</a></p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO II</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DEFINIÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art3Anexo"></a>Art. 3º&nbsp;Para os fins deste Regulamento, aplicam-se as seguintes definições, além das demais previstas na regulamentação:&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - Administração de Recursos de Numeração: conjunto de atividades relativas ao processo de Atribuição, Designação e acompanhamento da utilização de Recursos de Numeração, cuja Destinação é fixada em Planos de Numeração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - Atribuição:&nbsp;autorização de uso&nbsp;de Recursos de Numeração, previamente destinados em Plano de Numeração, a uma dada prestadora de serviço de telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - Cadastro Nacional de Numeração: conjunto de informações relativo às Atribuições e Designações de Recursos de Numeração destinados em Planos de Numeração para serviços de telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - Código de Acesso: conjunto de caracteres numéricos ou alfanuméricos, estabelecido em Plano de Numeração, que permite a identificação de assinante, de terminal de uso público ou de serviço;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - Código de Identificação: conjunto de caracteres numéricos ou alfanuméricos, estabelecido em Plano de Numeração, e vinculado de forma unívoca a um Elemento de Rede;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - Código Não Geográfico: código de acesso que permite a seu assinante receber chamadas, de forma unívoca, em todo o território nacional;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - Designação: alocação de cada código de acesso, previamente autorizado, a Assinante, terminal de uso público ou serviço, ou de código de identificação a um Elemento de Rede de telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VIII - Destinação: caracterização da finalidade e quantidade de Recursos de Numeração, estabelecidas em Plano de Numeração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IX - Elemento de Rede: facilidade ou equipamento utilizado em provimento de serviços de telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">X - Marcação: procedimento que permite aos usuários de serviço de telecomunicações estabelecer a conexão;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XI - Plano de Numeração: conjunto de procedimentos de marcação necessários à fruição de um dado serviço de telecomunicações e de requisitos relativos a estrutura, formato, organização e destinação dos Recursos de Numeração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XII - Recursos de Numeração: conjunto de códigos de acesso e/ou de identificação utilizados para permitir o estabelecimento de conexões entre diferentes Terminações de Rede, possibilitando a fruição de serviços de telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIII - Serviço Global: serviço definido pelo ITU-T, provisionado na rede comutada pública, para o qual o ITU-T atribuiu um código de país específico para permitir a prestação desse serviço internacional entre dois ou mais países e/ou planos de numeração integrados; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIV - Serviço de Utilidade Pública: serviço reconhecido pelo poder público que disponibiliza ao público em geral a prestação de serviços de interesse do cidadão, mediante, dentre outras formas, a utilização de código de acesso telefônico de fácil memorização.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">TÍTULO II</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DOS RECURSOS DE NUMERAÇÃO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art4Anexo"></a>Art. 4º&nbsp;Compete à Agência, nos termos da <a title="Acesse a Lei" href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472">Lei nº&nbsp;9.472/97</a>, dispor sobre os Recursos de Numeração assegurando sua administração de forma não discriminatória e em estímulo à competição, assim como o atendimento a compromissos internacionais.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 1º A Administração de Recursos de Numeração inclui, entre outros aspectos, a Atribuição, Designação e utilização dos Recursos de Numeração, o acompanhamento de seu uso e correto funcionamento nas redes de telecomunicações, além de manutenção de Cadastro Nacional de Numeração.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 2º A existência de Cadastro Nacional de Numeração não desobriga as prestadoras da constituição e manutenção de cadastro de Recursos de Numeração próprio.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art5Anexo"></a>Art. 5º&nbsp;A Agência, considerando o contido em tratados, convenções e recomendações internacionais, estabelecerá e manterá Planos de Numeração.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art6Anexo"></a>Art. 6º&nbsp;A Agência, na organização dos Recursos de Numeração, tem o dever de:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">I - disponibilizar, a todas as prestadoras, acesso a Recursos de Numeração vinculados e necessários à prestação do respectivo serviço de telecomunicações; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">II - criar condições para que a disponibilidade de Recursos de Numeração esteja harmonizada com o desenvolvimento dos serviços de telecomunicações no País.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">Parágrafo único. A Agência poderá restringir o emprego de determinados Recursos de Numeração, considerado o interesse pú<span style="text-decoration: line-through;">blico.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art7Anexo"></a>Art. 7º&nbsp;No desenvolvimento de suas atividades, as prestadoras de serviços de telecomunicações têm o dever de utilizar adequadamente os Recursos de Numeração atribuídos.&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Por utilização adequada dos recursos de numeração considera-se, dentre outros, observar as regras de utilização, o uso eficiente e os procedimentos de marcação definidos pela Agência, bem como manter atualizadas as informações correspondentes aos recursos de numeração em sistema informatizado específico para administração dos recursos de numeração.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art8Anexo"></a>Art. 8º&nbsp;As informações relativas ao uso de Recursos de Numeração podem ser solicitadas, a qualquer tempo, pela Agência.&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art9Anexo"></a>Art. 9º&nbsp;Na Destinação, Atribuição e Designação de Recursos de Numeração deve&nbsp;ser respeitada&nbsp;sua compatibilidade com o serviço a ser&nbsp;prestado, bem como seu emprego racional, eficiente, em tempo adequado, não discriminatório e em estímulo à competição, sem causar prejuízos aos serviços de telecomunicações prestados.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Considera-se que determinado Recurso de Numeração causa prejuízo a serviços de telecomunicações&nbsp;quando o seu uso ocasiona uma perda de qualidade na fruição desses serviços.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">(Revogado pela Resolução nº 769, de 30 de setembro de 2024)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art10Anexo"></a>Art. 10. A qualquer tempo, poderá ser modificada a Destinação, Atribuição ou Designação de Recursos de Numeração e ordenada a sua alteração, desde que o interesse público ou o cumprimento de convenções ou tratados internacionais assim o determine.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Será fixado prazo adequado e razoável para a efetivação das modificações ou alterações, em conjunto com o ato que as determine.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Os custos decorrentes das modificações ou alterações são de responsabilidade das respectivas prestadoras de serviços de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º As modificações ou alterações não devem prejudicar a continuidade ou a qualidade da prestação de serviços de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 4º As modificações ou alterações devem ser realizadas de maneira programada e acordada entre as prestadoras de serviços de telecomunicações envolvidas, com o objetivo de atender aos prazos estabelecidos pela Agência.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">TÍTULO III</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DOS PLANOS DE NUMERAÇÃO</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO I</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DISPOSIÇÕES GERAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art11Anexo"></a>Art. 11. Os Recursos de Numeração são organizados na forma de Planos de Numeração, sendo classificados quanto à sua finalidade, em:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - Planos de Numeração de Serviços de Telecomunicações, que dispõem sobre os Recursos de Numeração utilizados pelos usuários para estabelecimento da comunicação e fruição de serviço de telecomunicações; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - Planos de Numeração de Redes de Telecomunicações, que dispõem sobre os Recursos de Numeração utilizados, exclusivamente, pelos Elementos de Rede de telecomunicações para estabelecimento e fruição de serviço de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Os Planos de Numeração&nbsp;devem, quando aplicável<a target="_blank">,</a>&nbsp;contemplar recursos para:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - acesso a serviços de telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - acesso a serviços de utilidade pública, incluindo os de emergência;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - acesso a serviços de valor adicionado; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - identificação de elementos de rede de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art12Anexo"></a>Art. 12. Os Planos de Numeração são estabelecidos de forma a atender às necessidades de curto, médio e longo prazos, geradas por um mercado aberto à competição nos diversos serviços de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art13Anexo"></a>Art. 13. O formato das informações representadas pelos Recursos de Numeração de cada plano e sua destinação é uniforme&nbsp;e padronizado&nbsp;para todo o território nacional, independentemente da topologia e da tecnologia utilizadas pelas redes de suporte de serviços de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 1º É vedada a utilização de recursos e procedimentos diferentes daqueles definidos nos respectivos Planos de Numeração.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 2º A utilização de procedimentos alternativos ou simplificados, quando necessários, deve ser objeto de prévia e expressa autorização pela Agência.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO II</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DOS PLANOS DE NUMERAÇÃO DE SERVIÇOS DE TELECOMUNICAÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art14Anexo"></a>Art. 14. Os Planos de Numeração de Serviços de Telecomunicações são definidos para cada serviço de telecomunicações, considerando a necessidade de:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - assegurar existência de recursos em longo prazo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - garantir fácil entendimento e sua utilização pelos usuários, estabelecendo processos de Marcação simples, comprimentos uniformes e formatos padronizados;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - oferecer às prestadoras acesso equânime aos recursos, baseado&nbsp;em processo de Administração de Recursos de Numeração transparente e independente&nbsp;e quantidade adequada para os prestadores;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - minimizar a interferência causada por alterações de numeração de usuários, estabelecendo prazos que assegurem a antecedência adequada de aviso das mudanças, períodos de funcionamento simultâneo da antiga e da nova numeração e interceptação da comunicação, conforme disposto na regulamentação do serviço;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - minimizar custos causados por alterações de numeração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - assegurar sua compatibilidade com acordos e tratados internacionais; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - assegurar o pleno&nbsp;direito&nbsp;à Portabilidade de Código de Acesso, na forma da regulamentação específica.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art15Anexo"></a>Art. 15. Os Planos de Numeração de Serviços de Telecomunicações classificados como serviços globais devem observar, preferencialmente, o definido em recomendações da UIT.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">Parágrafo único. No caso dos serviços globais, deverão ser encaminhadas à Agência:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">I - as informações relativas ao Plano de Numeração estabelecido para o respectivo serviço global;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">II - solicitação de Atribuição, em território nacional, dos Recursos de Numeração necessários à prestação do serviço; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">III - as informações relativas aos Recursos de Numeração efetivamente em uso, para inclusão no Cadastro Nacional de Numeração.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO III</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DOS PLANOS DE NUMERAÇÃO DE REDES DE TELECOMUNICAÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art16Anexo"></a>Art. 16. Os Planos de Numeração de Redes de Telecomunicações são definidos por funcionalidade de rede de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art17Anexo"></a>Art. 17. Os Planos de Numeração de Redes de Telecomunicações dispõem sobre a estrutura, o formato e a destinação de Códigos de Identificação dos respectivos Elementos de Rede, tais como&nbsp;terminais de sinalização por canal comum e terminais e sistemas móveis.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art18Anexo"></a>Art. 18. O Plano de Numeração da rede internacional de sinalização por canal comum é definido e administrado pela UIT.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">Parágrafo único. Compete à Agência administrar os Recursos de Numeração associados aos elementos da rede internacional de sinalização por canal comum, utilizados em território nacional ou designados ao País pela UIT.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">TÍTULO IV</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DO PROCESSO DE ADMINISTRAÇÃO DOS RECURSOS DE NUMERAÇÃO</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO I</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DA ATRIBUIÇÃO DE RECURSOS DE NUMERAÇÃO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art19Anexo"></a>Art. 19. A utilização de Recursos de Numeração depende de prévia Atribuição da Agência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art20Anexo"></a>Art. 20. A Atribuição será conferida à&nbsp;empresa&nbsp;por tempo indeterminado ou enquanto durar a concessão, permissão ou autorização do serviço à qual se vincula a Atribuição.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">Parágrafo único. A transferência da concessão, permissão ou autorização do serviço transferirá também as Atribuições de Recursos de Numeração a elas vinculadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art21Anexo"></a>Art. 21. São condições objetivas para obtenção de Atribuição de Recursos de Numeração:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">I - a disponibilidade do recurso e a correspondente destinação estabelecida em Plano de Numeração; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">II - a apresentação de solicitação de uso de Recursos de Numeração, segundo os procedimentos estabelecidos na regulamentação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art22Anexo"></a>Art. 22. O procedimento para obtenção de Atribuição de Recursos de Numeração é iniciado a partir da inserção da solicitação em sistema informatizado específico.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art23Anexo"></a>Art. 23. O indeferimento de uma solicitação de Atribuição de Recursos de Numeração pode ocorrer quando:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">I - a prestadora não estiver fazendo uso eficiente e adequado de recursos anteriormente atribuídos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">II - a solicitação estiver em desconformidade com a destinação do recurso no Plano de Numeração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">III - da eventual indisponibilidade do recurso solicitado para a área desejada;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">IV - a prestadora houver cometido infrações reiteradas ou continuadas, referentes ao uso de Recursos de Numeração; e/ou,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">V - por outras circunstâncias devidamente justificadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art24Anexo"></a>Art. 24. A Agência, após o recebimento de solicitação&nbsp;que implique utilização de Recursos de Numeração internacional, deve avaliar as informações e, considerando-as em conformidade com a regulamentação, encaminhar a correspondente solicitação ou notificação à UIT.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art25Anexo"></a>Art. 25. A modificação da Atribuição de Recursos de Numeração ou sua cassação implicam&nbsp;liberação dos recursos em prazo adequado e razoável, estabelecido pelo ato correspondente, considerando o disposto na regulamentação e&nbsp;o interesse público.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art26Anexo"></a>Art. 26. Observada a&nbsp;disponibilidade&nbsp;dos Recursos de Numeração, sua&nbsp;Atribuição poderá considerar a ordem das solicitações recebidas,&nbsp;a sequência estabelecida com base em sorteio ou o resultado de licitação entre os interessados, cabendo à Agência estabelecer o processo a ser utilizado para cada caso.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º O sorteio para definição da ordem sequencial para tratamento de solicitações de Recursos de Numeração é disciplinado pela Agência, observados os princípios e as disposições deste Regulamento e, especialmente que:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - a finalidade do certame é, por meio de sorteio entre os interessados, estabelecer a sequência de atendimento das solicitações de Uso de Recursos de Numeração pretendido;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - o instrumento convocatório deve identificar os Recursos de Numeração objeto do certame e as condições de sua utilização, definindo o universo de participantes, estabelecendo forma e procedimentos para sorteio, determinando a quantidade de fases e seus objetivos e indicando as sanções aplicáveis;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - as qualificações exigidas indistintamente dos participantes devem ser compatíveis com o objeto e proporcionais a sua natureza e dimensão; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - as regras procedimentais devem assegurar a adequada divulgação do instrumento convocatório, prazos compatíveis com o preparo de participação e os direitos ao contraditório, ao recurso e à ampla defesa.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º A licitação para provimento de Recursos de Numeração é disciplinada pela Agência e sempre onerosa, observados os princípios constitucionais, as disposições deste Regulamento e, especialmente, que:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - a finalidade do certame é garantir igualdade de oportunidades aos interessados quando houver limite de uso de Recursos de Numeração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - a minuta de instrumento convocatório deve ser submetida à consulta pública prévia;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - o instrumento convocatório deve identificar os Recursos de Numeração objeto do certame e as condições de sua utilização, definindo o universo de proponentes, podendo fixar os limites mínimos e/ou máximos do valor a ser pago, descrevendo a forma e prazo de pagamento e/ou as contrapartidas, compromissos e condições exigidas da prestadora, estabelecendo fatores e critérios para aceitação e julgamento de propostas, regulando o procedimento e determinando a quantidade de fases e seus objetivos e indicando as sanções aplicáveis;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - as qualificações exigidas indistintamente dos proponentes devem ser compatíveis com o objeto e proporcionais a sua natureza e dimensão;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - o julgamento deve atender aos princípios de vinculação ao instrumento convocatório e comparação objetiva;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - o empate deve ser resolvido por sorteio;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - é admitida a realização de leilão; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VIII - as regras procedimentais devem assegurar a adequada divulgação do instrumento convocatório, prazos compatíveis com o preparo de propostas e os direitos ao contraditório, ao recurso e à ampla defesa.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º Poderá ser aplicado subsidiariamente, no que couber, o Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequência da Agência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 4º A Anatel definirá, no instrumento convocatório do sorteio ou da licitação, a quantidade de recursos a serem atribuídos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art27Anexo"></a>Art. 27. A licitação ou sorteio, previstos no artigo anterior, são inexigíveis quando, mediante processo administrativo conduzido pela Agência, a disputa for considerada inviável ou desnecessária.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 1º O procedimento para verificação da inexigibilidade deve compreender chamamento público para apurar o interesse pelos recursos a serem autorizados.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 2º Considera-se inviável a disputa quando apenas um interessado puder utilizar o recurso.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 3º Considera-se desnecessária a disputa nos casos em que os Recursos de Numeração sejam suficientes para contemplar todas as solicitações dos interessados que atendam às condições requeridas pela Agência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;"><a target="_blank">Art. 28</a>. O uso dos Recursos de Numeração atribuídos deverá respeitar os critérios de eficiência a serem definidos em Procedimentos Operacionais específicos, nos termos do <a title="Acesse o Artigo" href="#art40">art. 40</a>&nbsp;do presente Regulamento.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art28Anexo"></a>Art. 28. O uso dos Recursos de Numeração atribuídos deverá respeitar os critérios de eficiência a serem definidos em Procedimentos Operacionais específicos, nos termos do <a title="Acesse o Artigo" href="#art42">art. 42</a><a target="_blank">&nbsp;</a>do presente Regulamento.<a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/04/2019&amp;jornal=515&amp;pagina=3">(Retificação publicada no DOU em 04/04/2019)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">Parágrafo único. Somente serão deferidas novas solicitações de Atribuição de Recursos de Numeração quando obedecido o disposto no&nbsp;<strong>caput</strong>.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO II</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DA&nbsp;DESIGNAÇÃO&nbsp;DE RECURSOS DE NUMERAÇÃO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art29Anexo"></a>Art. 29. A Designação de Recursos&nbsp;de&nbsp;Numeração será realizada de forma a que:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - seja assegurada a opção de escolha do Código de Acesso pelo assinante, manifestada por ocasião da contratação do serviço ou a qualquer tempo, mantidos os critérios de eficiência de utilização dos recursos disponíveis; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - os critérios e valores aplicáveis, quando do exercício da opção de escolha de Código de Acesso por parte do assinante, devam ser isonômicos, equânimes e não discriminatórios e tornados públicos pela prestadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art30Anexo"></a>Art. 30. As modificações de Códigos de Acesso já em uso devem considerar o disposto na regulamentação e, em especial, os prazos para aviso aos usuários e a interceptação de chamadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art31Anexo"></a>Art. 31. Ficam as prestadoras autorizadas a designar a seus usuários e terminais de uso público, desde que previamente atribuídos pela Anatel&nbsp;e observado o estabelecido em regulamentações e normas da Agência:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">a) Códigos de Acesso de Usuário;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">b) Códigos Não Geográficos; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">c) Códigos de Serviços de Utilidade Pública.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">Parágrafo único. A autorização para Designação de Recursos de Numeração terá o mesmo prazo de vigência da Atribuição de Recursos de Numeração à qual esteja vinculada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">Art. 32. Os Recursos de Numeração em uso, quando liberados, não devem ser novamente atribuídos ou designados por um prazo mínimo a contar da sua Data de Desativação, a ser definido em procedimentos operacionais específicos, nos termos do <a title="Acesse o Artigo" href="#art40">art. 40&nbsp;&nbsp;</a>do presente Regulamento.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art32Anexo"></a>Art. 32. Os Recursos de Numeração em uso, quando liberados, não devem ser novamente atribuídos ou designados por um prazo mínimo a contar da sua Data de Desativação, a ser definido em procedimentos operacionais específicos, nos termos do <a title="Acesse o Artigo" href="#art42">art. 42&nbsp;&nbsp;</a>do presente Regulamento. <a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/04/2019&amp;jornal=515&amp;pagina=3">(Retificação publicada no DOU em 04/04/2019)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">Parágrafo único. As prestadoras devem manter atualizadas as informações correspondentes a tais recursos de numeração no Cadastro Nacional de Numeração.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO III</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DA EXTINÇÃO DA ATRIBUIÇÃO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art33Anexo"></a>Art. 33. A Atribuição de Recursos de Numeração poderá ser extinta por:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - advento de seu termo final;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II – renúncia;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art33ItemIIIAnexo"></a>III - transferência irregular;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IV - uso ineficiente dos Recursos de Numeração, nos termos do <a title="Acesse o Artigo" href="#art40">art. 40</a>;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art33ItemIVAnexo"></a>IV - uso ineficiente dos Recursos de Numeração, nos termos do <a title="Acesse o Artigo" href="#art42">art. 42</a>; <a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/04/2019&amp;jornal=515&amp;pagina=3">(Retificação publicada no DOU em 04/04/2019)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art33ItemVAnexo"></a>V - uso indevido dos Recursos de Numeração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art33ItemVIAnexo"></a>VI - perda das condições objetivas; ou,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - extinção da outorga para prestação do serviço de telecomunicações à qual está&nbsp;vinculada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 1º&nbsp;Verificado o uso ineficiente ou indevido de Recursos de Numeração, ou a necessidade de revisão do Plano de Numeração, a Anatel poderá&nbsp;extinguir parcialmente a Atribuição.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 2º Nas hipóteses previstas nos incisos <a title="Acesse o Item" href="/legislacao/art33ItemIIIAnexo">III</a>, <a title="Acesse o Item" href="/legislacao/art33ItemIVAnexo">IV</a>,<a title="Acesse o Item" href="/legislacao/art33ItemVAnexo"> V</a> e <a title="Acesse o Item" href="/legislacao/art33ItemVIAnexo">VI</a>, será garantido direito de ampla defesa e contraditório ao interessado.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO IV</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DO SISTEMA INFORMATIZADO PARA ADMINISTRAÇÃO DOS RECURSOS DE NUMERAÇÃO E DA ENTIDADE ADMINISTRADORA DO SISTEMA INFORMATIZADO</p>
+<p class="Texto_Centralizado" style="text-align: center;">Seção I</p>
+<p class="Texto_Centralizado" style="text-align: center;">Do Sistema Informatizado</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art34Anexo"></a>Art. 34. O processo de Administração de Recursos de Numeração é suportado por sistema informatizado desenvolvido para esse fim e mantido pelas prestadoras de serviços de telecomunicações que fazem uso desses recursos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 1º As prestadoras de serviços de telecomunicações que fazem uso de Recursos de Numeração deverão contratar conjuntamente a Entidade Administradora responsável por desenvolver e gerir&nbsp;o sistema informatizado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 2º Estão incluídas entre as atividades de gestão do sistema informatizado a operação, a manutenção, a expansão e o desenvolvimento de sistemas eletrônicos de suporte à administração dos recursos de numeração e atividades correlatas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 3º Não estão incluídas entre as atividades de gestão do sistema informatizado todas aquelas relacionadas à Atribuição, Designação e Extinção da Atribuição de Recursos e Numeração.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 4º O desenvolvimento do sistema informatizado deverá contemplar, no mínimo:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I -&nbsp;canal irrestrito de solicitação de Atribuição de Recursos de Numeração, por quaisquer prestadoras;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - módulo que permita a Atribuição e Extinção da Atribuição de Recursos e Numeração pela Agência;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - mecanismos de acesso completo e irrestrito pela Agência a todas as bases de informações e rotinas internas do sistema; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - as regras definidas neste Regulamento e demais normas afetas expedidas pela Agência, bem como as definições do grupo de trabalho criado para o acompanhamento da implantação do disposto neste Regulamento, nos termos estabelecidos na Seção IV deste Capítulo.</p>
+<p class="Texto_Centralizado" style="text-align: center;">Seção II</p>
+<p class="Texto_Centralizado" style="text-align: center;">Da Entidade Administradora do sistema informatizado</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art35Anexo"></a>Art. 35.&nbsp;A Entidade Administradora a que se refere o <a title="Acesse o Artigo" href="#art34Anexo">art. 34&nbsp;</a>deverá:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - ser pessoa jurídica dotada de independência administrativa e autonomia financeira, patrimonial e neutralidade decisória;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - ser constituída segundo as leis brasileiras, com sede e administração no país;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - ter prazo de duração indeterminado;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - ser responsável pelo dimensionamento, contratação, especificação, planejamento e administração dos equipamentos e sistemas necessários para desempenhar suas atividades; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - permitir a livre participação de prestadores de serviços de telecomunicações, nos termos de seus atos constitutivos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art36Anexo"></a>Art. 36. O contrato com a Entidade Administradora&nbsp;do Sistema Informatizado deve conter, no mínimo:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - as condições para a manutenção da Entidade Administradora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - os procedimentos e características do relacionamento entre a Entidade Administradora e a Anatel, incluindo o fornecimento de informações à Agência, relativamente às suas atividades;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III -&nbsp;a obrigação de comunicar à Anatel as falhas e dificuldades verificadas no cumprimento de suas atividades;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV -&nbsp;dispositivos que permitam à Anatel realizar auditorias sobre suas atividades a qualquer tempo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - dispositivos que permitam à Anatel intervir nos processos relacionados às atividades da Entidade, no sentido de garantir a sua continuidade e&nbsp;eficácia; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - garantias de neutralidade e integridade na execução de suas atividades.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art37Anexo"></a>Art. 37. A Anatel monitorará continuamente a adequação das atividades da Entidade Administradora aos objetivos deste Regulamento, podendo, justificadamente, determinar a contratação de nova Entidade Administradora.</p>
+<p class="Texto_Centralizado" style="text-align: center;">Seção III</p>
+<p class="Texto_Centralizado" style="text-align: center;">Dos Custos</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art38Anexo"></a>Art. 38. Cabe às prestadoras a definição dos critérios de compartilhamento dos custos comuns, referentes à implantação e manutenção da Entidade Administradora&nbsp;e sua forma de implementação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 1º A definição dos critérios descritos no&nbsp;<strong>caput</strong>&nbsp;deverá se dar de forma isonômica e não discriminatória.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 2º Caso não haja acordo entre as prestadoras quanto à definição dos critérios de compartilhamento dos custos comuns, caberá à&nbsp;Anatel os definir tempestivamente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 3º As prestadoras devem submeter ao conhecimento da Anatel o critério utilizado na definição de suas participações no pagamento pelos serviços utilizados, decorrente da contratação da Entidade Administradora, podendo a Agência tomar medidas de forma a coibir abusos e práticas anticompetitivas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 4º O prazo para a definição dos critérios de compartilhamento dos custos comuns não deve comprometer a implementação ou o funcionamento da Entidade Administradora.</p>
+<p class="Texto_Centralizado" style="text-align: center;">Seção IV</p>
+<p class="Texto_Centralizado" style="text-align: center;">Do Grupo de Trabalho</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art39Anexo"></a>Art. 39. O desenvolvimento do sistema informatizado pela Entidade Administradora contratada para esse fim será supervisionado e deverá observar as definições de grupo de trabalho coordenado pela Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art39inciso1Anexo"></a>§ 1º O grupo de trabalho a que se refere o&nbsp;<strong>caput</strong>&nbsp;terá participação de representantes das Superintendências incumbidas da administração dos recursos de numeração e de gestão interna da informação, das prestadoras de serviços de telecomunicações e da entidade contratada para desenvolver e gerir o sistema informatizado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 2º Os representantes do grupo de trabalho a que se refere&nbsp;o <a title="Acesse o Inciso" href="/legislacao/art39inciso1">§ 1º</a> serão nomeados em sua reunião de instalação.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">TÍTULO V</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS SANÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art40Anexo"></a>Art. 40. O descumprimento ou inobservância das disposições contidas neste Regulamento sujeitará a prestadora à aplicação de sanções, nos termos da legislação e da regulamentação.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">TÍTULO VI</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DISPOSIÇÕES TRANSITÓRIAS E FINAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art41Anexo"></a>Art. 41. O sistema desenvolvido nos termos do<a title="Acesse o Artigo" href="#art34Anexo">&nbsp;art. 34</a> deverá estar em funcionamento em até 18 (dezoito) meses da publicação deste Regulamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 1º A implantação do sistema deverá contemplar as seguintes fases:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">I -&nbsp;Planejamento e Especificação do Sistema;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">II -&nbsp;Seleção e Contratação da Entidade Administradora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">III -&nbsp;Desenvolvimento do Sistema;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">IV -&nbsp;Testes e Homologação do Sistema; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">V -&nbsp;Entrada em Produção do Sistema.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">§ 2º Caberá ao grupo de trabalho a ser criado a definição do cronograma e a coordenação das fases de implantação do sistema.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art42Anexo"></a>Art. 42. A Superintendência competente pela administração dos Recursos de Numeração expedirá os procedimentos operacionais necessários ao fiel cumprimento das disposições deste Regulamento, mediante a edição de ato contendo, dentre outros:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">I -&nbsp;os níveis de eficiência de uso dos Recursos de Numeração, a serem cumpridos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">II - as informações e documentações necessárias à solicitação de Recursos de Numeração e seus prazos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">III - as condições e os prazos de reuso de Códigos de Acesso de Usuário; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">IV - as informações que devem ser incluídas no Cadastro Nacional de Numeração.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">Parágrafo único. Os procedimentos operacionais iniciais devem ser expedidos em até 60 (sessenta) dias da publicação deste Regulamento.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1261"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes">Resoluções da Anatel</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes/2019">2019</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento" class="link-categoria">Regulamento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Numeração" class="link-categoria">Numeração</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RGN" class="link-categoria">RGN</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Móvel%20Pessoal" class="link-categoria">Serviço Móvel Pessoal</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaMovel" class="link-categoria">TelefoniaMovel</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Telefônico%20Fixo%20Comutado" class="link-categoria">Serviço Telefônico Fixo Comutado</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaFixa" class="link-categoria">TelefoniaFixa</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RecursosPrestacao" class="link-categoria">RecursosPrestacao</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoVigente" class="link-categoria">ResolucaoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

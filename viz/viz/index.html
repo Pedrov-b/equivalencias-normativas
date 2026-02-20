@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Grafo de Resoluções</title>
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #network {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ccc;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 10px 0;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Resoluções por Ano</h2>
+<div id="network"></div>
+
+<script>
+fetch("grafo.json")
+  .then(r => r.json())
+  .then(data => {
+
+    const container = document.getElementById("network");
+
+    // 🔹 Agrupar resoluções por ano
+    const anos = {};
+    data.nodes.forEach(node => {
+      if (!anos[node.group]) anos[node.group] = [];
+      anos[node.group].push(node);
+    });
+
+    // 🔹 Ordenar resoluções dentro de cada ano pelo número
+    Object.keys(anos).forEach(ano => {
+      anos[ano].sort((a, b) => parseInt(a.label) - parseInt(b.label));
+    });
+
+    // 🔹 Criar cores para cada ano
+    const anoKeys = Object.keys(anos).sort();
+    const cores = {};
+    anoKeys.forEach((ano, i) => {
+      cores[ano] = `hsl(${i * 40 % 360}, 70%, 75%)`;
+    });
+
+    // 🔹 Posicionar cada resolução manualmente
+    const nodesWithPos = data.nodes.map(node => {
+      const anoIndex = anoKeys.indexOf(node.group);
+      const resolIndex = anos[node.group].findIndex(n => n.id === node.id);
+
+      return {
+        ...node,
+        x: anoIndex * 250,           // distância entre anos
+        y: resolIndex * 100,         // distância entre resoluções
+        color: { background: cores[node.group], border: "#333" }
+      };
+    });
+
+    // 🔹 Adicionar nós de título de cada ano
+    anoKeys.forEach((ano, i) => {
+      nodesWithPos.push({
+        id: `ano-${ano}`,
+        label: ano,
+        x: i * 250,
+        y: -60, // acima das resoluções
+        shape: "box",
+        font: { size: 18, color: "#000" },
+        color: { background: cores[ano], border: "#333" },
+        fixed: true  // não deixa mover
+      });
+    });
+
+    const colorEdges = data.edges.map((edge) => ({
+            from: edge["from"],
+            to: edge["to"],
+            color: cores[edge["from"].split("/")[0]],
+          }));
+
+          // Criar dataset
+          const nodes = new vis.DataSet(nodesWithPos);
+          const edges = new vis.DataSet(colorEdges);
+
+    // 🔹 Conectar títulos ao primeiro nó de cada ano
+    anoKeys.forEach(ano => {
+      if (anos[ano].length > 0) {
+        edges.add({
+          from: `ano-${ano}`,
+          to: anos[ano][0].id,
+          dashes: true
+        });
+      }
+    });
+
+    // 🔹 Opções
+    const options = {
+      physics: false,
+      nodes: {
+        shape: "box",
+        margin: 10,
+        font: { size: 16 },
+      },
+      edges: {
+        arrows: "to",
+        smooth: true
+      }
+    };
+
+    const network = new vis.Network(container, { nodes, edges }, options);
+
+    // centralizar a visualização
+    network.fit();
+  })
+  .catch(err => {
+    console.error("Erro ao carregar grafo.json:", err);
+  });
+</script>
+
+</body>
+</html>

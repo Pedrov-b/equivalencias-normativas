@@ -1,0 +1,1872 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 386, de 16 de janeiro de 2023</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2023/1830-ato-386">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Avaliação da Conformidade, Cabo de Transmissão, Condutor Flexível ou Sólido, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Dispõe requisitos técnicos para avaliação da conformidade de cabo de transmissão de dados de acesso com condutor flexível ou sólido - categorias 7, 7A e 8 com capacidade de quatro pares e categorias 3, 5e, 6 e 6A com capacidade de dois ou quatro pares.">
+	<title>Anatel - Ato nº 386, de 16 de janeiro de 2023</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=586755051" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1905311513" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=528764544" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141325" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2023">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2023">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2023">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2023" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2023" class="pathway">2023</a> <span class="separator">&gt;</span> <span>Ato nº 386, de 16 de janeiro de 2023</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9490576daad0cb39&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 386, de 16 de janeiro de 2023		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Terça, 17 Janeiro 2023 15:06			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quinta, 14 Novembro 2024 13:07			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 4604			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Dispõe requisitos técnicos&nbsp;para avaliação da conformidade de cabo de transmissão de dados de acesso com condutor flexível ou sólido&nbsp;- categorias 7, 7A e&nbsp;8 com capacidade de quatro&nbsp;pares e&nbsp;categorias 3, 5e, 6 e&nbsp;6A com capacidade de dois ou quatro pares, na forma do anexo a este Ato.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico de <a href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=10936328&amp;id_orgao_publicacao=0">17/1/2023</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram conferidas pela <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do<a href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art19"> Art. 19</a> da Lei nº 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO que&nbsp;os Requisitos Técnicos estabelecem os parâmetros e critérios técnicos verificados na Avaliação da Conformidade de um ou mais tipos de produto para telecomunicações, nos termos do <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715#art22Anexo">art. 22</a> do Regulamento para Avaliação da Conformidade e Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº&nbsp;715, de 23 de outubro de 2019;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlG96uw9O3PZLtwNnp39tyYVUTjpntRYzFRkVYDFxKXPZ">processo nº&nbsp;53500.054018/2021-90</a>;</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha texto-recuo-1a-linha resolve" style="text-align: justify;">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art1º&nbsp;"></a>Art. 1º&nbsp; Aprovar os requisitos técnicos&nbsp;para avaliação da conformidade de cabo de transmissão de dados de acesso com condutor flexível ou sólido&nbsp;- categorias 7, 7A e&nbsp;8 com capacidade de quatro&nbsp;pares e&nbsp;categorias 3, 5e, 6 e&nbsp;6A com capacidade de dois ou quatro pares, na forma do<a href="#Anexo"> anexo</a> a este Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art2º&nbsp;"></a>Art. 2º&nbsp; Este Ato entra em vigor&nbsp;na data de sua publicação no&nbsp;Boletim de Serviços Eletrônico da Anatel, sendo mandatória a&nbsp;aplicação de seu <a href="#Anexo">anexo</a> a partir do dia 22 de julho de 2023.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Os laboratórios de ensaios previamente&nbsp;habilitados pela Anatel a&nbsp;realizarem os ensaios exigidos no processo de avaliação da conformidade&nbsp;dos produtos descritos no <a href="#Art1">art. 1º</a> se mantêm&nbsp;habilitados, na condição de avaliados, para realizarem os ensaios e&nbsp;procedimentos equivalentes especificados no anexo.</p>
+<p style="text-align: center;">VINICIUS OLIVEIRA CARAM GUIMARÃES<br>Superintendente de Outorga Recursos à Prestação</p>
+<p style="text-align: center;">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="Anexo"></a>ANEXO AO&nbsp;ATO Nº 386, DE 16 DE JANEIRO DE 2023</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong>REQUISITOS TÉCNICOS&nbsp;PARA AVALIAÇÃO DA CONFORMIDADE DE CABO DE TRANSMISSÃO DE DADOS DE ACESSO COM CONDUTOR FLEXÍVEL OU SÓLIDO</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito texto-recuo-1a-linha" style="text-align: justify;"><a name="item1"></a>1.<strong> OBJETIVO</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify;"><a name="item1.1"></a>1.1. Estabelecer os requisitos mínimos a serem demonstrados na avaliação da conformidade&nbsp;e homologação, junto à Agência Nacional de Telecomunicações, dos seguintes tipos de&nbsp;cabo de transmissão de dados com condutor&nbsp;flexível ou sólido:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item1.1.1"></a>1.1.1. Cabo de acesso de categorias 7, 7A e 8 com capacidade de quatro pares; e</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item1.1.2"></a>1.1.2. Cabo de acesso de categorias 3, 5e, 6 e&nbsp;6A com capacidade de dois ou quatro pares.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item2"></a>2.<strong> REFERÊNCIAS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item2.1"></a>2.1. Neste documento são adotadas as seguintes referências:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item2.1.1"></a>2.1.1. <a href="https://www.abnt.org.br/busca360/5111:1997/1,2,3,5">ABNT NBR 5111:1997</a> – Fios de cobre nus, de seção circular, para&nbsp;fins elétricos - Especificação;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.2"></a>2.1.2. <a href="https://www.abnt.org.br/busca360/6810:2010/1,2,3,5">ABNT NBR 6810:2010</a> –&nbsp;Fios e cabos elétricos - Tração à ruptura em componentes metálicos;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.3"></a>2.1.3. <a href="https://www.abnt.org.br/busca360/6814:1986/1,2,3,5">ABNT NBR 6814:1986</a> –&nbsp;Fios e cabos elétricos - Ensaio de resistência elétrica;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.4"></a>2.1.4. <a href="https://www.abnt.org.br/busca360/9130:2009/1,2,3,5">ABNT NBR 9130:2009</a> –&nbsp;Fios e cabos telefônicos - Ensaio de desequilíbrio resistivo;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.5"></a>2.1.5. <a href="https://www.abnt.org.br/busca360/9138:2015/1,2,3,5">ABNT NBR&nbsp;9138:2015</a> –&nbsp;Cabos telefônicos - Ensaio de desequilíbrio capacitivo - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.6"></a>2.1.6. <a href="https://www.abnt.org.br/busca360/9141:1998/1,2,3,5">ABNT NBR 9141:1998</a> – Cabos ópticos e fios e cabos telefônicos - Ensaio de tração e alongamento à ruptura - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.7"></a>2.1.7. <a href="https://www.abnt.org.br/busca360/9145:2008/1,2,3,5">ABNT NBR 9145:2008 </a>–&nbsp;Fios e cabos telefônicos - Ensaio de resistência de isolamento;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.8"></a>2.1.8. <a href="https://www.abnt.org.br/busca360/9146:2012/1,2,3,5">ABNT NBR&nbsp;9146:2012</a> –&nbsp;Fios e cabos para telecomunicações&nbsp;-&nbsp;Tensão elétrica aplicada&nbsp;-&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.9"></a>2.1.9. <a href="https://www.abnt.org.br/busca360/ABNT%20NBR%209148:1998%20/1,2,3,5">ABNT NBR 9148:1998 </a>– Cabos ópticos e fios e cabos telefônicos - Ensaio de envelhecimento acelerado - método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.10"></a>2.1.10. <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703:2012</a> –&nbsp;Cabos de telemática de 100Ω para redes internas estruturadas - Especificação;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.11"></a>2.1.11. <a href="https://www.abnt.org.br/busca360/14705:2010/1,2,3,5">ABNT NBR 14705:2010</a> – Cabos internos para telecomunicações - Classificação quanto ao comportamento frente à chama;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.12"></a>2.1.12. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=SlZmSTVqNjgweVlqOGVnMEUyUWE1VHkzVFRKYVJRcW1GMHlhdy80SXFyOD0=">ABNT NBR NM IEC 60811-1-1:2001</a> – Métodos de ensaios comuns para os materiais de isolação e de cobertura de cabos elétricos Parte 1: Métodos para aplicação geral - Capítulo 1: Medição de espessuras e dimensões externas - Ensaios para a determinação das propriedades mecânicas;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item2.1.13"></a>2.1.13.<a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA"> ANSI/TIA-568.2-D:2018</a> –&nbsp;<em>Balanced twisted-pair telecommunications cabling and components standards;</em></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.14"></a>2.1.14. <a href="https://global.ihs.com/doc_detail.cfm?document_name=ICEA%20S%2D102%2D700&amp;item_s_key=00452900">ANSI/ICEA S-102-732:2009</a> –&nbsp;<em>Standard for category 6 and 6A, 100 Ohm individually unshielded twisted pairs, indoor cables (with or without an overall shield) for use in LAN communication wiring systems - Technical requirements</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.15"></a>2.1.15. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=ICEA&amp;item_s_key=00855906&amp;item_key_date=781231&amp;input_doc_number=S%2D118&amp;input_doc_title=&amp;org_code=ICEA">ANSI/ICEA S-118-746</a> (<em>draft</em>) –&nbsp;<em>Standard for category 8, 100 ohms indoor cables for use in LAN communication wiring systems;</em></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.16"></a>2.1.16. <a href="https://webstore.ansi.org/standards/astm/astmd334921">ASTM D 3349:2017</a> –&nbsp;<em>Standard test method for absorption coefficient of ethylene polymer material pigmented with carbon black</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.17"></a>2.1.17. <a href="https://webstore.ansi.org/standards/astm/astmd456515">ASTM D 4565:2015</a> –&nbsp;<em>Standard test methods for physical and environmental performance properties of insulations and jackets for telecommunications wire and cable</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.18"></a>2.1.18. <a href="https://webstore.ansi.org/standards/astm/astmd456614">ASTM D 4566:2014</a> –&nbsp;<em>Standard test methods for electrical performance properties of insulations and jackets for telecommunications wire and cable;</em></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.19"></a>2.1.19. <a href="https://webstore.ansi.org/standards/astm/astmg15521">ASTM G 155:2021</a> –&nbsp;<em>Standard practice for operating xenon arc light apparatus for exposure of non-metallic materials</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.20"></a>2.1.20. <a href="https://webstore.ansi.org/standards/iec/iec6060311ed1992">IEC 60603-7:2011</a> –&nbsp;<em>Connectors for electronic equipment&nbsp;</em>-<em>&nbsp;Part 7: Detail specification for 8-way, unshielded, free and fixed connectors</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.21"></a>2.1.21. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;input_doc_number=60603%2D7%2D1%2D2002&amp;input_doc_title=&amp;org_code=IEC&amp;document_name=IEC%2060603%2D7%2D1&amp;item_s_key=00391898&amp;item_key_date=971131&amp;origin=DSSC">IEC 60603-7-1:2002</a>&nbsp;–&nbsp;<em>Connectors for electronic equipment&nbsp;</em>-<em>&nbsp;Part 7-1: Detail specification for 8-way, shielded free and fixed connectors</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.22"></a>2.1.22. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;input_doc_number=60603%2D7%2D7&amp;input_doc_title=&amp;org_code=IEC&amp;document_name=IEC%2060603%2D7%2D7&amp;item_s_key=00396080&amp;item_key_date=970831&amp;origin=DSSC">IEC 60603-7-7:2002</a> –&nbsp;<em>Connectors for electronic equipment&nbsp;</em>-<em>&nbsp;Part 7-7: Detail specification for 8-way, shielded, free and fixed connectors, for data transmission with frequencies up to</em>&nbsp;<em>600 MHz</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.23"></a>2.1.23. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00555412&amp;item_key_date=890631&amp;input_doc_number=60603%2D7%2D7&amp;input_doc_title=&amp;org_code=IEC">IEC 60603-7-71:2010</a> –&nbsp;<em>Connectors for electronic equipment&nbsp;</em>-<em>&nbsp;Part 7-71: Detail specification for 8-way, shielded, free and fixed connectors, for data transmission with frequencies up to 1 000 MHz</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.24"></a>2.1.24. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00133428&amp;item_key_date=211231&amp;input_doc_number=60607&amp;input_doc_title=&amp;org_code=IEC">IEC 60607-3-81:2015</a> –&nbsp;<em>Connectors for electronic equipment - Part 7-81: Detail specification for 8-way, shielded, free and fixed connectors, for data transmissions with frequencies up to 2 000 MHz</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.25"></a>2.1.25. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00133428&amp;item_key_date=211231&amp;input_doc_number=60607&amp;input_doc_title=&amp;org_code=IEC">IEC 60607-3-82:2016</a> –&nbsp;<em>Connectors for electronic equipment - Part 7-82: Detail specification for 8-way, 12 contacts, shielded, free and fixed connectors, for data transmission with frequencies up to 2 000 MHz</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.26"></a>2.1.26.<a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00410292&amp;item_key_date=820731&amp;input_doc_number=61076%2D3%2D104&amp;input_doc_title=&amp;org_code=IEC"> IEC 61076-3-104:2017</a> –<em>&nbsp;Connectors for electrical and electronic equipment - Product requirements - Part 3-104: Detail specification for 8-way, shielded free and fixed connectors for data transmissions with frequencies up to 2 000 MHz</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.27"></a>2.1.27. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00501530&amp;item_key_date=830431&amp;input_doc_number=61076%2D3%2D110&amp;input_doc_title=&amp;org_code=IEC">IEC 61076-3-110:2016</a> –&nbsp;<em>Connectors for electronic equipment - Product requirements - Part 3-110: Detail specification for free and fixed connectors for data transmission with frequencies up to 3 000 MHz</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.28"></a>2.1.28.<a href="https://webstore.ansi.org/standards/iec/iec61156ed2007"> IEC 61156-1:2007</a> +&nbsp;<em>Amendment&nbsp;</em>1:2009&nbsp;–&nbsp;<em>Multicore and symmetrical pair/quad cables for digital communications - Part 1: Generic specification</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.29"></a>2.1.29. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394196&amp;item_key_date=790831&amp;input_doc_number=61156%2D5&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-5:2020</a> –&nbsp;<em>Multicore and symmetrical pair/quad cables for digital communications - Part 5: Symmetrical pair/quad cables with transmission characteristics up to 1 000 MHz - Horizontal floor wiring</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.30"></a>2.1.30.<a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC"> IEC 61156-6:2020</a> –&nbsp;<em>Multicore and symmetrical pair/quad cables for digital communications - Part 6: Symmetrical pair/quad cables with transmission characteristics up to 1 000 MHz - Work area wiring</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.31"></a>2.1.31. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=ISO&amp;item_s_key=00740874&amp;item_key_date=810831&amp;input_doc_number=11801%2D1&amp;input_doc_title=&amp;org_code=ISO">ISO/IEC 11801-1:2017 </a>–&nbsp;<em>Generic cabling for customer premises</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.32"></a>2.1.32. Lista de&nbsp;referência&nbsp;de produtos para telecomunicações, aprovada pelo<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1493-ato-7280">&nbsp;Ato nº&nbsp;7280, de 26 de novembro de 2020</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.33"></a>2.1.33. Procedimento operacional para marcação da identificação da homologação Anatel em produtos para telecomunicações, aprovado pelo <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1451-ato-4088">ato nº 4088, de 31 de julho de 2020.</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.34"></a>2.1.34. Regulamento de avaliação da conformidade e de homologação de produtos para telecomunicações, aprovado pela <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715">resolução nº 715, de 23 de outubro de 2019</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.35"></a>2.1.35. <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=UL&amp;item_s_key=00114989&amp;item_key_date=780615&amp;input_doc_number=444&amp;input_doc_title=&amp;org_code=UL">UL 444:2017</a> –&nbsp;<em>Communications Cables</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">Para referências datadas, aplicam-se somente as edições citadas. Para referências não datadas, aplicam-se as edições mais recentes do referido documento (incluindo emendas).</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item3"></a>3.&nbsp;<strong>DEFINIÇÕES</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.1"></a>3.1. Alongamento à ruptura da isolação: alongamento percentual medido no instante da ruptura da isolação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.2"></a>3.2. Alongamento à ruptura do condutor: alongamento percentual medido no instante da ruptura do condutor.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.3"></a>3.3. Cabo&nbsp;para transmissão de dados: é aquele formado&nbsp;por condutores isolados, torcidos em pares com impedância nominal de 100 Ω e protegidos por um ou mais revestimentos (capa externa), podendo ser&nbsp;classificado&nbsp;como cabo&nbsp;horizontal, cabo de acesso, cabo&nbsp;de manobra ou cabo&nbsp;de&nbsp;<em>backbone</em>.&nbsp;Pode&nbsp;possuir blindagem constituída de fita de alumínio ou&nbsp;aluminizada&nbsp;envolvendo cada par ou o núcleo do cabo, podendo esta&nbsp;blindagem ser constituída de malha de fios de cobre com ou sem fita de alumínio e&nbsp;um fio dreno de cobre estanhado deve fazer contato elétrico com a blindagem em fita ao longo do cabo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.3.1"></a>3.3.1. Cabo de acesso&nbsp; (<em>cord cable</em>):&nbsp;cabo de transmissão de dados&nbsp;constituído por condutores de cobre eletrolítico&nbsp;flexíveis ou sólidos,&nbsp;isolados com material termoplástico,&nbsp;torcidos&nbsp;em&nbsp;pares&nbsp;com impedância nominal de 100 Ω, reunidos em um núcleo com dois ou quatro pares,&nbsp;protegido por uma cobertura termoplástica. O cabo&nbsp;de acesso é&nbsp;pertencente às categorias 5e&nbsp;a 8,&nbsp;de bitola 22 a 28 AWG.&nbsp;Cabos do tipo cobre cladeado alumínio (CCA) não são permitidos.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.3.2"></a>3.3.2. Condutor flexível:&nbsp;também chamado de&nbsp;multifilar, é o condutor composto por sete fios de cobre nu ou revestido. É utilizado para elaboração de cabo de acesso.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.3.3"></a>3.3.3. Condutor sólido:&nbsp;também chamado de unifilar, é o condutor composto por um fio sólido de cobre nu ou revestido. Pode ser utilizado para elaboração de cabo de acesso e cabo horizontal.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.4"></a>3.4. Capacidade: quantidade de pares metálicos existentes no interior do cabo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.5"></a>3.5. Categoria&nbsp;3:&nbsp;classe de cabo com banda passante de até&nbsp;16 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.6"></a>3.6. Categoria 5e<b>:</b>&nbsp;classe de cabo&nbsp;com<b>&nbsp;</b>banda passante de até 100 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.7"></a>3.7. Categoria 6<b>:&nbsp;</b>classe de cabo&nbsp;com<b>&nbsp;</b>banda passante&nbsp;de até 250 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.8"></a>3.8. Categoria 6A<b>:&nbsp;</b>classe de cabo&nbsp;com<b>&nbsp;</b>banda passante de até 500 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.9"></a>3.9. Categoria&nbsp;7&nbsp;:&nbsp;classe de cabo&nbsp;com<b>&nbsp;</b>banda passante de até 600MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.10"></a>3.10. Categoria&nbsp;7A&nbsp;:&nbsp;classe de cabo&nbsp;com<b>&nbsp;</b>banda passante de até 1000 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.11"></a>3.11. Categoria 8<b>:&nbsp;</b>classe de cabo&nbsp;com&nbsp;banda passante de até 2000 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.12"></a>3.12<em>. Crosstalk</em>: medida de mixagem de sinais entre pares dentro de um cabo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.12.1"></a>3.12.1. ACRF&nbsp;-&nbsp;<em>Attenuation&nbsp;to Crosstalk Ratio, Far-End</em>: diferença entre FEXT e a&nbsp;perda de inserção&nbsp;no par em questão. Basicamente mede a interferência sem efeitos da atenuação.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.12.2"></a>3.12.2<em>. Alien crosstalk</em>: medida de acoplamento de sinal entre pares em cabos adjacentes.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.12.3"></a>3.12.3. FEXT&nbsp;-&nbsp;<em>Far-End&nbsp;Crosstalk</em>:&nbsp;diferença da intensidade entre o sinal original de um par em uma extremidade e a interferência na outra extremidade do cabo causada por outro par. Ocorre no início da transmissão onde o sinal ainda é forte, por isso a degradação do sinal é quase imperceptível.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.12.4"></a>3.12.4. NEXT -<b>&nbsp;</b><em>Near End Crosstalk</em><b>:&nbsp;</b>diferença da intensidade entre o sinal original de um par em uma extremidade e a interferência na mesma extremidade do cabo causada por outro par. Quanto maior o NEXT maior a intensidade do sinal original&nbsp;em relação à interferência.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.12.5"></a>3.12.5. PSAACRF&nbsp;-&nbsp;<em>Power Sum Attenuation to Alien Crosstalk Ratio, Far-End</em>: soma&nbsp;de potências de ruído por&nbsp;telediafonia&nbsp;<em>alien</em>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.12.6"></a>3.12.6. PSACRF&nbsp;-&nbsp;<em>Power&nbsp;Sum Attenuation to Crosstalk Ratio, Far-End</em>: somatório do efeito&nbsp;ACRF&nbsp;de um par sobre os outros pares do cabo.&nbsp;Não é medido, e sim calculado.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.12.7"></a>3.12.7. PSANEXT&nbsp;-&nbsp;<em>Power Sum Alien Near End Crosstalk</em>: soma de potências&nbsp;de ruído por&nbsp;paradiafonia&nbsp;<em>alien</em>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.12.8"></a>3.12.8. PSNEXT&nbsp;-&nbsp;<em>Power Sum Near End Crosstalk</em>: somatório do efeito NEXT de um par sobre os outros pares do cabo.&nbsp;Não é medido, e sim calculado.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.13"></a>3.13. Desequilíbrio resistivo: variação percentual da resistência elétrica medida entre dois condutores componentes de um par.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.14"></a>3.14. Família de cabos: conjunto de produtos com concepção de construção similar, possuindo designação genérica vinculada à sua aplicação ou instalação&nbsp;e que possua mesmo tipo de blindagem, mesma categoria de transmissão, mesma quantidade de pares e mesmo tipo de condutor.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.14.1"></a>3.14.1. Grupo de famílias: conjunto de famílias de cabos que possuem em comum o tipo genérico de aplicação a que se destinam.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.15"></a>3.15. Impedância:&nbsp;uma expressão da oposição que um componente eletrônico, um circuito ou um sistema oferece à corrente elétrica.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.16"></a>3.16. Perda de inserção: atenuação em dB devido à diminuição progressiva de potência do sinal em sua propagação&nbsp;ao longo do comprimento do cabo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.17"></a>3.17. Perda de retorno:<b>&nbsp;</b>medida da taxa de potência refletida no sistema; quantidade de sinal que retorna provocando ruído no receptor devido à variação da impedância ao longo do cabo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.18"></a>3.18. Resistência à tração e alongamento à ruptura do revestimento externo: quociente da carga máxima observada na ruptura pela seção transversal inicial do revestimento e o alongamento percentual medido neste instante.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.19"></a>3.19. Resistência ao intemperismo: avaliação da estabilidade à luz ultravioleta do revestimento externo do cabo, acompanhada pela variação do seu índice de fluidez&nbsp;ou da sua tração e alongamento.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.20"></a>3.20. Resistência do isolamento: resistência elétrica medida entre duas partes condutoras separadas por materiais isolantes.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.21"></a>3.21. Retardância à chama: característica intrínseca de desempenho do material que, sob condições de queima pré-determinadas, extingue&nbsp;a chama quando da retirada da fonte de calor.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.22"></a>3.22. Tensão elétrica aplicada: tensão elétrica máxima que um dielétrico suporta sem alterações em sua estrutura molecular.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.23"></a>3.23. Uso interno: definido como aplicação dos equipamentos em local protegido de intempéries e ação do ambiente externo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.24"></a>3.24. Uso externo: definido como aplicação aérea, em bandejas ou outros encaminhamentos não sujeitos a submersão.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify;"><a name="item4"></a>4.<strong> REQUISITOS TÉCNICOS&nbsp;PARA CABO DE ACESSO COM CONDUTOR&nbsp;FLEXÍVEL&nbsp;OU SÓLIDO</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.1"></a>4.1.<b> Requisitos Mínimos Gerais</b></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.1"></a>4.1.1. O&nbsp;cabo de acesso é utilizado&nbsp;nas interligações de rede de cabeamento estruturado (LAN -&nbsp;<em>Local&nbsp;Area Network</em>&nbsp;ou&nbsp;Rede de Acesso Local). É formado&nbsp;por condutores isolados, torcidos em pares e protegidos por&nbsp;um ou mais revestimentos (capa externa), podendo ter blindagem. Pode&nbsp;ser utilizado&nbsp;para&nbsp;confecção de cabos de manobra.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.2"></a>4.1.2. O&nbsp;cabo para transmissão de dados, independentemente de sua&nbsp;categoria,&nbsp;deve&nbsp;possuir marcação com tamanho e cor adequados a fim de garantir a legibilidade preferencialmente a olho nu, ou com visão corrigida em cabos com&nbsp;características construtivas que&nbsp;não a permitam, em cada metro do cabo.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.1.2.1"></a>4.1.2.1. A marcação deve informar o nome ou marca do fabricante ou marca do requerente, quando devidamente autorizado pelo fabricante, a bitola do condutor, a designação (categoria), a classificação de desempenho frente à chama, código de lote de fabricação ou outro sistema que permita a rastreabilidade do produto e o código de homologação Anatel. É desejável que haja marcação sequencial de comprimento a cada metro.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.3"></a>4.1.3. Os condutores que compõem&nbsp;os&nbsp;cabos de acesso devem&nbsp;ser constituídos de cobre&nbsp;nu eletrolítico&nbsp;unifilar ou&nbsp;multifilar,&nbsp;de características físicas conforme a norma <a href="https://www.abnt.org.br/busca360/5111:1997/1,2,3,5">ABNT NBR 5111</a>. Os&nbsp;condutores não&nbsp;podem&nbsp;ser constituídos de alumínio com revestimento de cobre (CCA).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.4"></a>4.1.4. Os condutores que compõem os cabos de acesso&nbsp;podem ter bitolas de&nbsp;22&nbsp;AWG&nbsp;a&nbsp;28&nbsp;AWG.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.5"></a>4.1.5. Os condutores&nbsp;multifilares&nbsp;devem ser formados:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.1.5.1"></a>4.1.5.1. por sete fios elementares de diâmetro nominal de 0,30&nbsp;mm&nbsp;para condutores de bitola 22 AWG,&nbsp;por&nbsp;sete fios elementares de diâmetro nominal de 0,20 mm&nbsp;para condutores&nbsp;de bitola&nbsp;24 AWG, por sete fios elementares&nbsp;de diâmetro nominal de&nbsp;0,16 mm&nbsp;para condutores&nbsp;de bitola&nbsp;26&nbsp;AWG&nbsp;ou&nbsp;por&nbsp;sete fios elementares de diâmetro nominal de&nbsp;0,12&nbsp;para condutores&nbsp;de bitola&nbsp;28&nbsp;AWG, para os cabos de categorias 3 a 6A;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.1.5.2"></a>4.1.5.2. por sete fios&nbsp;elementares&nbsp;de&nbsp;cobre&nbsp;recozido,&nbsp;dimensionados&nbsp;de forma a&nbsp;satisfazer&nbsp;os&nbsp;requisitos&nbsp;de&nbsp;resistência&nbsp;elétrica&nbsp;e&nbsp;atenuação, para os cabos de categorias 7 e 7A; e</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.1.5.3"></a>4.1.5.3. por sete fios elementares de diâmetro nominal de 0,30&nbsp;mm&nbsp;para condutores&nbsp;de bitola&nbsp;22 AWG,&nbsp;por&nbsp;sete fios elementares de diâmetro nominal de 0,20 mm&nbsp;para condutores&nbsp;de bitola&nbsp;24 AWG e sete fios elementares&nbsp;de diâmetro nominal de&nbsp;0,16 mm&nbsp;para condutores&nbsp;de bitola&nbsp;26&nbsp;AWG, para os cabos de categoria 8.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.6"></a>4.1.6. Os&nbsp;condutores unifilares devem ser constituídos por um fio sólido de cobre eletrolítico, com &nbsp;diâmetro não inferior a 5% do diâmetro nominal. Todos&nbsp;os parâmetros do condutor unifilar não especificados neste documento devem estar conforme a norma <a href="https://www.abnt.org.br/busca360/5111:1997/1,2,3,5">ABNT NBR 5111</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.7"></a>4.1.7. A&nbsp;superfície&nbsp;do condutor&nbsp;não pode apresentar fissuras, escamas, rebarbas, asperezas, estrias ou inclusões.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.8"></a>4.1.8. O condutor não pode ter emendas.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;" align="CENTER"><a name="item4.2"></a>4.2.<strong> Requisitos dimensionais</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="CENTER"><a name="item4.2.1"></a>4.2.1. O diâmetro do condutor&nbsp;deve atender ao item item 5.2.1 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a> para cabos de acesso,&nbsp;quando verificado&nbsp;segundo a norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=SlZmSTVqNjgweVlqOGVnMEUyUWE1VHkzVFRKYVJRcW1GMHlhdy80SXFyOD0=">ABNT NBR NM-IEC 60811-1-1</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="CENTER"><a name="item4.2.2"></a>4.2.2. Quando&nbsp;verificado&nbsp;segundo&nbsp;a norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=SlZmSTVqNjgweVlqOGVnMEUyUWE1VHkzVFRKYVJRcW1GMHlhdy80SXFyOD0=">ABNT NBR NM-IEC 60811-1-1</a>, o&nbsp;diâmetro&nbsp;do&nbsp;condutor&nbsp;isolado&nbsp;não&nbsp;deve&nbsp;ser&nbsp;superior a:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="CENTER"><a name="item4.2.2.1"></a>4.2.2.1. 1,25&nbsp;mm para cabos de categorias 3 a 7A; e</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="CENTER"><a name="item4.2.2.2"></a>4.2.2.2. 1,64 mm para cabos de categoria 8.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="CENTER"><a name="item4.2.3"></a>4.2.3. O&nbsp;diâmetro&nbsp;externo dos cabos de transmissão de dados não deve ser superior a 9,00 mm&nbsp;quando verificado conforme a norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=SlZmSTVqNjgweVlqOGVnMEUyUWE1VHkzVFRKYVJRcW1GMHlhdy80SXFyOD0=">ABNT NBR NM IEC 60811-1-1</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="CENTER"><a name="item4.2.4"></a>4.2.4. O fio dreno deve estar em contato elétrico com a face metálica da fita laminada de blindagem e deve:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item4.2.4.1"></a>4.2.4.1. ser de diâmetro mínimo 26AWG, de cobre estanhado&nbsp;para cabos de categoria 7 e 7A;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item4.2.4.2"></a>4.2.4.2. estar de acordo com o item 5.3 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D </a>para cabos de categoria 3 a 6A e 8.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="CENTER"><a name="item4.2.5"></a>4.2.5. Os pares dos cabos de transmissão de dados devem ser identificados, sequencialmente, conforme códigos de cores presentes&nbsp; na <a href="#tabela1">tabela 1</a> ou na<a href="#tabela2"> tabela 2</a>.</p>
+<p class="Texto_Alinhado_Esquerda" align="CENTER"><a id="tabela1"></a>Tabela 1&nbsp;– Código de cores para cabos de quatro pares</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Número do par</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Condutor "A"</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Condutor "B"</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Código de cores</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Branca / Azul</p>
+<p class="Tabela_Texto_Centralizado">ou Branca</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Azul</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">B/Az - Az</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">2</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Branca / Laranja</p>
+<p class="Tabela_Texto_Centralizado">ou Branca</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Laranja</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">B/L - L</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">3</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Branca / Verde</p>
+<p class="Tabela_Texto_Centralizado">ou Branca</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Verde</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">B/V - V</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">4</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Branca / Marrom</p>
+<p class="Tabela_Texto_Centralizado">ou Branca</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Marrom</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">B/M - M</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Centralizado">NOTA: A segunda cor do condutor “A” é identificada através de listras longitudinais ou anéis espaçados a uma distância máxima de 25 mm. Para cabos onde todos os pares apresentem passos de&nbsp;torcimento&nbsp;menores que 38 mm, o uso de listras ou anéis é opcional.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Centralizado">&nbsp;</p>
+<p class="Texto_Centralizado" align="CENTER"><a id="tabela2"></a>Tabela 2&nbsp;– Código de cores para cabos de quatro pares (opcional)</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Número do par</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Condutor "A"</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Condutor "B"</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Código de cores</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Azul claro</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Azul</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">AzCl&nbsp;- Az</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">2</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Branca</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Laranja</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">B&nbsp;- L</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">3</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Verde&nbsp;claro</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Verde</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">VCl&nbsp;- V</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">4</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Marrom&nbsp;claro</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Marrom</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">MCl - M</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Alinhado_Esquerda" style="padding-left: 60px;"><a name="item4.3"></a>&nbsp;4.3.<strong> Requisitos&nbsp;mecânicos</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.3.1"></a>4.3.1. O&nbsp;alongamento à ruptura dos condutores, medido conforme <a href="https://www.abnt.org.br/busca360/6810:2010/1,2,3,5">ABNT NBR 6810</a>, deve ser de,&nbsp;no mínimo,&nbsp;8%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.3.2"></a>4.3.2. O alongamento à ruptura da isolação do condutor, medido conforme norma <a href="https://www.abnt.org.br/busca360/9141:1998/1,2,3,5">ABNT NBR 9141</a>, deve ser de, no mínimo, de 100%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.3.3"></a>4.3.3. Quando o cabo de acesso for ensaiado&nbsp;segundo a norma <a href="https://www.abnt.org.br/busca360/9141:1998/1,2,3,5">ABNT NBR 9141</a>,&nbsp;o&nbsp;material&nbsp;original&nbsp;da capa externa deve atender aos valores especificados na<a href="#tabela3"> tabela 3</a>, adaptada da norma<a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=UL&amp;item_s_key=00114989&amp;item_key_date=780615&amp;input_doc_number=444&amp;input_doc_title=&amp;org_code=UL"> UL 444:2017</a>,&nbsp;quanto à resistência&nbsp;à&nbsp;tração&nbsp;e alongamento à ruptura de seu&nbsp;material.&nbsp;Quando&nbsp;houver duas capas, as duas devem ser ensaiadas.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: center;"><a id="tabela3"></a>Tabela 3&nbsp;&nbsp;–&nbsp;Resistência à tração e alongamento à ruptura do material de capa</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Material</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Descrição do material</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Alongamento mínimo [%]</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Resistência à tração mínima [MPa]</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">ECTFE</p>
+<p class="Tabela_Texto_Centralizado">ETFE</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Copolímero de etileno e clorotrifluoroetileno</p>
+<p class="Tabela_Texto_Centralizado">Etileno tetrafluoroetileno</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">34,5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">FEP</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Etileno-polipropileno fluoretizado</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">200</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">17,2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">FRPE</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">PE (polietileno) retardante à chama</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">8,3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">PEAD</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">PE (polietileno) de alta densidade</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">300</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">16,5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">PEBD</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">PE (polietileno) de baixa densidade</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">350</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">9,7</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">PFA</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Perfluoroalcoxialcano</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">200</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">17,2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">PP</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Polipropileno</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">150</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">20,7</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">PVC</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Policloreto de vinila</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">13,8</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">PVDF</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Fluoreto de polivinilideno</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">24,1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">SRPVC</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">PVC semirrígido</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">20,7</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">PTFE</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Politetrafluoretileno</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">175</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">27,6</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">XL</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Reticulado (<em>cross-linked</em>)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">150</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">10,3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">XLPO</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Poliolefina reticulada</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">150</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">13,8</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">EVA</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Etileno vinil acetato</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">8,3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">PU</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Poliuretano</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">300</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">10,0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Centralizado">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.3.4"></a>4.3.4. Quando o cabo de acesso for ensaiado&nbsp;segundo as normas <a href="https://www.abnt.org.br/busca360/9141:1998/1,2,3,5">ABNT NBR 9141</a> e <a href="https://www.abnt.org.br/busca360/ABNT%20NBR%209148:1998%20/1,2,3,5">ABNT NBR 9148</a>,&nbsp;o&nbsp;material&nbsp;da capa externa deve atender aos valores especificados na <a href="#tabela4">tabela&nbsp;4</a>, adaptada da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=UL&amp;item_s_key=00114989&amp;item_key_date=780615&amp;input_doc_number=444&amp;input_doc_title=&amp;org_code=UL">UL 444:2017</a>, quanto à&nbsp;retenção&nbsp;da&nbsp;tração&nbsp;e&nbsp;do&nbsp;alongamento&nbsp;de seu&nbsp;material envelhecido. Quando houver duas capas, as duas devem ser ensaiadas.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: center;"><a id="tabela4"></a>Tabela 4&nbsp;–&nbsp;Retenção&nbsp;da&nbsp;tração&nbsp;e&nbsp;do&nbsp;alongamento&nbsp;do material da&nbsp;capa&nbsp;envelhecido</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td colspan="1" rowspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>Classe</strong></p>
+<p class="Tabela_Texto_Centralizado"><strong>[°C]</strong></p>
+</td>
+<td colspan="1" rowspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>Material</strong></p>
+</td>
+<td colspan="1" rowspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>Tempo</strong></p>
+<p class="Tabela_Texto_Centralizado"><strong>[dias]</strong></p>
+</td>
+<td colspan="1" rowspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>Temperatura</strong></p>
+<p class="Tabela_Texto_Centralizado"><strong>[°C]</strong></p>
+</td>
+<td colspan="2" rowspan="1">
+<p class="Tabela_Texto_Centralizado"><strong>Retenção do original [%]</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Alongamento</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Resistência à tração</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">75</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">FRPE</p>
+<p class="Tabela_Texto_Centralizado">PEAD</p>
+<p class="Tabela_Texto_Centralizado">PEBD</p>
+<p class="Tabela_Texto_Centralizado">PP</p>
+<p class="Tabela_Texto_Centralizado">PVC</p>
+<p class="Tabela_Texto_Centralizado">SRPVC</p>
+<p class="Tabela_Texto_Centralizado">XL</p>
+<p class="Tabela_Texto_Centralizado">EVA</p>
+<p class="Tabela_Texto_Centralizado">PU</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">2</p>
+<p class="Tabela_Texto_Centralizado">2</p>
+<p class="Tabela_Texto_Centralizado">2</p>
+<p class="Tabela_Texto_Centralizado">10</p>
+<p class="Tabela_Texto_Centralizado">10</p>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">2</p>
+<p class="Tabela_Texto_Centralizado">2</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">100</p>
+<p class="Tabela_Texto_Centralizado">100</p>
+<p class="Tabela_Texto_Centralizado">100</p>
+<p class="Tabela_Texto_Centralizado">100</p>
+<p class="Tabela_Texto_Centralizado">100</p>
+<p class="Tabela_Texto_Centralizado">113</p>
+<p class="Tabela_Texto_Centralizado">113</p>
+<p class="Tabela_Texto_Centralizado">100</p>
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">50</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">75</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">85</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">75</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">90</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">PVC</p>
+<p class="Tabela_Texto_Centralizado">SRPVC</p>
+<p class="Tabela_Texto_Centralizado">XL</p>
+<p class="Tabela_Texto_Centralizado">EVA</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">7</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">121</p>
+<p class="Tabela_Texto_Centralizado">121</p>
+<p class="Tabela_Texto_Centralizado">121</p>
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">50</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">75</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">85</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">80</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">105</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">XLPO</p>
+<p class="Tabela_Texto_Centralizado">PVC</p>
+<p class="Tabela_Texto_Centralizado">SRPVC</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">7</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">136</p>
+<p class="Tabela_Texto_Centralizado">136</p>
+<p class="Tabela_Texto_Centralizado">136</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">70</p>
+<p class="Tabela_Texto_Centralizado">50</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">85</p>
+<p class="Tabela_Texto_Centralizado">85</p>
+<p class="Tabela_Texto_Centralizado">70</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">125</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">PVDF</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">ou 30</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">158</p>
+<p class="Tabela_Texto_Centralizado">136</p>
+</td>
+<td colspan="2" rowspan="1">
+<p class="Tabela_Texto_Centralizado">Teste de flexão no mandril</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">150</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">ECTFE ETFE</p>
+<p class="Tabela_Texto_Centralizado">PVDF</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">60</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">180</p>
+<p class="Tabela_Texto_Centralizado">158</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">50</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">85*</p>
+<p class="Tabela_Texto_Centralizado">50</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">200</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">FEP</p>
+<p class="Tabela_Texto_Centralizado">PFA</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">7</p>
+<p class="Tabela_Texto_Centralizado">4</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">232</p>
+<p class="Tabela_Texto_Centralizado">260</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">85</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">75</p>
+<p class="Tabela_Texto_Centralizado">85</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">250</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">PTFE</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">60</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">260</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">85</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">85</p>
+</td>
+</tr>
+<tr>
+<td colspan="6">
+<p class="Tabela_Texto_Alinhado_Esquerda">*&nbsp;Ou mínimo de 34,5 MPa.</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">Nota: Pode ser utilizado um isolante ou revestimento de material diferente dos mencionados na primeira coluna desta tabela, desde que tenha sido avaliado para verificar a aceitabilidade para uso na aplicação pretendida.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.3.5"></a>4.3.5. Os cabos flexíveis blindados de categorias 3 a 8 devem atender ao requisito de vida útil após 500 ciclos de flexão&nbsp;estabelecido no item 5.5.2 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a>.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.4"></a>4.4.<strong> Comportamento&nbsp;frente&nbsp;à&nbsp;chama</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.4.1"></a>4.4.1. A classificação dos&nbsp;cabos&nbsp;de transmissão de dados&nbsp;indicados para uso&nbsp;em&nbsp;ambientes internos (<em>indoor</em>)&nbsp;deve&nbsp;ser&nbsp;comprovada&nbsp;através dos&nbsp;ensaios&nbsp;correspondentes à sua indicação&nbsp;conforme estabelecido na norma <a href="https://www.abnt.org.br/busca360/14705:2010/1,2,3,5">ABNT NBR 14705</a>.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.5"></a>4.5.&nbsp;<strong>Requisitos do cabo&nbsp;de&nbsp;uso externo</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.5.1"></a>4.5.1. O cabo&nbsp;de transmissão de dados indicado para uso em ambientes externos deve ser submetido&nbsp;ao ensaio de&nbsp;intemperismo&nbsp;de acordo com o ciclo 1 da&nbsp; norma <a href="https://webstore.ansi.org/standards/astm/astmg15521">ASTM G155</a> durante 720 horas.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.5.1.1"></a>4.5.1.1. Após o ensaio, devem ser verificados o alongamento à ruptura e a resistência à tração do revestimento externo&nbsp;conforme a norma <a href="https://www.abnt.org.br/busca360/9141:1998/1,2,3,5">NBR 9141</a>. Os valores obtidos não devem diferir em mais de 25% dos valores originais do revestimento externo.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.5.1.2"></a>4.5.1.2. Opcionalmente, para cabos com capa de PE ou PVC de cor preta,&nbsp;o ensaio de&nbsp;resistência ao intemperismo&nbsp;pode ser substituído pelo&nbsp;ensaio de coeficiente de absorção UV&nbsp;do item&nbsp;4.5.2 abaixo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.5.2"></a>4.5.2. Os&nbsp;cabos de uso externo com capa de&nbsp;PE ou&nbsp;de&nbsp;PVC&nbsp;de&nbsp;cor preta,&nbsp;quando submetidos&nbsp;ao ensaio de coeficiente de absorção&nbsp;UV&nbsp;segundo a norma <a href="https://webstore.ansi.org/standards/astm/astmd334921">ASTM D 3349</a>, devem apresentar, no&nbsp;mínimo,&nbsp;2800 absorções/cm para PVC&nbsp;e,&nbsp;no&nbsp;mínimo,&nbsp;4000 absorções/cm para PE.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.6"></a>4.6.&nbsp;<b>Requisitos de transmissão</b></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.6.1"></a>4.6.1. Os requisitos técnicos constantes desta seção se aplicam exclusivamente às categorias de cabos explicitamente definidas nos mesmos.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.6.2"></a>4.6.2. Os equipamentos e&nbsp;<em>setups&nbsp;</em>de testes utilizados para verificação dos requisitos de transmissão&nbsp;devem atender:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.6.2.1"></a>4.6.2.1. ao disposto no anexo C ou D da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a> para as categorias&nbsp;3, 5e, 6, 6A e 8;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.2.2.ao disposto no&nbsp;item 6.3 da norma <a href="https://webstore.ansi.org/standards/iec/iec61156ed2007">IEC 61156-1</a> e seus adendos (vide referências normativas)&nbsp;para as categorias 7 e 7A, sendo opcional o uso de&nbsp;um equipamento conforme&nbsp;o&nbsp;anexo C da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a>,&nbsp;desde que atenda o referido anexo até as frequências máximas da presente norma.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.6.3"></a>4.6.3 Perda de retorno</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.6.3.1"></a>4.6.3.1. Quando ensaiados conforme o estabelecido no item 6.1.1 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568-2 D</a>, os cabos de acesso de categorias 3 a 6A e 8 devem atender ao disposto no item 6.8.2 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a> ou os de categorias 3 a 6A ao&nbsp;item 5.1.9 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a>.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.6.3.2"></a>4.6.3.2. Os valores em módulo de perda de retorno obtidos nos cabos de acesso&nbsp;com um comprimento de 100 metros de categorias 5e, 6 e 6A não devem ser inferiores aos valores calculados através das equações estabelecidas no item 6.11.1 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA 568.2-D</a> ou item 5.1.9 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a>.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.6.3.3"></a>4.6.3.3. Os&nbsp;cabos de acesso de&nbsp;categorias&nbsp;7 e 7A&nbsp;&nbsp;devem&nbsp;atender&nbsp;ao&nbsp;disposto&nbsp;no item&nbsp;6.3.11 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.6.4"></a>4.6.4 Perda de inserção</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.6.4.1"></a>4.6.4.1. Os valores de perda de inserção&nbsp;obtidos nos cabos de acesso de categoria 8,&nbsp;nas&nbsp;temperaturas de 20°C, 40°C e 60°C,&nbsp;não devem ser superiores ao&nbsp;estabelecido no item 6.8.4 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a>.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.6.4.2"></a>4.6.4.2. Os valores de perda de inserção&nbsp;obtidos nos cabos de acesso de categorias 7 e 7A, nas temperaturas de 20°C, 40°C e 60°C, devem atender ao estabelecido nos item 6.3.3 da norma<a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC"> IEC 61156-6</a>.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.6.4.3"></a><span style="text-decoration: line-through;">4.6.4.3. Os cabos de acesso&nbsp;de categorias 3 a 6A, quando ensaiados às&nbsp;temperaturas de 20°C, 40°C e 60°C, não devem apresentar valores de perda de inserção superiores ao estabelecido no item 6.8.3, tabela 107, da&nbsp;norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a> ou 5.1.10 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a>. Observar equações na <a href="#tabela5">tabela 5</a> onde é aplicado o fator de correção&nbsp;<em>de-rating</em>&nbsp;definido na tabela 110 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a> que deve ser de 1,2 para cabos de bitola até 24 AWG e de 1,5 para cabos de bitola 26 AWG.</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.4.3. Os cabos de acesso de categorias 3 a 6A, quando ensaiados às temperaturas de 20°C, 40°C e 60°C, não devem apresentar valores de perda de inserção superiores ao estabelecido no item 6.8.3, tabela 107, da norma ANSI/TIA-568.2-D ou no item 5.1.10 da norma ABNT NBR 14703. Deve-se observar as equações na tabela 5 que especifica a aplicação do fator de correção&nbsp;<em>de-rating</em>&nbsp;definido na tabela 110 da norma ANSI/TIA-568.2-D que deve ser de 1,2 para cabos de bitola até 24 AWG e de 1,5 para cabos de bitola 26 AWG. Para os&nbsp;cabos de bitola 28 AWG deve-se utilizar&nbsp;o fator de correção de-rating de 1,95 conforme tabela 6. <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art1">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: center;">&nbsp;<a id="tabela5"></a>Tabela 5&nbsp;– Perda&nbsp;de inserção máxima (condutores multifilares de bitolas 24 e 26 AWG)</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Categoria</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Faixa de frequências [MHz]</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Perda de inserção máxima [db/100 m a 20°C]</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">3</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">0,772&nbsp;≤&nbsp;<em>f</em>&nbsp;≤ 16</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,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"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">5e</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1&nbsp;≤&nbsp;<em>f</em>&nbsp;≤ 100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,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"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">6</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1&nbsp;≤&nbsp;<em>f</em>&nbsp;≤ 250</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,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"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">6A</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1&nbsp;≤&nbsp;<em>f</em>&nbsp;≤ 500</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,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"></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p class="Tabela_Texto_Centralizado">NOTA: F<sub>DR</sub>&nbsp;é o fator de correção&nbsp;<em>de-rating</em>&nbsp;que deve ser 1,2 para cabos de bitola até 24 AWG e 1.5 para cabos de bitola 26 AWG</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item4.6.4.4"></a>4.6.4.4. Os cabos flexíveis&nbsp;de categorias 5e a 6A de condutores multifilares de bitola 28 AWG, quando ensaiados a 20°C e com comprimento de 100 metros, não devem apresentar valores de perda de inserção superiores ao estabelecido na <a href="#tabela6">tabela 6</a>.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: center;"><a id="tabela6"></a>Tabela 6&nbsp;– Perda&nbsp;de inserção máxima (condutores multifilares de bitola 28 AWG)</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Categoria</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>frequências [MHz]</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Perda de inserção máxima [db/100 m a 20°C]</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">5e</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1&nbsp;≤&nbsp;<em>f</em>&nbsp;≤ 100</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUEAAAAsCAYAAAD7EwoBAAAAAXNSR0IArs4c6QAACyNJREFUeF7tnYux5DQQRbUZ8MmAzYCFCIAM2CICIAMoIqDYDIAIWMgAiIBPBkAEfDKAOvPmGo2eZLVkeTwet6u2tt6M3ZauWlet/mieBL9iBD4KIbwSQnjhsDgCjsDuEXgjhPBFCOH5XE+e7L6b4zrwfgjhvRDCx+NEuiRHwBHYGIF3Qwifnud2tilOgg+wABQrxrONB8xf7wjcMgLMkzdDCP+EEJ6GEL4PIfzQ2OCaDKy3b89yfzvvzGSc/B69qyYn3eEhI2sROgk+bH9/ORMgg+uXI+AIPEYA8vs6MRSYNxBLTE5z2FlkQIKQK/8zHyFZLLn4HRY5aTsgVuR+lX7hJPgADAA9AsdngiPgCEwIME++DCF8F2HyydkitLqQLDIgP0gufk86DBY56TMYO3+cSfyCtI9OgvgB2QZj2vvlCDgCZQT+PRPIr8mWFAPiVSNwFhkWErTIyTWJuY78i23x0UkQnwPAuBVo1GK/7ZAIYJmx9cVYSLelfA4J1lxJVhmQFMaJ5KW+R6uc3EBhDf6dkvmRSRCgWcWOjMEhZ7R3uhkBghBsQUskmH6ee4FVBkRFqlqcpoaxgvWGFWqVU+rkI2vwyATACiana7NW+AOOwIEQKFlfJULKQbNEBr5ILEQivEvk0C5Zg5P1elQSBFBWF8sKdiBdnxTM2uej6o8Vn3u5T/OFFLLYJ6jdlGU7vEQGAZjPztvuJXI0HhhA38jaPKoSYxIzgB4QuZymuAc+NPh37mVyez/sCBCMwBKL8wKZQ6TNtARGajIwTkiJSaPQzFnx1dK2QKpEtE/z/6gkCNAMpjW0b1eV/d7JCovyOSb7HcM1W55LJYNM3q6VpUWNssjI5R7G22HEWeTMYXFhTR6RBOUTwNE6l4u0pkLdomyswDQp9Rbb6W3aBoFc+VlKWKrVLe0mLDIIiryMdiO5/D6LnBpKRInR96+OSIItfowakPfyvanQ/F466/3oRoC5g66QJoMFmJbNEbT4UeRSeEtNBo/pIJPXz4EMtsJpVYpFzlxHaTtpOM+PSIIACshWP0a3xuzoQbYb/Iud3rnms/1Bcf5yK3rz0b3lsYCgbn2Xhb5jUT6NSVCHCGDK1iZDTgN4ni0m/jZWiXRrZS2MXlu7WAFeazwsYW1s1GetgPobRdIKCHn/ef47TUyFlHrGjPew3WArjMN67lLbaM+1qmxaiuRLbbfIgFBkdaCnaXmYrBPhhX7/tOGRa1uMRcu83AMJgiHj/AQSVIY2gQIdJNA6oeg0Iez4FBbIkImlSWwpjG4Buvde2kX/Zs8YOwu/Fja8jgGBoLWC8jdkrXZCVOCcuwhm9Fa9QGikC9TGXAmrEDC4tJweAtHWKgrSfvUUyffIoP9gLT2VzzjGlHvof4wxEUoW+i3Onrz2WLTMtT0QIP1RvuGzdDucq8mzAICTEQsyNoFRLC5FGy01gZZ3Lb2HtqLMKHDLtSY2OUcvg8QlcmIi5tqMFdM7Ea1WoKJpve4TVl1IpoU4e4rk0/G0yIirEfT8tFU6fwD2jEdsLaNH9MeymLboWe3eLcai1qb4+72QoHB85BPsmegSlub/oPgoj3xvvSRYS92ABCAK6wSjjz2W05rYWGqYIcq0jyVitCotz1vOhMtZ+tZ3cF8PCfYWycftssiYooTRg+CCXpVIP2ctpniM1lvJ32IsWsZ6L/dOYzjCEixlcGvPrWzyWmH0HHgM/AeZVVe+nBarbgsSTDPtU2xoExYF218ukjjxOc05l5EBKVrPcsvhCwHO+QJRFNwcKmjnfRbSTN/VSoJLiuT17iUyan5j9A59rB3CO1JvtxqLvZBaTztPLo0RJMjLNYnjSavVVKVptcLoWieYSCidttc9BLgkR7DHErRgwz3yN8WJyrmtnDDShCiRPwQAec1t1cAPArVE8ZaeudhKgkuL5MGpV0ZpUZdFK+KzJpWP0Nt4blx7LGrzcs/fM6dfjCJBBjo9vhq/ilJRSk7xNBO8BqgUSnW/VkWU3MkPYJz8ta1Vrb2aOHPY0CYCUukWnb5CcrnSvrmUFv1WCs/P1UYrCGbpA1vGdwzBk5KsVhJcWiRPO3plgAv4zgWa6A8LDP8sAZ+lehvjeu2x0EJu0ZNbucfquwbLl6NIUJOdSQdB6TqFoGeQiQujrQASJUXBe+p+NTF6qkV6LcEaNiWf6lxSN22Z81cxMU8DXCiDY1JyWSLKsp6tiqWodjye9JEr3brzd86aHVEk3yMjFwUu6WVty5w+t0RvJWuLsbDOyz3eN5wEUxBSv4mlMLoGZLyiktfV4gtE9haWYK5PKTY5d0KJBK1F67xDganUWmmxAtlWQmw9i4763moJyvqoFdvX9KWl0H5uYYDAPk8sYctOJ+4/22jmQI/eSs5WY1HDea/fD90OMzhpwi4TDZJSRNNSGD0H5gjfiiWqV2pDryVowQargn9xqsvFSRdRo5h8bxmc8uprmsvWYgXy2tYi+Rx+PSS4tEiedlhlMEbgFftHaTOWcmnhVN5mzUIeobfCdKux2CvJ1dpdDIykq68sKKyKUmF0ekBpOvDI4LNaYXSp0aUoG23iarEIe5Ncc1bFKGzYpjOpYmsrXUSEDRObq1bhwT1pvhuftViB3E+7llZH9JCgpUh+RME+2OOPpZ+6IMT4N6jRMyxBWdQq6uezuRzNkXq75VjUyGTJ93JRWWXUFh2rHO477cAQqEijUliUcxdXEdQKo/kepdWFsuT8TSr3mSuMTjtRK+635rpJ7skENhLnNbHRZFTQR7+9muIBsYGvhfilYFrYVHTekly91BGvBbA1WZrnakXyNb20yKB/jHN6ob9x4E3ZCJQuUjbH/JiLrI/WW9q35Vi0kEvLvSzq1gBTi9zavZMvvpVV95INPgfAWmcJ3io2WH64KiDCWl5gilurI76Ee48lWFPi+Ptbxb6lD7V79zIWtX7E32vhn8vyWOugCKVQPSqbq3XgHpQNC4tVoJboWsMi/f5WsVGABcvR6pRHQX4+W/e5JPVWbGRpWdJJWmXL2rPkO/bI3vqZvY1FC14syhBgKeFfO8c1Du2YChZaLMFbneQtoHOvoqYtfa+949ax0ZbP8lsQ9FX+T7YpliO2avis+f2tY7+073sai5a+WhL6lxwUUWvLdKReCxHci7LJDLYSQg3MPVgirdU1iiDTN0suoQWjte65F72ccyXou1sfi5Yxrp1kvvSgiFpbpgBjCwnWhO7p+1Kkd0998LY6AntFoBY0kmGRHs83sr9TlshRSXCt4MjIQXJZjsC9IjBX9jnqoIg57KazBEmAPyoJ9pTr3atCer8cgWsiYD3DculBEXN9upj/RyVBpRukR1xdUxn8XY7APSKQOxE87qf192xG5ESW8IVgyYc+5doelQTpO47ZUgH/PSqn98kRWBsBgo76jZbcwcVWK3BUTmSuvwq4TCcsHZkEGTCI0H91bu2p4fKPhkDpxBxrddeIgyJKmD+qvT8yCQKS5Vj7oymw99cRWIpAWq6JPKsVyL0jDorI9SHrBjs6Cbo1uFTd/XlHII8A5ZpcqsxqOcl8xKEduVbRBspHLw4fOToJAlTuGCtXbEfAEViGwFSbew5CtJxetEZQRCf/QMoXZXpOgg9mugZordrWZerkTzsC+0RAv/HNUWzW37NZKyiCdYnB86jqxknwQblYtXDajj5UYZ+q6612BMYgoEMKSEepza3RB0XEPcj9BtL0vZPg/1DlDoIdowouxRE4LgK533XOobHWQREEaTBwiocQOwleDoeO7mk5dPS46u09dwTqCEBCWIK1a41DOyw1yuE/MsqmUD0CYKkAAAAASUVORK5CYII="></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">6</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1&nbsp;≤&nbsp;<em>f</em>&nbsp;≤ 250</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,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"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">6A</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1&nbsp;≤&nbsp;<em>f</em>&nbsp;≤ 500</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,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"></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Alinhado_Esquerda">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.6.5"></a><span style="text-decoration: line-through;">4.6.5. Os valores de NEXT e PSNEXT obtidos nos cabos de acesso não devem ser inferiores aos respectivos valores estabelecidos no&nbsp;item 6.3.5&nbsp;da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a> para os cabos de categorias 5e a 7A.&nbsp;&nbsp;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">4.6.5. Os valores de NEXT e PSNEXT obtidos nos cabos de acesso não devem ser inferiores:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.5.1. ao estabelecido nos itens 6.6.9 e 6.6.10, respectivamente, da norma ANSI/TIA 568.2-D para os cabos de categorias 3 a 6A e 8; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.5.2. ao estabelecido no item 6.3.5 da norma IEC 61156-6 para os cabos de categorias 7 e 7A.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art2">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.6.6"></a><span style="text-decoration: line-through;">4.6.6. Os valores de ACRF e PSACRF obtidos nos cabos de acesso não&nbsp;devem&nbsp;ser&nbsp;inferiores aos respectivos valores estabelecidos no item&nbsp;6.3.6 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a> para os cabos de categorias 5e a 7A.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">4.6.6. Os valores de ACRF e PSACRF&nbsp;obtidos nos cabos de acesso não devem ser inferiores:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.6.1. ao estabelecido nos itens 6.6.12 e 6.6.14, respectivamente, da norma ANSI/TIA 568.2-D para os cabos de categorias 3 a 6A e 8; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.6.2. ao estabelecido no item 6.3.6 da norma IEC 61156-6 para os cabos de categorias 7 e 7A.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art3">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.6.7"></a>4.6.7. Os valores de TCL obtidos nos cabos de acesso não&nbsp;devem&nbsp;ser&nbsp;inferiores:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY"><a name="item4.6.7.1"></a><span style="text-decoration: line-through;">4.6.7.1. ao&nbsp;estabelecido&nbsp;no item 6.3.4 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a> para os cabos de categorias 5e a 7A; e</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY">4.6.7.1.&nbsp;ao estabelecido no item 6.3.4 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a> para os cabos de categorias 7 e 7A; e&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art4">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY"><a name="item4.6.8.2"></a><span style="text-decoration: line-through;">4.6.7.2. ao estabelecido no item 6.4.17&nbsp;da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a> ou item 5.1.18&nbsp;da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a> para os cabos com blindagem de categorias 6 e 6A, exceto os x/FTP, sendo que para estes, blindados individualmente,&nbsp;o valor obtido em módulo&nbsp;de TCL medido de 1 até 250 MHz deve ser maior ou igual a&nbsp;<em>40 - 15 log(f) dB</em>.</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY">4.6.7.2.&nbsp;ao estabelecido no item 6.6.15 da norma ANSI/TIA-568.2-D para os cabos com blindagem de categorias 3 a 6A e 8, exceto os x/FTP, sendo que para estes, blindados individualmente, o valor obtido em módulo de TCL medido de 1 até 250 MHz deve ser maior ou igual a 40 - 15 log(f) dB.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art5">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.6.8"></a>4.6.8. Os valores de ELTCTL obtidos nos cabos de acesso&nbsp;não&nbsp;devem&nbsp;ser&nbsp;inferiores:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY"><a name="item4.6.8.1"></a>4.6.8.1. ao&nbsp;estabelecido&nbsp;no item 6.3.4 da norma<a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC"> IEC 61156-6</a> para os cabos de categorias 7 e 7A; e</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY"><a name="item4.6.8.2"></a><span style="text-decoration: line-through;">4.6.8.2. ao estabelecido no item 5.1.18 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a> para cabos de categorias 6 e 6A.</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY">4.6.8.2.&nbsp;ao estabelecido no item 5.1.19 da norma ABNT NBR 14703 para cabos de categorias 6 e 6A ou no item 6.6.17 da norma ANSI/TIA-568.2-D para cabos de categorias&nbsp;&nbsp;6, 6A e 8.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art6">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.6.9"></a><span style="text-decoration: line-through;">4.6.9. Os&nbsp;valores de&nbsp;atraso&nbsp;de propagação obtidos nos&nbsp;cabos de acesso não devem ser&nbsp;superiores:</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY"><a name="item4.6.9.1"></a><span style="text-decoration: line-through;">4.6.9.1. ao&nbsp;estabelecido&nbsp;no item 6.3.2.1 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a> para os cabos de categorias 7 e 7A; e</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY"><a name="item4.6.9.2"></a><span style="text-decoration: line-through;">4.6.9.2. ao estabelecido no item&nbsp;5.1.15 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a> para os cabos de categorias 3 a 6A.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">4.6.9.&nbsp;Os valores de atraso de propagação obtidos nos cabos de acesso não devem ser superiores:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.9.1. ao estabelecido no item 6.3.2.1 da norma IEC 61156-6 para os cabos de categorias 7 e 7A e;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.9.2.&nbsp;ao estabelecido no item 5.1.15 da norma ABNT NBR 14703 para cabos de categorias 6 e 6A ou no item 6.6.19 da norma ANSI/TIA-568.2-D para cabos de categorias 3 a 6A; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.9.3. ao estabelecido no item 6.6.20 da norma ANSI/TIA-568.2-D para os cabos de categoria 8.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art7">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.6.10"></a><span style="text-decoration: line-through;">4.6.10. A diferença entre os atrasos de propagação obtidos nos cabos de acesso não deve&nbsp;ser superior:</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY"><a name="item4.6.10.1"></a><span style="text-decoration: line-through;">4.6.10.1. ao&nbsp;estabelecido&nbsp;no item&nbsp;6.3.2.2 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a> para os cabos de categorias 7 e 7A; e</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;" align="JUSTIFY"><a name="item4.6.10.2"></a><span style="text-decoration: line-through;">4.6.10.2. ao estabelecido no item 5.1.16 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a> às temperaturas de 20°C, 40°C e 60°C para os cabos&nbsp;de categorias 3 a 6A.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">4.6.10. A diferença entre os atrasos de propagação obtidos nos cabos de acesso não deve ser superior:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.10.1. ao estabelecido no item 6.3.2.2 da norma IEC 61156-6 para os cabos de categorias 7 e 7A e;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.10.2.&nbsp;ao estabelecido no item 5.1.16 da norma ABNT NBR 14703 para cabos de categorias 6 e 6A ou no item 6.6.21 da norma ANSI/TIA-568.2-D para cabos de categorias 3 a 6A; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.10.3. ao estabelecido no item 6.6.22 da norma ANSI/TIA-568.2-D para os cabos de categoria 8.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art8">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.6.11"></a><span style="text-decoration: line-through;">4.6.11. Os valores de PSANEXT obtidos nos cabos de acesso não devem ser inferiores ao estabelecido no item 5.1.21 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a> para os cabos de categorias 3, 5e,&nbsp;6, 7 e 7A.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">4.6.11. Os valores de PSANEXT obtidos nos cabos de acesso não devem ser inferiores:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.11.1. ao estabelecido no item 6.6.25 da norma ANSI/TIA 568.2-D para os cabos de categorias 3 a 6A e 8, sendo admitido também o uso do disposto no item 5.1.21 da norma ABNT NBR 14703 para cabos de categoria 6A; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.11.2. ao estabelecido no item 6.3.7 da norma IEC 61156-6 para os cabos de categoria 7A.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art9">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item46.12"></a><span style="text-decoration: line-through;">4.6.12. Os valores de PSAACRF obtidos nos&nbsp;cabos de transmissão de dados&nbsp;não devem ser inferiores ao estabelecido no item&nbsp;5.1.22 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a> para os cabos de categorias 6A , 7 e 7A.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">4.6.12. Os valores de PSAACRF obtidos nos cabos de transmissão de dados não devem ser inferiores:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.12.1.&nbsp;ao estabelecido no item 6.6.29 da norma ANSI/TIA 568.2-D para os cabos de categorias 3 a 6A, sendo admitido também o uso do disposto no item 5.1.22 da norma ABNT NBR 14703 para cabos de categoria 6A e;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.12.2. ao estabelecido no item 6.6.30 da norma ANSI/TIA 568.2-D para os cabos de categoria 8; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">4.6.12.3. ao estabelecido no item 6.3.8 da norma IEC 61156-6 para os cabos de categoria 7A.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art10">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item4.7"></a>4.7<strong> Requisitos de Parâmetros Primários</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;" align="JUSTIFY"><a name="item4.7.1"></a>4.7.1. O valor da&nbsp;resistência elétrica dos condutores&nbsp;do cabo de acesso, medido&nbsp;em corrente contínua, não deve ser superior:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.7.1.1"></a><span style="text-decoration: line-through;">4.7.1.1. ao estabelecido no item 6.8.1 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a> para os cabos de categorias 3 a 6A e 8;</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY">4.7.1.1. ao estabelecido no item 6.8.1 da norma ANSI/TIA-568.2-D para os cabos de categorias 3 a 6A e ao estabelecido no item G.1.1 da norma ANSI/TIA-568.2-D para todas as categorias de cabo cuja bitola do condutor seja 28 AWG; ou&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art11">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.7.1.2"></a>4.7.1.2. ao&nbsp;estabelecido&nbsp;no item&nbsp;6.2.1 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a> para os cabos de categorias 7 e 7A,&nbsp;quando referida a 20°C conforme norma <a href="https://www.abnt.org.br/busca360/6814:1986/1,2,3,5">ABNT NBR 6814</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.7.2"></a>4.7.2. O desequilíbrio resistivo dos pares do cabo de acesso&nbsp;não deve ser superior:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.7.2.1"></a>4.7.2.1. ao&nbsp;estabelecido&nbsp;no item 6.2.2.1 da norma<a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC"> IEC 61156-6 </a>para os cabos de categorias 7 e 7A,&nbsp;medido conforme norma <a href="https://www.abnt.org.br/busca360/9130:2009/1,2,3,5">ABNT NBR 9130</a>; e</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.7.2.2"></a><span style="text-decoration: line-through;">4.7.2.2. ao estabelecido no&nbsp;item 5.1.2 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a> para os cabos de categorias 3 a 6A.</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY">4.7.2.2. ao estabelecido no item 6.6.2 da norma ANSI/TIA-568.2-D para os cabos de categorias 3 a 6A e 8.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art12">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;" align="JUSTIFY"><a name="item4.7.3"></a>4.7.3. O desequilíbrio capacitivo par terra do cabo de acesso com blindagem&nbsp;não&nbsp;deve ser superior:&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.7.3.1"></a>4.7.3.1. ao&nbsp;especificado&nbsp;no item 6.2.6 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=IEC&amp;item_s_key=00394197&amp;item_key_date=790831&amp;input_doc_number=61156%2D6&amp;input_doc_title=&amp;org_code=IEC">IEC 61156-6</a> para os cabos de categorias 7 e 7A, medido conforme norma <a href="https://www.abnt.org.br/busca360/9138:2015/1,2,3,5">ABNT NBR 9138</a>; e</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item4.7.3.2"></a><span style="text-decoration: line-through;">4.7.3.2. ao&nbsp;especificado&nbsp;no item 5.1.6 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a> &nbsp;para os cabos de categorias 3 a 6A.</span></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY">4.7.3.2. ao especificado no item 6.6.5 da norma ANSI/TIA-568.2-D para os cabos de categorias 3 a 6A e&nbsp; 8.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art13">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;" align="JUSTIFY"><a name="item4.7.4"></a>4.7.4. O&nbsp;isolamento entre os condutores do&nbsp;cabo de acesso&nbsp;deve suportar a tensão elétrica aplicada&nbsp;conforme estabelecido no item 5.1.3 da norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;" align="JUSTIFY"><a name="item4.7.5"></a><span style="text-decoration: line-through;">4.7.5. O isolamento dos condutores do cabo de acesso com blindagem de categorias 3 a 6A deve suportar a tensão elétrica aplicada&nbsp;conforme estabelecido no item 5.6.8 da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=TIA&amp;item_s_key=00339843&amp;item_key_date=810330&amp;input_doc_number=TIA%2D568%2E2%2DD&amp;input_doc_title=&amp;org_code=TIA">ANSI/TIA-568.2-D</a>.</span></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;" align="JUSTIFY">4.7.5. O isolamento entre os condutores com blindagem do cabo de acesso deve suportar a tensão elétrica aplicada conforme estabelecido no item 5.1.3 da norma ABNT NBR 14703.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1967-ato-11264#art13">(Redação dada pelo&nbsp;Ato nº 11264, de 02 de agosto de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;" align="JUSTIFY"><a name="item4.7.6"></a>4.7.6. O valor da resistência de isolamento obtida&nbsp;em cada condutor deve atender ao estabelecido no item 5.14 da&nbsp;norma <a href="https://www.abnt.org.br/busca360/14703:2012%20/1,2,3,5">ABNT NBR 14703</a>.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item5"></a>5.&nbsp;<strong>DA IDENTIFICAÇÃO DA HOMOLOGAÇÃO</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1. A marcação do selo ANATEL e a identificação do código de homologação devem ser apresentadas na embalagem externa do produto, em conformidade com a regulamentação vigente. Adicionalmente, poderão ser utilizados meios de impressão gráfica nos catálogos dos produtos ou na documentação técnica pertinente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2. A identificação do código de homologação deverá constar, também,&nbsp;impressa de forma legível na capa externa dos cabos, ao longo do seu comprimento,&nbsp;da seguinte forma prevista no procedimento operacional para marcação da identificação da homologação Anatel em produtos para telecomunicações, anexo ao<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1451-ato-4088">&nbsp;ato nº 4088, de 31 de julho de 2020</a>:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">a) ANATEL HHHHH-AA-FFFFF; ou</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">b) ANATEL: HHHHH-AA-FFFFF.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">Onde:</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">HHHHH – identifica a homologação do produto por meio de numeração sequencial com 5 (cinco) caracteres;</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">AA – identifica o ano de emissão da homologação com 2 (dois) caracteres numéricos;</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">FFFFF – identifica o fabricante do produto com 5 (cinco) caracteres alfanuméricos.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item6"></a>6.<strong> DISPOSIÇÕES FINAIS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.1"></a>6.1. O cabo deve ser classificado e designado quanto à blindagem conforme o anexo E da norma <a href="https://global.ihs.com/doc_detail.cfm?&amp;input_search_filter=ISO&amp;item_s_key=00740874&amp;item_key_date=810831&amp;input_doc_number=11801%2D1&amp;input_doc_title=&amp;org_code=ISO">ISO/IEC 11801-1:2017</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.1"></a>6.1.1. A figura 1 apresenta o esquemático de classificação e as definições.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.2"></a>6.1.2. As figuras 2, 3 e 4 demonstram exemplos de construção de cabos quanto à blindagem.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.2"></a>6.2. A designação do cabo deve ser fornecida pelo fabricante e deve constar no relatório de ensaios do laboratório e no certificado de conformidade do agente responsável pela avaliação da conformidade.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.3"></a>6.3. Os requisitos aplicáveis para avaliação da conformidade de cada família de cabo estão definidos conforme o tipo de blindagem dos cabos, sua categoria, quantidade de pares e sua aplicação:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.1"></a>6.3.1. Cabo com blindagem: cabo com qualquer tipo de blindagem (fita ou trança) ao redor do par trançado ou do núcleo de pares trançados.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.3.1.1"></a>6.3.1.1. Exemplo de cabo com blindagem: cabo F/UTP&nbsp;(<em>foil screened twisted pair</em>).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.3.2"></a>6.3.2. Cabo sem blindagem: cabo sem qualquer tipo blindagem ao redor do par trançado ou do núcleo de pares trançados.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.2.1"></a>6.3.2.1. Exemplo de cabo sem blindagem: cabo U/UTP&nbsp;(<em>unshielded twisted-pair</em>).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.4"></a>6.4. Os ensaios de avaliação da conformidade realizados em uma amostra de cabo&nbsp;com blindagem não são válidos para outro cabo com a classificação de blindagem distinta, por exemplo:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.1"></a>6.4.1. Os ensaios realizados em um cabo S/UTP não são válidos para um cabo SF/UTP;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.2"></a>6.4.2. Os ensaios realizados em um cabo U/FTP não são válidos para um cabo F/FTP;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.3"></a>6.4.3. Os ensaios realizados em um cabo SF/FTP não são válidos para um cabo S/FTP;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.4"></a>6.4.4. Os ensaios realizados em um cabo SF/FTP não são válidos para um cabo F/FTP.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.5"></a>6.5. Para efeito de avaliação da conformidade os ensaios realizados em uma amostra de cabo para aplicação em uso interno são válidos para o cabo destinado ao uso externo com as mesmas características construtivas (categoria de cabeamento, classificação de blindagem e quantidade de pares) desde que o interessado apresente duas amostras do mesmo cabo:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.1"></a>6.5.1. Uma amostra com revestimento para aplicação em uso interno, que deve ser submetida a todos os ensaios;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.2"></a>6.5.2. Uma amostra com revestimento para aplicação em uso externo, que deve ser submetida aos ensaios do revestimento externo: alongamento à ruptura e resistência à tração (original e após envelhecimento), diâmetro externo do cabo e coeficiente de absorção ou intemperismo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.6"></a>6.6. Para efeito de avaliação da conformidade, caso um determinado cabo possua revestimento externo de cores distintas&nbsp;para aplicação em uso interno, o interessado deve declarar formalmente que&nbsp;o material base&nbsp;sem corante&nbsp;utilizado na fabricação da amostra submetida a ensaio&nbsp;será mantido, assim como suas características frente à chama.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.7"></a>6.7. Para efeito de avaliação da conformidade, os ensaios realizados em uma amostra de cabo para aplicação em uso externo são válidos para o cabo destinado ao uso interno com as mesmas características construtivas (categoria de cabeamento, classificação de blindagem e quantidade de pares) desde que o interessado apresente duas amostras do mesmo cabo:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.7.1"></a>6.7.1. Uma amostra com revestimento para aplicação em uso externo, que deve ser submetida a todos os ensaios;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.7.2"></a>6.7.2. Uma amostra com revestimento para aplicação em uso interno, que deve ser submetida aos ensaios do revestimento externo: alongamento à ruptura e resistência à tração (original e após envelhecimento), diâmetro externo do cabo e retardância à chama.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.8"></a>6.8. Para efeito de avaliação da conformidade, caso um determinado cabo possua revestimento externo de cores distintas, excetuando a cor preta, para aplicação em uso externo, o interessado deve declarar formalmente que o material base sem corante&nbsp;utilizado na fabricação da amostra submetida a ensaio&nbsp;será mantido, assim como suas características frente ao intemperismo. Os cabos com revestimento externo de cor preta devem ser submetidos ao ensaio de coeficiente de absorção.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.9"></a>6.9. É permitido apresentar para avaliação da conformidade um cabo com um único revestimento externo para uso interno e uso externo&nbsp;desde que o interessado apresente uma amostra do cabo para ser submetida a todos os ensaios exigidos para aplicação em ambas aplicações.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.10"></a>6.10. O cabo para aplicação em uso externo deve possuir condutores unifilares e revestimento externo (capa) resistente a UV. O cabo pode possuir blindagem ou não.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.11"></a>6.11. O cabo para aplicação em uso interno deve possuir revestimento externo (capa) com material retardante à chama. Os condutores podem ser sólidos ou flexíveis e o cabo pode possuir blindagem ou não.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.12"></a>6.12. O cabo para aplicação em uso externo e interno, mesmo que parcial, deve possuir condutores sólidos e revestimento externo (capa) com material retardante à chama e resistente a UV ou intemperismo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.13"></a>6.13. A amostra de cabo a ser submetida aos ensaios de transmissão para avaliação da conformidade deve possuir&nbsp;100 metros de comprimento. Para ensaios de queima, dependendo da categoria, será especificado a quantidade adicional necessária.</p>
+<p class="Texto_Alinhado_Esquerda">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/ato-386/figura1.png"></p>
+<p class="Texto_Centralizado" style="text-align: center;">Figura 1 –&nbsp;esquemático de classificação e definições</p>
+<p class="Texto_Centralizado">&nbsp;</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/ato-386/figura2.png"></p>
+<p class="Texto_Centralizado" style="text-align: center;">Figura 2&nbsp;– construção de cabo&nbsp;S/FTP: cabo com blindagem composta por uma trança de fios metálicos sobreposta ao núcleo com pares trançados blindados individualmente por uma fita laminada de metal</p>
+<p class="Texto_Centralizado">&nbsp;</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/ato-386/figura3.png"></p>
+<p class="Texto_Centralizado" style="text-align: center;">Figura 3&nbsp;– construção de cabo U/UTP: cabo sem blindagem no núcleo e nos pares e F/UTP: cabo com blindagem composta por uma fita laminada de metal sobreposta ao núcleo e sem blindagem nos pares</p>
+<p class="Texto_Centralizado">&nbsp;</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/ato-386/figura4.png"></p>
+<p class="Texto_Centralizado" style="text-align: center;">Figura 4&nbsp;– construção de cabo&nbsp;U/FTP: cabo sem blindagem no núcleo e com pares trançados blindados individualmente por uma fita laminada de metal e SF/UTP: cabo com blindagem composta por uma trança de fios metálicos sobreposta à fita laminada de metal e esta, por sua vez, sobreposta ao núcleo e sem blindagem nos pares</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.14"></a>6.14. Após a entrada em vigor destes requisitos técnicos, os laboratórios de ensaios habilitados pela Anatel para avaliação da conformidade de cabos de acesso serão considerados avaliados para os procedimentos equivalentes aos especificados neste documento até que obtenham a acreditação para realização de ensaios conforme estes requisitos.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1830"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação%20da%20Conformidade" class="link-categoria">Avaliação da Conformidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Cabo%20de%20Transmissão" class="link-categoria">Cabo de Transmissão</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Condutor%20Flexível%20ou%20Sólido" class="link-categoria">Condutor Flexível ou Sólido</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

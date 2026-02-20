@@ -1,0 +1,1044 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Resolução nº 640, de 11 de julho de 2014 (REVOGADA)</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2014/785-resolucao-640">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Ato normativo, Regulamento, Supressão de interferência, Interferência de radiofrequência, Televisão digital, Long Term Evolution, Serviço de radiofusão de sons e imagens (televisão), Serviço de retransmissão de TV, Serviço de radiocomunicação, NormaRadiofrequencia, RecursosPrestacao, ResolucaoRevogada">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprova o Regulamento sobre Condições de Convivência entre os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão do SBTVD e os Serviços de Radiocomunicação Operando na Faixa de 698 MHz a 806 MHz.">
+	<title>Anatel - Resolução nº 640, de 11 de julho de 2014 (REVOGADA)</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=87405558" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=608966893" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"8c0be25a5a70f825d18cd2bc113484bf","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=912107823" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025015812" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/resolucoes/2014/785-resolucao-640">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/resolucoes/2014" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes" class="pathway">Resoluções</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes/2014" class="pathway">2014</a> <span class="separator">&gt;</span> <span>Resolução nº 640, de 11 de julho de 2014 (REVOGADA)</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 active deeper parent"><a href="/legislacao/resolucoes">Resoluções</a><ul><li class="item-516"><a href="/legislacao/resolucoes/2025">2025</a></li><li class="item-501"><a href="/legislacao/resolucoes/2024">2024</a></li><li class="item-493"><a href="/legislacao/resolucoes/2023">2023</a></li><li class="item-488"><a href="/legislacao/resolucoes/2022">2022</a></li><li class="item-438"><a href="/legislacao/resolucoes/2021">2021</a></li><li class="item-430"><a href="/legislacao/resolucoes/2020">2020</a></li><li class="item-367"><a href="/legislacao/resolucoes/2019">2019</a></li><li class="item-312"><a href="/legislacao/resolucoes/2018">2018</a></li><li class="item-299"><a href="/legislacao/resolucoes/2017">2017</a></li><li class="item-294"><a href="/legislacao/resolucoes/2016">2016</a></li><li class="item-255"><a href="/legislacao/resolucoes/2015">2015</a></li><li class="item-226 current active"><a href="/legislacao/resolucoes/2014">2014</a></li><li class="item-164"><a href="/legislacao/resolucoes/2013">2013</a></li><li class="item-165"><a href="/legislacao/resolucoes/2012">2012</a></li><li class="item-166"><a href="/legislacao/resolucoes/2011">2011</a></li><li class="item-167"><a href="/legislacao/resolucoes/2010">2010</a></li><li class="item-168"><a href="/legislacao/resolucoes/2009">2009</a></li><li class="item-169"><a href="/legislacao/resolucoes/2008">2008</a></li><li class="item-170"><a href="/legislacao/resolucoes/2007">2007</a></li><li class="item-171"><a href="/legislacao/resolucoes/2006">2006</a></li><li class="item-172"><a href="/legislacao/resolucoes/2005">2005</a></li><li class="item-173"><a href="/legislacao/resolucoes/2004">2004</a></li><li class="item-174"><a href="/legislacao/resolucoes/2003">2003</a></li><li class="item-175"><a href="/legislacao/resolucoes/2002">2002</a></li><li class="item-176"><a href="/legislacao/resolucoes/2001">2001</a></li><li class="item-177"><a href="/legislacao/resolucoes/2000">2000</a></li><li class="item-178"><a href="/legislacao/resolucoes/1999">1999</a></li><li class="item-179"><a href="/legislacao/resolucoes/1998">1998</a></li><li class="item-180"><a href="/legislacao/resolucoes/1997">1997</a></li><li class="item-181"><a href="/legislacao/resolucoes/resolucoes-conjuntas">Resoluções Conjuntas</a></li></ul></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948c226f8f2b6f83&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Resolução nº 640, de 11 de julho de 2014 (REVOGADA)		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Segunda, 14 Julho 2014 09:17			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Segunda, 17 Fevereiro 2025 13:23			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 20556			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle"><a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1834-resolucao-759">Revogada pela Resolução nº 759, de 19 de janeiro de 2023</a></td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Aprova o Regulamento sobre Condições de Convivência entre os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão do SBTVD e os Serviços de Radiocomunicação Operando na Faixa de 698 MHz a 806 MHz.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de&nbsp;<a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=75&amp;data=14/07/2014">14/7/2014</a>,retificado em <a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=428&amp;data=24/07/2014" rel="nofollow">24/7/2014</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;"><strong>O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</strong>, no uso das atribuições que lhe foram conferidas pelo <a title="Acesse à Lei" href="/legislacao/leis/2-lei-9472#art22" rel="nofollow">art. 22</a> da Lei nº 9.472, de 16 de julho de 1997, e pelo<a title="Acesse ao Artigo" href="/legislacao/decretos/3-decreto-2338#art35" rel="nofollow"> art. 35</a> do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto no 2.338, de 7 de outubro de 1997;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO a atribuição da Anatel, de acordo com o disposto no <a title="Acesse ao Artigo" href="/legislacao/leis/2-lei-9472#art19" rel="nofollow">art. 19</a> da Lei nº 9.472, de 1997, de adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento das telecomunicações brasileiras;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO os termos do <a title="Acesse ao Artigo" href="/legislacao/leis/2-lei-9472#art157" rel="nofollow">art. 157</a> da Lei nº 9.472, de 1997, o qual estabelece ser o espectro de radiofrequências um recurso limitado, constituindo-se em bem público, administrado pela Agência;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO o disposto na <a title="Acesse à Resolução" href="/legislacao/resolucoes/2013/644-resolucao-625" rel="nofollow">Resolução nº 625, de 11 de novembro de 2013</a>, que aprovou a atribuição e a destinação da faixa de radiofrequências de 698 MHz a 806 MHz, bem como o Regulamento sobre Condições de Uso de Radiofrequências na Faixa de 698 MHz a 806 MHz;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO a previsão, constante do inciso I do <a title="Acesse ao Artigo" href="/legislacao/resolucoes/2013/644-resolucao-625#art8" rel="nofollow">art. 8º</a> da Resolução nº 625/2013, de publicação de Regulamento contra interferências prejudiciais, após o término dos testes realizados pela Anatel, visando garantir o funcionamento dos diversos serviços de telecomunicações e de radiodifusão, contendo os procedimentos de mitigação necessários;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO a importância do emprego de procedimentos e técnicas de mitigação com a finalidade de reduzir a possibilidade de interferências e facilitar a convivência entre os serviços de radiodifusão de sons e imagens e de retransmissão de televisão do SBTVD e os serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO os resultados dos testes de convivência realizados pela Anatel e entidades interessadas no laboratório do Instituto Nacional de Telecomunicações - INATEL, em Santa Rita do Sapucaí-MG e em campo na cidade de Pirenópolis-GO;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO as contribuições recebidas em decorrência da <a title="Acesse à Consulta Pública" href="http://sistemas.anatel.gov.br/SACP/Contribuicoes/TextoConsulta.asp?CodProcesso=C1769&amp;Tipo=1&amp;Opcao=finalizadas" rel="nofollow">Consulta Pública nº 18, de 28 de abril de 2014</a>, publicada no Diário Oficial da União de 2 de maio de 2014;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO deliberação tomada em sua <span style="background-color: #ffffff;">Reunião nº 749, realizada em 10 de julho de 2014</span>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO o constante dos autos do <a title="Acesse ao Processo" href="http://sistemas.anatel.gov.br/sicap/web/displayWeb.asp?id=4680820" rel="nofollow">Processo nº 53500.005363/2014</a>,</span></p>
+<p class="resolve" style="text-align: justify;"><span style="text-decoration: line-through;">RESOLVE:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art1"></a><span style="text-decoration: line-through;">Art. 1º Aprovar o Regulamento sobre Condições de Convivência entre os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão do SBTVD e os Serviços de Radiocomunicação Operando na Faixa de 698 MHz a 806 MHz, na forma do Anexo a esta Resolução.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art2"></a><span style="text-decoration: line-through;">Art. 2º Esta Resolução entra em vigor na data de sua publicação.</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">JOÃO BATISTA DE REZENDE</span><br><span style="text-decoration: line-through;">Presidente do Conselho</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p style="text-align: center;"><a id="Anexo"></a><span style="text-decoration: line-through;">ANEXO À RESOLUÇÃO Nº 640, DE 11 DE JULHO DE 2014</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through; font-size: medium;">REGULAMENTO SOBRE CONDIÇÕES DE CONVIVÊNCIA ENTRE OS SERVIÇOS DE RADIODIFUSÃO DE SONS E IMAGENS E DE RETRANSMISSÃO DE TELEVISÃO DO SBTVD E OS SERVIÇOS DE RADIOCOMUNICAÇÃO OPERANDO NA FAIXA DE 698 MHz A 806 MHz<br></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">CAPÍTULO I</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">OBJETIVO E ABRANGÊNCIA</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art1Anexo"></a><span style="text-decoration: line-through;">Art. 1º Este Regulamento tem por objetivo estabelecer critérios técnicos para mitigação das eventuais interferências prejudiciais entre os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão do Sistema Brasileiro de Televisão Digital - SBTVD operando nos canais de 14 a 51, na faixa de 470 MHz a 698 MHz, e estações dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz, de acordo com as características estabelecidas na <a title="Acesse à Resolução" href="/legislacao/resolucoes/2013/644-resolucao-625" rel="nofollow">Resolução nº 625, de 11 de novembro de 2013</a>.</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><span class="caption">CAPÍTULO II</span></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><span class="caption">DISPOSIÇÕES GERAIS</span></span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art2Anexo"></a><span style="text-decoration: line-through;">Art. 2º Aplica-se a este Regulamento o disposto no Regulamento de Uso do Espectro de Radiofrequências (RUE).</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art3Anexo"></a><span style="text-decoration: line-through;">Art. 3º Na elaboração deste Regulamento foram utilizadas as seguintes referências:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I - <a title="Acesse à Resolução" href="/legislacao/resolucoes/2013/644-resolucao-625" rel="nofollow">Resolução nº 625, de 11 de novembro de 2013</a>, que aprova a Atribuição, a Destinação e o Regulamento sobre Condições de Uso de Radiofrequências na Faixa de 698 MHz a 806 MHz;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II - <a title="Acesse à Resolução" href="/legislacao/resolucoes/2008/180-resolucao-498" rel="nofollow">Resolução nº 498, de 27 de março de 2008</a>, que aprova a Norma para Certificação e Homologação de Transmissores e Retransmissores para o Sistema Brasileiro de Televisão Digital Terrestre;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">III - <a title="Acesse ao Decreto" href="/legislacao/decretos/430-decreto-5820" rel="nofollow">Decreto 5.820, de 29 de junho de 2006</a>, alterado pelo <a title="Acesse ao Decreto" href="http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2013/Decreto/D8061.htm" rel="nofollow">Decreto 8.061, de 29 de julho de 2013</a>, que dispõe sobre a implantação do SBTVD-T, que estabelece diretrizes para a transição do sistema de transmissão analógica para o sistema de transmissão digital do Serviço de Radiodifusão de Sons e Imagens e do Serviço de Retransmissão de Televisão e dá outras providências;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IV - <a title="Acesse à Portaria" href="http://www.mdic.gov.br/arquivos/dwnl_1366205219.pdf" rel="nofollow">Portaria nº 14/2013, de 16 de fevereiro de 2013</a>, do Ministério das Comunicações, que estabelece diretrizes para a aceleração do acesso ao Sistema Brasileiro de Televisão Digital Terrestre – SBTVD-T e para a ampliação da disponibilidade de espectro de radiofrequência para atendimento dos objetivos do Programa Nacional de Banda Larga – PNBL;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">V - <a title="Acesse à Nota Técnica" href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=303896&amp;assuntoPublicacao=Nota%20T%E9cnica%20N%B0%207/2013-RFCEE,%20de%2029/04/2013&amp;caminhoRel=In%EDcio-Biblioteca-Apresenta%E7%E3o&amp;filtro=1&amp;documentoPath=303896.pdf" rel="nofollow">Nota Técnica - Avaliação de Convivência entre o Long Term Evolution (LTE) e o serviço de radiodifusão digital (TVD) na Faixa de 700 MHz</a>. Relatório dos testes realizados no Centro de Comunicações e Guerra Eletrônica do Exército - CCOMGEX Anatel, de 29 de abril de 2013;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VI - <a title="Acesse ao Relatório" href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=303897&amp;assuntoPublicacao=Relat%F3rio%20de%20Testes%20-%20700%20MHz,%20de%2020/06/2013&amp;caminhoRel=In%EDcio-Biblioteca-Apresenta%E7%E3o&amp;filtro=1&amp;documentoPath=303897.pdf" rel="nofollow">Relatório de Testes - Resultados dos Testes Laboratoriais sobre Convivência LTE e TVD em 700 MHz, realizados no Laboratório CertLab - Anatel, de 20 de junho de 2013</a>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VII - Relatório Técnico - Convivência do LTE com a TV Digital Terrestre: consolidação de Testes Laboratoriais e Benchmarking Internacional - Fundação Centro de Pesquisas e Desenvolvimento em Telecomunicações – CPqD;</span></p>
+<p class="texto-recuo-1a-linha"><span style="text-decoration: line-through;">VIII - Relatório de Teste para Determinação da Relação de Proteção e Limiar de Bloqueio dos Receptores de Televisão Digital Terrestre ISDB-TB com a Introdução do Serviço Móvel na Faixa de 700 MHz. Laboratório de Pesquisas em TV Digital da Escola de Engenharia da Universidade Presbiteriana Mackenzie, de 4 de novembro de 2013;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IX - <a title="Acesse o Relatório" href="https://i.teletime.com.br/arqs/Outro/75922.pdf" rel="nofollow">Report for GSMA on the Coexistence of ISDB-T and LTE - Advanced Topographic Development &amp; Images Limited - ATDI, de 15 de janeiro de 2014</a>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">X - <a title="Acesse ao Relatório" href="http://www.itu.int/dms_pub/itu-r/opb/rep/R-REP-BT.2215-3-2012-MSW-E.docx" rel="nofollow">Report ITU-R BT.2215-3 - Measurements of Protection Ratios and Overload Thresholds for Broadcast TV Receivers - União Internacional de Telecomunicações – UIT</a>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XI - <a title="Acesse ao Relatório" href="http://www.itu.int/dms_pub/itu-r/opb/rep/R-REP-BT.2215-2-2012-PDF-E.pdf" rel="nofollow">Report ITU-R BT.2247-2 - Field Measurement and Analysis of Compatibility Between DTTB and IMT - União Internacional de Telecomunicações – UIT</a>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XII - <a title="Acesse à Recomendação" href="https://www.itu.int/dms_pubrec/itu-r/rec/bt/R-REC-BT.1368-10-201301-S!!PDF-E.pdf" rel="nofollow">Recomendação ITU-R BT.1368-10 - Planning Criteria, including Protection Ratios, for Digital Terrestrial Television Services in the VHF/UHF Bands - União Internacional de Telecomunicações – UIT</a>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XIII - Testes realizados no laboratório do Instituto Nacional de Telecomunicações - INATEL em Santa Rita do Sapucaí-MG;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XIV - <a title="Acesse ao Relatório" href="http://www.sinditelebrasil.org.br/component/docman/doc_download/1065-30-05-2014-relatorio-de-testes-sobre-a-convivencia-entre-lte-e-tvd-pirenopolis?Itemid=" rel="nofollow">Testes em campo realizados pela Anatel em Pirenópolis-GO</a>;&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XV - <a title="Acesse à Norma" href="http://www.abnt.org.br/imagens/Normalizacao_TV_Digital/ABNTNBR15601_2007Vc_2008.pdf" rel="nofollow">Norma ABNT NBR 15601 - Televisão Digital Terrestre - Sistema de transmissão</a>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XVI - <a title="Acesse à Especificação Técnica" href="http://www.etsi.org/deliver/etsi_ts/136100_136199/136104/11.08.02_60/ts_136104v110802p.pdf" rel="nofollow">Especificação Técnica 3GPP TS 36.104 - 3rd Generation Partnership Project; Technical Specification Group Radio Access Network; Evolved Universal Terrestrial Radio Access (E-UTRA); Base Station (BS) radio transmission and reception (Release 11 ou superior)</a>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XVII - <a title="Acesse à Especificação Técnica" href="http://www.etsi.org/deliver/etsi_ts/136100_136199/136101/11.08.00_60/ts_136101v110800p.pdf" rel="nofollow">Especificação Técnica 3GPP TS 36.101 - 3rd Generation Partnership Project; Technical Specification Group Radio Access Network; Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) radio transmission and reception (Release 11 ou superior)</a>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XVIII - <a title="Acesse ao Relatório" href="http://www.qtc.jp/3GPP/Specs/36820-b10.pdf" rel="nofollow">Relatório Técnico 3GPP TR 36. 820 - 3rd Generation Partnership Project; Technical Specification Group Radio Access Network; LTE for 700 MHz digital dividend (Release 11 ou superior)</a>; e,</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XIX - <a title="Acesse o Relatório" href="http://www.apt.int/sites/default/files/Upload-files/AWG/APT-AWG-REP-24_APT_Report_698-806_Band_Implementation_UHF.pdf" rel="nofollow">APT Report On “Implementation issues associated with use of the band 698-806 MHz by mobile services”</a>.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XX - <a title="Acesse ao Relatório" href="http://www.abinee.org.br/informac/arquivos/relsim.pdf" rel="nofollow">Relatórios do Projeto de Testes de coexistência entre o Sistema Brasileiro de Televisão Digital e o LTE na faixa de 700 MHz (Banda 28 3GPP) - Centro de Estudos em Telecomunicações – CETUC, da Pontifícia Universidade Católica - PUC do Rio de Janeiro</a>. <a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=428&amp;data=24/07/2014" target="_blank" rel="noopener noreferrer">(Retificação publicada no DOU de 24/7/2014)</a></span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art4Anexo"></a><span style="text-decoration: line-through;">Art. 4º Para fins deste Regulamento, aplicam-se as seguintes definições e abreviaturas:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I - ACLR: do inglês, Adjacent Channel Leakage Ratio<em>,</em> é uma medida de desempenho de um transmissor relacionada à capacidade de supressão de energia no canal adjacente. O ACLR é definido como a razão, em dB, da potência média do sinal gerado integrada na sua faixa designada, para a potência média de emissões no canal adjacente;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II - ACS: do inglês, Adjacent Channel Selectivity<em>,</em> é uma medida de desempenho do receptor relacionada à sua capacidade de receber um sinal em seu canal consignado, dada a presença de outro sinal em um canal adjacente. O ACS é definido como a relação entre a atenuação do filtro de recepção na frequência do canal desejado e a atenuação do filtro de recepção na frequência do canal adjacente;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">III - Frequência Intermediária – FI: frequência fixa resultante do batimento do sinal recebido com frequência gerada pelo oscilador local, em um equipamento heteródino;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IV - Interferência Prejudicial: qualquer emissão, radiação ou indução que obstrua, degrade, interrompa repetidamente ou possa vir a comprometer a qualidade da comunicação;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">V - ISDB-T: do inglês, Integrated Services Digital Broadcasting Terrestrial<em>,</em> Serviços Integrados de Radiodifusão Digital Terrestre;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VI - Limiar de Saturação (O<sub>th</sub><em> - </em>Overload Threshold): potência de um sinal recebido a partir da qual ocorre a saturação do sistema de recepção e, consequentemente, o receptor perde a capacidade de discriminar o sinal interferente do sinal desejado;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VII - Máscara do Espectro de Transmissão: contorno de máxima densidade espectral de potência relativa à central do canal permitida na transmissão;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VIII - Máscara Crítica: especificada na <a title="Acesse à Norma" href="http://www.abntcatalogo.com.br/norma.aspx?ID=1606" rel="nofollow">Norma ABNT NBR-15601</a> como a máscara de transmissão na qual as emissões fora da faixa são mais atenuadas em relação à portadora central do sinal digital transmitido. As máscaras de transmissão definidas pela ABNT foram adotadas pela Anatel e incorporadas à Norma para Certificação de Transmissores e Retransmissores do SBTVD, anexa à <a title="Acesse à Resolução" href="/legislacao/resolucoes/2008/180-resolucao-498" rel="nofollow">Resolução nº 498, de 27 de março de 2008</a>;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IX - Relação de Proteção (PR<em> - </em>Protection Ratio): relação mínima entre o sinal desejado e o sinal interferente que assegura a proteção para o serviço;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">X - Sistema Brasileiro de Televisão Digital Terrestre (SBTVD-T): conjunto de padrões tecnológicos a serem adotados para transmissão e recepção de sinais digitais terrestres de radiodifusão de sons e imagens;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XI - Sintonizadores tipo “can tuners<em>”</em>: são os receptores de TV Digital que possuem sintonizadores super-heteródinos tradicionais, formados por componentes discretos dentro de um encapsulamento de metal para minimizar as interferências externas; e,</span></p>
+<p class="caption texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;"><span class="texto-recuo-1a-linha">XII - Sintonizadores tipo “silicon tuners”: são os receptores de TV Digital que possuem sintonizadores baseados em circuitos integrados, conectados a uma placa principal. Esses circuitos integrados podem ter uma cobertura metálica para proteção contra interferências. São receptores de tecnologia mais atual.</span><span style="line-height: 1.1em;">&nbsp;</span></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">CAPÍTULO III</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">DISPOSIÇÕES ESPECÍFICAS</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">Seção I</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">Casos de Interferência Prejudicial</span></p>
+<p class="texto-recuo-1a-linha"><a id="art5Anexo"></a><span style="text-decoration: line-through;">Art. 5º São considerados, neste Regulamento, os casos de interferência prejudicial descritos abaixo:</span></p>
+<p class="texto-recuo-1a-linha"><span style="text-decoration: line-through;">I - De um ou mais transmissores de sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz sobre a recepção do SBTVD operando nos canais de 14 a 51, nas seguintes condições:</span></p>
+<p class="texto-recuo-1a-linha"><span style="text-decoration: line-through;">a) recepção de TV com antena externa;</span></p>
+<p class="texto-recuo-1a-linha"><span style="text-decoration: line-through;">b) recepção de TV com antena interna;</span></p>
+<p class="texto-recuo-1a-linha"><span style="text-decoration: line-through;">c) recepção de TV com antena coletiva com amplificador; e,</span></p>
+<p class="texto-recuo-1a-linha"><span style="text-decoration: line-through;">d) recepção de TV em terminais móveis (One-seg).</span></p>
+<p class="texto-recuo-1a-linha"><span style="text-decoration: line-through;">II - De um ou mais transmissores do SBTVD operando nos canais de 14 a 51 sobre os sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz, nas seguintes condições:</span></p>
+<p class="texto-recuo-1a-linha"><span style="text-decoration: line-through;">a) recepção da estação rádio base, nodal ou repetidora; e,</span></p>
+<p class="texto-recuo-1a-linha"><span style="text-decoration: line-through;">b) recepção da estação móvel (terminal).</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">Seção II</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">Espécies de Interferência</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art6Anexo"></a><span style="text-decoration: line-through;">Art. 6º As espécies de interferências prejudiciais causadas pelos transmissores dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz sobre a recepção do SBTVD tratadas neste Regulamento são as seguintes:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I - Saturação da recepção: interferência que ocorre quando o nível do sinal interferente, gerado pelos transmissores dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz, é superior ao limiar de saturação do sistema de recepção de TV (receptor ou amplificador), impedindo-o de decodificar corretamente o sinal desejado;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II - Degradação da recepção de TV devido ao comportamento instável do Controle Automático de Ganho (CAG) do receptor: interferência que ocorre em alguns tipos de receptores pela característica do seu circuito de CAG, na presença de rápidas variações do nível do sinal dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">III - Interferência do Canal Imagem: interferência que ocorre principalmente em receptores de TV que utilizam sintonizadores super-heteródinos tradicionais (can tuner) e pode ocorrer quando a frequência do sinal indesejado é transladada para o estágio de FI do receptor. Também há casos desse fenômeno ocorrer em receptores com tecnologia mais atual (silicon tuner); e,</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IV - Interferência por Emissões Indesejáveis: interferência decorrente de emissões indesejáveis, na faixa de recepção do SBTVD, geradas pelos transmissores dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art7Anexo"></a><span style="text-decoration: line-through;">Art. 7º As espécies de interferências prejudiciais causadas pelos transmissores do SBTVD operando nos canais de 14 a 51 sobre a recepção das estações base, nodais ou repetidoras dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz tratadas neste Regulamento são as seguintes:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I - Saturação da recepção: interferência que ocorre quando o nível do sinal interferente, gerado pelos transmissores do SBTVD, é superior ao limiar de saturação do sistema de recepção da estação rádio base, nodal ou repetidora dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz, impedindo-o de decodificar corretamente o sinal desejado;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II - Interferência por Emissões Indesejáveis: interferência decorrente de emissões indesejáveis, na faixa de recepção das estações rádio base ou nodais dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz, geradas pelos transmissores do SBTVD;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art8Anexo"></a><span style="text-decoration: line-through;">Art. 8º As espécies de interferências prejudiciais causadas pelos transmissores do SBTVD operando nos canais de 14 a 51 na recepção das estações móveis dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz tratadas neste Regulamento são as seguintes:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I - Saturação da recepção: interferência que ocorre quando o nível do sinal interferente, gerado pelos transmissores do SBTVD, é superior ao limiar de saturação do sistema de recepção da estação móvel de radiocomunicação operando na faixa de 698 MHz a 806 MHz, impedindo-o de decodificar corretamente o sinal desejado; e,</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II - Interferência por Emissões Indesejáveis: interferência decorrente de emissões indesejáveis, na faixa de recepção das estações móveis dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz, geradas pelos transmissores do SBTVD.</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">CAPÍTULO IV</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">TÉCNICAS DE MITIGAÇÃO</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art9Anexo"></a><span style="text-decoration: line-through;">Art. 9º Para a mitigação das eventuais interferências prejudiciais entre os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão do SBTVD operando nos canais de 14 a 51 e estações dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz, dependendo do local e características de instalação das estações transmissoras e receptoras, podem ser utilizadas uma ou mais das seguintes técnicas:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I - Distância entre Transmissor e Receptor: estabelecimento de uma distância mínima de afastamento entre os transmissores de um sistema e os receptores do outro, de forma que as relações de proteção entre eles sejam atendidas e possam coexistir sem que haja interferência prejudicial mútua;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II - Utilização de Filtros: filtragem adicional, empregada tanto nos sistemas de transmissão, com o intuito de melhorar o ACLR (equivalente à adoção de máscaras mais restritivas), quanto nos receptores, com o intuito de melhorar a ACS, bem como o Limiar de Saturação;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">III - Alteração nas Potências de Transmissão: estabelecimento de potência de transmissão adequada, em locais, direções ou canais específicos, de forma a garantir a relação de proteção e diminuir o potencial de interferências prejudiciais mútuas; e,</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IV - Alteração nas características das antenas de transmissão e recepção: estabelecimento de condições e características técnicas específicas de instalação das antenas dos sistemas de transmissão e recepção de forma a garantir a relação de proteção e diminuir o potencial de interferências prejudiciais mútuas.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">§ 1º Na determinação dos locais e projeto de instalação das estações transmissoras base, nodal ou repetidora dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz, devem ser considerados os casos e as espécies de interferência identificados neste Regulamento, no sentido de diminuir a possibilidade de interferência no SBTVD.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">§ 2º Na determinação dos locais e projeto de instalação dos transmissores de novas emissoras do SBTVD operando nos canais de 14 a 51 ou alterações a pedido dos já existentes, devem ser considerados os casos e as espécies de interferência identificados neste Regulamento, no sentido de diminuir a possibilidade de interferência nas estações base, nodal ou repetidora e estações móveis dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz já instaladas e em funcionamento.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art10Anexo"></a><span style="text-decoration: line-through;">Art. 10. A Matriz de Convivência, constante do Anexo I deste Regulamento, indica técnicas que podem ser utilizadas para a mitigação das eventuais interferências prejudiciais em cada hipótese de interferência considerada, sem prejuízo de outras técnicas que possam ser adotadas, caso se mostrem mais adequadas ao caso concreto.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Parágrafo único. Ocorrendo situações de interferência não descritas neste Regulamento podem ser utilizadas as técnicas de mitigação indicadas na Matriz de Convivência ou outras não especificadas, tais como emprego de atenuadores e outros dispositivos, desde que atinjam o objetivo desejado, mantendo-se as obrigações e responsabilidades das partes envolvidas.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art11Anexo"></a><span style="text-decoration: line-through;">Art. 11. O Anexo II deste Regulamento apresenta a descrição e as formas de implementação das técnicas de mitigação indicadas na Matriz de Convivência e, quando disponíveis, os valores de referência que devem ser utilizados.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Parágrafo único. A caracterização e as especificações dos dispositivos utilizados na mitigação de interferências serão estabelecidas por meio da publicação, pela Agência, dos requisitos técnicos mínimos.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art12Anexo"></a><span style="text-decoration: line-through;">Art. 12. Na escolha das técnicas de mitigação, devem ser seguidos os critérios de coordenação para o uso de radiofrequências estabelecidos pelo Regulamento de Uso do Espectro de Radiofrequências (RUE).&nbsp;</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">CAPÍTULO V</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">DISPOSIÇÕES FINAIS</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art13Anexo"></a><span style="text-decoration: line-through;">Art. 13. Na comprovação a que se refere o <a title="Acesse ao Artigo" href="/legislacao/resolucoes/2013/644-resolucao-625#art10" target="_blank" rel="noopener noreferrer">art. 10</a> do Regulamento anexo à Resolução nº 625, de 11 de novembro de 2013, o interessado no licenciamento das estações dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz deve apresentar declaração eletrônica indicando que, para a operação das estações com as características pretendidas, foram adotadas medidas visando à mitigação das eventuais interferências prejudiciais aos Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão do SBTVD operando nos canais de 14 a 51.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Parágrafo único. O disposto no caput ta<span style="text-indent: 2.5em; line-height: 1.1em;">mbém é aplicável quando do licenciamento de novas estações do SBTVD operando nos canais de 14 a 51 ou alterações a pedido nas já existentes, para comprovar que foram adotadas medidas visando à mitigação das eventuais interferências prejudiciais aos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz no caso destes sistemas estarem em funcionamento.</span></span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art14Anexo"></a><span style="text-decoration: line-through;">Art. 14. A Anatel poderá adequar as características técnicas estabelecidas nos regulamentos técnicos referentes à instalação e à operação de novas estações de Radiodifusão de Sons e Imagens do SBTVD operando nos canais de 14 a 51 com o objetivo de mitigar ou diminuir o potencial de interferências prejudiciais nos sistemas dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art15Anexo"></a><span style="text-decoration: line-through;">Art. 15. A Anatel promoverá, em conjunto com fabricantes de dispositivos e equipamentos, o estabelecimento de requisitos mínimos e programas de avaliação da conformidade de receptores de televisão digital e de dispositivos utilizados na mitigação de interferências, tais como filtros, atenuadores, antenas, amplificadores e outros.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art16Anexo"></a><span style="text-decoration: line-through;">Art. 16. Constatada a ocorrência de interferência prejudicial não prevista neste Regulamento ou nas hipóteses em que as técnicas de mitigação sugeridas não sejam suficientes, a Agência, por iniciativa própria ou solicitação dos envolvidos, atuará no sentido de possibilitar a exploração dos serviços, com a qualidade adequada.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Parágrafo único Para atendimento do disposto no caput, a Agência poderá adequar as características técnicas dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz estabelecidas na regulamentação vigente.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art17Anexo"></a><span style="text-decoration: line-through;">Art. 17. A inobservância do estabelecido neste Regulamento, a qualquer título, sujeitará os infratores às sanções cabíveis, nos termos do <a title="Acesse ao Artigo" href="/legislacao/leis/2-lei-9472#art173" target="_blank" rel="noopener noreferrer">art. 173</a> da Lei nº 9.472, de 16 de julho de 1997, do Regulamento de Aplicação de Sanções Administrativas e demais normas regulamentares aplicáveis.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">ANEXO I AO REGULAMENTO SOBRE CONDIÇÕES DE CONVIVÊNCIA ENTRE OS SERVIÇOS DE RADIODIFUSÃO DE SONS E IMAGENS E DE RETRANSMISSÃO DE TELEVISÃO DO SBTVD E OS SERVIÇOS DE RADIOCOMUNICAÇÃO OPERANDO NA FAIXA DE 698 MHz A 806 MHz</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">MATRIZ DE CONVIVÊNCIA</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I.I Interferência de estações dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz sobre a recepção dos canais de TV Digital e técnicas de mitigação<span style="text-indent: 2.5em; text-align: center; line-height: 1.1em;">&nbsp;</span></span></p>
+<p><span style="text-decoration: line-through;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res640/image01.png" alt="" width="961" height="429"></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">&nbsp;<img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res640/image02.png" alt="" width="965" height="577"></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">&nbsp;<img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res640/image03.png" alt="" width="965" height="372"></span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I.II Interferência de estações transmissoras do SBTVD operando nos canais de 14 a 51 sobre a recepção de estação rádio base, nodal ou repetidora e terminais dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz e técnicas de mitigação</span></p>
+<p><span style="text-decoration: line-through;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res640/image04.png" alt="" width="958" height="394"></span></p>
+<p class="caption" style="text-align: center;"><span style="text-decoration: line-through;">ANEXO II AO REGULAMENTO SOBRE CONDIÇÕES DE CONVIVÊNCIA ENTRE OS SERVIÇOS DE RADIODIFUSÃO DE SONS E IMAGENS E DE RETRANSMISSÃO DE TELEVISÃO DO SBTVD E OS SERVIÇOS DE RADIOCOMUNICAÇÃO OPERANDO NA FAIXA DE 698 MHz A 806 MHz</span></p>
+<p class="caption" style="text-align: center;"><span style="text-decoration: line-through;">DESCRIÇÃO DAS TÉCNICAS DE MITIGAÇÃO</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II.I Interferência de estações dos serviços de radiocomunicação operando na faixa de 698 MHz a 806 MHz sobre a recepção de TV Digital</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">a) Utilização de filtro na saída do transmissor da ERB:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste na utilização de filtros adicionais, no sistema de transmissão, com o intuito de melhorar o ACLR. Esta técnica é semelhante à utilizada no sistema SBTVD para criação das máscaras crítica e não críticas.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;"><span class="texto-recuo-1a-linha">A Figura 1 mostra um sistema transmissor e receptor sem a presença de filtragem adicional.</span></span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res640/image05.png" alt=""></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">Figura 1 - Sistema transmissor e receptor sem filtragem adicional.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: center;"><span style="text-decoration: line-through;"><span class="texto-recuo-1a-linha">&nbsp;A Figura 2 mostra o mesmo sistema com o acréscimo de filtro adicional na saída do transmissor da ERB, com intuito de diminuir o nível de interferência na recepção do SBTVD, representado por P1. <br></span></span></p>
+<p><span style="text-decoration: line-through;"><span class="texto-recuo-1a-linha">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res640/image06.png" alt=""></span></span></p>
+<p><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><span class="texto-recuo-1a-linha">Figura 2 - Redução da interferência por adição de filtro na transmissão.</span></span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">b) Utilização de filtro na entrada do receptor de TV:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste na utilização de filtros adicionais nos receptores, com o intuito de melhorar a ACS. Esta medida tem o propósito de mitigar os níveis de sinais fora da faixa de interesse do receptor, conforme representado na Figura 1 por P2.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">A Figura 3 mostra o mesmo sistema da Figura 1 com o acréscimo de filtro adicional no receptor de TV Digital, com intuito de diminuir o nível dos sinais recebidos de estações de radiocomunicação operando na faixa de 698 MHz a 806 MHz, representado por P2.</span></p>
+<p><span style="text-decoration: line-through;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res640/image07.png" alt=""></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">Figura 3 - Redução da interferência por adição de filtro na recepção.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">c) Alteração na posição ou características da antena de recepção de TV Digital:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste no estabelecimento de condições e características técnicas específicas de instalação das antenas de recepção de forma a garantir a relação de proteção e diminuir o potencial de interferência. Tipicamente, o sistema de recepção do sistema de TV Digital deve ser construído de forma a maximizar o nível do sinal desejado e receber o menor nível possível do sinal do sistema interferente. Muitas vezes isto é conseguido pelo simples apontamento direto da antena de TV em direção ao transmissor de TV do canal desejado e evitando tal apontamento direto ao transmissor do sistema de radiocomunicação interferente. A troca do tipo de antena pode surtir bons efeitos, dando-se preferência ao uso de antenas diretivas em instalações externas e com ganho adequado ao uso em recepção de TV Digital.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">d) Alteração na posição ou características da antena de transmissão da ERB:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste no estabelecimento de condições e características técnicas específicas de instalação das antenas dos sistemas de transmissão das estações rádio base ou nodais, de forma a garantir a relação de proteção e diminuir o potencial de interferências na recepção da TV Digital.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">e) Redução da potência máxima de transmissão da ERB:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste da utilização da mínima potência necessária para a prestação adequada do serviço, sem causar interferências prejudiciais na recepção de TV Digital.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">f) Aumento na distância entre o terminal do serviço de radiocomunicação operando na faixa de 698 MHz a 806 MHz e o receptor de TV Digital:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste em afastar o terminal em uso da antena de recepção da TV Digital, de forma que a relação de proteção seja atendida.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II.II Interferência de estações transmissoras do SBTVD operando nos canais de 14 a 51 na recepção da estação rádio base, nodal ou repetidora e terminais dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">a) Utilização de "Máscara Crítica" no transmissor do SBTVD:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste na utilização, no transmissor da emissora de TV Digital, da Máscara Crítica especificada na <a title="Acesse à Norma" href="http://www.abnt.org.br/imagens/Normalizacao_TV_Digital/ABNTNBR15601_2007Vc_2008.pdf" rel="nofollow">Norma ABNT NBR 15601</a>.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Esta máscara tem a finalidade de melhorar o ACLR da transmissão da TV Digital, diminuindo a possibilidade de interferência na recepção da estação rádio base ou nodal dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">A Figura 4 mostra as curvas estabelecidas na regulamentação para as máscaras "Crítica"; "Não-Crítica" e "Sub-Crítica", conforme definidas na <a title="Acesse à Norma" href="http://www.abnt.org.br/imagens/Normalizacao_TV_Digital/ABNTNBR15601_2007Vc_2008.pdf" rel="nofollow">Norma ABNT NBR 15601</a>.</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res640/image08.png" alt=""></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">Figura 4 - Máscaras do espectro de transmissão para emissoras do SBTVD</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">b) Utilização de Filtro na entrada do receptor da ERB:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste na utilização de filtros adicionais nos receptores das estações rádio base ou nodais dos sistemas operando na faixa de 698 MHz a 806 MHz, com o intuito de melhorar a ACS. Da mesma forma que no Item II.I a) esta medida tem o propósito de mitigar os níveis de sinais fora da faixa de interesse do receptor.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">c) Alteração das características da antena de transmissão de TV:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste no estabelecimento de condições e características técnicas específicas de instalação das antenas dos sistemas de transmissão de estações do SBTVD de forma a diminuir o potencial de interferência na recepção das estações rádio base ou nodais dos sistemas operando na faixa de 698 MHz a 806 MHz.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">d) Alteração das características da antena de recepção da ERB:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">O mesmo efeito do item anterior pode ser obtido alterando-se as características técnicas e condições específicas de instalação das antenas receptoras das estações rádio base ou nodais dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz de forma a diminuir o potencial de interferência recebida de emissoras de TV Digital.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">e) Redução da potência de transmissão da estação do SBTVD:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Consiste da utilização da mínima potência necessária para a prestação adequada do serviço de TV Digital, sem causar interferências prejudiciais na recepção das estações rádio base ou nodais dos sistemas de radiocomunicação operando na faixa de 698 MHz a 806 MHz.</span></p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_785"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes">Resoluções da Anatel</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes/2014">2014</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20normativo" class="link-categoria">Ato normativo</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento" class="link-categoria">Regulamento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Supressão%20de%20interferência" class="link-categoria">Supressão de interferência</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Interferência%20de%20radiofrequência" class="link-categoria">Interferência de radiofrequência</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Televisão%20digital" class="link-categoria">Televisão digital</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Long%20Term%20Evolution" class="link-categoria">Long Term Evolution</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20de%20radiofusão%20de%20sons%20e%20imagens%20(televisão)" class="link-categoria">Serviço de radiofusão de sons e imagens (televisão)</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20de%20retransmissão%20de%20TV" class="link-categoria">Serviço de retransmissão de TV</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20de%20radiocomunicação" class="link-categoria">Serviço de radiocomunicação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaRadiofrequencia" class="link-categoria">NormaRadiofrequencia</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RecursosPrestacao" class="link-categoria">RecursosPrestacao</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada" class="link-categoria">ResolucaoRevogada</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

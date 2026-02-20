@@ -1,0 +1,2506 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="5683556eaa30a2de6e0aee11-text/javascript">
+  </script>
+  <script type="5683556eaa30a2de6e0aee11-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="5683556eaa30a2de6e0aee11-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 438, de 10 de julho de 2006
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2006/92-resolucao-438"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Aprovação, Ato normativo, Regulamento, Valor de remuneração, Uso de rede, Interconexão de redes, Prestadora de serviços de telecomunicações, Serviço Móvel Pessoal, SMP, Telefonia móvel, TelefoniaMovel, GestaoEconomicaPrestacao, ResolucaoVigente" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal – SMP." name="description"/>
+   <title>
+    Anatel - Resolução nº 438, de 10 de julho de 2006
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=212011925" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=196001419" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"3a68a56ddd1fe8337c809d6c1599a8ad","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="5683556eaa30a2de6e0aee11-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="5683556eaa30a2de6e0aee11-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="5683556eaa30a2de6e0aee11-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="5683556eaa30a2de6e0aee11-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="5683556eaa30a2de6e0aee11-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1419133435" type="5683556eaa30a2de6e0aee11-text/javascript">
+    </script>
+    <script type="5683556eaa30a2de6e0aee11-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="5683556eaa30a2de6e0aee11-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026163930" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/2006/92-resolucao-438">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/2006" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/2006">
+             2006
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 438, de 10 de julho de 2006
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171 current active">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-5683556eaa30a2de6e0aee11-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-5683556eaa30a2de6e0aee11-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="5683556eaa30a2de6e0aee11-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="5683556eaa30a2de6e0aee11-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 438, de 10 de julho de 2006
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Quinta, 13 Julho 2006 14:48
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Segunda, 05 Janeiro 2026 15:31
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 29490
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td valign="middle" width="50%">
+                  <p style="text-align: left;">
+                  </p>
+                 </td>
+                 <td valign="middle" width="50%">
+                  <p style="text-align: justify;">
+                   Aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal – SMP.
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p style="text-align: justify;">
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=64&amp;data=13/07/2006">
+                13/7/2006
+               </a>
+               , retificado em
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=73&amp;data=17/07/2006" rel="nofollow" title="Acesse o DOU">
+                17/7/2006
+               </a>
+               .
+              </p>
+              <p style="text-align: justify;">
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <strong>
+                O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+               </strong>
+               <strong>
+                – ANATEL
+               </strong>
+               , no uso das atribuições que lhe foram conferidas pelo
+               <a href="/legislacao/leis/8-1997/2-lei-9472#art22" rel="nofollow" title="Acesse o artigo">
+                art. 22
+               </a>
+               da Lei nº 9.472, de 16 de julho de 1997, e pelos arts.
+               <a href="/legislacao/decretos/10-1997/3-decreto-2338#art17" rel="nofollow" title="Acesse o artigo">
+                17
+               </a>
+               e
+               <a href="/legislacao/decretos/10-1997/3-decreto-2338#art35" rel="nofollow" title="Acesse o artigo">
+                35
+               </a>
+               do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO o disposto nos arts.
+               <a href="/legislacao/leis/8-1997/2-lei-9472#art2" rel="nofollow" title="Acesse o artigo">
+                2º
+               </a>
+               e
+               <a href="/legislacao/leis/8-1997/2-lei-9472#art127" rel="nofollow" title="Acesse o artigo">
+                127
+               </a>
+               da Lei nº 9.472, de 16 de julho de 1997, e no
+               <a href="/legislacao/decretos/10-1997/3-decreto-2338#art16" rel="nofollow" title="Acesse o artigo">
+                art. 16
+               </a>
+               do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO as contribuições recebidas em decorrência da Consulta Pública nº 549, de 13 de julho de 2004, publicada no Diário Oficial da União de 14 de julho de 2004;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO deliberação tomada em sua Reunião nº 399, realizada em 21 de junho de 2006,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; letter-spacing: 0.2em;">
+               <strong>
+                RESOLVE:
+               </strong>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1">
+               </a>
+               Art. 1º Aprovar o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal – SMP, na forma do Anexo a esta Resolução.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art2AnexoRevogado">
+                </a>
+                Art. 2º Revogar a Resolução nº 319, de 27 de setembro de 2002, publicada no Diário Oficial da União de 1º de outubro de 2002.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2">
+               </a>
+               Art. 2º Revogar a
+               <a href="/legislacao/resolucoes/2002/542-resolucao-319" rel="nofollow" title="acesse à resolução">
+                Resolução nº 319, de 27 de setembro de 2002
+               </a>
+               , publicada no Diário Oficial da União de 1º de outubro de 2002, e a
+               <a href="/legislacao/resolucoes/2005/504-resolucao-408" rel="nofollow" title="acesse à resolução">
+                Resolução nº 408, de 30 de junho de 2005
+               </a>
+               , publicada no Diário Oficial da União de 1º de julho de 2005.
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=73&amp;data=17/07/2006" rel="nofollow" title="Acesse o DOU">
+                (Retificação publicada no DOU de 17/07/2006)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3">
+               </a>
+               Art. 3º Esta Resolução entra em vigor na data de sua publicação.
+              </p>
+              <p style="text-align: center;">
+               PLÍNIO DE AGUIAR JÚNIOR
+               <br/>
+               Presidente do Conselho
+              </p>
+              <p style="text-align: center;">
+               <a id="anexo">
+               </a>
+               ANEXO À RESOLUÇÃO Nº 438, DE 10 DE JULHO DE 2006
+              </p>
+              <p style="text-align: center;">
+               <span style="font-size: medium;">
+                <strong>
+                 REGULAMENTO DE REMUNERAÇÃO PELO USO DE REDES DE PRESTADORAS DO SERVIÇO MÓVEL PESSOAL – SMP
+                </strong>
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <a id="tituloI">
+               </a>
+               TÍTULO I
+              </p>
+              <p align="center" style="text-align: center;">
+               DAS DISPOSIÇÕES GERAIS
+              </p>
+              <p align="center" style="text-align: center;">
+               CAPÍTULO I
+              </p>
+              <p style="text-align: center;">
+               DO OBJETIVO
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art1AnexoRevogado">
+                </a>
+                Art. 1º Este regulamento tem por objetivo definir os critérios aplicáveis à remuneração pelo uso de redes do Serviço Móvel Pessoal quando interconectadas a redes de outras Prestadoras de Serviços de Telecomunicações de Interesse Coletivo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1Anexo">
+               </a>
+               Art. 1º Este regulamento tem por objetivo definir os critérios aplicáveis à remuneração pelo uso de redes do Serviço Móvel Pessoal quando interconectadas a redes de outras Prestadoras de Serviços de Telecomunicações de Interesse Coletivo para troca de tráfego telefônico. (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2018/1142-resolucao-693">
+                Alterado pela Resolução nº 693, de 17 de julho de 2018
+               </a>
+               )
+              </p>
+              <p style="text-align: center;">
+               CAPÍTULO II
+              </p>
+              <p style="text-align: center;">
+               DAS DEFINIÇÕES
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2Anexo">
+               </a>
+               Art. 2º Aplicam-se, para os fins deste regulamento, além das definições previstas no Regulamento do Serviço Móvel Pessoal e demais regulamentações, as seguintes:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - Chamada Inter-Redes: chamada, de âmbito interior ou internacional, envolvendo o uso de redes de mais de uma Entidade ou redes distintas de uma mesma Entidade;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - Entidade: nome genérico que designa uma Prestadora de Serviços de Telecomunicações de interesse coletivo;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - Entidade Credora: Entidade à qual é devido valor pelo uso de sua rede na realização de uma Chamada Inter-Redes;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               IV - Entidade Devedora: Entidade titular da receita de público, que deve valor à Entidade Credora pelo uso de rede desta última na realização de uma Chamada Inter-Redes;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               V - Grupo: Prestadora de Serviço de Telecomunicações individual ou conjunto de Prestadoras de Serviços de Telecomunicações que possuam relação de controle, como controladoras, controladas ou coligadas, aplicando-se os conceitos do Regulamento para Apuração de Controle e de Transferência de Controle em Empresas Prestadoras de Serviços de Telecomunicações, aprovado pela Resolução nº 101, de 4 de fevereiro de 1999;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VI - Modelo de Custos Incrementais de Longo Prazo (LRIC:
+               <em>
+                Long Run Incremental Costs
+               </em>
+               ): modelo de apuração de custos no qual todos os custos incrementais de longo prazo atualizados a valores correntes relativos a prestação isolada de determinado serviço, incluído o custo de capital, são distribuídos segundo princípios de causalidade a todos os produtos oferecidos, considerando um horizonte de longo prazo que permita considerar os custos fixos como variáveis, conforme Regulamento de Separação e Alocação de Contas;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VII - Modelo de Custos Totalmente Alocados (FAC,
+               <em>
+                Fully Allocated Costs
+               </em>
+               ): modelo de apuração de custos no qual todos os custos contábeis da prestadora, inclusive os custos de capital, são distribuídos segundo princípios de causalidade a todos os produtos por ela oferecidos, conforme Regulamento de Separação e Alocação de Contas;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VIII - Poder de Mercado Significativo (PMS): posição que possibilita influenciar de forma significativa as condições do mercado relevante, assim considerada pela Anatel;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               IX - Prestadora de SMP: Prestadora de Serviço de Telecomunicações que detém autorização para prestar o Serviço Móvel Pessoal;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               X - Rede do SMP: é o conjunto dos centros de comutação, controle, equipamentos e meios de transmissão, utilizados pela Prestadora de SMP como suporte à prestação do SMP numa determinada Área de Registro;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               XI - Valor de Referência de VU-M (RVU-M): valor resultante do processo de apuração dos custos associados ao VU-M de uma dada Prestadora, utilizado como referência pela Anatel em processo de resolução de conflito entre Prestadoras de Serviço de Telecomunicações, nos termos deste regulamento;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XII - Valor de Remuneração de Uso de Rede do SMP – VU-M: valor que remunera uma Prestadora de SMP, por unidade de tempo, pelo uso de sua rede.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               XII - Valor de Remuneração de Uso de Rede do SMP – VU-M: valor que remunera uma Prestadora de SMP, por unidade de tempo, pelo uso de sua rede para troca de tráfego telefônico. (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2018/1142-resolucao-693">
+                Alterado pela Resolução nº 693, de 17 de julho de 2018
+               </a>
+               )
+              </p>
+              <p style="text-align: center;">
+               <a id="tituloII">
+               </a>
+               TÍTULO II
+              </p>
+              <p align="center" style="text-align: center;">
+               DA REMUNERAÇÃO PELO USO DE REDES
+              </p>
+              <p align="center" style="text-align: center;">
+               <a id="capituloI">
+               </a>
+               CAPÍTULO I
+              </p>
+              <p style="text-align: center;">
+               DOS CRITÉRIOS GERAIS PARA REMUNERAÇÃO PELO USO DE REDES
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3Anexo">
+               </a>
+               Art. 3º O Valor de Uso de Rede do SMP (VU-M) é devido à Prestadora de SMP sempre que sua rede for utilizada para originar ou terminar chamadas.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art4Anexo">
+               </a>
+               Art. 4º É facultada às prestadoras de SMP, na forma da regulamentação, a concessão de descontos nos valores do VU-M, que devem ser aplicados de forma isonômica e não discriminatória, sendo vedada a concessão de descontos por critérios subjetivos.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Os descontos concedidos e os critérios para sua concessão devem ser informados à Anatel e disponibilizados na página da prestadora na Internet com, no mínimo, 10 (dez) dias corridos de antecedência em relação à sua entrada em vigor.
+               </span>
+               (
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1670-resolucao-752" title="Acesse a Resolução">
+                Revogado pela Resolução nº 752, de 22 de junho de 2022
+               </a>
+               )
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 2º Não podem ser concedidos descontos:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - em função do volume de tráfego cursado entre as redes;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - em função do valor total devido em decorrência da interconexão;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - em função do prazo do contrato de interconexão.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 3º A Anatel coibirá, de ofício ou a requerimento de qualquer interessado, o estabelecimento de critérios de descontos que considere abusivo, não isonômico, discriminatório ou prejudicial à competição.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 4º O valor do desconto obtido pela Entidade Devedora deve ser integralmente deduzido do preço de público nas chamadas em que for aplicável o VU-M com desconto.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art5Anexo">
+               </a>
+               Art. 5º Os descontos concedidos pelas Prestadoras de SMP sobre os valores do serviço cobrados dos assinantes ou usuários, salvo acordo entre as partes, não devem ser deduzidos dos valores devidos às Entidades Credoras pelo uso de suas redes.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art6Anexo">
+               </a>
+               Art. 6º O valor de VU-M não pode ser reajustado em períodos inferiores a doze meses.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art7Anexo">
+               </a>
+               Art. 7º Quando da alteração do VU-M, a redução de seu valor real, se houver, deve ser integralmente deduzida do preço de público nas chamadas em que for aplicável.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art8Anexo">
+               </a>
+               Art. 8º O valor de VU-M não pode inviabilizar a adoção do valor atualizado de VC-1 fixado nos Contratos de Concessão de Prestadora de STFC.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 1º Devem ser concedidos descontos às Concessionárias do STFC sobre o valor de VU-M compatíveis com os critérios de tarifação e modulação horária estabelecidos para a fixação dos valores VC-1, VC-2 e VC-3 nos Contratos de Concessão de Prestadora de STFC.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 2º As Autorizadas do STFC fazem jus aos mesmos descontos, desde que comprovem a dedução referida no § 4º do art. 4º.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art9Anexo">
+               </a>
+               Art. 9º A Anatel pode, a qualquer tempo, determinar medidas cautelares que viabilizem a interconexão das redes, bem como estabelecer valores provisórios de VU-M.
+              </p>
+              <p align="center" class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art10Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 10. Os valores reajustados de VC-1, VC-2 ou VC-3, nos Contratos de Concessão de Prestadora de STFC, somente serão homologados pela Agência após o estabelecimento do novo valor de VU-M, a vigorar após o reajuste, pactuado entre as partes ou fixado, cautelarmente ou não, em processo de resolução de conflitos.
+               </span>
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1973-resolucao-768" title="Acesse a Resolução">
+                (Revogado pela Resolução Anatel nº 768, de 19 de agosto de 2024)
+               </a>
+              </p>
+              <p style="text-align: center;">
+               <a id="capituloII">
+               </a>
+               CAPÍTULO II
+              </p>
+              <p style="text-align: center;">
+               DOS CRITÉRIOS PARA ESTABELECIMENTO DO VALOR DE REMUNERAÇÃO PELO USO DE REDE DE PRESTADORA PERTENCENTE A GRUPO COM PMS
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art11Anexo">
+               </a>
+               Art. 11. Os Grupos detentores de PMS na oferta de interconexão em rede móvel em cada região do PGA do SMP são determinados pela Anatel.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               Parágrafo único. Justificadamente, a Anatel pode utilizar outro critério geográfico para determinar os Grupos detentores de PMS na oferta de interconexão em rede móvel.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art12Anexo">
+               </a>
+               Art. 12. Para determinar quais são os Grupos detentores de PMS na oferta de interconexão na rede móvel a Anatel pode considerar, entre outros:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - participação no mercado de interconexão em rede móvel;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - participação no mercado de telefonia móvel;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - existência de economias de escala;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               IV - existência de economias de escopo;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               V - controle sobre infra-estrutura cuja duplicação não é economicamente viável;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VI - ocorrência de poder de negociação nas compras de insumos, equipamentos e serviços;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VII - ocorrência de integração vertical;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VIII - existência de barreiras à entrada de competidores;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               IX - acesso a fontes de financiamento.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art13Anexo">
+               </a>
+               Art. 13. O VU-M de Prestadora de SMP pertencente a Grupo detentor de PMS na oferta de interconexão em rede móvel é livremente pactuado e deve constar em instrumento específico.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 1º O valor referido no
+               <strong>
+                caput
+               </strong>
+               é igual para todas as Prestadoras do SMP pertencentes a um mesmo Grupo detentor de PMS na oferta de interconexão em rede móvel em determinada região do PGA do SMP.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 2º A Anatel coibirá, de ofício ou a requerimento de qualquer interessado, atitudes abusivas que prejudiquem a pactuação do VU-M.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º O valor de VU-M pactuado deve ser informado à Anatel em até 30 dias corridos contados a partir da celebração do acordo.
+               </span>
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1670-resolucao-752" title="Acesse a Resolução">
+                (Revogado pela Resolução nº 752, de 22 de junho de 2022)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art14Anexo">
+                </a>
+                Art. 14. A partir da data estabelecida em Resolução, a Anatel determinará, com base no modelo FAC, o valor de referência de VU-M (RVU-M) de Prestadora de SMP pertencente a Grupo detentor de PMS na oferta de interconexão em rede móvel, que será utilizado como referência quando da resolução de conflitos relacionados à pactuação do VU-M mencionada no artigo 13, considerando:
+               </span>
+               (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art3-1" rel="alternate" title="Acesse a resolução">
+                Revogado pela Resolução nº 639, de 1º de julho de 2014
+               </a>
+               )
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - os custos correntes incorridos por uma prestadora hipotética eficiente, apurados por modelo desenvolvido pela Anatel;
+               </span>
+               (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art3-1" rel="alternate" title="Acesse a resolução">
+                Revogado pela Resolução nº 639, de 1º de julho de 2014
+               </a>
+               )
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - os custos históricos informados pelas prestadoras e aceitos pela Anatel, nos termos da regulamentação.
+               </span>
+               (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art3-1" rel="alternate" title="Acesse a resolução">
+                Revogado pela Resolução nº 639, de 1º de julho de 2014
+               </a>
+               )
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A Anatel poderá, oportunamente, determinar o RVU-M com base no modelo LRIC, conforme regulamentação específica.
+               </span>
+               (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art3-1" rel="alternate" title="Acesse a resolução">
+                Revogado pela Resolução nº 639, de 1º de julho de 2014
+               </a>
+               )
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art15Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 15. A partir da data estabelecida na resolução mencionada no art. 14, o FAC será recalculado a cada 3 (três) anos.
+               </span>
+               (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art3-1" rel="alternate" title="Acesse a resolução">
+                Revogado pela Resolução nº 639, de 1º de julho de 2014
+               </a>
+               )
+              </p>
+              <p align="center" class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Nos anos em que não for recalculado o FAC, o valor de VU-M será reajustado da seguinte forma:
+               </span>
+               (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art3-1" rel="alternate" title="Acesse a resolução">
+                Revogado pela Resolução nº 639, de 1º de julho de 2014
+               </a>
+               )
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                RVU-M t = RVU-M t
+                <sub>
+                 0
+                </sub>
+                x (1 + VIST) x (1- k)
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Sendo:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                VIST: Variação de Índice de atualização de valores,conforme regulamentação específica.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                k: fator de correção
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                t: data proposta para o reajuste
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                t
+                <sub>
+                 0
+                </sub>
+                : data do último reajuste ou, para o primeiro reajuste, a data estabelecida na resolução mencionada no art. 14.
+               </span>
+              </p>
+              <p align="center" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º O fator de correção (k) previsto no parágrafo anterior será calculado da seguinte forma:
+               </span>
+               (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art3-1" rel="alternate" title="Acesse a resolução">
+                Revogado pela Resolução nº 639, de 1º de julho de 2014
+               </a>
+               )
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                k = 1 - (RVU-M estimado para o final do triênio / RVU-M apurado para o início do triênio)
+                <sup>
+                 1/3
+                </sup>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º A Anatel deverá dar publicidade à metodologia utilizada para calcular o RVU-M estimado para o final do triênio, que deve ser compatível com a metodologia estabelecida no art. 14, bem como às variáveis utilizadas no processo.
+               </span>
+               (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art3-1" rel="alternate" title="Acesse a resolução">
+                Revogado pela Resolução nº 639, de 1º de julho de 2014
+               </a>
+               )
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 4º A critério da Anatel, o FAC pode ser recalculado em períodos inferiores a 3 (três) anos, respeitando o período mínimo previsto no art. 6º.
+               </span>
+               (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art3-1" rel="alternate" title="Acesse a resolução">
+                Revogado pela Resolução nº 639, de 1º de julho de 2014
+               </a>
+               )
+              </p>
+              <p align="center" class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art16Anexo">
+               </a>
+               Art. 16. Os Grupos detentores de PMS na oferta de interconexão em rede móvel devem apresentar anualmente, a partir de data estabelecida na resolução mencionada no Art. 14, Documento de Separação e Alocação de Contas e cálculo do RVU-M segundo modelo FAC, conforme regulamentação.
+              </p>
+              <p style="text-align: center;">
+               <a id="capituloIII">
+               </a>
+               CAPÍTULO III
+              </p>
+              <p style="text-align: center;">
+               DOS CRITÉRIOS PARA ESTABELECIMENTO DO VALOR DE REMUNERAÇÃO PELO USO DE REDES DE PRESTADORA PERTENCENTE A GRUPO SEM PMS
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art17Anexo">
+               </a>
+               Art. 17. O VU-M da Prestadora de SMP pertencente a Grupo não detentor de PMS na oferta de interconexão em rede móvel é livremente pactuado e deve constar em instrumento específico.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 1º A Anatel coibirá, de ofício ou a requerimento de qualquer interessado, atitudes abusivas que prejudiquem a pactuação do VU-M.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 2º O valor de VU-M pactuado deve ser informado à Anatel em até 30 dias corridos contados a partir da celebração do acordo.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art18AnexoRevogado">
+                </a>
+                Art. 18. Em resolução de conflitos envolvendo a pactuação de VU-M, a Anatel fixará cautelarmente o valor de VU-M, utilizando como referência um valor de até 20% (vinte por cento) superior ao maior dos VU-M das Prestadoras pertencentes aos Grupos detentores de PMS na oferta de interconexão em rede móvel, na respectiva região do PGA do SMP.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art18Anexo">
+               </a>
+               Art. 18. Em resolução de conflitos envolvendo a pactuação de VU-M, a Anatel fixará o valor de VU-M definido conforme
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639#art14">
+                art. 14
+               </a>
+               do Anexo à Resolução nº 639, de 1º de julho de 2014. (
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2018/1151-resolucao-694">
+                Redação dada pela Resolução nº 694, de 17 de julho de 2018
+               </a>
+               )
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               Parágrafo único. O valor de VU-M referido no
+               <strong>
+                caput
+               </strong>
+               poderá ser alterado mediante apresentação do Documento de Separação e Alocação de Contas (DSAC) pela Prestadora de SMP pertencente a Grupo não detentor de PMS na oferta de interconexão em rede móvel, considerando os critérios estabelecidos nos artigos 14 e 15.
+              </p>
+              <p align="center" class="texto-recuo-1a-linha" style="text-align: justify;">
+              </p>
+              <p align="center" style="text-align: center;">
+               <a id="capituloIV">
+               </a>
+               CAPÍTULO IV
+              </p>
+              <p style="text-align: center;">
+               DA APURAÇÃO DOS VALORES DE REMUNERAÇÃO PELO USO DE REDES
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art19AnexoRevogado">
+                </a>
+                Art. 19. A remuneração devida pelo uso de redes em uma chamada é calculada com base no tempo de duração da chamada, considerando os critérios de faturamento do Plano Básico de Serviço de Prestadora de SMP.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span class="texto-recuo-1a-linha">
+                <a id="art19Anexo">
+                </a>
+                Art. 19. A remuneração devida pelo uso de redes em uma chamada é calculada com base no tempo de duração da chamada, considerando os seguintes critérios de faturamento: (
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/750-resolucao-632#anexoII" rel="nofollow" title="acesse a norma">
+                 Redação dada pela Resolução nº 632, de 7 de março de 2014
+                </a>
+                )
+                <br/>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span class="texto-recuo-1a-linha">
+                a) unidade de tempo de tarifação: 6 (seis) segundos; (
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/750-resolucao-632#anexoII" rel="nofollow" title="acesse a norma">
+                 Incluído pela Resolução nº 632, de 7 de março de 2014
+                </a>
+                )
+                <br/>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span class="texto-recuo-1a-linha">
+                b) tempo inicial de tarifação: 30 (trinta) segundos; (
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/750-resolucao-632#anexoII" rel="nofollow" title="acesse a norma">
+                 Incluído pela Resolução nº 632, de 7 de março de 2014
+                </a>
+                )
+                <br/>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <span class="texto-recuo-1a-linha">
+                 c) chamadas
+                </span>
+                faturáveis: somente são faturáveis as chamadas com duração superior a 3 (três) segundos.
+               </span>
+               <span class="texto-recuo-1a-linha">
+                <span style="text-decoration: line-through;">
+                 (
+                 <a href="http://www.anatel.gov.br/legislacao/resolucoes/2014/750-resolucao-632#anexoII" rel="nofollow" title="acesse a norma">
+                  Incluído pela Resolução nº 632, de 7 de março de 2014
+                 </a>
+                 )
+                </span>
+                (
+                <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1670-resolucao-752" title="Acesse a Resolução">
+                 Revogado pela Resolução nº 752, de 22 de junho de 2022
+                </a>
+                )
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               Parágrafo único. A remuneração pelo uso de redes não é exigível quando, por disposição regulamentar, a chamada não for passível de faturamento ou cobrança.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art20Anexo">
+               </a>
+               Art. 20. As prestadoras devem, mensalmente, registrar separadamente o tráfego entrante e sainte e os respectivos valores referentes à interconexão de redes, devendo as informações ser totalizadas por Entidade Credora e por Entidade Devedora e discriminado a que tarifa ou valor de uso de rede se refere.
+              </p>
+              <p align="center" class="texto-recuo-1a-linha" style="text-align: justify;">
+               Parágrafo único. Estas informações deverão ser enviadas trimestralmente à Anatel em até 30 dias corridos do encerramento do trimestre em questão.
+              </p>
+              <p align="center" style="text-align: center;">
+               <a id="tituloI">
+               </a>
+               TÍTULO III
+              </p>
+              <p style="text-align: center;">
+               DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art21Anexo">
+               </a>
+               Art. 21. Para os fins de remuneração de redes, que trata este Regulamento, os meios de telecomunicações contratados de terceiros por determinada Prestadora são considerados parte integrante de sua Rede.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art22Anexo">
+               </a>
+               Art. 22. Até a publicação de regulamentação específica, a Entidade Credora deve encaminhar à Entidade Devedora, no prazo máximo de 90 (noventa) dias corridos contados da realização da chamada, relatório apresentando o detalhamento das Chamadas Inter-Redes envolvendo a Entidade Devedora, por meio do qual possa ser feito encontro de contas.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 1º A Entidade Devedora deve efetuar o pagamento dos valores apurados no relatório previsto no
+               <strong>
+                caput
+               </strong>
+               no prazo de até 15 (quinze) dias corridos de sua apresentação, salvo quando houver acordo fixando outro prazo.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 2º A Entidade Devedora deve dispor de prazo para contestar os dados constantes do relatório.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 3º O prazo previsto no parágrafo anterior é fixado pelas partes, não devendo ser superior a 30 (trinta) dias corridos contados da entrega do relatório previsto no
+               <strong>
+                caput
+               </strong>
+               deste artigo.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 4º A apresentação de contestação pela Entidade Devedora não a exime da obrigação de efetuar o pagamento da parcela incontroversa no prazo previsto no parágrafo 1º deste artigo.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 5º A Entidade Credora pode contratar a Entidade Devedora ou terceiros para a elaboração do relatório previsto no
+               <strong>
+                caput
+               </strong>
+               deste artigo.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art23Anexo">
+               </a>
+               Art. 23. No período que antecede a data estabelecida na resolução mencionada no art. 14, as seguintes regras serão aplicadas:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - para efeito de remuneração pelo uso de redes, as redes de telecomunicações de Prestadora de SMP em uma mesma Área de Prestação equiparam-se a uma única rede, sendo devido um VU-M sempre que uma chamada for originada e terminada nesta rede;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - em resolução de conflitos envolvendo a pactuação de VU-M, a Anatel fixará cautelarmente o valor de VU-M, utilizando como referência a proporção existente em 1º de janeiro de 2006 entre o valor de VU-M e o valor de VC-1 de Concessionária de STFC.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               Parágrafo único. O valor cautelar do VU-M, mencionado no inciso II deste artigo, poderá ser revisto pela Anatel, à vista das informações apresentadas pelas partes, por ocasião da conclusão do processo de resolução de conflitos.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art24AnexoRevogado">
+                </a>
+                Art. 24. Os Grupos detentores de PMS na oferta de interconexão em rede móvel, em cada Região do PGA do SMP, são determinados pela Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Para efeito deste Regulamento e até que a Anatel determine quais são os Grupos detentores de PMS, todos os Grupos que incluam Prestadoras de SMP são considerados Grupos detentores de PMS na oferta de interconexão em rede móvel nas suas respectivas áreas de prestação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art24Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 24. Para efeito deste Regulamento e até que a Anatel determine nos termos do art. 12, todos os Grupos que incluam Prestadoras de SMP são considerados Grupos detentores de PMS na oferta de interconexão em rede móvel nas suas respectivas áreas de prestação.
+                <a href="/legislacao/resolucoes/25-2010/38-resolucao-549#anexo" rel="nofollow" title="Acesse a Resolução">
+                 (Redação dada pela Resolução nº 549, de 19 de novembro de 2010)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Grupos que incluam Prestadoras do SMP com participação inferior a 20% (vinte por cento) no mercado de telefonia móvel simultaneamente em cada uma das regiões do Plano Geral de Autorizações do Serviço Móvel Pessoal (PGA-SMP) são considerados Grupos não detentores de PMS na oferta de interconexão em rede móvel nas suas respectivas áreas de prestação.
+                <a href="/legislacao/resolucoes/25-2010/38-resolucao-549#anexo" rel="nofollow" title="Acesse a Resolução">
+                 (Redação dada pela Resolução nº 549, de 19 de novembro de 2010)
+                </a>
+               </span>
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1670-resolucao-752" title="Acesse a Resolução">
+                (Revogado pela Resolução nº 752, de 22 de junho de 2022)
+               </a>
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_92">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/2006" rel="tag">
+                 2006
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação">
+                 Aprovação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20normativo">
+                 Ato normativo
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento">
+                 Regulamento
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Valor%20de%20remuneração">
+                 Valor de remuneração
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Uso%20de%20rede">
+                 Uso de rede
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Interconexão%20de%20redes">
+                 Interconexão de redes
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Prestadora%20de%20serviços%20de%20telecomunicações">
+                 Prestadora de serviços de telecomunicações
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Móvel%20Pessoal">
+                 Serviço Móvel Pessoal
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=SMP">
+                 SMP
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Telefonia%20móvel">
+                 Telefonia móvel
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaMovel">
+                 TelefoniaMovel
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=GestaoEconomicaPrestacao">
+                 GestaoEconomicaPrestacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoVigente">
+                 ResolucaoVigente
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="5683556eaa30a2de6e0aee11-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="5683556eaa30a2de6e0aee11-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="5683556eaa30a2de6e0aee11-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="5683556eaa30a2de6e0aee11-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-5683556eaa30a2de6e0aee11-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="5683556eaa30a2de6e0aee11-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="5683556eaa30a2de6e0aee11-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="5683556eaa30a2de6e0aee11-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

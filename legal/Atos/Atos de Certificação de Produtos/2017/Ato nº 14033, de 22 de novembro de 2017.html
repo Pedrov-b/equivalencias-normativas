@@ -1,0 +1,1109 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 14033, de 22 de novembro de 2017</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1264-ato-14033">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Requisito Técnico, Avaliação, Conformidade, Produto de Telecomunicações, Multiplex PDH, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovar os requisitos técnicos para avaliação da conformidade do produto &quot;Multiplex PDH 2/8/34 Mbit/s&quot;.">
+	<title>Anatel - Ato nº 14033, de 22 de novembro de 2017</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1635311765" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1195145071" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=267838410" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025142103" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2017">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2017">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2017">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2017" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2017" class="pathway">2017</a> <span class="separator">&gt;</span> <span>Ato nº 14033, de 22 de novembro de 2017</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9490629dcdc7cb34&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 14033, de 22 de novembro de 2017		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Terça, 06 Fevereiro 2018 14:10			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quinta, 21 Janeiro 2021 12:56			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 6380			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico em <a title="Acesse o Boletim de Serviço Eletrônico" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=2499012&amp;id_orgao_publicacao=0">6/2/2018</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL,&nbsp;</b>no uso das atribuições que lhe foram conferidas pela <a title="Acesse a Portaria" href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472#art19">Art. 19</a> da Lei n.º 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o Inciso II do <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/15-2000/129-resolucao-242#art9">Art. 9º </a>do Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela Resolução n.º 242, de 30 de novembro de 2000;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO&nbsp;o <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419#art1">Art. 1º </a>da Portaria nº 419 de 24 de maio de 2013;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do<a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlEo9dErWVP1ezJaH4m9VYgFxih17L4VX9iXk7FH-NXLI">&nbsp;processo nº 53500.081830/2017-10</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha resolve"><strong>RESOLVE:</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1"></a>Art. 1º&nbsp;&nbsp;Aprovar os requisitos técnicos para avaliação da conformidade do produto&nbsp;"Multiplex PDH 2/8/34 Mbit/s", conforme&nbsp;o Anexo I deste Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2"></a>Art. 2º&nbsp; Este Ato entra em vigor na data de sua publicação no Boletim de Serviço Eletrônico da Anatel.&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">VITOR ELÍSIO GOES DE OLIVEIRA MENEZES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;Superintendente de Outorga e Recursos à Prestação</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="anexoI"></a>ANEXO I</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>REQUISITOS TÉCNICOS PARA AVALIAÇÃO DA CONFORMIDADE DO PRODUTO MULTIPLEX PDH 2/8/34 Mbps&nbsp;</strong></p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item1"></a>1. OBJETIVO</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item1.1"></a>1.1. Estabelecer os requisitos mínimos a serem demonstrados na avaliação da conformidade de Multiplexadores PDH de 2, 8 e 34 Mbps junto à Agência Nacional de Telecomunicações.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item2"></a>2. REFERÊNCIAS NORMATIVAS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.1"></a>2.1. Recomendação G.703 do ITU-T -&nbsp;Physical/electrical characteristics of hierarchical digital interfaces.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.2"></a>2.2. Recomendação&nbsp;V.35 do ITU-T (edição de 1984) -&nbsp;Data transmission at 48 kbit/s using 60-108 kHz group band circuits&nbsp;&nbsp;.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.3"></a>2.3. Recomendação&nbsp;V.36 do ITU-T -&nbsp;Modems for synchronous data transmission using 60-108 kHz group band circuits.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.4"></a>2.4. ETS 102 080 V1.3.1:11/1998 – Transmission and Multiplexing (TM); Integrated Services Digital Network (ISDN) Basic Access; Digital Transmission System on Metallic Local Lines.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.5"></a>2.5. ETS 300 012-4:11/1998 – Integrated Services Digital Network (ISDN); Basic User Network Interface (UNI); Part 4: Conformance Test Specification for Interface IA.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.6"></a>2.6. ETS 300 011-2:11/1998 – Integrated Services Digital Network (ISDN); Primary Rate User Network Interface (UNI); Part 2: Conformance Test Specification for Interface IA and IB.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.7"></a>2.7. NBR 13415/1995 - Circuito de interconexão balanceado para velocidades de transmissão do sinal de dados de até 100 kbit/s.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.8"></a>2.8. NBR 13416/1995 - Circuito de interconexão balanceado para velocidades de transmissão do sinal de dados de até 10 Mbit/s.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.9"></a>2.9. NBR 13417/1995 - Circuito de interconexão desbalanceado para velocidades de transmissão de sinal de dados de até 20000 bit/s.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item3"></a>3. REQUISITOS TÉCNICOS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item3.1"></a>3.1. Características elétricas para Interfaces E1 e E3:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.1.1"></a>3.1.1. Atender aos requisitos técnicos vigentes para avaliação da conformidade de Interfaces E1 e E3.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item3.2"></a>3.2. Características elétricas e de transmissão para o canal a dois fios</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.2.1"></a>3.2.1. Quando o multiplexador possuir interface analógica, aplicar os requisitos e procedimentos de ensaio contidos no <a title="Acesse o Item" href="#item3.1">item 3.1</a> dos Requisitos Técnicos para Avaliação da Conformidade do Produto Multiplexador de Dados</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item3.3"></a>3.3. Características de saída para interface com par simétrico (120 Ohms) do Multiplex PDH (2Mbit/s)</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.3.1"></a>3.3.1. É desejável que o equipamento possua interface simétrica, distinta da interface coaxial, nas especificações a seguir:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">a) Número de pares: um par simétrico;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">b) Impedância nominal: 120 ohms;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">c) Tensão nominal: 3 V;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">d) Tensão de pico: 0V ± 0,3 V.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item3.4"></a>3.4. Requisitos aplicáveis quando o Multiplex possuir interface de linha com sinal 2B1Q ou com modulação CAP</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.4.1"></a>3.4.1. Potência média do sinal transmitido</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.4.1.1"></a>3.4.1.1. A potência média do sinal é obtida com a transmissão da palavra de alinhamento de quadro e símbolos de igual ocorrência nas demais posições. O valor da potência média deve ser inferior a 14,0 dBm medida na faixa de frequências de 0 Hz a 1168 kHz.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.4.1.2"></a>3.4.1.2. Procedimento de ensaio</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">a) Aplicar os procedimentos de ensaio do<a title="Acesse o Item" href="#item2.1.2"> item 2.1.2</a> dos Requisitos Técnicos para Avaliação da Conformidade do Produto Regenerador de sinais SHDSL.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.4.2"></a>3.4.2. Características do sinal na recepção (desempenho)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.4.2.1"></a>3.4.2.1. Aplicar os requisitos e procedimentos de ensaio do <a title="Acesse o Item" href="#item2.4">item 2.4</a> dos Requisitos Técnicos para Avaliação da Conformidade do Produto Regenerador de sinais SHDSL.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.4.3"></a>3.4.3. Tensão longitudinal de saída</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.4.3.1"></a>3.4.3.1. Aplicar os requisitos e procedimentos de ensaio do <a title="Acesse o Item" href="#item2.2">item 2.2</a> dos Requisitos Técnicos para Avaliação da Conformidade do Produto Regenerador de sinais SHDSL.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.4.4"></a>3.4.4. Grau de desequilíbrio</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.4.4.1"></a>3.4.4.1. Aplicar os requisitos e procedimentos de ensaio do <a title="Acesse o Item" href="#item2.3">item 2.3</a> dos Requisitos Técnicos para Avaliação da Conformidade do Produto Regenerador de sinais SHDSL.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item3.5"></a>3.5. Características elétricas da interface a 64 kbit/s</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.5.1"></a>3.5.1. Quando o multiplexador possuir interface G.703 a 64 kbit/s, deverá atender ao item 4.2 (Características elétricas da interface à 64 kbit/s) da Recomendação G.703 do ITU-T -&nbsp;Physical/electrical characteristics of hierarchical digital interfaces.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item3.6"></a>3.6. Requisitos para interface V.35</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.6.1"></a>3.6.1. Recomendação&nbsp;V.35 da ITU-T (edição de 1984):</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.6.1.1"></a>3.6.1.1. Ensaios aplicáveis aos sinais CT-103 e CT-104, e aos sinais CT-114 e CT-115, quando implementados:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">a) Gerador: item II.3 do anexo II.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">b) Receptor (carga): item II.4 do anexo II.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.6.2"></a>3.6.2. NBR 13415/1995:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.6.2.1"></a>3.6.2.1. Itens aplicáveis quando o produto opera com taxas de transmissão de dados até 100 kbps&nbsp;e possui na interface V.35 os sinais CT-105, CT-106, CT-107 e CT-109 implementados como circuitos não balanceados:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">a) Gerador: item 5.2.1 e item 5.3.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">b) Carga: item 5.2.2 e item 5.4.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.6.3"></a>3.6.3. NBR 13416/1995:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.6.3.1"></a>3.6.3.1. Itens aplicáveis quando o produto opera com taxas de transmissão de dados até 10 Mbps e possui na interface V.35 os sinais CT-105, CT-106, CT-107 e CT-109 implementados como circuitos balanceados:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">a) Gerador: item 5.2.1, e item 5.3.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">b) Carga: item 5.2.2 e item 5.4.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 90px;">NBR 13417/1995:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.6.4.1"></a>3.6.4.1. Itens aplicáveis quando o produto opera com taxas de transmissão de dados até 20 kbps e possui na interface V.35 os sinais CT-105, CT-106, CT-107 e CT-109 implementados como circuitos não balanceados:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">a) Carga: item 4.1.4. Com relação ao item 4.1.4.1, deve-se medir a resistência em corrente contínua, e verificar se está entre 3000 ohms e 7000 ohms.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">b) Gerador: item 4.1.5.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">c) Para carga e gerador: item 4.1.6.3.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item3.7"></a>3.7. Requisitos para interface V.36</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.7.1"></a>3.7.1. Recomendação&nbsp;V.36 do ITU-T:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a id="item3.7.1.1"></a>3.7.1.1. Quando o multiplexador possuir interface V.36, aplicar o item 10 - Características elétricas da interface V.36.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item3.8"></a>3.8. Requisitos aplicáveis quando o multiplexador possuir interface U - acesso básico</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.8.1"></a>3.8.1. Aplicar os seguintes itens da norma ETS 102 080 V1.3.1:11/1998 – Transmission and Multiplexing (TM); Integrated Services Digital Network (ISDN) Basic Access; Digital Transmission System on Metallic Local Lines.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">a) 6.3 - Desbalanceamento em relação ao terra;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">b) 10.6.1 - Requisitos de alimentação do TR1: apenas o sub-item 10.6.1.1;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">c) 10.6.3 Tensão de alimentação do TR1;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">d) Anexo A:</p>
+<ul style="margin-left: 70px;">
+<li>
+<p class="Texto_Alinhado_Esquerda">A.1 Código de linha;</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">A.12.4 Densidade espectral de potência;</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">A.13 Terminação de transmissão/recepção.</p>
+</li>
+</ul>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item3.9"></a>3.9. Desempenho</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.9.1"></a>3.9.1. Quando o multiplexador possuir interface U - acesso básico, o equipamento deverá operar com taxa de erro de bit menor ou igual a 1x10<sup>-7</sup>&nbsp;nas linhas do tipo A, B, C e D a seguir exemplificadas:</p>
+<p class="Item_Alinea_Letra" style="text-align: center;">a) Linha tipo A:<img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkAAAACGCAIAAAC61qLhAAAMNklEQVR4nO3dXZqrKBSFYWdWQ3NoDs2+8BRN8bvZbEXwey/6qfYYQQKsSEyynQAATGgbXQEAADQIMADAlAgwAMCUCDAAwJQIMADAlAgwAMCUCDAAwJQIMADAlAgwAMCUCDAAwJQIMADAlAgwAMCUCDAAwJQIMADAlAgwAMCUCDAAwJT0AXYcx77vPz8/+zzs2g0AMJgywLZf8T+5nNj+chuvHbZBdOcLAHgbzYR+JcGMFzT7vhNjALCG5qn85+dn6gC4MmzG9AWAnJ43VoItx3Fcx3R/vFZzFE2dXs4aZwEAbmFpIlbn/tEA4woMwBrUkeDfr+C2bNt2/fe8MxqtZuC20zYseCz3DAHApK557P0LfYF936+3ovrThAADgClNPYmZXIoRYAAwnwUmMQJMaYHnHsCXrTGDdZ4FAQYA81ljBuMKTIMAAzC1NWYwAkyDAAMwtTVmsM6pmAADgPmsMYMRYBoEGICprTGDsYSoQYABmNoaMxh3IWoQYACmtsYMRoBpEGAAprbGDPZ0gPUU9h4EGICprTGDEWAaBBiAqa0xgz13E8f13Ys9hb2HeYAlfyYOAG6yxmz88/PT83CuwHo987M3AOBbYzZmCVHDKsCuX7Up6Hx9AeDNRq27LDO3PP05sOo+wY94So7p71Z47HWqJpc1JgFWjq6mRgAwl+HjfY3VneeuwITPjTzA4t2EeeD/EnZyu7CSwp2rlZfoKQvAq7xhvK8xq/TOw00lCQuThIrbwb8QDopIHiS4VNd1mt4v4Gq3xvU+8HHHcQiH/HEc91VjmfuoO8/ilvfAgieyvEPhskmYTFME2Bq9Dfi4lwz5ZaaUzrO4/Qos+ZBr4/WvVgEmqZjTE2CtufVAbwbwgPeMesnB5e/mJPdMnk6wp5u9/Rm16fQ7m+iuADu9a+0gotwa4HUL38AAK7v2uWrr/qjedlg95nRyDej/63EchZ2BBaiH/E2VkRw5qEx1N/dOh/vfa1z7854b+/4xg5XVYJ9933MLqoVaSdwYYGcmgdz/7r/BUC6xXKhkn1hQ9O7dFRIcNuiFuyD5gIDrb/5Gv6eVR0HwB4ZQP/s3VcYqwIKO6m9P7hZsLO/gZ1iu9OpZFNz1Hpj7Iz6rIAwGBljTQ+ISFXQl4pTdNJwbQmffs4Z3ip/W+PWlYffrqae5TXxtF7SPYodgN3/jnrqfTvJA/18lZ5GtVcOu4idjS8XydQnpt9HwJcSmh8S1eklXxmddKzN76h5d99+AW+xdxrZtbiYJxAv+bk3M7bBPu6ayi1/SufW9+F7ozXuXpHxM4Q7bYgEW94/ggIoWUVcsqFXTQ+JaKehKBDBWT871lx4fpDxz+rttfy9V45M6BQt9uSPkipM/sLN9Hg2woHVMmqypYkGtmh6SrNjD/RjAEGMDLFaeOf3d/L+D+rgLMpMAS+7gLv6mvInDf2D82P4mq+6T206AAWiiG/U3DfzyzOnvFtffbdmje9NMAqypBTrbhwDTULwck/Q2AK/VOuRvHfjCIxemYv8I5u+B+TNkUw1b2QfYdc0YPzY+8+uAhe9YkjRBoaNcb+EmH9UZYGdjhpFewOx0q4ivCrDg41xuezXACreB+GX507UkFOMatrIPsOA0qrvldt5TH5opH2RL3VmbfGB/gOUqkKwSgAVIxvszw39TBVjuwqgaNuo1xmo7dDbRE0uI5aPlssRvslzRwQ7y3mMVYNUXZVx7ASspj3fh/GNSDUWAnZmVwPtuo682RWcr3RJg72cVYOfvR22CT5zw3fPAkl7ybfQPB1juewHjIwclVtceCTANwwBzVmofAAXV9HqgAj0BltxYOKbkpozcDuVmIcA0CDAAPUZFlyu9GmC5N19aM0ayQ/mWBQLMGAEGoJP/3sH1rVSPFS0JsOBrxnL2SHWfXFlOvHyaeywBpkGAATAxZOBLAmwKBJhG7nVEj5XaB4DQkCwhwP49vKmkZSboO577ldoHgBBXYD0IMA2WEAGYIMB6EGAaN12BrdGlAMixhNiDANO4KcDMjwng5bgC60GAaRBgAEwQYD0IMI2b7kK0PSCA92MJsQcBpsEVGAATXIH1IMA0CDAAJgiwHs8F2B23no9i/m3xyZ/xBLC8IQOfAPv38NbC1mg1rsAAmCDAejwaYOcSDbfd81M9BBjwQQRYj87FsOamz31F/xTuq/xK66sA5AiwHp1noWn6Tczf2VV01ETv18ocAQZ808AJbUi5tgYE2CX4ARi564dztt9f0JHHYY87PvjlI8AQWOMFMqpGDfyHf4HM3DVndr6bw5xrgwCDj87wHaOe66nfzTmN2m3Wk3+bZQIsvngt7PzmIeTq9szatX/wZToDJAY+15JB+k5W1Z7vzN+pf85yS7J33CEp5H4fXTgwXhtg10r16dXwpnq6hfHz97OA6oLiZfbWh2+pN/bddpMVGwTe8AHQ/jdiroHvOonmnSExV5bJub9u6pnUrg2wuPNZPbUKraewvzLAnmzG4PTVRcfx09qwuaKD6g3sXUtSD/xZFM4u+KdgHktut6+e+RG/qbUfF14NDZxidK/63zaAH2vG+PQ7A8zf0tSwe7Re6g7SE4pf0N8mNOlANL2NaoC5FcJCdI0NsO33vlB5BZIBthdXQePjN5VY5dbx5gqwa13F3yI/lN+p/P3jq7p4y8f5a+a6fviGJcQvo+lt5AKsGlevCrBA9SHxDJ5bCssd3Pysc6eQO6OeCgSn7wdJvKXQCMnqCWt17ZC8AkseQfjMfkThqRH2h+WXEF+OprfhzyDlOUsi+Z6nkLuKcuSncHHVqH7LSzLAkjOmPyPktgjrWeauwILKx7PStafborhvwp2IO0KwpfpZSXepGrdAXOGkBwLMf77iXprrLe6fgjuDgkdtQ+8r2WqqaxI7ATYUTW9jz78YV2gt2vx0hJVJBljuUNUtNlUXT9xxzVur4Z/I9veaUlfneEv5yY372x0BFrdM8AzmukpQgT26QpWc463CgSeQ7OEj6o7zJMCs5F6ImYyQIXKzki+Y2nLDe0tNrPE+JtVOligptCfAtu4wzlWv0BmSlb8vwMpHTh422C2uZHxkIdFAupl/Cq31hxWa3ka1H7//Jo5YfGdBIF4milcd45Pyx39ui7Bu8YSSLFFSqCLAkme9pabsuLbb37sGctXLdQa3/nntkKtJcATFOZ43BFjhyPIqmYifFDn/m/Ba6w8rNL2N1hdihYHxngCrnlTwmtqdgr+PZLJTzALx7FMoUVKoYjJKPkT3DEraLVl0UuEI6qZWB1hc58KRH1Zow5ygtq0DH7ZoehvqflwdIQNVa7JHS4jxRBZvzO1jU+k5AyzuP+XKFAIsOEI1ZoR1+3iAlV9JPFtr/I+mt9HZj/0Fjc5feNNJjtLWADt/17LiqS1e2opLV1c+kDyXuIhggVQxmcanrz6RaoBdPSR3w15wKewfhAArqIZW9Q5JAmwsmt6GYT8eNZ7duHX/W31IPG/m5nTJFpOzKEzlydmzpw7Jk1XWO/XmWVxQ7vjls04WIdcZYIW+8cIAa60MATYWTW9jmX7cNIaT82Y8KZQDrDw1t8rN9YWN7u/WsrbfG+jdH/p6/61DcCh1gAXH1NUw96LElZWr21wBpjvCMgN/UjS9DfrxvMqrczmb9wnc6xbT/g/kFn6RIJ794x2SSeB/mFpXq+Dh8QF3j//Aq8Ju9dgtLwcf3x44cDpb5mTgj0bT26Aff8qQaXfsxQqSGPhj0fQ26MffcV2CPF/uxq95vQ8Dfyya3gb9+Du4DILDwB+LprdBPwY+iIE/Fk1vg34MfBADfyya3gb9GPggBv5YNL0N+jHwQQz8sWh6G/Rj4IMY+GPR9Dbox8AHMfDHoult0I+BD2Lgj0XT26AfAx/EwB+LprdBPwY+iIE/Fk1vg34MfBADfyya3gb9GPggBv5YNL0N+jHwQQz8sWh6G/Rj4IMY+GPR9Dbox8AHMfDHoult0I+BD2Lgj0XT2+j8YXIAMyLAxqLpbZBewAcRYGPR9Dbox8AHMfDHoukBQIkAG4umBwAlAmwsmh4AlI7jGF2FTyPAAABTIsAAAFMiwAAAUyLAAABTIsAAAFMiwAAAUyLAAABTIsAAAFMiwAAAUyLAAABTIsAAAFMiwAAAUyLAAABTIsAAAFMiwAAAUyLAAABTIsAAAFP6D/BH59L1ve9LAAAAAElFTkSuQmCC" alt="" width="418" height="97"></p>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+<p class="Item_Alinea_Letra" style="text-align: center;">b) Linha tipo B:<img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,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" alt="" width="563" height="242"></p>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+<p class="Item_Alinea_Letra" style="text-align: center;">c) Linha tipo C:<img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,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" alt="" width="756" height="308"></p>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+<p class="Item_Alinea_Letra" style="text-align: center;">d) Linha tipo D:<img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,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" alt="" width="702" height="97">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.9.2"></a>3.9.2. As características de resistência/km, e capacitância/km dos cabos que compõem as linhas especificadas acima, estão definidas nos requisitos técnicos relativos a cabos telefônicos.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.9.3"></a>3.9.3. Condições de degradação: o desempenho especificado deve ser obtido para cada uma das linhas apresentadas no <a href="#item3.9.1">item 3.9.1</a> deste documento, com o receptor do modem em avaliação (MTL ou MTR), sujeito a ruído de paradiafonia e ruído metálico, conforme defini a seguir:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.9.3.1"></a>3.9.3.1. Paradiafonia:</p>
+<ul style="margin-left: 110px;">
+<li>
+<p class="Texto_Alinhado_Esquerda">a paradiafonia simulada deve ser introduzida no receptor do modem em teste. Esta é obtida a partir de uma fonte de ruído branco aleatório, modelada por meio de um filtro gaussiano calibrado;</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">a fonte interferente é modulada em frequência e estabelecida em um determinado nível de forma a simular a paradiafonia de 49 pares interferentes, que compõem um grupo de pares de cabo;</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">a densidade espectral de potência (dep) desta interferência é maior nas altas frequências (acima de 50 kHz) do que qualquer sinal 2B1Q padrão que atenda esta especificação;</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">após a aplicação de um modelo simplificado da paradiafonia para a dep assumida de interferência, obtém-se a dep da paradiafonia que é dada pela equação El, como sendo Pnext, e que está Alotada na <a title="Acesse a Figura" href="#figura4.1">Figura 4-1</a>;&nbsp;</p>
+</li>
+</ul>
+<p class="Tabela_Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxsAAAKmCAIAAACqnxSBAAAgAElEQVR4nO3d0WKjONaoUb//S/tc9H8yqQBCIGlLbNa66nIwEiDwN051z+cLAECbz+wJAAA8nqICAGilqAAAWikqAIBWigoAoJWiAgBopagAAFopKgCAVooKAKCVogIAaKWoAABaKSoAgFaK6n8+e45eP9q4sKuWt/9+/WjyI88NAFDiY/h/7mUQC9pe093LXXPdCxts99888dIoX90MsDAP6P/5/dHIdPey451efvif6q+H6xfb7aV4aT733Jtby/0F41SuxvufJYGeMcsAD7pmEKB8O9z46e4DtH639U/eMH+OixXsXpHvv1/0ftoe9Z9iMVsSC2q53NfWRthIl5TPyIiTFXzeAeANPseh+XubwmaN4o40bKR6v8/C0Xkfcb4izzsAMJSi+nsKfv/xKLB6jdtlPwDAChTVZ1tR238+eqVl3C77AQBW8Pai+h7/TSlFBQBUUlSXi6rLKQv+hSsAMNSLiurob5cf/d3zcUV1NJO+owAAYd5SVJXZdLTZn592n8yRxoEAgBhvKarvwTdDp0VV2LjXZBQVADxa8Kf2in1QGVjf3r+ME0wA8CyFD25F9f1e/7/Z6jhol10BAAHKH9yRn+zrBsRpMPU9TX6pBwDJKKo5FBUAZKKo5lBUAJCJoppDUQFAJopqDkUFAJkoqjkUFQBkoqjmUFQAkImimkNRAUAmimoORQUAmSiqORQVAGSiqOZQVACQiaKaQ1EBQCaKag5FBQCZKKo5FBUAZKKo5lBUAJCJoppDUQFAJopqDkUFAJkoqjkUFQBkoqjmUFQAkImimkNRAUAmimoORQUAmSiqORQVAGSiqOZQVACQiaKaQ1EBQCaKag5FBQCZKKo5FBUAZKKo5lBUAJCJoppDUQFAJopqDkUFAJkoqjkUFQBkoqjmUFQAkImimkNRAUAmimoORQUAmSiqORQVAGSiqOZQVACQiaKaQ1EBQCaKag5FBQCZKKo5FBUAJKOoJlBUAJCJ76jmUFQAkIyimkBRAUAmvqOaQ1EBQCaKag5FBQCZKKo5FBUAZKKo5lBUAJCJoppDUQFAMopqAkUFAMkoqgkUFQAko6gmUFQAkIyimkBRAUAyimoCRQUAySiqCRQVACSjqCZQVACQjKKaQFEBQDKKagJFBQDJKKoJFBUAJKOoJlBUAJBM2Ie7gPgfRQUAySiqCRQVACSjqCZQVACQjKKaQFEBQDKKagJFBdDoz4P0UzRxnryHoprAHQ7w494jUVGxGkU1gTsc4D+3u2f7lt39iCrCKKoJ3N5AVlefb7eL5yieeu0frlJUE7i9gay6fNtU+ZbuReXJTAtFNYGiArIaXVSff+3+qPDKdg9blyYPPxTVBG5aIKuhRVWun8pIOi0qz2fuUVQTuGOBZI66pOZZV/lI/LNZIZXKLxb+qKhooagmcMcCmTR+5dO3qK6+8XS3UElRTeCOBVKqr6jtu65upqhYjaKawB0LZHXj+Xbpq6zPv7+hq9mPoiKGoprAHQtkde8LqqtRVeN78J1Z/dvhEkU1gTsWyGe3SK5G0tVRbuSRomIQRTWB2xXIRJ3AV1FN4REDvIEHHa+iqObwoAGATBTVBL6jAoBkFNUEigoAklFUcygqAMhEUc2hqAAgE0U1h6ICgEwU1RyKCuASj00Wp6jm8GgAqOc/Fsr6FNUcngsA9RTVE73wP6CvqCZIv6oAOnrJ53Eybysq31HNkXtVAfT1hs/jZLaXbOJFjBlXUc3h0QBQT1E9zu71yl1UX7/1m8KjAaCeonqcG99Rjbu+iiozjwaAeorqiX5ftd2/SvU5sLuT8h5O91kYou/xjtjz34ECxngQjwaAeorqiepr6eiV3Yu++5byH2OK6us7qik8FwAuUVSPU5MvhWA6eu9RmV16yyCKagKPBoBLPDYfp+Z6HRVV/dda5dfrZ9KFoprAowHgEo/NZ6m8XleLqjxcoah8R5WWRwPAJR6bz9JYVPV7+G4irGaUQRTVBB4NAPVufGnBXDVXqvD7u59/vjrQ6T6HUlQTeCgA1Nj+DsjD8ykqi+rPZr9f3G6wux52NygMNG4hKaoJPBQAaiiqxAr1s7vZaSrVvDh0FSmqCTwUAGooKh5EUU3goQBQSVEtyxX5Q1FNYAkCc20fQZ/j/7eQueTUmlyRLUU1gVUIjLD7O7JBZh1U2LgUuBy7Ys6Jk/4PCxFoFJNN9ww92O475yrX4kjMOXHe/2EtAjfMCpqWyXSZmI/wdbgWBYpqAssROLVCNt0wIrDWP+qXcCHKYk6Os/8PKxL4o2+CLKU9sJ5+BnJwFU7FnBwX4B8WJfCtSI3ZExyr8tjfc0JWtuwlWGpWimqCpVYAEGnNfvqZwJTJnJblCqfozRY//+tMTFFNsPLSBLqbkgj1mXLblMmPG5Rdzny9mBPlSvzD6oT0wpqguYt2ptf49hHCBuI3Z/uSmHPlYvzDAoWshnbGCmVzbzLjzkCX3bLLSb4q5ly5Hv+wRiGZ7g1RnylrPk9GN5auGs2JvUFRTWClQg4dK2FcfKxgUF0lO0vrcD7viTlvLsw/LFZ4tC5BkDuhavTKrBeeuqGcxtsU1QTWKzzO6IrqPuHbM1l2SpfeHjPnfJy9FjFnz+X5hyULD9L4UR3cKzWp1NeUA6l516CJJea8NYo5ga7QP6xaWF9LOgT0R2XunIrZ7aDjPd2y+zQSc8baxZxDF+kfFi4sq7EMRrTF3JRZcG41u511Qh7Kueoi5jS6Tv+wdmE1jR//3dMhrE5GqOur1mM53ckjztUKnKVeYs6kS/UPyxfW0fLp3rFyHpdNlwwNrMJ7853Jdr/PhvPTl6KawAqGuVo+xfumT9+9PU6vuhJVlX6fDWemO0U1gUUMs7S0S3v3tKdDbo3n52h7J/mHhTeUoprAOoZ4vULqxs0rpG64fdJE1RHLbzRFNYGlDGFaPkI6vtdnWIurJ3O7gfP/ff2vmAMoqgmsYwhw+5Oje0hdnDgllWdYVP2xe97efEJGUFQTWMQwTnxI+ZSa4nZUBc5xIXIqgKKawDqGEe59VNz+jPH5FOzo9BbO/5/XX3uZrNUYiur876t2X39WM3TUpYcCRqRF+VQXrshzo6pXA2mpMG8pqqPjLC+1QQvRmoYu7t2et+9oH0sT1Zz20yd55X4m2n7olF3dYcAhvFnMSZ5/FXeP888iK/yx73K0sqHRjc+J2x8tNz7G6O5GQxy9uOZF3C6z7QdQQc1uA4/mvQLO8/wLubueju6679492XFRWtxw29VPiPrPnl5vZIR7F3374vafV3BjPpXrc7UjTU9R/X3laI0qKpilPYnujeVWXUHj1f/z4nexh3D7ZCzXdSiqv68oKljH1U8LIZXPvUtzVFRLXeWO01jnoF4r5vzPv8CVRfUt3rqKCsLc+ORr/Nx1Yy7r9jU6jaoBk72g+xwWOa7XylNU5fuk8sXPxulOek21PDS8xI274N6N43Z7kMaL9fuN6zxpB40+/bjeLObML11Un+P/+fIJKaqC9rHgKa6u/Ns3i1vsWdofjH/euMhjdtzQ1vZEAWd+/qXdXWHbO2r3rivsoWUyVjz858bHm5B6j21R9Y2q3vOtnc/o/Q8dYveiuLlizsASv6vevd7lBTForVh28J+rN9eNm9Hj/ul6fWz/ee/EVRH0uTtmlN3LMeiz8nGCruzoAU6GL17p+p/2nU+vvcHj3LitGt/ijnuujh/Yv987cW3EjDji0E7PmDsu4MBfemaPvHm18XLxLXV3pqzis/c3ym/v6ufts4I7crjuY1Xu8M13n6Ka4J1LjTe7+unVGFJusXy6XNbPgS4zrJxA5Fgdh7t3M/Ya/SkU1QQvXGe8VksYXd3enZVYr+s7saji663jiFd39c77UVFN8MJ1xtvc+Li69JaJXzMwRfc4iF8/8au0b4ZOGfpZFFW0d64z3uPqp1TL9m6l9+h7uRVVwH5eeIcqqmgvXGS8wY0Pp0tvEVIvN7qoRi+qKetWUQVTVNFeuMjI7cbH0u32apgmz9Z9AcQX1dD9F8ZtHLrl/LzttlVU0d62wkjsdkgN2p7EHl1UE9dwr6KaNfqzKKpob1th5HP1c2j09rzB04tq3M5Ph24ZvfHkvO0uDjjYt5zKeu9ZXkwx9Cl2aedXP66EFEdGrIqwqJq7ntuLqnH099zOimqC9ywvgo37bBjdRlqKsucW1fRV3TIBRXVJwJG+5VTWe8/ySuMRl2x0S13auPItQopKgxaJohr33l57eJCAg33Lqaz3nuWVw+JPhHEfBrdbqvvOIaaoBg3RfZ835nBvGorqEkU1wXuWVxprXrJxHwOX9nx1DlqKGx5aVIssdUUVQ1FN8J7llcZql2yFkLo6jXEfWtBCUZXf1T7/RU5CAEUV7T1rK5N1Ltm4KNFSvJai6viucftZn6Ka4CVrK5MVLtmgh/6l3d6Yg5ZifZ9/dd9trx22uDETRXWVoprgJWsrk4mXbPT/eh7URuOmDd0NLapee2ukqAIoqglesrYymXLJxhXJvTa6unPrnAdRVI3bn+5qnVMxjqKa4A0LK5ngSzboAXTpM+PqB8x7Hpqk9PlXx3122VW7iUXVfW/LUlQTvGFhJRNzycZFSUxLWdg8V+6c+iqqEIpqgjcsrGSG3yTDomTo90xCijTSF9X34nNMUd2gqCZ4w8JKZuh9Mq5LtBTUe0NRXb3Hpwz9XIpqgjcsrEwGfYG0QpTcOLQVpg0jKKrbGwfvbVmKaoI3LKwcPht999m+ty4zGbQ9PIuiur1x5Q477m1NimqCNyysHPoW1Tot9b31bF1h2jDOiP/t1L6fjqYX1WonpDtFNUH6VZVJl4fsOkVyaSbrTBti9C2q9p30dbWoJo7+XIoq2htWVRrtRbVIl9RPY6nv0iBSr5W/7O2jqIbyHdUE6VdVJrfzYp0o0VJQqdctsOxNpKiGUlTR3rCqkrn6hF0nSrQUXNV+I6x8K116IEwZ+tEU1QTpV1Uylc/HpaLk0kzWmTZMp6jqNxsx9NMpqmhvWFWZnD4f13mAXqq6pRIQFtGrqDpOqSNFNZTvqCZIv6qSqcmpyPkUpqGloJGiqt9sxNBPp6iivWRhpbH7hF2nSO61VMDE4Ina//fGyrdY/YNi1tCP5juqCdKvqnw+G7Nn9P1eefSvNnNYmaJSVPcoqgnesLAyWTBHbnwptc7kYX1Zi+pbV0vjimrlM9NOUU2QflUls9T1uvRUesMjDEa4feOsf9PNKqrvYs/SQRRVtDesqhzWeTiuMxN4g9t33Pq3as30FNVtiiraG1bV0y1yjfzODmZpKaoR8+nldIbjDmH9k9NOUUV7w6p6qKXyZanJwNsoqvihE1BU0d6wqh5nnXzxvRSsIGtRfef9N/YecXIaKapob1hVT7FUu2gpWIeiCh43B0UV7Q2ran1L5cs6MwH+c++ufMSNrKjGUVTR3rCqVqalgFOKKn7oBBRVtPRLalnr5MtSVQdsKar4oRNQVNHSL6kFrZMv68wEKLtXVIMm05GiGkdRRUu/pJayTsGsMxOgxtUb9ik3uKIaR1FFS7+kVrBUvvgdHzzR1dv2Kfe4ohpHUUVLv6TmWipf1pkJcFXW76i+xQ9+RdVi9AFmPnf3pF9SE61zbteZCXBP1u+ovsWpKqoWiipa+iUVb6mvgtaZCdBCUUWOm4OiipZ+SUVap6UWmcZ3pXMCj6aoIsfNQVFFS7+kYqzTDYtM47vSOYEc3llUU8bNQVFFS7+kRlunGxaZxnelcwKZKKoRQw/d/1yKKtqD7rrVrNMNi0zju9I5gXzeVlQBh/Cgs3SDooqWez2NsE40LDiTFSYDWV26yx50PyqqQRRVtNzrqa+lomGRmSx1TiA3RRU2dA6KKlru9dTLIt2wyDT+s9Rk4A3qb7pn3ZuKahBFFS33emq3SDcsMo3fM1lhMvA2KYvqe/A3xBVVI0UVLfd6um2daFhwJitMBt5JUXUf91kn6hJFFS33erphkWhYZBr/WWoy8GaJi2o7YUXVSFFFy72eLlmkGxaZxteXUrCeylvycbetohpBUUXLvZ4qrdANK8zhh5aCZSmq0eOmoaii5V5PZYt0wwpz+DOTFSYD7FJUo8dNQ1FFy72ejiySDivM4cdSkwGOKKrR46ahqKLlXk9bWmrZmQA1FNXocdNQVNFyr6fftNSyMwHqKarR46ahqKLlXk//WaqlJk7gxwpnA7hHUY0eNw1FFe0N62n6Ma4wh9VmAtxTcxc/7jZXVCMoqmhZ19NSLTVxAr+nscJMgEaKavS4aSiqaMnW0+df06cxawILzgToQlGNHjcNRRUt03rSUmvOBOjo9NZ+4o1/VFRTxk1DUUVLsJ58L7XgNIBx8hXVdzPtsKN46OmqoaiiPXoxaakFpwGMlq+otnNWVO0UVbSHLiYtteA0gBiKaujQaSiqaI9bTCu01PQJbGcydxpApHxF9d38ramYo8j9CFVU0Z6ymFYIqa+WAhagqDoO+tDTVUNRRXvEYlqkY1aYwzrTAGbJWlS/px12FA89XTUUVbTFF9MKLbXCHFabCTBR+Tnw0EeEohpBUYVadjGtUA8rzGF3MivMB5hFUY0bNxPfUUVbbTEt0g0rzOG799xcYVbAdIpq0LiZKKpo6ywmLbU7jcrXgVdRVIPGzURRRVthMa3WUrMmUDmNFSYJzKWoBo2biaKKtkjErDON9ecwfarAdIpq0LjJKKpQsz6eV4iYRaZxaQ4rTBiYTlENGjcZRRVt94x/QsQf7PboZs3heytnF5k5MFfhIfDQ58OfaYcdxUNPV6Whh5b2rN12tJj6ltNW/JHuHtr0Odx+4/TTCExUeAI89OHwZ9phR/HQ01Vp6NGlPWstOp7un10tuEYXCZGWCSwVpsBEimrQuJmM/qTIedZavOGzeZEEaZ+DogL+U3gIPPThoKi6U1QTZF1M38Vaqu/eph8UMFH5O6rgyXShqEZQVKGyLqZFsmPQHFJeMuCS3WfL9IfebYpqBEUVKt9iWqGlRs8h2SUDblBUg4bORFFFy7GYPv+aPpPRQwzdP7C+lEX1M3lF1YWiivb0lbRIS0XO4emXDGiXrKi+/z7Zwg5k+mfHUIoq2nNX0motFTli2FjAmhRVr0EffdLKFFW0Jy6mFULqO+9WfNz1Aro7evg89/nw+4giH63TP0rGUVTRnrWSXt5SP6NPGRdYh6IaMW4yiiraU1bSCi01fQI/05g7AWC6o8fRc58Piqo7RRXqEStpqZZa4XStMAdguu0TaZFn1D2KqjtFFWrxlbRCx0yfwNZSkwFmUVTdx01GUYVadiVpqYIFpwTEU1Tdx01GUYVabSWtEFLfhVvqP8tODIiUrKi+k/6bOE8/aQWKKtQ6K0lLAVySu6iCBw0bLpKiCrXCStJSADcoqo6Dhg0XSVGFmruStBTAbYqq46Bhw0VSVNGmrKRFImaRaQDcoKg6Dho2XCRFFW3K2p2+fBeZBsBtiqrjoGHDRVJU0cJW0pRbZcE5xPgcmD0voBtF1XHcyOHCKKpoAStphU/0FeZQ1jjDmgfryocPXKWo+o4bOWIMRRVt6DJapGNWmMOpxi+TKh+si58EoJ6i6jtu5IgxFFW0Qad7hZaaO4fbg96Y8NE3Uh1nBaxGUfUdN3LEMIoqVN/T3fhFy4hpTJxDzBt3j/SosSp3nvXhApkoqr7jRo4YRlGF6nW6tdR2JvfeVTn535sV+mmrZptFziFQkLuoIg/k6eetQFGFaj/di3wGrzCHP5MZ997dJ2l5m6OTs92mvD2wjsRFFT9u5IhhFFWoltO9SMQsMo3v2Vc+l3Zyus2NV7Yv7lbXpZkAEymqjuNGjhhGUYW6d7oXiZhFprHVOKvT97YUVX1CLXhigd+S3bOKqjtFFefGMlokYj7/mjiTIzdO7M8/KCqgRrJ7VlF1p6hC1Z/uFQpm/ZD60ZKqNe8tP0aPdqKoIJNk96yi6k5RhTo93YtEzCLTqHdjkleP7rPn6PXdnVe+6+qBADH+3KFPv2FnPXaeft4Kxh1XzvPVqHC6F/lYXWEO9XQJEEZRdRw3csQwiirU0UpaIQVWmEO7p88fWFayovpO+u+2JDhvRxRVqN2VNL1jcrQUwFCKquOgkSOGUVShVltJWgqgkqLqOGjkiGEUVah1VpKWArhEUXUcNHLEMIoq1AorSUgB3KCoOg4aOWIYRRVq7krSUgC3/X5+5nicTvllRYLzdkRRhZq1knLc/AATbb+jmjiZLhRVX68uqvJiGrHUZn2/mnX5AoRJXFTxg0aOGCZ5UVUG03azwo/a59NlV/UjRg4HkNXvB3iOLPAdVV/jDm2J83W0Vv68vvvH053cnk/7fgAIVvjUeChF1de441rlfF0qqt3lpagA2P1omDifdoqqr3GHtsr5ai+qo530mgwAj5C1qOIHjRwxzEuLqrBNocBiJgPAghJ/RxU/bvCIMVIV1e6RXC2q3f0oKgCyFpWvqbrIUFSF39Z9K45wu0HNK+1TPfpR+ygAjKCoOg4aNmKYDEX1rSiV8htPXxxRVAXtAwHQnaLqNWjYcJGSFFVB4QgrI6zjgiuPqKgAVqaoeo0bOVyY5EVVWC7lL4cKP2qfUq9dARDp98eBomoZN3K4MC8qqs/eL/IqN+g7pY57AyCMouo4aNiIYZIX1YJSLiOAN1BUHceNHDGGogqVdRkBvMHPMzzHw9x3VH0pqlBZlxHAGxT+osgTKaq+FFWorMsI4A0UVcdBw0YMo6iipVxGAG+gqDqOGzliDEUVKusyAniJj79H1WncyBFjKKpQWZcRwEsoql7jRo4YQ1GFyrqMAN7g5xme42GuqPpSVKGyLiOAN1BUHceNHDGGogqVdRkBvEGyovpO+jfv0py9PxRVqKzLCOANPv+aPZ1WvqPqTlHFSbyMAN4gU1F9fUfVm6IKlXUZAbyBouo1aOSIMfzWL1rKZQTwEoqq16CRI8ZQVNFSLiOAl1BUvQaNHDGMogqVdRkBvIGi6jVo5IgxfEcVLeUyAngJRfXQQWMoqlAp1xDASyiqjuMGDxpAUcXJuoYAXkJRdRw3eNAAiipUyjUE8BKKquO4wYMGUFRxsq4hgPdQVL3GDR40gKKKk3UNAfBEiqovRRUq5RoC4IkUVV+KKlTKNQTAEymqvhRVqJRrCIAnUlR9KapQKdcQAE+kqPpSVKFSriEAnkhR9aWoQqVcQwA8kaLqS1GFSrmGAHgiRdWXogqVcg0B8ESKqi9FFSrlGgLgoRRVL+MOKtuZ6iXfGgKAS1IW1dd3VMFSriEAqKeoru12xE4TSLmGAKCeorq22xE7TSDrMgKASlk/ChVVqKzLCAAqZf0oVFShsi4jAKiU9aNQUYVKuYYAAEUVKmuYA8DLDfqIFw37FBUApOQ7qlCKCgBSUlShFBUApKSoQikqAEhJUYVSVACQkr+ZHkpRAUBKiiqUogKAlBRVKEUFACkpqlCKCgBSUlShFBUApKSoQikqAEhJUYVSVACQkqIKpagAICVFFUpRAUBKiiqUogKAlBRVKEUFACkpqlByCgBSUlShFBUApKSoQikqAEhJUYXy96gAICtFFUdRAUBWiiqOogKArBRVHEUFAFkpqjiKCgCyUlRxFBUAZKWo4igqAMhKUcWRUwCQlaIK4gsqAEhMUcURVQCQlaKKo6gAICtFFUdRAUBWiiqOogKArBRVHEUFAFkpqjiKCgCyUlRxFBUAZKWoQikqAEhJUYVSVACQkqKK47d+AJCVooqjqAAgK0UVR1EBQFaKKo6iAoCsFFUcRQUAWSmqOIoKALJSVHEUFQBkpajiKCoAyEpRxVFUAJCVooqjqAAgK0UVR1EBQFaKKo6iAoCsRnzKi4Z9igoAslJUcRQVAGSlqEIpKgBIyd+jCqWoACAl31GFUlQAkJKiCqWoACAlRRVKUQFASooqlKICgJQUVShFBQApKapQigoAUlJUoRQVAKSkqEL5z6YDQEqKKpSiAoCUFFUoOQUAKSmqUIoKAFJSVKH81g8AUlJUoRQVAKSkqEIpKgBISVGFUlQAkJKiCiWnACAlRRVKUQFASooqlN/6AUBKiiqUogKArBRVHEUFAFkpqjiKCgBS8lu/UHIKAFJSVKF8RwUAKSmqUIoKAFJSVKEUFQBkpajiKCoAyEpRxVFUAJCVooqjqAAgK0UVR1EBQFaKKo6iAoCsFFUcRQUAWSmqOIoKALJSVHEUFQBkpajiKCoASMl/Mz2UogKArBRVHEUFAFklL6rbh/f5peNkFBUApJS/qE6P8M82v0Oqb1QpKgDI6u1FtW2mQmCNngwA8FCK6qSoanZyaT5d9gMALEVR7fTT1Z1cmk+X/QAAS1FUigoAaJWhqAr/Xt5RDH02Cm/xl9MBgDJFNaGoyroMBABEylBUBaeNclpUfUNHUQFASq8oqsJB7m4wrnIEEwCk9JaiOjrOow0GfWmkqAAgpeRFtRpFBQApKapQigqAV3nPXxFWVKFesqoAbnvJc7Lvv/PUZT8jvOrfu1JUoZ6+pPybidP590NbPP10dbzoK5+HsMu0O0rY6e14/658Nf/z9FuvUv+/e91xX/k8fUn9eQQ8/SZ53OT/fKA+t6hmzXncGQu4EH1L+onLprvd0xgZrB2LavELuv4Mu1BUoZ6+pLbL5dH3SeelH/WZOnSIGBOP4qFF1f3WS7OWWuyegccV1aXOPt14G+5H0Vk54u+3VB7RcymqUE9fUkd3V2Hjwgqbfo8pqikuPYgHTaD7Dkcf0Xb/LSPe/gy+t8HuoIWNa35aP//TKZ2+uB2x8qTdm0B56NNt6ndVeaRHp+jSJWi8Uk/R/TDzn7IWT19Shbtr+0qve/LqrXs6/9O91Q93Y4ctR3HpvTcmVr+3liOtHPTnR5f2VnN+bp//8riV07s9+mfvLqsccfe9p1OqmfztbQrn4fQsdTmfRwPVnK7TQSsndo5m5f8AAA3YSURBVHX+5StVM9bvzQqvXJpYxxPydN0PM/8pa/H0JXXpAVTzys+LRwux1xNn+9N7z6CjH51uWT/Je/M52rKw/WdP5bgtF6vyKE5ndXv72+d/O9bvP57O6tLhHO2qPOLuxLYb18yk8MbCNru7vXrUl7bvdUoLL9a8cm9Wvc5MzX7qt7lx/ruMnkD3w8x/ylo8fUnVPIBu32C3nxSnOzn6Ucsjr/Ihe/XxVDOZ06feiEvQ94lZf+avnrrKqV7aZ80olaeuZT3UXP3CIjzd7HTyNcMdvXLpkK+updsXtHAay5vdODMtm51ufOmGKu/n0sxPd1gz+Uy6H2b+U9bi6Uuq5nldeaftPqQKW1aeusJmuzOv2WHNM/doy/onTo0bz7vTbf68cnvQS8dYeQiVe/s9gcqpXtrz7kA1+9zeC7eHbrkKuxe6clflmdfs+cZRVy7dxrN69N4uB1U5qxtHenQhKscqj3hp2pcuwe3L9CzdDzP/KWvx9CVV8wCqvMd2H1LljSt3W/+jlhFPz8PVmde4tJPTR97uhTvdT6+51Uy+fm+XznOXC1Gzz45Xv3IPhWnUbLl9V3ny2x/VrLRTNSuty7mtnG3lYV7aoGazP0dXONjKZd932n8m1j56At2PMfn5avT09dTxAbq7q8o53Pvp7jyPJnb6vL50Knpd99u72p3G7xdPj/TGBS1v3Gtvuw/324ukfsT6F7tc/cr9XJ1b46CX7oLyWPXbfw7U7//qbCsP89IGNZvVr+3KZX+6Wf2ZvHoJWi7Tg3Q/xuTnq9HT11PlXVR/g/15pXIO935aOeLvyRcOc3dvR5v1uu63d7U7jcoHYuUhXJrbjeVRv2X5vV2uyJ89lBdJl6tfuZ/CVb4xt9MVUnnyt/tpufq7e7t9kmv2VnmYlzb4M3rL9LZb1u9td5vTaRfmdrpx5c4fqvsxJj9fjRKsp6v3z9GWNa9cHfTSTgq7qtzyxmaFmdfYHbH+KHY3uDdu/fROtyxsUDO3o3FPh67c+aVBazZrGbHjxL6dPoNrXrk0q2/F1f+zk5YTe2lif954+6fb0VvG+rO3LiNyT/dz6zqVWMctOp69XruqfxC3P/p3RywMfbrNjclc+qir3PjSBE7Hrd+414inQ9efkI7qh4ucFaTX925yZ5Z4cgFAVooqjqICgKwUVRxFBQBZKao4/soCAGSlqOIoKgDISlHFUVQAkJWiiqOoACArRRVHUQFAVooqjpwCgKwUVRxFBQBZKao4igoAUur+F3sUQ4miAoCUFFUoRQUAWSmqOP5dPwDISlHFUVQAkJWiiqOoACArRRVHUQFAVooqjpwCgKwUVRxFBQBZKao4fusHAFkpqjiKCgCyUlRxFBUAZKWo4igqAMiq76e8XChRVACQlaKKo6gAICtFFUdRAUBWiiqOogKArBRVHEUFAFn5d/3iKCoAyMp3VHEUFQBkpajiKCoAyEpRxVFUAJCVooqjqAAgK0UVR1EBQFaKKo6iAoCsFFUcRQUAWSmqOIoKALJSVHEUFQBkpajiKCoASExRBVFUAJCYogqiqAAgMUUVRFEBQGKKKoiiAoDEFFUQRQUAiSmqIIoKABJTVEEUFQAkpqiCKCoASExRBVFUAJCYogqiqAAgMUUVRFEBQFb+f/3iKCoASExRBVFUAJCYogqiqAAgMUUVRFEBQGKKKoiiAoDEFFUQRQUAiSmqIIoKABJTVEEUFQAk1vGDXi6UKCoASMx3VEEUFQAkpqiCKCoASExRBVFUAJCYogqiqAAgMX8zPYiiAoDEFFUQRQUAiSmqIIoKABJTVEEUFQAkpqiCKCoASExRBVFUAJCYogqiqAAgMUUVRFEBQGKKKoiiAoDEFFUQRQUAiSmqIIoKABJTVEEUFQAkpqiCKCoASExRxVFUAJCVooqjqAAgK0UVxG/9ACAxRRVEUQFAYooqiKICgMQUVRBFBQCJKaogigoAclNUERQVACTmO6o4igoAslJUcXxNBQBZKao4igoAslJUcRQVAGSlqOLIKQBITFEF8R0VACSmqIIoKgBITFEFUVQAkJiiCqKoACAxRRVEUQFAYooqiKICgMQUVRBFBQCJKaogigoAElNUQRQVACSmqIIoKgBITFEFUVQAkJiiCiKnACAxRRXEd1QAkJiiCqKoACAxRRVEUQFAYooqiKICgMQUVRBFBQCJKaogigoAElNUQRQVACSmqIIoKgBIrNcHvVY4oagAIDFFFURRAUBiiiqIogKAxF5aVJ9frv60ZcReewMAlpK2qCqDabvBZ6PjfLrsCgBYzXuLavvPp39sn0+XXQEAq3ldUf1+fbvB9o+KCgA4lbaovgfHVvil3m5gdTtBigoA8npvUW03KGw/aDIAQA4vLardPyoqAOCeZxfV7i/v/vz09MWjXwIWdtI+1c+B9oEA4EHSfPYpqv+9UvhR36kWdBmLKTJdwTQHwn9yLM4cR8FWmiv77KIqqymqS39sn8x25zmWEV8PBRaW45rmOAr+eNZHYXmqaYuq8MVP+ZuhQd8bHc2ky85ZwYMeCmVpDoQfOa5pjqNgK82VfUVRlaOq/N6+89m+2Gv/TOehwLJyXNMcR8FWmiubtqhWo6jeIMcFTfN040eOa5rjKNhKc2UVVRxFlV6aC5rmQPhPjk+sHEfBVporq6hmyrGG+JHpuTB7CvSUY2XmOAq20lxZRTVN97+qxXRprmaaA+E/OR41OY6CrTRXVlGF+sT6M+7EA3+JNOc5x1HwI8fKzHEUbKW5sr0OJMO5CBDWUrltz+R37zu/P3/cfWXExR20/0g5joIfOVZmjqPgx+6zfbvB7pZXPyMidTgz7bsgzO+rPnHZcU/lhfseN+XnuDu3A9WsIlp89v4nQdsa6WCFOaSxvcok1uGZ0L4LeLTy3RV5PwOrWfk5MG5ipw/G78Vv9+u3vPHQ7rXbdgtNBeCqpZ6nwJt5GAEAtFJUAACtFBUAQCtFBQDQSlEBq7v07xMV/g0gf40dGMfzBQCglaICAGilqAAAWikqAIBWigoAoJWiAgBopagAAFopKgCAVooKAKCVogIAaKWoAABaKSoAgFaKCgCglaICAGilqKp8/r9LP/r56eDZAQCT+bD/P6dVtFtO934EABPVfOQVfnT1+4Warx4SfFA+/gC6OF0H23/e/dHulmnWyoMUbvvT0q1876ipk9HtRdX4IwuVrfrH4+fuNwj1bzz96bM8e/YdFa709pV7q23QzPmjfHP+vL7dZvtQKP804FhIoP6zpH69WajcVvN43G5W83jc/vOlPyZYsQ+eel+7F/L0Qba7/dG7RkybrcrnxZ9XTq/19ingmlKjfkFe+uCp/5GFym9XH4+FD7XKn+4OVHhj0+FN9eCp91W48NtXahbK6c4ZpPAp4s4nXnlB7m5poTJOeRXtbnm66gqjlH96OodnefDU+xq6wp6+Sh6ncCEKW156ZLimVLr0WGhZjRYqlXYXTMdVV//T3R9dPp5lPHjqfVU+jD7/2t3+6Efd58yp7SNjdwMfVIy2+wFW2KzXZ5uFSsHP2ui76up/WpjSEz146n3tXuCjVwobV+6HMIXrst2g/r2uKTf8XjYdP8BOf9TvCEjls1HYoP5Ht3/69OX64Kn3VXN16/9Y3pJI9c+LSz91Tbnhs1HYoOOP+h4FaZQXZK+HZ/0bn75cHzz1viqvff2CK7+RcT7VEfz7lfK9ne/OJ8zRCuz1PKn50ZAD44F+L4k/y2P3j3/euPvHmv3s7vbPok2wXB889Y4KD7Lv5qof/bS82yHzZs9no/Kn2x9tf/pNcdsTqbByfv/x9Ec1W5aHg2/DFwGFH7X8tPzGZ3n27GFX+eYs3723HxlwpPsnTctnG1Q+IQs/Le/59qzuvXEdjz8AgEdI8IEBFLjDAQBaKSoAgFaKCgCglaICAGilqAAAWikqAIBWigoAoJWiAgBopagAAFopKgCAVooKAKCVogIAaKWoAABaKSoAgFaKCgCglaICAGilqAAAWikqAIBWigoAoJWiAgBopagAAFopKgCAVooKAKCVogIAaKWoAABaKSoAgFaKCgCglaKCyz4HZs+L/lxWoJKHBVyjn7qYdQKPxt29pu3X2lKB93CrwzU+I7uYcg4L165QVO0jWjDwBu5zuObeZ+Tpuyp3m+bjOf4oas7/6YtHv/C9umcgH/c5XFNfVPWfu5Vb1m9TfqV+0JZD2N3s9/bln17aW42aEU9f3D0hpzPsdQjAytzkcM3tyLi0w6NP95/Xy5uVX6nf4e425UM4OsyaKR3tsz1HTneyHatm6MrpdTkEYHFucrim/jP+0sftaUBUptKlzX6/vjv07UFPXdq+V1SdDlF5La5OTFHBG7jJ4ZqrRVW/w/KeBxVVedzKeBpXVJVlU7+f8gY1L1b+9N6WwHO5yeGa7p+jldHwZ5tCA10tqvKgp/svTObSngsz7FIk9/Lo6C1yCvjDfQ7XzCqqb11kXC2q0xFP93/04tU9706vY1F9i/O8ej6vXtx7EwYexH0O11z9NL20zxtpVbO3QlGVhzvqiaO9laddv/3uIXTpkqOdlE/m6cSu7hbIx60Ol11Kh/otr6bD6Qd5eZ81TXD0rnsjVk7+aG9d0qQ8/93XayZWuBDtcwYewd0OT9UrMjr6bz6rzQoggAcfAEArRQUA0EpRAQC0UlQAAK0UFQBAK0UFANBKUQEAtFJUAACtFBUAQCtFBQDQSlEBALT6f+iNvRZaqCx9AAAAAElFTkSuQmCC" alt="" width="567" height="482"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura4.1"></a>Figura 4-1 - DEP para Paradiafonia Simulada para Teste do Sistema 2B1Q&nbsp;</p>
+<ul style="margin-left: 110px;">
+<li>
+<p class="Texto_Alinhado_Esquerda">a equação 1 a seguir e a <a title="Acesse a Figura" href="#figura4.1">Figura 4-1</a> representam a dep unilateralmente, por meio da integral de Pnext com relação a frequência que varia de 0 a infinito, fornecendo a potência em watts;</p>
+</li>
+</ul>
+<p class="Tabela_Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,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" alt="" width="504" height="112"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Equação 1.</p>
+<p class="Tabela_Texto_Alinhado_Esquerda" style="text-align: left; padding-left: 180px;">Onde:</p>
+<p class="Tabela_Texto_Alinhado_Esquerda" style="text-align: left; padding-left: 180px;">f = frequência em Hz</p>
+<p class="Tabela_Texto_Alinhado_Esquerda" style="text-align: left; padding-left: 180px;">f<sub>o</sub>&nbsp;= 80 kHz</p>
+<p class="Tabela_Texto_Alinhado_Esquerda" style="text-align: left; padding-left: 180px;">k = (5/9).Vp<sup>2</sup>/R</p>
+<p class="Tabela_Texto_Alinhado_Esquerda" style="text-align: left; padding-left: 180px;">Vp = 2,33 V</p>
+<p class="Tabela_Texto_Alinhado_Esquerda" style="text-align: left; padding-left: 180px;">R = 135 ohms</p>
+<ul style="margin-left: 110px;">
+<li>
+<p class="Texto_Alinhado_Esquerda">o modelo simplificado da paradiafonia é decrescente com inclinação de 15 dB/década e com atenuação de 57 dB em 80 kHz. É importante observar que Pnext tem nivel significativo na faixa de 160 kHz a 320 kHz, e ainda em frequências superiores. Todavia, um filtro limitador de faixa pode ser usado para limitar abruptamente a dep nas frequências acima de 320 kHz. O projeto deste filtro não é considerado neste documento;</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">A paradiafonia simulada deve ser aplicada com um nível de tensão apropriado para não perturbar a impedância do cabo ou do transceptor;</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">a paradiafonia simulada dada pela equação El apresenta dois termos A e B, onde:</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">"A" representa a diafonia de 49 sinais interferentes;</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">"B" é uma função de transferência de paradiafonia decrescente à 15 dB/década de frequência e com 57 dB de atenuação em 80 kHz;</p>
+</li>
+<li>
+<p class="Texto_Alinhado_Esquerda">para a linha do tipo 1 a margem de ruído injetado deve ser -6 dB, para as linhas do tipo 2 e 3 deve ser O dB e para a linha do tipo 4 deve ser +6 dB.</p>
+</li>
+</ul>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px;"><a name="item3.9.3.2"></a>3.9.3.2. Ruído metálico:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 90px;">a) uma simulação de ruído por indução de linhas de energia elétrica (frequência 60 Hz e suas harmônicas) deve também ser introduzida no receptor do modem. O ruído deve consistir da combinação de quaisquer duas harmônicas, listadas na Tabela 1, no nível de potência indicado na própria tabela.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Frequência</p>
+<p class="Tabela_Texto_Centralizado">(Hz)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Potência do tom</p>
+<p class="Tabela_Texto_Centralizado">(dBm em 135 ohms)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">60</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-47</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">180</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-49</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">300</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-59</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">420</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-65</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">540</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-70</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">660</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-74</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela1"></a>Tabela 1.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item3.10"></a>3.10. Requisitos aplicáveis quando o Multiplex possuir interface S/T – acesso básico</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.10.1"></a>3.10.1. Aplicar os seguintes itens da norma ETS 300 012-4:11/1998 – Integrated Services Digital Network (ISDN); Basic User Network Interface (UNI); Part 4: Conformance Test Specification for Interface IA:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">a) 6.1.2 - Resposta de eco ao canal D;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">b) 6.2 - Ativação/desativação;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">c) 7.1 - Taxa de quadros quando transmitindo INFO 1;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">d) 7.2 - Características de jitter;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">e) 7.3.2 - Impedância de saída quando transmitindo binário 0;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">f) 7.4 - Amplitude e forma do pulso;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">g) 7.6 - Tensão em outras cargas;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">h) 7.8.1.1 - Impedância de entrada – teste A;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">i) 7.8.3 - Desbalanceamento em relação ao terra;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">j) 8.1.1.2 - Potência consumida;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">k) 8.1.1.3 - Potência consumida no modo restrito.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item3.11"></a>3.11. Requisitos aplicáveis quando o Multiplex possuir a interface S/T – acesso primário</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.11.1"></a>3.11.1. Aplicar os seguintes itens da norma ETS 300 011-2:11/1998 – Integrated Services Digital Network (ISDN); Primary Rate User Network Interface (UNI); Part 2: Conformance Test Specification for Interface I<sub>A</sub>&nbsp;and I<sub>B</sub>:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">a) 5.3 - Características elétricas;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">b) 5.4 - Jitter;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">c) 5.5 - Fonte de alimentação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item3.12"></a>3.12. Requisitos de compatibilidade eletromagnética</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.12.1"></a>3.12.1. Avaliar requisitos técnicos vigentes na íntegra, no que for aplicável.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.12.2"></a>3.12.2. Os ensaios devem ser feitos com os multiplexadores operando na mesma configuração do ensaio de taxa de erro.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item4"></a>4. CONSIDERAÇÕES FINAIS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item4.1"></a>4.1. Os procedimentos de ensaio não discriminados serão objeto de estruturação pelos laboratórios avaliados pelos OCD.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item4.2"></a>4.2. Além disso, os procedimentos para a coleta de amostras quando não tratados nos documentos normativos, serão definidos entre os OCD, laboratórios de ensaios e fabricantes.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item4.3"></a>4.3. As amostras dos produtos a serem certificados deverão estar acompanhadas de uma declaração do fabricante, indicando terem sido coletadas na produção</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1264"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisito%20Técnico" class="link-categoria">Requisito Técnico</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação" class="link-categoria">Avaliação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Conformidade" class="link-categoria">Conformidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Produto%20de%20Telecomunicações" class="link-categoria">Produto de Telecomunicações</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Multiplex%20PDH" class="link-categoria">Multiplex PDH</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

@@ -1,0 +1,1447 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Resolução nº 360, de 1º de abril de 2004 (REVOGADA)</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2004/348-resolucao-360">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Ato normativo, Certificação de Produto, Homologação de produtos, Transmissor, Transceptor, Radioenlace ponto-a-ponto, Serviço Fixo, Faixa de radiofrequência, Equipamento de telecomunicações, NormaCertificacao, RecursosPrestacao, ResolucaoRevogada">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprova Norma para Certificação e Homologação de Transmissores e Transceptores Digitais para o Serviço Fixo em Aplicações Ponto-a-Ponto nas Faixas de Freqüências abaixo de 1 GHz. (Revogada pela Resolução nº 675/2017)">
+	<title>Anatel - Resolução nº 360, de 1º de abril de 2004 (REVOGADA)</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1488039697" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1844775668" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"8c0be25a5a70f825d18cd2bc113484bf","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1182523188" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025021226" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/resolucoes/2004/348-resolucao-360">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/resolucoes/2004" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes" class="pathway">Resoluções</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes/2004" class="pathway">2004</a> <span class="separator">&gt;</span> <span>Resolução nº 360, de 1º de abril de 2004 (REVOGADA)</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 active deeper parent"><a href="/legislacao/resolucoes">Resoluções</a><ul><li class="item-516"><a href="/legislacao/resolucoes/2025">2025</a></li><li class="item-501"><a href="/legislacao/resolucoes/2024">2024</a></li><li class="item-493"><a href="/legislacao/resolucoes/2023">2023</a></li><li class="item-488"><a href="/legislacao/resolucoes/2022">2022</a></li><li class="item-438"><a href="/legislacao/resolucoes/2021">2021</a></li><li class="item-430"><a href="/legislacao/resolucoes/2020">2020</a></li><li class="item-367"><a href="/legislacao/resolucoes/2019">2019</a></li><li class="item-312"><a href="/legislacao/resolucoes/2018">2018</a></li><li class="item-299"><a href="/legislacao/resolucoes/2017">2017</a></li><li class="item-294"><a href="/legislacao/resolucoes/2016">2016</a></li><li class="item-255"><a href="/legislacao/resolucoes/2015">2015</a></li><li class="item-226"><a href="/legislacao/resolucoes/2014">2014</a></li><li class="item-164"><a href="/legislacao/resolucoes/2013">2013</a></li><li class="item-165"><a href="/legislacao/resolucoes/2012">2012</a></li><li class="item-166"><a href="/legislacao/resolucoes/2011">2011</a></li><li class="item-167"><a href="/legislacao/resolucoes/2010">2010</a></li><li class="item-168"><a href="/legislacao/resolucoes/2009">2009</a></li><li class="item-169"><a href="/legislacao/resolucoes/2008">2008</a></li><li class="item-170"><a href="/legislacao/resolucoes/2007">2007</a></li><li class="item-171"><a href="/legislacao/resolucoes/2006">2006</a></li><li class="item-172"><a href="/legislacao/resolucoes/2005">2005</a></li><li class="item-173 current active"><a href="/legislacao/resolucoes/2004">2004</a></li><li class="item-174"><a href="/legislacao/resolucoes/2003">2003</a></li><li class="item-175"><a href="/legislacao/resolucoes/2002">2002</a></li><li class="item-176"><a href="/legislacao/resolucoes/2001">2001</a></li><li class="item-177"><a href="/legislacao/resolucoes/2000">2000</a></li><li class="item-178"><a href="/legislacao/resolucoes/1999">1999</a></li><li class="item-179"><a href="/legislacao/resolucoes/1998">1998</a></li><li class="item-180"><a href="/legislacao/resolucoes/1997">1997</a></li><li class="item-181"><a href="/legislacao/resolucoes/resolucoes-conjuntas">Resoluções Conjuntas</a></li></ul></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948c374aff2d6f83&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Resolução nº 360, de 1º de abril de 2004 (REVOGADA)		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quinta, 22 Abril 2004 02:00			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Segunda, 17 Fevereiro 2025 17:38			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 9839			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+
+		<table style="width: 98%;" border="0" cellspacing="1" cellpadding="1" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle"><a href="http://www.anatel.gov.br/legislacao/resolucoes/2017/929-resolucao-n-675" rel="alternate">Revogada pela Resolução Nº 675/2017</a></td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Aprova Norma para Certificação e Homologação de Transmissores e Transceptores Digitais para o Serviço Fixo em Aplicações Ponto-a-Ponto nas Faixas de Freqüências abaixo de 1 GHz.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de<a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=152&amp;data=22/04/2004"> 22/4/2004</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong>O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES - ANATEL</strong>, no uso das atribuições que lhe foram conferidas pelo&nbsp;<a title="acesse o artigo" href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472#art22" rel="nofollow">art. 22</a> da Lei n.º 9.472, de 16 de julho de 1997, e&nbsp;<a title="acesse o artigo" href="http://www.anatel.gov.br/legislacao/decretos/3-decreto-2338#art35" rel="nofollow">art. 35</a> do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto n.º 2.338, de 7 de outubro de 1997,</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO os comentários recebidos em decorrência da Consulta Pública nº 461, de 11 de julho de 2003, publicada no Diário Oficial da União de 15 de julho de 2003,</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO que, de acordo com o que dispõe o inciso I do <a title="acesse o artigo" href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472#art214" rel="nofollow">art. 214</a>, da Lei nº 9.472, de 1997, cabe à Anatel editar regulamentação em substituição aos regulamentos, normas e demais regras em vigor;</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">CONSIDERANDO deliberação tomada em sua Reunião nº 294, realizada em 31 de março de 2004, resolve:</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><a name="art1res"></a>Art.1º Aprovar a Norma para Certificação e Homologação de Transmissores e Transceptores Digitais para o Serviço Fixo em Aplicações Ponto-a-Ponto nas Faixas de Freqüências Abaixo de 1 GHz, na forma do Anexo a esta Resolução<strong>.</strong></span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><a name="art2res"></a>Art.2º Determinar que, após 90 (noventa) dias da data de publicação desta Resolução, o cumprimento das disposições contidas na Norma para Certificação e Homologação de Transmissores e Transceptores Digitais para o Serviço Fixo em Aplicações Ponto-a-Ponto nas Faixas de Freqüências abaixo de 1 GHz tornar-se-á compulsório.</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><a name="art3res"></a>Art.3º Esta Resolução entra em vigor na data de sua publicação.</span></p>
+<p style="text-align: center;" align="left"><span style="text-decoration: line-through;">PEDRO JAIME ZILLER DE ARAÚJO</span></p>
+<p style="text-align: center;" align="left"><span style="text-decoration: line-through;">Presidente do Conselho</span></p>
+<p style="text-align: center;" align="left"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><strong>ANEXO À RESOLUÇÃO Nº 360, DE 1º DE ABRIL DE 2004.</strong></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><strong>NORMA PARA CERTIFICAÇÃO E HOMOLOGAÇÃO DE TRANSMISSORES E TRANSCEPTORES DIGITAIS PARA O SERVIÇO FIXO EM APLICAÇÕES</strong></span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><strong>PONTO-A-PONTO NAS FAIXAS DE FREQUÊNCIAS ABAIXO DE 1 GHZ</strong></span></p>
+<p class="Anexo" style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item1"></a>1. Objetivo</strong></span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">Esta norma estabelece os requisitos técnicos gerais e específicos mínimos a serem demonstrados na avaliação da conformidade de transmissores e transceptores digitais para o serviço fixo em aplicações ponto-a-ponto, operando nas faixas de freqüências abaixo de 1 GHz, para efeito de certificação e homologação junto à Agência Nacional de Telecomunicações.</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item2"></a>2. Referências</strong></span></p>
+<p class="Anexo" style="text-align: justify;"><span style="text-decoration: line-through;">Para fins desta norma, são adotadas as seguintes referências:</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I - Regulamento para Certificação e Homologação de Produtos de Telecomunicações, aprovada <a title="acesse a norma" href="http://www.anatel.gov.br/legislacao/resolucoes/2000/129-resolucao-242" rel="nofollow">Resolução Anatel nº 242, de 30 de novembro de 2000</a>.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">II - Anatel - Plano de Atribuição, Destinação e Distribuição de Faixas de Freqüências no Brasil.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">III - ITU-R&nbsp;&nbsp; Recomendação SM.329-9 - Spurious emissions.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">IV - ITU-T Recomendação K.38 (1996) - Radiated emission testing of physically large telecommunication systems.</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item3"></a>3. Definições</strong></span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">Para fins desta norma aplicam-se as seguintes definições:</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I - Ambiente: entende-se como meio que cerca ou envolve os produtos para telecomunicações em operação.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">II - Ambiente Totalmente Aberto: entende-se como aquele no qual os produtos para telecomunicações ficam totalmente expostos à radiação solar direta, vento e chuva.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">III - Ambiente Aberto Protegido: entende-se como aquele no qual os produtos para telecomunicações não ficam expostos à radiação solar direta e chuva, ficando, contudo, expostos ao vento e à radiação solar indireta.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">IV - Ambiente Protegido com Ventilação: entende-se como aquele no qual os produtos para telecomunicações não ficam expostos à radiação solar direta, radiação solar indireta e chuva, possuindo proteção (parede, telhado, janela e outros) que permite uma troca de ar com o ambiente externo de forma natural ou mecânica.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">V - Ambiente Climatizado: entende-se como aquele no qual os produtos para telecomunicações não ficam expostos à radiação solar direta, radiação solar indireta, vento e chuva, possuindo proteção (parede, telhado, porta, janela e outros) e controle de temperatura, contudo, sem controle da umidade relativa.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">VI - Ambiente Climatizado com Umidade Controlada: entende-se como aquele no qual os produtos para telecomunicações não ficam expostos à radiação solar direta, radiação solar indireta, vento e chuva, possuindo proteção (parede, telhado, porta, janela e outros), com controle de temperatura e da umidade relativa.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">VII - Ambiente Fechado: entende-se como aquele no qual os produtos para telecomunicações não ficam expostos à radiação solar direta, radiação solar indireta, vento e chuva, sem controle da temperatura, sem controle da umidade relativa e sem troca constante da umidade relativa e sem troca constante de ar com o ambiente externo. O container que proporciona este ambiente no seu interior permite aberturas para testes e manutenção em campo.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">VIII - Circuito de Derivação: circuito constituído pelos filtros de derivação, circuladores, isoladores, cargas de terminação, chaves comutadoras, híbridas e cabos de interligação que permitem interligar o(s) transmissor(es) e/ou o(s) receptor(es) ao mesmo sistema radiante (figura I.1 do <a title="acesse o anexo" href="#anexoI" rel="nofollow">Anexo I</a>).</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">IX - Compatibilidade Eletromagnética: capacidade de um dispositivo, equipamento ou sistema, de funcionar de acordo com suas características operacionais, no seu ambiente eletromagnético, sem impor perturbação intolerável naquilo que compartilha o mesmo ambiente.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">X - Emissão Espúria: emissão em uma ou várias freqüências que se encontrem fora da faixa necessária e cujo nível pode ser reduzido sem afetar a transmissão de informação correspondente. As emissões espúrias incluem emissões harmônicas, emissões parasitas e produtos de intermodulação, mas excluem emissões na vizinhança imediata da faixa necessária, que são resultantes do processo de modulação para transmissão da informação.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XI - Equipamento a Ser Certificado (ESC): equipamento de telecomunicação a ser submetido aos ensaios prescritos nesta norma, visando a sua certificação.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XII - Espaçamento de canal: diferença entre as freqüências centrais de dois canais RF adjacentes de um determinado plano de canalização.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XIII - Estabilidade de freqüência: desvio máximo da freqüência de RF em torno do seu valor nominal no transmissor e receptor.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XIV - Faixa dinâmica de recepção: faixa de atuação do controle automático de ganho (CAG) igual à diferença entre o nível máximo (saturação) e o mínimo (limiar) para taxa de bits errados de 10<sup>-3</sup>.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XV - Freqüência de RF: freqüência da portadora do sinal.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XVI - Freqüência Imagem: freqüência de portadora indesejável cuja diferença acima ou abaixo da portadora do sinal desejado é igual ao dobro da freqüência intermediária (FI), utilizada em receptores heterodinos.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XVII - Interfaces de Banda-Base (BB): pontos de entrada (E<sub>BB</sub>) do(s) feixe(s) de informação no lado de transmissão e de saída (S<sub>BB</sub>) do(s) mesmo(s) no lado de recepção (figura I.1 do <a title="acesse o anexo" href="#anexoI" rel="nofollow">anexo I</a>).</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XVIII - Interferência co-canal: interferência sofrida por uma determinada portadora devida a outra portadora ocupando a mesma faixa espectral.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XIX - Interferência de canal adjacente: interferência sofrida por uma determinada portadora devida à outra portadora afastada de um espaçamento de canal.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XX - Máscara do espectro de transmissão: contorno de máxima densidade espectral de potência relativa à central do canal permitida na transmissão.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XXI - Medidor: instrumento de medida, pertencente ou não ao equipamento, que permite a medição de parâmetro do equipamento.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XXII - Portadora CW: portadora sem modulação.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XXIII - Relação portadora - interferência: razão entre a potência da portadora desejada e a soma das potências de portadoras interferentes, referidas à entrada do receptor interferido e expressas em watt ou miliwatt.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XXIV - Taxa de erro de bits (TEB): relação entre o número de bits recebido erroneamente dividido pelo número total de bits transmitidos.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XXV - Taxa bruta de bits: número total de bits transmitido ou recebido pela estação nodal em um segundo.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">XXVI - Transparência: facilidade oferecida pelo sistema para a conexão de usuários a uma rede pública ou privada.</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item4"></a>4. Características Gerais</strong></span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item4.1"></a>4.1. Os equipamentos devem operar conforme regulamentação de canalização e condições de uso, específica para a faixa de freqüência utilizada, em particular no que se refere às freqüências nominais das portadoras dos canais de radiofreqüências (RF) e seus espaçamentos, aos arranjos dos canais de RF, às capacidades de transmissão, às larguras máximas das faixas ocupadas pelo canal e às potências de transmissão.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item4.2"></a>4.2. A capacidade mínima para sistemas ponto-a-ponto, expressa em taxa bruta mínima de bits transmitida (TBM), quando não definida na regulamentação de canalização e condições de uso para cada faixa de freqüências específica, deve ser proporcional ao espaçamento entre canais (?F) e ao número de níveis da modulação digital (M) de acordo com a seguinte fórmula:</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><span style="color: #000000; text-decoration: line-through;">TBM(Mbit/s) = 1,9 ?F (MHz) log (M)</span></span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item4.3"></a>4.3. O sistema ponto-a-ponto deve ser totalmente transparente para conexão de equipamento de usuário à rede.</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item5"></a>5. Características do Transmissor</strong></span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item5.1"></a>5.1. A potência de transmissão máxima na entrada do circuito alimentador da antena (ponto C’ da Figura 1), quando não definida na regulamentação de canalização e condições de uso para cada faixa de freqüências específica, não deve exceder o limite de + 40 dBm.</span></p>
+<p class="Anexo" style="text-align: center;"><span style="text-decoration: line-through;"><img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figura1-revogada.png" alt="" width="613" height="155" border="0">&nbsp;</span></p>
+<p class="Anexo" style="text-align: center;"><span style="text-decoration: line-through;"><strong><a name="figura1"></a>Figura 1 - Diagrama em blocos</strong></span></p>
+<p><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item5.2"></a>5.2. O espectro de um canal RF transmitido, medido na entrada do circuito alimentador da antena (ponto C’ na Figura 1), deve atender à máscara de emissão da Tabela 1.</span></p>
+<p align="center"><span style="text-decoration: line-through;">&nbsp;<strong>Tabela 1- Máscara para o espectro de emissão</strong></span></p>
+<div align="center">
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="66">
+<p align="center"><span style="text-decoration: line-through;">&nbsp;</span></p>
+</td>
+<td colspan="6" width="480">
+<p align="center"><span style="text-decoration: line-through;">f’/?F</span></p>
+</td>
+</tr>
+<tr>
+<td width="66">
+<p align="center"><span style="text-decoration: line-through;">M</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">0</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">0,5</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">0,8</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">1,0</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">1,5</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">2,5</span></p>
+</td>
+</tr>
+<tr>
+<td width="66">
+<p align="center"><span style="text-decoration: line-through;">2 e 4</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">0 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">0 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-25 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-25 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-45 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-45 dB</span></p>
+</td>
+</tr>
+<tr>
+<td width="66">
+<p align="center"><span style="text-decoration: line-through;">16</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">0 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">0 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-32 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-32 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-45 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-45 dB</span></p>
+</td>
+</tr>
+<tr>
+<td width="66">
+<p align="center"><span style="text-decoration: line-through;">32</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">0 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">0 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-35 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">- 35 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">-45 dB</span></p>
+</td>
+<td width="80">
+<p align="center"><span style="text-decoration: line-through;">- 45 dB</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">onde:</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">f ’ é o afastamento da freqüência relativa à freqüência central do canal (f’=f - fc);</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">?F&nbsp;é o espaçamento entre canais;</span></p>
+<p class="Artigo19" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">M é o número de níveis da modulação.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item5.3"></a>5.3. Linhas espectrais podem ser emitidas com nível que não exceda à máscara da Tabela 1.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item5.4"></a>5.4. O nível de espúrios de transmissão medido na entrada do circuito alimentador da antena (ponto C’ da Figura 1) e nas freqüências afastadas da freqüência nominal da portadora do canal de RF de mais de 250% do espaçamento entre portadoras não deve exceder os limites da máscara dada na Tabela 1 para f’/DF = 2,5.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item5.5"></a>5.5. A estabilidade de freqüência deve ser de ± 10 ppm (partes por milhão).</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item6"></a>6. Características do Receptor</strong></span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item6.1"></a>6.1. A sensibilidade dos receptores é expressa pelo nível de recepção mínimo (limiar de recepção) para TEB (taxa de erro de bits) =10<sup>-3</sup> e TEB=10<sup>-6</sup>, referido à saída do circuito alimentador da antena receptora (ponto C da Figura 1).</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;"><a name="item6.1.1"></a>6.1.1. A sensibilidade mínima para receptores de sistemas ponto-a-ponto deve atender às seguintes fórmulas e Tabela 2:</span></p>
+<p style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">a) Limiar para TEB de 10<sup>-3</sup> (dBm) = K<sub>3</sub> (dBm) + 10 log [taxa de bits(Mbit/s)]</span></p>
+<p style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">b) Limiar para TEB de 10<sup>-6</sup> (dBm) = K<sub>6</sub> (dBm) + 10 log [taxa de bits(Mbit/s)]</span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong><a name="tabela2"></a>Tabela 2 - Limiar de recepção&nbsp;</strong></span></p>
+<div align="center">
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="102">
+<p align="center"><span style="text-decoration: line-through;">M</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">K<sub>3</sub> (dBm)</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">K<sub>6</sub> (dBm)</span></p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p align="center"><span style="text-decoration: line-through;">2</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">-100</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">-97</span></p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p align="center"><span style="text-decoration: line-through;">4</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">-97</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">-94</span></p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p align="center"><span style="text-decoration: line-through;">16</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">-92</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">-90</span></p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p align="center"><span style="text-decoration: line-through;">32</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">-89</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">-87</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item6.2"></a>6.2. A faixa dinâmica dos receptores de sistemas ponto-a-ponto, referida à saída do circuito alimentador da antena (ponto C da Figura 1), não deve ser inferior a 55 dB.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item6.3"></a>6.3. Na especificação de requisitos para a sensibilidade de receptores a interferências, os níveis dos sinais desejado e interferente, assim como os valores da relação entre o nível da portadora do sinal e o nível de portadora interferente na entrada do receptor interferido (C/I), expressa em dB, referem-se ao ponto C da Figura 1.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;"><a name="item6.3.1"></a>6.3.1. A sensibilidade à interferência de canal adjacente de sistemas ponto-a-ponto deve implicar uma degradação do limiar para TEB=10<sup>-6</sup> inferior a 1 dB com relação C/I=0 dB.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;"><a name="item6.3.2"></a>6.3.2. A sensibilidade à interferência co-canal de sistemas ponto-a-ponto deve implicar uma degradação do limiar para TEB=10<sup>-6</sup> inferior a 1 dB com relação C/I indicada na Tabela 3.</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><strong><a name="tabela3"></a>&nbsp;Tabela 3 - Valores de C/I para degradação máxima de 1 dB</strong></span></p>
+<div align="center">
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="102">
+<p align="center"><span style="text-decoration: line-through;">M</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">C/I (dB)</span></p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p align="center"><span style="text-decoration: line-through;">4</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">44</span></p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p align="center"><span style="text-decoration: line-through;">16</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">30</span></p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p align="center"><span style="text-decoration: line-through;">32</span></p>
+</td>
+<td width="114">
+<p align="center"><span style="text-decoration: line-through;">33</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;"><a name="item6.3.3"></a>6.3.3. A interferência de uma portadora CW (sem modulação), afastada em freqüência de 5 espaçamentos de canal e nível de 30 dB acima da portadora interferida com nível igual ao limiar para TEB=10<sup>-6</sup>, ambos referidos à saída do circuito alimentador da antena (ponto C da Figura 1), não deve causar TEB superior a 10<sup>-5</sup>.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item6.4"></a>6.4. A TEB residual de equipamento é aquela medida com nível de recepção, referido à saída do circuito alimentador da antena (ponto C da Figura 1), 6 dB acima do limiar para TEB=10<sup>-6</sup> e não deve exceder 10<sup>-10</sup>.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item6.5"></a>6.5. Emissões espúrias do receptor em todas as freqüências em torno da freqüência central do canal na freqüência de RF, medidas no ponto B (para sistemas situados em ambientes protegidos do tempo) ou no ponto C (para sistemas situados parcialmente em ambientes não protegidos do tempo) do diagrama de blocos da Figura 1, não devem ter níveis de potência superiores aos limites estabelecidos para a Categoria A na Recomendação ITU-R (International Telecommunications Union – Radiocommunications Sector) SM. 329-9.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item6.6"></a>6.6. A rejeição à freqüência imagem deve ser superior a 75 dB para receptores com demodulação indireta ou heteródinos.</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item7"></a>7. Circuitos de Derivação e Terminais de Antenas</strong></span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item7.1"></a>7.1 A perda de retorno na entrada e saída do circuito alimentador (pontos C e C’da Figura 1) deve ser igual ou superior a 15 dB.</span></p>
+<p class="Anexo" style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item8"></a>8. Condições Ambientais</strong></span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item8.1"></a>8.1. Os fabricantes devem selecionar, entre as classes de condições de temperatura e umidade relativa especificadas na tabela 4 e definidas nos incisos II a VII do item 3, aquela aplicável às condições de operação do equipamento a ser certificado.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item8.2"></a>8.2. Os valores extremos da temperatura e da umidade relativa correspondentes à classe selecionada serão utilizados nos ensaios especificados no <a title="acesse o anexo" href="#anexoI" rel="alternate">anexo I</a>.</span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong><a name="tabela4"></a>Tabela 4 - Condições ambientais</strong></span></p>
+<div align="center">
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="281">
+<p align="center"><span style="text-decoration: line-through;">Classe Ambiental</span></p>
+</td>
+<td width="156">
+<p align="center"><span style="text-decoration: line-through;">Temperatura (ºC)</span></p>
+</td>
+<td width="120">
+<p align="center"><span style="text-decoration: line-through;">Umidade (%)</span></p>
+</td>
+</tr>
+<tr>
+<td width="281">
+<p align="center"><span style="text-decoration: line-through;">Totalmente Aberto</span></p>
+</td>
+<td width="156">
+<p align="center"><span style="text-decoration: line-through;">-10 a +55</span></p>
+</td>
+<td width="120">
+<p align="center"><span style="text-decoration: line-through;">10 a 95</span></p>
+</td>
+</tr>
+<tr>
+<td width="281">
+<p align="center"><span style="text-decoration: line-through;">Aberto Protegido</span></p>
+</td>
+<td width="156">
+<p align="center"><span style="text-decoration: line-through;">-10 a +50</span></p>
+</td>
+<td width="120">
+<p align="center"><span style="text-decoration: line-through;">10 a 95</span></p>
+</td>
+</tr>
+<tr>
+<td width="281">
+<p align="center"><span style="text-decoration: line-through;">Protegido com Ventilação</span></p>
+</td>
+<td width="156">
+<p align="center"><span style="text-decoration: line-through;">+5 a +45</span></p>
+</td>
+<td width="120">
+<p align="center"><span style="text-decoration: line-through;">10 a 95</span></p>
+</td>
+</tr>
+<tr>
+<td width="281">
+<p align="center"><span style="text-decoration: line-through;">Climatizado</span></p>
+</td>
+<td width="156">
+<p align="center"><span style="text-decoration: line-through;">+10 a +35</span></p>
+</td>
+<td width="120">
+<p align="center"><span style="text-decoration: line-through;">10 a 80</span></p>
+</td>
+</tr>
+<tr>
+<td width="281">
+<p align="center"><span style="text-decoration: line-through;">Climatizado com Umidade Controlada</span></p>
+</td>
+<td width="156">
+<p align="center"><span style="text-decoration: line-through;">+22 a +28</span></p>
+</td>
+<td width="120">
+<p align="center"><span style="text-decoration: line-through;">50 a 70</span></p>
+</td>
+</tr>
+<tr>
+<td width="281">
+<p align="center"><span style="text-decoration: line-through;">Fechado</span></p>
+</td>
+<td width="156">
+<p align="center"><span style="text-decoration: line-through;">-10 a +70</span></p>
+</td>
+<td width="120">
+<p align="center"><span style="text-decoration: line-through;">10 a 95</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item9"></a>9. Compatibilidade Eletromagnética</strong></span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item9.1"></a>9.1 O equipamento a ser certificado deve atender aos requisitos e procedimentos de ensaios, estabelecidos na regulamentação específica emitida ou adotada pela Anatel referente à compatibilidade eletromagnética.</span></p>
+<p class="Anexo" style="text-align: justify;"><span style="text-decoration: line-through;"><strong><a name="item10"></a>10. Identificação da Homologação</strong></span></p>
+<p class="Artigo19" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;"><a name="item10.1"></a>10.1. O equipamento deve portar o selo Anatel de identificação legível, contendo a logomarca Anatel, o número da homologação e a identificação por código de barras, conforme modelo e instruções descritas no&nbsp;<a title="acesse o artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/2000/129-resolucao-242#art39" rel="nofollow">artigo 39</a> e&nbsp;<a title="acesse o anexo" href="http://www.anatel.gov.br/legislacao/resolucoes/2000/129-resolucao-242#anexoIII" rel="nofollow">Anexo III</a> do Regulamento, anexo à Resolução n° 242, de 30.11.2000, ou outra que venha a substituí-la.</span></p>
+<p class="Artigo19"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="EstiloTtuloNegrito" style="text-align: center;"><span style="text-decoration: line-through;"><strong><a id="anexoI"></a>ANEXO I</strong></span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong>MÉTODOS DE ENSAIOS PARA A AVALIAÇÃO DA CONFORMIDADE DE TRANSMISSORES E TRANSCEPTORES DIGITAIS PARA O SERVIÇO FIXO&nbsp;EM APLICAÇÕES PONTO-A-PONTO NAS FAIXAS DE FREQÜÊNCIAS&nbsp;ABAIXO DE 1 GHZ</strong></span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong>I.1 </strong><strong>Diagramas de Blocos</strong></span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.1.1 Os diagramas de blocos apresentados na figura I.1 são simplificados e indicam pontos de referência citados nesta norma. Em geral, os pontos C e C’ (assim como os correspondentes aos terminais de antenas T<sub>A</sub> e T’<sub>A</sub>) coincidem. Os pontos B’ e C’, B e C coincidem quando duplexadores são utilizados no lugar de circuitos de derivação.</span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong><img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figuraI1-revogada.png" alt="" width="619" height="218" border="0"><br>Figura I.1. - Diagrama de blocos</strong></span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong>I.2 </strong><strong>Condições Gerais de Ensaio</strong></span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.2.1 Os métodos de ensaios de que trata este anexo referem-se apenas aos parâmetros específicos de transmissores e transceptores digitais requeridos diretamente por esta norma. Métodos de ensaios para a avaliação da conformidade de outros sistemas tais como interfaces de entrada e saída, de banda base, de Rede de Gerência de Telecomunicações e sistemas de alimentação, estão fora do escopo deste documento.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.2.2 Os métodos de ensaios para a avaliação da conformidade apresentados neste anexo são típicos e recomendados. Métodos alternativos podem ser utilizados mediante acordo entre Solicitante da certificação, o Laboratório de Ensaios e o Organismo de Certificação Designado. A descrição e a justificativa para utilização do método alternativo acordado devem constar do Relatório de Ensaios.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.2.3 O Equipamento a Ser Certificado (ESC) apresentado para avaliação de certificação deve ser representativo dos modelos em produção e um conjunto adequado deve ser fornecido para os ensaios de conformidade.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.2.4 Todos os ensaios que serão realizados em condições ambientais de referência e seus resultados serão considerados como de referência. O desempenho do ESC em condições de referência será utilizado para comparação com resultados dos ensaios realizados em condições ambientais extremas.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.2.5 Por razões de praticidade e conveniência, alguns ensaios serão realizados somente em condições ambientais de referência.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.2.6 A condição ambiental de referência é uma das possíveis combinações de temperatura, umidade relativa e pressão do ar, incluídas dentro dos seguintes limites:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) Temperatura: de +10<sup>o</sup>C a +35<sup>o</sup>C</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">b) Umidade relativa: de 10% a 80%</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">c) Pressão: de 8,6x10<sup>4</sup> Pa a 1,06x10<sup>5</sup> Pa</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;"><strong>I.3 </strong><strong>Configurações de Ensaio</strong></span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.3.1 Um esquema típico de configuração de ensaio para o ESC é apresentado na figura I.1.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.3.2 Ensaios de características de transmissão</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.2.1 Potência de transmissão máxima</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se a média das medidas dos valores máximos da potência de saída nos pontos de referência C’ (ou B’ quando o equipamento não incluir circuito de derivação) está dentro do valor declarado pelo solicitante e de acordo com os requisitos especificados nesta norma.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Medidor de potência e sensor de potência.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p style="text-align: center; padding-left: 30px;"><span style="text-decoration: line-through;">&nbsp;<img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figuraI2-revogada.png" alt="" width="627" height="88" border="0"></span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong>Figura I.2. Configuração de ensaio de potência de transmissão máxima</strong></span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Com o nível de potência do transmissor ajustado no máximo, o valor médio da potência de saída é medido no ponto de referência C’ (ou B’ quando o equipamento não incluir circuito de derivação). As perdas entre o ponto de teste e o medidor de potência devem ser consideradas.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Esse ensaio deve ser repetido para as seguintes combinações de condições extremas de temperatura e umidade relativa, de acordo com a classe de ambiente especificado pelo fabricante para operação do equipamento segundo o&nbsp;<a title="acesse o item" href="#item8.1" rel="alternate">item 8.1</a> desta norma:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">- temperatura mínima e umidade relativa mínima;</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">- temperatura máxima e umidade relativa máxima.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.2.2 Máscara espectral de RF</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se o espectro de transmissão está de acordo com os requisitos desta norma.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Analisador de espectro e plotadora.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figuraI3-revogada.png" alt="" width="729" height="186" border="0">&nbsp;</span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong>Figura I.3. Configuração de ensaio de máscara espectral de RF&nbsp;</strong></span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">A porta de saída do transmissor deve ser conectada a um analisador de espectro com tela de persistência variável ou facilidade de armazenamento digital. Os parâmetros do analisador de espectro devem ser ajustados de acordo com o requisito relevante.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Com o transmissor modulado, a densidade de potência de transmissão deve ser medida com o analisador de espectro e plotada. Sempre que possível, a medida de máscara espectral deve ser realizada nos canais inferior, central e superior da unidade testada.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Esse ensaio deve ser repetido para as seguintes combinações de condições extremas de temperatura e umidade relativa, de acordo com a classe de ambiente especificado pelo fabricante para operação do equipamento segundo o&nbsp;<a title="acesse o item" href="#item8.1" rel="nofollow">item 8.1</a> desta norma:</span></p>
+<p style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">- temperatura mínima e umidade relativa mínima;</span></p>
+<p style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">- temperatura máxima e umidade relativa máxima.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.2.3 Linhas espectrais discretas</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se os níveis de potência das linhas espectrais situadas a uma distância da freqüência do canal central igual à taxa de símbolos são inferiores à especificação desta norma.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Analisador de espectro e plotadora.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">A mesma do ensaio de máscara espectral de RF.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O mesmo do ensaio de máscara espectral de RF.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.2.4 Emissões espúrias do transmissor</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se quaisquer emissões espúrias geradas pelo transmissor estão dentro dos limites definidos nesta norma.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Analisador de espectro, misturadores do analisador de espectro (quando necessário) e plotadora.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p align="center"><span style="text-decoration: line-through;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figuraI4-revogada.png" alt="" width="665" height="192" border="0">&nbsp;&nbsp;</span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong>Figura I.4. Configuração de ensaio de emissões espúrias</strong></span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">A porta de saída do transmissor deve ser conectada ao analisador de espectro através de um atenuador, filtro ou ambos para limitar a potência. Nos casos em que a freqüência máxima exceder a faixa de operação do analisador, transições em guia e um misturador podem ser utilizados. O transmissor deve operar na potência máxima indicada pelo fabricante. O nível e a freqüência de todos os sinais relevantes na faixa de freqüências especificada no requisito relevante devem ser medidos e plotados.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.2.5 Máxima tolerância de freqüência</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se a tolerância de freqüência de transmissão está dentro dos limites especificados no requisito relevante. Quando o transmissor não puder ser colocado na condição de onda contínua (CW), deve ser utilizado um contador de freqüências capaz de medir a freqüência central de um sinal modulado. Quando este tipo de contador não estiver disponível, a freqüência do oscilador local (OL) deve ser medida e a freqüência de saída calculada.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Contador de freqüência.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p align="center"><span style="text-decoration: line-through;"><img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figuraI5-revogada.png" alt="" width="638" height="88" border="0">&nbsp;</span><br><span style="text-decoration: line-through;"><strong>Figura I.5. Configuração de ensaio de máxima tolerância de freqüência</strong></span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Com o transmissor operando em CW, as medidas de freqüências são realizadas nos canais extremos e canal central, durante um intervalo de tempo de 24 horas. A medida de freqüência deve estar dentro da tolerância definida pelo requisito relevante.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p class="Artigo19" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Esse ensaio deve ser repetido para as seguintes combinações de condições extremas de temperatura e umidade relativa, de acordo com a classe de ambiente especificado pelo fabricante para operação do equipamento segundo o&nbsp;<a title="acesse o item" href="#item8.1" rel="nofollow">item 8.1</a> desta norma:</span></p>
+<p style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">- temperatura mínima e umidade relativa mínima;</span></p>
+<p class="Artigo19" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">- temperatura máxima e umidade relativa máxima.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">I.3.3 Ensaios de características de recepção</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.3.1 Faixa dinâmica de recepção</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se o receptor atende ao requisito especificado nesta norma para uma faixa de valores de níveis de entrada entre o nível de saturação correspondente a uma TEB igual a 10<sup>-6</sup> e o nível mínimo correspondente a uma taxa de erro de bits TEB igual a 10<sup>-3</sup>.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Medidor de potência, sensor de potência, gerador de seqüência pseudo-aleatória e detector de erro.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p class="Artigo19" style="text-align: center;"><span style="text-decoration: line-through;">&nbsp;<img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figuraI6-revogada.png" alt="" width="637" height="256" border="0"></span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong>Figura I.6. Configuração de ensaio de faixa dinâmica de recepção</strong></span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Conectar a saída do Gerador de Seqüência pseudo-aleatória à entrada de banda base do transmissor (E<sub>BB</sub>) e o detector de erro à saída de banda base do receptor (S<sub>BB</sub>).</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Colocar o transmissor em estado de espera e ajustar o atenuador para atenuação máxima. Desconectar o receptor da unidade em ensaio e conectar o medidor de potência ao ponto C (ou B quando o equipamento não incluir circuito de derivação). Ligar o transmissor e ajustar o atenuador para colocar a potência no limite superior da faixa de ensaio, correspondente&nbsp; a&nbsp; uma TEB igual a 10<sup>-6</sup>.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Aumentar o nível de atenuação até que o nível do sinal de entrada no receptor provoque uma taxa de erro igual ao limite especificado nesta norma. A faixa de nível de entrada do receptor é igual à diferença entre o limite superior do nível de entrada do receptor e o valor de nível de entrada que provoca a TEB igual a 10<sup>-3</sup>.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.3.2 Sensibilidade à interferência de canal adjacente</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se, quando existe um sinal modulado interferente no canal adjacente, os limites máximos de C/I correspondentes a degradações de 1 dB no limiar de recepção correspondente a TEB igual a 10<sup>-6</sup> está abaixo dos requisitos especificados nesta norma.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Dois geradores de seqüência de bits, detector de erro, sensor de potência e medidor de potência.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figuraI7-revogada.png" alt="" width="745" height="361" border="0">&nbsp;</span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong>Figura I.7. Configuração de ensaio de sensibilidade à interferência de canal adjacente</strong></span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Neste ensaio, o transmissor Tx2 deve transmitir em um dos canais adjacentes mais próximos ao do transmissor Tx1. Ambos os transmissores devem ser modulados com sinais com as mesmas características de modulação.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Com os transmissores em estado de espera, os atenuadores devem ser ajustados no valor máximo. O medidor de potência deve ser conectado ao ponto C (ou B quando o equipamento não incluir circuito de derivação). Ligar o Tx1 e ajustar o Atenuador 1 de modo a obter um sinal desejado no nível especificado para TEB igual a 10<sup>-6</sup>. Reduzir a atenuação em 1 dB&nbsp; e registrar o valor de atenuação. Ligar o transmissor interferente (Tx2) e reduzir o Atenuador 2 até obter uma TEB igual a 10<sup>-6</sup> no detector de erro.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Desligar ambos os transmissores e desconectar o guia de onda (ou cabo) no ponto C (ou B quando o equipamento não incluir circuito de derivação). Registrar o valor de atenuação do Atenuador 2 e conectar o sensor e medidor de potência ao guia de onda (ou cabo).</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Ligar o Tx1 e reduzir o Atenuador 1 de modo a produzir um sinal desejado dentro da faixa calibrada do medidor de potência. Registrar o nível de potência (dBm) e a redução na atenuação (dB). A potência de sinal desejado é dada por:</span></p>
+<p style="text-align: center;" align="center"><span style="text-decoration: line-through;">Potência do sinal desejado (dBm) = Nível de potência medida (dBm) – variação na atenuação (dB).</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Desligar o Tx1, ligar o Tx2 e repetir o procedimento para calcular a potência do sinal interferente.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O valor máximo de C/I para interferência co-canal correspondente a uma degradação de 1 dB (ou 3 dB) no nível de sinal recebido correspondente a TEB igual a 10<sup>-6 </sup>é dado por:</span></p>
+<p align="center"><span style="text-decoration: line-through;">C/I (dB) = Potência do sinal desejado (dBm) – Potência do sinal interferente (dBm).</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Repetir o ensaio para o outro canal adjacente.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.3.3 Sensibilidade à interferência co-canal</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se, quando existe um sinal modulado interferente no mesmo canal, o limite máximo de C/I correspondente a degradação de 1 dB&nbsp; no limiar de recepção correspondente a TEB igual a 10<sup>-6</sup> está abaixo dos requisitos especificados nesta norma.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Dois geradores de seqüência de bits, detector de erro, sensor de potência e medidor de potência.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">A mesma do ensaio de sensibilidade à interferência de canal adjacente.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Neste ensaio, ambos os transmissores devem transmitir no mesmo canal e ser modulados com sinais com as mesmas características de modulação.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Com os transmissores em estado de espera, os atenuadores devem ser ajustados no valor máximo. O medidor de potência deve ser conectado ao ponto C (ou B quando o equipamento não incluir circuito de derivação). Ligar o Tx1 e ajustar o Atenuador 1 de modo a obter um sinal desejado no nível especificado para TEB igual a 10<sup>-6</sup>. Reduzir a atenuação em 1 dB e registrar o valor de atenuação. Ligar o transmissor interferente (Tx2) e reduzir o Atenuador 2 até obter uma TEB igual a 10<sup>-6</sup> no detector de erro.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Desligar ambos os transmissores e desconectar o guia de onda (ou cabo) no ponto C(ou B quando o equipamento não incluir circuito de derivação). Registrar o valor de atenuação do Atenuador 2 e conectar o sensor e medidor de potência ao guia de onda (ou cabo).</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Ligar o Tx1 e reduzir o Atenuador 1 de modo a produzir um sinal desejado dentro da faixa calibrada do medidor de potência. Registrar o nível de potência (dBm) e a redução na atenuação (dB). A potência de sinal desejado é dada por:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Potência do sinal desejado (dBm) = Nível de potência medida (dBm) – variação na atenuação (dB).</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Desligar o Tx1, ligar o Tx2 e repetir o procedimento para calcular a potência do sinal interferente.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O valor máximo de C/I para interferência co-canal correspondente a uma degradação de 1 dB&nbsp; no nível de sinal recebido correspondente a TEB igual a 10<sup>-6</sup> é dado por:</span></p>
+<p style="padding-left: 60px;" align="center"><span style="text-decoration: line-through;">C/I (dB) = Potência do sinal desejado (dBm) – Potência do sinal interferente (dBm).</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.3.4 Interferência espúria de CW (sinais interferentes senoidais)</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é identificar freqüências específicas nas quais o receptor possa ter uma resposta espúria, como por exemplo, freqüência imagem, resposta harmônica do filtro do receptor, etc. A faixa de freqüência do ensaio deve estar de acordo com o requisito desta norma.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Geradores de seqüência, detector de erro, gerador de sinal, sensor de potência e medidor de potência.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figuraI8-revogada.png" alt="" width="652" height="209" border="0">&nbsp;</span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong>Figura I.8. Configuração de ensaio de interferência espúria de CW</strong>&nbsp;</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Com o Gerador de Sinal desligado, medir a potência de RF de saída no ponto C (ou B quando o equipamento não incluir circuito de derivação) usando um sensor de potência adequado, com um nível de atenuação conhecido. Substituir o sensor de potência pelo receptor em ensaio e aumentar a atenuação até que o nível requerido pelo requisito seja atingido. Registrar a TEB para este nível de sinal recebido (em dBm).</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Desligar o transmissor e substituir o receptor em ensaio por um sensor de potência. Calibrar o gerador de sinais em toda a faixa de freqüências requerida no nível requerido pela presente norma, aumentado da diferença requerida para o sinal CW interferente.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Substituir o sensor de potência pelo receptor em ensaio e confirmar a manutenção do nível de TEB. Variar o Gerador de Sinal ao longo da faixa de freqüências requerida com o nível calibrado. Registrar todas as freqüências em que a TEB exceda o nível estabelecido na presente norma.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.3.5 Taxa de erro em função do nível de sinal recebido (NSR) e taxa de erro residual</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se os requisitos de TEB em função do NSR são atendidos. As medidas são realizadas nos níveis de taxa de erro especificados nesta norma.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Gerador de seqüência, detector de erro, sensor de potência e medidor de potência.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p class="Artigo19" style="text-align: center;"><span style="text-decoration: line-through;"><img src="/legislacao/arquivos_e_imagens/imagens/resolucoes/res360/figuraI9-revogada.png" alt="" width="624" height="217" border="0">&nbsp;</span></p>
+<p align="center"><span style="text-decoration: line-through;"><strong>Figura I.9. Configuração de ensaio de taxa de erro em função do NSR</strong></span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Conectar a saída do Gerador de Seqüência à entrada de banda base (E<sub>BB</sub>) do transmissor. Enviar o sinal de saída de banda base do receptor (S<sub>BB</sub>) ao detector de erro. Registrar os valores de TEB obtidos variando o sinal na entrada do receptor com o atenuador variável. Verificar se os NSR correspondentes aos limiares de TEB estão dentro das especificações desta norma. Para a medida de taxa de erro residual deve ser utilizado o nível de recepção indicado pelo fabricante.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">I.3.3.6 Emissões espúrias do receptor</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Objetivo:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O objetivo deste ensaio é verificar se as emissões espúrias do receptor estão dentro dos limites especificados nesta norma.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Instrumentos de teste:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Medidor de potência, gerador de seqüência pseudo-aleatória e detector de erro.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Configuração de ensaio:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">A mesma do ensaio de emissões espúrias do transmissor.</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Procedimento:</span></p>
+<p style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O mesmo procedimento do ensaio de emissões espúrias do transmissor deve ser aplicado. Os níveis de emissões espúrias do transmissor e receptor de um equipamento duplex podem ser medidos simultaneamente, sendo o ensaio realizado uma única vez.</span></p>
+<p class="Anexo" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">Condições de ensaio:</span></p>
+<p class="Artigo19" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">O ensaio deve ser realizado com a tensão de operação nominal e nas faixas de condições ambientais de referência, dadas no item I.2.6. Os valores de temperatura, umidade relativa e pressão, observados durante os ensaios, respeitadas estas faixas, devem ser indicados no relatório de ensaios.</span></p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_348"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes">Resoluções da Anatel</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes/2004">2004</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20normativo" class="link-categoria">Ato normativo</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Certificação%20de%20Produto" class="link-categoria">Certificação de Produto</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Homologação%20de%20produtos" class="link-categoria">Homologação de produtos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Transmissor" class="link-categoria">Transmissor</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Transceptor" class="link-categoria">Transceptor</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Radioenlace%20ponto-a-ponto" class="link-categoria">Radioenlace ponto-a-ponto</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Fixo" class="link-categoria">Serviço Fixo</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Faixa%20de%20radiofrequência" class="link-categoria">Faixa de radiofrequência</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Equipamento%20de%20telecomunicações" class="link-categoria">Equipamento de telecomunicações</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaCertificacao" class="link-categoria">NormaCertificacao</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RecursosPrestacao" class="link-categoria">RecursosPrestacao</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada" class="link-categoria">ResolucaoRevogada</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

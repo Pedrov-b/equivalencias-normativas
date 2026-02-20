@@ -1,0 +1,1889 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 14665, de 12 de dezembro de 2017</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1396-ato-14665">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Arpovação, Requisito, Caráter técnico, Avaliação, Conformidade, Produto de telecomunicações, Interfaces STM-N, Ato Normativo, Certificação de produto, NormaCertificação, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovar os requisitos técnicos para avaliação da conformidade do produto &quot;Interfaces STM-N&quot;, conforme o Anexo I deste Ato.">
+	<title>Anatel - Ato nº 14665, de 12 de dezembro de 2017</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1172194034" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=192533208" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1283331910" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141954" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2017">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2017">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2017">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2017" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2017" class="pathway">2017</a> <span class="separator">&gt;</span> <span>Ato nº 14665, de 12 de dezembro de 2017</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;949060ea29c1cb34&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 14665, de 12 de dezembro de 2017		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Terça, 06 Fevereiro 2018 14:16			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quinta, 21 Janeiro 2021 11:44			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 6588			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<p><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico em <a title="Acesse o Boletim" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBP-5so4ePHlOa8GiFWJrItFeNDJBQw6IM5PVzdpFYRTeN">6/2/2018</a>.</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL, </b>no uso das atribuições que lhe foram conferidas pela <a title="Acesse a Portaria" href="https://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art19">Art. 19</a> da Lei n.º 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">CONSIDERANDO o Inciso II do <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2000/129-resolucao-242#art9Anexo">Art. 9º</a> do Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela Resolução n.º 242, de 30 de novembro de 2000;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">CONSIDERANDO o <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419#art1">Art. 1º</a> da Portaria nº 419 de 24 de maio de 2013;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlBeS7mx24lLqcqexsiP6x5EUm_Lrkq-d89laRxHgcH3x">processo nº 53500.084675/2017-85</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha resolve"><strong>RESOLVE:</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art1"></a>Art. 1º Aprovar os requisitos técnicos para avaliação da conformidade do produto "Interfaces STM-N", conforme o <a title="Acesse o Anexo" href="#anexo1">Anexo I</a> deste Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art2"></a>Art. 2º Este Ato entra em vigor na data de sua publicação no Boletim de Serviço Eletrônico da Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: center;">VITOR ELISIO GOES DE OLIVEIRA MENEZES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: center;">Superintendente de Outorga e Recursos à Prestação</p>
+<p style="margin: 0; text-align: left; font-size: 11pt; font-family: Calibri;">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="anexo1"></a>ANEXO I</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong>REQUISITOS TÉCNICOS PARA AVALIAÇÃO DA CONFORMIDADE DO PRODUTO INTERFACES STM-N</strong></p>
+<p class="Texto_Alinhado_Esquerda">&nbsp;</p>
+<p style="text-align: justify;"><a name="item1"></a>1. OBJETIVO</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item1.1"></a>1.1. Estabelecer requisitos mínimos, para efeito de certificação e homologação junto à Agência Nacional de Telecomunicações, a serem demonstrados na avaliação da conformidade de interfaces de comunicação padrões STM-1, STM-4, STM-16 e STM-64.</p>
+<p style="text-align: justify;"><a id="item2"></a>2. REFERÊNCIAS NORMATIVAS</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.1"></a>2.1. Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.703/en">G.703 do ITU-T (11/2001)</a> - Physical/electrical characteristics of hierarchical digital interfaces;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.2"></a>2.2. Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.691-200603-I/en">G.691 do ITU-T (03/2006)</a> - Optical interfaces for single channel STM-64 and other SDH systems with optical amplifiers;</p>
+<p style="padding-left: 30px; text-align: justify;"><a id="item2.3"></a>2.3. Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.783/en">G.783 do ITU-T (03/2006)</a> - Characteristics of synchronous digital hierarchy (SDH) equipment functional blocks;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.4"></a>2.4. Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.664-201210-I/en">G.664 do ITU-T (10/2012)</a> - Optical safety procedures and requirements for optical transmission systems;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.5"></a>2.5. Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.825/en">G.825 do ITU-T (2000)/Amd.1 (05/2008)</a> - The control of jitter and wander within digital networks which are based on the synchronous digital hierarchy (SDH);</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.6"></a>2.6. Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.957-200603-I/en">G.957 do ITU-T (março de 2006)</a> - Optical interfaces for equipments and systems relating to the synchronous digital hierarchy;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.7"></a>2.7. Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.693/en">G.693</a> : Optical interfaces for intra-office systems;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.8"></a>2.8. Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.959.1/en">G.959.1</a> : Optical transport network physical layer interfaces;</p>
+<p><a name="item3"></a>3. REQUISITOS APLICÁVEIS</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item3.1"></a>3.1. Interfaces STM-1 (Elétrica)</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item3.1.1"></a>3.1.1. Requisitos:</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item3.1.1.1"></a>3.1.1.1. Os equipamentos que contenham Interface STM-1 Elétrica devem atender ao seguintes requisitos da norma <a title="Acesse a Norma" href="https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.703-200111-S!!PDF-E&amp;type=items">G.703 (11/2001) </a>- Physical/electrical characteristics of hierarchical digital interfaces:</p>
+<p style="padding-left: 120px; text-align: justify;">a) <a title="Acesse o Item" href="https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.703-200111-S!!PDF-E&amp;type=items">Item 15</a>, com exceção da máscara do bit 0 que deve ser usada a da errata 1 da Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.703-200507-S!Err1/en">G.703 (11/2001)</a>.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item3.2"></a>3.2. Parâmetros ópticos das interfaces STM-1, STM-4, STM-16 e STM-64</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item3.2.1"></a>3.2.1. Equipamentos que incorporam interfaces STM-1, STM-4 e STM-16 devem atender aos seguintes itens da Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.957-200603-I/en">G.957 (03/2006)</a> - Optical interfaces for equipments and systems relating to the synchronous digital hierarchy:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Itens aplicáveis ao Multiplex SDH: <a title="Acesse os itens" href="https://www.itu.int/rec/T-REC-G.957-200603-I/en">6.1, 6.2.2, 6.2.3, 6.2.4, 6.2.5, 6.3.2, 6.3.3, 6.4.1 e 6.4.2</a>.</p>
+<p style="padding-left: 120px; text-align: justify;">b) Para demais equipamentos com interfaces STM, os itens aplicáveis são: <a title="Acesse os Itens" href="https://www.itu.int/rec/T-REC-G.957-200603-I/en">6.1, 6.2.3, 6.2.4, 6.2.5 e 6.4.1</a>.</p>
+<p style="padding-left: 120px; text-align: justify;">c) Aplicar parâmetros das seguintes tabelas:</p>
+<p class="Item_Inciso_Romano" style="margin-left: 160px; text-align: justify;">Para interface STM-1: <a title="Acesse a Tabela" href="https://www.itu.int/rec/T-REC-G.957-200603-I/en">Tabela 2</a>;</p>
+<p class="Item_Inciso_Romano" style="margin-left: 160px; text-align: justify;">Para interface STM-4: <a title="Acesse a Tabela" href="https://www.itu.int/rec/T-REC-G.957-200603-I/en">Tabela 3</a>;</p>
+<p class="Item_Inciso_Romano" style="margin-left: 160px; text-align: justify;">Para interface STM-16: <a title="Acesse a Tabela" href="https://www.itu.int/rec/T-REC-G.957-200603-I/en">Tabela 4</a>.</p>
+<p class="Texto_Alinhado_Esquerda" style="padding-left: 60px; text-align: justify;"><a name="item3.2.2"></a>3.2.2. Equipamentos que incorporam Interfaces STM-64 deve atender aos seguintes itens da Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.691-200603-I/en">G.691 (03/2006)</a> - Optical interfaces for single channel STM-64 and other SDH systems with optical amplifiers:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Itens aplicáveis ao Multiplex SDH: <a title="Acesse os Itens" href="https://www.itu.int/rec/T-REC-G.691-200603-I/en">6.1, 6.2.1, 6.2.2, 6.2.3, 6.2.4, 6.3.2.1, 6.3.4, 6.4.1 e 6.4.2</a>.</p>
+<p style="padding-left: 120px; text-align: justify;">b) Para demais equipamentos com interfaces STM, os itens aplicáveis são: <a title="Acesse os Itens" href="https://www.itu.int/rec/T-REC-G.691-200603-I/en">6.1, 6.2.2, 6.2.3, 6.2.4 e 6.4.1</a>.</p>
+<p style="padding-left: 120px; text-align: justify;">c) Aplicar parâmetros das seguintes tabelas:</p>
+<p class="Item_Inciso_Romano" style="margin-left: 160px; text-align: justify;"><a title="Acesse a Tabela" href="https://www.itu.int/rec/T-REC-G.691-200603-I/en">Tabela 5a/G.691 </a>- Parâmetros: vide norma <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.693/en">G.693</a> e <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.959.1/en">G.959.1</a>;</p>
+<p class="Item_Inciso_Romano" style="margin-left: 160px; text-align: justify;"><a title="Acesse a Tabela" href="https://www.itu.int/rec/T-REC-G.691-200603-I/en">Table 5b/G.691</a> – Parâmetros vide norma <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.959.1/en">G.959.1</a>;</p>
+<p class="Item_Inciso_Romano" style="margin-left: 160px; text-align: justify;"><a title="Acesse a Tabela" href="https://www.itu.int/rec/T-REC-G.691-200603-I/en">Table 5c/G.691</a> – Parâmetros vide norma <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.959.1/en">G.959.1</a>;</p>
+<p class="Item_Inciso_Romano" style="margin-left: 160px; text-align: justify;"><a title="Acesse a Tabela" href="https://www.itu.int/rec/T-REC-G.691-200603-I/en">Table 5d/G.691</a> – Parâmetros vide norma <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.691-200603-I/en">G.691</a>.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item3.3"></a>3.3. Jitter</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item3.3.1"></a>3.3.1. Equipamentos que incorporam Interfaces STM devem atender aos requisitos vigentes referentes à Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/T-REC-G.783/en">G.783 (03/2006) </a>- Characteristics of synchronous digital hierarchy (SDH) equipment functional blocks:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Item 15.1.1 (observar Tabela 1 da Recomendação ITU-T <a title="Acesse a Recomendação" href="https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.825-200805-I!Amd1!PDF-E&amp;type=items">G. 825 (2000) / Amd.1 (05/2008)</a>);</p>
+<p style="padding-left: 120px; text-align: justify;">b) Item 15.1.2 (observar Recomendação ITU-T <a title="Acesse a Recomendação" href="https://www.itu.int/rec/dologin_pub.asp?lang=s&amp;id=T-REC-G.783-200805-I!Amd1!PDF-E&amp;type=items">G. 783 (2006)/Amd.1 (05/2008)</a>, item 9.3.1.1).&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item3.4"></a>3.4. Segurança óptica</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item3.4.1"></a>3.4.1. Equipamentos que incorporam Interfaces STM Ópticas devem atender ao Apêndice II da Recomendação <a title="Acesse a Recomendação" href="https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.664-201210-I!!PDF-E&amp;type=items">G.664 (10/2012)</a> - Optical Safety procedures and requirements for optical transport systems.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item3.5"></a>3.5. Observações</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item3.5.1"></a>3.5.1. Quando o equipamento não suportar tributários, deverá ser incluída no certificado a seguinte frase: "A(s) interface(s) STM-N não suporta(m) transmissão ou multiplexação de tributários".</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item3.5.2"></a>3.5.2. Quando o equipamento suportar tributários, ou tiver característica de multiplex SDH, deverão ser realizados os ensaios adicionais descritos no item <a href="#item4.15">4.15</a>. Neste caso, na avaliação da conformidade, o OCD deverá indicar, no campo das características técnicas do Certificado de Conformidade e do Relatório de Avaliação da Conformidade, o suporte à transmissão de tributários.&nbsp;</p>
+<p style="text-align: justify;"><a name="item4"></a>4. PROCEDIMENTOS DE ENSAIO</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.1"></a>4.1. Características da Interface STM-1 Elétrica</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.1.1"></a>4.1.1. Formato do Pulso</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.1.1"></a>4.1.1.1. A montagem de referência para testes para equipamentos com tributários STM-1 deve ser conforme Figura 1.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig1.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura1"></a>Figura 1. Equipamentos com Tributários STM-1.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.1.2"></a>4.1.1.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Instrumento de medida SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Atenuador óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Osciloscópio.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.1.3"></a>4.1.1.3. Procedimento de teste para equipamentos com tributários STM-1:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar o instrumento de medida SDH para gerar um sinal elétrico;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Ajustar o atenuador óptico para que se tenha na sua saída a potência mínima de recepção especificada para o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Através do osciloscópio, medir o sinal de saída de 155.520 kbit/s no equipamento em teste e verificar que o sinal esteja dentro dos limites especificados nas Figuras 2 e 3.</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig2.png" width="800"><a id="figura2"></a>Figura 2. Máscara do Pulso Correspondente ao Binário 0.</p>
+<p class="Tabela_Texto_Centralizado" style="margin-left: 160px;">&nbsp;</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig3.png" width="800"><a id="figura3"></a>Figura 3. Figura 2. Máscara do Pulso Correspondente ao Binário 1.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="margin-left: 200px; text-align: justify;">Nota 1: Para todas as medidas que usam estas máscaras o sinal deve ser acoplado AC com um capacitor ≥ 0,01 μF à entrada do osciloscópio utilizado para as medidas. O nível zero nominal para ambas as máscaras deve ser alinhado com o traço do osciloscópio sem o sinal de entrada. Quando o sinal for aplicado, a posição vertical do traço pode ser ajustada com o objetivo de encontrar os limites das máscaras. Qualquer ajuste deve ser o mesmo para ambas as máscaras e não deve exceder a ± 0,05 V. Isto pode ser verificado retirando-se novamente o sinal de entrada e observando se o traço está dentro do intervalo ± 0,05 V do nível zero nominal das máscaras.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="margin-left: 200px; text-align: justify;">Nota 2: Cada pulso dentro de uma sequência codificada deve atender aos limites da máscara, independentemente do estado anterior ou posterior do pulso, com as máscaras do pulso fixas em relação a uma referência de sincronismo comum, isto é, com as bordas de início e fim nominais coincidentes. As máscaras levam em conta o "jitter" de alta frequência causado por interferência intersimbólica o estágio de saída, mas não o "jitter" presente no sinal de relógio associado à fonte do sinal na interface. Quando se utiliza um osciloscópio para determinar se o pulso está de acordo com a máscara, é importante que traços sucessivos do pulso se superponham para suprimir os efeitos do "jitter" de baixa frequência. Isto pode ser realizado com várias técnicas, por exemplo, gatilhando o osciloscópio como para os circuitos de saída dos pulsos.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="margin-left: 200px; text-align: justify;">Nota 3: A amplitude máxima em regime não deve exceder oao limite de 0,55 V. "Overshoots" e outros transientes são permitidos apenas dentro da área pontilhada, limitada pelos níveis de amplitude 0,55 V e 0,6 V, fornecidos para aqueles que não excedam ao nível de regime de mais que 0,05 V (O valor 0,05 V está em estudo).&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="margin-left: 200px; text-align: justify;">Nota 4: Para o caso destas máscaras, os tempos de subida e descida devem ser medidos entre -0,4 V e 0,4 V não devendo exceder 2 ns.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="margin-left: 200px; text-align: justify;">Nota 5: O pulso inverso terá as mesmas características, notando-se que a tolerância de tempo ao nível das transições negativas e positivas são ± 0,1 ns e 0,5 ns, respectivamente.&nbsp;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Repetir o procedimento acima para outras interfaces STM-1 do equipamento em teste.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.1.4"></a>4.1.1.4. A montagem de referência para testes para equipamentos com sinal agregado STM-1 deve estar conforme Figura 4.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig4.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura4"></a>Figura 4. Equipamentos com Sinal Agregado STM-1.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.1.5"></a>4.1.1.5. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Gerador de padrões PDH;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Osciloscópio.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.1.6"></a>4.1.1.6. Procedimento de teste para equipamentos com sinal agregado STM-1:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar o gerador PDH para gerar um sinal de acordo com a interface de tributário do equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Repetir a alínea c) do item <a href="#item4.1.1.3">4.1.1.3</a>.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.1.2"></a>4.1.2. Perda de Retorno na Entrada:</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.2.1"></a>4.1.2.1. A montagem de referência para teste deve estar conforme Figura 5.&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig5.png" width="500"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura5"></a>Figura 5.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.2.2"></a>4.1.2.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Gerador Senoidal (GS);</p>
+<p style="padding-left: 120px; text-align: justify;">b) Medidor Seletivos (MS);</p>
+<p style="padding-left: 120px; text-align: justify;">c) Ponte de Perda de Retorno.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.2.3"></a>4.1.2.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Fazer as conexões de acordo com a montagem de teste, onde o ponto Ain é a interface de entrada de tributário de 155.520 kbit/s;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Com a chave K aberta, ajustar o nível do GS de forma que o MS indique um valor de referência VR na frequência de teste utilizada;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Fechar a chave K e anotar a leitura VM (dBm) obtida no MS;</p>
+<p style="padding-left: 120px; text-align: justify;">d) A Perda de Retorno é dada por: PR = VR - VM;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Realizar o procedimento descrito para frequências de teste na faixa especificada no <a href="#item4.1.2.4">item 4.1.2.4</a>.</p>
+<p style="padding-left: 120px; text-align: justify;">f) Repetir todo o procedimento acima para outras portas de 155.520 kbit/s.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.2.4"></a>4.1.2.4. Valores de Referência:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Perda de retorno ≥ 15 dB na faixa de 8 a 240 MHz.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.1.3"></a>4.1.3. Geração de Jitter</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.3.1"></a>4.1.3.1. A montagem de referência para teste está apresentada na Figura 6.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig6.png" width="700"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura6"></a>Figura 6.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.3.2"></a>4.1.3.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Instrumento de Medida SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Atenuador óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Medidor de Jitter;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Sintetizador;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Simulador de Cabo com atenuação de 12,7 dB em 78MHz.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.3.3"></a>4.1.3.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar o instrumento de medida SDH para fornecer um sinal STM-1 elétrico;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Ajustar o atenuador óptico para que se tenha na sua saída a potência mínima de recepção especificada para o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Verificar que o jitter seja menor ou igual a 0,01 UI rms utilizando-se um filtro passa-altas com frequência de corte 12 kHz;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Variar a frequência de entrada do tributário de ±20 ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Verificar que o valor medido seja menor ou igual a 0,01 UI rms;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Repetir os procedimentos anteriores para outras interfaces de 155.520 kbit/s, quando aplicável.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.1.4"></a>4.1.4. Transferência de Jitter (aplicável somente a regeneradores)</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.4.1"></a>4.1.4.1. Na figura 7 está representada a montagem de referência para testes.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig7.png" width="700"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura7"></a>Figura 7.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.4.2"></a>4.1.4.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Instrumento de medida SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Sintetizador;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Modulador de Fase;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Atenuador óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Medidor de Jitter;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Simulador de Cabo de atenuação de 12,7 dB em 78 MHz.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.4.3"></a>4.1.4.3. Procedimento de teste:</p>
+<p class="Texto_Justificado" style="margin-left: 120px; text-align: justify;">Nota: o jitter intríseco do instrumental deverá ser considerado.</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar o instrumento de medida SDH para fornecer um sinal STM-1 elétrico;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Ajustar o atenuador óptico para que tenha na saída a potência mínima de recepção especificada para o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Programar o Modulador de Fase para gerar a máscara de aceitação de jitter conforme Figura 8 e Tabela 1;</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig8.png" width="700"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura8"></a>Figura 8. Limite inferior para Tolerância de "Jitter" de Entrada para Equipamentos STM-N.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+<table style="height: 267px;" border="1" width="1024">
+<tbody>
+<tr>
+<td style="text-align: center; width: 70px;" rowspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>NÍVEL</strong></p>
+<p class="Tabela_Texto_Centralizado"><strong>STM</strong></p>
+</td>
+<td style="text-align: center; width: 408px;" colspan="5">
+<p class="Tabela_Texto_Centralizado"><strong>Amplitude pico a pico (UI)</strong></p>
+</td>
+<td style="text-align: center; width: 524px;" colspan="10">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Frequência (Hz)</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 102px;">
+<p class="Tabela_Texto_Centralizado"><strong>A0 (18µs)</strong></p>
+</td>
+<td style="text-align: center; width: 90px;">
+<p class="Tabela_Texto_Centralizado"><strong>A1 (2µs)</strong></p>
+</td>
+<td style="text-align: center; width: 121px;">
+<p class="Tabela_Texto_Centralizado"><strong>A2 (0,25µs)</strong></p>
+</td>
+<td style="text-align: center; width: 30px;">
+<p class="Tabela_Texto_Centralizado"><strong>A3</strong></p>
+</td>
+<td style="text-align: center; width: 41px;">
+<p class="Tabela_Texto_Centralizado"><strong>A4</strong></p>
+</td>
+<td style="text-align: center; width: 35px;">
+<p class="Tabela_Texto_Centralizado"><strong>f0</strong></p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado"><strong>f12</strong></p>
+</td>
+<td style="text-align: center; width: 48px;">
+<p class="Tabela_Texto_Centralizado"><strong>f11</strong></p>
+</td>
+<td style="text-align: center; width: 59px;">
+<p class="Tabela_Texto_Centralizado"><strong>f10</strong></p>
+</td>
+<td style="text-align: center; width: 53px;">
+<p class="Tabela_Texto_Centralizado"><strong>f9</strong></p>
+</td>
+<td style="text-align: center; width: 42px;">
+<p class="Tabela_Texto_Centralizado"><strong>f8</strong></p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado"><strong>f1</strong></p>
+</td>
+<td style="text-align: center; width: 46px;">
+<p class="Tabela_Texto_Centralizado"><strong>f2</strong></p>
+</td>
+<td style="text-align: center; width: 46px;">
+<p class="Tabela_Texto_Centralizado"><strong>f3</strong></p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado"><strong>f4</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">STM-1</p>
+</td>
+<td style="text-align: center; width: 102px;">
+<p class="Tabela_Texto_Centralizado">2800</p>
+</td>
+<td style="text-align: center; width: 90px;">
+<p class="Tabela_Texto_Centralizado">311</p>
+</td>
+<td style="text-align: center; width: 121px;">
+<p class="Tabela_Texto_Centralizado">39</p>
+</td>
+<td style="text-align: center; width: 30px;">
+<p class="Tabela_Texto_Centralizado">1,5</p>
+</td>
+<td style="text-align: center; width: 41px;">
+<p class="Tabela_Texto_Centralizado">0,15</p>
+</td>
+<td style="text-align: center; width: 35px;">
+<p class="Tabela_Texto_Centralizado">12µ</p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado">178µ</p>
+</td>
+<td style="text-align: center; width: 48px;">
+<p class="Tabela_Texto_Centralizado">1,6m</p>
+</td>
+<td style="text-align: center; width: 59px;">
+<p class="Tabela_Texto_Centralizado">15,6m</p>
+</td>
+<td style="text-align: center; width: 53px;">
+<p class="Tabela_Texto_Centralizado">0,125</p>
+</td>
+<td style="text-align: center; width: 42px;">
+<p class="Tabela_Texto_Centralizado">19,3</p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado">500</p>
+</td>
+<td style="text-align: center; width: 46px;">
+<p class="Tabela_Texto_Centralizado">6,5k</p>
+</td>
+<td style="text-align: center; width: 46px;">
+<p class="Tabela_Texto_Centralizado">65k</p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado">1,3M</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">STM-4</p>
+</td>
+<td style="text-align: center; width: 102px;">
+<p class="Tabela_Texto_Centralizado">11200</p>
+</td>
+<td style="text-align: center; width: 90px;">
+<p class="Tabela_Texto_Centralizado">1244</p>
+</td>
+<td style="text-align: center; width: 121px;">
+<p class="Tabela_Texto_Centralizado">156</p>
+</td>
+<td style="text-align: center; width: 30px;">
+<p class="Tabela_Texto_Centralizado">1,5</p>
+</td>
+<td style="text-align: center; width: 41px;">
+<p class="Tabela_Texto_Centralizado">0,15</p>
+</td>
+<td style="text-align: center; width: 35px;">
+<p class="Tabela_Texto_Centralizado">12µ</p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado">178µ</p>
+</td>
+<td style="text-align: center; width: 48px;">
+<p class="Tabela_Texto_Centralizado">1,6m</p>
+</td>
+<td style="text-align: center; width: 59px;">
+<p class="Tabela_Texto_Centralizado">15,6m</p>
+</td>
+<td style="text-align: center; width: 53px;">
+<p class="Tabela_Texto_Centralizado">0,125</p>
+</td>
+<td style="text-align: center; width: 42px;">
+<p class="Tabela_Texto_Centralizado">9,65</p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado">1000</p>
+</td>
+<td style="text-align: center; width: 46px;">
+<p class="Tabela_Texto_Centralizado">25k</p>
+</td>
+<td style="text-align: center; width: 46px;">
+<p class="Tabela_Texto_Centralizado">250k</p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado">5M</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">STM-16</p>
+</td>
+<td style="text-align: center; width: 102px;">
+<p class="Tabela_Texto_Centralizado">44790</p>
+</td>
+<td style="text-align: center; width: 90px;">
+<p class="Tabela_Texto_Centralizado">4977</p>
+</td>
+<td style="text-align: center; width: 121px;">
+<p class="Tabela_Texto_Centralizado">622</p>
+</td>
+<td style="text-align: center; width: 30px;">
+<p class="Tabela_Texto_Centralizado">1,5</p>
+</td>
+<td style="text-align: center; width: 41px;">
+<p class="Tabela_Texto_Centralizado">0,15</p>
+</td>
+<td style="text-align: center; width: 35px;">
+<p class="Tabela_Texto_Centralizado">12µ</p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado">178µ</p>
+</td>
+<td style="text-align: center; width: 48px;">
+<p class="Tabela_Texto_Centralizado">1,6m</p>
+</td>
+<td style="text-align: center; width: 59px;">
+<p class="Tabela_Texto_Centralizado">15,6m</p>
+</td>
+<td style="text-align: center; width: 53px;">
+<p class="Tabela_Texto_Centralizado">0,125</p>
+</td>
+<td style="text-align: center; width: 42px;">
+<p class="Tabela_Texto_Centralizado">12,1</p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado">5000</p>
+</td>
+<td style="text-align: center; width: 46px;">
+<p class="Tabela_Texto_Centralizado">100k</p>
+</td>
+<td style="text-align: center; width: 46px;">
+<p class="Tabela_Texto_Centralizado">1M</p>
+</td>
+<td style="text-align: center; width: 47px;">
+<p class="Tabela_Texto_Centralizado">20M</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela1"></a>Tabela 1: Limites para Tolerância de "Jitter" para Equipamentos STM-N.&nbsp;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Verificar que o equipamento em teste apresente jitter de saída que esteja dentro dos limites impostos pela máscara da Figura 9 e Tabela 2;</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig9.png" width="550"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura9"></a>Figura 9. Transferência de "Jitter".</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto; width: 500px;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">NÍVEL STM</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">f<sub>c</sub> (kHz)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">P (dB)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">STM-1 (A)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">130</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">STM-1 (B)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">30</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">STM-4 (A)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">500</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">STM-4 (B)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">30</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">STM-16 (A)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2000</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">STM-16 (B)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">30</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela2"></a>Tabela 2: Parâmetros de Transferência de "Jitter".&nbsp;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Repetir o procedimento acima para outras interfaces de 155.520 kbit/s, quando aplicável.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.1.5"></a>4.1.5. Tolerância de Jitter</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.5.1"></a>4.1.5.1. A Figura 10 apresenta a montagem para teste.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig10.png" width="550"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura10"></a>Figura 10.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.5.2"></a>4.1.5.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Instrumento de Medida SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Sintetizador;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Modulador de Fase;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Atenuador Óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Medidor de Taxa de Erro;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Simulador de Cabo com atenuação de 12,7 dB em 78MHz.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.5.3"></a>4.1.5.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar o instrumento de medida SDH para fornecer um sinal STM-1 elétrico;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Ajustar o atenuador óptico para que se tenha na saída a potência mínima de recepção especificada para o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Programar o Modulador de Fase para gerar a máscara de aceitação de jitter conforme Figura 8 e Tabela 1;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Verificar que não ocorram erros no equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Repetir o procedimento acima para outras interfaces de 155.520 kbit/s, quando aplicável.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.1.6"></a>4.1.6. Tolerância à Variação de Frequência na Entrada STM-1 Elétrica</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.6.1"></a>4.1.6.1. A Figura 11 representa a montagem de referência para teste para equipamentos com Entrada SDH e Saída PDH.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig11.png" width="550"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura11"></a>Figura 11. Equipamentos com Entrada SDH e Saída PDH.</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.6.2"></a>4.1.6.2. Instrumental de teste para equipamentos com Entrada SDH e Saída PDH:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Sintetizador de Frequências;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Gerador SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Simulador de Cabo com atenuação de 12,7 dB em 78 MHz;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Medidor de Taxa de Erro para PDH.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.6.3"></a>4.1.6.3. Procedimento de teste para equipamentos com Entrada SDH e Saída PDH:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar o sintetizador de frequências para gerar um sinal de 155.520 kHz;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Sincronizar o gerador SDH com a saída do sintetizador de frequências;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Programar o gerador SDH para gerar um sinal STM-1 que transporte uma sequência PRBS como um tributário PDH;</p>
+<ul style="text-align: justify; padding-left: 180px;">
+<li style="padding-left: 10px;">sequência de teste PRBS com comprimento 2<sup>15</sup>-1 para tributário de 2M;</li>
+<li style="padding-left: 10px;">sequência de teste PRBS com comprimento 2<sup>15</sup>-1 para tributário de 2M;</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">d) Programar o equipamento em teste para rotear o tributário PDH transportado pelo sinal STM-1 de entrada para a saída PDH;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Através do medidor de taxa de erro, medir por 2 minutos na saída PDH um sinal sem taxa de erro;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Variar a frequência do sintetizador dentro dos limites de 155.520kHz ± 20 ppm (155.523.110,4 Hz a 155.516.889,6 Hz) e repetir a alínea anterior;</p>
+<p style="padding-left: 120px; text-align: justify;">g) Repetir o procedimento para outras entradas STM-1 e saídas PDH.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.6.4"></a>4.1.6.4. A Figura 12 representa a montagem de referência para teste para equipamentos com Entrada SDH e Saída SDH.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig12.png" width="550"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura12"></a>Figura 12. Equipamentos com Entrada SDH e Saída SDH.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.6.5"></a>4.1.6.5. Instrumental de teste para equipamentos com Entrada SDH e Saída SDH:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Sintetizador de Frequências;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Gerador SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Simulador de Cabo com atenuação de 12,7 dB em 78 MHz;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Analisador SDH.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.1.6.6"></a>4.1.6.6. Procedimento de teste para equipamentos com Entrada SDH e Saída SDH:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar o sintetizador de frequências para gerar um sinal de 155.520 kHz;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Sincronizar o gerador SDH com a saída do sintetizador de frequências;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Programar o gerador SDH para gerar um sinal STM-1 que transporte uma sequência PRBS como um tributário PDH;</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">sequência de teste PRBS com comprimento 2<sup>15</sup>-1 para tributário de 2M;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">sequência de teste PRBS com comprimento 2<sup>15</sup>-1 para tributário de 2M;</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">d) Programar o equipamento em teste para rotear o tributário PDH transportado pelo sinal STM-N de entrada para o sinal STM-N de saída;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Através do analisador SDH, medir por 2 minutos na saída STM-N um sinal sem taxa de erro;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Variar a frequência do sintetizador dentro dos limites de 155.520kHz ± 20 ppm (155.523.110,4 Hz a 155.516.889,6 Hz) e repetir a alínea anterior;</p>
+<p style="padding-left: 120px; text-align: justify;">g) Repetir o procedimento para outras entradas STM-1 e saídas STM-N.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.2"></a>4.2. Tolerância à Variação de Frequência na Entrada STM-N Óptica</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.2.1"></a>4.2.1. A montagem de referência para teste deve respeitar os seguintes diagramas de blocos, das Figuras 13 e 14:</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig13.png" width="550"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura13"></a>Figura 13. Equipamentos com Entradas SDH e Saída PDH.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig14.png" width="550"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura14"></a>Figura 14. Equipamentos com Entrada SDH e Saída SDH.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.2.2"></a>4.2.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Sintetizador de Frequências;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Gerador SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Atenuador Óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Medidor de Taxa de Erro para PDH (aplicável à montagem da Figura 13);</p>
+<p style="padding-left: 120px; text-align: justify;">e) Receptor Óptico de Referência (aplicável à montagem da Figura 14);</p>
+<p style="padding-left: 120px; text-align: justify;">f) Analisador SDH (aplicável à montagem da Figura 14).&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.2.3"></a>4.2.3. Procedimento de teste para uma entrada STM-N e uma saída PDH:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar o sintetizador de frequências para gerar um sinal de 155.520kHz ou 622.080kHz ou 2.488.320kHz (em função de ser uma entrada STM-1 ou STM-4 ou STM-16).</p>
+<p style="padding-left: 120px; text-align: justify;">b) Ajustar o atenuador óptico para que se tenha na sua saída a potência mínima de recepção especificada para o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Sincronizar o gerador SDH com a saída do sintetizador de frequências;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Programar o gerador SDH para gerar um sinal STM-N que transporte uma sequência PRBS como um tributário PDH;</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">Nota: O comprimento da sequência de teste PRBS para tributário de 2M é 2<sup>15</sup>-1 e para tributário de 34M e 140M, 2<sup>23</sup>-1;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Programar o equipamento em teste para rotear o tributário PDH transportado pelo sinal STM-N de entrada para a saída PDH;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Através do medidor de taxa de erro, medir por 2 minutos na saída PDH um sinal sem taxa de erro;</p>
+<p style="padding-left: 120px; text-align: justify;">g) Variar a frequência do sintetizador dentro dos limites de 155.520kHz ± 20ppm (155.523.110,4Hz a 155.516.889,6Hz) ou 622.080kHz ± 20 ppm (622.092.441,6 a 622.067.558,4) ou 2.488.320kHz ± 20 ppm (2.488.369.766,4Hz a 2.488.270.233,6Hz) e repetir a alínea f);</p>
+<p style="padding-left: 120px; text-align: justify;">h) Repetir o procedimento para outras entradas STM-N e saídas PDH;&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.2.4"></a>4.2.4. Procedimento de teste para uma entrada STM-N e saída STM-N:</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">Nota: Não há correspondência entre o N da entrada e o N da saída. Por exemplo, se o equipamento em teste for um ADM STM-16 com tributários STM-1, este procedimento é válido para entrada STM-16 e saída STM-16, para entrada STM-16 e saída STM-1 e para entrada STM-1 e saída STM-16.</p>
+<p style="padding-left: 120px; text-align: justify;">a) Repetir as alíneas a), b), c) e d) do item 4.2.3;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Programar o equipamento em teste para rotear o tributário PDH transportado pelo sinal STM-N de entrada para o sinal STM-N de saída;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Através do analisador SDH, medir por 2 minutos na saída STM-N um sinal sem taxa de erro;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Variar a frequência do sintetizador dentro dos limites de 155.520kHz ± 20ppm (155.523.110,4Hz a 155.516.889,6Hz) ou 622.080kHz ± 20 ppm (622.092.441,6 a 622.067.558,4) ou 2.488.320kHz ± 20 ppm (2.488.369.766,4Hz a 2.488.270.233,6Hz) e repetir a alínea c);</p>
+<p style="padding-left: 120px; text-align: justify;">e) Repetir o procedimento para outras entradas STM-N e saídas STM-N;&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.3"></a>4.3. Comprimento de Onda de Operação</p>
+<p style="padding-left: 60px; text-align: justify;"><a id="item4.3.1"></a>4.3.1. Montagem de referência para teste conforme Figura 15:</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig15.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura15"></a>Figura 15.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.3.2"></a>4.3.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Analisador de Espectro Óptico (AEO);</p>
+<p style="padding-left: 120px; text-align: justify;">b) Atenuador óptico. Nota: Para lasers de baixa potência não é necessária a utilização de Atenuador Óptico</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.3.3"></a>4.3.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Medir a faixa de comprimento de onda de operação da fonte óptica.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.3.4"></a>4.3.4. Valores de referência:</p>
+<p style="padding-left: 120px; text-align: justify;">a) De acordo com o que estabelecem as Tabelas 3, 4 e 5, dependendo do nível hierárquico STM.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/tab3.png" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela3"></a>Tabela 3. Parâmetros da Interface Óptica Especificados para a STM-1.&nbsp;</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/tab4.png" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela4"></a>Tabela 4. Parâmetros da Interface Óptica Especificados para STM-4.&nbsp;&nbsp;</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/tab5.png" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela5"></a>Tabela 5. Parâmetros da Interface Óptica Especificados para STM-16.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.4"></a>4.4. Largura Espectral</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.4.1"></a>4.4.1. Montagem de referência para teste conforme Figura 16:</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig16.png" width="500"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura16"></a>Figura 16.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.4.2"></a>4.4.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Interferômetro de Mach Zendher a fibra com controle de polarização da luz;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Analisador de espectro elétrico com entrada óptica ou um analisador de espectro elétrico mais um conversor opto-elétrico. A banda passante mínima é de 1 kHz a 2 GHz.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.4.3"></a>4.4.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Medir a largura espectral da fonte óptica e a mínima razão de supressão de modo lateral. Nota: Para LED's e lasers MLM, a largura espectral é dada pelo valor RMS e para lasers SLM, pela largura a -20 dB da potência de pico.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.4.4"></a>4.4.4. Valores de referência:</p>
+<p style="padding-left: 120px; text-align: justify;">a) De acordo com o que estabelecem as Tabelas 3, 4 e 5, dependendo do nível hierárquico STM.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.5"></a>4.5. Potência Óptica Transmitida</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.5.1"></a>4.5.1. Montagem de referência para teste, conforme Figura 17:</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig17.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura17"></a>Figura 17.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.5.2"></a>4.5.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Medidor de Potência Óptica (MPO).&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.5.3"></a>4.5.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Anotar a potência óptica indicado no medidor. Nota: A medida da potência óptica deve ser realizada no conector óptico, ou seja, no ponto S definido na Figura 18.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig18.png" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="margin-left: 160px; text-align: center;"><a id="figura18"></a>Figura 18. Pontos de Referência S e R.&nbsp;</p>
+<p class="Tabela_Texto_Centralizado" style="margin-left: 160px; text-align: center;">&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.5.4"></a>4.5.4. Valores de referência:</p>
+<p style="padding-left: 120px; text-align: justify;">a) De acordo com o que estabelecem as Tabelas 3, 4 e 5, dependendo do nível hierárquico STM.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.6"></a>4.6. Razão de Extinção</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.6.1"></a>4.6.1. Montagem de referência para teste, conforme Figura 19:</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig19.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura19"></a>Figura 19.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.6.2"></a>4.6.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Atenuador Óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Conversar óptico/elétrico com acoplamento DC e filtros apropriados (Receptor Óptico de Referência ROR);</p>
+<p style="padding-left: 120px; text-align: justify;">c) Osciloscópio com entrada DC, de acordo com a <a title="Acesse a Figura" href="#figura19">Figura 19</a>.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.6.3"></a>4.6.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Ajustar o atenuador óptico para que se tenha na sua saída a potência de recepção especificada para o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Medir e anotar o valor da razão de extinção.</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">Nota: A medida da razão de extinção deverá ser feita para potências ópticas maiores ou iguais a potência média do centro da faixa dinâmica. Na potência mínima não há sensibilidade suficiente, na instrumentação, para a realização da medida.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.6.4"></a>4.6.4. Valores de referência:</p>
+<p style="padding-left: 120px; text-align: justify;">a) De acordo com o que estabelecem as Tabelas <a title="Acesse a Tabela" href="#tabela3">3</a>, <a title="Acesse a Tabela" href="#tabela4">4</a> e <a title="Acesse a Tabela" href="#tabela5">5</a>, dependendo do nível hierárquico STM.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.7"></a>4.7. Máscara de Diagrama de Olho no ponto S</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.7.1"></a>4.7.1. Montagem de referência para teste, conforme <a title="Acesse a Figura" href="#figura19">Figura 19</a>.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.7.2"></a>4.7.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Fibra monomodo (SMF), de acordo com as Recomendações G.652, 653 ou 654, com menos de 10 m de comprimento;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Osciloscópio (OSC).</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">Nota: A função de transferência H(p) do receptor óptico de referência, de acordo com a Rec. G.957, é dada por:</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">H(p) = 1/105 (105 + 105y + 45y<sup>2</sup> + 10 y<sup>3</sup> + y<sup>4</sup>)</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">y 2,114p p =jw/w<sub>r</sub> w<sub>r</sub> = 1,5pf<sub>0</sub></p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">f<sub>0</sub> = taxa de bit f<sub>r</sub> = 0,75f<sub>0</sub>&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.7.3"></a>4.7.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Observar no osciloscópio a máscara do diagrama de olho e verificar que esteja dentro das especificações.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.7.4"></a>4.7.4. Valores de referência:</p>
+<p style="padding-left: 120px; text-align: justify;">a) De acordo com a Figura 20:</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig20.png" alt=""><a id="figura20"></a>Figura 20. Máscara do Diagrama de Olho para o Sinal Óptico Transmitido.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.8"></a>4.8. Sensibilidade do Receptor</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.1"></a>4.8.1. Este teste foi baseado no documento EIAITIA-526-3-1989 - OFSTP-3 Fiber Optic Terminal Equipment Receiver Sensitivity and Maximum Receiver Input.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.2"></a>4.8.2. Montagem de referência para teste conforme Figuras 21 e 22.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig21.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura21"></a>Figura 21.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig22.png" width="500"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura22"></a>Figura 22.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.3"></a>4.8.3. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Gerador de Padrões (GP);</p>
+<p style="padding-left: 120px; text-align: justify;">b) Medidor de Taxa de Erro (MTE);</p>
+<p style="padding-left: 120px; text-align: justify;">c) Atenuador Óptico (AO);</p>
+<p style="padding-left: 120px; text-align: justify;">d) Acoplador Óptico (AC), com uma entrada e duas saídas com razão de acoplamento de 50%;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Medidor de Potência Óptica (MPO).&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.4"></a>4.8.4. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Conectar a saída óptica do equipamento em teste à entrada do receptor através do atenuador óptico e do acoplador óptico de acordo com a <a title="Acesse a Figura" href="#figura21">Figura 21</a>;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Alimentar todas as entradas de tributário com sinal pseudo-aleatório, com as taxas correspondentes;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Selecionar um dos canais para se monitorar e conectar a saída correspondente ao canal escolhido ao medidor de taxa de erro;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Determinar o fator de calibração a ser aplicado à leitura do MPO para determinar o valor da potência óptica na entrada do receptor, da seguinte maneira:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Conectar o cabo de fibra óptica entre a porta 1 do acoplador óptico (AC) e o MPO. Ajustar o atenuador tal que a leitura no MPO seja a potência mínima necessária especificada pelo fabricante para atingir a BER especificada. Disconectar o conectar do MPO e conectá-lo ao conector do receptor;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Conectar outro cabo de fibra óptica da porta 2 do acoplador óptico à entrada do MPO. Ajustar ou calcular o fator de calibração para o MPO tal que a leitura do mesmo seja a potência óptica mínima especificada pelo fabricante necessária para atingir a BER especificada.</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">e) Ajustar o atenuador óptico para que se obtenha uma BER de 10-7. Determinar o tempo de monitoração de acordo com a Tabela 6:&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Taxa de Dados</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Tempo Mínimo de Monitoração</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">(segundos)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">taxa de dados &gt; 30 Mbit/s</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">(1/taxa de dados) x 10<sup>10</sup></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">1 Mbit/s &lt; taxa de dados &lt; 30 Mbit/s</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">(1/taxa de dados) x 10<sup>s</sup></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela6"></a>Tabela 6. Tempo mínimo de monitoração.</p>
+<p style="padding-left: 120px; text-align: justify;">f) Anotar a potência recebida e a BER correspondente;</p>
+<p style="padding-left: 120px; text-align: justify;">g) Ajustar o atenuador para obter taxas de erro na faixa de 10-8 a 10-4 ;</p>
+<p style="padding-left: 120px; text-align: justify;">h) Usando uma folha de papel mono-log, traçar um gráfico com os valores medidos de potência recebida versus BER. Extrapolar a potência óptica recebida correspondente à BER especificada. Anotar o valor da potência recebida na BER desejada;</p>
+<p style="padding-left: 120px; text-align: justify;">i) Se o equipamento em teste tiver entradas de tributário do mesmo tipo (por exemplo, 63 portas de 2M, ou 3 portas de 34M num equipamento STM-1), estas entradas podem ser conectadas serialmente, conforme a Figura 10. Desta forma, o desempenho de erro é monitorado na taxa de linha óptica [(taxa de dados efetivamente monitorada) = (número de canais serialmente conectados x taxa de dados)]. Esta técnica é mais precisa para taxa de erro baixa. Para calcular a BER na interface do sistema, use a seguinte fórmula:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">BER na interface do sistema = BER/N,</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">onde BER é a taxa de erro medida para a configuração de teste mostrada na <a title="Acesse a Figura" href="#figura22">Figura 22</a> e N é o número de canais conectados serialmente.</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">j) Ajustar o atenuador óptico de forma a se obter o nível mínimo de potência recebida especificada para atingir a BER especificada. Monitorar o desempenho de erro pelo menor valor entre 24 horas e o tempo dado por: Tempo de monitoração = (1/taxa de dados) x (1/BER especificada) x 100 segundos.</p>
+<p style="padding-left: 120px; text-align: justify;">k) Calcular a BER como se segue:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">BER = (Total do # de bits errados)/(Total de bits transmitidos)</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Total de bits transmitidos = taxa de dados(bits/s) x Tempo de monitoração(s)</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">l) Anotar o valor da BER calculada.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.5"></a>4.8.5. Valores de referência:</p>
+<p style="padding-left: 120px; text-align: justify;">a) De acordo com o que estabelecem as Tabelas <a title="Acesse a Tabela" href="#tabela3">3</a>, <a title="Acesse a Tabela" href="#tabela4">4</a> e <a title="Acesse a Tabela" href="#tabela5">5</a>, dependendo do nível hierárquico STM.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.9"></a>4.9. Potência de Saturação do Receptor</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.9.1"></a>4.9.1. Montagem de referência para teste: conforme item <a title="Acesse o Item" href="#item4.8.2">4.8.2</a>.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.9.2"></a>4.9.2. Instrumental de teste: conforme item <a title="Acesse o Item" href="#item4.8.3">4.8.3&nbsp;</a></p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.9.3"></a>4.9.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Repetir o procedimento do item <a title="Acesse o Item" href="#item4.8.4">4.8.4</a>, com a potência de recepção ajustada ao nível máximo de potência recebida especificada.</p>
+<p class="Texto_Justificado" style="margin-left: 200px; text-align: justify;">Nota: A medida deve ser realizada quando a potência do transmissor for suficiente para saturar o receptor.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.9.4"></a>4.9.4. Valores de referência:</p>
+<p style="padding-left: 120px; text-align: justify;">a) De acordo com o que estabelecem as Tabelas <a title="Acesse a Tabela" href="#tabela3">3</a>, <a title="Acesse a Tabela" href="#tabela4">4</a> e <a title="Acesse a Tabela" href="#tabela5">5</a>, dependendo do nível hierárquico STM.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.10"></a>4.10. Refletância no Receptor</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.10.1"></a>4.10.1. Montagem de referência para teste: conforme figura 23;&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig23.png" width="500"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura23"></a>Figura 23.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.10.2"></a>4.10.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Fonte Óptica Estável;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Medidor de Potência Óptica (MPO) de alta sensibilidade;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Refletor de Referência;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Acoplador Óptico (AC).&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.10.3"></a>4.10.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Fazer a medida de calibração das <a title="Acesse a Figura" href="#figura23">Figuras 23</a> (a), (b) e (c), que consiste em conectar a fonte na porta 3 do acoplador e medir a potência P32 na porta 2 do acoplador. Em seguida, conectar a fonte na porta 1 e medir a potência P13 na porta 3. Finalmente, conectar um "jumper" não refletor ou um refletor de referência, que provoque uma perda de retorno conhecida, na porta 3 do acoplador e medir a potência P0 na porta 2;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Fazer as conexões de acordo com a <a title="Acesse a Figura" href="#figura23">Figura 23</a> (d). Medir a potência PR na porta 2 do acoplador. A refletância do receptor é dada pela seguinte expressão: R= 10 log10 {[PS (PR - P0) ] / ( P13 P32)}&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.10.4"></a>4.10.4. Valores de referência:</p>
+<p style="padding-left: 120px; text-align: justify;">a) De acordo com o que estabelecem as Tabelas&nbsp;<a title="Acesse a Tabela" href="#tabela3">3</a>,&nbsp;<a title="Acesse a Tabela" href="#tabela4">4</a>&nbsp;e&nbsp;<a title="Acesse a Tabela" href="#tabela5">5</a>, dependendo do nível hierárquico STM.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.11"></a>4.11. Funcionamento do Desligamento Automático do Laser (ALS)</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.11.1"></a>4.11.1. Montagem de referência para teste: conforme Figura 24;</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig24.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura24"></a>Figura 24.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.11.2"></a>4.11.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Atenuador Óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Osciloscópio;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Conversores Eletro-ópticos;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Splitter Óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Instrumento de medida SDH.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.11.3"></a>4.11.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar no instrumento de medida SDH um sinal óptico compatível com o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Uma saída do splitter é ligada à recepção óptica do equipamento em teste e a outra, após passar pelo conversor eletro-óptico, é ligada à entrada de trigger do osciloscópio;</p>
+<p style="padding-left: 120px; text-align: justify;">c) A transmissão óptica do equipamento em teste é observada em um dos canais do osciloscópio após passar pelo conversor eletro-óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Interromper o sinal na entrada do splitter, verificando no osciloscópio o instante da interrupção;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Observar no osciloscópio que o equipamento em teste ativou o ALS e observar o instante de ativação;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Religar o sinal de entrada do splitter observando o instante de sua ocorrência na tela do osciloscópio;</p>
+<p style="padding-left: 120px; text-align: justify;">g) Verificar o instante em que a saída do equipamento em teste reaparece no osciloscópio.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.12"></a>4.12. Dispersão Máxima Admissível entre os pontos S e R</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.12.1"></a>4.12.1. Montagem de referência para teste: conforme Figura 25.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig25.png" width="500"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura25"></a>Figura 25.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.12.2"></a>4.12.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Gerador de Padrões;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Medidor de Taxa de Erro;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Cabo de Fibra Óptica com comprimento L ou simulador.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.12.3"></a>4.12.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Calcular o comprimento do lance de cabo da seguinte forma:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">L = D<sub>SRmax</sub> / D<sub>max</sub>,</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">onde D<sub>SRmax</sub> é a dispersão máxima admissível especificada entre os pontos S e R e D<sub>max</sub> é o máximo coeficiente de dispersão da fibra;</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">b) Conectar entre os pontos S e R o lance de fibras com comprimento calculado no inciso anterior;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Escolher um dos canais de tributário para se monitorar e conectar o sinal de saída do gerador de padrões à entrada do mesmo;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Conectar a saída do tributário correspondente à entrada escolhida ao medidor de taxa de erro e verificar a não ocorrência de erros.</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">Nota: Quando os equipamentos em teste utilizarem moduladores externos, o sistema a ser testado ficará limitado por atenuação. Desta forma, quando usarmos o comprimento de fibra necessário à D<sub>SRmax</sub> o sistema não terá sensibilidade para permitir o alinhamento e mesmo com o uso de amplificadores ópticos a medida será comprometida, pois ruídos do amplificador serão introduzidos. Sugere-se que a medida, no caso de sistema limitado por atenuação, seja feita dentro do limite de atenuação e a avaliação da D<sub>SRmax</sub> seja feita a partir da medida da dispersão para o comprimento de fibra que limita o sistema por atenuação.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.13"></a>4.13. Medidas de Jitter</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.13.1"></a>4.13.1. Geração de Jitter:</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.13.1.1"></a>4.13.1.1. Montagem de referência para teste: conforme Figura 26.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig26.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura26"></a>Figura 26.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.13.1.2"></a>4.13.1.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Atenuador Óptico;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Receptor Óptico de Referência;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Medidor de Jitter.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.13.1.3"></a>4.13.1.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Ajustar o atenuador óptico para que se tenha na sua saída a potência mínima de recepção especificada para o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Medir o jitter do sinal STM-N elétrico e verificar que este, medido com filtro passa-altas com frequência de corte 12 kHz, seja menor do que 0,01 UI rms.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.13.2"></a>4.13.2. Transferência de Jitter (aplicável somente a regeneradores):</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.13.2.1"></a>4.13.2.1. Montagem de referência para teste: conforme Figura 27.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig27.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura27"></a>Figura 27.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.13.2.2"></a>4.13.2.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Sintetizador de Frequência;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Modulador de Fase;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Instrumento de Medida SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Atenuadores Ópticos;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Receptor Óptico de Referência;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Medidor de Jitter.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.13.2.3"></a>4.13.2.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Ajustar o atenuador óptico para que se tenha na sua saída a potência mínima de recepção especificada para o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Programar o modulador de fase para gerar a máscara de aceitação de jitter conforme a Figura 28 e Tabela 7.</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig28.png" alt=""><a id="figura28"></a>Figura 28. Máscara de aceitação de "Jitter".</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/tab7.png" alt=""><a id="tabela7"></a>Tabela 7. Parâmetros de aceitação de "Jitter".</p>
+<p style="padding-left: 120px; text-align: justify;">c) Medir o jitter do sinal STM-N elétrico e verificar que este esteja dentro dos limites da máscara da Figura 9 e Tabela 2 (verificar o filtro utilizado na medição).&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.13.3"></a>4.13.3. Tolerância de Jitter:</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.13.3.1"></a>4.13.3.1. Montagem de referência para teste: Figura 29.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig29.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura29"></a>Figura 29.</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.13.3.2"></a>4.13.3.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Sintetizador de Frequência;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Atenuadores Ópticos;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Modulador de Fase;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Instrumento de Medida SDH.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.13.3.3"></a>4.13.3.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Ajustar o atenuador óptico para que se tenha na sua saída a potência mínima de recepção especificada para o equipamento em teste;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Programar o modulador de fase para gerar a máscara de aceitação de jitter conforme a <a title="Acesse a Figura" href="#figura28">Figura 28</a> e <a title="Acesse a Tabela" href="#tabela7">Tabela 7</a> para regeneradores e <a title="Acesse a Figura" href="#figura8">Figura 8</a> e <a title="Acesse a Tabela" href="#tabela1">Tabela 1</a> para os demais equipamentos SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Verificar que não ocorram erros.&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.14"></a>4.14. Alarmes</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.14.1"></a>4.14.1. Perda do sinal STM-N óptico:</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.14.1.1"></a>4.14.1.1. Montagem de referência para teste: Figura 30.</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: justify;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig30.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura30"></a>Figura 30.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.14.1.2"></a>4.14.1.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Gerador/Analisador PDH;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Instrumento de medida SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Atenuador óptico.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.14.1.3"></a>4.14.1.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Atenuar o sinal no ponto B da Figura 30 de forma que a BER seja superior a 10-3 no ponto C da mesma figura, ou retirar o sinal no ponto B e verificar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">O equipamento em teste sinalize LOS, MS-SIA, AU-SIA, TU-SIA e apresente a indicação URG;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Seja recebido SIA no ponto C da Figura 30;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Seja recebido MS-RDI, HO-RDI e LO-RDI no ponto D da <a title="Acesse a Figura" href="#figura30">Figura 30</a>;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Se estiver implementada a função MSP, observar nos bits 1, 2 e 3 do byte K1 o padrão “110” em até 250 µs;</li>
+<li class="Texto_Justificado" style="text-align: justify;">Seja registrada (com ‘time-stamping”) a ocorrência dos eventos SES.</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">b) Retornar o sinal do ponto B da Figura 30 de forma que a BER seja inferior a 10-³ no ponto C da mesma figura e verificar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">As indicações de LOS, SIA, RDI e URG sejam desativadas;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Se estiver implementada a função MSP, observar nos bits 1, 2 e 3 do byte K1 um padrão diferente de “110” em até 250 µs.&nbsp;</li>
+</ul>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.15"></a>4.15. Sincronismo (aplicável somente quando o equipamento suportar tributários ou tiver característica de multiplex SDH)</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.15.1"></a>4.15.1. Comutação Automática de Referências</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.1.1"></a>4.15.1.1. Montagem de Referência para teste: conforme Figura 31.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig31.png" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura31"></a>Figura 31.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.1.2"></a>4.15.1.2. Instrumental de teste:</p>
+<p style="padding-left: 120px;">a) Sintetizadores de Frequências;</p>
+<p style="padding-left: 120px;">b) Frequencímetro;</p>
+<p style="padding-left: 120px;">c) Gerador de Padrões para 2.048kbit/s;</p>
+<p style="padding-left: 120px;">d) Instrumento de Medida SDH.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.1.3"></a>4.15.1.3. Procedimento de teste:</p>
+<p class="Texto_Justificado" style="margin-left: 160px;">Nota: Caso o equipamento em teste, além da interface de saída de 2 MHz, apresente a interface de saída de sincronismo de 2 Mbit/s, o procedimento de teste relativo à interface de 2 MHz também deve ser realizado para a interface de 2 Mbit/s.</p>
+<p style="padding-left: 120px;">a) Programar o equipamento em teste para operar no modo reversível de sincronismo;</p>
+<p style="padding-left: 120px;">b) Programar no equipamento em teste a tabela das referências de sincronismo, como segue:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">1ª referência (maior prioridade): um agregado STM-N;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">2ª referência: uma entrada externa de 2MHz;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">3ª referência: uma entrada externa de 2Mbit/s (quando aplicável);</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">4ª referência: um tributário STM-N (quando aplicável);</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">5ª referência: um tributário de 2Mbit/s (quando aplicável);</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">6ª referência: (menor prioridade): outro tributário de 2Mbit/s (quando aplicável);</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">c) Gerar na entrada da referência de maior prioridade um sinal com +4,6ppm, gerar na 2ª referência um sinal com -4,6ppm e comprovar na saída de sincronismo externo a presença de um sinal de 2MHz +4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Provocar condição de falha (ausência de sinal) no sinal da entrada da referência de maior prioridade e realizar os seguintes procedimentos:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar na saída de sincronismo externo a presença de um sinal de 2MHz -4,6ppm;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar a geração de mensagem espontânea indicativa de ocorrência de comutação de referência;</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">e) Gerar na entrada da 3ª referência um sinal com +4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Provocar condição de falha (ausência de sinal) no sinal da entrada da referência e realizar os seguintes procedimentos:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar na saída de sincronismo externo a presença de um sinal de 2MHz +4,6ppm;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar a geração de mensagem espontânea indicativa de ocorrência de comutação de referência;</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">g) Gerar na entrada da 4ª referência um sinal com -4,6ppm, retirar o sinal da entrada da 3ª referência e comprovar na saída de sincronismo externo a presença de um sinal de 2MHz -4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">h) Gerar na entrada da 5ª referência um sinal com +4,6ppm, retirar o sinal da entrada da 4ª referência e comprovar na saída de sincronismo externo a presença de um sinal de 2MHz +4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">i) Gerar na entrada da 6ª referência um sinal com -4,6ppm, retirar o sinal da entrada da 5ª referência e comprovar na saída de sincronismo externo a presença de um sinal de 2MHz -4,6ppm;</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">Nota 1: Se alguma(s) das 6 entradas de referência de sincronismo não se aplicar(em) ao tipo de equipamento em teste, o número de referências de sincronismo do procedimento de teste será menor e a(s) alínea(s) correspondentes entre e) e i) devem ser desconsideradas.</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">Nota 2: Caso a tabela de referências de sincronismo aceite mais do que 6 referências, os procedimentos das alíneas h) e i) devem ser repetidos sucessivamente até que reste apenas uma referência, a de menor prioridade.</p>
+<p style="padding-left: 120px; text-align: justify;">j) Retirar o sinal da entrada de menor prioridade e realizar os seguintes procedimentos:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar, num período de 1 minuto, que na saída de sincronismo externo seja mantido um sinal com a mesma frequência anterior à retirada do sinal da entrada (equipamento no modo autônomo);</li>
+</ul>
+<p class="Texto_Justificado" style="margin-left: 200px; text-align: justify;">Nota: Este inciso se aplica apenas a equipamentos que não silenciem a saída de relógio durante a operação no modo autônomo ("holdover") ou livre ("free-running").</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar a geração de mensagem espontânea indicativa de que o equipamento entrou no modo autônomo (ativação do alarme LTI - "Loss of Timing Inputs" e ativação da indicação URG no Sistema);</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">k) Gerar na entrada da 2ª referência um sinal com -2ppm e realizar os seguintes procedimentos:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar na saída de sincronismo externo a presença de um sinal de 2MHz -2ppm;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar a geração de mensagem espontânea indicativa de que o equipamento saiu do modo autônomo (desativação do alarme LTI - "Loss of Timing Inputs" e desativação da indicação URG no Sistema);</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">l) Gerar na entrada da referência de maior prioridade um sinal com +2ppm e realizar os seguintes procedimentos:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar na saída de sincronismo externo a presença de um sinal de 2MHz +2ppm;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Comprovar a geração de mensagem espontânea indicativa de ocorrência de comutação de referência;</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">m) Modificar no equipamento em teste a tabela das referências de sincronismo, mantendo apenas a lá referência (relógio recuperado de qualquer agregado STM-N) e desabilitando as outras;</p>
+<p style="padding-left: 120px; text-align: justify;">n) Gerar na entrada correspondente à 1ª referência um sinal com +4,6ppm e na entrada externa de 2MHz um sinal com -4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">o) Retirar o sinal da entrada correspondente à lá referência e comprovar, num período de 1 minuto, que na saída de sincronismo externo seja mantido um sinal com +4,6ppm (equipamento no modo autônomo);</p>
+<p class="Texto_Justificado" style="margin-left: 160px; text-align: justify;">Nota: Caso seja possível programar o equipamento em teste para operar no modo não reversível de sincronismo, realizar os procedimentos seguintes:</p>
+<p style="padding-left: 120px; text-align: justify;">p) Programar no equipamento em teste a tabela das referências de sincronismo, como segue:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">1ª referência (maior prioridade): um agregado STM-N;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">2ª referência (menor prioridade): uma entrada externa de 2MHz.</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">q) Gerar na entrada da referência de maior prioridade um sinal com +4,6ppm, gerar na referência de menor prioridade um sinal com -4,6ppm e comprovar na saída de sincronismo externo a presença de um sinal de 2MHz +4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">r) Retirar o sinal da entrada da referência de maior prioridade e comprovar na saída de sincronismo externo a presença de um sinal de 2MHz -4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">s) Gerar novamente na entrada da referência de maior prioridade um sinal com +4,6ppm e comprovar que na saída de sincronismo externo é mantido um sinal de 2MHz -4,6ppm (referência de menor prioridade) mesmo com a presença da referência de maior prioridade.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><a name="item4.15.2"></a>4.15.2. Controle Manual de Comutação de Referências</p>
+<p class="Texto_Justificado" style="margin-left: 120px; text-align: justify;">Nota: Caso, adicionalmente à comutação automática de referências, o equipamento em teste obedeça a controle manual de comutação de referências, realisar os procedimentos seguintes:</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.2.4"></a>4.15.2.4. Montagem de referência para testes conforme Figura 32.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig32.png" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura32"></a>Figura 32.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.2.5"></a>4.15.2.5. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Sintetizadores de Frequências;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Frequencímetro;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Instrumento de Medida SDH.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.2.6"></a>4.15.2.6. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Programar o equipamento em teste para realizar comutação manual de referências;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Programar no equipamento em teste a tabela das referências de sincronismo, como segue:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">1ª referência: um agregado STM-N;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">2ª referência: uma entrada externa de 2MHz;</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">c) Gerar na entrada de agregado STM-N (1ª referência) um sinal com +4,6ppm, gerar na entrada de 2MHz um sinal com -4,6ppm e comprovar na saída de sincronismo externo a presença de um sinal de 2MHz +4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">d) Provocar a comutação manual para a 2ª referência e comprovar na saída de sincronismo externo a presença de um sinal de 2MHz -4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">e) Provocar a comutação manual para a 1ª referência e comprovar na saída de sincronismo externo a presença de um sinal de 2MHz +4,6ppm;</p>
+<p style="padding-left: 120px; text-align: justify;">f) Desconectar a entrada correspondente à 2ª referência;</p>
+<p style="padding-left: 120px; text-align: justify;">g) Provocar a comutação para a 2ª referência e comprovar que não é possível esta operação.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.15.3"></a>4.15.3. Frequência de saída do relógio</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.3.1"></a>4.15.3.1. Montagem de teste: conforme Figura 33.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig33.png" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura33"></a>Figura 33.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.3.2"></a>4.15.3.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Frequencímetro capaz de realizar medidas de +/- 1 x 10-7.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.3.3"></a>4.15.3.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Verificar, com o frequencímetro, que a saída de relógio está dentro da faixa de 2.048 kHz +/- 4,6ppm para o relógio do equipamento operando no modo livre.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.15.4"></a>4.15.4. Alarme LOS - Perda do sinal STM-N óptico:</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.4.1"></a>4.15.4.1. Montagem de referência para teste: <a title="Acesse a Figura" href="#figura30">Figura 30</a>.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.4.2"></a>4.15.4.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Gerador/Analisador PDH;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Instrumento de medida SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Atenuador óptico.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.4.3"></a>4.15.4.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Atenuar o sinal no ponto B da <a title="Acesse a Figura" href="#figura30">Figura 30</a> de forma que a BER seja superior a 10-3 no ponto C da mesma figura, ou retirar o sinal no ponto B e verificar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">O equipamento em teste sinalize LOS, MS-SIA, AU-SIA, TU-SIA e apresente a indicação URG;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Seja recebido SIA no ponto C da Figura 30;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Seja recebido MS-RDI, HO-RDI e LO-RDI no ponto D da <a title="Acesse a Figura" href="#figura30">Figura 30</a>;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Se estiver implementada a função MSP, observar nos bits 1, 2 e 3 do byte K1 o padrão “110” em até 250 µs;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Seja registrada (com ‘time-stamping”) a ocorrência dos eventos SES.</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">b) Retornar o sinal do ponto B da Figura 30 de forma que a BER seja inferior a 10-³ no ponto C da mesma figura e verificar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">As indicações de LOS, SIA, RDI e URG sejam desativadas;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">Se estiver implementada a função MSP, observar nos bits 1, 2 e 3 do byte K1 um padrão diferente de “110” em até 250 µs.&nbsp;</li>
+</ul>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.15.5"></a>4.15.5. Alarme LOT - Perda do sinal do Tributário:</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.5.1"></a>4.15.5.1. Montagem de referencia para teste: <a title="Acesse a Figura" href="#figura30">Figura 30</a>.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.5.2"></a>4.15.5.2. Instrumental de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Gerador / Analisador PDH;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Instrumento de medida SDH;</p>
+<p style="padding-left: 120px; text-align: justify;">c) Atenuador óptico.&nbsp;</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.5.3"></a>4.15.5.3. Procedimento de teste:</p>
+<p style="padding-left: 120px; text-align: justify;">a) No ponto E da <a title="Acesse a Figura" href="#figura30">Figura 30</a> retirar o sinal tributário de entrada e verificar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">O equipamento em teste sinalize detecção de LOT e apresente indicação URG;</li>
+<li class="Texto_Justificado" style="text-align: justify; padding-left: 10px;">O sinal do tributário PDH correspondente no ponto D da Figura 30 seja SIA;</li>
+</ul>
+<p style="padding-left: 120px; text-align: justify;">b) No ponto E da <a title="Acesse a Figura" href="#figura30">Figura 30</a>, retornar o sinal tributário de entrada e verificar que as indicações de LOT e URG sejam desativadas.&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.15.6"></a>4.15.6. Sinal Indicativo de Alarme - MS-SIA:</p>
+<p style="padding-left: 90px; text-align: justify;"><a name="item4.15.6.1"></a>4.15.6.1. Montagem de referência para teste: figura 34.</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: justify;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig34.png" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura34"></a>Figura 34.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.6.2"></a>4.15.6.2. Instrumental de teste:</p>
+<p style="padding-left: 120px;">a) Gerador/Analisador PDH ou SDH, conforme o tributário;</p>
+<p style="padding-left: 120px;">b) Atenuadores ópticos;</p>
+<p style="padding-left: 120px;">c) Instrumento de medida SDH.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.6.3"></a>4.15.6.3. Procedimento de teste:</p>
+<p style="padding-left: 120px;">a) Gerar o byte K2 com padrão "111" nos bits 6, 7 e 8, no ponto B da <a title="Acesse a Figura" href="#figura34">Figura 34</a>, em pelo menos 3 quadros consecutivos e observar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="padding-left: 10px;">O equipamento em teste detecte recebimento de MS-SIA, AU-SIA, TU-SIA (quando aplicável) e que apresente indicação IND;</li>
+<li class="Texto_Justificado" style="padding-left: 10px;">No ponto A da <a title="Acesse a Figura" href="#figura34">Figura 34</a>, deverá ser recebido o padrão "110" nos bits 6, 7 e 8 do byte K2 (MS-RDI), além de HO-RDI e LO-RDI;</li>
+<li class="Texto_Justificado" style="padding-left: 10px;">No ponto D da mesma figura será recebido SIA;</li>
+<li class="Texto_Justificado" style="padding-left: 10px;">Se estiver implementada a função MSP, os bites 1, 2 e 3 do byte K1 devem apresentar o padrão "110" em até 250 μs;</li>
+<li class="Texto_Justificado" style="padding-left: 10px;">O equipamento em teste registre (com "time-stamping") a ocorrência do evento SES.</li>
+</ul>
+<p style="padding-left: 120px;">b) Gerar byte K2 sem indicação de MS-SIA no ponto B da <a title="Acesse a Figura" href="#figura34">Figura 34</a>, em pelo menos 3 quadros consecutivos e observar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="padding-left: 10px;">As indicações MS-SIA, AU-SIA, TU-SIA (quando aplicável) e IND no equipamento em teste sejam desativadas;</li>
+<li class="Texto_Justificado" style="padding-left: 10px;">Os bits 6, 7 e 8 o byte K2 apresentem padrão diferente de "110" no ponto A da Figura 34;</li>
+<li class="Texto_Justificado" style="padding-left: 10px;">Se estiver implementada a função MSP, os bits 1, 2 e 3 do byte K1 devem apresentar um padrão diferente de "110" em até 250 μs;&nbsp;</li>
+</ul>
+<p style="padding-left: 60px;"><a name="item4.15.7"></a>4.15.7. Sinal Indicativo de Alarme - AU-SIA (aplicável ao terminal Multiplex com interface de tributário PDH)</p>
+<p style="padding-left: 90px;"><a name="item4.15.7.1"></a>4.15.7.1. Montagem de referência para teste: figura 35.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig35.png" width="553" height="91"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura35"></a>Figura 35.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.7.2"></a>4.15.7.2. Instrumental de teste:</p>
+<p style="padding-left: 120px;">a) Instrumento de medida SDH;</p>
+<p style="padding-left: 120px;">b) Instrumento de medida PDH;</p>
+<p style="padding-left: 120px;">c) Sintetizador.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.7.3"></a>4.15.7.3. Procedimento de teste:</p>
+<p style="padding-left: 120px;">a) O instrumento de medida SDH é conectado a uma das portas STM-N do equipamento em teste. O equipamento em teste deve adotar o sinal STM-N proveniente do instrumento de medida SDH como referência de sincronismo;</p>
+<p style="padding-left: 120px;">b) O instrumento de medida PDH é conectado a uma das portas de tributário PDH do equipamento em teste e deve ser programado para que possua taxa igual à da porta PDH do equipamento em teste;</p>
+<p style="padding-left: 120px;">c) No instrumento de medida SDH gerar um VC-4 transportando tributário PDH (2Mbit/s- VC-12, 34Mbit/s-VC-3, 140Mbit/s) compatível com o instrumento de medida PDH e com a interface de tributário PDH do equipamento em teste;</p>
+<p style="padding-left: 120px;">d) No instrumento de medida SDH gerar AU-SIA, no instrumento de medida PDH detectar SIA no tributário PDH e AU-SIA no equipamento em teste.&nbsp;</p>
+<p style="padding-left: 60px;"><a name="item4.15.8"></a>4.15.8. Sinal Indicativo de Alarme - AU-SIA (para equipamento com "loop-back" de VC-4):</p>
+<p style="padding-left: 90px;"><a name="item4.15.8.1"></a>4.15.8.1. Montagem de referência para teste: Figura 36.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig36.png" width="450"></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura36"></a>Figura 36.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.8.2"></a>4.15.8.2. Procedimento de teste:</p>
+<p style="padding-left: 120px;">a) O instrumento de medida SDH é conectado a uma das portas STM-N do equipamento em teste. O equipamento em teste deve adotar o sinal STM-N proveniente do instrumento de medida SDH como referência de sincronismo;</p>
+<p style="padding-left: 120px;">b) No instrumento de medida SDH gerar um VC-4 transportando tributário PDH de 140Mbit/s com sequência de bits conhecida;</p>
+<p style="padding-left: 120px;">c) No equipamento em teste realizar "loop-back" do VC-4 sob teste;</p>
+<p style="padding-left: 120px;">d) No instrumento de medida SDH comprovar que o VC-4 que retorna do equipamento em teste é igual ao gerado na alínea b);</p>
+<p style="padding-left: 120px;">e) No instrumento de medida SDH gerar AU-SIA e comprovar também no equipamento em teste que haja detecção de AU-SIA.&nbsp;</p>
+<p style="padding-left: 60px;"><a name="item4.15.9"></a>4.15.9. Sinal Indicativo de Alarme - TU-SIA</p>
+<p style="padding-left: 90px;"><a name="item4.15.9.1"></a>4.15.9.1. Montagem de referência para teste: figura 35.</p>
+<p style="padding-left: 90px;"><a name="item4.15.9.2"></a>4.15.9.2. Procedimento de teste:</p>
+<p style="padding-left: 120px;">a) O instrumento de medida SDH é conectado a uma das portas STM-N do equipamento em teste. O equipamento em teste deve adotar o sinal STM-N proveniente do instrumento de medida SDH como referência de sincronismo;</p>
+<p style="padding-left: 120px;">b) O instrumento de medida PDH é conectado a uma das portas de tributário PDH do equipamento em teste e deve ser programado para que possua taxa igual à da porta PDH do equipamento em teste;</p>
+<p style="padding-left: 120px;">c) No instrumento de medida SDH gerar um VC-3 (ou VC-12, de acordo com a aplicação) transportando tributário PDH (34Mbit/s ou 2Mbits/s, de acordo com a aplicação) compatível com o instrumento de medida PDH e com a interface de tributário PDH do equipamento em teste;</p>
+<p style="padding-left: 120px;">d) No instrumento de medida SDH gerar TU-SIA no instrumento de medida PDH detectar SIA no tributário PDH e TU-SIA no equipamento em teste.&nbsp;</p>
+<p style="padding-left: 60px;"><a name="item4.15.10"></a>4.15.10. Sinal Indicativo de Alarme no Equipamento Remoto - MS-RDI - RDI de seção de multiplexação:</p>
+<p style="padding-left: 90px;"><a name="item4.15.10.1"></a>4.15.10.1. Montagem de referência para teste: <a title="Acesse a Figura" href="#figura35">figura 35</a>.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.10.2"></a>4.15.10.2. Instrumental de teste: conforme item <a title="Acesse o Item" href="#item4.15.7.2">4.15.7.2</a>.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.10.3"></a>4.15.10.3. Procedimento de teste:</p>
+<p style="padding-left: 120px;">a) Gerar o byte K2 com padrão "110" nos bits 6, 7 e 8, no ponto B da <a title="Acesse a Figura" href="#figura36">Figura 36</a>, em pelo menos 3 quadros consecutivos e observar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="padding-left: 10px;">O equipamento em teste detecte o recebimento de MS-RDI e que apresente indicação IND;</li>
+<li class="Texto_Justificado" style="padding-left: 10px;">O equipamento em teste registre (com "time-stamping") a ocorrência de evento SES.</li>
+</ul>
+<p style="padding-left: 120px;">b) Gerar byte K2 sem indicação de MS-RDI no ponto B da <a title="Acesse a Figura" href="#figura35">Figura 35</a>, em pelo menos 3 quadros consecutivos e observar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="padding-left: 10px;">as indicações MS-RDI e IND no equipamento em teste sejam desativadas.&nbsp;</li>
+</ul>
+<p style="padding-left: 60px;"><a name="item4.15.11"></a>4.15.11. Sinal Indicativo de Alarme no Equipamento Remoto - HO-RDI - RDI de via de ordem superior:</p>
+<p style="padding-left: 90px;"><a name="item4.15.11.1"></a>4.15.11.1. Montagem de referência para teste: <a title="Acesse a Figura" href="#figura35">figura 35</a>.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.11.2"></a>4.15.11.2. Instrumental de teste: conforme item <a title="Acesse o Item" href="#item4.15.7.2">4.15.7.2</a>.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.11.3"></a>4.15.11.3. Procedimento de teste:</p>
+<p style="padding-left: 120px;">a) Gerar o byte G1 com padrão "XXXX 1XXX" no ponto B da <a title="Acesse a Figura" href="#figura36">Figura 36</a>, em pelo menos 3 quadros consecutivos e observar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="padding-left: 10px;">O equipamento em teste detecte recebimento de HO-RDI e que apresente indicação IND;</li>
+<li class="Texto_Justificado" style="padding-left: 10px;">O equipamento em teste registre (com "time-stamping") a ocorrência do evento SES.</li>
+</ul>
+<p style="padding-left: 120px;">b) Gerar o byte G1 com padrão "XXXX 0XXX" no ponto B da <a title="Acesse a Figura" href="#figura35">Figura 35</a>, em pelo menos 3 quadros consecutivos e observar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="padding-left: 10px;">As indicações HO-RDI e IND no equipamento em teste sejam desativadas.&nbsp;</li>
+</ul>
+<p style="padding-left: 60px;"><a name="item4.15.12"></a>4.15.12. Alarme de perda de relógio de entrada (TIF):</p>
+<p style="padding-left: 90px;"><a name="item4.15.12.1"></a>4.15.12.1. Montagem de referência para teste: Figura 37.</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-14665/fig37.png" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura37"></a>Figura 37.&nbsp;</p>
+<p style="padding-left: 90px;"><a id="item4.15.12.2"></a>4.15.12.2. Instrumental de teste:</p>
+<p style="padding-left: 120px;">a) Sintetizador;</p>
+<p style="padding-left: 120px;">b) Atenuador Óptico.&nbsp;</p>
+<p style="padding-left: 90px;"><a name="item4.15.12.3"></a>4.15.12.3. Procedimento de teste:</p>
+<p style="padding-left: 120px;">a) Configurar o equipamento em teste para receber sincronismo externo de 2048 kHz;</p>
+<p style="padding-left: 120px;">b) Desconectar o relógio externo e observar que:</p>
+<ul style="padding-left: 180px;">
+<li class="Texto_Justificado" style="padding-left: 10px;">O equipamento em teste sinalize perda de relógio de entrada (TIF);</li>
+<li class="Texto_Justificado" style="padding-left: 10px;">O equipamento em teste apresente indicação URG.</li>
+</ul>
+<p style="padding-left: 120px;">c) Conectar novamente a referência de sincronismo de 2048 kHz e verificar que as indicações TIF e URG desaparecem.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1396"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Arpovação" class="link-categoria">Arpovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisito" class="link-categoria">Requisito</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Caráter%20técnico" class="link-categoria">Caráter técnico</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação" class="link-categoria">Avaliação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Conformidade" class="link-categoria">Conformidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Produto%20de%20telecomunicações" class="link-categoria">Produto de telecomunicações</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Interfaces%20STM-N" class="link-categoria">Interfaces STM-N</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20Normativo" class="link-categoria">Ato Normativo</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Certificação%20de%20produto" class="link-categoria">Certificação de produto</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaCertificação" class="link-categoria">NormaCertificação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

@@ -1,0 +1,2396 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 957, de 08 de fevereiro de 2018</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1168-ato-957">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Requisitos técnicos, Produto, Cabos Para-Raios, Fibras Ópticas, Linhas Aéreas de Transmissão, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovar os requisitos técnicos relativos ao produto &quot;Cabos Para-Raios com Fibras Ópticas para Linhas Aéreas de Transmissão (OPGW)&quot;, conforme o Anexo I deste Ato.">
+	<title>Anatel - Ato nº 957, de 08 de fevereiro de 2018</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=481045928" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=410726211" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1860792497" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141803" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2018">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2018">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2018">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2018" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2018" class="pathway">2018</a> <span class="separator">&gt;</span> <span>Ato nº 957, de 08 de fevereiro de 2018</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;94905e35ed82cb34&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 957, de 08 de fevereiro de 2018		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 09 Fevereiro 2018 08:49			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quinta, 21 Janeiro 2021 13:20			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 9612			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o Boletim de Serviço Eletrônico em<a href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=2787769&amp;id_orgao_publicacao=0">&nbsp;9/2/2018</a>, retificado em <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO6nON7jaS6tiCaitgNc9ScjI4VfE7e6nzfuo6LK9ZvhtUz0W6llRQPjrcPZqYW15HcTa7wjjlbv2P4ZlsMfDJP2">18/1/2019</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL,&nbsp;</b>no uso das atribuições que lhe foram conferidas pela<a href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419"> Portaria nº 419, de 24 de maio de 2013</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472#art19">Art. 19</a> da Lei n.º 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o Inciso II do <a href="http://www.anatel.gov.br/legislacao/resolucoes/15-2000/129-resolucao-242#art9">Art. 9º </a>do Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela Resolução n.º 242, de 30 de novembro de 2000;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO&nbsp;o <a href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419#art1">Art. 1º</a> da Portaria nº 419 de 24 de maio de 2013;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlBwfiCooUzFX03xbVcPgRoNmXN6OFSjSkC5mA_hzfGRB"> processo nº&nbsp;53500.002020/2018-88</a>;</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1"></a>Art. 1º&nbsp; Aprovar os requisitos técnicos relativos ao produto "Cabos Para-Raios com Fibras Ópticas para Linhas Aéreas de Transmissão (OPGW)", conforme o<a href="#anexoI"> Anexo I</a> deste Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2"></a>Art. 2º Este Ato entra em vigor&nbsp;no dia 12 de fevereiro de 2018.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">&nbsp;</p>
+<p style="text-align: center;">VITOR ELISIO GOES DE OLIVEIRA MENEZES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: center;">Superintendente de Outorga e Recursos à Prestação</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: center;">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="anexoI"></a>ANEXO I</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;">REQUISITOS TÉCNICOS PARA A AVALIAÇÃO DA CONFORMIDADE E HOMOLOGAÇÃO&nbsp;DE CABOS PARA-RAIOS COM FIBRAS ÓPTICAS PARA LINHAS AÉREAS DE TRANSMISSÃO (OPGW)</p>
+<p class="Paragrafo_Numerado_Nivel1">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">1.OBJETIVO</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item1.1"></a>1.1 Este documento estabelece os requisitos mínimos a serem demonstrados na avaliação da conformidade de cabos para-raios com fibras ópticas para linhas aéreas de transmissão (OPGW) para efeito de homologação junto à Agência Nacional de Telecomunicações.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a name="item2"></a>2. REFERÊNCIAS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item2.1"></a>2.1. Para fins deste documento, são adotadas as seguintes referências:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.1"></a>2.1.1. NBR&nbsp;6814&nbsp;–&nbsp;Fios e cabos elétricos&nbsp;–&nbsp;Ensaio de resistência Elétrica&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.2"></a>2.1.2. NBR&nbsp;7272&nbsp;–&nbsp;Condutores elétricos de alumínio&nbsp;–&nbsp;Ruptura e característica dimensional&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.3"></a>2.1.3. NBR&nbsp;7303&nbsp;–&nbsp;Condutores elétricos de alumínio&nbsp;–&nbsp;Fluência em condutores de alumínio&nbsp;– Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.4"></a>2.1.4. NBR&nbsp;9136&nbsp;–&nbsp;Fios e cabos telefônicos&nbsp;–&nbsp;Ensaio de penetração de umidade&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.5"></a>2.1.5. NBR&nbsp;9140&nbsp;–&nbsp;Fios e cabos telefônicos&nbsp;–&nbsp;Ensaio de comparação de cores&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.6"></a>2.1.6. NBR&nbsp;9149&nbsp;–&nbsp;Fios e cabos telefônicos&nbsp;–&nbsp;Ensaio de escoamento do composto de enchimento&nbsp;–Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.7"></a>2.1.7. NBR&nbsp;13489&nbsp;–&nbsp;Fibras ópticas&nbsp;–&nbsp;Determinação da largura de banda&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.8"></a>2.1.8. NBR&nbsp;13491&nbsp;–&nbsp;Fibras ópticas&nbsp;–&nbsp;Determinação da atenuação óptica&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.9"></a>2.1.9. NBR&nbsp;13493&nbsp;–&nbsp;Fibras ópticas&nbsp;–&nbsp;Determinação do diâmetro do campo modal&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.10"></a>2.1.10. NBR&nbsp;13502&nbsp;–&nbsp;Cabos ópticos&nbsp;–&nbsp;Verificação da uniformidade de atenuação óptica&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.11"></a>2.1.11. NBR&nbsp;13503&nbsp;–&nbsp;Ensaio de tensão mecânica constante&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.12"></a>2.1.12. NBR&nbsp;13504&nbsp;–&nbsp;Fibras ópticas&nbsp;–&nbsp;Determinação da dispersão cromática&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.13"></a>2.1.13. NBR&nbsp;13507&nbsp;–&nbsp;Cabos ópticos&nbsp;–&nbsp;Ensaio de compressão&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.14"></a>2.1.14. NBR&nbsp;13510&nbsp;–&nbsp;Cabos ópticos&nbsp;–&nbsp;Ensaio de ciclo término de cabo&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.15"></a>2.1.15. NBR&nbsp;13511&nbsp;–&nbsp;Fibras e cabos ópticos&nbsp;–&nbsp;Ensaio de ataque químico na fibra óptica tingida&nbsp;–Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.16"></a>2.1.16. NBR&nbsp;13512&nbsp;–&nbsp;cabos ópticos&nbsp;–&nbsp;Ensaio de tração em cabos ópticos e determinação da deformação da fibra óptica&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.17"></a>2.1.17. NBR&nbsp;13519&nbsp;–&nbsp;Fibras e cabos ópticos&nbsp;–&nbsp;Ensaio de ciclo térmico na fibra óptica tingida&nbsp;–Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.18"></a>2.1.18. NBR&nbsp;13520&nbsp;–&nbsp;Cabos ópticos&nbsp;–&nbsp;Variação de atenuação&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.19"></a>2.1.19. NBR&nbsp;13975&nbsp;–&nbsp;Fibras ópticas&nbsp;–&nbsp;Determinação da força de extração do revestimento&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">2.1.20.NBR&nbsp;13979&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Tração do elemento metálico (tubo e/ou elemento ranhurado)&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.21"></a>2.1.21. NBR&nbsp;13980&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Verificação de protuberâncias internas no tubo metálico&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.22"></a>2.1.22. NBR&nbsp;13981&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Curto-circuito&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.23"></a>2.1.23. NBR&nbsp;13982&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Vibração eólica&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.24"></a>2.1.24. NBR&nbsp;13983&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Puxamento pela polia&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.25"></a>2.1.25. NBR&nbsp;13984&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Raio mínimo de curvatura&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.26"></a>2.1.26. NBR&nbsp;13985&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Tensão&nbsp;–&nbsp;Deformação&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.27"></a>2.1.27. NBR&nbsp;13986&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Tração&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.28"></a>2.1.28. NBR&nbsp;13987&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Torção&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.29"></a>2.1.29. NBR&nbsp;13988&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Pressurização do tubo metálico de proteção&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.30"></a>2.1.30. NBR&nbsp;13991&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Determinação do desempenho térmico&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.31"></a>2.1.31. NBR&nbsp;14076&nbsp;–&nbsp;Cabos ópticos&nbsp;–&nbsp;Determinação do comprimento de onda de corte em fibra monomodo cabeada&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.32"></a>2.1.32. NBR&nbsp;14422&nbsp;–&nbsp;Fibras ópticas&nbsp;–&nbsp;Determinação dos parâmetros geométricos da fibra óptica&nbsp;– Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.33"></a>2.1.33. NBR&nbsp;14586&nbsp;–&nbsp;Cabos pára-raios com fibras ópticas para linhas aéreas de transmissão (OPGW)&nbsp;–&nbsp;Determinação dos efeitos da descarga atmosférica;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.34"></a>2.1.34. NBR&nbsp;14587-1&nbsp;–&nbsp;Fibras ópticas&nbsp;–&nbsp;Medição da dispersão de modos de polarização parte 1: Varredura espectral&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item2.1.35"></a>2.1.35. NBR&nbsp;14587-2&nbsp;–&nbsp;Fibras ópticas&nbsp;–&nbsp;Medição da dispersão de modos de polarização parte 2: Método interferométrico&nbsp;–&nbsp;Método de ensaio.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a name="item3"></a>3. ABRANGÊNCIA</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item3.1"></a>3.1. Este documento aplica-se aos cabos para-raios com fibras ópticas para linhas aéreas de transmissão (OPGW), contemplando os agrupamentos em famílias de cabos de construção idêntica e que possuem a mesma designação genérica vinculada à sua aplicação e instalação.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a name="item4"></a>4. DEFINIÇÕES</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item4.1"></a>4.1. Para fins deste documento, são adotadas as seguintes definições:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.1"></a>4.1.1. Atenuação: expressão quantitativa do decréscimo de potência eletromagnética que pode ser expresso pela taxa de valores em dois pontos de uma quantidade de potência relacionada de forma bem definida;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.2"></a>4.1.2. Cabo Para-raios com Fibras Ópticas (OPGW): cabo pára-raios de cobertura ou guarda, utilizado preferencialmente em linhas aéreas de transmissão de energia elétrica, construído de modo a abrigar em seu interior fibras ópticas;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.3"></a>4.1.3. Capacidade: quantidade de fibras ópticas no interior do cabo;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.4"></a>4.1.4. Comprimento de Onda de Corte: comprimento de onda, no espaço livre, acima do qual o modo fundamental é o único modo confinado na fibra óptica;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.5"></a>4.1.5. Diâmetro da Casca: diâmetro do círculo definindo o centro da casca que é um material dielétrico da fibra óptica que circunda o seu núcleo;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.6"></a>4.1.6. Diâmetro do Campo Modal: medida de uma largura transversal de modo guiado em uma fibra óptica monomodo. É calculado a partir da distribuição da intensidade do campo afastado;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.7"></a>4.1.7. Dispersão: alargamento temporal do pulso luminoso de entrada ao longo do comprimento da fibra óptica, causado principalmente por diferença nos caminhos ópticos percorridos em fibras multimodo (dispersão modal) ou por diferenças de velocidade de propagação na transmissão de diferentes comprimentos de onda em fibras monomodo (dispersão cromática). A dispersão resulta em distorção do sinal transmitido;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.8"></a>4.1.8. Erro de Concentricidade do Campo Modal/Casca: distância entre o centro do campo modal e o centro da casca;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.9"></a>4.1.9. Erro de Concentricidade Fibra/Revestimento: distância entre o centro do núcleo e o centro da casca;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.10"></a>4.1.10. Família de Cabos: conjunto de produtos de construção similar que possuem designação genérica vinculada à sua aplicação e instalação, e que contemplam toda a faixa de capacidade com relação à quantidade de fibras ópticas no cabo e na unidade básica;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.11"></a>4.1.11. Fibra Óptica de Dispersão Deslocada (DS): guia de onda dielétrico construído à base de sílica de alta pureza, que apresenta comportamento monomodal na região próxima de 1550&nbsp;nm, com dispersão cromática zero na região de 1550&nbsp;nm e protegido por uma ou mais camadas de acrilato;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.12"></a>4.1.12. Fibra Óptica de Dispersão Deslocada e Não Nula (NZD): guia de onda dielétrico construído à base de sílica de alta pureza, que apresenta comportamento monomodal na região próxima de 1550&nbsp;nm, com dispersão cromática pequena&nbsp; porém não nula na região entre 1530&nbsp;nm e 1565&nbsp;nm e protegido por uma ou mais camadas de acrilato;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">4.1.13.Fibra Óptica Monomodo de Dispersão Normal (SM): guia de onda dielétrico construído à base de sílica de alta pureza, que apresenta comportamento monomodal na região próxima de 1300&nbsp;nm, com dispersão cromática zero na região de 1310&nbsp;nm e protegido por uma ou mais camadas de acrilato;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.14"></a>4.1.14. Fibra Óptica Multimodo Índice Gradual (MM): guia de onda dielétrico cuja variação dos índices de refração do núcleo e da casca seguem uma curva parabólica, sendo o índice do núcleo maior que o da casca;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.15"></a>4.1.15. Modo de Polarização por Dispersão (PMD&nbsp;–&nbsp;“Polarization Mode Dispersion”): média dos atrasos diferenciais de grupo entre os dois modos de polarização ortogonais (rápido e lento) em uma determinada faixa de comprimento de onda, expresso em ps/(km)<sup>1/2</sup>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.16"></a>4.1.16. Não Circularidade da Casca: diferença entre os diâmetros de dois círculos definidos pelo campo de tolerância da casca, dividida pela medida do diâmetro da casca;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.17"></a>4.1.17. Unidade Básica: elemento básico do cabo utilizado na construção do núcleo óptico. Tem função de proteger, agrupar e identificar as fibras ópticas.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">5.REQUISITOS MÉTODOS DE ENSAIOS PARA AS FIBRAS ÓPTICAS</p>
+<p class="texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.1"></a>5.1.&nbsp;Requisitos e Métodos de Ensaios para Comprimento de Onda de Corte</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.1.1"></a>5.1.1. O comprimento de onda de corte para o cabo de fibra óptica monomodo deve ser menor ou igual a 1270&nbsp;nm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.1.2"></a>5.1.2. O comprimento de onda de corte para o cabo de fibra óptica monomodo com dispersão deslocada&nbsp;(DS) e monomodo de dispersão deslocada e não nula&nbsp;(NZD) deve ser menor ou igual a 1350&nbsp;nm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.1.3"></a>5.1.3. O método de ensaio para a verificação do comprimento de onda de corte no cabo deve ser realizado em conformidade com o disposto na norma NBR&nbsp;14076.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.2"></a>5.2. Requisitos e Métodos de Ensaios para o Diâmetro de Campo Modal das Fibras Monomodo</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.2.1"></a>5.2.1. O diâmetro de campo modal para a fibra óptica monomodo (SM) deve ser 9,3&nbsp;μmm&nbsp;±&nbsp;0,5 μm em 1310&nbsp;nm e 10,5 μm&nbsp;±&nbsp;0,8 μm em 1550&nbsp;nm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.2.2"></a>5.2.2. O diâmetro de campo modal para a fibra óptica monomodo com dispersão deslocada e não nula&nbsp;(NZD) em 1550&nbsp;nm deve possuir valor nominal na faixa de 8,0 μm a 11,0 μm, com variação máxima de ±&nbsp;10%, em relação ao valor nominal.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.2.3"></a>5.2.3. O diâmetro de campo modal para a fibra óptica monomodo com dispersão deslocada&nbsp;(DS) deve ser 8,1 μm&nbsp;±&nbsp; 0,8 μm em 1550&nbsp;nm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.2.4"></a>5.2.4. O método de ensaio para a verificação do campo modal das fibras ópticas monomodo deve ser realizado em conformidade com o disposto na norma NBR&nbsp;13493.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.3"></a>5.3. Requisitos e Método de Ensaio para o Diâmetro do Núcleo das Fibras Multimodo</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.3.1"></a>5.3.1. O núcleo da fibra óptica multimodo de índice gradual deve apresentar um diâmetro de 50 μm&nbsp;±&nbsp;3 μm ou 62,5 μm&nbsp;±&nbsp;3 μm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.3.2"></a>5.3.2. O método de ensaio para a verificação do diâmetro do núcleo das fibras ópticas multimodo deve ser realizado em conformidade com o disposto na norma NBR&nbsp;14422.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.4"></a>5.4. Requisito e Método de Ensaios para o Diâmetro da Casca</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.4.1"></a>5.4.1. A casca da fibra óptica, deve ter um diâmetro de 125 μm&nbsp;±&nbsp;2 μm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.4.2"></a>5.4.2. O método de ensaio para a verificação do diâmetro da casca deve ser realizado em conformidade com o disposto na norma NBR&nbsp;14422.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.5"></a>5.5. Requisito e Método de Ensaio para Não Circularidade da Casca</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.5.1"></a>5.5.1. A fibra óptica não deve apresentar um valor de não circularidade superior a 2%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.5.2"></a>5.5.2. O método de ensaio para a verificação da não circularidade da casca deve ser realizado em conformidade com o disposto na norma NBR&nbsp;14422.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.6"></a>5.6. Requisito e Método de Ensaio para Avaliação do Erro de Concentricidade Fibra / Revestimento</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.6.1"></a>5.6.1. O erro de concentricidade fibra/revestimento deve ser inferior a 12 μm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.6.2"></a>5.6.2. O método de ensaio para a verificação da concentricidade fibra/revestimento deve ser realizado em conformidade com o disposto na norma NBR&nbsp;14422.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.7"></a>5.7. Requisito e Método de Ensaio para Avaliação do Erro de Concentricidade Campo Modal/Casca</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.7.1"></a>5.7.1. O erro de concentricidade campo modal/casca da fibra óptica monomodo deve ser no máximo 0,8&nbsp;μm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.7.2"></a>5.7.2. O método de ensaio para a verificação da concentricidade Campo Modal/Casca deve ser realizado em conformidade com o disposto na norma NBR&nbsp;14422.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.8"></a>5.8. Requisito e Método de Ensaio para Avaliação do Erro de Concentricidade Núcleo/Casca</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.8.1"></a>5.8.1. O erro de concentricidade entre o núcleo e a casca da fibra óptica multimodo índice gradual deve ser inferior a 6%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.8.2"></a>5.8.2. O método de ensaio para a verificação da concentricidade Núcleo/Casca deve ser realizado em conformidade com o disposto na norma NBR&nbsp;14422.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.9"></a>5.9. Requisito e Método de Ensaio para Extração do Revestimento da Fibra Óptica</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.9.1"></a>5.9.1. A força de extração do revestimento da fibra óptica cabeada deve ser de, no mínimo 1,5&nbsp;N e de, no máximo, 10,0&nbsp;N.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.9.2"></a>5.9.2. O método de ensaio para extração do revestimento da fibra óptica deve ser realizado em conformidade com o disposto na norma NBR&nbsp;13975.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.10"></a>5.10. Requisito e Método de Ensaio para Dispersão Cromática</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.10.1"></a>5.10.1. Para fibras ópticas a dispersão cromática, a inclinação da curva de dispersão e o comprimento de onda em que a dispersão é nula, devem estar em conformidade com os valores expressos nas tabelas <a href="#tabela1">1</a> e<a href="#tabela2">&nbsp;2</a>.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto; width: 1160px;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center; width: 225px;">
+<p class="Tabela_Texto_Centralizado">Comprimento de Onda</p>
+<p class="Tabela_Texto_Centralizado">(nm)</p>
+</td>
+<td style="text-align: center; width: 234px;">
+<p class="Tabela_Texto_Centralizado">Dispersão Cromática Máxima (ps/nm.km)</p>
+</td>
+<td style="text-align: center; width: 391px;">
+<p class="Tabela_Texto_Centralizado">Inclinação Máxima da Curva de Dispersão S<sub>0</sub>&nbsp;(ps/nm<sup>2</sup>.km)</p>
+</td>
+<td style="text-align: center; width: 302px;">
+<p class="Tabela_Texto_Centralizado">Comprimento de Onda para Dispersão Nula</p>
+<p class="Tabela_Texto_Centralizado">(nm)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 225px;">
+<p class="Tabela_Texto_Centralizado">Entre 1285 e 1330</p>
+</td>
+<td style="text-align: center; width: 234px;">
+<p class="Tabela_Texto_Centralizado">4,0</p>
+</td>
+<td style="text-align: center; width: 391px;">
+<p class="Tabela_Texto_Centralizado">0,10</p>
+</td>
+<td style="text-align: center; width: 302px;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Entre 1300 e 1323</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 225px;">
+<p class="Tabela_Texto_Centralizado">Entre 1525 e 1575</p>
+</td>
+<td style="text-align: center; width: 234px;">
+<p class="Tabela_Texto_Centralizado">20</p>
+</td>
+<td style="text-align: center; width: 391px;">
+<p class="Tabela_Texto_Centralizado">0,10</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela1"></a>Tabela 1&nbsp;–&nbsp;Dispersão Cromática em Fibras SM</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Faixa de Comprimento de Onda: entre 1525 nm e 1575 nm</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Comprimento de Onda para Dispersão Nula&nbsp; (nm)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Dispersão Cromática Máxima (ps/nm.km)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Inclinação Máxima da Curva de Dispersão S<sub>0</sub>&nbsp;(ps/nm<sup>2</sup>.km)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">3,5</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,085</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Entre 1535 e 1565</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela2"></a>Tabela 2 – Dispersão Cromática em Fibras DS</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.10.2"></a>5.10.2. Para fibras NZD a dispersão cromática deve apresentar valores conforme <a href="#tabela3">tabela&nbsp;3</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.10.3"></a>5.10.3. O método de ensaio para dispersão cromática deve ser realizado em conformidade com o disposto na norma NBR 13504.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.11"></a>5.11. Requisito e Método de Ensaio para Largura de Banda em Fibras Multimodo</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.11.1"></a>5.11.1 A largura de banda mínima para as fibras ópticas multimodo, deve estar em conformidade com os valores indicados na<a href="#tabela4"> tabela&nbsp;4.</a></p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Classe</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Comprimento de Onda</p>
+<p class="Tabela_Texto_Centralizado">(nm)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Dispersão Cromática</p>
+<p class="Tabela_Texto_Centralizado">(ps/nm.km)</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td rowspan="2">
+<p class="Tabela_Texto_Centralizado">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p class="Tabela_Texto_Centralizado">NZD*</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1530</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Maior ou igual a 0,5</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">1565</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Menor ou igual a 10,0</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td colspan="3">
+<p class="Tabela_Texto_Alinhado_Esquerda">(*) Dependendo do tipo de transmissão ou do projeto do sistema óptico, pode ser necessário especificar o sinal negativo da dispersão cromática. Neste caso, na designação da fibra deve ser incluída a letra N logo após a identificação - (NZDN).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela3"></a>Tabela 3 – Dispersão Cromática em Fibras NZD</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Diâmetro do Núcleo</p>
+<p class="Tabela_Texto_Centralizado">(μm)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Comprimento de Onda (nm)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Largura de Banda Mínima</p>
+<p class="Tabela_Texto_Centralizado">(MHz.km)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">50</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">850</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">200</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1300</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">500</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">62,5</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">850</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">150</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1300</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">200</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela4"></a>Tabela 4 - Largura de Banda</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha" style="text-align: left; padding-left: 60px;"><a name="item5.11.2"></a>5.11.2. O método de ensaio para largura de banda em fibras multimodo deve ser realizado em conformidade com o disposto na norma NBR 13489.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.12"></a>5.12. Requisito e Método de Ensaio para Dispersão dos Modos de Polarização (PMD)</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.12.1"></a>5.12.1. O coeficiente de dispersão dos modos de polarização&nbsp;(PMD) da fibra óptica monomodo, deve ser menor ou igual a (0,5&nbsp;ps/km)<sup>1/2</sup>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.12.2"></a>5.12.2. O método de ensaio para dispersão dos modos de polarização&nbsp;(PMD) deve ser realizado em conformidade com o disposto na norma NBR&nbsp;14587-1 ou NBR&nbsp;14587-2.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.13"></a>5.13. Requisito e Método de Ensaio para Ciclo Térmico na Fibra Óptica Tingida</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.13.1"></a>5.13.1. Os cabos de fibras ópticas OPGW devem ser submetidos ao ciclo térmico de -10°C a +65°C durante 8&nbsp;horas. Após o ensaio a fibra tingida não deve apresentar variações de coloração quando comparada com a amostra não submetida ao ensaio.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.13.2"></a>5.13.2. O método de ensaio para Ciclo Térmico na Fibra Óptica Tingida deve ser realizado em conformidade com o disposto na norma NBR&nbsp;13519.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.14"></a>5.14. Requisito e Método de Ensaio para Ataque Químico à Fibra Óptica Tingida</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.14.1"></a>5.14.1. A amostra da fibra óptica tingida, quando em contato com compostos de enchimento, deve ser submetida ao ensaio de ataque químico, e não deve apresentar perda de coloração ou remoção da pintura, conforme NBR&nbsp;9140.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.14.2"></a>5.14.2. O método de ensaio para Ataque Químico à Fibra Óptica Tingida deve ser realizado em conformidade com o disposto na norma NBR&nbsp;13511.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.14.3"></a>5.14.3. Os corpos-de-prova devem ser enrolados em mandris de 50&nbsp;mm de diâmetro.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.14.4"></a>5.14.4. Mergulhar um corpo-de-prova em um recipiente contendo o mesmo composto químico que está em contato com a fibra óptica no cabo e mergulhar outro corpo-de-prova em um recipiente contendo água. Mantendo os corpos-de-prova submersos por um período de 48&nbsp;horas. Após o ensaio a fibra tingida não deve apresentar perda de coloração ou remoção de pintura.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a name="item6"></a>6. REQUISITOS&nbsp;E MÉTODOS DE ENSAIO PARA OS CABOS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.1"></a>6.1. Tipos de Fibras e Formação de Unidades Básicas</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.1.1"></a>6.1.1. Os cabos de fibras ópticas podem ser constituídos de fibras multimodo índice gradual (MM), monomodo de dispersão normal (SM), monomodo com dispersão deslocada (DS) e monomodo com dispersão deslocada e não nula (NZD).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.1.2"></a>6.1.2. Os componentes do cabo, além de atender as exigências elétricas e mecânicas do cabo pára-raios da linha de transmissão, devem proteger as fibras ópticas em seu interior, não permitindo que estas tenham seu desempenho alterado quando o cabo for submetido às diversas solicitações mecânicas e elétricas.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.1.3"></a>6.1.3. A identificação das fibras ópticas deve ser feita utilizando o código de cores conforme mostrado na <a href="#tabela5">tabela&nbsp;5</a>, sendo recomendado que as cores das fibras ópticas apresentem tonalidade, luminosidade e saturação iguais ou mais elevadas que o valor do padrão Munsell mostrado na referida tabela.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Fibra</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Cor</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Valor do Padrão Munsell</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Verde</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,5 G 4/6</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Amarela</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,5 Y 8/8</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">3</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Branca</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N8,75</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">4</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Azul</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,5 B 5/6</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">5</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Vermelha</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,5 R 4/6</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">6</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Violeta</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,5 P 4/6</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Marrom</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,5 YR 3,5/6</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">8</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Rosa</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,5 R 5/12</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">9</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Preta</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N2</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">10</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Cinza</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N5</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">11</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Laranja</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,5 YR 6/14</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">12</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Água marinha</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">10 BG 5/4 à 8/4</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela5"></a>Tabela 5 - Código de Cores das Fibras Ópticas</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.1.4"></a>6.1.4. Os grupos de fibras ópticas devem ser identificados por meio de coloração dos tubetes de proteção que as contém, por listras ou anéis coloridos adicionais sobre seu revestimento ou ainda por qualquer outro meio que permita identificá-los de maneira única, conforme <a href="#tabela6">tabela&nbsp;6</a>, pelo sistema piloto direcional ou pelo sistema de código de cores.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.1.5"></a>6.1.5. Outros sistemas de identificação podem ser empregados desde que permitam a identificação das unidades básicas de forma inequívoca.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Grupo de fibras</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Piloto direcional</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Código de cores</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">01</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Piloto-Verde</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Verde</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">02</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Direcional-Amarelo</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Amarelo</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">03</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Normal-Branco ou Neutro</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Branco</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">04</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Normal-Branco ou Neutro</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Azul</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">05</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Normal-Branco ou Neutro</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Vermelho</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">06</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Normal-Branco ou Neutro</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Violeta</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela6"></a>Tabela 6 - Identificação dos grupos de fibras ópticas</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.2"></a>6.2. Requisito e Método de Ensaio para Ciclo Térmico do Cabo</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.2.1"></a>6.2.1. O cabo deve ser condicionado a -10°C por 48&nbsp;horas, após o que a temperatura deve ser elevada a +65°C, mantendo-o neste patamar por um mesmo período de 48 horas. Devem ser realizados 4 ciclos térmicos, conforme NBR&nbsp;13510. A variação do coeficiente de atenuação não deve ser superior aos valores mostrados na<a href="#tabela7"> tabela&nbsp;7</a>, medida conforme NBR&nbsp;13520. As medições ópticas devem ser realizadas ao final de cada patamar e comparadas à medida de referência realizada no patamar inicial a 25°C.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto; width: 1160px;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center; width: 230px;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Tipo de Fibra Óptica</p>
+</td>
+<td style="text-align: center; width: 332px;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Comprimento de Onda</p>
+</td>
+<td style="text-align: center; width: 588px;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Acréscimo ou Variação Máxima</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 177px;">
+<p class="Tabela_Texto_Centralizado">de Operação (nm)</p>
+</td>
+<td style="text-align: center; width: 155px;">
+<p class="Tabela_Texto_Centralizado">de Medida</p>
+<p class="Tabela_Texto_Centralizado">(nm)</p>
+</td>
+<td style="text-align: center; width: 431px;">
+<p class="Tabela_Texto_Centralizado">do Coeficiente de Atenuação (dB/km)</p>
+</td>
+<td style="text-align: center; width: 157px;">
+<p class="Tabela_Texto_Centralizado">de Atenuação</p>
+<p class="Tabela_Texto_Centralizado">(dB)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 230px;">
+<p class="Tabela_Texto_Centralizado">Multimodo</p>
+</td>
+<td style="text-align: center; width: 177px;">
+<p class="Tabela_Texto_Centralizado">850</p>
+</td>
+<td style="text-align: center; width: 155px;">
+<p class="Tabela_Texto_Centralizado">850 ± 20</p>
+</td>
+<td style="text-align: center; width: 431px;">
+<p class="Tabela_Texto_Centralizado">0,2</p>
+</td>
+<td style="text-align: center; width: 157px;">
+<p class="Tabela_Texto_Centralizado">0,2</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 230px;">
+<p class="Tabela_Texto_Centralizado">Multimodo</p>
+</td>
+<td style="text-align: center; width: 177px;">
+<p class="Tabela_Texto_Centralizado">1310</p>
+</td>
+<td style="text-align: center; width: 155px;">
+<p class="Tabela_Texto_Centralizado">1310 ± 20</p>
+</td>
+<td style="text-align: center; width: 431px;">
+<p class="Tabela_Texto_Centralizado">0,2</p>
+</td>
+<td style="text-align: center; width: 157px;">
+<p class="Tabela_Texto_Centralizado">0,2</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 230px;">
+<p class="Tabela_Texto_Centralizado">Monomodo</p>
+</td>
+<td style="text-align: center; width: 177px;">
+<p class="Tabela_Texto_Centralizado">1310</p>
+</td>
+<td style="text-align: center; width: 155px;">
+<p class="Tabela_Texto_Centralizado">1310 ± 20</p>
+</td>
+<td style="text-align: center; width: 431px;">
+<p class="Tabela_Texto_Centralizado">0,1</p>
+</td>
+<td style="text-align: center; width: 157px;">
+<p class="Tabela_Texto_Centralizado">0,1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 230px;">
+<p class="Tabela_Texto_Centralizado">Monomodo</p>
+</td>
+<td style="text-align: center; width: 177px;">
+<p class="Tabela_Texto_Centralizado">1550</p>
+</td>
+<td style="text-align: center; width: 155px;">
+<p class="Tabela_Texto_Centralizado">1550 ± 20</p>
+</td>
+<td style="text-align: center; width: 431px;">
+<p class="Tabela_Texto_Centralizado">0,05</p>
+</td>
+<td style="text-align: center; width: 157px;">
+<p class="Tabela_Texto_Centralizado">0,1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela7"></a>Tabela 7&nbsp;–&nbsp;Acréscimo ou Variação de Atenuação</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: left; padding-left: 90px;"><a name="item6.2.2"></a>6.2.2. O ensaio de ciclo térmico dos cabos OPGW deve ser realizado em conformidade com o método definido na norma NBR&nbsp;13510</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.3"></a>6.3. Requisito e Método de Ensaio para Puxamento pela Polia</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.3.1"></a>6.3.1. Quando submetido a 70&nbsp;puxamentos, com tração de 25% do valor da RMC do cabo, este não deve apresentar:</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;"><span style="text-decoration: line-through;">a) a) variação da atenuação superior aos valores mostrados na <a href="#tabela7&nbsp;–&nbsp;Acréscimo">tabela&nbsp;7</a>, medida conforme NBR&nbsp;13520;</span></p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;"><span style="text-decoration: line-through;">b) b) dano significativo nos componentes do cabo, que altere seu bom desempenho, e deformação nos elementos de proteção superiores a 10% do diâmetro externo em qualquer ponto.</span></p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a)&nbsp;variação da atenuação superior aos valores mostrados na&nbsp;<a href="#tabela7&nbsp;–&nbsp;Acréscimo">tabela&nbsp;7</a>, medida conforme NBR&nbsp;13520; <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO6nON7jaS6tiCaitgNc9ScjI4VfE7e6nzfuo6LK9ZvhtUz0W6llRQPjrcPZqYW15HcTa7wjjlbv2P4ZlsMfDJP2">(Retificação publicada no&nbsp;Boletim de Serviço Eletrônico em 18/01/2019)</a></p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b)&nbsp;dano significativo nos componentes do cabo, que altere seu bom desempenho, e deformação nos elementos de proteção superiores a 10% do diâmetro externo em qualquer ponto. <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO6nON7jaS6tiCaitgNc9ScjI4VfE7e6nzfuo6LK9ZvhtUz0W6llRQPjrcPZqYW15HcTa7wjjlbv2P4ZlsMfDJP2">(Retificação publicada no&nbsp;Boletim de Serviço Eletrônico em 18/01/2019)</a></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.3.2"></a>6.3.2. O método de ensaio para puxamento pela polia deve ser realizado em conformidade com o disposto na norma NBR&nbsp;13983.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.4"></a>6.4. Requisito e Método de Ensaio de Carga de Ruptura do Cabo</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.4.1"></a>6.4.1. A carga de ruptura não deve ser menor que a Resistência Mecânica Calculada (RMC) do cabo, calculada conforme<a href="#item6.4.2"> 6.4.2</a>, desde que a ruptura ocorra em um ponto a mais de 25&nbsp;mm dos terminais de fixação. Se a ruptura se verificar nos terminais de fixação ou a uma distância menor ou igual a 25&nbsp;mm destes, a carga de ruptura não deve ser menor que 95% da RMC do cabo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.4.2"></a>6.4.2. A Resistência Mecânica Calculada (RMC) do cabo completo deve considerar somente a contribuição dos fios metálicos e ser calculada tomando-se 90% da soma dos valores da carga de ruptura dos fios individuais, calculadas com base em seus diâmetros nominais e em seus limites de resistência à tração mínimos especificados.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.4.3"></a>6.4.3. O ensaio deve ser realizado conforme NBR 7272, e devem ser utilizados acessórios de ancoragem passantes iguais aos que serão utilizados na linha de transmissão a que se destina o cabo para-raios.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.5"></a>6.5. Requisito e Método de Ensaio para Tração no Cabo</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.5.1"></a>6.5.1. O cabo, quando submetido ao ensaio de tração, conforme NBR 13986, até 80% da RMC, não deve apresentar rompimento de fibra óptica. Deve ser medida a deformação da fibra óptica, conforme&nbsp; NBR 13512 e registrada a margem de deformação marginal.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.6"></a>6.6. Requisito e Método de Ensaio para Fluência</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.6.1"></a>6.6.1. Quando submetido ao ensaio de fluência conforme NBR 7303, nas cargas de 15%, 20%, 25% e 30% da RMC do cabo, durante pelo menos 250 horas, os valores de alongamento do cabo em função do tempo devem ser anotados. Devem ser feitas medidas a cada 5 minutos durante a primeira hora de ensaio, a cada 15 minutos nas sete horas subsequentes. No restante do tempo devem ser tomadas 3 medidas a cada 24 horas com intervalo mínimo de duas horas entre elas.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.7"></a>6.7. Requisito e Método de Ensaio para Tensão-Deformação&nbsp; da Fibra Óptica por Tração no Cabo</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.7.1"></a>6.7.1. Quando submetido ao ensaio de Tensão-Deformação, os valores de alongamento do cabo e a variação da atenuação das fibras ópticas, em função da tensão mecânica aplicada, devem ser anotados. A variação de atenuação óptica, para tração até 30% da RMC, não deve ser superior aos valores mostrados na<a href="#tabela7"> tabela&nbsp;7</a>, medida conforme NBR 13520.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.7.2"></a>6.7.2. O método de ensaio para tensão-deformação na fibra óptica por tração no cabo deve ser realizado em conformidade com o disposto na norma NBR&nbsp;13985.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.8"></a>6.8. Requisito e Método de Ensaio para Torção</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.8.1"></a>6.8.1. O cabo deve ser submetido ao ensaio de torção, conforme NBR&nbsp;13987, não devendo apresentar variação de atenuação superior aos valores mostrados na <a href="#tabela7&nbsp;–&nbsp;Acréscimo">tabela&nbsp;7</a>, medida conforme NBR&nbsp;13520.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.8.2"></a>6.8.2. Após o ensaio, não deve haver evidência de danos estruturais no cabo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.9"></a>6.9. Requisito e Método de Ensaio de Pressurização</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.9.1"></a>6.9.1. O tubo de proteção, se destinado ao bloqueio de umidade, quando submetido ao ensaio de pressurização, deve suportar a pressão de 0,40&nbsp;MPa durante 3&nbsp;horas, sem apresentar vazamento.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.9.2"></a>6.9.2. O método de ensaio para pressurização deve ser realizado em conformidade com o método de ensaio conforme norma NBR&nbsp;13988.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.10"></a>6.10. Requisito e Método de Ensaio para Tração no Elemento Metálico</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.10.1"></a>6.10.1. A deformação nos elementos de proteção não deve atingir o limite plástico quando o cabo for tracionado até 33% da RMC. A verificação deste requisito deve ser feita conforme NBR&nbsp;13979.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.11"></a>6.11. Requisito e Método de Ensaio para Protuberâncias no Tubo</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.11.1"></a>6.11.1. Eventuais protuberâncias na superfície interna do tubo, provenientes do processo de soldagem, não devem exceder 5% do diâmetro interno do tubo, limitado a um valor máximo de 0,2&nbsp;mm, conforme NBR&nbsp;13980.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.12"></a>6.12. Requisito e Método de Ensaio para Compressão</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.12.1"></a>6.12.1. O cabo deve ser submetido ao ensaio de compressão, com carga aplicada em uma região de 100&nbsp;mm de cabo, a uma velocidade de 5&nbsp;mm/min. Deve ser verificada a carga máxima que não provoque variação de atenuação superior aos valores mostrados na<a href="#tabela7&nbsp;–&nbsp;Acréscimo"> tabela&nbsp;7</a>, medida conforme NBR&nbsp;13520. O valor da carga encontrado deve ser superior a 10.000&nbsp;N.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.12.2"></a>6.12.2. O método de ensaio para compressão deve ser realizado em conformidade com o disposto na norma método de ensaio conforme norma NBR&nbsp;13507.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.13"></a>6.13. Requisito e Método de Ensaio para Raio Mínimo de Curvatura</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.13.1"></a>6.13.1. O cabo, quando ensaiado com o raio de curvatura de 15&nbsp;vezes o seu diâmetro externo, conforme NBR&nbsp;13984, não deve apresentar:</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a) variação de atenuação superior aos valores mostrados na <a href="#tabela7">tabela&nbsp;7</a>, medida conforme NBR&nbsp;13520;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b) danos físicos ou estruturais.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.14"></a>6.14. Requisito e Método de Ensaio para Penetração de Umidade</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.14.1"></a>6.14.1. O cabo, submetido a uma coluna de água de 1,0&nbsp;m em uma das extremidades, no sentido longitudinal, pelo período de 1 hora, não deve apresentar vazamento de água na extremidade oposta, aplicável nas partes do cabo que possuam bloqueio de umidade.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.14.2"></a>6.14.2. O método de ensaio para Penetração de umidade deve ser realizado em conformidade com o disposto na norma NBR&nbsp;9136.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.15"></a>6.15. Requisito e Método de Ensaio para Vibração Eólica</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.15.1"></a>6.15.1. O cabo deve ser submetido a 100.000.000 (cem milhões) de ciclos de vibração, conforme NBR&nbsp;13982, com tração de 25%&nbsp;±&nbsp;1% do valor da RMC do cabo, amplitude de 1/3 do diâmetro externo e freqüência igual a:</p>
+<p class="Texto_Centralizado" style="text-align: center;">f = 830 / d</p>
+<p class="Texto_Justificado" style="text-align: center;">onde:&nbsp;&nbsp; f = frequência em Hz;</p>
+<p class="Texto_Justificado" style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; d = diâmetro externo do cabo em mm,</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.15.2"></a>6.15.2 Durante e após o ensaio de vibração o cabo não deve apresentar:</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a) variação do coeficiente de atenuação superior a 0.2 dB/km de fibra ensaiada, medida conforme NBR 13520;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b) ruptura em qualquer elemento constituinte que altere seu bom desempenho.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.16"></a>6.16. Requisitos e Métodos de Ensaio para o Ensaio de Escoamento do Composto de Enchimento</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.16.1"></a>6.16.1. Quando submetido a uma temperatura de (65&nbsp;±&nbsp;2)°C por um período de 24&nbsp;horas, não deve haver escoamento ou gotejamento do composto de enchimento.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.16.2"></a>6.16.2. O método de ensaio para escoamento do composto de enchimento deve ser realizado em conformidade com o disposto na norma NBR&nbsp;9149.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.17"></a>6.17. Requisitos e Método de Ensaio para Estabilidade Eletrolítica.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.17.1"></a>6.17.1 O cabo completo deve ser submerso em água a 90ºC pelo período de 500&nbsp;horas. Após este condicionamento, seus componentes poliméricos não devem apresentar:</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a) tempo de indução oxidativa (OIT) inferior a 10&nbsp;minutos para o composto de enchimento;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b) temperatura de início de decomposição, após a fusão, inferior a 210°C, para compostos de enchimento, tubetes e elementos de proteção;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">c) temperatura de fusão inferior a 180°C, para&nbsp; tubetes e elementos de proteção;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">d) trincas, fissuras, bolhas, rugas ou alteração visual significativa da cor;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">e) alterações em suas dimensões superiores a 10%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.17.2"></a>6.17.2. O método de ensaio para Estabilidade Eletrolítica deve ser realizado em conformidade com o disposto na norma NBR&nbsp;13991.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.18"></a>6.18. Requisito e Método de Ensaio para Estabilidade Térmica</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.18.1"></a>6.18.1. O cabo completo deve ser mantido em estufa a 180°C, com circulação de ar, durante 24 horas, conforme NBR&nbsp;13991. Após este condicionamento, seus componentes poliméricos não devem apresentar:</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a) tempo de indução oxidativa (OIT) inferior a 10 minutos para o composto de enchimento;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b) temperatura de início de decomposição, após a fusão, inferior a 210°C, para compostos de enchimento, tubetes e elementos de proteção;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">c) temperatura de fusão inferior a 180°C, para tubetes e elementos de proteção;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">d) trincas, fissuras, bolhas, rugas ou alteração visual significativa da cor;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">e) alterações em suas dimensões superiores a 10%.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.19"></a>6.19. Requisitos e Método de Ensaio para Curto-Circuito</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.19.1"></a>6.19.1. Quando submetido ao ensaio de Curto-Circuito conforme NBR&nbsp;13981, o cabo não deve apresentar:</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a) variação do coeficiente de atenuação superior a 0,2 dB/km de fibra ensaiada;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b) engaiolamento ou quebra de qualquer fio externo, ou ainda, após a desmontagem do cabo ensaiado, distorção de qualquer de seus elementos componentes, que possa ser atribuída ao ensaio em si e não somente à montagem ou aos acessórios utilizados e que possa provocar alteração do bom desempenho do produto;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">c) temperatura, em qualquer ponto monitorado, superior à informada pelo fornecedor, calculada em função do nível de curto-circuito e do sistema de proteção da linha, fornecidos pelo comprador;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">d) seus componentes poliméricos não devem apresentar, conforme NBR&nbsp;13991:</p>
+<p class="Item_Inciso_Romano" style="padding-left: 150px;">I - tempo de indução oxidativa (OIT) inferior a 10&nbsp;minutos para o composto de enchimento;</p>
+<p class="Item_Inciso_Romano" style="padding-left: 150px;">II - temperatura de início de decomposição, após a fusão, inferior a 210°C, para compostos de enchimento, tubetes, e elementos de proteção;</p>
+<p class="Item_Inciso_Romano" style="padding-left: 150px;">III - temperatura de fusão inferior a 180°C, para tubetes e elementos de proteção;</p>
+<p class="Item_Inciso_Romano" style="padding-left: 150px;">IV - trincas, fissuras, bolhas, rugas ou alteração visual significativa da cor;</p>
+<p class="Item_Inciso_Romano" style="padding-left: 150px;">V - alterações em suas dimensões superiores a 10%.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.20"></a>6.20. Requisitos e Método de Ensaio para Resistência Elétrica</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.20.1"></a>6.20.1. A Resistência Elétrica do cabo em corrente contínua deve ser medida conforme NBR&nbsp;6814. Deve ser informada a resistência elétrica para 1 quilômetro de cabo, referida a 20°C.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.21"></a>6.21. Requisitos e Método de Ensaio para Descarga Atmosférica</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.21.1"></a>6.21.1 O cabo deve ser submetido ao ensaio de Verificação dos Efeitos da Descarga Atmosférica, conforme Norma NBR&nbsp;14586, devendo ser enquadrado em uma das classes de corrente definidas na <a href="#tabela8">tabela 8</a>.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto; width: 1160px;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center; width: 751px;">
+<p class="Tabela_Texto_Centralizado">Classe de Corrente</p>
+</td>
+<td style="text-align: center; width: 99px;">
+<p class="Tabela_Texto_Centralizado">A</p>
+</td>
+<td style="text-align: center; width: 98px;">
+<p class="Tabela_Texto_Centralizado">B</p>
+</td>
+<td style="text-align: center; width: 100px;">
+<p class="Tabela_Texto_Centralizado">C</p>
+</td>
+<td style="text-align: center; width: 102px;">
+<p class="Tabela_Texto_Centralizado">D</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 751px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Corrente Elétrica – Valor médio (A)</p>
+</td>
+<td style="text-align: center; width: 99px;">
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td style="text-align: center; width: 98px;">
+<p class="Tabela_Texto_Centralizado">200</p>
+</td>
+<td style="text-align: center; width: 100px;">
+<p class="Tabela_Texto_Centralizado">300</p>
+</td>
+<td style="text-align: center; width: 102px;">
+<p class="Tabela_Texto_Centralizado">400</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 751px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Tempo de Aplicação (ms)</p>
+</td>
+<td style="text-align: center; width: 99px;">
+<p class="Tabela_Texto_Centralizado">500</p>
+</td>
+<td style="text-align: center; width: 98px;">
+<p class="Tabela_Texto_Centralizado">500</p>
+</td>
+<td style="text-align: center; width: 100px;">
+<p class="Tabela_Texto_Centralizado">500</p>
+</td>
+<td style="text-align: center; width: 102px;">
+<p class="Tabela_Texto_Centralizado">500</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 751px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Carga Elétrica (Coulomb)</p>
+</td>
+<td style="text-align: center; width: 99px;">
+<p class="Tabela_Texto_Centralizado">50</p>
+</td>
+<td style="text-align: center; width: 98px;">
+<p class="Tabela_Texto_Centralizado">100</p>
+</td>
+<td style="text-align: center; width: 100px;">
+<p class="Tabela_Texto_Centralizado">150</p>
+</td>
+<td style="text-align: center; width: 102px;">
+<p class="Tabela_Texto_Centralizado">200</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 1150px;" colspan="5">
+<p class="Tabela_Texto_Alinhado_Esquerda" align="center">Os valores acima têm tolerância de ± 10%</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela8"></a>Tabela 8 – Classe de corrente por descarga atmosférica</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.21.2"></a>6.21.2. Durante o ensaio, aplicar 5 descargas em 5 corpos-de-prova distintos.</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a) caso não ocorra falha em nenhum dos corpos-de-prova, o cabo deve ser considerado aprovado.</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b) caso ocorra falha em mais de 1&nbsp;corpo-de-prova, o cabo deve ser considerado rejeitado.</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">c) caso ocorra falha em 1&nbsp;corpo-de-prova, devem ser realizadas mais 2&nbsp;aplicações em 2&nbsp;novos corpos-de-prova. Qualquer falha nesses 2&nbsp;novos corpos-de-prova, o cabo deve ser considerado rejeitado.</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">d) caso não ocorra falha em nenhum desses 2&nbsp;novos corpos-de-prova, o cabo deve ser considerado aprovado.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.21.3"></a>6.21.3. Entende-se como falha do corpo-de-prova quando durante o ensaio ele:</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a) apresentar danos nos elementos estruturais ou elementos de proteção, tais que exponham a unidade óptica ou as fibras ópticas aos agentes ambientais (como umidade, etc.) ou que possam comprometer o desempenho das fibras ópticas;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b) não atingir a carga limite de ensaio;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">c) apresentar variação de atenuação óptica superior a 0,2 dB/km, na carga máxima de projeto.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.22"></a>6.22. Requisitos e Método de Ensaio para Uniformidade de Atenuação Óptica</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.22.1"></a>6.22.1. Não é permitida descontinuidade óptica localizada na curva de retroespalhamento da fibra óptica monomodo com valor superior a 0,05&nbsp;dB no comprimento de onda de medida de 1550&nbsp;nm&nbsp;±&nbsp;20&nbsp;nm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.22.2"></a>6.22.2. Não é permitida descontinuidade óptica localizada na curva de retroespalhamento da fibra óptica multimodo índice gradual&nbsp; com valor superior a 0,10&nbsp;dB.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.22.3"></a>6.22.3. O método de ensaio para descontinuidade óptica deve ser realizado em conformidade com o disposto na norma NBR 13502.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.22.4"></a>6.22.4. A diferença dos coeficientes de atenuação médios a cada 500&nbsp;m de cabo não deve apresentar variação maior que o mostrado na <a href="#tabela7">tabela 7</a>.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a name="item7"></a>7. PERFORMANCE&nbsp;DE ENLACES ÓPTICOS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item7.1"></a>7.1. Os requisitos e métodos de ensaios para testes de performance de enlaces ópticos descritos no <a href="#item11">item 11</a> possuem importância quando relacionados ao projeto de um enlace óptico. Os valores recomendados dos requisitos representam o estado da arte podendo ser alterados em função das características de cada rota.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a name="item8"></a>8. VERIFICAÇÃO DA CONFORMIDADE</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item8.1"></a>8.1. Requisitos Específicos das Fibras Ópticas no Cabo Óptico OPGW</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item8.1.1"></a>8.1.1. Os requisitos específicos das fibras ópticas a serem avaliados no cabo óptico OPGW estão dispostos na <a href="#tabela9">tabela&nbsp;9</a>.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto; width: 1160px;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center; width: 699px;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Requisitos Específicos da Fibra Óptica</p>
+</td>
+<td style="text-align: center; width: 451px;" colspan="4">
+<p class="Tabela_Texto_Centralizado">Tipo de Fibra Óptica</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">MM</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">SM</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">NZD</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">DS</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Atenuação óptica</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Descontinuidade óptica</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Dispersão cromática</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Largura de banda</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Dispersão dos modos de polarização (PMD)</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Comprimento de onda de corte</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Diâmetro da casca</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Diâmetro da fibra multimodo</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Diâmetro do campo modal</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Não circularidade da casca</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Erro de concentricidade fibra/revestimento</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Erro de concentricidade núcleo/casca</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Erro de concentricidade campo modal/casca</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">-</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Força de extração do revestimento</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Ciclo térmico na fibra óptica tingida</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 699px;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Ataque químico à fibra óptica tingida</p>
+</td>
+<td style="text-align: center; width: 113px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 110px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+<td style="text-align: center; width: 114px;">
+<p class="Tabela_Texto_Centralizado">x</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela9"></a>Tabela 9 - Requisitos Específicos da Fibra Óptica no Cabo</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item8.2"></a>8.2. Requisitos Específicos dos Cabos OPGW</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item8.2.1"></a>8.2.1. Os requisitos específicos a serem avaliados para a avaliação da conformidade dos cabos OPGW devem ser:</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a) Ciclo Térmico</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b) Deformação na fibra por tração no cabo</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">c) Tração no Cabo</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">d) Compressão</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">e) Torção</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">f) Raio mínimo de Curvatura</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">g) Puxamento pela Polia</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">h) Vibração</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">i) Fluência</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">j) Pressurização</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">k) Tração no Elemento Metálico</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">l) Protuberâncias e reentrâncias no tubo</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">m) Penetração de umidade</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">n) Carga de Ruptura do Cabo</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">o) Escoamento do composto de enchimento</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">p) Estabilidade Eletrolítica</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">q) Estabilidade Térmica</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">r) Curto-Circuito</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">s) Resistência Elétrica</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">t) Descarga Atmosférica</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a name="item9"></a>9. DA AVALIAÇÃO&nbsp;DA CONFORMIDADE</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item9.1"></a>9.1. Condições Mínimas para a Avaliação da Conformidade</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item9.1.1"></a>9.1.1. A avaliação da conformidade dos cabos OPGW deve ser limitada por:</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">a) máxima capacidade de fibras ópticas da família de cabos submetida ao processo de avaliação da conformidade;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">b) máxima capacidade de fibras ópticas da unidade básica da família de cabos submetida ao processo de avaliação da conformidade;</p>
+<p class="Item_Alinea_Letra" style="padding-left: 120px;">c) tipo de proteção do grupo de fibras (Tubo Único Dielétrico, Tubo Único Metálico, Espaçador Ranhurado, Tubos Dielétricos Encordoados).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item9.2"></a>9.2. Amostragem para o Cabo OPGW</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item9.2.1"></a>9.2.1. Para a realização dos ensaios de conformidade em cabos OPGW o fornecedor deve apresentar uma amostra de cabo contendo no mínimo 1300&nbsp;m de comprimento.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item9.2.2"></a>9.2.2. Deve ser apresentada uma amostra por família de cabos limitada à capacidade máxima de fabricação do interessado.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item9.2.3"></a>9.2.3. A amostragem de fibras ópticas para teste deverá seguir a quantidade especificada na<a href="#tabela10"> tabela&nbsp;10</a>.</p>
+<table class="tamanho-padrao" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Ensaios</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Amostragem</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Atenuação óptica</p>
+</td>
+<td style="text-align: center;" rowspan="4">
+<p class="Tabela_Texto_Centralizado">100% das fibras</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Descontinuidade óptica</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Uniformidade de atenuação óptica</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Impacto</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Ciclo térmico no cabo</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Uma fibra óptica por grupo</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Demais ensaios</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela10"></a>Tabela 10 – Amostragem Mínima de Fibras Ópticas no Cabo</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a name="item10"></a>10. IDENTIFICAÇÃO DA HOMOLOGAÇÃO</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item10.1"></a>10.1. A marcação do selo Anatel e a identificação do código de homologação deverão ser apresentadas na embalagem externa do produto (bobina), em conformidade com a regulamentação vigente. Adicionalmente, poderão ser utilizados meios de impressão gráfica nos catálogos dos produtos ou na documentação técnica pertinente.<br><br><a id="item11"></a>11.CARACTERÍSTICAS&nbsp;DAS FIBRAS ÓPTICAS NO CABO PARA PROJETO DE ENLACES ÓPTICOS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item11.1"></a>11.1. Coeficiente de atenuação da fibra óptica tipo multimodo índice gradual</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item11.1.1"></a>11.1.1. O coeficiente de atenuação da fibra óptica multimodo deve ser especificado pelo comprador.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item11.1.2"></a>11.1.2. De acordo com o coeficiente de atenuação medido, a fibra óptica multimodo pode ser classificada conforme apresentado na <a href="#tabela11">tabela 11</a>.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto; width: 1160px;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center; width: 263px;">
+<p class="Tabela_Texto_Centralizado">Diâmetro do Núcleo (mm)</p>
+</td>
+<td style="text-align: center; width: 278px;">
+<p class="Tabela_Texto_Centralizado">Comprimento de Onda (nm)</p>
+</td>
+<td style="text-align: center; width: 135px;">
+<p class="Tabela_Texto_Centralizado">Classe</p>
+</td>
+<td style="text-align: center; width: 476px;">
+<p class="Tabela_Texto_Centralizado">Coeficiente de Atenuação Máximo (dB/km)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 263px;" rowspan="4">
+<p class="Tabela_Texto_Centralizado">&nbsp;50</p>
+</td>
+<td style="text-align: center; width: 278px;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">850</p>
+</td>
+<td style="text-align: center; width: 135px;">
+<p class="Tabela_Texto_Centralizado">A</p>
+</td>
+<td style="text-align: center; width: 476px;">
+<p class="Tabela_Texto_Centralizado">2,5</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 135px;">
+<p class="Tabela_Texto_Centralizado">B</p>
+</td>
+<td style="text-align: center; width: 476px;">
+<p class="Tabela_Texto_Centralizado">3,0</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 278px;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">1300</p>
+</td>
+<td style="text-align: center; width: 135px;">
+<p class="Tabela_Texto_Centralizado">A</p>
+</td>
+<td style="text-align: center; width: 476px;">
+<p class="Tabela_Texto_Centralizado">0,6</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 135px;">
+<p class="Tabela_Texto_Centralizado">B</p>
+</td>
+<td style="text-align: center; width: 476px;">
+<p class="Tabela_Texto_Centralizado">1,0</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 263px;" rowspan="4">
+<p class="Tabela_Texto_Centralizado">62,5</p>
+</td>
+<td style="text-align: center; width: 278px;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">850</p>
+</td>
+<td style="text-align: center; width: 135px;">
+<p class="Tabela_Texto_Centralizado">A</p>
+</td>
+<td style="text-align: center; width: 476px;">
+<p class="Tabela_Texto_Centralizado">2,8</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 135px;">
+<p class="Tabela_Texto_Centralizado">B</p>
+</td>
+<td style="text-align: center; width: 476px;">
+<p class="Tabela_Texto_Centralizado">3,0</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 278px;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">1300</p>
+</td>
+<td style="text-align: center; width: 135px;">
+<p class="Tabela_Texto_Centralizado">A</p>
+</td>
+<td style="text-align: center; width: 476px;">
+<p class="Tabela_Texto_Centralizado">0,7</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 135px;">
+<p class="Tabela_Texto_Centralizado">B</p>
+</td>
+<td style="text-align: center; width: 476px;">
+<p class="Tabela_Texto_Centralizado">1,2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela11"></a>Tabela 11 – Coeficiente de Atenuação da Fibra Óptica MM</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item11.1.3"></a>11.1.3. Método de ensaio conforme norma NBR&nbsp;13491.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item11.2"></a>11.2. Coeficiente de atenuação da fibra óptica monomodo</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item11.2.1"></a>11.2.1. O coeficiente de atenuação da fibra óptica monomodo deve ser especificado pelo comprador.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item11.2.2"></a>11.2.2. De acordo com o coeficiente de atenuação medido, a fibra óptica pode ser classificada conforme apresentado na <a href="#tabela12">tabela 12 </a>para fibra monomodo, e <a href="#tabela13">tabela 13</a> para fibras DS ou NZD.</p>
+<table class="tamanho-padrao" style="width: 1160px;" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center; width: 575px;" colspan="2">
+<p class="Tabela_Texto_Centralizado">l = 1310 nm</p>
+</td>
+<td style="text-align: center; width: 577px;" colspan="2">
+<p class="Tabela_Texto_Centralizado">l = 1550 nm</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 118px;">
+<p class="Tabela_Texto_Centralizado">Classe</p>
+</td>
+<td style="text-align: center; width: 457px;">
+<p class="Tabela_Texto_Centralizado">Coeficiente de Atenuação Máximo (dB/km)</p>
+</td>
+<td style="text-align: center; width: 75px;">
+<p class="Tabela_Texto_Centralizado">Classe</p>
+</td>
+<td style="text-align: center; width: 502px;">
+<p class="Tabela_Texto_Centralizado">Coeficiente de Atenuação Máximo (dB/km)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 118px;">
+<p class="Tabela_Texto_Centralizado">A</p>
+</td>
+<td style="text-align: center; width: 457px;">
+<p class="Tabela_Texto_Centralizado">0,34</p>
+</td>
+<td style="text-align: center; width: 75px;">
+<p class="Tabela_Texto_Centralizado">A</p>
+</td>
+<td style="text-align: center; width: 502px;">
+<p class="Tabela_Texto_Centralizado">0,20</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 118px;">
+<p class="Tabela_Texto_Centralizado">B</p>
+</td>
+<td style="text-align: center; width: 457px;">
+<p class="Tabela_Texto_Centralizado">0,36</p>
+</td>
+<td style="text-align: center; width: 75px;">
+<p class="Tabela_Texto_Centralizado">B</p>
+</td>
+<td style="text-align: center; width: 502px;">
+<p class="Tabela_Texto_Centralizado">0,22</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 118px;">
+<p class="Tabela_Texto_Centralizado">C</p>
+</td>
+<td style="text-align: center; width: 457px;">
+<p class="Tabela_Texto_Centralizado">0,40</p>
+</td>
+<td style="text-align: center; width: 75px;">
+<p class="Tabela_Texto_Centralizado">C</p>
+</td>
+<td style="text-align: center; width: 502px;">
+<p class="Tabela_Texto_Centralizado">0,24</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 118px;">
+<p class="Tabela_Texto_Centralizado">D</p>
+</td>
+<td style="text-align: center; width: 457px;">
+<p class="Tabela_Texto_Centralizado">maior que 0,40</p>
+</td>
+<td style="text-align: center; width: 75px;">
+<p class="Tabela_Texto_Centralizado">D</p>
+</td>
+<td style="text-align: center; width: 502px;">
+<p class="Tabela_Texto_Centralizado">maior que 0,24</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela12"></a>Tabela 12 – Coeficiente de Atenuação da Fibra Óptica SM&nbsp;</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<table class="tamanho-padrao" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Classe</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Coeficiente de Atenuação Máximo em 1550 nm (dB/km)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,21</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">B</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,23</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">C</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,25</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">D</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Maior que 0,25</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela13"></a>Tabela 13 – Coeficiente de Atenuação da Fibra Óptica DS ou NZD</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item11.2.3"></a>11.2.3. Método de ensaio conforme norma NBR&nbsp;13491.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item11.3"></a>11.3. Tensão mecânica constante (Proof Test):</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item11.3.1"></a>11.3.1. A fibra óptica deve ser submetida ao ensaio de tensão mecânica constante (Proof Test) e enquadrada em uma das classes definidas na <a href="#tabela14">tabela 14</a>.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto; width: 1160px;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; width: 122px;">
+<p class="Tabela_Texto_Centralizado">Classe</p>
+</td>
+<td style="text-align: center; width: 387px;">
+<p class="Tabela_Texto_Centralizado">Tensão (GPa)</p>
+</td>
+<td style="text-align: center; width: 645px;">
+<p class="Tabela_Texto_Centralizado">Deformação na Fibra (%)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 122px;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+<td style="text-align: center; width: 387px;">
+<p class="Tabela_Texto_Centralizado">0,35</p>
+</td>
+<td style="text-align: center; width: 645px;">
+<p class="Tabela_Texto_Centralizado">0,5</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 122px;">
+<p class="Tabela_Texto_Centralizado">2</p>
+</td>
+<td style="text-align: center; width: 387px;">
+<p class="Tabela_Texto_Centralizado">0,49</p>
+</td>
+<td style="text-align: center; width: 645px;">
+<p class="Tabela_Texto_Centralizado">0,7</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 122px;">
+<p class="Tabela_Texto_Centralizado">3</p>
+</td>
+<td style="text-align: center; width: 387px;">
+<p class="Tabela_Texto_Centralizado">0,70</p>
+</td>
+<td style="text-align: center; width: 645px;">
+<p class="Tabela_Texto_Centralizado">1,0</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 122px;">
+<p class="Tabela_Texto_Centralizado">4</p>
+</td>
+<td style="text-align: center; width: 387px;">
+<p class="Tabela_Texto_Centralizado">1,05</p>
+</td>
+<td style="text-align: center; width: 645px;">
+<p class="Tabela_Texto_Centralizado">1,5</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 122px;">
+<p class="Tabela_Texto_Centralizado">5</p>
+</td>
+<td style="text-align: center; width: 387px;">
+<p class="Tabela_Texto_Centralizado">1,40</p>
+</td>
+<td style="text-align: center; width: 645px;">
+<p class="Tabela_Texto_Centralizado">2,0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela14"></a>Tabela 14 - Classe de Tensão Mecânica Constante ( Proof Test )</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item11.3.2"></a>11.3.2. A classe mínima de tensão mecânica constante (Proof Test) deve ser enquadrada na classe&nbsp;1.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item11.3.3"></a>11.3.3. Método de ensaio conforme norma NBR&nbsp;13503.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1168"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20técnicos" class="link-categoria">Requisitos técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Produto" class="link-categoria">Produto</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Cabos%20Para-Raios" class="link-categoria">Cabos Para-Raios</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Fibras%20Ópticas" class="link-categoria">Fibras Ópticas</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Linhas%20Aéreas%20de%20Transmissão" class="link-categoria">Linhas Aéreas de Transmissão</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

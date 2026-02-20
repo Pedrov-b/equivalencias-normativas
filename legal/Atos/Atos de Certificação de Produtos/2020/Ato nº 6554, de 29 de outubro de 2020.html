@@ -1,0 +1,1019 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 6554, de 29 de outubro de 2020</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Requisitos Técnicos, Avaliação, Conformidade, Transmissor, Radiofusão Sonora, FM, Processador de Áudio, Gerador de Estereofonia, Gerador de Canal, Secundário, Excitador, RF, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovar os Requisitos Técnicos para Avaliação da Conformidade de Transmissor de Radiodifusão Sonora em FM, Processador de Áudio, Gerador de Estereofonia, Gerador de Canal Secundário e Excitador de RF, conforme o Anexo deste Ato">
+	<title>Anatel - Ato nº 6554, de 29 de outubro de 2020</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=220119817" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1539270905" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1302857331" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141536" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2020">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2020">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2020">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2020" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2020" class="pathway">2020</a> <span class="separator">&gt;</span> <span>Ato nº 6554, de 29 de outubro de 2020</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;94905a9f5875cae4&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 6554, de 29 de outubro de 2020		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Terça, 03 Novembro 2020 11:44			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quarta, 17 Janeiro 2024 09:41			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 7499			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico em <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO7jWh_rBb0qly2a-XScCP11c9Q_QmG5n8CYSWlJx3-3uayevqyyDtdT7ZKXy5PMvgezYp2c8PnmGKdjAicj8-eh">3/11/2020</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES,&nbsp;</b>no uso das atribuições que lhe foram conferidas pela <a href="https://www.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715">Resolução n° 715, de 23 de outubro de 2019</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO a competência dada pelos incisos XIII e XIV do <a href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art19">art. 19</a> da Lei n°&nbsp;9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o § 2° do <a href="https://www.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715#art22Anexo">art. 22</a> do Regulamento para Avaliação da Conformidade e Homologação de Produtos para Telecomunicações, aprovado pela Resolução n° 715, de 23 de outubro de 2019; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlMzN7PEn7DQWkkgEolrwxRD8RDO0Ph4vW4QjNdDQZQE0">processo nº 53500.025409/2019-82</a>;</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="art1º&nbsp;Aprovar"></a>Art. 1º&nbsp;Aprovar os Requisitos Técnicos para Avaliação da Conformidade de Transmissor de Radiodifusão Sonora em FM, Processador de Áudio, Gerador de Estereofonia, Gerador de Canal Secundário e Excitador de RF,&nbsp;conforme o Anexo deste Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="art2º&nbsp;Este"></a>Art. 2º&nbsp;Este Ato entra em vigor na data de sua publicação no Boletim de Serviço&nbsp;Eletrônico da Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">VINICIUS OLIVEIRA CARAM GUIMARÃES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Superintendente de Outorga e Recursos à Prestação</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">ANEXO AO&nbsp;ATO Nº 6554, DE 29 DE OUTUBRO DE 2020</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><strong>REQUISITOS TÉCNICOS PARA AVALIAÇÃO DA CONFORMIDADE&nbsp;DE&nbsp;TRANSMISSOR DE RADIODIFUSÃO SONORA EM FM</strong></p>
+<p class="Texto_Centralizado_Maiusculas">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item1"></a>1. OBJETIVO</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item1.1"></a>1.1. Estabelecer requisitos mínimos a serem demonstrados na avaliação da conformidade, junto à Agência Nacional de Telecomunicações, de transmissores de radiodifusão sonora em FM, de processadores de áudio, de geradores de estereofonia, de geradores de canal secundário e&nbsp;de&nbsp;excitadores de RF.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item2"></a>2. REFERÊNCIAS NORMATIVAS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.1"></a>2.1. Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações, aprovado pela <a href="https://www.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715">Resolução nº 715, de 23 de outubro de 2019</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.2"></a>2.2. Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares, aprovado pela <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1383-resolucao-721">Resolução nº 721, de 11&nbsp;de fevereiro de 2020</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.3"></a>2.3. Requisitos Técnicos de Condições de Uso de Radiofrequências para os Serviços de Radiodifusão Sonora em Frequência Modulada, de Retransmissão de Rádio na Amazônia Legal e Radiodifusão Comunitária.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.4"></a>2.4. Requisitos Técnicos de Compatibilidade Eletromagnética para Avaliação da Conformidade de Produtos para Telecomunicações.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="tem2.5"></a>2.5.&nbsp;<a href="https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-2">Code of Federal Regulations – CFR FCC PART 2</a>&nbsp;- FREQUENCY ALLOCATIONS AND RADIO TREATY MATTERS; GENERAL RULES AND REGULATIONS. <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Incluído pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item3"></a>3. ORIENTAÇÕES GERAIS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.1"></a>3.1. Esta orientação define os requisitos de ensaios aplicáveis aos transmissores de radiodifusão sonora em FM, processadores de áudio, geradores de estereofonia, geradores de canal secundário e&nbsp;de&nbsp;excitadores de RF.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.2"></a>3.2. Os procedimentos de ensaio constantes neste documento estabelecem os requisitos mínimos necessários para a&nbsp;realização dos ensaios.&nbsp;&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item4"></a>4. DEFINIÇÕES</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">I - Canal Estereofônico: É a faixa de frequências de 23 a 53 kHz, contendo a informação estereofônica.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">II - Canal Principal: É a faixa de frequências de 50 a 15 000 Hz da faixa-base.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">III - Canais Secundários: São aqueles inseridos na faixa-base, com frequência instantânea entre 20 e 99 kHz para operação em monofonia e a partir de 53 kHz quando em estereofonia.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">IV - De-ênfase: É a técnica utilizada na recepção de sinais modulados em frequência, que atua de forma inversa à pré-ênfase.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">V - Desvio de Frequência: É a variação instantânea da frequência da portadora, em relação ao seu valor nominal, resultante da modulação.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">VI - Faixa-Base: É a faixa espectral contendo todos os canais e subportadoras componentes da informação a ser transmitida.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">VII - Índice de Modulação: É a relação entre o desvio de frequência e a frequência do sinal modulante.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">VIII - Percentagem de Modulação: É a relação entre o desvio de frequência e o desvio de frequência definido como 100% de modulação, expresso em percentagem. Para estações de radiodifusão sonora em frequência modulada, um desvio de frequência de ±75 kHz é definido como 100% de modulação.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">IX - Potência Nominal do Transmissor: É a potência máxima para funcionamento regular e contínuo, conforme especificado pelo fabricante.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">X - Pré-ênfase: É a técnica utilizada na transmissão de sinais modulados em frequência, na qual é aumentada a amplitude das audiofrequências mais altas, a fim de diminuir o efeito do ruído sobre o sinal.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">XI - Processador de Áudio: Equipamento utilizado para a geração de estereofonia ou para a geração de canal secundário, ou&nbsp;ambas.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">XII - Separação Estereofônica (de um circuito): É a relação entre o sinal que aparece na saída do canal esquerdo (ou direito) e o sinal que aparece na saída do canal direito (ou esquerdo) de um circuito, quando só é aplicado sinal de entrada no canal esquerdo (ou direito).</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">XIII - Sinal Composto: É toda a informação contida na faixa-base.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">XIV - Sinal Estereofônico: É a informação correspondente à diferença entre os sinais provenientes dos canais esquerdo e direito (esquerdo: direito).</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">XV - Sinal Principal: É a informação correspondente à soma dos sinais provenientes dos canais esquerdo e direito (esquerdo + direito), ou que, em caso de transmissão monofônica, contenha o áudio da emissora.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">XVI - Sinal Secundário: É a informação contida nos canais secundários.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">XVII - Subportadora Estereofônica: É uma subportadora cuja frequência corresponde ao 2º harmônico da frequência da subportadora piloto.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">XVIII - Subportadora Piloto: É uma subportadora que atua como um sinal de controle para a decodificação, na recepção em frequência modulada estereofônica.</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 30px;">XIX - Subportadora Secundária: É a subportadora de um dos canais secundários.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item5"></a>5. CRITÉRIOS TÉCNICOS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1. CANALIZAÇÃO</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.1.1"></a>5.1.1. O produto sob avaliação da conformidade deve atender ao Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil e os Requisitos Técnicos de Condições de Uso de Radiofrequências aplicáveis&nbsp;ao produto.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2. DESIGNAÇÃO DE EMISSÕES</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.2.1"></a>5.2.1. O produto deve atender à&nbsp;formação de designação de emissões&nbsp;disposta&nbsp;na referência 2.3.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item6"></a>6. REQUISITOS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.1"></a><span style="text-decoration: line-through;">6.1. O transmissor deverá operar em condições satisfatórias, com um desvio de frequência correspondente a 100% de modulação.</span></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;">6.1. O transmissor deverá operar em condições satisfatórias, com um desvio de frequência correspondente a 100% de modulação, exceto para os itens&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.7">6.7</a>,&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.8">6.8</a>&nbsp;e&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.1">6.9</a>, para os quais devem seguir as condições do itens&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.1.1">6.1.1</a>,&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.1.2">6.1.2</a>&nbsp;e&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.1.3">6.1.3</a>, conforme aplicável. <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Redação dada pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 60px;"><a id="item6.1.1"></a>6.1.1. Transmissores FM não utilizados para operação multiplex devem ser modulados em 85% por um sinal de entrada de 15 kHz.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Incluído pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 60px;"><a id="item6.1.2"></a>6.1.2. Transmissores FM para operação multiplex com canal secundário (SCA) devem ser modulados em 70% por um sinal de entrada de 15 kHz no canal principal e modulados simultaneamente em 15% por uma subportadora de 67 kHz (não modulada).&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Incluído pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 60px;"><a id="item6.1.3"></a>6.1.3. Transmissores FM para operação estereofônica devem ser modulados por um sinal de entrada de 15 kHz para o canal principal, um sinal de entrada de 15 kHz para o subcanal estereofônico e a subportadora piloto simultaneamente. Cada um dos sinais de entrada para o canal principal e o subcanal estereofônico devem produzir 38% de modulação da portadora. A subportadora piloto deve produzir modulação de 9% da portadora.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Incluído pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.2"></a>6.2. Os transmissores não poderão ter dispositivos externos que permitam a alteração de sua frequência de operação.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.2.1"></a>6.2.1. No caso de existir dispositivo com esta funcionalidade, este deverá possuir controle de acesso por senha ou outra forma de controle de acesso.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.2.2"></a>6.2.2. Esta funcionalidade de controle de acesso deverá ser informada pelo fabricante na avaliação da conformidade do produto.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.3"></a>6.3. Os transmissores deverão possuir dispositivos tais que, uma vez ajustada a potência de operação autorizada, permitam a inibição de quaisquer controles externos que possam permitir ultrapassar aquele valor.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.4"></a>6.4. Quando submetido a variações de ± 10 % na tensão primária de alimentação, a variação de potência poderá ser de até ± 15 %.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.5"></a>6.5. O ensaio do transmissor, para fins de avaliação da conformidade, deverá ser realizado na sua potência nominal e no limite inferior estabelecido pelo fabricante.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.5.1"></a>6.5.1. Caso não exista informação do valor mínimo de operação ou este valor seja 0 (zero), o transmissor deverá ser ensaiado com ajuste de 10 % de sua potência nominal.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.6"></a>6.6. Em temperatura ambiente variável entre +10ºC e +50ºC e com variações de ± 10% na tensão primária de alimentação, a frequência central de operação do oscilador deve manter-se, automaticamente, dentro de limites, tais que a frequência de saída do transmissor seja mantida dentro de ± 2.000 Hz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.6.1"></a>6.6.1. Este requisito pode ser avaliado usando apenas os circuitos e componentes responsáveis por manter a estabilidade de frequência do transmissor.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.7"></a><span style="text-decoration: line-through;">6.7. Qualquer emissão presente em frequências afastadas de 120 kHz a 240 kHz, inclusive, da frequência da portadora deverá estar, pelo menos, 25 dB abaixo do nível da portadora sem modulação.</span></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;">6.7. Qualquer emissão presente em frequências afastadas de 120 kHz a 240 kHz, inclusive, da frequência da portadora, com o transmissor operando conforme&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.1">item 6.1</a>, deverá estar, pelo menos, 25 dB abaixo do nível de referência da portadora sem modulação.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Redação dada pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.8"></a><span style="text-decoration: line-through;">6.8. As emissões em frequências afastadas da frequência da portadora de 240 kHz até 600 kHz, inclusive, deverão estar, pelo menos, 35 dB abaixo do nível da portadora sem modulação.</span></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;">6.8. As emissões em frequências afastadas da frequência da portadora de 240 kHz até 600 kHz, inclusive, com o transmissor operando conforme&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.1">item 6.1</a>, deverão estar, pelo menos, 35 dB abaixo do nível de referência da portadora sem modulação.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Redação dada pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.9"></a><span style="text-decoration: line-through;">6.9. As emissões em frequências afastadas de mais de 600 kHz da frequência da portadora deverão estar abaixo do nível da portadora sem modulação de (73 + P) dB, onde P é a potência de operação do transmissor em dBk.</span></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;">6.9. As emissões em frequências afastadas de mais de 600 kHz da frequência da portadora, com o transmissor operando conforme&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.1">item 6.1</a>, deverão estar abaixo do nível de referência da portadora sem modulação de (73 + P) dB, onde P é a potência de operação do transmissor em dBk.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Redação dada pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.9.1"></a>6.9.1. A maior atenuação exigida será de 80 dB.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.9.2"></a>6.9.2. Para medições acima de 60 dB, deverá ser inserido um Filtro&nbsp;Passa Alta ou Rejeita Faixa (Notch Filter) sintonizado na frequência de operação para minimizar os efeitos de não linearidade do Analisador de Espectro.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.10"></a>6.10. O transmissor deverá estar dotado de instrumentos para determinação das seguintes grandezas:</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 60px;">I - corrente contínua na placa ou do estágio final de RF;</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 60px;">II - tensão contínua nesse mesmo ponto; e</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 60px;">III - potência de saída, incidente e refletida.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.11"></a>6.11. O transmissor deverá ser dotado de pontos internos ou externos de RF adequados para ligações de monitor de modulação e de frequência.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.12"></a>6.12. Para dispositivos com alimentação de alta tensão, devem ser observados:</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 60px;">I - a fonte de alimentação de alta tensão deve possuir dispositivos de proteção contra sobrecargas; e</p>
+<p class="Item_Inciso_Romano" style="text-align: justify; padding-left: 60px;">II - o transmissor deverá possuir resistores de sangria ou outro dispositivo apropriado para descarregar todos os capacitores de filtro quando a alta tensão é desligada.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.13"></a>6.13. No caso de existir sistema de resfriamento a ar ou a líquido, deve&nbsp;existir dispositivo de segurança que impeça o funcionamento do transmissor na falta ou insuficiência do citado resfriamento.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.14"></a>6.14. O transmissor deverá estar completamente encerrado em gabinetes metálicos, e todas as partes expostas ao contato dos operadores serão eletricamente interligadas e conectadas à terra.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.14.1"></a>6.14.1. Todas as partes elétricas, submetidas a tensões maiores que 350 volts, deverão estar protegidas e ter placas de aviso para se evitar o contato inadvertido das pessoas.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.15"></a>6.15. As portas e tampas de acesso a partes do transmissor, onde existam tensões maiores que 350 Volts, deverão dispor de interruptores que automaticamente desliguem essas tensões, quando qualquer delas for aberta ou removida.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.16"></a>6.16. Todos os ajustes normais de operação e sintonia a serem feitos pelo operador, em circuitos sujeitos a tensões maiores que 350 Volts, deverão ser executados externamente, com todas as portas e tampas do gabinete fechadas.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.17"></a>6.17. Todo transmissor deve ter fixada no gabinete uma placa de identificação na qual constem, no mínimo, o nome do fabricante, o modelo, a data de fabricação, o número de série, a potência nominal&nbsp;&nbsp;e o consumo.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.18"></a>6.18. REQUISITOS PARA MONOFONIA</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.18.1"></a>6.18.1. A resposta de áudio dos produtos mencionados no <a href="#item3.1">item 3.1</a>, no que for aplicável, para frequências de 50 Hz a 15.000 Hz e percentagens de modulação de 25%, 50% e 100%, deverá estar inteiramente contida entre os limites indicados nas curvas das figuras do FM Anexo II da referência 2.3, com&nbsp;pré-ênfase de 25, 50 e 75µs, respectivamente.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.18.2"></a>6.18.2. RESPOSTA DE FREQUÊNCIA DE ÁUDIO</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.18.2.1"></a>6.18.2.1. A distorção harmônica total das frequências de áudio, introduzidas pelo transmissor, não deverá ultrapassar o valor eficaz de 1,0% na faixa de 50 Hz a 15.000 Hz para percentagens de modulação de 25%, 50% e 100%.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.18.2.2"></a>6.18.2.2. O nível de ruído, por modulação em frequência, medido na saída do transmissor, na faixa de 50 Hz a 15.000 Hz, deverá estar, pelo menos, 60 dB abaixo do nível correspondente a 100% de modulação da portadora por um sinal senoidal de 400 Hz.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.18.2.3"></a>6.18.2.3. O nível de ruído, por modulação em amplitude, medido na saída do transmissor, na faixa de 50 Hz a 15.000 Hz, deverá estar, pelo menos, 50 dB abaixo do nível que represente 100% de modulação em amplitude.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.19"></a>6.19. REQUISITOS PARA ESTEREOFONIA&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.19.1"></a>6.19.1. Os produtos mencionados no <a href="#item3.1">item 3.1</a>, no que for aplicável, deverão&nbsp;atender aos seguintes requisitos técnicos, de forma a garantir a emissão estereofônica, de acordo com as seguintes características.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.1"></a>6.19.1.1. O sinal modulante no canal principal deve ser a soma dos sinais esquerdo e direito.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.2"></a>6.19.1.2. Deve ser transmitida uma subportadora piloto de 19.000 Hz ± 2 Hz, que modulará em frequência a portadora principal entre 8% e 10%.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.3"></a>6.19.1.3. A subportadora estereofônica será o segundo harmônico da subportadora piloto (38.000 Hz ± 4 Hz) e deverá cortar o eixo do tempo com uma derivada positiva cada vez que a subportadora piloto cortar, também, aquele eixo.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.4"></a>6.19.1.4. A subportadora estereofônica deve ser modulada em amplitude, com dupla faixa lateral.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.5"></a>6.19.1.5. A subportadora estereofônica deve ser, em princípio, suprimida; admitir-se-á modulação residual na portadora principal, desde que menor que 1%.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.6"></a>6.19.1.6. A subportadora estereofônica deve ser capaz de aceitar audiofrequências na faixa de 50 a 15.000 Hz.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.7"></a>6.19.1.7. O sinal modulante da subportadora estereofônica deve ser igual à diferença dos sinais esquerdo e direito, nesta ordem.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.8"></a>6.19.1.8. A característica de pré-ênfase do sinal estereofônico deve ser idêntica à do sinal principal, no que tange à fase e à amplitude em todas as frequências.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.9"></a>6.19.1.9. O sinal estereofônico não deve causar desvio de pico da frequência da portadora principal superior a 45% da modulação total, quando existir apenas sinal esquerdo (ou direito); simultaneamente, o desvio de pico da frequência da portadora principal, provocado pela modulação do sinal principal, também não deve ser maior que 45% da modulação total, quando existir apenas sinal esquerdo (ou direito), excluída a modulação das subportadoras secundárias.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.10"></a>6.19.1.10 Quando for aplicado um sinal esquerdo positivo, a modulação do sinal principal deve causar um desvio de frequência crescente na portadora principal; a subportadora estereofônica e suas faixas laterais devem cortar o eixo do tempo simultaneamente e na mesma direção.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.11"></a>6.19.1.11. A diferença relativa entre o desvio máximo do sinal principal e o desvio máximo do sinal estereofônico, quando existir apenas sinal esquerdo (ou direito), deve ser, no máximo, 3,5% para todos os níveis deste sinal e para todas as frequências modulantes, de 50 a 15.000 Hz.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.12"></a>6.19.1.12. A diferença de fase entre os pontos de nulo do sinal do canal principal e da envoltória das faixas laterais da subportadora estereofônica, quando existir apenas sinal esquerdo (ou direito), não deve exceder a ± 3°, para audiofrequências de 50 a 15.000 Hz.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.13"></a>6.19.1.13. A diafonia no canal principal, causada pelo sinal do canal estereofônico, deve estar, pelo menos, 40 dB abaixo do nível correspondente a 90% de modulação.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.14"></a><span style="text-decoration: line-through;">6.19.1.14. A diafonia no canal estereofônico, causada pelo sinal do canal principal, deve estar, pelo menos, 40 dB abaixo do nível correspondente a 90% de modulação. que 29,7 dB para audiofrequências de 50 a 15.000 Hz.</span></p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;">6.19.1.14. A diafonia no canal estereofônico, causada pelo sinal do canal principal, deve estar, pelo menos, 40 dB abaixo do nível correspondente a 90% de modulação.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Redação dada pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.19.1.15"></a><span style="text-decoration: line-through;">6.19.1.15. Considera-se atendido o estabelecido nos itens <a href="#item6.3.1.11">6.3.1.11</a> e <a href="#item6.3.1.12">6.3.1.12</a>, quando a separação estereofônica for melhor.</span></p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;">6.19.1.15. Considera-se atendido o estabelecido nos itens&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.19.1.11">6.19.1.11</a>&nbsp;e&nbsp;<a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1482-ato-6554#item6.19.1.12">6.19.1.12</a>, quando a separação estereofônica for melhor que 29,7 dB para audiofrequências de 50 a 15.000 Hz.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2024/1913-ato-21">(Redação dada pelo Ato nº 21, de 02 de janeiro de 2024)</a></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.19.2"></a>6.19.2. O desempenho dos produtos mencionados pelo <a href="#item3.1">item 3.1</a>, quando&nbsp;da transmissão estereofônica, deverá atender aos requisitos para monofonia, exceto quanto à percentagem máxima de modulação, que ao invés de 100% deverá ser de 90% excluída a percentagem de modulação da frequência piloto.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.19.3"></a>6.19.3. O gerador de estéreo deverá conter dispositivo que atenue o sinal de áudio na frequência de 19 kHz, no mínimo, a 50 dB abaixo do nível correspondente a 100% de modulação em FM.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.20"></a>6.20. REQUISITOS PARA OS CANAIS SECUNDÁRIOS</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.20.1"></a>6.20.1. Os produtos mencionados no <a href="#item3.1">item 3.1</a>, no que for aplicável,&nbsp;deverão&nbsp;atender aos seguintes requisitos técnicos, de forma a garantir&nbsp;o funcionamento, de acordo com as seguintes características.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.20.1.1"></a>6.20.1.1. A frequência instantânea da subportadora deverá estar, sempre, dentro da faixa de 20 a 99 kHz; quando o programa simultâneo de radiodifusão for estereofônico deverá estar, sempre, dentro da faixa de 53 a 99 kHz.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.20.1.2"></a>6.20.1.2. As frequências das subportadoras e o tipo de modulação são de livre utilização, observado o disposto no item 6.4.1.7.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.20.1.3"></a>6.20.1.3. A soma aritmética das percentagens de modulação da portadora principal pelas subportadoras não deverá ser superior a 30%; quando o programa simultâneo de radiodifusão for estereofônico, este valor será, no máximo, de 20%.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.20.1.4"></a>6.20.1.4. A soma aritmética das percentagens de modulação da portadora principal por todas as subportadoras acima de 75 kHz será de, no máximo, 10%.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.20.1.5"></a>6.20.1.5. Quando o programa de radiodifusão for estereofônico e houver transmissão de canal secundário na faixa de 53 a 99 kHz, a percentagem total de modulação da portadora principal pode atingir picos de até 110% (desvio de 82,5 kHz), mantidos os limites estabelecidos nas alíneas ”c” e “d” para a percentagem de modulação da portadora principal pelos canais secundários.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.20.1.6"></a>6.20.1.6. Caso o canal secundário seja utilizado para radiotransmissão de dados - RDS, os sistemas empregados deverão observar as especificações técnicas estabelecidas pelos&nbsp;Requisitos Técnicos de Condições de Uso de Radiofrequências para os Serviços de Radiodifusão Sonora em Frequência Modulada, de Retransmissão de Rádio na Amazônia Legal e Radiodifusão Comunitária.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.20.1.7"></a>6.20.1.7. A&nbsp;subfaixa de 57 kHz (± 2,5 kHz) é de uso exclusivo dos sistemas que atendam ao estabelecido pelos Requisitos Técnicos de Condições de Uso de Radiofrequências para os Serviços de Radiodifusão Sonora em Frequência Modulada, de Retransmissão de Rádio na Amazônia Legal e Radiodifusão Comunitária.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.20.2"></a>6.20.2. Os requisitos de desempenho dos produtos, para operação com canal secundário, são os mesmos definidos no item 6.1.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item7"></a>7. OBSERVAÇÕES</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item7.1"></a>7.1. Se a especificação técnica do transmissor fizer referência a equipamentos auxiliares como:&nbsp;conversor de canal,&nbsp;gerador de estereofonia,&nbsp;gerador de canal secundário,&nbsp;excitador,&nbsp;modulador de áudio,&nbsp;filtros passa-faixa,&nbsp;multiplexadores&nbsp;e outros que compõem o produto, estes devem ser usados durante os testes.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item7.2"></a>7.2. Os equipamentos auxiliares deverão ser adequadamente identificados e deverão constar como parte integrante do equipamento no certificado de homologação emitido pela ANATEL.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item7.3"></a>7.3. Os equipamentos auxiliares&nbsp;comercializados&nbsp;individualmente deverão passar por processo próprio de avaliação da conformidade. Nesse caso, o equipamento deverá ser avaliado em conjunto com um transmissor representativo da categoria a qual o equipamento auxiliar se aplica.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1482"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20Técnicos" class="link-categoria">Requisitos Técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação" class="link-categoria">Avaliação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Conformidade" class="link-categoria">Conformidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Transmissor" class="link-categoria">Transmissor</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Radiofusão%20Sonora" class="link-categoria">Radiofusão Sonora</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=FM" class="link-categoria">FM</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Processador%20de%20Áudio" class="link-categoria">Processador de Áudio</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Gerador%20de%20Estereofonia" class="link-categoria">Gerador de Estereofonia</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Gerador%20de%20Canal" class="link-categoria">Gerador de Canal</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Secundário" class="link-categoria">Secundário</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Excitador" class="link-categoria">Excitador</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RF" class="link-categoria">RF</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

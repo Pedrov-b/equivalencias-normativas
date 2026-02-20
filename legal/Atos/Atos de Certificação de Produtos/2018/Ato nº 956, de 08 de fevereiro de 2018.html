@@ -1,0 +1,1371 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 956, de 08 de fevereiro de 2018</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1177-ato-956">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Requisitos técnicos, Avaliação, Conectores, Cabo Coaxial, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovar os requisitos técnicos para avaliação da conformidade de Conectores para Cabos Coaxiais, conforme o Anexo I deste Ato">
+	<title>Anatel - Ato nº 956, de 08 de fevereiro de 2018</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=291275745" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1755063301" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1942666899" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141805" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2018">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2018">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2018">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2018" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2018" class="pathway">2018</a> <span class="separator">&gt;</span> <span>Ato nº 956, de 08 de fevereiro de 2018</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;94905e4699a1cb34&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 956, de 08 de fevereiro de 2018		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 09 Fevereiro 2018 09:58			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quinta, 21 Janeiro 2021 13:19			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 8007			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico em<a title="Acesse o Boletim de Serviço Eletrônico" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=2787756&amp;id_orgao_publicacao=0">&nbsp;9/2/2018</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL,&nbsp;</b>no uso das atribuições que lhe foram conferidas pela <a title="Acesse a Portaria" href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472#art19">Art. 19</a> da Lei n.º 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o Inciso II do <a title="Acesse a Portaria" href="http://www.anatel.gov.br/legislacao/resolucoes/15-2000/129-resolucao-242#art9">Art. 9º</a> do Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela Resolução n.º 242, de 30 de novembro de 2000;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO&nbsp;o <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419#art1">Art. 1º</a> da Portaria nº 419 de 24 de maio de 2013;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlFCKX3MPmChLbkI8pk8IsXAf_6Q0ViThxznS_yqBSc8n">processo nº 53500.001993/2018-08</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1"></a>Art. 1º&nbsp; Aprovar os requisitos técnicos para avaliação da conformidade de Conectores para Cabos Coaxiais, conforme o <a title="Acesse o anexo" href="#anexoI">Anexo I</a> deste Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2"></a>Art. 2º Este Ato entra em vigor&nbsp;no dia 12 de fevereiro de 2018.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">&nbsp;</p>
+<p style="text-align: center;">VITOR ELISIO GOES DE OLIVEIRA MENEZES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Superintendente de Outorga e Recursos à Prestação</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="anexoI"></a>ANEXO I</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><strong>REQUISITOS TÉCNICOS PARA A AVALIAÇÃO DA CONFORMIDADE DE CONECTORES PARA CABOS COAXIAIS</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="item1"></a>1.&nbsp;OBJETIVO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item1.1"></a>1.1.&nbsp;Este documento estabelece os requisitos mínimos a serem demonstrados na avaliação da conformidade dos conectores para cabos coaxiais, para efeito de avaliação da conformidade e homologação pela Agência Nacional de Telecomunicações&nbsp;–&nbsp;Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="item2"></a>2.&nbsp;ABRANGÊNCIA</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item2.1"></a>2.1.&nbsp;Este documento aplica-se aos conectores para cabos coaxiais de 50&nbsp;Ohms ou de 75&nbsp;Ohms, utilizados para transmissão de sinais de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="item3"></a>3.&nbsp;REFERÊNCIAS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item3.1"></a>3.1.&nbsp;Para fins deste documento, são adotadas as seguintes referências:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.1.1"></a>3.1.1.&nbsp;Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela <a title="Acesse a Resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/15-2000/129-resolucao-242">Resolução nº 242 da Anatel, de 30 de novembro de 2000</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.1.2"></a>3.1.2.&nbsp;IEC 61169-1 (1998-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 1: Generic specification&nbsp;–&nbsp;General requirements and measuring methods;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.1.3"></a>3.1.3.&nbsp;IEC 60169-29 (1995-07)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 29: Miniature R.F. coaxial connectors with screw, push-pull and snap-on coupling or slide-in rack and panel applications; Characteristic impedance 50 Ohms (Type 1,0/2,3);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.1.4"></a>3.1.4.&nbsp;IEC 60169-13 (1976-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 13: R. F. coaxial connectors with inner diameter of outer conductor 5.6 mm (0.22 in)&nbsp;–&nbsp;Characteristc impedance 75 Ohms (Type 1.6/5.6)&nbsp;–&nbsp;Characteristic impedance 50 Ohms (Type 1.8/5.6) with similar mating dimensions;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.1.5"></a>3.1.5.&nbsp;IEC 60169-13 Amendment 1 (1996-03)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 13: R. F. coaxial connectors with inner diameter of outer conductor 5.6 mm (0.22 in)&nbsp;–&nbsp;Characteristc impedance 75 Ohms (Type 1.6/5.6)&nbsp;–&nbsp;Characteristic impedance 50 Ohms (type 1.8/5.6) with similar mating dimensions;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item3.1.6"></a>3.1.6.&nbsp;IEC 60169-16 (1982-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 16: R. F. coaxial connectors with inner diameter of outer conductor 7 mm (0.276 in) with screw coupling&nbsp;–&nbsp;Characteristc impedance 50 Ohms (75 ohms) (Type N);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.7"></a>3.1.7.&nbsp;IEC 60169-16 Amendment 1 (1996-03)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 16: R. F. coaxial connectors with inner diameter of outer conductor 7 mm (0.276 in) with screw coupling&nbsp;– Characteristc impedance 50 Ohms (75 Ohms) (Type N);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.8"></a>3.1.8.&nbsp;IEC 60169-8 (1978-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 8: R. F. coaxial connectors with inner diameter of outer conductor 6.5 mm (0.256 in) with bayonet lock&nbsp;–&nbsp;Characteristc impedance 50 Ohms (Type BNC);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.9"></a>3.1.9.&nbsp;IEC 60169-8 Amendment 1 (1996-03)&nbsp;–&nbsp;Radio-frequency connectors – Part 8: R. F. coaxial connectors with inner diameter of outer conductor 6.5 mm (0.256 in) with bayonet lock&nbsp;– Characteristc impedance 50 Ohms (Type BNC);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.10"></a>3.1.10.&nbsp;IEC 60169-8 Amendment 2 (1997-11)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 8: R. F. coaxial connectors with inner diameter of outer conductor 6.5 mm (0.256 in) with bayonet lock&nbsp;– Characteristc impedance 50 Ohms (Type BNC);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.11"></a>3.1.11.&nbsp;IEC 60169-28 (1994-02)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 28: Radio-frequency coaxial connectors with inner diameter of outer conductor of 5.6 mm (0.220 in) with snap-on coupling&nbsp;– Characteristic impedance 75 Ohms;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.12"></a>3.1.12.&nbsp;IEC 60169-15 (1979-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 15: R. F. coaxial connectors with inner diameter of outer conductor 4.13 mm (0.163 in) with screw coupling&nbsp;–&nbsp;Characteristic impedance 50 Ohms;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.13"></a>3.1.13.&nbsp;IEC 60169-15 Amendment 1 (1996-02)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 15: R. F. coaxial connectors with inner diameter of outer conductor 4.13 mm (0.163 in) with screw coupling&nbsp;– Characteristic impedance 50 Ohms (Type SMA);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.14"></a>3.1.14.&nbsp;IEC 60169-10 (1983-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 10: R. F. coaxial connectors with inner diameter of outer conductor 3 mm (0.12 in) with snap-on coupling&nbsp;–&nbsp;Characteristic impedance 50 Ohms (Type SMB);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.15"></a>3.1.15.&nbsp;IEC 60169-10 Amendment 1 (1986-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 10: R. F. coaxial connectors with inner diameter of outer conductor 3 mm (0.12 in) with snap-on coupling&nbsp;– Characteristic impedance 50 Ohms (Type SMB);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.16"></a>3.1.16.&nbsp;IEC 60169-10 Amendment 2 (1996-03)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 10: R. F. coaxial connectors with inner diameter of outer conductor 3 mm (0.12 in) with snap-on coupling&nbsp;– Characteristic impedance 50 Ohms (Type SMB);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.17"></a>3.1.17.&nbsp;IEC 60169-9 (1978-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 9: R. F. coaxial connectors with inner diameter of outer conductor 3 mm (0.12 in) with screw coupling&nbsp;–&nbsp;Characteristic impedance 50 Ohms (Type SMC);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.18"></a>3.1.18.&nbsp;IEC 60169-9 Amendment 1 (1996-03)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 9: R. F. coaxial connectors with inner diameter of outer conductor 3 mm (0.12 in) with screw coupling&nbsp;– Characteristic impedance 50 Ohms (Type SMC);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.19"></a>3.1.19.&nbsp;IEC 60169-17 (1980-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 17: R. F. coaxial connectors with inner diameter of outer conductor 6.5 mm (0.256 in) with screw coupling&nbsp;–&nbsp;Characteristic impedance 50 Ohms (Type TNC);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.20"></a>3.1.20.&nbsp;IEC 60169-17 Amendment 1 (1993-05)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 17: R. F. coaxial connectors with inner diameter of outer conductor 6.5 mm (0.256 in) with screw coupling&nbsp;– Characteristic impedance 50 Ohms (Type TNC);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.21"></a>3.1.21.&nbsp;IEC 60169-4 (1975-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 4: R. F. coaxial connectors with inner diameter of outer conductor 16 mm (0.63 in) with screw lock&nbsp;–&nbsp;Characteristic impedance 50 ohms (Type 7-16);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.22"></a>3.1.22.&nbsp;IEC 60169-27 (1994-01)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 27: R. F. coaxial connectors with screw coupling, typically for use in 75 Ohms cable distribution systems (Type E);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.23"></a>3.1.23.&nbsp;IEC 60169-24 (1991-11)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 24: R. F. coaxial connectors with screw coupling, typically for use in 75 Ohms cable distribution systems (Type F);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.24"></a>3.1.24.&nbsp;IEC 61169-24 (2001-11)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 24: Sectional specification&nbsp;– Radio-frequency coaxial connectors with screw coupling, typically for use in 75&nbsp;Ohms cable distribution systems (type F);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.25"></a>3.1.25.&nbsp;IEC 60169-26 (1993-07)&nbsp;–&nbsp;Radio-frequency connectors&nbsp;–&nbsp;Part 26: R. F. coaxial connectors with screw coupling&nbsp;–&nbsp;Characteristic impedance 50 Ohms&nbsp;–&nbsp;Frequency range 0 to 18&nbsp;GHz (Type TNC 18 GHz);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.26"></a>3.1.26.&nbsp;IEC 60068-2-14 (1984-01)&nbsp;–&nbsp;Environmental testing&nbsp;–&nbsp;Part 2: Tests. Test N: change of temperature;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.27"></a>3.1.27.&nbsp;IEC 60068-2-61 (1991)&nbsp;–&nbsp;Environmental testing&nbsp;–&nbsp;Part 2: Test methods&nbsp;–&nbsp;Test Z/ABDM: Climatic sequence;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.28"></a>3.1.28.&nbsp;IEC 60068-2-2 (1974)&nbsp;–&nbsp;Environmental testing&nbsp;–&nbsp;Part 2: Tests. Tests B: Dry heat;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.29"></a>3.1.29.&nbsp;IEC 60068-2-2-Amd.1 (1993)&nbsp;–&nbsp;Amendment N° 1;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.30"></a>3.1.30.&nbsp;IEC 60068-2-2-Amd.2 (1994) &nbsp;–&nbsp;Amendment N° 2;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.31"></a>3.1.31.&nbsp;IEC 60068-2-30 (1980)&nbsp;–&nbsp;Environmental testing&nbsp;–&nbsp;Part 2: Tests. Test Db and guidance: Damp heat, cyclic (12 + 12-hour cycle);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.32"></a>3.1.32.&nbsp;IEC 60068-2-30- Amd.1 (1985)&nbsp;–&nbsp;Amendment N° 1;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.33"></a>3.1.33.&nbsp;IEC 60068-2-1 (1990)&nbsp;–&nbsp;Environmental testing&nbsp;–&nbsp;Part 2: Tests. Tests A: Cold;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.34"></a>3.1.34.&nbsp;IEC 60068-2-1 Amd.1 (1993)&nbsp;–&nbsp;Amendment N° 1;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.35"></a>3.1.35.&nbsp;IEC 60068-2-1 Amd.2 (1994)&nbsp;–&nbsp;Amendment N° 2;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.36"></a>3.1.36.&nbsp;IEC 60068-2-78 (2001)&nbsp;–&nbsp;Environmental testing&nbsp;–&nbsp;Part 2-78: Tests&nbsp;–&nbsp;Test Cab: Damp heat, steady state;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.37"></a>3.1.37.&nbsp;IEC 60068-2-11 (1981)&nbsp;–&nbsp;Environmental testing&nbsp;–&nbsp;Part 2: Tests. Test Ka: Salt mist;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item3.1.38"></a>3.1.38.&nbsp;IEC 60529:2002&nbsp;–&nbsp;Degrees of protection provided by enclosures (IP code).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="item4"></a>4.&nbsp;DEFINIÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item4.1"></a>4.1.&nbsp;Para fins deste documento, são adotadas as seguintes definições:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.1"></a>4.1.1.&nbsp;Contato: elemento condutivo de um componente que combina com um elemento correspondente para formar um caminho elétrico (formar contato elétrico);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.2"></a>4.1.2.&nbsp;Contato macho&nbsp;-&nbsp;(Contato de pino): contato destinado a realizar a ligação elétrica em sua superfície externa e que o realiza em um contato fêmea (soquete);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.3"></a>4.1.3.&nbsp;Contato fêmea&nbsp;-&nbsp;(Contato de soquete): contato destinado a realizar a ligação elétrica em sua superfície interna e que para realizá-lo aceita um contato macho (pino);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.4"></a>4.1.4.&nbsp;Contato hermafrodita: contato destinado a se acoplar a um contato idêntico;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.5"></a>4.1.5.&nbsp;Contato resiliente: contato que tem propriedades elásticas para prover uma força em sua região de contato;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.6"></a>4.1.6.&nbsp;Conector: componente usualmente aplicado a um cabo (excluindo adaptador) para unir eletricamente partes de uma linha de sistema de transmissão;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.7"></a>4.1.7.&nbsp;Par de conectores: dois conectores que possuem faces de acoplamento e meios de engate mutuamente adequados;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.8"></a>4.1.8.&nbsp;Conector macho: pino de contato macho com propósito de fazer a junção elétrica utilizando um encaixe de contato do tipo fêmea;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.9"></a>4.1.9.&nbsp;Conector fêmea: pino de contato fêmea com propósito de fazer a junção elétrica aceitando a entrada de um pino de contato macho;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.10"></a>4.1.10.&nbsp;Família: conjunto de conectores de uma mesma série ou tipo e que possuem a mesma impedância característica;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.11"></a>4.1.11.&nbsp;Tipo&nbsp;(Série): termos que caracterizam as faces de acoplamento de um par de conectores, com relação à construção e dimensões;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.12"></a>4.1.12.&nbsp;Estilo: forma ou formato particular de conector, bem como uma combinação de conectores, porém sem variação de sua face de acoplamento. Exemplos: conector reto ou angular;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.13"></a>4.1.13.&nbsp;Variante: variação de um estilo em detalhes particulares, como variação das dimensões da parte posterior do conector, destinadas a compatibilizar sua aplicação a cabos distintos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item4.1.14"></a>4.1.14.&nbsp;Grau: qualidade de um conector no que concerne à sua precisão mecânica e elétrica, em especial quanto ao coeficiente de reflexão.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="item5"></a>5.&nbsp;REQUISITOS ESPECÍFICOS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.1"></a>5.1.&nbsp;O interessado deve declarar formalmente qual é a frequência máxima de operação e o grau do conector a ser avaliado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.2"></a>5.2.&nbsp;Os requisitos mínimos dos conectores devem ser verificados através dos ensaios estabelecidos na <a title="Acesse a tabela" href="#tabela2">tabela&nbsp;2</a>, e devem estar de acordo com as especificações correspondentes, conforme tabela&nbsp;1.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.3"></a>5.3.&nbsp;Quando houver limitações impostas pelo cabo utilizado na montagem dos corpos-de-prova, o interessado deve apresentar declaração dos limites de frequência, rigidez dielétrica e temperatura, para efeito de avaliação da conformidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item5.4"></a>5.4.&nbsp;Requisito para exame visual&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item5.4.1"></a>5.4.1.&nbsp;As amostras não devem apresentar qualquer imperfeição, deterioração ou dano mecânico visível; o engate e desengate dos conectores devem ser realizados de forma manual normalmente e a marcação (quando aplicável) deve estar legível.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">&nbsp;</p>
+<table class=" tamanho-padrao">
+<tbody>
+<tr>
+<td class="formata-tabela" style="text-align: center;"><strong>Tipo (Série)</strong></td>
+<td class="formata-tabela" style="text-align: center;"><strong>Norma específica</strong></td>
+<td class="formata-tabela" style="text-align: center;"><strong>Modificação</strong></td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">1.0/2.3 – 50 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-29 (1995-07)</td>
+<td class="formata-tabela" style="text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">1.6/5.6 – 75 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-13 (1976-01)</td>
+<td class="formata-tabela" style="text-align: center;">Amendment 1 (1996-03)</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">1.8/5.6 – 50 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-13 (1976-01)</td>
+<td class="formata-tabela" style="text-align: center;">Amendment 1 (1996-03)</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">N – 50 ou 75 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-16 (1982-01)</td>
+<td class="formata-tabela" style="text-align: center;">Amendment 1 (1996-03)</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">BNC – 50 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-8 (1978-01)</td>
+<td class="formata-tabela" style="text-align: center;">Amendments 1 (1996-03) e 2 (1997-11)</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">BNC – 75 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-8 (1978-01)</td>
+<td class="formata-tabela" style="text-align: center;">Amendments 1 (1996-03) e 2 (1997-11)</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">SMB – 75 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-28 (1994-02)</td>
+<td class="formata-tabela" style="text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">SMA – 50 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-15 (1979-01)</td>
+<td class="formata-tabela" style="text-align: center;">Amendment 1 (1996-03)</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">SMB – 50 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-10 (1983-01)</td>
+<td class="formata-tabela" style="text-align: center;">Amendments 1 (1986-01) e 2 (1996-03)</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">SMC – 50 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-9 (1978-01)</td>
+<td class="formata-tabela" style="text-align: center;">Amendment 1 (1996-03)</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;" rowspan="2">TNC – 50 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-17 (1980-01)</td>
+<td class="formata-tabela" style="text-align: center;">Amendment 1 (1993-04)</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-26 (1993-07)</td>
+<td class="formata-tabela" style="text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">7/16 – 50 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">IEC 60169-4 (1975-01)</td>
+<td class="formata-tabela" style="text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">F – 75 Ohms</td>
+<td class="formata-tabela" style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">IEC 60169-24 (1991-11) e</p>
+<p class="Tabela_Texto_Centralizado">IEC 61169-24 (2001-11)</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><a name="tabela1"></a>Tabela 1 – Normas Específicas&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="item6"></a>6.&nbsp;ENSAIOS E MÉTODOS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.1"></a>6.1.&nbsp;Devem ser realizados os ensaios listados na tabela&nbsp;2, conforme os agrupamentos definidos no <a title="Acesse o Item" href="#item6.3">item&nbsp;6.3</a> deste documento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">&nbsp;</p>
+<table class=" tamanho-padrao">
+<thead>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;"><strong>Nº de Referência</strong></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;"><strong>Ensaio</strong></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;"><strong>Método de ensaio</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;">01</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><strong>Exame visual</strong></p>
+<p style="text-align: center;">Vide item 5.4.1.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;">IEC 61169-1 item 9.1.2</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;">02</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;"><strong>Ensaio de Compatibilidade Mecânica</strong></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.1.3.3</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;">03</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;"><strong>Resistência de Isolamento</strong></p>
+<p style="text-align: center;">Instrução para o ensaio: as amostras devem ser ensaiadas “não conectadas”.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.2.5</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;">04</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;"><strong>Rigidez Dielétrica</strong></p>
+<p style="text-align: center;">Instruções para o ensaio:</p>
+<p style="text-align: center;">1-&nbsp;as amostras devem ser ensaiadas “não conectadas” e “conectadas”;</p>
+<p style="text-align: center;">2-&nbsp;a tensão aplicada no ensaio pode ser limitada pelo valor máximo admitido pelo cabo utilizado na montagem da amostra.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.2.6</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;">05</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;"><strong>Resistência de Contato do Condutor Central / Cabo</strong></p>
+<p style="text-align: center;">Instrução para o ensaio: as amostras devem ser ensaiadas “conectadas”.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.2.3</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;">06</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><strong>Continuidade do Condutor Externo</strong></p>
+<p>Instrução para o ensaio: as amostras devem ser ensaiadas “conectadas”.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.2.3</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p style="text-align: center;">07</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><strong>Coeficiente de Reflexão (COE)</strong></p>
+<p>O interessado deve declarar qual é a frequência máxima para o ensaio, a qual constará no Certificado de Conformidade/Homologação.</p>
+<p>Instrução para o ensaio:</p>
+<p>1-&nbsp;devem ser utilizadas técnicas de medição de Coeficiente de Reflexão no domínio do tempo;</p>
+<p>2-&nbsp;para os casos em que a norma específica estabeleça o COE em formato de rampa em função da frequência, deve ser considerado, para efeito de avaliação da conformidade, o máximo valor obtido dentro da faixa de frequência do ensaio.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.2.1</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;" rowspan="2">
+<p style="text-align: center;">08</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><strong>Ensaio de Condicionamento Climático</strong></p>
+<p>Variação Rápida de Temperatura</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.4.4 – restrito aos aspectos da norma:</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p>As amostras devem ser submetidas a 5&nbsp;ciclos de:</p>
+<p>Temperatura T1: -40°C durante 30&nbsp;minutos;</p>
+<p>Temperatura T2: +85°C durante 30&nbsp;minutos;</p>
+<p>Tempo de transição T1/T2 = 3&nbsp;minutos</p>
+<p>Instruções para o ensaio:</p>
+<p>1-&nbsp;as amostras devem ser ensaiadas “conectadas” com as pontas livres protegidas para evitar penetração de umidade;</p>
+<p>2-&nbsp;as temperaturas aplicadas no ensaio podem ser limitadas pelos valores admitidos pelo cabo utilizado na montagem da amostra.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 60068-2-14 Test Na</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;" rowspan="7">
+<p style="text-align: center;">09</p>
+<p>&nbsp;</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><strong>Ensaio de Condicionamento Climático</strong></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.4.2 – restrito aos aspectos das normas:</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p>Sequência Climática</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 60068-2-61</p>
+<p>Test Z/ABDM – Climatic Sequence</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p>- Calor seco (85°C / 16&nbsp;horas)</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 60068-2-2</p>
+<p>IEC 60068-2-2-Amd.1</p>
+<p>IEC 60068-2-2-Amd.2</p>
+<p>Test B – Dry Heat</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p>- Calor úmido acelerado (1&nbsp;ciclo de 24&nbsp;horas)</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 60068-2-30</p>
+<p>IEC 60068-2-30-Amd.1</p>
+<p>Test Db – Damp Heat</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p>- Frio (-40°C / 2&nbsp;horas)</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 60068-2-1</p>
+<p>IEC 60068-2-2-Amd.1</p>
+<p>IEC 60068-2-2-Amd.2</p>
+<p>Test A – Cold</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p>- Calor úmido acelerado (5 ciclos de 24 h)</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 60068-2-30 Test Db – Damp Heat</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p>Instruções para o ensaio:</p>
+<p>1-&nbsp;as amostras devem ser ensaiadas “conectadas” com as pontas livres protegidas para evitar penetração de umidade;</p>
+<p>2-&nbsp;as temperaturas aplicadas no ensaio podem ser limitadas pelos valores admitidos pelo cabo utilizado na montagem da amostra.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;" rowspan="2">
+<p style="text-align: center;">10</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><strong>Ensaio de Condicionamento Climático</strong></p>
+<p>Calor Úmido Prolongado</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.4.3 – restrito aos aspectos da norma:</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p>Temperatura: 40°C</p>
+<p>Umidade Relativa: 93%</p>
+<p>Duração do ensaio: 21&nbsp;dias</p>
+<p>Instruções para o ensaio: as amostras devem ser ensaiadas “conectadas” com as pontas livres protegidas para evitar penetração de umidade.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 60068-2-78 Test Cab – Damp Heat, Steady State</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;" rowspan="2">
+<p style="text-align: center;">11</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><strong>Ensaio de Condicionamento Climático</strong></p>
+<p>Névoa Salina</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 61169-1 item 9.4.6 – restrito aos aspectos da norma:</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p>Duração do ensaio: 48&nbsp;horas</p>
+<p>Instruções para o ensaio: as amostras devem ser ensaiadas “conectadas” com as pontas livres protegidas para evitar penetração de umidade.</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p>IEC 60068-2-11 Test Ka</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><a name="tabela2"></a>Tabela 2 – Ensaios e Métodos&nbsp;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha">Nota:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha">A finalidade dos ensaios de Condicionamento Climático é condicionar os corpos-de-prova para a verificação visual e para a realização dos ensaios elétricos finais.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.2"></a>6.2.&nbsp;Amostras para ensaios&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.2.1"></a>6.2.1.&nbsp;Devem ser apresentadas amostras em número suficiente, conforme a <a title="Acesse a Tabela" href="#tabela3">tabela&nbsp;3</a>, para representar a família a ser avaliada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.2.2"></a>6.2.2.&nbsp;Caso a família de conectores contenha conectores de estilos diferentes, devem ser apresentadas amostras dos diversos estilos para verificação do COE.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.2.3"></a>6.2.3.&nbsp;O Interessado deve apresentar para o OCD, para inclusão no processo de avaliação da conformidade, evidências que comprovem a fabricação dos conectores componentes da família a ser avaliada. Podem ser consideradas evidências, fotos detalhadas e/ou desenho mecânico em vista isométrica com dimensões externas e o código do produto (marcação), alternativamente, podem ser fornecidas amostras dos produtos, para serem fotografadas e submetidas a exame visual no laboratório.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item6.3"></a>6.3.&nbsp;Grupos de Ensaios&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.3.1"></a>6.3.1.&nbsp;As amostras devem ser montadas em corpos-de-prova e submetidas às seqüências de ensaios, conforme definido na tabela&nbsp;3.</p>
+<table class=" tamanho-padrao">
+<tbody>
+<tr>
+<td class="formata-tabela">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Número</strong></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>do</strong></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Grupo</strong></p>
+</td>
+<td class="formata-tabela" style="text-align: center;"><strong>Quantidade de Corpos-de-prova</strong></td>
+<td class="formata-tabela" style="text-align: center;"><strong>Constituição do corpo-de-prova</strong></td>
+<td class="formata-tabela">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Seqüência de ensaios</strong></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>(Conforme números de referência da Tabela 2)</strong></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">01</td>
+<td class="formata-tabela" style="text-align: center;">06</td>
+<td class="formata-tabela">O interessado deve fornecer 6 amostras de conectores, sendo 3 de cada gênero. Quando a montagem mecânica do conjunto for necessária, as amostras devem ser conectadas em 6 segmentos de cabo coaxial, cujo comprimento deve ser o menor possível.</td>
+<td class="formata-tabela"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABMCAIAAADRDR/JAAAB6klEQVR4nO3czbGCMBSGYUuwBOugoKzt4JZgqkkzLCzBEnIX/IiYBIX5gkffd8ko4zyewRBnOETSdNj7A3xtyKpCVhWyqpBVhawqZFUhq6oke7lc/mip2+32tuzpdDrQUtfrdaXs+Xzeeyw+tOPxuEk2904q+yC7PmRVIasKWVXIqkJWFbKqkFWFrCpkVSGrCllVyKpCVhWyqozJBjfu1je+Lbyw9c10a7/8Ykl2ZDurkSi4LNiE/yEXKn3UGKMd2U7rQbI7NOfqvoDp0cn41hxdG7I9zkwxdbT1TYpvHON6c2tCtnd5Ins+3nqXHsthcOtNrQXZYeCe5u0drv4kzOykATbhlzXPnaXihfbzZccfoARfAT15lpqrA9uyL18OCms0Vb8hG1z9mwXbsq9dDfZw/QXZ4GrffXV9vmxpAbC4Nmh9s8eeQYwmZLM3CuM452CD24s12pDNrvKLq/9dWaMR2QxhAbb1TW6Sg6/jbUM2ubGV3uuKZdZ6g2xFdr4/O9utvZfbnB2qdoWwIxvj4z8FqalcYmWv6xtCVhWyqpBVhawqZFUhqwpZVciqQlYVsqqQVYWsKmRVIasKWVXIqkJW1VZZnn2Ua+uzj6jcGlmeMfdKa54xR1tCVhWyqpBVhawqZFUhqwpZVf/TxCHlkRbBlAAAAABJRU5ErkJggg==" alt=""></td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">02</td>
+<td class="formata-tabela" style="text-align: center;">03</td>
+<td class="formata-tabela">O interessado deve fornecer 6 amostras de conectores, sendo 3 de cada gênero, conectadas em 3 segmentos de cabo, com 1 (um) conector macho e 1 (um) conector fêmea em cada extremidade, conforme figura 1. O comprimento do cabo (“L”) deve ser tal que permita a caracterização de cada conector isoladamente quando da aplicação de técnicas de medição de Coeficiente de Reflexão no domínio do tempo.</td>
+<td class="formata-tabela"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP0AAABHCAIAAABDBta4AAADgElEQVR4nO2csXHCQBRECQkpgRIIGSI6IaMFQlqgA7ogpRAFCglVwjkQwgikQ+DP3ZP/vojRnO2d3TdjBgSTIIQ/JrkDCJEBeS88Iu+FR+S98Ii8Fx6R98Ij8l54pOX98XhciwFcLpdcg92jvQbyvFfL+/1+PxEDKMsynd39aK+BPO8l7z9B3o+Lod5DdqVB64eWh0akH3n/BrR+aHloyHsbaP3Q8tCQ9zbQ+qHloSHvbaD1Q8tDQ97bQOuHloeGvLeB1g8tDw15bwOtH1oeGvLeBlo/tDw05L0NtH5oeWjIexto/dDy0JD3NtD6oeWhIe9toPVDy0ND3ttA64eWh4a8tyFBP1VVVVXFyTNq5L0NCfo5n8+z2Wy/3w+xX3vFQXt/2k4aVofi1enisKrPbk8pwrVJ4339J4bYz93r7lAXA4a2gOp9LfGthNM2UslN+IkP74fYj92LoT3U+7qcVgf1pajSjf8+vI/bD92rOKz61C4Oq3TaI72/+vvQWffVjhOuvO+zn7lXcdj2iZ1We6L31/+ETx30Xb/h1/tn+5l7FUV0u3TaA71vngA+2dto3dsOwvvlcvmlb3pZLBZx7+/t3+12+L0ezybUnud9U2NHCb0NX0F4D2E6ndYPwHv9klx7nPexFyMjFbd+1r336/V6s9nUj8F7tX9JUu1H5f2rf5wI7zM+v6+NP5/PafKEEP62V+tcWu3lvRHZvb8ZnyxPCMHE+xzaj8r7UTzPSe/9g/HJ8oQQLJ7nZNFe3huRxftO45PlCSEYeJ9He5z3sRcBRvF6ThrvI8Yny1Pzh71CyKY9z/v+t6deau3C+5fGJ8tz5fO9mjOwvTK/X/vURt/1G//c+7IshxifLE/Dx3tl1J7ofU9hr2v8596/xRj2yqg90vvOm/l0P+ZbjGavPNpDvX+8n/vh7u4eBr8/+AV8e//RXjm1x3ofQvvzJNF+uj/LkLRS796H8MZev6dzaY/2fkzQ+qHloSHvbaD1Q8tDQ97bQOuHloeGvLeB1g8tDw15bwOtH1oeGvLeBlo/tDw05L0NtH5oeWjIexto/dDy0JD3NtD6oeWhIe9toPVDy0Pjbe+/9/0wo2Y+n6M8015xInt1ey/i0LwXceS9DfJ+XLzwXggnyHvhEXkvPCLvhUfkvfCIvBcekffCI/JeeETeC4/Ie+EReS88Iu+FR34AV9vJgglZ8jEAAAAASUVORK5CYII=" alt=""></td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Número</p>
+<p class="Tabela_Texto_Centralizado">do</p>
+<p class="Tabela_Texto_Centralizado">&nbsp;Grupo</p>
+</td>
+<td class="formata-tabela" style="text-align: center;">Quantidade de Corpos-de-prova</td>
+<td class="formata-tabela">Constituição do corpo-de-prova</td>
+<td class="formata-tabela">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Seqüência de ensaios</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">(Conforme números de referência da Tabela 2)</p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">03</td>
+<td class="formata-tabela" style="text-align: center;">07</td>
+<td class="formata-tabela">
+<p class="Tabela_Texto_Alinhado_Esquerda">O interessado deve fornecer 3 amostras de conectores machos e 3 de conectores fêmeas montados em 6 segmentos de cabos coaxiais idênticos, com comprimento de 100&nbsp;mm ± 3&nbsp;mm, conforme instrução abaixo:</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">&nbsp;</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">Preparar todas as extremidades para receber um conector, de forma idêntica e, em seguida, montar um conector em cada segmento.</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">Um segmento de cabo com 200&nbsp;mm ± 3&nbsp;mm deve ser preparado de forma idêntica aos demais, porém sem conectores, e apresentado para servir de referência no cálculo da resistência de contato do condutor central/cabo.</p>
+</td>
+<td class="formata-tabela"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAY4AAAFgCAIAAAAjKAnZAAAZEElEQVR4nO3dIXciSRfG8ZYrXpGPgFwZmcPJOYsct+NGDoqVG7cyYj8A+BHIyDgsYj8AZzQCOTIysl7RQIDuLqpIcesp+v+T0JlTc2/V0wU0TeUAQF6VewAAcB5RBaAARBWAAhBVAApAVAEoQEtUbTabZ5wzn8/Nm9WOfoWgX2Vp9qslqpbLZYVzRqORxbwOQL9C0K+yNPvVGVWDwSB3sIoaj8etpcyFfvnRr7J09aszqnRaq0atPmrjUaNWH7XxqOmqD1EVTa0+auNRo1YftfGoIaqSUauP2njUqNVHbTxqiKpk1OqjNh41avVRG48aoioZtfqojUeNWn3UxqOGqEpGrT5q41GjVh+18aghqpJRq4/aeNSo1UdtPGqIqmTU6qM2HjVq9VEbjxqiKhm1+qiNR41afdTGo4aoSkatPmrjUaNWH7XxqCGqklGrj9p41KjVR208aoiqZNTqozYeNWr1URuPGqIqGYP6vL6+So2naPSrLERVMgb1GQwGg8Eg8BZL9MuPfpWFqErGZurXd+0JWQD0y49+lYWoSsZy6ocsAPrlR7/KUkBULSb7Xg9n63NHr2fD+tjJwmJwB+ynvn8B6Pfr4MgMDaNftbj1dfp3dl3Tjqo6d/YFXEw85dxnVKaZn23qdy0A7X4dx9QlS+Wz6FfU+mr7S6Jqq57NR6ULSPJdEXsWVc0FINyv9Wx49OjHacYwrOjXRevLuaNtAVG1L8dJKdofbTnCPqp+/PhRXfne2Hd3d/6pf7gAdPu1mDQTadc2u6yiXxetL+fWs+FwtjBfZrJRtX2B0Ji5XY/vZYuqx8fHkHlp5suXL5Vkv9brtt6FLJKk6Fd14foaztYZlplqVO3eymh/7eCrZbaoenl5qTTO0qPRaLlcFtKvowMt36yiXxf0azHZPkNUbe0q2VKwziJv9fq9qnrSm41n7xP9OjjO9F11+hXfr4MeEVU13+cLniof/W3Poupw0puNZ+cz/dr9A7Y55ehXdL+OTiZEVc1XynOvKHoXVc1JbzaenRT9Mm8Z/Yrq12JydDRRVSOq2p1M/a5JbzaenQv7dXopnKerV0C/wvu1ng1PjiWqarwAbLef+v5JbzaenU++ADyKLLOwol+h/WoGFVG1Q1S1GwwGIZPebDw7n36v6uA4s6yiX2H9agsqomrP8zFEnz8BXK1WUuPZ+0S/LjkyCfoV1K/Wb0A1GJxfRKOq+0q0s0l0y1EVpZB+Nf6RG9pVRRHtF1F1zrZCjRne9fgeUbVVSL8ax1o1jn59pl+8APzQXrPzlSSqtgrp18nBdh8B0q/P9IuoOtRyku35nRWiFNKvvfVsaHq9Ov36TL+IqmPH99M5ubtOh9BPnJLr/dQP7Ffrx0+2GyrnHP1yl62voz8lqg4dXnTjrUv7+3/5S5mLbr9aOmW+B6ZfW8Hrq/3P8q8vnagqhlp91MajRq0+auNRQ1Qlo1YftfGoUauP2njUEFXJqNVHbTxq1OqjNh41RFUyavVRG48atfqojUcNUZWMWn3UxqNGrT5q41FDVCWjVh+18ahRq4/aeNQQVcmo1UdtPGrU6qM2HjVEVTJq9VEbjxq1+qiNRw1RlYxafdTGo0atPmrjWa1WrT9YnwtRlYxafdTGo0atPmrjeXh4qKrq169fuQeyFR1VV/3dtKKNx2OpqUa//OiXX/0jhn///XfugWx19aszquCnNvXhR7/KEhRVm80md7AWQOflPf0KQb+6qO2qas1+tUQVgP6of25ns9nkHsgZRBXQa0QVgAIQVQAKQFQBKABRBaAARBWAAhBVAApAVAEoAFEFoABEFYACEFUACkBUASgAUQWgAEQVgAIQVQAKQFQBKABRBaAARBWAAhBVAApAVAEoAFEFoABEFYACEFUACkBUASgAUQWgAEQVgAIQVQAKQFQB0PLy8vLccHd3V1XV09NT86n39/fcQ/5AVAF98fr6WgX7+vVr7vEeIaqAHrm/vw+MqtVqlXuwR4gqoEcCN1ZqWypHVAF9E7KxUttSOaIK6JuzGyvBLZUjqoAe8m+sBLdUjqgCesizsdLcUjmiCuinro2V5pbKEVVAP7VurGS3VI6oAnqrubGS3VI5ogrorZONlfKWyhFVQJ8dbqyUt1SOqAL6bL+xEt9SOaIK6Ll6YyW+pXJEFdBzr6+v+lsqR1QB0L+vnmuNqre3tyXO0dkwT6fT5k3RcOLt7S13o7Y2m03uYhRgPp+f1K0lqpbLpef7QaiNRiOLeR2gvuEs/HQ2DqyvEM311RlVd3d3I7Sp34YciUVV6w1n8by7Ia9aVA0Gg9yFETUej+OiSmcpqlGrTym38c9FrT5q80dNV32Iqmhq9VFbimrU6qM2f9QQVcmo1UdtKapRq4/a/FFDVCWjVh+1pahGrT5q80cNUZWMWn3UlqIatfqozR81RFUyavVRW4pq1OqjNn/UEFXJqNVHbSmqUauP2vxRQ1Qlo1YftaWoRq0+avNHDVGVjFp91JaiGrX6qM0fNURVMmr1UVuKatTqozZ/1BBVyajVR20pqlGrj9r8UUNUJaNWH7WlqEatPmrzRw1RlYxafdSWohq1+qjNHzVEVTJq9VFbimrU6qM2f9QQVcnE1me5XF71vm5qS1FNbH2u3S/Wlx9RlUx4fZbL5Wg0unaOEFV+4fWx6Rfry6+EqFrPhlVVVVU1WZw9djGpdoaztcHgPoTUZz/pa7cXVZfWP0PfQupj2a9c6yuq9AcHWzdMOqr2GVWFRFV99L5ui4lxXPnrczLpbzCqLqv/R48DTkRJ+etj368MURXbstMFaXlm0Y6qnV2FfJO5jvujutUPma2Arvq0Tvqbi6pL6r/rq/X+t9ZVn1z9Ml9f0S1bTMzPJwduJKq2R5wc0P7otTTr45n0NxZVF9R/+2SemHKurT55+2W8vqJbtp4N8zXL3UpUbV9BNyrZ9fhVHNbn7KS/raiKr//2mYwn6aP6KPTLdn1FtyzvlsrdSFTt3utrPG/6CqOuz/39fcikr13152TsfpEltv7ZN1TOuV1Uvby8iPTr+/fvduvrwpZ5l+GV3UJU7creffI2qe5S8nfcfv78ee3/eGz9BXZUzqn+TuLj46PB//3Clh0yP9HcQFT5rmXwtCS5uj4PDw/1D5aFuIldVWT9D5p58oGScXbVUfXff/+J9MtwVxW7ZNbr9elfmi2rvRuPKstXgIf12Ww2IQvgJt6riqv/4Vz/eHR/1jac/If1UeiX4fr67JI5aKLd+YWoSqZZn7MLoIdR5Xvb1jasmvXJ26+Cosq5DP268aiyfwHYrI9nAdx8VDXq72llzJcSUuiqT65+iURV+JIx/XydqErIX5/WBdDbqGrth/EVof762PeruKjKft1iraCo8n3MZ/8JoL8+JwvgJqIqqv7e6xRsT9Mh9bHsl+X6SrRk6m4SVR8Cr6tqTvGQb+QkE16f/QK4jaiKqr/vSgXb663C62PTL9P1lWjJLCa8ADwSerV643nTK3hi67PZbG7lflUx9ff0xPYFRWx9rt2vLFerf27JrGdD3lY/cj7p2wtse61hvvq0s/wOYEz9O7ty8j3/a1O7n5fx/EmwZNazIRcrHAu/s0LL+Tv7nRVyyXFnhbD6t3yl3xm/8eF6H1UxLVvPhu1nFsurdouIqrAPJY5PysanaNf3qIqrf+NdKeucckSVC23Zx7dqji6PU7l1pUZUtd1zMOgOSKbbqa2+R5VzcfXP+7UaomorpGXNW+pl+AKndlQVRa0+aktRjVp91OaPGqIqGbX6qC1FNWr1UZs/aoiqZNTqo7YU1ajVR23+qCGqklGrj9pSVKNWH7X5o4aoSkatPmpLUY1afdTmjxqiKhm1+qgtRTVq9VGbP2qIqmTU6qO2FNWo1Udt/qghqpJRq4/aUlSjVh+1+aOGqEpGrT5qS1GNWn3U5o8aoioZtfqoLUU1avVRmz9qoqPq/v5+qeHHjx///PNP7lF8mE6nUlOtXopX/ZGVotn9TmKY5XJZVdVgMMhdGFH1LcMiogp+alEFP7Wogl9QVK1Wq5GS3377raqqh4eH3AM58vT0ZDKxz5tOp7lPhAW46t3yomw2m9zFKMB8Pj+pW0tUqVF7rwGAPaIKQAGIKgAFIKoAFICoAlAAogpAAYgqAAUgqgAUgKgCUACiCkABiCoABSCqABSAqAJQAKIKQAGIKgAFIKoAFICoAlAAogpAAYgqAAUgqgAUgKgCUACiCkABiCoABSCqABSAqAJQAKIKQAGIKgAFIKoAFICoAlAAogpAAbSi6uXl5bnh7u6uqqqnp6fmU+/v77mHDMCCVlS9vr5Wwb5+/Zp7vACMaEWVc+7+/j4wqlarVe7BAjAiF1WBGyu2VECvyEWVC9tYsaUCekUxqs5urNhSAX2jGFXu3MaKLRXQN6JR5dlYsaUCekg0qlz3xootFdBDulHVurFiSwX0k25UubaNFVsqoJ+ko+pkY8WWCugt6ahyxxsrtlRAb6lH1X5jxZYKt2E6nTa/eI8Tb29vJ3VTjyq321ixpcJtqG9qBL/mTZ9aomqz2SyV/Pvvv4+Pj7lHcUrn/lmbzSb3KbAA8/k8d6O26qhqvakRnnc3fQqKqufn58yJWoLn52eDaR1iuVzmLkYBRqNR7kZtcatIv676dEbVYDAYoU1dSrWoGgwGOU+FwsbjMVFVkOioepZZimrU6lNHlc5SVKNWH6LKj6hKRq0+aktRjVp9iCo/oioZtfqoLUU1avUhqvyIqmTU6qO2FNWo1Yeo8iOqklGrj9pSVKNWH6LKj6hKRq0+aktRjVp9iCo/oioZtfqoLUU1avUhqvyIqmTU6qO2FNWo1Yeo8iOqklGrj9pSVKNWH6LKj6hKRq0+aktRjVp9iCo/oioZtfqoLUU1avUhqvyIqmTU6qO2FNWo1Yeo8iOqklGrj9pSVKNWH6LKj6hKRq0+aktRjVp9iCo/oioZg/q8vr6GH6y2FNUY1CeqX1miajGpdoazdeCRVVVNFlYj3COqkjGoz2AwGAwGgTeuJKr8DOoT1S/rqFrPhocBtZh0x9VxTIVFW3IlRFVd08Aojzo4KZuoqv9zIQsgV1SFn6idy9kvm6gK75dtVNVdOmpQ/VCjD+vZ8OjRfceMw0o6qj6KEjCbow6+BsuoClkAGaIq4kSdv1+WURXSL8uo2hb/pOatjy4mzQ7uemeaVdJRtbOrTNBsjjo4Jfuo8i8A86gKP1EfytYv+6jy98swqrYb30bStDy+XrelUXvUXRdRlUyuqOpaAMZRFXGibjuiP1HV1S+7qNq9RG9/rdeWYafWs6H5m1VEVTJ5o6q5AGyjKuJEfaynUdXsl1lU7ZKqpSedIdY8zvpddaIqnbo+f/zxx/PV1D+Fdla9AEyj6vITdbZ+/fjxo7ryL/pE9csqqnwfZHhS7OgfMM8pR1Ql9Cz2O4lfvnyprKLqEyfqbP16fHzM05gO//vf/6rcUXXuxHLwWYh5v4iqZJ5ldlWj0aj+qefKKKo+c6LO1q+Xl5dKY1dV90thV+WJqtNPbD0tvQ6iKhmD+px976Oe9PXBIlEVeqLu5XtVh/1SiKqAF4BHkWUZVkRVMnmj6nDS14gqv7xR1exXIVF1dJxlVhFVyeSKquakr4lElewLwFxR1dUv808APc0634zwI1MhqpKxj6quSV8jqvzso8rfL/PrqrqvQg/pRcsFv9dFVCVjGVX+SV+zvFjhEyfqXkRVSL/sr1ZvlLzr8e5/w7BrRFUyNlEVMulrOa6ruuBEfeNRFd4vy+8AtmdSTFK5xYTvADYRVVur1Sr84CxXq8efqG85qqL6lePOCkdFj9knrWdDvljTgqi6hPF3AC89Ud9yVEXJe7+qk5tiHB900h7zDZVzjqhKqOdRdemJmqjaynEX0MOLpDoa0HJbvQy3AHWFRFXo1R7xB6fU+6gKPFGfyNYvoqos2lHVeqPUiPg3PQMQVc65oBN1LXe/iKqyaEdVUdTqo7YU1ajVh6jyI6qSUauP2lJUo1YfosqPqEpGrT5qS1GNWn2IKj+iKhm1+qgtRTVq9SGq/IiqZNTqo7YU1ajVh6jyI6qSUauP2lJUo1YfosqPqEpGrT5qS1GNWn2IKj+iKhm1+qgtRTVq9SGq/IiqZNTqo7YU1ajVp16KT09Pz2hT36ieqEpArT5qS1GNWn3O3ogdVVRUjcfjJdqMx+NKL6qu+ossRav7pRNV0+k0d0mO/PXXX3/++WfuUZx6e3s7qVtnVMHvWSyq4KcTVWoeHh6qqvr161fugZzRElXz+XyEc/a/653dZrPJewIsgk6/1JTyNn9LVAHoD6IKQAGIKgAFIKoAFICoAlAAogpAAYgqAAUgqgAUgKgCUACiCkABiCoABSCqABSAqAJQAKIKQAGIKgAFIKoAFICoAlAAogpAAYgqAAUgqgAUgKgCUACiCkABiCoABSCqABSAqAJQAKIKQAGIKgAFIKoAFICoAlAAogpAAYgqAFpeXl6eG+7u7qqqenp6aj71/v6ee8gfiCqgL15fX6tgX79+zT3eI0QV0CP39/eBUbVarXIP9ghRBfRI4MZKbUvliCqgb0I2VmpbKkdUAX1zdmMluKVyRBXQQ/6NleCWyhFVQA95NlaaWypHVAH91LWx0txSOaIK6KfWjZXslsoRVUBvNTdWslsqR1QBvXWysVLeUjmiCuizw42V8pbKEVWAsel02vxicC7fvn2rc+r333/PPZYjb29vJ3UjqgBT9U1X4Ne8KU1LVG02m9yRWoD5fG4wrUPQrxA6/aqjqvWmK1l8+/ZNaktV35QmKKqWy2XmRC3BaDSymNcB6FcInX4J3spOajBd9emMqsFgkDteRY3HY6mpT7/81PolGFVSoqNKp7Vq1OqjNh41avUhqvyIqmTU6qM2HjVq9SGq/IiqZNTqozYeNWr1Iar8iKpk1OqjNh41avUhqvyIqmTU6qM2HjVq9SGq/IiqZNTqozYeNWr1Iar8iKpk1OqjNh41avUhqvyIqmTU6qM2HjVq9SGq/IiqZNTqozYeNWr1Iar8iKpk1OqjNh41avUhqvyIqmTU6qM2HjVq9SGq/IiqZNTqozYeNWr1Iar8iKpk1OqjNh41avUhqvyIqmTU6qM2HjVq9SGq/IiqZGLrs1wum3dfzTievlHrV5aoWkyqneFsHft3k8X1RtZAVCUTXp/lcjkaja49L+mXn1q/rKNqPRseBtRiEhxX9V8SVQ2fC/74v7tUSH32k752k1EVVfeDg227pdcv26iqC39U6sCd0j6oiKoDlwX/Ry1NS+mvz8mkv82oiu3Xway3Diq9fllG1bbwJ+uj/dHGXw5ni23fiKqtS4J/N/nNJvyHrvq0TvpbjKrofi0mtpP9mFq/DKNqu5dtLJKux/fWs+Fwtt6vMqLKOXdR8G+fzBBTzrXVxzPpby+qovu1nfbZqPXLLqp2r7obXTlzol9Mts8QVYfig3/7TLbz9GF9zk76m4uq6H7l3VI5vX6ZRdUuqbrXUGtn9kFFVB2JDf68Gyrn3K4+9/f3IZO+dtUfffv+/bt8v+wn/Ae1fnX9zl1qvs/vulPsIKiIqkOxwZ97R+Wc6u/uPT4+GvzfL+zXIfOzjGa/fv78eeX/ty+qul4BnmyBiaq9yOA/qNzJZ0qWtazr8/DwUP/AXIhb2VXFnqjX69Pzc/OYq1Prl8KuqjWq1rPhybFE1V5cNQ+n+8ej+xO31fw/rM9mswlZALfyXtUlJ+rWv7ec/Wr9snqv6oJ9wOmRRNVe3NT3vXNrGFbN+pxdAETVB9tmOb1+SUZVW1ARVQeiq3lmmZjUtKs+ngXQh6gKj6CzV/WkpdYv808APc3aPdX2ZYImm47dTlS11svyilB/fVoXAFHV9s8YnavV+mV+XVWzI42zPlF1VkTw+69TMDxTh9TnZAHcSlRF9cujbqVEVNUs+2V/tXqj0KEfpPMC8EB48PsLbHi9VXh99gvgZqIqql9n/pncLwCbbPpl+R3A9iUTfMkPUXUoJvg9JTZ8TRFbn81mc0P3q/rsido5V3dL5OvKTdfuV447K7Qso/DdL1G1FRP8nevh5Kv+V5XhTgZewv3q0P5x07Wo9Svv/aqiVgpRdSIm+Fu+1e8E3/uwJNyv9WzYflqxv2RXp1857gJ64febiKqGmOBvvCtlmlNOb+rL9uvjY6Wja+Osv1mj1i/ure6nHVXOxQV/xq/V6E194X41b6mX4dubav0iqvz0o6oYavVRG48atfoQVX5EVTJq9VEbjxq1+hBVfkRVMmr1URuPGrX6EFV+RFUyavVRG48atfoQVX5EVTJq9VEbjxq1+hBVfkRVMmr1URuPGrX6EFV+RFUyavVRG48atfoQVX5EVTJq9VEbjxq1+hBVfkRVMmr1URuPGrX61EvxqrdvL1rXveeJqmhq9VEbjxq1+tRRBb+IqBoMBrnjVVR9SyOdqU+//NT6NZ1Oc5ekAM378HRGFfx0pj79CqHTL1ymJao2m03uSC3AfD43b1Y7+hVCp1+4TEtUAYAaogpAAYgqAAUgqgAUgKgCUACiCkABiCoABfg/zsanOv0f9MkAAAAASUVORK5CYII=" alt=""></td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">04</td>
+<td class="formata-tabela" style="text-align: center;">07</td>
+<td class="formata-tabela">
+<p class="Tabela_Texto_Alinhado_Esquerda">O interessado deve fornecer 3 amostras de conectores machos, 3 de conectores fêmeas montados em 6 segmentos de cabos coaxiais idênticos, com comprimento de 100&nbsp;mm&nbsp;±&nbsp;3&nbsp;mm, conforme instrução abaixo:</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">Preparar todas as extremidades para receber um conector, de forma idêntica e, em seguida, montar um conector em cada segmento. Um segmento de cabo com 200&nbsp;mm&nbsp;±&nbsp;3&nbsp;mm deve ser preparado de forma idêntica aos demais, porém sem conectores, e apresentado para servir de referência no cálculo da resistência de contato do condutor central/cabo</p>
+</td>
+<td class="formata-tabela"><img src="data:image/png;base64,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" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><a name="tabela3"></a>&nbsp;Tabela 3 – Grupos de Ensaios</p>
+<p class="Texto_Justificado texto-recuo-1a-linha">NOTAS:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha">1)&nbsp;Nos casos em que a categoria do índice de proteção (estanqueidade) do conector seja menor que IP 68 M, conforme IEC 60529, é admitida a utilização de material termo-contrátil ou material semelhante sobre a junção do conector com o cabo, para os ensaios de condicionamento climáticos.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha">2)&nbsp;O interessado deve fornecer:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha">-&nbsp;material de proteção termo-contrátil, na bitola do cabo utilizado, para ser colocado na extremidade livre (sem conector) de todas as amostras com a finalidade de protegê-las durante os ensaios climáticos;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha">-&nbsp;as especificações dos cabos utilizados na montagem dos corpos-de-prova.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha">3)&nbsp;Para a realização do ensaio de COE, o interessado pode fornecer o kit de calibração compatível com o conector a ser testado, quando o laboratório não o possuir.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">&nbsp;</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,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" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Figura 1</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="item7"></a>7.&nbsp;IDENTIFICAÇÃO DA HOMOLOGAÇÃO&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item7.1"></a>7.1.&nbsp;A marcação do selo Anatel e a identificação do código de homologação devem ser apresentadas na embalagem externa do produto em conformidade com a regulamentação vigente. Também podem ser utilizados, opcionalmente, meios de impressão gráfica nos catálogos dos produtos ou na documentação técnica pertinente.&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item7.2"></a>7.2.&nbsp;Opcionalmente, pode ser impressa de forma legível na embalagem externa, a identificação alfanumérica da homologação do produto, da seguinte forma:&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">ANATEL: HHHHH-AA-FFFFF&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">&nbsp;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;">Onde:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;">HHHHH – identifica a homologação do produto por meio de numeração seqüencial com 5 caracteres</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;">AA – identifica o ano de emissão da Homologação com 2 caracteres numéricos</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 30px;">FFFFF – identifica o fabricante do produto com 5 caracteres numéricos</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1177"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20técnicos" class="link-categoria">Requisitos técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação" class="link-categoria">Avaliação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Conectores" class="link-categoria">Conectores</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Cabo%20Coaxial" class="link-categoria">Cabo Coaxial</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

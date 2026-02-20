@@ -1,0 +1,2180 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 959, de 08 de fevereiro de 2018 (REVOGADO)</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1185-ato-959">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Requisitos técnicos, Produto, Cabos Coaxiais Rígidos, AtoRevogado">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovar os requisitos técnicos relativos ao produto &quot;Cabos Coaxiais Rígidos de 75 Ohms&quot;, conforme o Anexo I deste Ato.">
+	<title>Anatel - Ato nº 959, de 08 de fevereiro de 2018 (REVOGADO)</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=2115203229" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1334043594" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=21497843" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141758" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2018">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2018">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2018">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2018" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2018" class="pathway">2018</a> <span class="separator">&gt;</span> <span>Ato nº 959, de 08 de fevereiro de 2018 (REVOGADO)</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;94905e157f0ccb34&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 959, de 08 de fevereiro de 2018 (REVOGADO)		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 09 Fevereiro 2018 10:28			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Terça, 23 Maio 2023 10:26			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 7896			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;Revogado pelo <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1767-ato-14040">Ato nº 14040, de 05 de outubro de 2022</a></td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico em<a title="Acesse o Boletim de Serviço Eletrônico" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=2787806&amp;id_orgao_publicacao=0">&nbsp;9/2/2018</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL,&nbsp;</b>no uso das atribuições que lhe foram conferidas pela <a title="Acesse a Portaria" href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, e</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472#art19">Art. 19</a> da Lei n.º 9.472/97 – Lei Geral de Telecomunicações;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">CONSIDERANDO o Inciso II do <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/15-2000/129-resolucao-242#art9">Art. 9º </a>do Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela Resolução n.º 242, de 30 de novembro de 2000;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">CONSIDERANDO&nbsp;o <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419#art1">Art. 1º</a> da Portaria nº 419 de 24 de maio de 2013;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlIM49sbcXe2J-j0HsIRRln-Tte_vhnpxWnTdsdKPXqsL">processo nº 53500.002431/2018-73</a>;</span></p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha texto-recuo-1a-linha"><span style="text-decoration: line-through;">RESOLVE:</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1"></a><span style="text-decoration: line-through;">Art. 1º&nbsp; Aprovar os requisitos técnicos relativos ao produto "Cabos Coaxiais Rígidos de 75 Ohms", conforme o <a title="Acesse o Anexo" href="#anexoI">Anexo I</a> deste Ato.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2"></a><span style="text-decoration: line-through;">Art. 2º Este Ato entra em vigor&nbsp;no dia 12 de fevereiro de 2018.</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">VITOR ELISIO GOES DE OLIVEIRA MENEZES</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">Superintendente de Outorga e Recursos à Prestação</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="anexoI"></a><span style="text-decoration: line-through;">ANEXO I</span></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><span style="text-decoration: line-through;"><strong>REQUISITOS TÉCNICOS PARA A AVALIAÇÃO DA CONFORMIDADE E HOMOLOGAÇÃO&nbsp;DE CABOS COAXIAIS RÍGIDOS DE 75 OHMS</strong></span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="item1"></a><span style="text-decoration: line-through;">1.&nbsp;OBJETIVO</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item1.1"></a><span style="text-decoration: line-through;">1.1.&nbsp;Este documento estabelece os requisitos mínimos a serem demonstrados na avaliação da conformidade de cabos coaxiais rígidos de 75 ohms, para efeito de homologação junto à Agência Nacional de Telecomunicações.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="item2"></a><span style="text-decoration: line-through;">&nbsp;2.&nbsp;ABRANGÊNCIA</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item2.1"></a><span style="text-decoration: line-through;">&nbsp;2.1.&nbsp;Este documento aplica-se aos cabos coaxiais rígidos de 75 ohms, para aplicação em redes internas e redes externas aéreas ou subterrâneas em dutos, para transmissão de sinais de banda larga e outros sinais de telecomunicações.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="item3"></a><span style="text-decoration: line-through;">3.&nbsp;REFERÊNCIAS</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item3.1"></a><span style="text-decoration: line-through;">3.1.&nbsp;Para fins deste documento, são adotadas as seguintes referências:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.1"></a><span style="text-decoration: line-through;">3.1.1.&nbsp;NBR&nbsp;8094:&nbsp;1983&nbsp;–&nbsp;Material metálico revestido e não revestido&nbsp;–&nbsp;Corrosão por exposição à névoa salina;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.2"></a><span style="text-decoration: line-through;">3.1.2.&nbsp;NBR&nbsp;9141:&nbsp;1998&nbsp;–&nbsp;Cabos ópticos e fios e cabos telefônicos&nbsp;–&nbsp;Ensaio de tração e alongamento à ruptura&nbsp;–Método de ensaio;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.3"></a><span style="text-decoration: line-through;">3.1.3.&nbsp;NBR&nbsp;9148:&nbsp;1998&nbsp;–&nbsp;Cabos ópticos e fios e cabos telefônicos&nbsp;–&nbsp;Ensaio de envelhecimento acelerado&nbsp;–&nbsp;Método de ensaio;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.4"></a><span style="text-decoration: line-through;">3.1.4.&nbsp;NBR&nbsp;9149:&nbsp;1998&nbsp;–&nbsp;Cabos telefônicos&nbsp;–&nbsp;Ensaio de escoamento de composto de enchimento&nbsp;–&nbsp;Método de ensaio;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.5"></a><span style="text-decoration: line-through;">3.1.5.&nbsp;NBR&nbsp;13977:&nbsp;1997&nbsp;–&nbsp;Cabos ópticos&nbsp;–&nbsp;Determinação do tempo de indução oxidativa (OIT)&nbsp;–&nbsp;Método de ensaio;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.6"></a><span style="text-decoration: line-through;">3.1.6.&nbsp;NBR 14705: 2006&nbsp;–&nbsp;Classificação de cabos internos para telecomunicações quanto ao comportamento frente à chama – Especificação;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.7"></a><span style="text-decoration: line-through;">3.1.7.&nbsp;NBRNM-IEC-60811-1-1 - Métodos de ensaios comuns para os materiais de isolação e de cobertura de cabos elétricos - Parte 1: Métodos para aplicação geral - Capítulo 1: Medição de espessuras e dimensões externas - Ensaios para a determinação das propriedades mecânicas.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.8"></a><span style="text-decoration: line-through;">3.1.8.&nbsp;NBR NM-IEC-60811-1-3 - Métodos de ensaios comuns para os materiais de isolação e de cobertura de cabos elétricos - Parte 1: Métodos para aplicação geral - Capítulo 3: Métodos para determinação de densidade de Massa - Ensaios de absorção de água – Ensaio de retração</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.9"></a><span style="text-decoration: line-through;">3.1.9.&nbsp;ASTM A 641: 1998 – Specification For Zinc-Coated (Galvanized) Carbon Steel Wire;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.10"></a><span style="text-decoration: line-through;">3.1.10.&nbsp;ASTM D 1603:&nbsp;1994&nbsp;–&nbsp;Standard Test Method for Carbon Black in Olefin Plastics;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.11"></a><span style="text-decoration: line-through;">3.1.11.&nbsp;ASTM D 3349:&nbsp;1999&nbsp;–&nbsp;Standard Test Method for Absorption of Ettylene Polymer Material Pigmented With Carbon Black;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.12"></a><span style="text-decoration: line-through;">3.1.12.&nbsp;ASTM&nbsp;D&nbsp;746:&nbsp;1998&nbsp;–&nbsp;Standard Test Method for Brittleness Temperature of Plastics and Elastomers by Impact;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.13"></a><span style="text-decoration: line-through;">3.1.13.&nbsp;ASTM&nbsp;D&nbsp;1505:&nbsp;1998&nbsp;–&nbsp;Standard Test Method for Density of Plastics by the Density-Gradient Technique;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.14"></a><span style="text-decoration: line-through;">3.1.14.&nbsp;ASTM&nbsp;D&nbsp;4565:&nbsp;1999&nbsp;–&nbsp;Standard Test Methods for Physical and Environmental Performance Properties of Insulations and Jackets for Telecommunications Wire and Cable;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.15"></a><span style="text-decoration: line-through;">3.1.15.&nbsp;ASTM D 4566: 1998 Standard Test Methods for Electrical Performance Properties of Insulations and Jackets for Telecommunications Wire and Cable;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.16"></a><span style="text-decoration: line-through;">3.1.16.&nbsp;ANSI/SCTE 66 2003&nbsp;–&nbsp;Test Method for Coaxial Cable Impedance;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.17"></a><span style="text-decoration: line-through;">3.1.17.&nbsp;ANSI/SCTE 69 2002 – Test Method for Moisture Inhibitor Corrosion Resistance</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.18"></a><span style="text-decoration: line-through;">3.1.18.&nbsp;ANSI/SCTE 03 1997&nbsp;–&nbsp;Test Method for Coaxial Cable Structural Return Loss;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.19"></a><span style="text-decoration: line-through;">3.1.19.&nbsp;ANSI/SCTE&nbsp; 44 2005&nbsp;–&nbsp;Test Method for DC Loop Resistance;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.20"></a><span style="text-decoration: line-through;">3.1.20.&nbsp;CTE&nbsp;IPS&nbsp;TP&nbsp;009 1993 – Test Method for Coaxial Cable Attenuation;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.21"></a><span style="text-decoration: line-through;">3.1.21.&nbsp;ANSI SCTE 108 2006&nbsp;–&nbsp;Test Method for Dielectric Withstand of Coaxial Cable;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.22"></a><span style="text-decoration: line-through;">3.1.22.&nbsp;ANSI/SCTE&nbsp;12 2001R2006&nbsp;–&nbsp;Test Method for Center Conductor Bond to Dielectric for Trunk, Feeder, and Distribution Coaxial Cables;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.23"></a><span style="text-decoration: line-through;">3.1.23.&nbsp;IEC&nbsp;61196-1:&nbsp;1995&nbsp;–&nbsp;Generic Specification&nbsp;–&nbsp;General definitions, requirements and test methods.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="item4"></a><span style="text-decoration: line-through;">4.&nbsp;DEFINIÇÕES</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item4.1"></a><span style="text-decoration: line-through;">4.1.&nbsp;Para fins deste documento, são adotadas as seguintes definições:</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.1"></a><span style="text-decoration: line-through;">4.1.1.&nbsp;Condutor externo (blindagem):&nbsp;consiste de um tubo de alumínio contínuo extrudado ou soldado. Materiais alternativos para o condutor externo poderão ser utilizados desde que aperfeiçoem a eficiência do cabo</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.2"></a><span style="text-decoration: line-through;">4.1.2.&nbsp;Composto vedante (opcional):&nbsp;material de consistência gelatinosa, não higroscópico, que pode ser aplicado no cabo coaxial rígido com o objetivo de protegê-lo contra a corrosão e de bloquear a penetração de umidade;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.3"></a><span style="text-decoration: line-through;">4.1.3.&nbsp;Dielétrico:&nbsp;camada de material polimérico aplicada sobre o condutor central;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.4"></a><span style="text-decoration: line-through;">4.1.4.&nbsp;Jaqueta:&nbsp;camada de material polimérico aplicada sobre o condutor externo atuando como revestimento externo nos cabos sem armação;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.5"></a><span style="text-decoration: line-through;">4.1.5.&nbsp;Armação (opcional): proteção mecânica constituída de material metálico, aplicada sobre a jaqueta;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.6"></a><span style="text-decoration: line-through;">4.1.6.&nbsp;Capa externa: camada de material polimérico aplicada sobre a armação atuando como revestimento externo;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.7"></a><span style="text-decoration: line-through;">4.1.7.&nbsp;Lance:&nbsp;comprimento contínuo sem emendas;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.8"></a><span style="text-decoration: line-through;">4.1.8.&nbsp;Núcleo do cabo: conjunto formado pelo condutor central e dielétrico;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.9"></a><span style="text-decoration: line-through;">4.1.9.&nbsp;Família de cabos:&nbsp;conjunto de cabos com as mesmas características construtivas em relação ao condutor externo (soldado ou extrudado).</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="item5"></a><span style="text-decoration: line-through;">5.&nbsp;REQUISITOS GERAIS</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.1"></a><span style="text-decoration: line-through;">5.1.&nbsp;O cabo coaxial rígido de 75 ohms é constituído, no mínimo, por um condutor central de alumínio cobreado, uma camada de material polimérico expandido aplicada concentricamente sobre o condutor central, um condutor externo tubular de alumínio ou de cobre e sobre este uma jaqueta de material polimérico.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.2"></a><span style="text-decoration: line-through;">5.2.&nbsp;O condutor central deve ser em alumínio com uma camada de cobre uniformemente distribuída na superfície.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.3"></a><span style="text-decoration: line-through;">5.3.&nbsp;A camada de cobre deve ser metalurgicamente aderida e cobrir totalmente o núcleo de alumínio anteriormente processado.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.4"></a><span style="text-decoration: line-through;">5.4.&nbsp;O dielétrico deve ser constituído de material polimérico expandido.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.5"></a><span style="text-decoration: line-through;">5.5.&nbsp;O dielétrico deve ser aderido ao condutor central por um pré-revestimento de material adesivo.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.6"></a><span style="text-decoration: line-through;">5.6.&nbsp;O condutor externo deve ser perfeitamente fechado e aderido em torno do núcleo do cabo.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.7"></a><span style="text-decoration: line-through;">5.7.&nbsp;A jaqueta e a capa externa, quando houver, devem ser constituídas de material termoplástico, contendo aditivos adequados, que atendam os requisitos deste documento e garantam o bom desempenho do cabo durante sua vida útil.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.8"></a><span style="text-decoration: line-through;">5.8.&nbsp;O revestimento externo deve ser contínuo, homogêneo e isento de imperfeições.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.9"></a><span style="text-decoration: line-through;">5.9.&nbsp;O cabo coaxial rígido poderá ter aplicado entre o condutor externo e a jaqueta, ou entre a armação e a capa externa, quando houver, um composto vedante constituído de material não higroscópico, cujo objetivo é proporcionar proteção contra a penetração de umidade e contra a corrosão.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.10"></a><span style="text-decoration: line-through;">5.10.&nbsp;O cabo coaxial rígido poderá possuir uma armação de material metálico sobre a jaqueta, cujo objetivo é incrementar a resistência mecânica do cabo.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.11"></a><span style="text-decoration: line-through;">5.11.&nbsp;A conformação da armação poderá ser corrugada anelar ou corrugada helicoidal.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item5.12"></a><span style="text-decoration: line-through;">5.12.&nbsp;Sobre a armação deverá ser aplicada uma capa externa constituída de material polimérico, atuando como revestimento externo.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="item6"></a><span style="text-decoration: line-through;">6.&nbsp;REQUISITOS ESPECÍFICOS E MÉTODOS DE ENSAIO</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.1"></a><span style="text-decoration: line-through;">6.1.&nbsp;Requisitos e métodos de ensaio para o condutor central</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.1.1"></a><span style="text-decoration: line-through;">6.1.1.&nbsp;O diâmetro do condutor central deve ser conforme tabela&nbsp;1, e deve ser verificado conforme o seguinte procedimento:</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">a)&nbsp;Utilizar micrômetro com resolução metrologicamente adequada;</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">b)&nbsp;Devem ser tomadas duas medidas perpendiculares de uma mesma seção transversal e anotada a média aritmética dos valores obtidos.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.2"></a><span style="text-decoration: line-through;">6.2.&nbsp;Requisitos e métodos de ensaio para condutor externo</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.1"></a><span style="text-decoration: line-through;">6.2.1.&nbsp;O diâmetro sobre o condutor externo deve estar de acordo com os valores constantes na tabela 1, e deve ser verificado conforme seguinte procedimento:</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">a)&nbsp;Utilizar paquímetro com resolução metrologicamente adequada.</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">b)&nbsp;Devem ser tomadas quatro medidas, defasadas em aproximadamente 45° uma da outra, de uma mesma seção transversal e anotada a média aritmética dos valores obtidos.</span></p>
+<table class=" tamanho-padrao" width="662">
+<tbody>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Tipo de cabo</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Diâmetro do condutor central (mm)</span></p>
+<p><span style="text-decoration: line-through;">Tolerância:</span><br><span style="text-decoration: line-through;"> ± 0,03 mm</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Diâmetro sobre o condutor externo (mm)</span></p>
+<p><span style="text-decoration: line-through;">Tolerância:</span><br><span style="text-decoration: line-through;"> ± 0,05 mm</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Diâmetro sob o condutor externo (mm)</span></p>
+<p><span style="text-decoration: line-through;">(Valores</span></p>
+<p><span style="text-decoration: line-through;">nominais *)</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Espessura do condutor externo (mm)</span></p>
+<p><span style="text-decoration: line-through;">(Valores</span></p>
+<p><span style="text-decoration: line-through;">nominais *)</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">412-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">2,24</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">10,46</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">9,19</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,64</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">500-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">2,77</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">12,70</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">11,43</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,64</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">540-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">3,15</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">13,72</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">13,03</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,34</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">565-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">3,28</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">14,35</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">13,18</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,58</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">625-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">3,45</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">15,88</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">14,30</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,79</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">700-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">4,14</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">17,86</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">16,59</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,64</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">715-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">4,22</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">18,16</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">17,42</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,38</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">750-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">4,22</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">19,05</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">17,22</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,91</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">840-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">4,93</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">21,34</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">19,81</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,76</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">860-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">5,16</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">21,84</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">21,03</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,41</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">875-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">4,93</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">22,23</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">20,24</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,99</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1000-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">5,59</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">25,40</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">22,61</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,40</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1125-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">6,68</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">28,58</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">27,46</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,56</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1160-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">6,83</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">29,46</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">26,97</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,24</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;" colspan="5">
+<p><span style="text-decoration: line-through;">Nota (*): Os valores nominais são apenas de caráter informativo, não sendo necessária a sua verificação.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><a id="tabela1"></a><span style="text-decoration: line-through;">Tabela 1 – Dimensões dos condutores&nbsp;</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.3"></a><span style="text-decoration: line-through;">6.3.&nbsp;Requisitos e métodos de ensaio para a jaqueta e para a capa externa</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.1"></a><span style="text-decoration: line-through;">6.3.1.&nbsp;Os materiais da jaqueta e da capa externa deverão estar de acordo com&nbsp; as características especificadas na <a title="Acesse a Tabela" href="#tabela2">tabela 2</a>.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.2"></a><span style="text-decoration: line-through;">6.3.2.&nbsp;Caso o material do revestimento externo (jaqueta ou capa externa), possua cor preta, o mesmo deve atender aos requisitos das tabelas<a title="Acesse a Tabela" href="#tabela2"> 2</a> e <a title="Acesse a Tabela" href="#tabela3">3</a>.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.3"></a><span style="text-decoration: line-through;">6.3.3.&nbsp;O cabo coaxial rígido para aplicação em redes internas, mesmo que parcial, deve possuir revestimento externo de material retardante à chama, sendo que sua classificação deverá ser comprovada através do método de ensaio correspondente, conforme estabelecido na NBR 14705.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.4"></a><span style="text-decoration: line-through;">6.3.4.&nbsp;O diâmetro nominal de referência sobre o revestimento externo dos cabos coaxiais rígidos está informado na <a title="Acesse a Tabela" href="#tabela4">tabela 4</a>. Para esses valores, não há a necessidade de sua verificação.</span></p>
+<table class=" tamanho-padrao" style="width: 1160px;">
+<tbody>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 207px;">
+<p><span style="text-decoration: line-through;">Propriedade</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 149px;">
+<p><span style="text-decoration: line-through;">Método de ensaio</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 380px;">
+<p><span style="text-decoration: line-through;">PE</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 398px;">
+<p><span style="text-decoration: line-through;">PVC</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 207px;">
+<p><span style="text-decoration: line-through;">Densidade</span></p>
+<p><span style="text-decoration: line-through;">(g/cm<sup>3</sup>)</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 149px;">
+<p><span style="text-decoration: line-through;">ASTM D 1505</span></p>
+<p><span style="text-decoration: line-through;">ou</span></p>
+<p><span style="text-decoration: line-through;">&nbsp;NBR NM IEC 60811-1-3</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 380px;">
+<p><span style="text-decoration: line-through;">0,900 a 0,955</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 398px;">
+<p><span style="text-decoration: line-through;">1,45 (máximo)</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 207px;">
+<p><span style="text-decoration: line-through;">Tração à ruptura mínima (MPa)</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 149px;">
+<p><span style="text-decoration: line-through;">NBR 9141</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 380px;">
+<p><span style="text-decoration: line-through;">8,2</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 398px;">
+<p><span style="text-decoration: line-through;">12,40</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 207px;">
+<p><span style="text-decoration: line-through;">Alongamento mínimo (%)</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 149px;">
+<p><span style="text-decoration: line-through;">NBR 9141</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 380px;">
+<p><span style="text-decoration: line-through;">400</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 398px;">
+<p><span style="text-decoration: line-through;">250</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 207px;">
+<p><span style="text-decoration: line-through;">Retenção&nbsp;do alongamento</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 149px;">
+<p><span style="text-decoration: line-through;">NBR&nbsp;9141 e NBR 9148</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 380px;">
+<p><span style="text-decoration: line-through;">Mínimo&nbsp;de&nbsp;75&nbsp;% do&nbsp;original&nbsp;após acondicionamento a&nbsp;100 °C por 48 h</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 398px;">
+<p><span style="text-decoration: line-through;">Mínimo&nbsp;de&nbsp;50% do&nbsp;original&nbsp;após acondicionamento a&nbsp;100 °C por 168 h</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 207px;">
+<p><span style="text-decoration: line-through;">Resistência à baixa temperatura (ºC)</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 149px;">
+<p><span style="text-decoration: line-through;">ASTM D 746, método A</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 380px;">
+<p><span style="text-decoration: line-through;">-20</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 398px;">
+<p><span style="text-decoration: line-through;">-5</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><a id="tabela2"></a><span style="text-decoration: line-through;">&nbsp;Tabela 2 - Características dos materiais da jaqueta e da capa externa</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<table class=" tamanho-padrao" style="width: 1160px;">
+<tbody>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 682px;">
+<p><span style="text-decoration: line-through;">Propriedade</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 257px;">
+<p><span style="text-decoration: line-through;">Método de ensaio</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 97px;">
+<p><span style="text-decoration: line-through;">PE</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 98px;">
+<p><span style="text-decoration: line-through;">PVC</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 682px;">
+<p><span style="text-decoration: line-through;">Teor de negro de fumo mínimo (%)</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 257px;">
+<p><span style="text-decoration: line-through;">ASTM D 1603</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 97px;">
+<p><span style="text-decoration: line-through;">2,35</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 98px;">
+<p><span style="text-decoration: line-through;">1,00</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 682px;">
+<p><span style="text-decoration: line-through;">Coeficiente de absorção mínimo em 375nm (ABS/cm)</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 257px;">
+<p><span style="text-decoration: line-through;">ASTM D 3349</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 97px;">
+<p><span style="text-decoration: line-through;">4000</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 98px;">
+<p><span style="text-decoration: line-through;">2800</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><a id="tabela3"></a><span style="text-decoration: line-through;">&nbsp;Tabela 3 – Características adicionais para material da capa externa na cor preta</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<table class=" tamanho-padrao" style="width: 1160px;">
+<tbody>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">Tipo</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">Aéreo</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">Subterrâneo</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">Armado Corrugado</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">Armado Helicoidal</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">412-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">11,99</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">12,24</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">17,02</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">15,24</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">500-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">14,22</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">14,48</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">18,16</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">17,53</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">540-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">15,49</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">15,49</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">19,43</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">NE</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">565-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">15,88</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">16,13</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">NE</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">19,18</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">625-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">17,40</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">17,65</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">21,21</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">20,70</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">700-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">19,43</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">19,69</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">NE</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">22,50</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">715-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">19,94</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">19,94</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">23,75</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">NE</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">750-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">20,83</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">21,08</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">25,40</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">24,13</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">840-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">23,11</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">23,37</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">NE</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">26,42</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">860-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">24,38</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">24,38</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">28,19</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">NE</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">875-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">24,00</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">24,26</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">27,86</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">27,31</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">1000-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">27,43</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">27,69</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">32,00</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">30,73</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">1125-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">31,12</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">31,12</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">35,05</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">NE</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 129px;">
+<p><span style="text-decoration: line-through;">1160-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 130px;">
+<p><span style="text-decoration: line-through;">31,75</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 206px;">
+<p><span style="text-decoration: line-through;">32,00</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 340px;">
+<p><span style="text-decoration: line-through;">NE</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center; width: 323px;">
+<p><span style="text-decoration: line-through;">35,05</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center; width: 1128px;" colspan="5">
+<p><span style="text-decoration: line-through;">NOTA: NE = valor não especificado</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><a id="tabela4"></a><span style="text-decoration: line-through;">&nbsp;Tabela 4 - Diâmetro externo nominal (mm) de referência (*)</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.3.5"></a><span style="text-decoration: line-through;">6.3.5.&nbsp;A excentricidade da capa externa não deve ser superior a 43%, quando calculada como segue:&nbsp;</span></p>
+<p><span style="text-decoration: line-through;"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPUAAABXCAIAAABTB5TXAAAFaklEQVR4nO2d2aGDIBAArcuCqIdqbMZi8j7UyLELxHjwNjOfhBgJIy6XDi8AuwxPnwDAheA3WAa/wTL4DZbBb7AMfoNl8Bssg99gGfwGy+A3WAa/wTL4DZbBb7AMfoNl8Bssg9+/w+zHYRgGNz19IjfSrd+TGyqcVk9rvQ+jn0864qfcVNjlZ/C7G9Z6T2pk8fE0G5fDPV/rtxT21/gPfgvqTe5UvZ+X+3VPYX+Orv3WW9bJnaVkN/LcUdjfo2e/8xqffB8uXsBPFfY+OvY7q/HZj2JDFmVco9i9Uc4SAvZ+nZviSDcPe+Xw+CyaC7ufynJyURGCQwllDr+WJezfMnWz6NfvtMYnl//1e6UMbtpC6VDNyQ1uWuoxqexE4Mk7tyYEB91+MUi6JpppKWxa4tFP767D29TJbWcYhfNZAbLjhMmdRGxn0K3fkWVFt2Y/rlWb1NHWBGptcSRQ1rjto8W7M1fRXtgoe362YZmyQmb/g3ocO4L36nf2P5dbtNF7FzVVo/dOCzXEgQqhjd9u/ZfXdnthwzMTTjZKkkIe6TqvHedf06nfQjOijCIseo9jHH2Ozvk4IYnHxUgnrdamupba3g/a4o8KWzixU/22E4P36bd0l5SHE9I55+yWmxxKuf+Ket/UmLUXtnRe+C3Spd/tQWBWh1n1xFWoHFmp1NLQy2kciXjxu5Ue/a6sAwru3bLeeg3KLikjf7P30/Vz9+2FjVLxu40O/S7WeDSb/qnekt+zH8dRkHj2zs/p2Pr5My7thQ3B71b681udR8mHwCbXqPcyDJ4dfPbjOvq7jgOO4xqG77P28/7pBbX+QWHzD8PP5Cs3TqonvPD7QuqrROPaSPXOO4nbEbNGLDzWO2WbCZK/cHKVf1pY6fyH7WJMv5RnSlK2WbDScU53fP3JhoH90q+35NnpyW+wSnQxaX6Hd19lPKspTwR+w21kc8TpZ1nsFLfQLXkS8BtuQx8KFUxVegvlPBn4Dbeh6ig27EliS56cNr+jnoeZvjV8gT6cpH+i+S0PksapLXkEqn7H40W97FWEh5ln7yQTljEtP4sNqua3MkoaNc4teQSKfuc2F/3+fqUR/CvE+YdC43fIb3HmovbVNwW/BZeNLZ6Er3kP0rXc2XvyW9gPWIvl4ScRdkkUc7b6HU8HteQR0PyO111cv9C/GtjAs+hV973f9/cvs+ncypnDjxLHJxXF+xkfPLTKhv7lj5F2x472L0XfWrYVHp7fKURKGAqvlyZzUfGSjuJiOWl+vpInQY2rsnh+9iOBCqyoS9NLbWB5sCO0VzO3JU9Eafw7Xi9Juw2HyUNXUafAONXbljw7rD8By+A3WAa//wvGNo7dBH4n1PeN3a1YGLui94fgt0RpMviZfjYLN4+B3xJqLPDY0/BZ2XYM/BbQG8unXqWA3gfB7xxh6eTDr1JA76Pgd4b03KfCY3biNZbpc2qr8xjyfWLvU74fTILeR8DvlFRv6VncyTNmlsnqsPs5qe+NqO73S3qxtz2E3Cb4nSAtgpTd2laEtr83or7f79AaOdDB7xhxVaYenXzy3ojqfj95sT7ByTfgd4TQWJ703ojqfj9lK0rTU8hAA79DxAeqnvjeiMJ+P2UnCq33d+B3QHuoKz95XH9Wc3W/nzyjxJbub8Hvncpm1S/eG1FdHCVeWcHzyOEg+P2m/VUKH+td3e+Xfz770Xli72/B741L3xtR3e8XC75ov11GTy0KsAB+3/TeiOx30nZZWAZbezgTVMFvsAx+g2XwGyyD32AZ/AbL4DdYBr/BMvgNlsFvsAx+g2XwGyyD32AZ/AbL4DdYBr/BMvgNlsFvsAx+g2XwGyyD32CZP8Dk+rYmu3FGAAAAAElFTkSuQmCC" alt=""></span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 60px;"><span style="text-decoration: line-through;">Onde:&nbsp;&nbsp;<em>e</em>&nbsp;- excentricidade (%);</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 60px;"><span style="text-decoration: line-through;"><em>Emáx</em>&nbsp;- espessura máxima;</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 60px;"><span style="text-decoration: line-through;"><em>Emin</em>&nbsp;- espessura mínima;</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 60px;"><span style="text-decoration: line-through;"><em>Emed</em>&nbsp;- espessura média.(*)</span></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 60px;"><span style="text-decoration: line-through;">Nota (*): Para a medição da espessura média devem ser tomadas quatro medidas de uma mesma seção transversal, defasadas em aproximadamente 90° uma da outra a partir da menor espessura medida, e anotada a média aritmética dos valores obtidos.</span></p>
+<p class="texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item6.3.6"></a><span style="text-decoration: line-through;">6.3.6.&nbsp;A menor espessura em qualquer ponto de uma mesma seção transversal do revestimento externo não deve ser inferior ao&nbsp; estabelecido na tabela 5, e deve ser verificada conforme o método estabelecido na NBRNM-IEC-60811-1-1.&nbsp;</span></p>
+<table class=" tamanho-padrao">
+<tbody>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Tipo</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Aéreo</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Subterrâneo</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">412-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,51</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,51</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">500-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,53</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,53</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">540-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,53</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,53</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">565-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,53</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,53</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">625-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,53</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,53</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">700-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,61</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,66</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">715-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,64</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,64</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">750-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,64</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,63</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">840-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,64</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,76</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">860-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,89</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,89</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">875-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,64</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,63</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1000-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,71</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,71</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1125-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,89</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,89</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1160-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,02</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,02</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><a id="tabela5"></a><span style="text-decoration: line-through;">&nbsp;Tabela 5 - Espessura mínima absoluta do revestimento externo (mm)</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.4"></a><span style="text-decoration: line-through;">6.4.&nbsp;Requisitos para mensageiro integrado</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.4.1"></a><span style="text-decoration: line-through;">6.4.1.&nbsp;Quando o cabo coaxial rígido possuir mensageiro integrado, este deverá ser constituído por um fio ou cordoalha de aço galvanizado.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.4.2"></a><span style="text-decoration: line-through;">6.4.2.&nbsp;A verificação dos requisitos deve ser feita no fio singelo ou fio elementar da cordoalha e atender aos requisitos da ASTM A641/98, Class 1, Hard Temper, descritos a seguir:. &nbsp;</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">a)&nbsp;Diâmetro;</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">b)&nbsp;Carga de Ruptura;</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">c)&nbsp;Camada de Zinco;&nbsp;</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">d)&nbsp;Aderência da Camada de Zinco.&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.4.3"></a><span style="text-decoration: line-through;">6.4.3.&nbsp;Para a medição do diâmetro deverá ser utilizado paquímetro ou micrômetro com resolução metrologicamente adequada e serem tomadas duas medidas perpendiculares de uma mesma seção transversal, sendo anotada a média aritmética dos valores obtidos.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.5"></a><span style="text-decoration: line-through;">6.5.&nbsp;Requisito e método de ensaio para resistência elétrica&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.5.1"></a><span style="text-decoration: line-through;">6.5.1.&nbsp;Os valores da resistência elétrica do condutor central, condutor externo e da resistência elétrica de laço (loop), medidos em corrente contínua a 20ºC conforme ANSI/SCTE 44 2005, não devem ser superiores ao estabelecido na <a title="Acesse a Tabela" href="#tabela6">tabela 6</a>.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.2"></a><span style="text-decoration: line-through;">6.5.2.&nbsp;O equipamento de ensaio não está restrito ao citado no método especificado em <a title="Acesse a Item" href="#item6.5.1">6.5.1</a>, podendo ser utilizado um equipamento equivalente.&nbsp;</span></p>
+<table class=" tamanho-padrao">
+<tbody>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Tipo</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Condutor Central</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Condutor Externo</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Laço (Loop)</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">412-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">7,12</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,77</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">8,89</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">500-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">4,66</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">&nbsp;1,21</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">5,87</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">540-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">3,48</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">&nbsp;1,97</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">5,45</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">565-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">3,31</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,18</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">4,49</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">625-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">2,95</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,82</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">3,77</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">700-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">2,03</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,85</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">2,89</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">715-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">2,00</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,48</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">3,48</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">750-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,90</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">&nbsp;0,62</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">&nbsp;2,52</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">840-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,48</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,59</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">2,07</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">860-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,34</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,05</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">2,39</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">875-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,38</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,43</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,81</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1000-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,15</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,26</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,41</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1125-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,79</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,59</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,38</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1160-F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,75</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">0,26</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1,02</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><a id="tabela6"></a><span style="text-decoration: line-through;">Tabela&nbsp; 6 – Resistência elétrica máxima ( ohm/km&nbsp; a 20<sup>o</sup>C)&nbsp;</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.6"></a><span style="text-decoration: line-through;">6.6.&nbsp;Requisito e método de ensaio para impedância característica&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.6.1"></a><span style="text-decoration: line-through;">6.6.1.&nbsp;A impedância característica dos cabos deve ser de 75&nbsp;ohms&nbsp;±&nbsp;2&nbsp;ohms na faixa de frequência de 5&nbsp;MHz a 1000&nbsp;MHz, e deve ser verificada conforme o método estabelecido na ANSI/SCTE&nbsp;66&nbsp;2003.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.6.2"></a><span style="text-decoration: line-through;">6.6.2.&nbsp;O equipamento de ensaio não está restrito ao citado no método especificado em <a title="Acesse o Item" href="#item6.6.1">6.6.1</a>, podendo ser utilizado um equipamento equivalente.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.7"></a><span style="text-decoration: line-through;">6.7.&nbsp;Requisito e método de ensaio para atenuação do sinal de transmissão</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.7.1"></a><span style="text-decoration: line-through;">6.7.1.&nbsp;Os valores de atenuação referenciados a 20 °C no cabo coaxial rígido não devem ser superiores aos valores estabelecidos na <a title="Acesse a Tabela" href="#tabela7">tabela 7</a> e devem ser verificados conforme o método estabelecido na SCTE-IPS-TP-009.</span></p>
+<p style="text-align: center;"><span style="text-decoration: line-through;"><img src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-959/Tabela-7.png" alt=""></span><br><a id="tabela7"></a><span style="text-decoration: line-through;">&nbsp;Tabela 7 – Atenuação do sinal</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.7.2"></a><span style="text-decoration: line-through;">6.7.2.&nbsp;O equipamento de ensaio não está restrito ao citado no método de ensaio especificado em <a title="Acesse a Item" href="#item6.7.1">6.7.1</a>, podendo ser utilizado um equipamento equivalente.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.8"></a><span style="text-decoration: line-through;">6.8.&nbsp;Requisito e método de ensaio para perda de retorno estrutural</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.8.1"></a><span style="text-decoration: line-through;">6.8.1.&nbsp;A perda de retorno estrutural dos cabos deve ser de, no mínimo, 30&nbsp;dB na faixa de freqüência de 5&nbsp;MHz a 1000&nbsp;MHz, e deve ser verificado conforme o método estabelecido na ANSI/SCTE&nbsp;03&nbsp;1997.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.8.2"></a><span style="text-decoration: line-through;">6.8.2.&nbsp;O equipamento de ensaio não está restrito ao citado no método de ensaio especificado em <a title="Acesse a Item" href="#item6.8.1">6.8.1</a>, podendo ser utilizado um equipamento equivalente.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.9"></a><span style="text-decoration: line-through;">6.9.&nbsp;Requisito e método de ensaio para rigidez dielétrica</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.9.1"></a><span style="text-decoration: line-through;">6.9.1.&nbsp;O dielétrico do cabo coaxial rígido, deve suportar por 1&nbsp;min sem ruptura, a tensão de 1000&nbsp;Vca ou de 1500&nbsp;Vcc, aplicada entre os condutores à temperatura ambiente, conforme o método estabelecido na&nbsp; ANSI/SCTE 108 2006.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.10"></a><span style="text-decoration: line-through;">6.10.&nbsp;Requisito e método de ensaio para vazamento na capa externa</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.10.1"></a><span style="text-decoration: line-through;">6.10.1.&nbsp;Uma amostra de cabo completo com 300&nbsp;mm de comprimento, deve ser firmemente revestida com papel-alumínio ou outro material condutor adequado, de tal forma que os dois trechos de 75 mm a partir das extremidades fiquem livres, restando revestida sua porção central de 150 mm.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.10.2"></a><span style="text-decoration: line-through;">6.10.2.&nbsp;Entre a folha e a blindagem, deve ser aplicada gradativamente, uma diferença de potencial que atinja 1500 Vca em 30 s, permanecendo nesse potencial por mais 60&nbsp;s. Durante o período de ensaio de 90 s, a corrente de fuga deve ser monitorada e não deve exceder 10mA.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.10.3"></a><span style="text-decoration: line-through;">6.10.3.&nbsp;Para análise do método de ensaio pode ser também consultada a ASTM D 4566, seção 31.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.11"></a><span style="text-decoration: line-through;">6.11.&nbsp;Requisito e método de ensaio para velocidade de propagação relativa</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.11.1"></a><span style="text-decoration: line-through;">6.11.1.&nbsp;A velocidade de propagação relativa para os cabos coaxiais rígidos deve ser de, no mínimo, 85% da velocidade da luz no vácuo, quando obtido através da equação apresentada na IEC&nbsp;61196-1, seção 11.9.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.12"></a><span style="text-decoration: line-through;">6.12.&nbsp;Requisito e método de ensaio para força de aderência entre o dielétrico e o condutor central</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.12.1"></a><span style="text-decoration: line-through;">6.12.1.&nbsp;A força de aderência requerida para a retirada dos resíduos do dielétrico dos cabos coaxiais rígidos não deve ser inferior ao estabelecido na tabela 8, e deve ser verificada conforme o método estabelecido na ANSI/SCTE 12 2001R2006.&nbsp;</span></p>
+<table class=" tamanho-padrao">
+<tbody>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Tipo</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">412F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">500F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">540F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">565F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">625F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">700F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">715F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">750F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">840F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">860F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">875F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1000F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1125F</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">1160F</span></p>
+</td>
+</tr>
+<tr>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">Força</span></p>
+<p><span style="text-decoration: line-through;">(N)</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">138</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">267</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">302</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">316</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">356</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">378</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">400</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">400</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">382</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">427</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">382</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;">
+<p><span style="text-decoration: line-through;">494</span></p>
+</td>
+<td class="formata-tabela" style="text-align: center;"><span style="text-decoration: line-through;">&nbsp;</span></td>
+<td class="formata-tabela" style="text-align: center;"><span style="text-decoration: line-through;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><a id="tabela8"></a><span style="text-decoration: line-through;">Tabela 8– Força de aderência entre o dielétrico e o condutor central&nbsp;</span></p>
+<p style="text-align: justify;"><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.13"></a><span style="text-decoration: line-through;">6.13.&nbsp;Requisito e método de ensaio para dobramento&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.13.1"></a><span style="text-decoration: line-through;">6.13.1.&nbsp;O cabo coaxial rígido, completo, após ser submetido ao ensaio de dobramento conforme ASTM D 4565, Seção 34, não deve apresentar danos visíveis a olho nu e deve atender ao requisito de impedância do <a title="Acesse o Item" href="#item6.6">item 6.6</a> deste documento.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.14"></a><span style="text-decoration: line-through;">6.14.&nbsp;Requisito e método de ensaio para resistência à corrosão</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.14.1"></a><span style="text-decoration: line-through;">6.14.1.&nbsp;O cabo coaxial rígido com composto vedante deve ser submetido ao ensaio de resistência à corrosão conforme a NBR 8094 e ANSI/SCTE 69 2002 e não deve apresentar sinais de corrosão.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.15"></a><span style="text-decoration: line-through;">6.15.&nbsp;Requisito e método de ensaio para tempo de indução oxidativa (OIT)&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.15.1"></a><span style="text-decoration: line-through;">6.15.1.&nbsp;O tempo de indução oxidativa a 180ºC&nbsp;±&nbsp;0,3ºC do dielétrico expandido deve ser de, no mínimo, 20&nbsp;minutos e deve ser verificado conforme o método estabelecido na NBR&nbsp;13977. O valor obtido neste ensaio deverá ser referência para o ensaio de estabilidade térmica descrito no <a title="Acesse o Item" href="#item6.16">item 6.16</a> deste documento</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.16"></a><span style="text-decoration: line-through;">6.16.&nbsp;Requisito e método de ensaio para estabilidade térmica&nbsp;</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.16.1"></a><span style="text-decoration: line-through;">6.16.1.&nbsp;Após envelhecimento de 14&nbsp;dias a 90<sup>o</sup>C, o dielétrico expandido deve ser submetido ao ensaio para verificação do tempo de indução oxidativa a 180ºC&nbsp;±&nbsp;0,3ºC, conforme o método estabelecido na NBR&nbsp;13977. O resultado de OIT obtido&nbsp; deve ser de, no mínimo, 70% do valor de OIT de referência, obtido no ensaio do <a title="Acesse o Item" href="#item6.15">item 6.15</a> deste documento.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item6.17"></a><span style="text-decoration: line-through;">6.17.&nbsp;Requisito e método de ensaio para escoamento do composto vedante</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item6.17.1"></a><span style="text-decoration: line-through;">6.17.1.&nbsp;O cabo coaxial rígido que possui composto vedante deve ser submetido ao ensaio de escoamento e gotejamento conforme a NBR&nbsp;9149 e não deve apresentar sinais de escoamento ou gotejamento.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="item7"></a><span style="text-decoration: line-through;">7.&nbsp;AMOSTRAGEM DO CABO COAXIAL RÍGIDO</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item7.1"></a><span style="text-decoration: line-through;">7.1.&nbsp;Devem ser apresentadas para ensaios pelo menos uma amostra de cabo com o maior diâmetro e uma com o menor diâmetro de cada família de cabos a serem submetidos a avaliação da conformidade, sendo que os ensaios efetuados nessas amostras serão válidos para os demais cabos da mesma família, cujos diâmetros estejam compreendidos dentro da faixa resultante.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item7.1.1"></a><span style="text-decoration: line-through;">7.1.1.&nbsp;Devem ser realizados ensaios completos nos cabos de maior e menor diâmetro que representam a família.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item7.2"></a><span style="text-decoration: line-through;">7.2.&nbsp;Caso o conjunto de cabos sob avaliação da conformidade inclua cabos com características opcionais ou especiais, deverão ser fornecidas amostras adicionais, suficientes para a realização dos ensaios específicos correspondentes.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item7.2.1"></a><span style="text-decoration: line-through;">7.2.1.&nbsp;Caso um determinado cabo possua jaqueta ou capa externa distintas para aplicação em áreas internas e áreas externas, deverão ser apresentadas para ensaios duas amostras deste cabo com as referidas capas. Numa amostra serão realizados os ensaios completos e na segunda amostra os ensaios, aplicáveis, ao material da jaqueta e capa externa. Os itens dos ensaios estão relacionados a seguir:</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">a)&nbsp;Requisitos e métodos de ensaio para a jaqueta e capa externa;</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">b)&nbsp;Requisito e método de ensaio para vazamento na capa externa;</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">c)&nbsp;Requisito e método de ensaio para dobramento – aplicar somente o ensaio de dobramento, não sendo exigido verificar o requisito de Impedância;</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">d)&nbsp;Requisito e método de ensaio para resistência à corrosão – quando aplicável;</span></p>
+<p style="text-align: justify; padding-left: 120px;"><span style="text-decoration: line-through;">e)&nbsp;Requisito e método de ensaio para escoamento do composto vedante – quando aplicável.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item7.2.2"></a><span style="text-decoration: line-through;">7.2.2.&nbsp;Caso um determinado cabo possua jaqueta ou capa externa de cores distintas, para aplicação em área interna, o interessado deve declarar formalmente que o material base, sem corante, utilizado na fabricação da amostra submetida a ensaio será mantido assim como suas características frente à chama.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item7.3"></a><span style="text-decoration: line-through;">7.3.&nbsp;Os ensaios do Mensageiro Integrado devem ser realizados em todos os diâmetros utilizados na família. Caso um determinado diâmetro seja utilizado em uma ou mais famílias&nbsp; de cabos não é necessário repetir os ensaios do mensageiro para cada família.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item7.4"></a><span style="text-decoration: line-through;">7.4.&nbsp;As amostras de cabo apresentadas para ensaios devem ter lance de, no mínimo, 100&nbsp;m e ter suas extremidades preparadas com conectores.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="item8"></a><span style="text-decoration: line-through;">8.&nbsp;IDENTIFICAÇÃO DA HOMOLOGAÇÃO</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item8.1"></a><span style="text-decoration: line-through;">8.1.&nbsp;A marcação do selo Anatel e a identificação do código de homologação deverão ser apresentadas na embalagem externa do produto, em conformidade com a regulamentação vigente. Também poderão ser utilizados, opcionalmente, meios de impressão gráfica nos catálogos dos produtos ou na documentação técnica pertinente.</span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item8.2"></a><span style="text-decoration: line-through;">8.2.&nbsp;Adicionalmente, deverá ser impressa de forma legível na capa externa do cabo coaxial rígido, ao longo de seu comprimento, a identificação alfanumérica da homologação do produto, da seguinte forma:</span></p>
+<p class="Texto_Centralizado" style="text-align: center;"><span style="text-decoration: line-through;">ANATEL HHHHH-AA-FFFFF</span></p>
+<p class="Texto_Justificado" style="text-align: center;"><span style="text-decoration: line-through;">Onde : HHHHH – identifica a homologação do produto por meio de numeração sequencial com 5 caracteres</span></p>
+<p class="Texto_Justificado" style="text-align: center;"><span style="text-decoration: line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AA – identifica o ano de emissão da Homologação com 2 caracteres numéricos</span></p>
+<p class="Texto_Justificado" style="text-align: center;"><span style="text-decoration: line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FFFFF – identifica o fabricante do produto com 5 caracteres numéricos.</span></p>
+<p class="Texto_Justificado" style="text-align: center;">&nbsp;</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1185"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20técnicos" class="link-categoria">Requisitos técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Produto" class="link-categoria">Produto</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Cabos%20Coaxiais%20Rígidos" class="link-categoria">Cabos Coaxiais Rígidos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoRevogado" class="link-categoria">AtoRevogado</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

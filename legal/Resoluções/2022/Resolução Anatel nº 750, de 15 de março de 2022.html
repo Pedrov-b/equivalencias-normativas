@@ -1,0 +1,1219 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Resolução Anatel nº 750, de 15 de março de 2022</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1640-resolucao-750">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Alteração, Regulamento, Serviço Telefônico Fixo Comutado, Serviço Móvel Pessoal, Resolução, Global, Satélite Não-Geoestacionário, RecursosPrestacao, ResolucaoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Altera o Regulamento de Serviços de Telecomunicações, o Regulamento do Serviço Telefônico Fixo Comutado e o Regulamento do Serviço Móvel Pessoal, e substitui itens da Norma do Serviço Móvel Global por Satélite Não-Geoestacionário.">
+	<title>Anatel - Resolução Anatel nº 750, de 15 de março de 2022</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=344329092" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=910555789" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"8c0be25a5a70f825d18cd2bc113484bf","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=273522484" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025015230" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/resolucoes/2022">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/resolucoes/2022">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/resolucoes/2022">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/resolucoes/2022" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes" class="pathway">Resoluções</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes/2022" class="pathway">2022</a> <span class="separator">&gt;</span> <span>Resolução Anatel nº 750, de 15 de março de 2022</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 active deeper parent"><a href="/legislacao/resolucoes">Resoluções</a><ul><li class="item-516"><a href="/legislacao/resolucoes/2025">2025</a></li><li class="item-501"><a href="/legislacao/resolucoes/2024">2024</a></li><li class="item-493"><a href="/legislacao/resolucoes/2023">2023</a></li><li class="item-488 current active"><a href="/legislacao/resolucoes/2022">2022</a></li><li class="item-438"><a href="/legislacao/resolucoes/2021">2021</a></li><li class="item-430"><a href="/legislacao/resolucoes/2020">2020</a></li><li class="item-367"><a href="/legislacao/resolucoes/2019">2019</a></li><li class="item-312"><a href="/legislacao/resolucoes/2018">2018</a></li><li class="item-299"><a href="/legislacao/resolucoes/2017">2017</a></li><li class="item-294"><a href="/legislacao/resolucoes/2016">2016</a></li><li class="item-255"><a href="/legislacao/resolucoes/2015">2015</a></li><li class="item-226"><a href="/legislacao/resolucoes/2014">2014</a></li><li class="item-164"><a href="/legislacao/resolucoes/2013">2013</a></li><li class="item-165"><a href="/legislacao/resolucoes/2012">2012</a></li><li class="item-166"><a href="/legislacao/resolucoes/2011">2011</a></li><li class="item-167"><a href="/legislacao/resolucoes/2010">2010</a></li><li class="item-168"><a href="/legislacao/resolucoes/2009">2009</a></li><li class="item-169"><a href="/legislacao/resolucoes/2008">2008</a></li><li class="item-170"><a href="/legislacao/resolucoes/2007">2007</a></li><li class="item-171"><a href="/legislacao/resolucoes/2006">2006</a></li><li class="item-172"><a href="/legislacao/resolucoes/2005">2005</a></li><li class="item-173"><a href="/legislacao/resolucoes/2004">2004</a></li><li class="item-174"><a href="/legislacao/resolucoes/2003">2003</a></li><li class="item-175"><a href="/legislacao/resolucoes/2002">2002</a></li><li class="item-176"><a href="/legislacao/resolucoes/2001">2001</a></li><li class="item-177"><a href="/legislacao/resolucoes/2000">2000</a></li><li class="item-178"><a href="/legislacao/resolucoes/1999">1999</a></li><li class="item-179"><a href="/legislacao/resolucoes/1998">1998</a></li><li class="item-180"><a href="/legislacao/resolucoes/1997">1997</a></li><li class="item-181"><a href="/legislacao/resolucoes/resolucoes-conjuntas">Resoluções Conjuntas</a></li></ul></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948c1a1bad962800&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Resolução Anatel nº 750, de 15 de março de 2022		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 18 Março 2022 10:17			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Segunda, 17 Fevereiro 2025 09:02			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 30844			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Altera o Regulamento de Serviços de Telecomunicações, o Regulamento do Serviço Telefônico Fixo Comutado e o Regulamento do Serviço Móvel Pessoal, e substitui itens da Norma do&nbsp;Serviço Móvel Global por Satélite Não-Geoestacionário.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de <a title="Acesse o DOU" href="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=515&amp;pagina=56&amp;data=18/03/2022">15/3/2022</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><strong>O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</strong>, no uso das atribuições que lhe foram conferidas pelo <a title="Acesse o artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art22">art. 22</a> da Lei nº 9.472, de 16 de julho de 1997, e pelo <a title="Acesse o artigo" href="https://informacoes.anatel.gov.br/legislacao/decretos/3-decreto-2338#art35">art. 35</a> do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO que a Agência regulará e administrará os Recursos de Numeração de forma a garantir a sua utilização eficiente e adequada, assegurando sua administração de forma não discriminatória e em estímulo à competição;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO que a padronização dos Recursos de Numeração em âmbito nacional é premissa básica na estruturação dos Planos de Numeração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a necessidade de atualização da regulamentação de numeração de serviços de telecomunicações, para torná-la aderente à evolução tecnológica do setor, em especial, ao crescimento das demandas voltadas às aplicações de Internet das Coisas (IoT -&nbsp;<em>Internet of Things</em>) e comunicações máquina-máquina (M2M -&nbsp;<em>Machine to machine</em>), assegurando a permanência das condições de compatibilidade, operação integrada e interconexão entre as redes;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO os comentários recebidos decorrentes da <a title="Acesse a consulta" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=6242577&amp;id_orgao_publicacao=0">Consulta Pública nº 37, de 5 de maio de 2020</a>, publicada no Diário Oficial da União do dia 6 de maio de 2020;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO deliberação tomada em sua <a title="Acesse a reunião" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=9169510&amp;id_orgao_publicacao=0">Reunião nº 910, de 10&nbsp;de março&nbsp;de 2022</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do Processo nº <a title="Acesse o processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlI5QHiDLk4ZpaBopm7FF6NPJ4NleWtyWt5uE8w_DxZkd">53500.059950/2017-22</a>,,</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve" style="text-align: justify;">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art1"></a>Art. 1º&nbsp;Incluir o <a title="Acesse o artigo " href="/legislacao/resolucoes/2007/9-resolucao-477#art82aAnexo">art.&nbsp;82-A</a> ao Regulamento do Serviço Móvel Pessoal – SMP, aprovado pela Resolução nº 477, de 7 de agosto de 2007, publicada no Diário Oficial da União em 13 de agosto de 2007, na forma do presente artigo:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 82-A. As prestadoras do SMP devem assegurar que suas redes tenham capacidade para informar e encaminhar através de protocolo de sinalização, para qualquer outra rede, a discriminação de usuário de serviço na modalidade pré-pago, quando este originar ou receber uma chamada."&nbsp;[NR]</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art2"></a>Art. 2º Incluir o inciso XXXI ao <a title="Acesse o artigo" href="/legislacao/resolucoes/2005/7-resolucao-426#art3anexo">art. 3º</a> do Regulamento do Serviço Telefônico Fixo Comutado – STFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005, publicada no Diário Oficial da União em 12 de dezembro de 2005, na forma do presente artigo:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“XXXI - Serviço de Informação de Código de Acesso de Assinante do STFC: Serviço de Utilidade Pública de auxílio à Lista Telefônica Obrigatória e Gratuita - LTOG com objetivo de prestar informações aos usuários em geral sobre o Código de Acesso de Assinantes, observada a regulamentação; [NR]"</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art3"></a>Art. 3º Incluir o inciso XXXI ao <a title="Acesse o artigo" href="/legislacao/resolucoes/2005/7-resolucao-426#art11">art. 11</a> do Regulamento do Serviço Telefônico Fixo Comutado – STFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005 publicada no Diário Oficial da União em 12 de dezembro de 2005:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 11. ..............................................................................................................</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">XXXI - À informação gratuita, disponibilizada pelo Serviço de Informação de Código de Acesso de Assinante do STFC, quando:</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">a) o código de acesso do assinante do STFC não figurar na Lista Telefônica Obrigatória e Gratuita – LTOG; e,</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">b) a solicitação de informação for originada em terminal de acesso de uso coletivo. [NR]”</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art4"></a>Art. 4º Incluir os <a title="Acesse o artigo" href="/legislacao/resolucoes/2005/7-resolucao-426#art22aAnexo">arts. 22-A</a> e <a title="Acesse o artigo " href="/legislacao/resolucoes/2005/7-resolucao-426#art22bAnexo">22-B</a> ao Regulamento do Serviço Telefônico Fixo Comutado – STFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005, publicada no Diário Oficial da União em 12 de dezembro de 2005, na forma do presente artigo:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 22-A. Na prestação do Serviço de Informação de Código de Acesso de Assinante para a modalidade Local, a prestadora do STFC nesta modalidade deve informar os códigos de acesso dos assinantes de todas as prestadoras do STFC da sua área de prestação do serviço, respeitado o direito do assinante de não divulgação do seu código de acesso.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Parágrafo único. As prestadoras envolvidas devem estabelecer as condições para a troca de informações e os procedimentos operacionais para a prestação do Serviço de Informação de Código de Acesso de Assinante do STFC. [NR]</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Art. 22-B. A prestadora do STFC na modalidade Longa Distância Nacional, escolhida pelo usuário, deve realizar de forma gratuita o encaminhamento da chamada destinada ao Serviço de Informação de Código de Acesso de Assinante do STFC.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Parágrafo único. Cabe à Concessionária de STFC na modalidade Local, da área de prestação de destino da chamada, ou sua sucedânea, o atendimento dessa chamada e o fornecimento da informação ao usuário originador, sem ônus para o usuário ou para a prestadora de STFC na modalidade Longa Distância Nacional. [NR]”</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art5"></a>Art. 5º Substituir os itens <a title="Acesse o item" href="/legislacao/index.php/component/content/article?id=185#item7.1">7.1</a>, <a title="Acesse o item" href="/legislacao/index.php/component/content/article?id=185#item7.2">7.2</a> e <a title="Acesse o item" href="/legislacao/index.php/component/content/article?id=185#item7.3">7.3</a>, incluindo seus subitens, da Norma nº 16/97 – Serviço Móvel Global por Satélite Não-Geoestacionário (SMGS), aprovada pela Portaria nº 560, de 3 de novembro de 1997, do Ministério das Comunicações, pelas disposições do presente artigo:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">7.1 Deve ser permitido ao Assinante que a Estação de SMGS por ele utilizada receba e origine, automaticamente e em qualquer ponto da área de cobertura definida pelo prestador de SMGS, chamadas telefônicas de e para qualquer outro Assinante de serviço de telecomunicações de interesse coletivo.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">7.1.1&nbsp;As redes de telecomunicações e plataformas associadas ao SMGS devem fazer uso de tecnologias e sistemas cujas estruturas de sincronismo, sinalização, numeração, comutação e encaminhamento, entre outras, possam prover interoperabilidade com as redes de STFC, de SMP e demais redes de serviços de telecomunicações, observado o disposto na regulamentação.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">7.2 Na prestação do SMGS no Brasil poderão ser utilizados os códigos destinados em Plano de Numeração brasileiro, pela Anatel, ou os códigos para os sistemas móveis globais designados pela União Internacional de Telecomunicações - UIT.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">7.2.1 No uso de códigos designados pela UIT deverá ser observada a regulamentação brasileira.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">7.3 A remuneração pelo uso das redes deve ser pactuada entre as prestadoras, observado o disposto no art. 152 da Lei Geral de Telecomunicações – LGT e na regulamentação.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">7.3.1 O encaminhamento de chamadas de Longa Distância observará os mesmos condicionamentos estabelecidos para o Serviço Móvel Pessoal – SMP.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art6"></a>Art. 6º Incluir o<a title="Acesse o anexo" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1640-resolucao-750#anexo"> Anexo</a> ao Regulamento dos Serviços de Telecomunicações, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/1998/34-resolucao-73">Resolução nº 73, de 25 de novembro de 1998</a>, publicada no Diário Oficial da União em 27 de novembro de 1998, na forma do Anexo&nbsp;a esta Resolução, contendo as condições para portabilidade de código de acesso.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art7"></a>Art. 7º Alterar o&nbsp;<strong>caput</strong>&nbsp;e o § 2º do <a title="Acesse o artigo" href="/legislacao/resolucoes/2007/9-resolucao-477#art82Anexo">art. 85</a> do Regulamento do Serviço Móvel Pessoal – SMP, aprovado pela Resolução nº 477, de 7 de agosto de 2007, publicada no Diário Oficial da União em 13 de agosto de 2007, que passa a vigorar com a seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 85. O Usuário do SMP, no exercício do seu direito de escolha, de acordo com o Plano de Serviço Contratado, pode selecionar a prestadora de STFC de sua preferência para encaminhamento de chamadas de Longa Distância.&nbsp;</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">...........................................................................................................</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">§ 2º A originação de chamadas por Usuário do SMP deve obedecer ao procedimento de marcação estabelecido na regulamentação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 60px; text-align: justify;">Art. 8º Alterar o inciso XXVI&nbsp;do art. 11 do Regulamento do Serviço Telefônico Fixo Comutado – STFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005, publicada no Diário Oficial da União em 12 de dezembro de 2005, que passa a vigorar com a seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 11.&nbsp;..............................................................................................................</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">XXVI - de selecionar a prestadora de STFC de sua preferência para encaminhamento de chamadas de longa distância, conforme o Plano de Serviço contratado junto à sua Prestadora;”</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art9"></a>Art. 9º Incluir os <a title="Acesse o artigo" href="/legislacao/resolucoes/2005/7-resolucao-426#art42aAnexo">arts. 42-A</a> e <a title="Acesse o artigo" href="/legislacao/resolucoes/2005/7-resolucao-426#art42bAnexo">42-B</a> ao Regulamento do Serviço Telefônico Fixo Comutado – STFC, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2005/7-resolucao-426">Resolução nº 426, de 9 de dezembro de 2005</a>, publicada no Diário Oficial da União em 12 de dezembro de 2005, na forma do presente artigo:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 42-A. O acesso aos Serviços de Utilidade Pública, excetuado os casos de gratuidade previstos na regulamentação, poderá ser tarifado mediante a cobrança:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">I - do valor de utilização na modalidade Local, pelas chamadas originadas no STFC; e,</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">II - do menor valor de comunicação, acrescido de eventuais valores de deslocamento, pelas chamadas originadas nos demais serviços de telecomunicações.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Art. 42-B. Nas chamadas destinadas aos assinantes de códigos não geográficos, cuja tarifa é compartilhada, será cobrada do usuário chamador, no máximo:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">I - o valor da utilização do STFC na modalidade de serviço local, conforme os critérios e tarifas do plano básico da concessionária da área local de origem da chamada, para chamadas originadas no STFC;</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">II - o menor dos valores de comunicação VC1 fixo-móvel, observados os critérios, do plano básico da concessionária da área local de origem da chamada, para chamadas originadas no SMP; e,</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">III - o menor valor de comunicação VC1 fixo-móvel do plano básico da concessionária da área local de origem da chamada, para chamadas originadas no SME.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Parágrafo único. Será cobrado do assinante citado no&nbsp;<strong>caput</strong>, no máximo, por chamada, o valor equivalente ao da chamada tarifada com base no maior valor do plano básico do STFC na modalidade de serviço de longa distância nacional da prestadora por ele contratada, considerando a natureza do serviço de origem da chamada, deduzido o valor cobrado do usuário originador.”</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art10"></a>Art. 10. O Título II do Regulamento dos Serviços de Telecomunicações, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/1998/34-resolucao-73">Resolução nº 73, de 25 de novembro de 1998</a>, publicado no Diário Oficial da União em 27 de novembro de 1998, passa a vigorar acrescido do seguinte Capítulo V:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Capítulo V</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Dos Serviços de Utilidade Pública</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Art. 65-O. As prestadoras devem permitir aos seus usuários o acesso aos Serviços de Utilidade Pública, devendo tal obrigação constar dos contratos de interconexão celebrados com as demais prestadoras.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Parágrafo único. Não cabe qualquer remuneração pelo uso das redes ou por qualquer outro recurso necessário ao correto encaminhamento das chamadas e mensagens destinadas à:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">I – Serviços Públicos de Emergência;</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">II – Serviços de Utilidade Pública ofertados por prestadoras de serviços de telecomunicações de interesse coletivo destinados ao uso do público em geral; e,</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">III - Serviço de Apoio aos Serviços de Telecomunicações.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Art.&nbsp; 65-P. Havendo condições técnicas e interesse da instituição a ser acessada, o atendimento dos Serviços de Utilidade Pública poderá ser centralizado.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">§ 1º Não cabe ao provedor de Serviço Público de Emergência qualquer custo pelo encaminhamento das chamadas até o centro de atendimento centralizado.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">§ 2º Para os provedores de Serviços Públicos de Emergência, a centralização do atendimento deve ser feita, pela Concessionária de STFC ou por sua sucedânea:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">a) do Setor do PGO, quando a Área Local de origem da chamada e o centro de atendimento estiverem no mesmo Setor; ou,</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">b) da Região IV do PGO, quando a Área Local de origem da chamada e o centro de atendimento estiverem em Setores distintos.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Art. 65-Q. Devem ser gratuitas aos usuários, as chamadas destinadas:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">I - aos Serviços Públicos de Emergência; e,</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">II - aos Serviços de Utilidade Pública ofertados por prestadoras de serviços de telecomunicações de interesse coletivo destinados ao uso do público em geral.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Parágrafo único. O acesso aos demais Serviços de Utilidade Pública poderá ser tarifado, nos termos da regulamentação da Anatel.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">Art. 65-R. O provedor de qualquer modalidade de Serviço de Utilidade Pública é responsável pelo pagamento dos valores referentes à habilitação e assinatura dos acessos locais às suas instalações, das prestações, utilidades ou comodidades que lhe são ofertadas.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">§ 1º As terminações de rede destinadas à prestação de Serviços de Utilidade Pública, a que se refere este Regulamento, prestam-se unicamente ao recebimento de chamadas, excetuando-se disposição contrária na regulamentação.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">§ 2º O provimento dos Serviços de Utilidade Pública, pela entidade interessada, deve ocorrer de forma não onerosa ao usuário.”</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art11"></a>Art. 11. Esta Resolução entra em vigor em 3 de outubro de 2022.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="anexo"></a>ANEXO</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">ANEXO AO REGULAMENTO DOS SERVIÇOS DE TELECOMUNICAÇÕES, APROVADO PELA RESOLUÇÃO Nº 73, DE 25 DE NOVEMBRO DE 1998</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><strong>CONDIÇÕES PARA A PORTABILIDADE DE CÓDIGO DE ACESSO</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloI" target="_blank"></a>TÍTULO I</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS DISPOSIÇÕES GERAIS, DOS DIREITOS E DEVERES</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIcapI" target="_blank"></a>CAPÍTULO I</p>
+<p class="Texto_Centralizado" style="text-align: center;">DA ABRANGÊNCIA E OBJETIVOS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art1Anexo" target="_blank"></a>Art. 1º Este Anexo estabelece as condições para a implementação da Portabilidade de Código de Acesso e se aplica a todas as prestadoras de serviços de telecomunicações de interesse coletivo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">§ 1º As prestadoras devem assegurar aos usuários, de forma não discriminatória, a Portabilidade. &nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">§ 2º O disposto no § 1º somente se aplica aos acessos destinados exclusivamente à conexão de dispositivos de Internet das Coisas – IoT, quando presentes as condições técnicas necessárias. &nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">§ 3º Para fins do disposto no § 2º, são considerados dispositivos de IoT aqueles que permitem exclusivamente a oferta de serviços de valor adicionado baseados em suas capacidades de comunicação, sensoriamento, atuação, aquisição, armazenamento e/ou processamento de dados. &nbsp;</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIcapII" target="_blank"></a>CAPÍTULO II</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS DEFINIÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art4Anexo" target="_blank"></a>Art. 2º Para efeito deste Anexo, além das definições constantes da regulamentação aplicável aos serviços de telecomunicações, são adotadas as seguintes:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">I - Base de Dados Nacional de Referência da Portabilidade (BDR): base de dados que contém as informações necessárias à execução da Portabilidade, gerenciada pela Entidade Administradora e utilizada para atualização da BDO;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">II - Base de Dados Operacional (BDO): base de dados que contém os dados necessários à execução da Portabilidade, gerenciada pela prestadora de serviço de telecomunicações e utilizada no correto encaminhamento das chamadas e mensagens;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">III - Bilhete de Portabilidade: documento padronizado pelo GIP que registra a solicitação formulada pelo usuário e possibilita o acompanhamento de cada etapa do Processo de Portabilidade, o qual deverá ser guardado por no mínimo 5 (cinco) anos, podendo ser requisitado pela Anatel a qualquer tempo nesse intervalo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">IV - Documento Operacional de Prazos da Portabilidade (DOP): instrumento que contém os procedimentos e prazos operacionais relativos ao Processo de Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">V - Entidade Administradora: pessoa jurídica independente e de neutralidade comprovada;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">VI - Grupo de Implementação da Portabilidade (GIP): entidade, de caráter temporário, criada e coordenada pela Anatel, visando à implementação da Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">VII - Organismo de Certificação Credenciado (OCC): organismo credenciado apto a implementar, a conduzir um processo de avaliação da conformidade, no âmbito específico das telecomunicações, e a expedir o Certificado de Conformidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">VIII - Período de Transição: período de tempo, durante o Processo de Portabilidade, entre a desativação e ativação do Código de Acesso do Usuário, durante o qual é admitida a interrupção do serviço de telecomunicações para o Usuário Portado;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">IX - Portabilidade de Código de Acesso (Portabilidade): facilidade de rede que possibilita ao usuário de serviço de telecomunicações manter o Código de Acesso a ele designado, independentemente de prestadora de serviço de telecomunicações ou de área de prestação do serviço;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">X - Prestadora de Origem: prestadora detentora da Autorização de Uso de Recursos de Numeração originariamente expedida pela Anatel;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">XI - Prestadora Doadora: prestadora de onde é portado o Código de Acesso;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">XII - Prestadora Receptora: prestadora para onde é portado o Código de Acesso;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">XIII - Processo de Portabilidade: procedimento técnico e administrativo compreendido pelas fases de solicitação, aceitação, notificação, confirmação e provisionamento da portabilidade, até a completa migração do usuário da Prestadora Doadora para a Prestadora Receptora; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">XIV - Usuário com Código de Acesso Portado (Usuário Portado): é o usuário que exerce o direito à Portabilidade.</p>
+<p class="Texto_Centralizado" style="padding-left: 60px; text-align: center;"><a id="tituloIcapIII" target="_blank"></a>CAPÍTULO III</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS CARACTERÍSTICAS DA PORTABILIDADE</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art5Anexo" target="_blank"></a>Art. 3º A Portabilidade será implementada no âmbito do Serviço Telefônico Fixo Comutado (STFC), do Serviço de Comunicação Multimídia (SCM) e do Serviço Móvel Pessoal (SMP).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">§ 1º A Prestadora deve tornar disponíveis, permanentemente, as informações sobre Portabilidade, nos termos previstos neste Anexo, em sua respectiva página na Internet, nos centros de atendimento por telefone, nos Postos de Serviços de Telecomunicações e nos setores de atendimento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">§ 2º A Portabilidade se aplica somente entre prestadoras do mesmo serviço de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">§ 3º Todas as redes de serviços de telecomunicações de interesse coletivo devem encaminhar corretamente as chamadas e mensagens destinadas a Usuários Portados.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art4Anexo"></a>Art. 4º Para o STFC e o SCM, a Portabilidade se aplica:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">I - ao Código de Acesso de Usuário quando o usuário troca de prestadora dentro de uma mesma Área Local;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">II - ao Código de Acesso de Usuário quando o seu endereço de instalação, na própria prestadora, é alterado dentro da mesma Área Local;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">III - ao Código de Acesso de Usuário quando o usuário troca de plano de serviço, na própria prestadora; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">IV - ao Código Não Geográfico quando o usuário troca de prestadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art5Anexo" target="_blank"></a>Art. 5º Para o SMP, a Portabilidade se aplica:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">I - ao Código de Acesso de Usuário quando o usuário troca de prestadora dentro de uma mesma Área de Registro; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;">II - ao Código de Acesso de Usuário quando o usuário troca de plano de serviço, na própria prestadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art6Anexo" target="_blank"></a>Art. 6º A Portabilidade não se aplica quando se tratar de Código de Acesso inexistente, não designado, temporário ou designado a terminais de uso público.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIcapIV" target="_blank"></a>CAPÍTULO IV</p>
+<p class="Texto_Centralizado" style="text-align: center;">DOS DIREITOS E DEVERES DOS USUÁRIOS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="padding-left: 30px; text-align: justify;"><a id="art7Anexo" target="_blank"></a>Art. 7º&nbsp;Constituem direitos do usuário, além dos já previstos nos regulamentos específicos de cada serviço:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - solicitar, a qualquer tempo, a Portabilidade, quando vinculado à prestadora do STFC, do SCM ou do SMP;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - obter tratamento não discriminatório quanto às condições de oferta da Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - ser informado adequadamente sobre as condições de oferta da Portabilidade, prazos, facilidades e seus valores;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IV - ter assegurada a privacidade de seus dados pessoais informados quando da Solicitação de Portabilidade; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">V - obter reparação pelos danos causados pela violação dos seus direitos, em especial quanto ao direito à Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art8Anexo" target="_blank"></a>Art. 8º&nbsp;Constituem deveres do usuário, além dos já previstos nos regulamentos específicos de cada serviço:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - levar ao conhecimento da Anatel e da prestadora as irregularidades referentes à Portabilidade de que tenha conhecimento; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - usar adequadamente a Portabilidade, bem como os elementos de rede envolvidos.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIcapV" target="_blank"></a>CAPÍTULO V</p>
+<p class="Texto_Centralizado" style="text-align: center;">DOS DIREITOS E DEVERES DAS PRESTADORAS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art9Anexo" target="_blank"></a>Art. 9º&nbsp;Constituem direitos das prestadoras, além dos já previstos nos regulamentos específicos de cada serviço:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - receber as informações sobre os usuários que solicitaram a Portabilidade, constantes de base cadastral de outras prestadoras de serviços de telecomunicações, necessárias ao Processo de Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - peticionar junto à Anatel denunciando os comportamentos prejudiciais à livre, ampla e justa competição entre prestadoras;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - contratar com terceiros o desenvolvimento de atividades inerentes, acessórias ou complementares ao serviço, permanecendo, contudo, integralmente responsável junto à Anatel, aos usuários ou a terceiros, pelas obrigações contraídas decorrentes da celebração do instrumento de outorga.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art10Anexo" target="_blank"></a>Art. 10. Constituem deveres das prestadoras, além dos já previstos nos regulamentos específicos de cada serviço:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - assegurar ao usuário o direito à Portabilidade de forma não discriminatória;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - informar ao usuário as condições de oferta da Portabilidade, em especial:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">a) a eventual necessidade de troca do equipamento terminal de usuário da rede fixa, de Estação Móvel ou do Módulo de Identificação de Usuário da rede móvel;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">b) as condições do seu novo Plano de Serviço;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">c) o valor a ser pago pela Portabilidade e a forma de pagamento;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">d) o prazo de ativação do novo Plano de Serviço vinculado ao código portado;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">e) as condições de cancelamento do Processo de Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">f) as condições de interrupção de serviço durante o Período de Transição; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">g) as condições de rescisão contratual, incluindo-se o tratamento de eventual saldo remanescente na Prestadora Doadora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - apresentar nos Planos de Serviço as condições de oferta da Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IV - fornecer a outras prestadoras de serviços de telecomunicações as informações dos usuários que solicitaram a Portabilidade, constantes de sua base cadastral e necessárias ao Processo de Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">V - dar ampla divulgação das condições de oferta da Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VI - disponibilizar, de forma gratuita, no mínimo em sua página na Internet e no centro de atendimento por telefone, a informação se determinado Código de Acesso pertence ou não a sua rede, para que o Usuário saiba se realizará uma chamada intra ou inter-redes;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VII - atender aos requisitos de qualidade, modernidade, presteza e automação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VIII - cumprir os prazos estabelecidos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IX - garantir a continuidade e qualidade do serviço de telecomunicações durante o Processo de Portabilidade, considerando o disposto neste Anexo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">X - responsabilizar-se pela regularidade de uso do código em doação, via o devido processo de autorização prévia de uso da Agência;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">XI - sempre que um Código de Acesso, objeto de Processo de Portabilidade, estiver submetido à suspensão de sigilo de telecomunicações, a Prestadora Doadora deve comunicar à autoridade competente que o referido Código será portado, em que momento será efetivada a portabilidade e qual a Prestadora Receptora, imediatamente após a fase de autenticação, para que seja garantida a suspensão de sigilo na Prestadora Receptora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">XII - devolver à Prestadora Doadora o Código de Acesso de Usuário não mais utilizado na Portabilidade em prazo a ser determinado pelo GIP;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">XIII - prestar os esclarecimentos necessários ao GIP, principalmente àqueles relacionados aos aspectos jurídicos, econômicos, técnico-operacionais ou funcionais, que o Grupo solicite; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">XIV&nbsp;- integrar o GIP quando solicitado pela Anatel.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIcapVI" target="_blank"></a>CAPÍTULO VI</p>
+<p class="Texto_Centralizado" style="text-align: center;">DOS PREÇOS COBRADOS DOS USUÁRIOS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art11Anexo" target="_blank"></a>Art. 11. A Portabilidade pode ser onerosa ao Usuário Portado, por meio de valor cobrado pela Prestadora Receptora, em uma única vez ou de forma parcelada, que se destina à recuperação de parte dos custos de implantação, operação e manutenção da Entidade Administradora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 1º O valor máximo a ser cobrado e a forma de pagamento serão definidos pela Anatel por meio de Ato específico do Conselho Diretor.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 2º O valor estabelecido no § 1º deverá ser integralmente repassado pela Prestadora Receptora à Entidade Administradora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 3º A Prestadora Receptora poderá dispensar a cobrança do valor do Usuário Portado, assumindo o respectivo pagamento à Entidade Administradora do valor referido no § 1º.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art12Anexo" target="_blank"></a>Art. 12. A Portabilidade não será onerosa ao Usuário Portado nos seguintes casos:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - quando da mudança de plano de serviço na mesma prestadora; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - quando da troca de endereço de instalação, dentro de uma Área Local, envolvendo a mesma prestadora do STFC ou do SCM.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">Parágrafo único. Os prazos para a realização da portabilidade nos casos mencionados acima deverão ser aqueles estabelecidos na regulamentação para a efetivação das operações correspondentes.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloII" target="_blank"></a>TÍTULO II</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS REDES DE TELECOMUNICAÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art13Anexo" target="_blank"></a>Art. 13. As redes de telecomunicações e plataformas associadas ao suporte da Portabilidade devem fazer uso de tecnologias e sistemas cujas estruturas tenham a capacidade de evolução e aprimoramento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art14Anexo" target="_blank"></a>Art. 14. As prestadoras devem prever procedimentos de contingenciamento para garantir a continuidade do Processo de Portabilidade e do correto encaminhamento das chamadas e mensagens.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art15Anexo" target="_blank"></a>Art. 15. As prestadoras são responsáveis pelo correto dimensionamento das redes, plataformas, serviços e sistemas de suporte, de modo que a Portabilidade não seja causa de degradação da qualidade de serviço.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art16Anexo" target="_blank"></a>Art. 16. Os procedimentos de troca de informações para o correto encaminhamento de chamadas e mensagens devem ser objeto de planejamento contínuo e integrado entre as prestadoras envolvidas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art17Anexo" target="_blank"></a>Art. 17. Nas negociações destinadas a prover as facilidades de rede que viabilizem a Portabilidade, são coibidos os comportamentos prejudiciais à livre, ampla e justa competição entre prestadoras de serviço, no regime público e privado, em especial:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - a omissão de informações técnicas e comerciais necessárias para propiciar a oferta da Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - a exigência de condições abusivas na celebração de acordo para uso de sua rede por outra prestadora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - a obstrução ou demora inescusável das negociações para atendimento da solicitação de Portabilidade; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IV - a imposição de condições que impliquem o uso ineficiente das redes ou dos equipamentos interconectados.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIIcapI" target="_blank"></a>CAPÍTULO I</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO MODELO DE PORTABILIDADE</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art18Anexo" target="_blank"></a>Art. 18. O modelo de Portabilidade se constitui de:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - Arquitetura centralizada para a construção e acesso à BDR;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - BDR, utilizada na atualização das BDOs das prestadoras, contendo a indicação da rede em que se encontram registrados os códigos portados e, acessível a todas as prestadoras, utilizando padrões e protocolos comuns; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - BDOs nas prestadoras, utilizadas para o encaminhamento correto das chamadas e mensagens originadas em suas redes.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art19Anexo" target="_blank"></a>Art. 19. O encaminhamento de chamadas e mensagens originadas em redes do SMP deve seguir as diretrizes abaixo:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - para chamadas e mensagens destinadas a redes do STFC, do SCM e do SMP na mesma Área de Registro, acesso à BDO da prestadora originadora, quando aplicável; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - para chamadas e mensagens destinadas a redes do STFC, do SCM e do SMP fora da Área de Registro de origem da chamada, a prestadora de STFC na modalidade longa distância nacional escolhida pelo usuário tem a responsabilidade pelo correto encaminhamento da chamada e mensagem com acesso à sua BDO, quando aplicável.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art20Anexo" target="_blank"></a>Art. 20. O encaminhamento de chamadas e mensagens originadas em redes do STFC e do SCM deve seguir as diretrizes abaixo:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - para chamadas e mensagens destinadas a redes do STFC e do SCM na mesma Área Local e do SMP na área de mesmo Código Nacional, acesso à BDO da prestadora originadora, quando aplicável; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - para chamadas e mensagens destinadas a redes do STFC e do SCM fora da Área Local e do SMP fora da área de mesmo Código Nacional, a prestadora de STFC na modalidade longa distância nacional escolhida pelo usuário tem a responsabilidade pelo correto encaminhamento da chamada e mensagem com acesso à sua BDO, quando aplicável.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art21Anexo" target="_blank"></a>Art. 21. As chamadas e mensagens originadas em redes de outros serviços de telecomunicações e destinadas a redes do STFC, do SCM e do SMP devem seguir as diretrizes abaixo:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - encaminhamento à Prestadora de Origem do Código de Acesso do usuário&nbsp;que, mediante acordo comercial, parte integrante do contrato de interconexão, deverá reencaminhar corretamente a chamada e mensagem; ou,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - acesso à BDO para o correto encaminhamento da chamada e mensagem.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art22Anexo" target="_blank"></a>Art. 22. O encaminhamento de chamadas e mensagens internacionais, terminadas no território nacional, deve ser realizado pela prestadora do STFC na modalidade longa distância internacional que recebeu a chamada, quando aplicável.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIIcapII" target="_blank"></a>CAPÍTULO II</p>
+<p class="Texto_Centralizado" style="text-align: center;">DA BASE DE DADOS NACIONAL DE REFERÊNCIA DA PORTABILIDADE (BDR)</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art23Anexo" target="_blank"></a>Art. 23. A BDR, mantida pela Entidade Administradora, deve conter a indicação da rede em que se encontram registrados os códigos de acesso portados, sendo utilizada na atualização das Bases de Dados Operacionais das prestadoras.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art24Anexo" target="_blank"></a>Art. 24. A existência da BDR não desobriga as prestadoras da constituição e manutenção das BDOs, contendo a cópia atualizada da BDR.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art25Anexo" target="_blank"></a>Art. 25. Os procedimentos técnico-operacionais utilizados pela Entidade Administradora para a implementação, manutenção e atualização da BDR deverão ser estabelecidos pelo GIP e aprovados da Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">Parágrafo único. A BDR deve possuir mecanismos de redundância e contingência, necessários para a prestação continuada da Portabilidade.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIIcapIII" target="_blank"></a>CAPÍTULO III</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS BASES DE DADOS OPERACIONAIS (BDO´S)</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art26Anexo" target="_blank"></a>Art. 26. As prestadoras pertencentes a Grupos detentores de Poder de Mercado Significativo - PMS, na oferta do SMP, do SCM ou do STFC, devem implementar, nas áreas geográficas onde detêm poder de mercado, BDOs destinadas ao suporte da Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 1º As prestadoras mencionadas no caput, podem interagir para compartilhar os custos do planejamento, implementação e operação das plataformas de rede.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 2º As prestadoras mencionadas no caput devem disponibilizar, nas áreas geográficas onde detêm poder de mercado, às prestadoras não detentoras de PMS, as BDOs e plataformas de rede para suporte da Portabilidade, mediante acordo comercial, parte integrante do contrato de interconexão.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 3º As demais prestadoras podem implementar BDOs, por meio de acordo comercial com a Entidade Administradora.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIIcapIV" target="_blank"></a>CAPÍTULO IV</p>
+<p class="Texto_Centralizado" style="text-align: center;">DOS PROCEDIMENTOS OPERACIONAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art27Anexo" target="_blank"></a>Art. 27. Os procedimentos técnico-operacionais de suporte à Portabilidade, entre as Prestadoras Doadora e Receptora, devem estar contidos em documento específico, fazendo parte dos contratos de interconexão, no que couber.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art28Anexo" target="_blank"></a>Art. 28. Os procedimentos técnico-operacionais devem abranger, entre outros, os seguintes aspectos:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - solicitação do serviço pelo usuário;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - provisão do pedido pela Prestadora Receptora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - notificação à Prestadora Doadora, via Entidade Administradora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IV - validação da ordem de serviço;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">V - confirmação das programações para encaminhamento/roteamento;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VI - atualização das bases de dados;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VII - notificação às demais prestadoras envolvidas; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VIII - testes de validação.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIII" target="_blank"></a>TÍTULO III</p>
+<p class="Texto_Centralizado" style="text-align: center;">DA ENTIDADE ADMINISTRADORA</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art29Anexo" target="_blank"></a>Art. 29. As prestadoras devem contratar a Entidade Administradora para a execução dos procedimentos relativos à Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 1º As prestadoras&nbsp;são responsáveis pelos ônus decorrentes da contratação da Entidade Administradora para prestação dos serviços relativos à Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 2º O contrato com a Entidade Administradora deve conter no mínimo as condições para a manutenção da Entidade Administradora, incluindo o gerenciamento do Processo de Portabilidade e da BDR, bem como as obrigações da Entidade Administradora quanto ao fornecimento de informações solicitadas pela Anatel, por meio das prestadoras, relativamente à Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art30Anexo" target="_blank"></a>Art. 30. As prestadoras, suas coligadas, controladas, controladoras não devem exercer domínio sobre a Entidade Administradora, de forma a garantir a integridade, neutralidade e continuidade do Processo de Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art31Anexo" target="_blank"></a>Art. 31. A Entidade Administradora deve atender aos seguintes requisitos:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - ser pessoa jurídica dotada de independência administrativa e autonomia financeira, patrimonial e neutralidade decisória;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - ser constituída segundo as leis brasileiras, com sede e administração no país;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - ter prazo de duração indeterminado;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IV - ter a responsabilidade pelo dimensionamento, contratação, especificação, planejamento e administração dos equipamentos e sistemas para a implementação, funcionamento e acessibilidade da BDR;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">V - executar o Processo de Portabilidade de forma contínua e ininterrupta;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VI - manter a confidencialidade das informações relacionadas aos processos da Portabilidade, não podendo divulgá-las, utilizando-as somente para suprir o Processo de Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VII - manter, pelo período de 10 (dez) anos, os registros de movimentação dos códigos portados;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VIII - gerenciar as Solicitações de Portabilidade de forma sequencial;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IX - garantir a troca de informações, necessárias ao Processo da Portabilidade, entre as prestadoras nele envolvidas, por meio de interfaces abertas e protocolos comuns;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">X - manter uma BDR no território nacional e fornecer os dados necessários para a atualização periódica das BDOs pelas prestadoras de serviço de telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">XI - definir as atividades e os tempos de execução, de forma a permitir que o tempo total do Processo de Portabilidade não exceda o prazo estabelecido na Regulamentação; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">XII - garantir que os códigos em processo de Portabilidade tenham obtido a prévia autorização de uso da Anatel, antes de proceder ao referido Processo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art32Anexo" target="_blank"></a>Art. 32. Na execução de suas atividades, as prestadoras e a Entidade Administradora devem obedecer às regras definidas na Regulamentação, em especial com relação à integridade e prazos relacionados ao Processo de Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art33Anexo" target="_blank"></a>Art. 33. A Entidade Administradora e as prestadoras envolvidas no Processo de Portabilidade devem certificar os processos relacionados à Portabilidade junto a um OCC.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art34Anexo" target="_blank"></a>Art. 34. A Anatel poderá estabelecer, por meio de Regulamentação específica, um Conselho Consultivo para atuar como órgão de participação institucionalizada da sociedade na Entidade Administradora, nos assuntos relacionados com a Portabilidade.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIIIcapI" target="_blank"></a>CAPÍTULO I</p>
+<p class="Texto_Centralizado" style="text-align: center;">DA RELAÇÃO COM AS PRESTADORAS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art35Anexo" target="_blank"></a>Art. 35. As prestadoras são responsáveis pela Portabilidade junto aos usuários e à Anatel, incluindo as disposições estabelecidas no contrato com a Entidade Administradora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art36Anexo" target="_blank"></a>Art. 36. As prestadoras devem submeter à aprovação da Anatel o critério utilizado na definição de suas participações no pagamento pelos serviços utilizados, decorrente da contratação da Entidade Administradora de forma a coibir abusos e práticas anti-competitivas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art37Anexo" target="_blank"></a>Art. 37. O contrato celebrado com a Entidade Administradora deve conter, entre outros, dispositivos que:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - especifiquem os procedimentos e características do relacionamento entre a Entidade Administradora e a Anatel;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - especifiquem a obrigação da Entidade Administradora em comunicar as falhas e dificuldades verificadas nos processos de Portabilidade à Anatel;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - permitam à Anatel a qualquer tempo realizar auditorias sobre o Processo de Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IV - permitam à Anatel, sem ônus e a qualquer tempo, obter os seguintes relatórios periódicos:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">a) Relatórios estatísticos de desempenho do Processo de Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">b) Relatório de Bilhetes de Portabilidade iniciados;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">c) Relatório de Bilhetes de Portabilidade concluídos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">d) Relatório de Bilhetes de Portabilidade não concluídos, com as justificativas;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">e) Relatório de Bilhetes de Portabilidade concluídos fora do prazo, com as justificativas;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">f) Relatório de Bilhetes de Portabilidade cancelados, com as justificativas para o cancelamento;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">g) Relatórios de Anormalidades com diagnóstico e ações desenvolvidas objetivando o atendimento das disposições regulamentares;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">h) Informações de atualização de base de dados;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">i) Dados em tempo real; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">j) Outros que vierem a ser solicitados;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">V - permitam à Anatel intervir nos processos relacionados à Portabilidade, no sentido de garantir a continuidade e a eficácia dos mesmos; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VI - garantam a neutralidade e integridade do Processo de Portabilidade.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIV" target="_blank"></a>TÍTULO IV</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO PROCESSO DE PORTABILIDADE</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art38Anexo" target="_blank"></a>Art. 38. É vedado à Prestadora Doadora instituir cobrança aos usuários que solicitem a transferência para a Prestadora Receptora, em função da Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">Parágrafo único. É vedado à Prestadora Doadora, salvo quando existam obrigações contratuais a cumprir ou serviços já prestados, emitir documento de cobrança ao Usuário Portado após a conclusão do Processo de Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art39Anexo" target="_blank"></a>Art. 39. É vedado à Prestadora Doadora instituir cobrança à Prestadora Receptora, em função da Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art40Anexo" target="_blank"></a>Art. 40. A portabilidade implica a cessação da relação contratual com a Prestadora Doadora e a celebração de uma nova relação contratual com a Prestadora Receptora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">Parágrafo único. A denúncia da relação contratual com a Prestadora Doadora é realizada com a Solicitação de Portabilidade pelo Usuário, sendo concretizada com seu efetivo atendimento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art41Anexo" target="_blank"></a>Art. 41. As Prestadoras são responsáveis pelo cumprimento dos prazos e dos procedimentos do Processo de Portabilidade.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIVcapI" target="_blank"></a>CAPÍTULO I</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO ATENDIMENTO DA SOLICITAÇÃO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art42Anexo" target="_blank"></a>Art. 42. O Processo de Portabilidade inicia-se mediante a solicitação do usuário junto à Prestadora Receptora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art43Anexo" target="_blank"></a>Art. 43. Na solicitação de Portabilidade, o usuário deve informar à Prestadora Receptora os seguintes dados:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - nome completo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - número do documento de identidade ou número do registro no cadastro do Ministério da Fazenda, no caso de pessoa natural;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - número do registro no cadastro do Ministério da Fazenda, no caso de pessoa jurídica;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IV - endereço completo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">V - código de acesso; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VI - nome da Prestadora Doadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art44Anexo" target="_blank"></a>Art. 44. A Prestadora Receptora deve fornecer ao usuário, no ato do registro da Solicitação de Portabilidade, número de protocolo do Bilhete de Portabilidade com identificação sequencial.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">Parágrafo único. A identificação sequencial é gerenciada pela Entidade Administradora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art45Anexo" target="_blank"></a>Art. 45. A fase de autenticação do Processo de Portabilidade é caracterizada pela conferência dos dados do usuário, que são encaminhados à Prestadora Doadora por meio da Entidade Administradora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 1º Os dados referidos no&nbsp;<strong>caput</strong>&nbsp;são os seguintes:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">a) nome completo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">b) número do documento de identidade ou número do registro no cadastro do Ministério da Fazenda, no caso de pessoa natural;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">c) número do registro no cadastro do Ministério da Fazenda, no caso de pessoa jurídica;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">d) código de acesso; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">e) nome da Prestadora Doadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 2º A Prestadora Doadora terá, no máximo, 1 (um) dia útil para conferência e confirmação dos dados do usuário.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 3º Caso não ocorra a autenticação pela Prestadora Doadora em observância aos prazos e condições estipulados neste Anexo, as razões para tal devem ser enviadas à Prestadora Receptora por meio da Entidade Administradora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art46Anexo" target="_blank"></a>Art. 46. Após a fase de autenticação, não havendo condições para recusa da Solicitação de Portabilidade, a Prestadora Receptora deve agendar a habilitação do usuário e o procedimento para ativação e desativação dentro do Período de Transição.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 1º A Prestadora Receptora é responsável pela atualização das etapas do Processo de Portabilidade junto ao usuário, tanto nas situações de efetivação da Portabilidade quanto nas condições de recusa.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 2º A ativação na Prestadora Receptora e a desativação na Prestadora Doadora devem ocorrer de forma a minimizar a interrupção da prestação do serviço de telecomunicação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 3º A habilitação na Prestadora Receptora deve ser feita presencialmente, ou utilizando outros métodos seguros de identificação, mediante apresentação de documentos que comprovem os dados informados quando da Solicitação de Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 4º Nos prazos estabelecidos no regulamento de cada serviço, a Prestadora Receptora deve entregar ao Usuário Portado cópia do documento de adesão e do Plano de Serviço ao qual será vinculado.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIVcapII" target="_blank"></a>CAPÍTULO II</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS CONDIÇÕES DE RECUSA</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art47Anexo" target="_blank"></a>Art. 47. A Solicitação de Portabilidade pode ser recusada nos seguintes casos:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - dados enviados incorretos ou incompletos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - código inexistente, não designado, temporário ou designado a terminais de uso público; ou,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - em andamento outra Solicitação de Portabilidade para o Código de Acesso em questão.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIVcapIII" target="_blank"></a>CAPÍTULO III</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS CONDIÇÕES DE CANCELAMENTO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art48Anexo" target="_blank"></a>Art. 48. O usuário tem o direito de solicitar o cancelamento de sua Solicitação de Portabilidade no transcorrer do Processo de Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 1º O cancelamento da Solicitação da Portabilidade deve ser feito junto à Prestadora Receptora, que deve informá-lo à Entidade Administradora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 2º Caso a Solicitação de cancelamento seja feita fora do prazo previsto, a Portabilidade será concluída.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIVcapIV" target="_blank"></a>CAPÍTULO IV</p>
+<p class="Texto_Centralizado" style="text-align: center;">DOS PRAZOS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art49Anexo" target="_blank"></a>Art. 49. Devem ser observados os seguintes prazos máximos relacionados à Portabilidade:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - duração do Processo de Portabilidade, contado a partir da Solicitação: em até 3 (três) dias úteis;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - cancelamento do Processo de Portabilidade, contado a partir da Solicitação: 2 (dois) dias úteis em todos os casos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - recusa da Solicitação de Portabilidade, contado a partir da Solicitação: 1 (um) dia útil em todos os casos; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IV - Período de Transição: 2 (duas) horas em 99% (noventa e nove por cento) dos casos. Em nenhum caso, esse período de transição pode ser superior a 24 (vinte e quatro) horas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art50Anexo" target="_blank"></a>Art. 50. Os prazos e percentuais de atendimento devem ser consolidados mensalmente, por prestadora, e disponibilizados para acesso da Anatel, obedecendo ao seguinte:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - a relação entre as solicitações de portabilidade e suas efetivações deve ser no mínimo igual a 95% (noventa e cinco por cento) dos casos, no prazo estabelecido no art.&nbsp;53, inciso I; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - no período estabelecido no art.&nbsp;53, inciso I, em nenhum caso,&nbsp;a efetivação da portabilidade deve se dar em mais de 5 (cinco)&nbsp;dias úteis.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art51Anexo" target="_blank"></a>Art. 51. Demais procedimentos e prazos operacionais relacionados com as funções da Entidade Administradora e todo o Processo da Portabilidade devem estar definidos no DOP que será submetido pelo GIP à Anatel.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIVcapV" target="_blank"></a>CAPÍTULO V</p>
+<p class="Texto_Centralizado" style="text-align: center;">DA INTERRUPÇÃO DO SERVIÇO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art52Anexo" target="_blank"></a>Art. 52. Não é permitida a interrupção do serviço de telecomunicações do Usuário Portado em decorrência das ações e processos relacionados à Portabilidade, exceto durante o Período de Transição.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">Parágrafo único. A Entidade Administradora tem a função de monitorar as ações e processos da Portabilidade, no sentido de garantir a eficiência do Processo de Portabilidade e a resolução de falhas.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloIVcapVI" target="_blank"></a>CAPÍTULO VI</p>
+<p class="Texto_Centralizado" style="text-align: center;">DOS CUSTOS ENVOLVIDOS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art53Anexo" target="_blank"></a>Art. 53. Cada prestadora é responsável pelos custos necessários para adequação da sua própria rede, a fim de permitir a implementação da solução de Portabilidade e de suas atualizações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art54Anexo" target="_blank"></a>Art. 54. A utilização de plataformas de rede, ou exclusivamente da BDO, de outra prestadora para suporte da Portabilidade deverá ser remunerada conforme acordo comercial entre as partes.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art55Anexo" target="_blank"></a>Art. 55. Os custos comuns, referentes à implementação e manutenção da Entidade Administradora, nos quais se incluem a criação, operação e manutenção da BDR, devem ser obrigatoriamente compartilhados entre as prestadoras envolvidas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art56Anexo" target="_blank"></a>Art. 56. Cabe às prestadoras a definição dos critérios de compartilhamento dos custos comuns e sua forma de implementação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 1º O prazo para a definição dos critérios de compartilhamento dos custos comuns não deve comprometer a implementação ou o funcionamento da Entidade Administradora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 2º Caso não haja acordo entre as prestadoras quanto à definição dos critérios de compartilhamento dos custos comuns, caberá a Anatel defini-los tempestivamente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art57Anexo" target="_blank"></a>Art. 57. Os custos comuns poderão ser revisados periodicamente, bem como os critérios de compartilhamento utilizados para a sua alocação entre as prestadoras.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art58Anexo" target="_blank"></a>Art. 58. As prestadoras são obrigadas a suportar os custos decorrentes das alterações, atualizações ou evoluções da solução da Portabilidade na forma da regulamentação.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloV" target="_blank"></a>TÍTULO V</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS DISPOSIÇÕES FINAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art59Anexo" target="_blank"></a>Art. 59. O não cumprimento dos prazos de implementação definidos neste Anexo caracteriza infração grave, nos termos da regulamentação aplicável.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art60Anexo"></a>Art. 60. Caso não seja possível acordo entre as partes sobre situações de Portabilidade, dentro do Processo de Resolução de Conflitos entre Prestadoras, a Anatel poderá estabelecer cautelarmente as condições e valores para a utilização das BDOs e plataformas de rede para suporte da Portabilidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art61Anexo" target="_blank"></a>Art. 61. O Usuário Portado pode solicitar a qualquer tempo a mudança de seu Código de Acesso Portado para um outro Código de Acesso qualquer na mesma prestadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">Parágrafo único. A mudança não desobriga o Usuário Portado do pagamento dos valores associados à Portabilidade efetivada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art62Anexo" target="_blank"></a>Art. 62. Sem prejuízo do disposto na legislação aplicável e no presente documento, as prestadoras podem elaborar Códigos de Conduta com o objetivo de harmonizar os procedimentos relativos à Portabilidade, encaminhando-os para a Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art63Anexo" target="_blank"></a>Art. 63. Não é devido à Prestadora Doadora nenhum valor a título de ressarcimento relativo a recurso de numeração designado a Usuário portado.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tituloVcapI" target="_blank"></a>CAPÍTULO I</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO GRUPO DE IMPLEMENTAÇÃO DA PORTABILIDADE (GIP)</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art64Anexo" target="_blank"></a>Art. 64. Os membros do GIP são representantes da Anatel, das prestadoras envolvidas e da Entidade Administradora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">Parágrafo único. Os conflitos no âmbito do GIP são sanados por decisão da Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art65Anexo" target="_blank"></a>Art. 65. São atribuições do GIP, dentre outras:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">I - coordenação, definição, elaboração de cronograma detalhado de atividades e acompanhamento da implantação da Portabilidade em todo o território nacional;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">II - avaliação e divulgação das Fases de implementação da Portabilidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">III - especificação das características e obrigações da Entidade Administradora, da BDR e das BDOs;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">IV - realização e acompanhamento das ações necessárias para garantir a contratação da Entidade Administradora, dentre as quais a elaboração dos requisitos para a contratação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">V - especificação dos procedimentos técnico-operacionais relativamente ao encaminhamento das chamadas e mensagens; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">VI - coordenação dos processos e oferta de subsídios que permitam à Anatel dirimir eventuais conflitos que venham a ocorrer nos procedimentos relacionados à Portabilidade.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1640"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes">Resoluções da Anatel</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes/2022">2022</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Alteração" class="link-categoria">Alteração</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento" class="link-categoria">Regulamento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Telefônico%20Fixo%20Comutado" class="link-categoria">Serviço Telefônico Fixo Comutado</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Móvel%20Pessoal" class="link-categoria">Serviço Móvel Pessoal</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Resolução" class="link-categoria">Resolução</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Global" class="link-categoria">Global</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Satélite%20Não-Geoestacionário" class="link-categoria">Satélite Não-Geoestacionário</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RecursosPrestacao" class="link-categoria">RecursosPrestacao</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoVigente" class="link-categoria">ResolucaoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

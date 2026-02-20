@@ -1,0 +1,1346 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 7869, de 07 de junho de 2022</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1668-ato-7869">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Requisitos Técnicos, Terminação de Rede Óptica, Fibras Ópticas, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovar os requisitos técnicos para avaliação da conformidade de equipamentos de Terminação de Rede Óptica (Optical Network Terminal - ONT), Terminação de Linha Óptica (Optical Line Terminal - OLT) e Unidade de Rede Óptica (Optical Network Unit - ONU) para redes de fibras ópticas com padrões de rede óptica passiva GPON, XGPON e XGSPON.">
+	<title>Anatel - Ato nº 7869, de 07 de junho de 2022</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=874233072" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=540425344" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1935930998" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141417" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2022">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2022">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2022">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2022" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2022" class="pathway">2022</a> <span class="separator">&gt;</span> <span>Ato nº 7869, de 07 de junho de 2022</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;949058b3ec27cb39&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 7869, de 07 de junho de 2022		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 10 Junho 2022 13:50			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Terça, 25 Outubro 2022 17:05			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 5333			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico <a title="Acesse o Boletim" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=9690126&amp;id_orgao_publicacao=0">10/6/2022</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram conferidas pela <a title="Acesse a Portaria " href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a href="http://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art19">Art. 19</a> da Lei nº 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO que&nbsp;os Requisitos Técnicos estabelecem os parâmetros e critérios técnicos verificados na Avaliação da Conformidade de um ou mais tipos de produto para telecomunicações, nos termos do <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715#art22Anexo">art. 22</a> do Regulamento para Avaliação da Conformidade e Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº&nbsp;715, de 23 de outubro de 2019;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do <a title="Acesse o processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlNEIECcik5j6Cf_RJMpTDst1JEIQXoLn6LYViHEZYSAS">processo nº&nbsp;53500.039787/2019-43</a>,</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha texto-recuo-1a-linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1"></a>Art. 1º&nbsp; Aprovar os requisitos técnicos para avaliação da conformidade de equipamentos de Terminação de Rede Óptica (<em>Optical Network Terminal&nbsp;</em>-&nbsp;ONT), Terminação de Linha Óptica (<em>Optical Line Terminal</em>&nbsp;- OLT) e Unidade de Rede Óptica (<em>Optical Network Unit</em>&nbsp;- ONU) para redes de fibras ópticas com padrões de rede óptica passiva GPON, XGPON&nbsp;e XGSPON.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2"></a>Art. 2º&nbsp; Este Ato entra em vigor&nbsp;na data de sua publicação no&nbsp;Boletim de Serviços Eletrônico da Anatel, sendo mandatória a&nbsp;aplicação do seu anexo&nbsp;60 dias após a data de sua publicação.</p>
+<p style="text-align: center;">VINICIUS OLIVEIRA CARAM GUIMARÃES<br>Superintendente de Outorga e Recursos à Prestação&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas texto-recuo-1a-linha" style="text-align: center;">ANEXO AO&nbsp;ATO Nº 7869, DE 07 DE JUNHO DE 2022</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito texto-recuo-1a-linha" style="text-align: center;"><strong>REQUISITOS TÉCNICOS PARA A AVALIAÇÃO DA CONFORMIDADE&nbsp;DE&nbsp;EQUIPAMENTOS ONT, OLT&nbsp;E ONU&nbsp;PARA REDES DE FIBRAS ÓPTICAS COM PADRÕES GPON, XGPON&nbsp;E XGSPON</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito texto-recuo-1a-linha" style="text-align: justify;"><a id="item1"></a>1.&nbsp;<strong> OBJETIVO</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify;"><a id="item1.1"></a>1.1 Este documento estabelece os requisitos mínimos a serem demonstrados na avaliação da conformidade de&nbsp;equipamentos de Terminação de Rede Óptica (<em>Optical Network Terminal&nbsp;</em>-&nbsp;ONT), Terminação de Linha Óptica (<em>Optical Line Terminal</em>&nbsp;- OLT) e Unidade de Rede Óptica (<em>Optical Network Unit</em>&nbsp;- ONU) para redes de fibras ópticas com padrões de rede passiva com capacidade de 1 Gbps (<em>Gigabit-capable passive optical network</em>&nbsp;-&nbsp;GPON), com capacidade de 10 Gbps (<em>10-Gigabit-capable passive optical network</em>&nbsp;- XGPON) e simétrica com capacidade de 10 Gbps (<em>10-Gigabit-capable symmetric passive optical network</em>&nbsp;- XGSPON), para efeito de homologação junto à Agência Nacional de Telecomunicações.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify;"><a name="item2"></a>2.<strong> ABRANGÊNCIA</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item2.1"></a>2.1. Este documento se aplica&nbsp;aos&nbsp;equipamentos ONT, OLT&nbsp;e ONU&nbsp;para redes de fibras ópticas com padrões de rede passiva GPON, XGPON&nbsp;e XGSPON.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item3"></a>3.&nbsp;&nbsp;<strong>REFERÊNCIAS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.1"></a>3.1<a href="http://www.planalto.gov.br/ccivil_03/leis/l9472.htm">.Lei nº 9.472, de 16 de julho de 1997</a> - Lei Geral de Telecomunicações (LGT);</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.2"></a>3.2.&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, que delega competências para aprovar procedimentos, requisitos técnicos, especificações ou acordos técnicos para operacionalizar a certificação de produtos e sistemas, conforme a regulamentação em vigor;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.3"></a>3.3. Regimento Interno da Anatel, aprovado pela&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2013/450-resolucao-612">Resolução nº 612, de 29 de abril de 2013</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.4"></a>3.4. Regulamento para Avaliação da Conformidade e Homologação de Produtos para Telecomunicações, aprovado pela <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715">Resolução&nbsp;nº&nbsp;715, de 23 de outubro&nbsp;de 2019</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.5"></a>3.5. Requisitos Técnicos de Compatibilidade Eletromagnética para a Avaliação da Conformidade de Produtos para Telecomunicações, aprovados pelo<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1181-ato-1120">&nbsp;Ato nº 1120, de 19 de fevereiro de 2018</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.6"></a>3.6. Requisitos para a Avaliação da Conformidade de Equipamentos de Telecomunicações quanto aos Aspectos de Segurança Elétrica, aprovados pelo<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1193-ato-950">&nbsp;Ato&nbsp;nº 950, de 08 de fevereiro de 2018</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.7"></a>3.7. Requisitos de Condições e Ensaios Ambientais, aprovados pelo <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1231-ato-14098">Ato nº 14098, de 23 de novembro de 2017</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.8"></a>3.8. Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita, aprovado pela <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2017/936-resolucao-680">Resolução nº 680, de 27 de junho de 2017</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.9"></a>3.9. Requisitos para avaliação da conformidade de Equipamentos de Radiocomunicação de Radiação&nbsp;Restrita, aprovados pelo <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1139-ato-14448">Ato nº 14448, de 04 de dezembro de 2017</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.10"></a>3.10. <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1209-ato-2311">Ato nº 2311&nbsp;de 27 de março de 2018</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.11"></a>3.11. Requisitos técnicos para avaliação da conformidade da interface analógica de adaptadores para terminal de assinante, aprovados pelo <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1192-ato-933">Ato nº 933, de&nbsp;de 08 de fevereiro de 2018</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.12"></a>3.12. Regulamentos da Interface Usuário - Rede e de terminais do Serviço Telefônico Fixo Comutado, aprovados&nbsp;pela <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2007/195-resolucao-473">Resolução nº 473, de 27 de julho de 2007</a>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.13"></a>3.13. IEC 60825-1:2014&nbsp;–&nbsp;<em>Safety of laser products - Part 1: Equipment classification and requirements</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.14"></a>3.14. ITU-T&nbsp;G.983.1:2005 –&nbsp;<em>Broadband optical access systems based on Passive Optical Networks (PON)</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.15"></a>3.15. ITU-T G.984.1:2008 –&nbsp;<em>Gigabit-capable passive optical networks (GPON): General characteristics</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.16"></a>3.16. ITU-T G.984.2:2019 –&nbsp;<em>Gigabit-capable Passive Optical Networks (GPON): Physical Media Dependent (PMD) layer specification</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.17"></a>3.17. ITU-T G.984.3:2014&nbsp;–&nbsp;<em>Gigabit-capable passive optical networks (G-PON): Transmission convergence layer specification</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.18"></a>3.18. ITU-T G.984.4:2008 –&nbsp;<em>Gigabit-capable Passive Optical Networks (G-PON): ONT management and control interface specification</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.19"></a>3.19. ITU-T G.987:2012 –&nbsp;<em>10-Gigabit-capable passive optical network (XG-PON) systems: Definitions, abbreviations and acronyms</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.20"></a>3.20. ITU-T G.987.2:2016&nbsp;–&nbsp;<em>10-Gigabit-capable passive optical networks (XG-PON): Physical media dependent (PMD) layer specification</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.21"></a>3.21. ITU-T G.987.2:2016 –&nbsp;<em>Amendment&nbsp;</em>1 (08/2017);</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.22"></a>3.22. ITU-T G.987.2:2016 –&nbsp;<em>Amendment&nbsp;</em>2 (10/2020);</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.23"></a>3.23. ITU-T G.9807.1:2016 –&nbsp;<em>10-Gigabit-capable symmetric passive optical network (XGS-PON)</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.24"></a>3.24. ITU-T G.9807.1:2016 –&nbsp;<em>Amendment&nbsp;</em>1 (10/2017);</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.25"></a>3.25 ITU-T G.9807.1:2016 –&nbsp;<em>Amendment&nbsp;</em>2 (10/2020).</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><strong>&nbsp;</strong><a name="item4"></a>4.<strong>&nbsp; DEFINIÇÕES</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.1"></a>4.1. AF: Função de Adaptação (<em>Adaptation Function</em>).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.2"></a>4.2. NE: Elemento de Rede (<em>Network Element</em>) que utiliza distintos comprimentos de onda para a OLT e as ONU/ONT.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.3"></a>4.3. O<sub>lu</sub>&nbsp;e O<sub>ld</sub>:&nbsp;interface óptica no ponto de referência S/R entre a OLT e o ODN para as direções ascendente e descendente, respectivamente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.4"></a>4.4 O<sub>ru</sub>&nbsp;e O<sub>rd</sub>: interface óptica no ponto de referência R/S entre a ONU e o ODN para as direções ascendente e descendente, respectivamente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.5"></a>4.5. Rede de Distribuição Óptica (<em>Optical Distribution Network</em>,&nbsp;ODN): a rede de distribuição óptica proporciona o meio de transmissão entre a OLT e os usuários em ambos sentidos de transmissão. Utiliza os componentes ópticos passivos (fibras ópticas, cabos ópticos, conectores ópticos, filtros,&nbsp;<em>splitters</em>, atenuadores e emendas).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">4.6.Rede Óptica Passiva (<em>Passive Optical Network</em>, PON):&nbsp;tecnologia de telecomunicações de fibra óptica para fornecer acesso à rede de banda larga aos clientes finais. Sua arquitetura implementa uma topologia ponto-multiponto em que uma única fibra óptica atende a vários pontos finais usando divisores de fibra óptica não alimentados (passivos) para dividir a largura de banda da fibra entre os usuários.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.7"></a>4.7. Rede Óptica Passiva de 1 Gbps (<em>Gigabit-capable Passive Optical Network</em>,&nbsp;GPON):&nbsp;rede de acesso de fibra óptica flexível capaz de suportar os requisitos de largura de banda de serviços comerciais e residenciais e que cobre sistemas com taxas de linha nominais de 2,4 Gbps na direção descendente e 1,2 Gbps e 2,4 Gbps na direção ascendente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.8"></a>4.8 Rede Óptica Passiva de 10 Gbps (<em>10-Gigabit-capable Passive Optical Network</em>,&nbsp;XGPON): rede de acesso de fibra óptica flexível capaz de suportar os requisitos de largura de banda de serviços comerciais e residenciais e que cobre sistemas com taxas de linha nominais de 2,5 Gbps&nbsp;na direção ascendente e&nbsp;10 Gbps na direção descendente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.9"></a>4.9. Rede Óptica Passiva Simétrica de 10 Gbps (<em>10-Gigabit-capable Symmetric Passive Optical Network</em>,&nbsp;XGSPON):&nbsp;sistema em uma rede de acesso óptico para aplicações residenciais, comerciais,&nbsp;<em>backhaul&nbsp;</em>móvel e outras. Este sistema opera em uma infraestrutura de acesso óptico ponto-multiponto na taxa de dados nominal de 10 Gbps nas direções descendente e ascendente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.10"></a>4.10. SNI: Interface do Nó de Serviço (<em>Service Node Interface</em>).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.11"></a>4.11. Terminação de Linha Óptica (<em>Optical Line Terminal</em>,&nbsp;OLT): a OLT proporciona a interface no lado da rede da ODN (rede de distribuição óptica) e transmite o sinal através de uma ou várias ODNs, e esta(s) distribui(em) a um determinado número de ONUs/ ONTs.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.12"></a>4.12. Terminação de Rede Óptica (<em>Optical Network Terminal</em>, ONT): a Terminação de Rede Óptica é uma ONU utilizada para a arquitetura de FTTH (<em>Fiber To The Home</em>) e inclui a função de porta de usuário.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.13"></a>4.13. UNI: Interface de Usuário-Rede (<em>User-Network Interface</em>).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.14"></a>4.14. Unidade de Rede Óptica (<em>Optical Network Unit</em>, ONU): a ONU proporciona a interface lado usuário da rede de acesso óptica e está conectada a ODN. Todas as ONU/ONT do sistema recebem o mesmo sinal e cada uma delas extrai a informação correspondente, de acordo com um protocolo de acesso. No sentido inverso (sentido ascendente) os dados são transmitidos de acordo com um mecanismo de controle na OLT, utilizando o protocolo TDMA (Acesso Múltiplo por Divisão no Tempo) que aloca um tempo de transmissão a cada ONU.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.15"></a>4.15. WDM: Multiplexação por Divisão do Comprimento de Onda (<em>Wavelenght Division Multiplexing</em>).</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item5"></a>5.&nbsp;<strong>REQUISITOS GERAIS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1.<strong> Topologia</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.1.1"></a>5.1.1. A figura 1 mostra um exemplo de representação esquemática da configuração de rede PON.</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/Ato-7869/Anexo-I.png" width="552" height="202"></p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Figura 1 - Exemplo de representação esquemática da configuração de rede PON</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2.<strong> Funcionalidades do sistema</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.1"></a>5.2.1. Serviços: O sistema deverá transportar voz, dados e vídeo (<em>triple play</em>) sobre uma ou duas fibras e suportar, entre outros, os serviços de voz e vídeo sobre IP, E1, POTS, vídeo RF, Ethernet, ATM e TDM, sendo que não necessariamente todos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.3"></a>5.3<strong> Velocidade de transmissão</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.3.1"></a>5.3.1. GPON visa velocidades de transmissão maiores ou iguais a 1,2 Gbps. Consequentemente, identificam-se duas combinações de velocidade de transmissão da seguinte forma:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;"><a name="item3.3.1.1"></a>3.3.1.1. 2,4 Gbps para direção ascendente, 2,4 Gbps para direção descendente;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;"><a name="item5.3.1.2"></a>5.3.1.2. 1,2 Gbps para direção ascendente, 2,4 Gbps para direção descendente.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.3.2"></a>5.3.2. A recomendação&nbsp;ITU-T G.987.2&nbsp;define um sistema XGPON&nbsp;com taxa de linha nominal assimétrica de 9,95328 Gbps na direção descendente e 2,48832 Gbps na direção ascendente.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.3.3"></a>5.3.3. O sistema XGSPON, de acordo com a recomendação&nbsp;ITU-T G.9807.1,&nbsp;opera em uma infraestrutura de acesso óptico ponto a multiponto com&nbsp;taxa de dados nominal de 10 Gbps tanto na direção descendente quanto na ascendente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.4"></a>5.4.&nbsp;<strong>Método de transmissão</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.4.1"></a>5.4.1. A transmissão deve ser bidirecional, por uma única fibra, mediante a técnica de multiplexação em comprimentos de onda ou em duas fibras.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.5"></a>5.5.<strong> Perda de retorno da ODN</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item5.5.1"></a>5.5.1. A perda mínima de retorno da ODN medida no ponto R/S deve ser maior que 32 dB, para sistemas GPON, conforme norma ITU-T G.984-2.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item5.5.2"></a>5.5.2. A especificação geral de perda de retorno óptico mínimo (ORL) no ponto R/S na ODN é especificada nas tabelas 9-3 e 9-4 da norma ITU-T G.987.2, para sistemas XGPON, e nas tabelas B.9.3 e B.9.4 da norma ITU-T G.9807.1, para sistemas XGSPON. Opcionalmente, a especificação mínima de ORL no ponto S na ODN é especificada na nota 2 das tabelas 9-3 e&nbsp;9-4 da norma ITU-T G.987.2,&nbsp;para sistemas XGPON, e na nota 2 das tabelas B.9.3 e B.9.4 da norma ITU-T G.9807.1, para sistemas XGSPON.&nbsp;NOTA - A refletância geral no ponto S/R para um modelo ODN é dominada pelos conectores ópticos no quadro de distribuição óptica (ODF). A refletância máxima de um único elemento discreto nos moldes da norma ITU-T G.982&nbsp;é de -35 dB. A refletância dos dois conectores ODF leva a uma figura de -32 dB. No entanto, com base em outro modelo de rede, a refletância geral pode se tornar pior do que -20 dB.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.6"></a>5.6.<strong> Trajeto óptico</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item5.6.1"></a>5.6.1. Intervalo de atenuação: Deve-se especificar a classe da rede PON segundo as faixas de atenuação da ODN, como descrito na tabela 1.</p>
+<table style="width: 406px; margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Tabela 1 - Faixas de atenuação da ODN em redes PON</p>
+</caption>
+<tbody>
+<tr>
+<td style="width: 118.747px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Tipo de rede</p>
+</td>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Classe</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Faixa de atenuação [dB]</p>
+</td>
+</tr>
+<tr>
+<td style="width: 118.747px;" rowspan="4">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">GPON</p>
+</td>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">A</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">5 - 20</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">B</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">10 - 25</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">B+</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">13 - 28</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">C</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">15 - 30</p>
+</td>
+</tr>
+<tr>
+<td style="width: 118.747px;" rowspan="4">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">XGPON</p>
+</td>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">N1</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">14 - 29</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">N2</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">16 - 31</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">E1</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">18 - 33</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">E2</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">20 - 35</p>
+</td>
+</tr>
+<tr>
+<td style="width: 118.747px;" rowspan="6">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">XGSPON</p>
+</td>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">B+</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">13 - 28</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">C+</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">17 - 32</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">N1</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">14 - 29</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">N2</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">16 - 31</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">E1</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">18 - 33</p>
+</td>
+</tr>
+<tr>
+<td style="width: 68.2528px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">E2</p>
+</td>
+<td style="width: 199px;">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">20 - 35</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.7"></a>5.7.<strong> Alcance físico</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.7.1"></a>5.7.1. Em GPON, duas&nbsp;opções são definidas como alcance físico, 10 e 20 km.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.7.2"></a>5.7.2. Em XGPON e XGSPON, duas&nbsp;opções são definidas como alcance físico, 20 e 40 km.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.8"></a>5.8.<strong> Relação de divisão</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.8.1"></a>5.8.1. GPON deve suportar como mínimo uma relação de divisão de 1:16, sendo válida a certificação para uma maior relação de divisão avaliada.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.8.2"></a>5.8.2. XGPON e XGSPON devem suportar como mínimo uma relação de divisão de 1:64.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.9"></a>5.9.<strong> Comprimento de onda de trabalho</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.9.1"></a>5.9.1. Segundo o método de transmissão de dados, o sistema GPON deve funcionar nos intervalos de comprimento de onda presentes na tabela 2.</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Tabela 2 - Intervalos de comprimento de onda</p>
+</caption>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Sentido</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Uma Fibra</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Duas Fibras</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Ascendente</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">1260 nm - 1360 nm</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">1260 nm - 1360 nm</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Descendente</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">1480 nm - 1500 nm</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">1260 nm - 1360 nm</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.9.1.1"></a>5.9.1.1. Para transmissão de vídeo, o sistema deve funcionar no&nbsp;intervalo&nbsp;de comprimento de onda entre 1530 e&nbsp;1570 nm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.9.2"></a>5.9.2. A faixa de comprimento de onda do sinal descendente XGPON em um sistema de fibra única é de 1575 - 1580 nm (1575 - 1581 nm para aplicação externa), e a faixa do sinal ascendente&nbsp;é de 1260 - 1280 nm. A cláusula 5.2.2 da norma&nbsp;ITU-T G.987.1&nbsp;possui&nbsp;detalhes sobre as alocações de banda de comprimento de onda e como elas permitem a coexistência com GPON.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.9.3"></a>5.9.3. Redes XGSPON possuem&nbsp;faixa de comprimento de onda de 1575 - 1580 nm (1575 – 1581 nm&nbsp;<em>outdoor</em>) para OLT e 1260 - 1280 nm para&nbsp;ONU.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.10"></a>5.10.<strong>&nbsp;Interfaces de usuário da ONT e da ONU</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.10.1"></a>5.10.1. A ONT e a ONU deverão&nbsp;suportar do lado do usuário as seguintes interfaces (UNI), sendo que não necessariamente todas:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.1"></a>5.10.1.1. 10/100 Base-TX (IEEE 802.3)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.2"></a>5.10.1.2. 1000 Base-T (IEEE 802.3)</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;">a) 1000 Base-SX (IEEE 802.3)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.3"></a>5.10.1.3. 1000 Base-LX (IEEE 802.3)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.4"></a>5.10.1.4. ADSL2+ (G.992.x)</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;">a) VDSL2 (G.993.2)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.5"></a>5.10.1.5. STM-1 (ITU-T G.957)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.6"></a>5.10.1.6. STM-4 (ITU-T G.957)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.7"></a>5.10.1.7. POTS (Resolução ANATEL 473)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.8"></a>5.10.1.8. Vídeo RF - Wi-Fi (802.11 b/g/n)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.9"></a>5.10.1.9. SHDSL (G.991.2)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.10"></a>5.10.1.10. E1 (G.703)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.10.1.11"></a>5.10.1.11. FXS&nbsp;(requisitos técnicos para avaliação da conformidade da interface analógica de adaptadores para terminal de assinante)</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.11"></a>5.11.<strong> Interfaces do nó de serviço – REDE - OLT</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.11.1"></a>5.11.1. A OLT deverá suportar do lado da rede as seguintes interfaces (SNI), sendo que não necessariamente todas:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.1"></a>5.11.1.1. 1000 Base-LX</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.2"></a>5.11.1.2. 1000 Base-T interface elétrica IEEE 802.3z</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.3"></a>5.11.1.3. 1000 Base-SX multimodo interface IEEE 802.3z</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.4"></a>5.11.1.4. 10GBASE-SR-XFP</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.5"></a>5.11.1.5. 10GBASE-LR-XFP</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.6"></a>5.11.1.6. E1 (G.703)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.7"></a>5.11.1.7. STM-1 (ITU-T G.957)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.8"></a>5.11.1.8. STM-4 (ITU-T G.957)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.9"></a>5.11.1.9. STM-16 (ITU-T G.957)</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.11.1.10"></a>5.11.1.10. Vídeo RF</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.12"></a>5.12.<strong> Interfaces nos pontos S/R e R/S</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.12.1"></a>5.12.1. As interfaces nos pontos de referência S/R e R/S da figura 1 devem cumprir com pelo menos uma das especificações que, segundo sua velocidade e sentido de transmissão, estão indicadas na tabela 3.</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Tabela 3 - Especificações de velocidade e sentido de Tx para interfaces PON nos pontos S/R e R/S</p>
+</caption>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Padrão</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Sentido de Tx</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Velocidade</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro/Recomendação</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="6">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">GPON</p>
+</td>
+<td rowspan="2">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Descendente</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">1244,16 Mbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 2b / ITU-T G.984.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">2488,32 Mbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 2c / ITU-T G.984.2</p>
+</td>
+</tr>
+<tr>
+<td rowspan="4">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Ascendente</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">155,52 Mbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 2d / ITU-T G.984.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">622,08 Mbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 2e / ITU-T G.984.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">1244,16 Mbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 2f-1 / ITU-T G.984.2</p>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 2f-2 / ITU-T G.984.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">2488,32 Mbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 2g-1 / ITU-T G.984.2</p>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 2g-2 / ITU-T G.984.2</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="2">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">XGPON</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Descendente</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">9,95328 Gbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 9-3&nbsp;/ ITU-T G.987.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Ascendente</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">2,48832 Gbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro 9-4 / ITU-T G.987.2</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="2">
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">XGSPON</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Descendente</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">9,95328 Gbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro B.9.3 / ITU-T G9807.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Ascendente</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">9,95328 Gbps</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha">Quadro B.9.4 / ITU-T G9807.1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item6"></a>6.<strong> REQUISITOS ESPECÍFICOS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.1"></a>6.1.<strong> Transmissor Óptico</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.1"></a>6.1.1.<strong> Comprimento de onda operacional</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.1.1"></a>6.1.1.1. Em sistemas GPON, a faixa de comprimento de onda operacional para a direção descendente em sistemas de fibra única deve ser de 1480 - 1500 nm e em&nbsp;sistemas de fibra dupla deve ser de 1260 - 1360 nm,&nbsp;conforme item 8.2.5 da norma&nbsp;ITU-T G.984.2.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.1.2"></a>6.1.1.2. Nos demais casos, a&nbsp;faixa de&nbsp;comprimento de onda&nbsp;operacional na direção descendente é definida na tabela 9-3 da norma&nbsp;ITU-T G.987.2, para sistemas XGPON, e&nbsp;na tabela B.9.3 da norma&nbsp;ITU-T G.9807.1 para sistemas XGSPON;&nbsp;na&nbsp;ascendente é definida na tabela 9-4 da norma&nbsp;ITU-T G.987.2, para sistemas XGPON, e&nbsp;na tabela B.9.4 da norma&nbsp;ITU-T G.9807.1 para sistemas XGSPON, conforme item 9.2.5 da norma&nbsp;ITU-T G.987.2 e&nbsp;item B.9.2.5 da norma&nbsp;ITU-T G.9807.1.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.2"></a>6.1.2.<strong> Tipo de fonte</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px; text-align: justify;"><a name="item6.1.2.1"></a>6.1.2.1. Em sistemas GPON, dependendo das características de atenuação ou dispersão, os dispositivos transmissores viáveis incluem&nbsp;<em>lasers Multi-Longitudinal Mode</em>&nbsp;(MLM) e&nbsp;<em>lasers Single-Longitudinal Mode</em>&nbsp;(SLM). Para cada uma das aplicações, a norma&nbsp;ITU-T G.984.2 indica um tipo de fonte nominal. Entende-se que a indicação de um tipo de fonte nominal na norma&nbsp;ITU-T G.984.2 não é um requisito e que os dispositivos SLM podem ser substituídos por qualquer aplicação que mostre MLM como o tipo de fonte nominal sem qualquer degradação do desempenho do sistema,&nbsp;conforme item 8.2.6.1 da norma&nbsp;ITU-T G.984.2.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="padding-left: 90px; text-align: justify;"><a name="item6.1.2.2"></a>6.1.2.2. Para os demais casos, considerando as características de atenuação e dispersão do canal de fibra alvo, os dispositivos transmissores viáveis incluem apenas&nbsp;<em>lasers</em>&nbsp;de modo longitudinal único (SLM). A indicação de um tipo de fonte nominal na norma&nbsp;ITU-T G.987.2&nbsp;para sistemas XGPON, e na&nbsp;norma&nbsp;ITU-T G.9807.1 para sistemas XGSPON, não é um requisito, embora também seja esperado que apenas os&nbsp;<em>lasers&nbsp;</em>SLM atendam a todos os requisitos de distância e taxa de linha dos sistemas XGPON e XGSPON, para os links descendente e ascendente. O uso de&nbsp;<em>lasers&nbsp;</em>de modo multi-longitudinal (MLM) não está contemplado nas normas ITU-T G.987.2 e ITU-T G.9807.1&nbsp;devido às suas limitações práticas de distância e taxa de linha, conforme item 9.2.7.1 da norma&nbsp;ITU-T G.987.2 e&nbsp;item B.9.2.7.1 da norma&nbsp;ITU-T G.9807.1.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.3"></a>6.1.3.<strong> Características espectrais da fonte óptica</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.3.1"></a>6.1.3.1. Em sistemas GPON, para&nbsp;<em>lasers&nbsp;</em>MLM, a largura espectral é especificada pela largura máxima RMS&nbsp;sob condições operacionais padrão. A largura RMS é entendida como o desvio padrão da distribuição espectral. O método de medição para larguras RMS deve levar em consideração todos os modos que não estejam mais de 20 dB abaixo do modo de pico. Para os&nbsp;<em>lasers&nbsp;</em>SLM, a largura espectral máxima é especificada pela largura total máxima do pico do comprimento de onda central, medida 20 dB abaixo da amplitude máxima do comprimento de onda central sob condições operacionais padrão. Além disso, para controle de ruído de partição de modo em sistemas SLM, um valor mínimo para a taxa de supressão do modo lateral do&nbsp;<em>laser&nbsp;</em>é especificado,&nbsp;conforme item 8.2.6.2 da norma&nbsp;ITU-T G.984.2.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.3.2"></a>6.1.3.2. Nos demais casos, para sistemas SLM, o&nbsp;<em>laser&nbsp;</em>é especificado como sua faixa de dispersão de fibra, a faixa na qual as características do&nbsp;<em>laser&nbsp;</em>e a dispersão de fibra resultam em uma penalização definida em uma distância de fibra especificada, sob condições operacionais padrão. Além disso, para controle de ruído de partição de modo em sistemas SLM, um valor mínimo para a taxa de supressão do modo lateral do&nbsp;<em>laser&nbsp;</em>é especificado. As características espectrais reais são limitadas pela quantidade máxima de penalização&nbsp;de trajeto óptico (OPP) produzida com a dispersão óptica de pior caso no canal de dados. O uso de&nbsp;<em>lasers&nbsp;</em>MLM não é contemplado pela&nbsp;norma&nbsp;ITU-T G.987.2 para sistemas XGPON, e pela norma&nbsp;ITU-T G.9807.1 para sistemas XGSPON, conforme item 9.2.7.2 da norma&nbsp;ITU-T G.987.2 e&nbsp;item B.9.2.7.2 da norma&nbsp;ITU-T G.9807.1.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.4"></a>6.1.4.<strong> Potência óptica emitida</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.4.1"></a>6.1.4.1. A potência média lançada nas interfaces ópticas O<sub>ld</sub>&nbsp;e O<sub>ru</sub>&nbsp;é a potência média de uma sequência de dados pseudo-aleatória acoplada à fibra pelo transmissor. É fornecida como uma faixa para permitir alguma otimização de custos e cobrir todas as permissões para operação em condições operacionais padrão, degradação do conector do transmissor, tolerâncias de medição e efeitos de envelhecimento. No estado operacional, o valor mais baixo é a energia mínima que deve ser fornecida e o valor mais alto é a energia que nunca deve ser excedida. NOTA - A medição da potência lançada na interface óptica O<sub>ru</sub>&nbsp;deve levar em consideração a natureza em rajadas do tráfego ascendente transmitido pelas ONUs,&nbsp;conforme item 8.2.6.3 da norma&nbsp;ITU-T G.984.2 para sistemas&nbsp;GPON, item 9.2.7.3 da norma&nbsp;ITU-T G.987.2&nbsp;para sistemas&nbsp;XGPON e item B.9.2.7.3 da norma&nbsp;ITU-T G.9807.1&nbsp;para sistemas&nbsp;XGSPON.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.5"></a>6.1.5.<strong> Razão de extinção</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.5.1"></a>6.1.5.1. A razão de extinção (ER),&nbsp;conforme item&nbsp;8.2.6.4&nbsp;da norma&nbsp;ITU-T G.984.2 para sistemas&nbsp;GPON, item 9.2.7.4 da norma&nbsp;ITU-T G.987.2&nbsp;para sistemas&nbsp;XGPON e item B.9.2.7.4 da norma&nbsp;ITU-T G.9807.1&nbsp;para sistemas&nbsp;XGSPON é definida como:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/Ato-7869/Anexo-II.png" width="155" height="44"></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">onde A é o nível de potência óptica médio no centro do "1" lógico e B é o nível de potência óptica médio no centro do "0" lógico. A razão de extinção para o sinal de modo de rajada de direção ascendente é aplicada a partir do primeiro bit do preâmbulo até o último bit do sinal de rajada, inclusive.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.6"></a>6.1.6.<strong> Refletância máxima do transmissor</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.7.1"></a>6.1.7.1. As reflexões do equipamento (ONU e OLT) de volta à planta de cabos são especificadas pela refletância máxima permitida do equipamento medida nas interfaces ópticas O<sub>ld</sub>&nbsp;e O<sub>ru</sub>, de acordo com a tabela 4 e o item 8.2.6.5 da norma&nbsp;ITU-T G.984.2&nbsp;para sistemas&nbsp;GPON,&nbsp;as tabelas 9-3 e 9-4 e o item 9.2.7.5 da norma&nbsp;ITU-T G.987.2 para sistemas&nbsp;XGPON e&nbsp;as tabelas B.9.3 e B.9.4 e o item B.9.2.7.5 da norma&nbsp;ITU-T G.9807.1&nbsp;para sistemas&nbsp;XGSPON.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.7"></a>6.1.7.<strong> Diagrama de olho</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.7.1"></a>6.1.7.1. As características gerais do formato do pulso do transmissor, incluindo tempo de subida, tempo de queda, ultrapassagem do pulso, redução do pulso e toque, todos os quais devem ser controlados para evitar degradação excessiva da sensibilidade do receptor, são especificadas na forma de uma máscara do diagrama de olho do transmissor nas interfaces ópticas O<sub>ld</sub>&nbsp;e O<sub>ru</sub>. Para avaliar o sinal de transmissão, é importante considerar não apenas a abertura do olho, mas também as limitações de ultrapassagem (<em>overshoot</em>)<em>&nbsp;</em>e&nbsp;redução (<em>undershoot</em>), conforme&nbsp;item 8.2.6.6 da norma&nbsp;ITU-T G.984.2&nbsp;para sistemas&nbsp;GPON, item 9.2.7.6 da norma&nbsp;ITU-T G.987.2&nbsp;para sistemas&nbsp;XGPON e item B.9.2.7.6 da norma&nbsp;ITU-T G.9807.1 para sistemas&nbsp;XGSPON.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.8"></a>6.1.8.<strong> Tolerância à potência óptica refletida</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.8.1"></a>6.1.8.1. O desempenho do transmissor especificado deve ser atendido na presença do nível de reflexão óptica no ponto de referência S especificado na tabela 4&nbsp;e no item 8.2.6.7&nbsp;da norma&nbsp;ITU-T G.984.2 para sistemas&nbsp;GPON, nas tabelas 9-3 e 9-4&nbsp;e no item 9.2.7.7 da norma&nbsp;ITU-T G.987.2&nbsp;para sistemas&nbsp;XGPON e nas tabelas B.9.3 e B.9.4 e no item B.9.2.7.7 da norma&nbsp;ITU-T G.987.2&nbsp;para sistemas XGSPON.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.2"></a>6.2.<strong> Receptor Óptico</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.1"></a>6.2.1.<strong> Sensibilidade mínima</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.2.1.1"></a>6.2.1.1. Em sistemas GPON, a&nbsp;sensibilidade do receptor é definida como o valor mínimo aceitável da potência média recebida no ponto R para atingir uma taxa de erro de bit (<em>Bit Error Rate</em>,&nbsp;BER) de&nbsp;10<sup>−10</sup>. Ela leva em consideração as penalizações de energia causadas pelo uso de um transmissor em condições operacionais padrão com valores de pior caso de razão de extinção, aumento de pulso e tempos de queda, perda de retorno óptico no ponto S, degradação do conector do receptor e tolerâncias de medição. A sensibilidade do receptor não inclui penalizações de potência associadas à dispersão,&nbsp;<em>jitter&nbsp;</em>ou reflexos do trajeto óptico; esses efeitos são especificados separadamente na alocação da máxima penalização do trajeto óptico. Os efeitos do envelhecimento não são especificados separadamente, uma vez que normalmente são uma questão entre um provedor de rede e um fabricante de equipamento, conforme item 8.2.8.1 da norma&nbsp;ITU-T G.984.2.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.2.1.2"></a>6.2.1.2. Nos demais casos, a sensibilidade do receptor é definida na norma ITU-T G.987 e os valores são especificados nas tabelas 9-3 e 9-4 da norma&nbsp;ITU-T G.987.2, para sistemas XGPON, e nas tabelas B.9.3 e B.9.4 da norma&nbsp;ITU-T G.9807.1, para XGSPON. A sensibilidade do receptor leva em consideração as penalizações de potência causadas pelo uso de um transmissor em condições operacionais padrão com valores especificados de razão de extinção e valores de pior caso de aumento de pulso e tempos de queda, perda de retorno óptico no ponto R/S, degradação do conector do receptor e tolerâncias de medição. A sensibilidade do receptor não inclui penalizações de potência associadas à dispersão,&nbsp;<em>jitter&nbsp;</em>ou reflexos do trajeto óptico; esses efeitos são especificados separadamente na alocação da penalização máxima do trajeto óptico., conforme item 9.2.9.1 da norma&nbsp;ITU-T G.987.2, para sistemas&nbsp;XGPON, e&nbsp;item B.9.2.9.1 da norma&nbsp;ITU-T G.9807.1, para sistemas&nbsp;XGSPON.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.2"></a>6.2.2.<strong> Saturação</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.2.2.1"></a>6.2.2.1 Em sistemas GPON, a saturação&nbsp;do receptor é o valor máximo aceitável da potência média recebida no ponto R para uma BER de 10<sup>−10</sup>. O receptor deve ter uma certa robustez contra aumento do nível de potência óptica devido à inicialização&nbsp;ou potenciais colisões durante o alcance&nbsp;para o qual uma BER de 10<sup>−10</sup>&nbsp;não é garantida, conforme&nbsp;item 8.2.8.2&nbsp;da norma&nbsp;ITU-T G.984.2.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.2.2.2"></a>6.2.2.2. Nos demais casos, a saturação do receptor é definida na norma ITU-T G.987 e os valores são especificados nas tabelas 9-3 e 9-4 da norma&nbsp;ITU-T G.987.2, para sistemas XGPON, e nas tabelas B.9.3 e B.9.4&nbsp;da norma&nbsp;ITU-T G.9807.1, para sistemas XGSPON. O receptor deve ter uma certa robustez contra aumento do nível de potência óptica devido à inicialização ou colisões potenciais durante a variação, para as quais a BER, também especificado nas tabelas 9-3 e 9-4 da norma&nbsp;ITU-T G.987.2, para sistemas XGPON, e nas tabelas B.9.3 e B.9.4, da norma&nbsp;ITU-T G.9807.1, para sistemas XGSPON, não é garantido, conforme item 9.2.9.2 da norma&nbsp;ITU-T G.987.2 e&nbsp;item B.9.2.9.2 da norma&nbsp;ITU-T G.9807.1.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.3"></a>6.2.3.<strong> Máxima penalização do trajeto óptico</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.2.3.1"></a>6.2.3.1 Em sistemas GPON, o&nbsp;receptor deve tolerar uma penalização de trajeto óptico não superior a 1 dB para compensar as degradações totais devidas&nbsp;a reflexos, interferência intersimbólica, ruído de partição de modo (MPN) e&nbsp;<em>chirp</em>&nbsp;de&nbsp;<em>laser</em>. Na direção ascendente, os tipos de&nbsp;<em>laser&nbsp;</em>especificados na tabela 2 da&nbsp;norma&nbsp;ITU-T G.984.2&nbsp;produzem menos de 1 dB de penalização de trajeto óptico sobre a ODN. Conforme indicado na nota 5 das tabelas 2e e 2f-1 da norma&nbsp;ITU-T G.984.2, um aumento na penalização do trajeto óptico ascendente devido à dispersão em taxas de bits de 622 Mbps ou acima é aceitável, desde que qualquer aumento na penalização do trajeto óptico acima de 1 dB seja compensado por um aumento da potência mínima de lançamento transmitida ou um aumento da sensibilidade mínima do receptor, conforme&nbsp;item 8.2.8.3&nbsp;da norma&nbsp;ITU-T G.984.2.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.2.3.2"></a>6.2.3.2. Nos demais casos, a penalização do trajeto óptico é definida na norma ITU-T G.987. O receptor deve tolerar uma penalização de trajeto óptico que não exceda o valor especificado nas tabelas 9-3 e 9-4 da norma&nbsp;ITU-T G.987.2, para sistemas XGPON, e nas tabelas B.9.3 e B.9.4&nbsp;da norma&nbsp;ITU-T G.9807.1, para sistemas XGSPON, conforme item 9.2.9.3 da norma&nbsp;ITU-T G.987.2 e&nbsp;item B.9.2.9.3 da norma&nbsp;ITU-T G.9807.1.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.4"></a>6.2.4.<strong> Refletância máxima do receptor</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.2.4.1"></a>6.2.4.1. As reflexões do equipamento (ONU e OLT) de volta à planta de cabos são especificadas pela refletância máxima permitida do equipamento medida nas interfaces ópticas&nbsp;O<sub>rd</sub>&nbsp;e O<sub>lu</sub>,&nbsp;de acordo com:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;">a) a tabela 4 da norma ITU-T G.983.1., conforme&nbsp;item 8.2.8.6&nbsp;da norma&nbsp;ITU-T G.984.2, para sistemas&nbsp;GPON.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;">b) as tabelas 9-3 e 9-4 da norma&nbsp;ITU-T G.987.2, conforme item 9.2.9.4 da norma&nbsp;ITU-T G.987.2, para sistemas XGPON.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;">c) as tabelas B.9.3 e B.9.4&nbsp;da norma&nbsp;ITU-T G.9807.1., conforme item B.9.2.9.4 da norma&nbsp;ITU-T G.9807.1, para sistemas XGSPON.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.5"></a>6.2.5.<strong> Tolerância à potência óptica refletida</strong></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.2.5.1"></a>6.2.5.1. A tolerância do receptor à potência refletida é a razão permitida entre a potência média de entrada óptica de O<sub>rd</sub>&nbsp;e O<sub>lu</sub>&nbsp;e a potência média óptica refletida quando a luz refletida múltipla é considerada uma luz de ruído nas interfaces ópticas O<sub>rd</sub>&nbsp;e O<sub>lu</sub>, respectivamente. A tolerância à potência refletida é definida na sensibilidade mínima de recepção, conforme&nbsp;item 8.2.8.11&nbsp;da norma&nbsp;ITU-T G.984.2 para sistemas&nbsp;GPON,&nbsp;item 9.2.9.9 da norma&nbsp;ITU-T G.987.2 para sistemas&nbsp;XGPON e&nbsp;item B.9.2.9.9 da norma&nbsp;ITU-T G.9807.1 para sistemas&nbsp;XGSPON.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.3"></a>6.3.<strong> Proteção Óptica</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.1"></a>6.3.1. As classes dos produtos&nbsp;<em>laser&nbsp;</em>definidas na norma IEC 60825 determinam em que condições a emissão de luz não prejudica a visão do operador. Definem-se as classes 1 e 3A que são as usadas nos sistemas de transmissão por fibra óptica utilizados em telecomunicações:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.3.1.1"></a>6.3.1.1. Classe 1: Todo produto&nbsp;<em>laser&nbsp;</em>que não emite&nbsp;radiações superiores às condições de emissão indicadas nas correspondentes tabelas da norma IEC 60825 para cada classe. Considera-se este tipo de produto como não prejudicial aos olhos para qualquer condição de operação.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.3.1.2"></a>6.3.1.2. Classe 3A: Todo produto&nbsp;<em>laser&nbsp;</em>que emite radiações que podem superar as condições de emissão indicadas nas correspondentes tabelas da norma IEC 60825. Considera-se que este tipo de produto possa ocasionar danos aos olhos para qualquer condição de operação sempre que não se utilizem proteções ópticas para a visão tais como, lupas, microscópios e outros mecanismos de aumento. Quando o transmissor pertencer à classe 3A o sistema deverá:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;">a) Ter proteção óptica no emissor (ou poder emitir em condições de avaria) para potências superiores a + 6,8 dBm na 2ª janela e +10 dBm na 3ª janela;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;">b) Quando a proteção óptica estiver ativada e o sistema necessitar de enviar potência à linha para averiguar se a falha tenha desaparecido, deve-se garantir que o nível de potência emitido seja inferior a + 6,8 dBm na 2ª janela e +10 dBm na 3ª janela;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 120px;">c) Por razões de segurança, se a linha estiver interrompida, os&nbsp;<em>lasers&nbsp;</em>não poderão emitir, no caso de avaria dos mesmos,&nbsp;potências superiores a + 6.8 dBm na 2ª janela e +10 dBm na 3ª janela.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.4"></a>6.4.<strong> Requisitos de interfaces</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item6.4.1"></a>6.4.1. Quando houver interface óptica STM-N, deve-se aplicar nesta interface os requisitos funcionais do produto Multiplex SDH.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item6.4.2"></a>6.4.2. Quando houver interface E1, deve-se aplicar os requisitos de interface E1 contidos nos requisitos vigentes para avaliação da conformidade de interfaces emitidos pela Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item6.4.3"></a>6.4.3. Quando houver interface xDSL, deve-se&nbsp;aplicar os requisitos funcionais da(s) interface(s) digital(is) xDSL descritas nos requisitos para avaliação da conformidade de modems.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item6.4.4"></a>6.4.4. Quando houver interface Wi-Fi, deve-se&nbsp;aplicar os requisitos para avaliação da conformidade de equipamentos de radiocomunicação de radiação&nbsp;restrita emitidos pela Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item6.4.5"></a>6.4.5. Quando houver interface POTS, deve-se aplicar o regulamento de interface de usuário&nbsp;- rede e de terminais do serviço telefônico fixo comutado emitido&nbsp;pela Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item6.4.6"></a>6.4.6. Quando houver interface FXS,&nbsp;deve-se aplicar os&nbsp;requisitos técnicos para avaliação da conformidade da interface analógica de adaptadores para terminal de assinante emitido&nbsp;pela Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item6.4.7"></a>6.4.7. Para o equipamentos OLT e ONU, deve-se aplicar o título II dos&nbsp;requisitos técnicos de compatibilidade eletromagnética para a avaliação da conformidade de produtos para telecomunicações emitidos pela Anatel.&nbsp;Para equipamento ONT, aplicar na íntegra o mesmo dispositivo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item6.4.8"></a>6.4.8. Os sistemas GPON, XGPON e XGSPON&nbsp;(ONU) na configuração para ambientes de usuários devem atender aos requisitos de proteção contra choque elétrico e título e proteção contra aquecimento excessivo conforme&nbsp;requisitos para a avaliação da conformidade de equipamentos de telecomunicações quanto aos aspectos de segurança elétrica emitidos pela Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: justify;"><a name="item6.4.9"></a>6.4.9. Exclusivamente para os equipamentos GPON, XGPON e XGSPON (ONT e ONU) que se destinam às instalações externas ao ambiente do usuário, deve-se atender às condições ambientais do referido ato, conforme classe ambiental F (equipamento abrigado em contêiner), porém limitados na faixa de temperatura de -10 °C a + 65 °C conforme&nbsp;requisitos de condições e ensaios ambientais emitidos pela Anatel.&nbsp;</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1668"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20Técnicos" class="link-categoria">Requisitos Técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Terminação%20de%20Rede%20Óptica" class="link-categoria">Terminação de Rede Óptica</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Fibras%20Ópticas" class="link-categoria">Fibras Ópticas</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

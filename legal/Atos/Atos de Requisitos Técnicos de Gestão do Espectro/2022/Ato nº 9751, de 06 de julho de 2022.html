@@ -1,0 +1,2639 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 9751, de 06 de julho de 2022</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022/1688-ato-9751">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Requisitos Técnicos, Radiofrequencia, Radiodifusão, Televisão, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprova os Requisitos Técnicos de Condições de Uso de Radiofrequências para os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão, determina a reclassificação de todas as estações retransmissoras auxiliares constantes dos PBTV, PBRTV e PBTVD para estações complementares.">
+	<title>Anatel - Ato nº 9751, de 06 de julho de 2022</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=259364302" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1023786304" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"01d6db42d551d1da1315dfeb64e8d5d1","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=632239143" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025142601" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro" class="pathway">Atos de Requisitos Técnicos de Gestão do Espectro</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022" class="pathway">2022</a> <span class="separator">&gt;</span> <span>Ato nº 9751, de 06 de julho de 2022</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 active deeper parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a><ul><li class="item-518"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025">2025</a></li><li class="item-495"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2024">2024</a></li><li class="item-491"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2023">2023</a></li><li class="item-489 current active"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022">2022</a></li><li class="item-497"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021">2021</a></li><li class="item-433"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2020">2020</a></li><li class="item-370"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2019">2019</a></li><li class="item-371"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2018">2018</a></li><li class="item-372"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2017">2017</a></li><li class="item-373"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2016">2016</a></li><li class="item-374"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2015">2015</a></li><li class="item-375"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2014">2014</a></li><li class="item-376"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2013">2013</a></li><li class="item-377"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2012">2012</a></li><li class="item-378"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2011">2011</a></li><li class="item-379"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2010">2010</a></li><li class="item-380"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2009">2009</a></li><li class="item-381"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2008">2008</a></li><li class="item-382"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2007">2007</a></li><li class="item-383"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2006">2006</a></li><li class="item-384"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2005">2005</a></li><li class="item-385"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2004">2004</a></li><li class="item-386"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2003">2003</a></li><li class="item-387"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2002">2002</a></li><li class="item-388"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2001">2001</a></li><li class="item-389"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2000">2000</a></li><li class="item-390"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/1999">1999</a></li><li class="item-391"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/1998">1998</a></li><li class="item-392"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/1997">1997</a></li></ul></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;949069e27c8ecb13&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 9751, de 06 de julho de 2022		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Segunda, 18 Julho 2022 15:16			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Sexta, 15 Dezembro 2023 15:01			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 4087			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de <a title="Acesse o DOU" href="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=515&amp;pagina=8&amp;data=18/07/2022">18/7/2022</a>.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">O&nbsp;<b>SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO&nbsp;DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram conferidas pelo <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2013/450-resolucao-612#art156">art. 156</a> do Regimento Interno da Anatel, aprovado pela&nbsp;Resolução nº 612, de 29 de abril de 2013, e considerando o resultado da <a href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=9474807&amp;id_orgao_publicacao=0">Consulta&nbsp;Pública&nbsp;nº 31/2022</a>, bem como o constante&nbsp;dos autos do&nbsp;<a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlCWnry5Qf72mULkzaWCnmYbQZ7Hdkikl2tGfTIQBbuz4">processo&nbsp;nº 53500.008677/2022-35,</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha resolve"><strong>RESOLVE:</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="art1"></a>Art. 1º Aprovar os Requisitos Técnicos de Condições de Uso de Radiofrequências para os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão, na forma do <a href="#item1">Anexo</a> a este&nbsp;Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="art2"></a>Art. 2º Determinar a reclassificação de todas as estações retransmissoras auxiliares constantes dos PBTV, PBRTV e PBTVD para estações complementares.&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="art3"></a>Art. 3º Revogar o<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2020/1490-ato-3114"> Ato nº 3.114, de 10 de junho de 2020</a> (SEI nº&nbsp;<span contenteditable="false">5643148</span>).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art4"></a>Art. 4º Este Ato entra em vigor em 01&nbsp;de agosto&nbsp;de 2022.</p>
+<p class="texto-recuo-1a-linha" style="text-align: center;">&nbsp;VINICIUS OLIVEIRA CARAM GUIMARÃES<br>Superintendente de Outorga e Recursos à Prestação</p>
+<p style="text-align: center;">&nbsp;ANEXO</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><b>REQUISITOS TÉCNICOS DE CONDIÇÕES DE USO DE RADIOFREQUÊNCIAS PARA OS SERVIÇOS DE RADIODIFUSÃO DE SONS E IMAGENS E DE RETRANSMISSÃO DE TELEVISÃO</b></p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a id="item1"></a>1.<strong> Padrões de Transmissão</strong></p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item1.1"></a>1.1. Os padrões de transmissão definem as características técnicas dos sinais gerados pelos transmissores dos Serviços de Radiodifusão de Sons e Imagens (TV)&nbsp;e de Retransmissão de Televisão (RTV).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item1.2"></a>1.2. Para o serviço analógico, tais padrões estão detalhados no Anexo I. Já a&nbsp;padronização para a transmissão digital é regida pelas normas da Associação Brasileira de Normas Técnicas - ABNT, referentes ao padrão do Sistema Brasileiro de Televisão Digital Terrestre (SBTVD-T) adotado no Brasil. Essas normas especificam o sistema de transmissão do SBTVD-T, compreendendo o sistema de codificação de canal e modulação, e descreve o processamento de sinal no modulador e os processos de demodulação na recepção.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><a name="item2"></a>&nbsp;2.&nbsp;<strong>Planos Básicos de Distribuição de Canais de Televisão</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item2.1"></a>2.1. Para execução dos Serviços de Radiodifusão de Sons e Imagens (TV) e de Retransmissão de Televisão (RTV), utilizando as tecnologias analógica e digital, são definidos os seguintes Planos:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">a) Plano Básico de Distribuição de Canais de Geração de Televisão Analógica (PBTV);</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">b) Plano Básico de Distribuição de Canais de Retransmissão de Televisão Analógica (PBRTV); e</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">c) Plano Básico de Distribuição de Canais de Televisão Digital (PBTVD).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.1.1"></a>2.1.1. O PBTVD inclui os canais de Radiodifusão de Sons e Imagens Digital (GTVD) e de Retransmissão de Televisão Digital (RTVD).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item2.2"></a>2.2. Os Planos Básicos de Distribuição de Canais de Televisão contêm a lista que identifica os canais distribuídos para as localidades brasileiras, fixando as seguintes informações:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.2.1"></a>2.2.1. Tipo de serviço;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.2.2"></a>2.2.2. UF e Município de outorga;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.2.3"></a>2.2.3. Canal de operação;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.2.4"></a>2.2.4. Classe de operação;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item2.2.4.1"></a>2.2.4.1. Coordenadas geográficas da estação;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item2.2.4.2"></a>2.2.4.2. Potência Efetiva Radiada (ERP) máxima (em kW);</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item2.2.4.3"></a>2.2.4.3. Altura do centro geométrico do sistema radiante em relação à base da torre (em metros);</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item2.2.4.4"></a>2.2.4.4. Diagrama do Contorno Protegido (de 5 em 5°); e</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item2.2.4.5"></a>2.2.4.5. Categoria da estação (Principal, Complementar, Reserva, e outras que venham a ser criadas).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify;"><a name="item2.3"></a>2.3. As estações de TV e RTV devem ser instaladas em local que assegure o atendimento dos requisitos mínimos de cobertura do município de outorga, estabelecidos no <a href="#item4.2">item 4.2</a>, desde que a estação esteja dentro do contorno protegido do canal.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify;"><a name="item2.4"></a>2.4. A Potência Efetiva Radiada (ERP) é calculada conforme fórmula descrita a seguir:</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem1.jpeg" alt=""></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">Onde:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">P<sub>T</sub>: Potência de operação&nbsp;do transmissor, em kW;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">G<sub>TMAX</sub>: Ganho máximo do sistema radiante, em vezes&nbsp;&nbsp;(<img src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem2.jpeg" alt="">); e</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">P<sub>S</sub>: Perda total do sistema de transmissão, em vezes (<img src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem3.jpeg" alt="">).&nbsp;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item2.5"></a>2.5. A perda total do sistema de transmissão é composta pelo somatório das perdas na linha e das perdas em conectores e divisores de potência, conforme fórmula descrita a seguir:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem4.jpeg" alt="">&nbsp;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">Onde:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">L: Comprimento da linha de transmissão, em metros;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">A<sub>L</sub>: Atenuação da linha de transmissão, em dB/100 metros; e</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">P<sub>D</sub>: Perdas em conectores e demais estruturas, em dB.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item2.6"></a>2.6. Serão submetidas ao processo de análise de viabilidade técnica e posterior Consulta Pública a inclusão de novos canais nos Planos Básicos de Distribuição de Canais de Televisão, conforme elencado&nbsp;no <a href="#item7.5">subitem 7.5</a>, e as alterações técnicas dos referidos Planos que impliquem em mudança das características descritas nos itens <a href="#item2.2.3">2.2.3</a> e <a href="#item2.2.4">2.2.4</a> e subitens.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.6.1"></a>2.6.1 Transitoriamente, todas as entidades que cadastrarem as características técnicas de suas estações pela primeira vez, bem com as entidades com estações licenciadas que solicitarem alteração de suas características técnicas pela primeira vez após a vigência deste Ato de Requisitos Técnicos, serão submetidas ao processo de análise de viabilidade técnica e posterior Consulta Pública.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.6.2"></a>2.6.2. Nas demais solicitações de alteração das características técnicas das estações, caso a solicitação não altere&nbsp;a distância de qualquer das radiais em&nbsp;5% ou mais, não será necessário o procedimento de alteração do Plano Básico.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item2.6.2.1"></a>2.6.2.1. Nesta condição, as características técnicas do canal no Plano Básico não serão alteradas, sendo as características técnicas da estação atualizadas na licença.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.6.3"></a>2.6.3. A Anatel poderá submeter ao processo de análise de viabilidade técnica outras alterações técnicas que julgar necessárias.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item2.6.4"></a>2.6.4. A alteração dos Planos Básicos de Distribuição de Canais deverá ser solicitada à Anatel mediante apresentação das características técnicas pretendidas, conforme procedimento estabelecido no<a href="#item7"> item 7</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify;"><a name="item3"></a>3.<strong> Contorno Protegido e Classificação dos Canais</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.1"></a>3.1. O contorno protegido de um canal é o lugar geométrico dos pontos em que são obtidos os valores de campo estipulados na <a href="#tabela1">Tabela 1</a>. Tais pontos devem ser tomados em radiais espaçadas em 5 graus, iniciando no azimute correspondente ao Norte Verdadeiro, que é considerado o azimute zero, com distâncias em relação ao local das coordenadas geográficas da estação, utilizando-se os valores de ERP para cada radial e a altura de referência em relação ao nível médio do terreno por radial, dada pela Recomendação UIT-R P. 1546.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.1"></a>3.1.1. Caso a informação de ERP por radial não esteja disponível, será considerada, em todas as direções, a máxima ERP da classe em que o canal esteja enquadrado, referenciado a uma altura de 150 metros sobre o nível médio do terreno.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.2"></a>3.1.2. Para a determinação do contorno protegido de canais em tecnologia analógica são utilizadas as curvas E(50,50) da Recomendação UIT-R P. 1546, que fornecem os valores de intensidade de campo excedidos em 50% dos locais durante 50% do tempo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.3"></a>3.1.3. Para canais em tecnologia digital são utilizadas as curvas E(50,90), que fornecem os valores de intensidade de campo excedidos em 50% dos locais durante 90% do tempo. As curvas E(50,90) podem ser obtidas numericamente pela interpolação das curvas E(50,50) e E(50,10) da Recomendação UIT-R P. 1546, por meio do seguinte método:</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">E(50,90) = 2 x E(50,50) – E(50,10)</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.4"></a>3.1.4. Para contornos resultando valores abaixo de 15 km, deve ser usado o método indicado na Recomendação ITU-R P. 1546. Caso a solução seja não monotônica, será adotada a maior distância obtida.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela1"></a>Tabela 1</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Intensidade de Campo no Contorno Protegido (dBµV/m)</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" width="480" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td rowspan="2">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Campo em dBµV/m</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">2 a 6</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">7 a 13</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">14 a 51</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canais analógicos</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">58</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">64</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">70</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canais digitais</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">--</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">43</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">51</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.2"></a>3.2. Os canais de TV e RTV, em tecnologia analógica e digital, são classificados em Classe Especial, Classe A, Classe B e Classe C. As Tabelas <a href="#tabela2">2</a> e <a href="#tabela3">3</a> indicam os valores máximos de potência ERP, correspondentes a cada classe, a altura de referência em relação ao nível médio do terreno (HNMT) e as respectivas distâncias máximas ao contorno protegido.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.3"></a>3.3. A classe do canal é identificada pela radial de maior distância ao contorno protegido, exceto se esta radial terminar sobre um trajeto de água (oceanos, golfos, baías, grandes lagos, etc.) ou sobre território estrangeiro, cuja metodologia de obtenção consta detalhadamente no <a href="#item3.1">item 3.1</a>.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela2"></a>Tabela 2</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Classificação dos Canais Digitais em Função de suas Características Máximas</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" width="597" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Classe</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canais</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Máxima</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Potência ERP</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">HMNT (m)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Distância Máxima ao Contorno Protegido (km)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>Especial</strong></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">7 - 13</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">14 - 46</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">47 - 51</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">16 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">80 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">100 kW</p>
+</td>
+<td rowspan="4">
+<p class="Texto_Centralizado texto-recuo-1a-linha">150</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">65,6</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">58,0</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">58,0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>A</strong></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">7 - 13</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">14 - 51</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">1,6 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">8 kW</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">47,9</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">42,5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>B</strong></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">7 - 13</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">14 - 51</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,16 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,8 kW</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">32,3</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">29,1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>C</strong></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">7 - 13</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">14 - 51</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,016 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,08 kW</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">20,2</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">18,1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="texto-recuo-1a-linha" style="text-align: center;"><a name="tabela3"></a>Tabela 3</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Classificação dos Canais Analógicos em Função de suas Características Máximas</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" width="597" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>Classe</strong></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canais</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Máxima</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Potência ERP</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">HMNT (m)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Distância Máxima ao Contorno Protegido (km)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>Especial</strong></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">2 - 6</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">7 - 13</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">14 - 51</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">100 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">316 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">1.600 kW</p>
+</td>
+<td rowspan="4">
+<p class="Texto_Centralizado texto-recuo-1a-linha">150</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">64,7</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">54,2</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">50,9</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>A</strong></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">2 - 6</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">7 – 13</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">14 - 51</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">10 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">31,6 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">160 kW</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">42,1</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">36,3</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">35,2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>B</strong></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">2 - 6</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">7 – 13</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">14 - 51</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">1 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">3,16 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">16 kW</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">25,8</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">22,8</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">22,6</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>C</strong></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">2 - 6</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">7 – 13</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">14 – 51</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,1 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,316 kW</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">1,6 kW</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">15,0</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">13,1</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">13,2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.4"></a>3.4. Casos de estações de Classe Especial com alturas de antena ou ERP superiores às indicadas na <a href="#tabela2">Tabela 2</a>, sem a correção proporcional necessária, são caracterizados como exceção no PBTVD. Em tais casos, os critérios de proteção definidos no<a href="#item5"> item 5</a> serão aplicados até o limite máximo do contorno protegido&nbsp;definido para Classe Especial da<a href="#tabela2"> Tabela 2</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.4.1"></a>3.4.1. Somente serão aprovados novos casos excepcionais, nos termos previstos no <a href="#item3.4">item 3.4</a>, para emissoras que sejam autorizadas a funcionar em Classe Especial e com HNMT maior que 400 metros,&nbsp;desde que tecnicamente viáveis.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item3.4.1.1"></a>3.4.1.1. Nestas situações a potência máxima é de até 8.000 kW, referenciada a 150 metros de HNMT.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.5"></a>3.5. As estações de RTV operando em carácter secundário,&nbsp;em tecnologias analógica e digital,&nbsp;somente são&nbsp;classiﬁcadas em Classe C.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify;"><a name="item4"></a>4.<strong> Área de Prestação do Serviço</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.1"></a>4.1. A área de prestação do serviço dos canais de TV e de RTV, em tecnologias analógica e digital, corresponde à área delimitada pelo seu contorno protegido.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.2"></a>4.2 Para fins de planejamento de novas inclusões e alterações&nbsp;de canais no Plano Básico pelas entidades outorgadas, a cobertura da área de prestação do serviço deve ser projetada de forma a garantir o uso eficiente do espectro eletromagnético,&nbsp;atingindo pelo menos 70%&nbsp;da área dos setores censitários urbanos do município objeto do ato de outorga inserida no&nbsp;contorno protegido&nbsp;do canal.&nbsp;Tal avaliação se dá&nbsp;pela sobreposição da mancha, com&nbsp;intensidade de campo conforme a <a href="#tabela1">Tabela 1</a>,&nbsp;gerada pelo método ponto-a-ponto da Recomendação UIT-R P.526&nbsp;associado ao método [Assis, 1971] com os setores censitários urbanos, e pode ser obtida mediante a utilização de um único sistema de transmissão ou de um conjunto de estações.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.2.1"></a>4.2.1. O requisito de cobertura a que se refere o <a href="#item4.2">item 4.2</a> também é&nbsp;considerado atendido quando&nbsp;no mínimo&nbsp;70% da população urbana do município objeto da outorga&nbsp;inserida no contorno protegido&nbsp;for coberta pelo conjunto de estações&nbsp;instalado&nbsp;no município de outorga.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.2.2"></a>4.2.2. Para a tecnologia analógica, o conjunto de estações deve&nbsp;ser composto por uma estação principal e por uma ou mais estações&nbsp;complementares.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.2.3"></a>4.2.3. No caso de canais em tecnologia digital, deve&nbsp;ser utilizada a rede de frequência única no conjunto de estações, com uma estação principal e uma ou mais estações&nbsp;complementares projetadas de forma&nbsp;a&nbsp;garantir&nbsp;o sincronismo em frequência, de conteúdo transmitido e no tempo, ou seja, dentro do intervalo de guarda, em toda área de prestação do serviço.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.2.4"></a>4.2.4. Para a avaliação prevista no <a href="#item4.2">item 4.2</a> será utilizada a base de setores censitários urbanos escolhida pala Anatel, que estará disponibilizada no endereço eletrônico da Agência.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.2.5"></a>4.2.5. Solicitações de alterações no Plano Básico de estações licenciadas podem ser&nbsp;isentas de atendimento&nbsp;do critério de cobertura estabelecido no <a href="#item4.2">item 4.2</a>, desde que não alterem o canal ou a classe e estejam instaladas no&nbsp;município de outorga.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.3"></a>4.3. A área de prestação do serviço do canal, bem como a classe do canal,&nbsp;podem ser alteradas&nbsp;a partir das&nbsp;características técnicas&nbsp;da estação principal, com a&nbsp;comprovação da viabilidade técnica desta alteração.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.3.1"></a>4.3.1. A área de prestação do serviço do&nbsp;canal&nbsp;pode&nbsp;ser ampliada em função da instalação de estações&nbsp;complementares, dentro do limite da classe do canal determinado&nbsp;pela&nbsp;distância máxima ao contorno protegido&nbsp;das Tabelas<a href="#tabela2"> 2</a> e <a href="#tabela3">3</a> a partir das coordenadas geográficas da estação Principal, com a&nbsp;comprovação da viabilidade técnica desta ampliação.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify;"><a name="item5"></a>5.&nbsp;<strong>Critérios de Proteção entre Canais</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1 A proteção dos canais digitais e analógicos é assegurada quando, em seu contorno protegido, a relação entre o sinal do canal desejado e cada um dos sinais interferentes tiver, no mínimo, o valor indicado na <a href="#tabela4">Tabela 4</a>, em função do tipo de interferência.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.1.1"></a>5.1.1. A proteção dos canais fica geograficamente limitada à área circunscrita pelo contorno protegido estabelecido pelo <a href="#item3.1">item 3.1</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2. Para fins de planejamento, o sinal interferente de canais analógicos e digitais é determinado pelo método da Recomendação UIT-R P.526, associado ao método [Assis, 1971].</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.1"></a>5.2.1. Nos casos em que a informação de ERP por radial do canal interferente ou protegido não esteja disponível, será considerada uma antena ideal de referência, com&nbsp;no mínimo 40 metros de altura, cujo diagrama de radiação permita o atingimento da máxima ERP do canal em que a estação esteja enquadrada, referenciado a uma altura de 150 metros sobre o nível médio do terreno.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.2"></a>5.2.2. Duas ou mais estações são consideradas colocalizadas quando instaladas em estruturas de sustentação afastadas de até cinco&nbsp;quilômetros, mantido o afastamento de até 400 metros quando a colocalização envolver apenas canais analógicos. Nestes casos, aplicam-se as relações de proteção da <a href="#tabela4">Tabela 4</a>, respeitadas a&nbsp;nota&nbsp;de rodapé relacionada.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.3"></a>5.3. Situações de interferência existentes no PBTVD não poderão ser agravadas por inclusões ou alterações de canais. Nesses casos, caberá análise comparativa entre a situação existente e a proposta.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.3.1"></a>5.3.1. A critério da Anatel,&nbsp;o desrespeito à relação de proteção&nbsp;para a inclusão ou alteração de canal poderá ser considerado&nbsp;como não impeditivo nos seguintes casos:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.3.1.1"></a>5.3.1.1. Em áreas urbanas de município já coberto por estação de programação idêntica, desde que a situação não ocorra no município para o qual o canal está sendo proposto.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.3.1.2"></a>5.3.1.2. Em regiões situadas fora dos limites definidos pelos setores censitários urbanos dos municípios incluídos no interior do contorno protegido do canal. &nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item5.3.1.3"></a>5.3.1.3. Para a avaliação dos itens <a href="#item5.3.1.1">5.3.1.1</a> e <a href="#item5.3.1.2">5.3.1.2</a> será utilizada a base de setores censitários urbanos escolhida pala Anatel, que estará disponibilizada no endereço eletrônico da Agência.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.3.2"></a>5.3.2. Poderá ser utilizado o diagrama radiante de referência das antenas receptoras para demonstrar a viabilidade técnica de uma situação específica, desde que em localidades&nbsp;onde haja concentração de estações transmissoras de TV e RTV, ou seja, onde em todos os pontos dentro do contorno protegido, determinado no <a href="#item3.1">item 3.1</a>, nos quais a relação de proteção não seja respeitada, seja possível receber todas as estações&nbsp;dentro do ângulo de meia potência da antena receptora. Para tais cálculos, será aplicada a Recomendação ITU-R BT.419.</p>
+<p class="texto-recuo-1a-linha" style="text-align: center;"><a name="tabela4"></a>Tabela 4</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Relações de Proteção (dB)</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td rowspan="2">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Tipo de Interferência</p>
+</td>
+<td rowspan="2">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Interferente</p>
+</td>
+<td colspan="4">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Desejado = n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Analógico sobre Analógico</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Analógico sobre Digital</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Digital sobre Analógico</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Digital sobre Digital</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Cocanal</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">n</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">+45&nbsp;</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">+7</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">+34</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">+19</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Cocanal Decalado</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">n±</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">+28</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">+7</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Adjacente Superior</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">n+1</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-12</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-31</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-11<sup>(1)</sup></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-36<sup>(1)</sup></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Adjacente Inferior</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">n-1</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-6</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-31</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-11<sup>(1)</sup></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-36<sup>(1)</sup></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Oscilador Local&nbsp;<sup>(3)</sup></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">n±7</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-6</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Batimento de FI</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">n±8</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-12</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Frequência Imagem de Áudio</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">n+14</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-6</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Frequência Imagem de Vídeo</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">n+15</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">+3</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">não aplicável</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">(1) No caso de antenas colocalizadas, as estações são consideradas protegidas se forem<br>observadas as relações de proteção entre a potência ERP do canal desejado e a potência<br>ERP do canal interferente.&nbsp;Quando viabilizadas no mesmo município, os canais digitais</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">espaçados em 6 MHz&nbsp;devem obrigatoriamente estar colocalizados, em até 5&nbsp;km.</p>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha" style="text-align: justify;"><a name="item6"></a>6.<strong> Compatibilidade com Outros Serviços</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.1"></a>6.1. Para as avaliações de compatibilidade com outros serviços, o&nbsp;cálculo&nbsp;do&nbsp;contorno&nbsp;protegido&nbsp;dos canais envolvidos deve&nbsp;ser realizado&nbsp;utilizando as curvas E(50,50) da Recomendação UIT-R P. 1546, no caso da tecnologia analógica, e as&nbsp;curvas E(50,90) da Recomendação UIT-R P. 1546, no caso da tecnologia digital.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.1"></a>6.1.1. O sinal interferente dos canais é determinado pelo método ponto-a-ponto da Recomendação UIT-R P.526, associado ao método [Assis, 1971].</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.2"></a>6.2. Os estudos de viabilidade que envolverem o canal 6 deverão considerar a compatibilidade com emissoras de radiodifusão comunitária nos canais 198, 199 e 200. Neste caso, as distâncias mínimas exigidas&nbsp;entre os limites dos setores censitários urbanos dos municípios&nbsp;que possuem estações de radiodifusão comunitária e o contorno protegido dos canais de TV e RTV, referidas às classes dessas estações, são as indicadas na <a href="#tabela5">Tabela 5</a>.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela5"></a>Tabela 5</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">&nbsp;Distâncias mínimas entre os limites&nbsp;dos setores censitários urbanos&nbsp;dos municípios que possuem estações de radiodifusão comunitária e o contorno protegido dos canais de TV e RTV.</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Classe</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Distância (km)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">E</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">33</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">A</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">30</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">B</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">27</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">C</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">27</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">&nbsp;<a id="item6.3"></a>6.3 Os estudos de viabilidade que envolverem o canal 6 deverão avaliar a compatibilidade com estações de FM e RTR, considerando os casos de cocanal com os canais 171 a 200, de adjacência com os canais 169, 170, 201 e 202, e de batimento de FI dos canais 201 a 214 em receptores de TV.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.4"></a>6.4. Os estudos de viabilidade que envolverem o canal 5 deverão avaliar a compatibilidade com estações de FM e RTR, considerando os casos de cocanal com os canais 141 a 170, de adjacência com os canais 171 e 172, e de batimento de FI dos canais 171 a 184 em receptores de TV.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.5"></a>6.5. Para os casos de interferência cocanal, a proteção dos canais 5 e 6 será assegurada quando, no seu contorno protegido, a relação entre o sinal desejado (TV e RTV) e o sinal interferente (FM e RTR) tiver, no mínimo, o valor indicado na <a href="#tabela6">Tabela 6</a>. A proteção dos canais de 141 a 197 será assegurada quando, no seu contorno protegido, a relação entre o sinal desejado (FM e RTR) e o sinal interferente (TV e RTV) tiver, no mínimo, o valor indicado na <a href="#tabela7">Tabela 7</a>.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a id="tabela6"></a>Tabela 6</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Relações de proteção (sinal desejado/sinal interferente) cocanal em receptores de televisão analógica e FM ou RTR</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" width="378" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: left;">Canal Interferente</p>
+</td>
+<td style="text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Desejado</p>
+</td>
+<td style="text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Relação de Proteção (dB)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">141 a 170</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">28</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">171 a 200</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">6</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">28</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela7"></a>Tabela 7</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Relações de proteção (sinal desejado/sinal interferente) cocanal em receptores de FM ou RTR e televisão analógica</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Desejado</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Interferente</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Relação de Proteção (dB)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">141 a 143</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">144&nbsp;a 150</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">24</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">151 a 162</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">163 a 167</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">168 a 170</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">19</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">171 a 173</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">6</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">174 a 180</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">6</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">24</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">181 a 192</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">6</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">193&nbsp;a 197</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">6</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">4</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.6"></a>6.6 Para os cálculos de adjacência, os canais&nbsp;5 e 6 de televisão são representados&nbsp;com ERP de 12% da máxima proposta no estudo, e a proteção será assegurada quando, no contorno protegido das emissoras de FM, a relação entre o sinal desejado e o sinal interferente tiver, no mínimo, o valor indicado na <a href="#tabela8">Tabela 8</a>.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela8"></a>Tabela 8</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Relações de proteção (sinal desejado/sinal interferente) para adjacências entre canais de TV/RTV e FM/RTR, protegendo o FM/RTR</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Desejado</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Relação de Proteção (dB)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">170/171/201</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">6</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">169/172/202<sup>(1)</sup></p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-40</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">(1) A proteção ao Segundo Adjacente aplica-se, somente, para os casos em que os canais interferentes são de Classe Especial.</p>
+<p class="Tabela_Texto_Centralizado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.7"></a>6.7. Para os casos de interferência por batimento de FI, a proteção dos canais 5 e 6 será assegurada quando, no seu contorno protegido, a relação entre o sinal desejado (TV e RTV) e o sinal interferente (FM e RTR) tiver, no mínimo, o valor indicado na <a href="#tabela9">Tabela 9</a>.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela9"></a>Tabela 9</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Relações de proteção (sinal desejado/sinal interferente) para batimento de FI em receptores de televisão analógica</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" width="463" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Interferente</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Relação de Proteção (dB)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Canal Interferente</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Relação de Proteção (dB)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">201/171</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-1,0</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">208/178</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-20,5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">202/172</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-3,8</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">209/179</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-20,5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">203/173</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-6,5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">210/180</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-20,5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">204/174</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-9,5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">211/181</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-20,5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">205/175</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-12,0</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">212/182</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-22,0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">206/176</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-16,5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">213/183</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-22,5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">207/177</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-20,5</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">214/184</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-25,0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.8"></a>6.8. No caso de interferências prejudiciais sobre serviços regularmente autorizados, causadas por emissões indesejáveis, estas devem ser reduzidas até a eliminação da interferência prejudicial.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><a name="item7"></a>7.&nbsp;<strong>Roteiros para elaboração de projetos técnicos</strong></p>
+<p class="Tabela_Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><strong>Alteração de Canais&nbsp;nos PBTVD, PBTV e PBRTV</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.1"></a>7.1. Para a alteração de quaisquer dos parâmetros técnicos indicados no item <a href="#item2.2">2.2</a>, deverão ser apresentadas as características técnicas da situação pretendida para o canal, de acordo com os critérios técnicos estabelecidos neste documento.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item7.1.1"></a>7.1.1. Será disponibilizado no portal da Agência um guia contendo o procedimento administrativo para o encaminhamento de solicitações de alterações técnicas de canais dos Planos Básicos de Distribuição de Canais de Televisão.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.2"></a>7.2. Caso a alteração proposta amplie a&nbsp;cobertura da área de prestação do serviço&nbsp;do canal, por meio da utilização de estações complementares, estas são&nbsp;obrigatoriamente adicionadas na lista de estações do canal.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.3"></a>7.3. Para a alteração das características técnicas do canal deverá ser preenchido formulário específico, em sistema informatizado da Anatel, contendo as alterações pretendidas, conforme procedimento administrativo disponibilizado no portal da Agência.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.4"></a>7.4. Para canais que possuam mais de uma estação, a frequência somente poderá ser alterada de forma simultânea em todas as estações.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item7.4.1"></a>7.4.1. Nesta situação,&nbsp;o pagamento da TFI de cada estação libera&nbsp;a licença da estação e o&nbsp;Plano Básico é alterado.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item7.4.1.1"></a>7.4.1.1. Se o pagamento da&nbsp;TFI de alguma estação não for efetuado, esta estação será excluída do Plano Básico após dez dias do vencimento da TFI.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;<strong>Inclusão de Canais nos Planos Básicos</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.5"></a>7.5. O processo de análise de viabilidade técnica de inclusão de canais de Radiodifusão de Sons e Imagens Digital (GTVD) e de Retransmissão de Televisão Digital (RTVD) no Plano Básico de Distribuição de Canais de Televisão Digital (PBTVD) somente será avaliado pela Anatel por solicitação.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item7.5.1"></a>7.5.1. A Anatel avaliará as características necessárias para assegurar os critérios estabelecidos no item <a href="#item4">4</a>, caso a solicitação não inclua&nbsp;as características técnicas da estação necessárias para análise de viabilidade técnica.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item7.5.1.1"></a>7.5.1.1. Para fins de cálculos de viabilidade técnica, caso a solicitação não inclua&nbsp;as características técnicas, conforme subitem <a href="#item7.5.1">7.5.1</a>, a Anatel adotará como referência uma antena transmissora com diagrama de radiação horizontal omnidirecional, bem como um local de instalação adequado para o atendimento dos itens <a href="#item4">4</a>, <a href="#item5">5</a> e <a href="#item6">6</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item7.5.2"></a>7.5.2. A inclusão de canal&nbsp;RTVD, com reúso de canal, no PBTVD observará as seguintes condições:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item7.5.2.1"></a>7.5.2.1. Inviabilidade técnica de utilização do canal por outra entidade na localidade pretendida;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item7.5.2.2"></a>7.5.2.2. Emissão obrigatória de sinais idênticos aos emitidos pela estação GTVD&nbsp;ou RTVD cujo canal será reutilizado;</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item7.5.2.3"></a>7.5.2.3. Existência de autorização de execução do serviço para a entidade que opera o canal primário a ser reutilizado.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item7.5.3"></a>7.5.3. Após a outorga, a entidade outorgada deverá apresentar as características técnicas da estação de modo a adequar os parâmetros técnicos de referência incluídos no PBTVD à situação proposta pela entidade outorgada. Nesses casos, deverão ser apresentadas as características técnicas pretendidas para o canal, conforme procedimentos estabelecidos pelos itens <a href="#item7.1">7.1</a> a <a href="#item7.4">7.4</a> e subitens.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><a name="item8"></a>8.&nbsp;<strong>Estações Transmissoras</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.1"></a>&nbsp;8.1. A Estação Transmissora é constituída, basicamente, dos equipamentos de transmissão e dos respectivos sistemas radiantes, necessários para assegurar a prestação do serviço.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.2"></a>8.2. Todas as características técnicas das estações serão disponibilizadas pela Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.3"></a>8.3. Para&nbsp;emissão da&nbsp;licença da estação, a Anatel adotará as providências para ﬁns de cobrança da Taxa de Fiscalização da Instalação – TFI.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.4"></a>8.4. Uma estação é composta por:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">a) Sistema Radiante;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">b) Transmissor;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">c) Abrigo; e</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">d) Equipamentos adicionais.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.4.1"></a>8.4.1. Consideram-se partes integrante do sistema radiante a antena, sua estrutura de sustentação e os dispositivos destinados a transferir a energia de radiofrequência do transmissor para a antena.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.4.2"></a>8.4.2. Sistema auxiliar</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item8.4.2.1"></a>8.4.2.1. As entidades poderão ter em suas estações sistema auxiliar, que pode ser composto por:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Transmissor; e/ou</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Sistema radiante.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;<strong>Categoria da Estação</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.5"></a>8.5. Principal</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.5.1"></a>8.5.1. A primeira estação cadastrada em um canal de TV ou RTV é&nbsp;a estação principal.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.5.2"></a>8.5.2. Proporciona a maior cobertura dentre o conjunto de estações que compõem a cobertura do canal.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.5.3"></a>8.5.3. A partir do contorno protegido da estação principal&nbsp;são&nbsp;delimitadas as características das demais estações do canal.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.6"></a>8.6. Complementar</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.6.1"></a>8.6.1. A entidade pode&nbsp;instalar estações&nbsp;complementares&nbsp;para cobertura de áreas de sombra&nbsp;da estação principal.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item8.6.1.1"></a>8.6.1.1. Os sinais emitidos pela estação complementar devem ser idênticos e simultâneos aos da estação&nbsp;principal.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item8.6.1.2"></a>8.6.1.2. As estações&nbsp;complementares&nbsp;devem ser instaladas&nbsp;de forma que o contorno protegido da estação&nbsp;complementar não ultrapasse, em nenhuma direção, a distância máxima ao contorno protegido&nbsp;correspondente à classe do canal,&nbsp;das Tabelas <a href="#tabela2">2</a> e <a href="#tabela3">3</a>, a partir das coordenadas geográficas&nbsp;da estação principal.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item8.1.6.3"></a>8.1.6.3. O tipo de serviço das estações complementares&nbsp;faz&nbsp;parte do rol dos serviços ancilares aos serviços de radiodifusão e não se confunde com o tipo de serviço da estação principal.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item8.6.2"></a>8.6.2. Estações complementares&nbsp;podem ser cadastradas a qualquer tempo.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item8.6.2.1"></a>8.6.2.1. Caso a solicitação de uma estação complementar ocorra enquanto uma solicitação de inclusão ou alteração da estação principal ainda não estiver concluída, estas solicitações são obrigatoriamente vinculadas e somente podem ser concluídas conjuntamente.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item8.6.2"></a>8.6.3. As estações complementares são isentas do pagamento do Preço Público pelo Direito de Uso de Radiofrequência - PPDUR. <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2023/1907-ato-17277#art2">(Incluído pelo&nbsp;Ato nº 17277, de 13 de dezembro de 2023)</a></p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.7"></a>8.7. Reserva</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.7.1"></a>8.7.1. A entidade pode&nbsp;instalar estação reserva para situações emergenciais que impliquem o impedimento de operação da estação.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item8.7.1.1"></a>8.7.1.1. A estação reserva deve&nbsp;ser instalada&nbsp;em coordenadas geográficas diferentes da estação principal, dentro do contorno protegido da estação principal e o contorno protegido da estação reserva deve estar contido no contorno protegido da estação principal.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item8.7.1.2"></a>8.7.1.2. A estação reserva somente pode&nbsp;entrar em operação em situações de caso fortuito, de força maior, ou por outro motivo de impedimento de uso das demais estações.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item8.7.1.3"></a>8.7.1.3. O tipo de serviço da&nbsp;estação&nbsp;reserva&nbsp;é o mesmo&nbsp;da estação principal.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item8.7.2"></a>8.7.2. A estação&nbsp;reserva pode&nbsp;ser cadastrada&nbsp;a qualquer tempo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item8.7.2"></a>8.7.3. A estação reserva é isenta do pagamento do Preço Público pelo Direito de Uso de Radiofrequência - PPDUR. <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2023/1907-ato-17277#art2">(Incluído pelo&nbsp;Ato nº 17277, de 13 de dezembro de 2023)</a></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><strong>Sistema Radiante</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.8"></a>8.8 O local em que o sistema radiante é instalado determina as coordenadas geográficas da estação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.9"></a>8.9. O sistema radiante pode ser composto por um ou mais elementos de antena, com polarização horizontal, circular ou elíptica e a distância do centro geométrico deste sistema em relação ao solo define a altura do sistema radiante da estação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.10"></a>8.10. O diagrama de radiação horizontal, ou diagrama de azimute, deverá estar no formato de representação polar. Já o diagrama de radiação vertical, ou diagrama de elevação, deverá estar no formato de representação retangular.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.11"></a>8.11. A inclinação de feixe, ou&nbsp;<em>beam tilt</em>, é a inclinação mecânica ou elétrica do feixe de radiação e o valor angular abaixo da linha do horizonte deve ser considerado como positivo. No diagrama de radiação vertical, ou diagrama de elevação, o valor do módulo do campo elétrico normalizado (E<sub>V</sub>/E<sub>MAX</sub>) no ângulo correspondente à inclinação estará à direita do zero do respectivo Diagrama, quando E<sub>V</sub>/E<sub>MAX</sub>&nbsp;é igual a 1 (0 dB).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.11.1"></a>8.11.1. Para a inclinação de feixe mecânica, o&nbsp;<em>beam tilt</em>&nbsp;não será igual para todos os azimutes, devendo ser aplicadas as seguintes equações para a determinação da inclinação mecânica:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">a)&nbsp;<img src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem5.jpeg" alt=""></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">b)&nbsp;<img src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem6.jpeg" alt=""></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.11.2"></a>8.11.2. Para sistemas propostos com inclinação elétrica de lóbulo principal superior a 5°, o fabricante deverá declarar a factibilidade de implementação. A declaração do fabricante ou laudo de ensaio da antena devem ser mantidos com a documentação da estação, atestando a conformidade do sistema com as características apresentadas.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item8.11.2.1"></a>8.11.2.1. Quando a inclinação de lóbulo principal for mecânica, não se aplica a exigência estabelecida no <a href="#item8.11.2">item 8.11.2</a></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.12"></a>8.12. No diagrama de radiação horizontal, ou diagrama de azimute, o azimute do zero da antena corresponde ao valor, em graus em relação ao Norte Verdadeiro, que representa a direção para a qual está apontado fisicamente o sistema radiante.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.13"></a>8.13. No diagrama de radiação horizontal, ou diagrama de azimute, a leitura dos valores, normalizados ou em dB, do módulo do campo elétrico deverá ser feita de 5 em 5 graus, iniciando no azimute correspondente ao Norte Verdadeiro, que é considerado o azimute zero, totalizando, assim, setenta e duas radiais, independentemente do tipo do sistema radiante utilizado.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.14"></a>8.14. No diagrama de radiação horizontal, ou diagrama de azimute, caso seja necessário, a conversão dos valores do módulo do campo elétrico normalizado para o módulo do campo elétrico em dB deverá usar a seguinte fórmula:</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem7.jpeg" alt=""></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a name="item8.15"></a>8.15. No diagrama de radiação vertical, ou diagrama de elevação, caso haja inclinação do feixe, ou&nbsp;<em>beam tilt</em>, a conversão do valor do módulo do campo elétrico normalizado para o módulo do campo elétrico em dB, no ângulo de inclinação, deverá usar a seguinte fórmula:</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem8.jpeg" alt=""></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.16"></a>8.16. Na instalação do sistema radiante, deverão ser observadas as seguintes condições:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.16.1"></a>8.16.1. Caso a instalação do sistema radiante implique a implantação de nova estrutura de sustentação, a distância entre o sistema radiante da estação transmissora ou retransmissora de televisão digital e o monopolo vertical de uma emissora de radiodifusão sonora em onda média deve ser de, pelo menos, três vezes o comprimento de onda (λ) da emissora de radiodifusão sonora, quando a altura física da estrutura metálica que sustenta o sistema radiante da estação transmissora de televisão digital for superior a 0,125λ ou superior à metade da altura do monopolo vertical;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.16.2"></a>8.16.2. Caso a condição descrita no <a href="#item8.16.1">subitem 8.16.1</a> não seja satisfeita, deverá ser elaborado estudo técnico comprovando que a deformação total do diagrama horizontal de radiação da estação de radiodifusão sonora que utiliza monopolo vertical não é superior a 2 dB;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.16.3"></a>8.16.3. O sistema radiante da estação de televisão digital não deve obstruir o cone de proteção das antenas transmissoras ou receptoras de microondas. O cone de proteção é deﬁnido como um cone circular reto com vértice no foco da parábola do enlace, com altura de 1.000 metros e base de 175 metros de diâmetro, cujo eixo é uma linha que une os centros dessas antenas; e</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.16.4"></a>8.16.4. Deve ser observado o atendimento às normas relativas à proteção dos aeródromos sempre que a instalação do sistema radiante implicar implantação de nova estrutura de sustentação ou aumento da altura física de estrutura existente.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify;"><strong>Equipamentos Transmissores</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.17"></a>8.17. Os equipamentos transmissores a serem utilizados nas estações de televisão e de retransmissão deverão operar em conformidade com os requisitos mínimos estabelecidos por regulamentação específica da Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.17.1"></a>8.17.1. A potência de operação dos equipamentos transmissores de cada estação deverá ser indicada.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;<strong>Linhas de Transmissão</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.18"></a>&nbsp;8.18. A linha de transmissão utilizada e suas características técnicas deverão ser indicadas, em especial a atenuação, em dB/100m, na frequência de operação da estação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.19"></a>8.19. São admitidas perdas em conectores de até 0,5 dB. As demais estruturas, por padrão, têm zero dB de atenuação, sendo que casos com atenuações superiores deverão ser comprovadas pelo engenheiro habilitado.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;<strong>Instrumentos e Demais Equipamentos</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.20"></a>&nbsp;8.20. As estações de Classes Especial e A devem ter disponível uma carga artificial com mesma impedância da linha de transmissão e com potência e frequência compatíveis com a de seu transmissor. Deve possuir um VSWR menor ou igual 1:1,1.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.21"></a>8.21. A entidade deverá ter disponíveis os instrumentos de medição, monitoração e controle e demais equipamentos necessários para assegurar o atendimento aos requisitos técnicos estabelecidos neste Regulamento.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.22"></a>8.22. Os equipamentos definidos nos subitens <a href="#item8.20">8.20</a> e <a href="#item8.21">8.21</a> poderão ser compartilhados entre as entidades que utilizam a mesma infraestrutura de instalação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify;"><strong>Ensaios Prévios</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.23"></a>8.23. Será permitida a instalação provisória de equipamentos, a ﬁm de possibilitar a realização de ensaios prévios destinados a comprovar as condições técnicas do local para a instalação deﬁnitiva da estação.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.23.1"></a>8.23.1. A autorização para ensaios prévios não constitui qualquer direito à instalação deﬁnitiva da estação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.24"></a>8.24. A autorização para os ensaios prévios será emitida pela Anatel mediante requerimento da interessada, observadas as seguintes condições:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.24.1"></a>8.24.1. A potência de operação do equipamento utilizado deverá ser a mínima necessária para a realização satisfatória dos testes, sem causar interferências; e</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.24.2"></a>8.24.2. Deve ser utilizada a mesma frequência consignada à estação de TV ou RTV.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.25"></a>8.25. O prazo máximo de duração dos ensaios será de trinta dias, prorrogável por igual período.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;<strong>Operação das Estações</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.26"></a>8.26. Na operação das estações devem ser obedecidas as tolerâncias individuais de cada parâmetro técnico aplicadas pela fiscalização da Agência, no momento da medição das grandezas:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.26.1"></a>8.26.1. Potência de saída do transmissor: ±10%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.26.2"></a>8.26.2. Altura do centro geométrico&nbsp;da antena: ±5%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.26.3"></a>8.26.3. Azimute de apontamento da antena: ±5°.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.26.4"></a>8.26.4. Coordenadas Geográficas: ±1’’.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px; text-align: center;"><strong>ANEXO I – PADRÕES DE TRANSMISSÃO DOS SINAIS GERADOS PELOS TRANSMISSORES E RETRANSMISSORES DE TELEVISÃO ANALÓGICA</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><a id="item1Anexo"></a>1. Os padrões de transmissão definem os sinais gerados pelos transmissores e retransmissores de televisão. Eles englobam as características técnicas de modulação analógica, exploração de imagem, sincronização e canalização e estão de acordo com as Recomendações aplicáveis do UIT-R.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;<strong>Padrão M (TV monocromática)</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><a id="item2Anexo"></a>2. As Tabelas <a href="#tabela1">1</a>, <a href="#tabela2">2</a>, e <a href="#tabela3">3</a> e as Figuras 1, 2, e 3, apresentam as características para os sistemas de TV monocromática.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela1"></a>Tabela 1</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Características do sinal de vídeo</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="text-align: center;">
+<td style="width: 792.328px;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Número de linhas por quadro</p>
+</td>
+<td style="width: 367.906px; text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">525</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 792.328px;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Número de campos por segundo</p>
+</td>
+<td style="width: 367.906px; text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">60</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 792.328px;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Relação de entrelaçamento</p>
+</td>
+<td style="width: 367.906px; text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">2/1</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 792.328px;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Número de quadros por segundo</p>
+</td>
+<td style="width: 367.906px; text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">30</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 792.328px;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Número de linhas de exploração por segundo</p>
+</td>
+<td style="width: 367.906px; text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">15.750</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 792.328px;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Relação de aspecto</p>
+</td>
+<td style="width: 367.906px; text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">4/3</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 792.328px;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Sequência de exploração</p>
+</td>
+<td style="width: 367.906px; text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Da esquerda para a direita e de cima para baixo</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 792.328px;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Valor presumido para o gama do cinescópio de referência e para o qual os sinais de vídeo são pré-corrigidos</p>
+</td>
+<td style="width: 367.906px; text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">2,2</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 792.328px;">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Largura nominal da faixa de vídeo</p>
+</td>
+<td style="width: 367.906px; text-align: center;">
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: left;">4,2 MHz</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela2"></a>Tabela 2</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Características de radiofrequência</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Largura nominal do canal</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">6 MHz</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Frequência da portadora de áudio em relação à portadora de vídeo</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">+ 4,5 MHz</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Extremidade inferior do canal em relação à portadora de vídeo</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">- 1,25 MHz</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Largura nominal da faixa lateral principal</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">4,2 MHz</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Largura nominal da faixa lateral residual</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,75 MHz</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Atenuação mínima da faixa lateral residual</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">20 dB (-1,25 MHz)</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">42 dB (-3,58 MHz)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Tipo de emissão e polaridade da modulação de vídeo</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">C3F negativa</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Nível de sincronismo em percentagem do pico da portadora</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">100%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Nível de apagamento em percentagem do pico da portadora</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">75 % ± 2,5%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Diferença entre o nível de preto e o nível de apagamento em percentagem do pico da portadora</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">4,68% ± 1,56%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Nível do branco de referência em percentagem do pico da portadora</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">12,5% ± 2,5%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Tipo de modulação de áudio</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">F3E</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Desvio de frequência</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">± 25 kHz</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Pré-ênfase</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">75 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Relação entre as potências efetivas radiadas de vídeo (Pv) e de áudio (Pa)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">de 8/1 a 10/1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela3"></a>Tabela 3</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Características de sincronismo</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Período de linha</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">63,5 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Apagamento horizontal</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,16 a 0,18 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">10,2 a 11,4 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Pórtico posterior</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,14 a 0,16 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">8,9 a 10,2 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Pórtico anterior</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,02 a 0,04 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">1,27 a 2,54 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Pulso de sincronismo horizontal</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,066 a 0,09 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">4,19 a 5,7 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Tempo de transição (10-90%) do pulso de apagamento horizontal</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,01 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,64 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Tempo de transição (10-90%) do pulso de sincronismo horizontal</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,004 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,25 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Período de campo</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">262,5 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">16,667 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Apagamento vertical</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">(19 a 21) H + 10,7 µs</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">1,217 a 1,34 ms</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Tempo de transição (10-90%) dos pulsos de apagamento vertical</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,1 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">6,35 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Duração da 1ª sequência de pulsos equalizadores</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">3&nbsp;H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,19 ms</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Duração do trem de pulsos de sincronismo vertical</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">3&nbsp;H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,19 ms</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Duração da 2ª sequência de pulsos equalizadores</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">3 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,19 ms</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Duração dos pulsos equalizadores</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,036 a 0,04 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">2,29 a 2,54 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Duração de cada pulso constituinte do trem de pulsos de sincronismo vertical</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,416 a 0,44 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">26,4 a 28 ms</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Intervalo entre os pulsos do trem de pulsos de sincronismo vertical (base do serrilhado)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,06 a 0,88 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">3,8 a 5,6 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Tempo de transição (10-90%) dos pulsos equalizadores e dos pulsos constituintes do trem de pulsos de sincronismo vertical</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,004 H</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,25 µs</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado texto-recuo-1a-linha">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem9.jpeg" alt=""></p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Figura 1 - Sinal Padrão de Televisão</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem10.jpeg" alt=""></p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Figura 2 - Curva de Pré-ênfase.</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha"><strong>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem11.jpeg" alt=""></strong></p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Figura 3 - Sinal Padrão para a transmissão de uma imagem preta.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;<strong>Sistema PAL-M (TV a cores)</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><a id="item3Anexo"></a>3. As características para o Sistema PAL-M de TV a cores, são as mesmas do sistema monocromático, com as adaptações e modificações constantes das Tabelas <a href="#tabela4">4</a> e <a href="#tabela5">5</a> (com figura associada), e das Figuras 4, 5, 6 e 7.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela4"></a>Tabela 4</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Características do sinal de vídeo</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" width="598" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Frequência da Sub-portadora de cor (Fsc)</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Fsc = 3575611,49 ± 10 Hz</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Limite das faixas laterais do sinal de crominância</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Superior = Fsc + 0,6 MHz</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Inferior = Fsc - 1,3 MHz (nominal)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Salva de Sub-portadora (sincronismo de cor):</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Duração</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">9 ciclos ± 1 (2,52 µs ± 0,28 µs)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Início</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">5,8 µs ± 0,1 após a borda de ataque dos pulsos de sincronismo horizontal</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Nível pico a pico</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">4/10 da diferença entre os níveis do branco de referência e de apagamento (40 UNV)</p>
+</td>
+</tr>
+<tr>
+<td rowspan="4">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Fase em relação ao eixo de modulação de E’u</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Campos - I e II</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">&nbsp;</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Campos - III e IV</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Linhas pares: -135°</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Linhas ímpares: +135°</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Linhas pares: +135°</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Linhas ímpares: -135°</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Tolerância de fase θ</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">± 1°</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Supressão</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">As salvas de Sub-portadora serão omitidas durante 11 linhas de cada intervalo de apagamento vertical, de maneira a garantir que a fase da primeira e da última salva de qualquer campo seja sempre positiva (+ 135°)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Frequência de linha (Fh)</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Fh = 4 FSC / 909</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Equação do sinal de vídeo composto a cores</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">&nbsp;</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Onde:</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Em = tensão total do sinal de vídeo composto (excluídos os pulsos de sincronismo)</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Ey = tensão do componente de luminância de Em</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">E’r, E’g e E’b = tensões dos&nbsp; sinais de cores primárias</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Em = E’y + E’u sen Wsc t ± E’v [cos (Wsc t ± θ)]</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">&nbsp;</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Onde:</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">E’y = 0,299 E’r + 0,587 E’g + 0,114E’b</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">E’u = 0,493(E’b - E’y)</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">E’v = 0,877 (E’r - E’y)</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">(O sinal antes de E’v cos Wsc t é positivo (+) durante as linhas ímpares dos campos I e II e durante as linhas pares dos campos III e IV como no sincronismo de cor)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Largura de faixa dos sinais diferença de cor:&nbsp; E'v e E'u</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">1,3 MHz a –2 dB</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">3,6 MHz a –20 dB</p>
+</td>
+</tr>
+<tr>
+<td rowspan="5">
+<p class="Texto_Centralizado texto-recuo-1a-linha">Coordenadas de cromaticidade (C.I.E – 1931) das cores primárias e do branco de referência</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">&nbsp;</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">X</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">R (vermelho)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,67</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,33</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">G (verde)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,21</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,71</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">B (azul)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,14</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,08</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Iluminante C</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,310</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0,316</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Retardo de grupo</p>
+</td>
+<td colspan="3">
+<p class="Texto_Centralizado texto-recuo-1a-linha">-170 ns em 3,58 MHz (vide Figura 6)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: center;"><a name="tabela5"></a>Tabela 5</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Características de sincronismo</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Período nominal de linha (H)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">H = 909 / 4 Fsc&nbsp; -&nbsp;&nbsp; ( 63,5555 µs )</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Apagamento horizontal</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">10,9 ± 0,2 µs&nbsp; -&nbsp; medido a um nível de +4 UNV</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Término do pórtico posterior</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">9,4 ± 0,2 µs&nbsp; -&nbsp; medido entre um ponto a 50% da borda de ataque do pulso de sincronismo horizontal (-20 UNV) e o fim do apagamento horizontal (+4 UNV)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Pórtico anterior</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">1,5 ± 0,1 µs&nbsp; -&nbsp; medido do início do apagamento horizontal ( +4 UNV ) a 50% da borda de ataque do pulso de sincronismo horizontal ( -20 UNV )</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Pulso de sincronismo horizontal</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">4,7 ± 0,1 µs&nbsp; -&nbsp; medido entre os pontos à 50% das bordas de ataque e de descida ( níveis -20 UNV )</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Período nominal de campo</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">16.683 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Duração dos pulsos equalizadores</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">2,3 ± 0,1 µs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Intervalo entre os pulsos do trem de pulsos de sincronismo vertical (base do serrilhado)</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">4,7 ± 0,1 µs&nbsp; -medido no nível -4 UNV</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="texto-recuo-1a-linha">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem12.jpeg" alt=""></p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Figura 4 – Intervalo de apagamento de campo.</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem13.jpeg" width="452" height="341"></p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Figura 5 – Sincronismo de cor.</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem14.jpeg" alt=""></p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Figura 6 – Curva de retardo de grupo.</p>
+<p class="Texto_Centralizado texto-recuo-1a-linha">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/ato-9751/imagem15.jpeg" alt=""></p>
+<p class="Texto_Centralizado texto-recuo-1a-linha" style="text-align: center;">Figura&nbsp;7 – Limite absoluto de nível de vídeo.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><strong>Nota</strong>: Quando a portadora de vídeo é modulada por um sinal de vídeo padrão de acordo com este Regulamento, as relações da escala padrão de vídeo com as medidas convencionais de modulação serão as seguintes:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" width="567" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Nível</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Escala Padrão</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Percentagem de modulação</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Supressão da portadora</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">120 UNV</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Referência de branco</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">100 UNV</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">12,5 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Nível de apagamento</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">0 UNV</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">75 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">Nível de sincronismo</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">-40 UNV</p>
+</td>
+<td>
+<p class="Texto_Centralizado texto-recuo-1a-linha">100 %</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><strong>Sistema de transmissão multiplexada de áudio</strong></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;"><a id="item4Anexo"></a>4. Além do canal principal, o sistema de transmissão multiplexada de áudio deverá permitir a transmissão simultânea dos seguintes canais secundários, cuja ocupação no espectro é identificável na figura do Anexo II:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">a) Um canal de áudio (E-D) para efeito de estereofonia, com modulação AM-DSB-SC, cuja Sub-portadora fique situada em 2Fh;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">b) Um sinal piloto de estereofonia na frequência de Fh;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">c) Um segundo canal de áudio para programa monofônico (SAP - "second audio program") com modulação FM, cuja Sub-portadora fique localizada na frequência de 5 Fh;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">d) Um canal de dados ou voz com modulação FM, cuja Sub-portadora se situe em 6,5 Fh.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item4.1Anexo"></a>4.1. Características técnicas:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item4.1.1Anexo"></a>4.1.1. Tipo de emissão: 73K0F9WWF</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a id="item4.1.1.1Anexo"></a>4.1.1.1. Canal Principal Monofônico (ou E+D)</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Máxima frequência modulante: 15 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desvio máximo da portadora principal: ± 25 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pré-ênfase: 75 ms</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a id="item4.1.1.2Anexo"></a>4.1.1.2. Canal Estereofônico (ou E-D)</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Máxima frequência modulante: 15 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desvio máximo da portadora principal: + 50 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desvio de pico da portadora principal para o piloto: ± 5 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pré-ênfase: sistema DBX</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a id="item4.1.1.3Anexo"></a>4.1.1.3. Segundo Canal De Áudio Para Programa (SAP)</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Máxima frequência modulante: 10 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desvio máximo da portadora principal: ± 15 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desvio máximo da Sub-portadora: ± 10 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pré-ênfase: sistema DBX</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a id="item4.1.1.4Anexo"></a>4.1.1.4. Canal de Dados ou Voz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Dados:</em></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Máxima frequência modulante: 1,5 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desvio máximo da portadora principal: ± 3 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desvio máximo da Sub-portadora: ± 3 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tipo de modulação da Sub-portadora: FSK (Frequency Shift Keying)</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pré-ênfase: 250 ms</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Voz:</em></p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Máxima frequência modulante: 3,4 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desvio máximo da portadora principal: ± 3 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desvio máximo da Sub-portadora: ± 3 kHz</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tipo de modulação da Sub-portadora: FM</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pré-ênfase: 150 ms</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a id="item4.1.1.5Anexo"></a>4.1.1.5. A separação entre canais na transmissão estereofônica deve ser maior do que 20 dB e a relação sinal/ruído por modulação em frequência quando se injeta 400 Hz apenas no canal esquerdo (E), provocando um desvio de 16,7 kHz no modo Estéreo e 10 kHz no modo SAP, deve ser de, pelo menos, 65 dB.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a id="item4.1.1.6Anexo"></a>4.1.1.6. A distorção harmônica total das frequências de áudio do sistema de transmissão, a 100% de modulação, deve ser menor do que 0,5 % e 1% respectivamente, para o modo Estéreo e SAP;</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a id="item4.1.1.7Anexo"></a>4.1.1.7. A diafonia do canal estereofônico causada por um sinal de 1 kHz a 100% de modulação no canal SAP, e vice-versa, deve ser melhor que 45 dB.</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a id="item4.1.1.8Anexo"></a>4.1.1.8. O emprego do sistema DBX nos modos Estéreo e SAP deve permitir a redução de ruído, fornecendo uma pré-ênfase variável, e um aumento na dinâmica do sinal de áudio através de dois compressores/expansores que atuem, não só no ganho de sinal, mas também no espectro de frequências por ele ocupado.</p>
+<p>&nbsp;</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1688"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022">2022</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20Técnicos" class="link-categoria">Requisitos Técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Radiofrequencia" class="link-categoria">Radiofrequencia</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Radiodifusão" class="link-categoria">Radiodifusão</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Televisão" class="link-categoria">Televisão</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>
