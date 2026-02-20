@@ -1,0 +1,3007 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="d55292b0b06a11a9e193bee6-text/javascript">
+  </script>
+  <script type="d55292b0b06a11a9e193bee6-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="d55292b0b06a11a9e193bee6-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 596, de 6 de agosto de 2012 (REVOGADA)
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2012/308-resolucao-596"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Aprovação, Ato normativo, Regulamento, Fiscalização, Serviços de telecomunicações, Prestadora de serviços de telecomunicações, Rede de telecomunicações, Recursos de numeração, Espectro de radiofrequência, Certificação de produtos, Homologação de produtos, NormaFiscalizacao, NormaCertificacao, NormaRadiofrequencia, TelefoniaMovel, BandaLarga, TelefoniaFixa, TvporAssinatura, SeAC, FiscalizacaoRegulatoria, ResolucaoRevogada" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Aprova o Regulamento de Fiscalização. (Revogada pela Resolução nº 746/2021)" name="description"/>
+   <title>
+    Anatel - Resolução nº 596, de 6 de agosto de 2012 (REVOGADA)
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1284177959" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=79468520" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"a0371f9b8ec3b8d5500afc48eb4d5677","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="d55292b0b06a11a9e193bee6-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="d55292b0b06a11a9e193bee6-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="d55292b0b06a11a9e193bee6-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="d55292b0b06a11a9e193bee6-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="d55292b0b06a11a9e193bee6-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1852707237" type="d55292b0b06a11a9e193bee6-text/javascript">
+    </script>
+    <script type="d55292b0b06a11a9e193bee6-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="d55292b0b06a11a9e193bee6-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026163559" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/2012/308-resolucao-596">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/2012" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/2012">
+             2012
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 596, de 6 de agosto de 2012 (REVOGADA)
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165 current active">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-d55292b0b06a11a9e193bee6-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-d55292b0b06a11a9e193bee6-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="d55292b0b06a11a9e193bee6-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="d55292b0b06a11a9e193bee6-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 596, de 6 de agosto de 2012 (REVOGADA)
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Quinta, 09 Agosto 2012 18:26
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Sexta, 21 Fevereiro 2025 14:50
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 52639
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">
+                  <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1561-resolucao-746#art2">
+                   Revogada pela Resolução nº 746/2021
+                  </a>
+                 </td>
+                 <td style="width: 50%; text-align: justify;" valign="middle">
+                  <p style="text-align: justify;">
+                   Aprova o Regulamento de Fiscalização.
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p style="text-align: justify;">
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=52&amp;data=09/08/2012" title="Acesse o DOU">
+                9/8/2012
+               </a>
+               .
+              </p>
+              <p style="text-align: justify;">
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+                </strong>
+                , no uso das atribuições que lhe foram conferidas pelo
+                <a href="/legislacao/leis/2-lei-9472#art22" rel="nofollow" title="Acesse o Artigo">
+                 art. 22
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997, e pelo
+                <a href="/legislacao/decretos/3-decreto-2338#art35" rel="noopener noreferrer" target="_blank" title="Acesse o Artigo">
+                 art. 35
+                </a>
+                do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO os comentários recebidos na
+                <a href="http://sistemas.anatel.gov.br/SACP/Relatorios/RelatorioDadosBd.asp?pCodProcesso=C1397&amp;pCodTipoProcesso=1&amp;pTipoRelatorio=1" rel="nofollow" title="Acesse a Consulta Pública">
+                 Consulta Pública nº 21, de 21 de junho de 2010
+                </a>
+                , publicada no Diário Oficial da União do dia 22 de junho de 2010; o teor do Parecer nº 102/2011/MGN/PGF/PFE-Anatel, de 14 de setembro de 2011; do Informe nº 16/2012-RFFCF/RFFC, de 23 de abril de 2012; e da Análise nº 353/2012-GCRZ, de 20 de julho de 2012;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO o que consta nos autos do Processo nº 53500.019789/2007; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO a deliberação tomada em sua Reunião nº 660, realizada em 2 de agosto de 2012,
+               </span>
+              </p>
+              <p class="resolve">
+               <span style="text-decoration: line-through;">
+                RESOLVE:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º Aprovar o Regulamento de Fiscalização, na forma do Anexo a esta Resolução.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 2º Revogar a
+                <a href="/legislacao/resolucoes/21-2006/98-resolucao-441" rel="nofollow" title="Acesse a Resolução">
+                 Resolução nº 441, de 12 de julho de 2006
+                </a>
+                , publicada no Diário Oficial da União de 17 de julho de 2006.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 3º Esta Resolução entra em vigor na data de sua publicação.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                JOÃO BATISTA DE REZENDE
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Presidente do Conselho
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                ANEXO À RESOLUÇÃO Nº 596, DE 6 DE AGOSTO DE 2012
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through; font-size: medium;">
+                REGULAMENTO DE FISCALIZAÇÃO
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO I
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DISPOSIÇÕES GERAIS
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Objetivo e da Abrangência
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º Este Regulamento estabelece os limites, procedimentos e critérios para a fiscalização do cumprimento das obrigações e conformidades decorrentes de leis, regulamentos e demais normas aplicáveis, dos contratos, atos e termos relativos à execução, exploração, comercialização e fruição dos serviços de telecomunicações; à implantação e funcionamento das redes de telecomunicações; à utilização dos recursos de órbita, de numeração e do espectro de radiofrequências; à certificação e homologação de produtos; e ao recolhimento dos tributos e receitas aos fundos administrados e fiscalizados pela Agência, bem como à implementação dos programas, projetos e atividades que aplicarem recursos desses fundos, de acordo com a legislação em vigor.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 2º A fiscalização é regida pela Lei Geral de Telecomunicações (LGT), pelo Regulamento e pelo Regimento Interno da Agência Nacional de Telecomunicações (Anatel), por este Regulamento e pela regulamentação específica aplicável aos serviços de telecomunicações, inclusive aos serviços de radiodifusão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Sujeitam-se às disposições deste Regulamento outras atividades que forem atribuídas à Anatel mediante a celebração de instrumentos próprios.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 3º Para os efeitos deste Regulamento são adotadas as seguintes definições:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - Ação de fiscalização: atividade de acesso, obtenção e averiguação de dados e informações, por meio de procedimentos e técnicas aplicados por Agente de Fiscalização com a finalidade de reunir evidências para a apuração do cumprimento de obrigações e conformidades por parte da fiscalizada e verificar a forma de execução dos serviços de telecomunicações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - Acesso on-line: modo de acesso, obtenção, coleta e apresentação de dados e informações pertinentes às obrigações da fiscalizada, mediante a utilização de aplicativos, sistemas, recursos e facilidades tecnológicos;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - Acesso presencial: modo de acesso, obtenção, coleta e apresentação de dados e informações pertinentes às obrigações da fiscalizada mediante visitas, entrevistas e reuniões;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - Acesso não presencial: modo de acesso, obtenção, coleta e apresentação de dados e informações pertinentes às obrigações da fiscalizada mediante a expedição de requerimento de informações, ofícios e/ou outras formas que não caracterizem os modos de acesso on-line e presencial;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - Agente de Fiscalização: servidor da Anatel que executa ação de fiscalização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - Apreensão: ato em que o Agente de Fiscalização apreende bens ou produtos;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VII - Atividade de apoio à fiscalização: atividades que visem obter, analisar, consolidar ou verificar processos, procedimentos, informações e dados, inclusive por intermédio de sistemas de medição e monitoragem;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VIII - Auto de Infração: documento lavrado por Agente de Fiscalização que descreve o fato ou ato constitutivo da infração, os dispositivos infringidos, a sanção aplicável e os demais itens exigidos no Regimento Interno da Agência;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IX - Credencial: documento pessoal e intransferível de identificação de servidor da Anatel para utilização exclusiva em ação de fiscalização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                X - Credencial de segurança: documento expedido pela Superintendência responsável pela fiscalização que autoriza servidor da Anatel a realizar acesso on-line a dados e informações pertinentes às obrigações da fiscalizada.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XI - Diretrizes de Fiscalização (DF): documento que define premissas, objetivos e prioridades, dentre outros aspectos necessários a Organização da Execução da Fiscalização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XII - Instruções de Fiscalização: regras ou maneiras de proceder na execução da ação de fiscalização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XIII - Interferência prejudicial: qualquer emissão, radiação ou indução que obstrua, degrade, interrompa repetidamente, ou possa vir a comprometer a qualidade da comunicação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XIV - Interrupção: ação em que o Agente de Fiscalização faz cessar o funcionamento de uma estação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XV - Laudo de Vistoria: documento emitido por Agente de Fiscalização para registrar as informações, dados, parâmetros e medidas obtidos na ação de fiscalização, servindo de base para emissão do Relatório de Fiscalização e, quando for o caso, do Auto de Infração;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XVI - Lacração: ato em que o Agente de Fiscalização impede ou cessa o uso ou a comercialização de bens, produtos e serviços, apondo lacre;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XVII - Óbice à Ação de Fiscalização: ato, comissivo ou omissivo, direto ou indireto, da fiscalizada ou de seus prepostos, que impeça, dificulte ou embarace a atividade de fiscalização exercida pela Anatel mediante oferecimento de entrave à situação dos agentes e recusa no atendimento, não envio ou envio intempestivo de quaisquer dados e informações pertinentes à obrigação da fiscalizada.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XVIII - Plano Anual de Fiscalização (PAF): documento baseado nas Diretrizes de Fiscalização que estabelece as atividades relativas à prestação dos serviços de telecomunicações que serão objeto das ações de fiscalização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XIX - Plano Operacional de Fiscalização (POF): documento emitido em conformidade com o Plano Anual de Fiscalização que particulariza a programação anual das ações de fiscalização por unidade descentralizada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XX - Procedimentos de Fiscalização: técnicas padronizadas de investigação utilizadas para verificar o cumprimento de obrigações e conformidades por parte da fiscalizada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXI - Registro de Acesso: documento que guarda os dados de identificação do Agente de Fiscalização credenciado a realizar o acesso on-line a dados e informações pertinentes às obrigações da fiscalizada, consignando o local de sua ocorrência, os recursos utilizados e o período de tempo de seu uso;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXII - Relatório de Fiscalização: documento emitido por Agente de Fiscalização que descreve os procedimentos aplicados, as análises efetuadas, os resultados obtidos e, no caso de subsidiar a lavratura de Auto de Infração, o fato ou o ato constitutivo da infração, com a indicação das leis, regulamentos e normas aplicáveis e as sanções previstas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXIII - Requerimento de Informações: documento expedido pela Anatel por meio do qual são solicitados dados e informações pertinentes às obrigações da fiscalizada.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Competência
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art4Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 4º Compete à Anatel o exercício da fiscalização em relação, especialmente:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - à prestação dos serviços nos regimes público e privado;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - aos direitos e garantias dos usuários;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - ao uso de radiofrequência, de recursos de numeração e de órbita;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - à certificação e homologação de produtos;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - à compatibilidade da operação integrada e a interconexão entre as redes, incluídos os equipamentos terminais;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - aos serviços de radiodifusão, em seus aspectos técnicos, dentre outros atribuídos a Agência;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VII - ao recolhimento dos tributos e receitas aos fundos administrados e fiscalizados pela Anatel, bem como a implementação dos programas, projetos e atividades que aplicarem recursos desses fundos, de acordo com a legislação em vigor;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VIII - à situação técnica, operacional, econômico-financeira e contábil das prestadoras, com vistas a assegurar a universalização e a continuidade dos serviços, bem como a qualidade de sua prestação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IX - à composição societária das prestadoras de serviço de telecomunicações e exploradoras de satélite;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                X - ao inventário, relação de bens reversíveis, registro, desvinculação, alienação, oneração ou substituição de bens reversíveis utilizados na prestação de serviço de telecomunicações no regime público.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO II
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DA FISCALIZAÇÃO
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Dos Aspectos Gerais
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art5Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 5º A fiscalização destina-se a verificar o cumprimento das obrigações e conformidades decorrentes de leis, regulamentos e demais normas aplicáveis, dos contratos, atos e termos e a reunir dados e informações de natureza técnica, operacional, econômico-financeira, contábil e outros pertinentes à ação em curso, para subsidiar o exercício das atividades de acompanhamento e controle da Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art6Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 6º A fiscalização deve ser realizada com independência, imparcialidade, impessoalidade e legalidade, observando-se o interesse público e os direitos da fiscalizada, dos usuários e dos terceiros relacionados.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art7Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 7º A Anatel pode contratar técnicos ou empresa especializada, inclusive consultores independentes e auditores externos, para executar atividades de apoio à fiscalização.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Instruções e Procedimentos de Fiscalização
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art8Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 8º As instruções e procedimentos de fiscalização constituem o conjunto de regras, métodos, rotinas e técnicas utilizadas para disciplinar a operacionalidade da fiscalização da Anatel, cabendo a sua expedição à Superintendência responsável pela fiscalização, observado o disposto neste Regulamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. As instruções e procedimentos de fiscalização devem ser divulgados na página da Anatel na internet.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art9Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 9º As instruções de fiscalização têm por objetivo, dentre outros:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - definir as modalidades e finalidades da fiscalização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - dispor sobre as ações necessárias decorrentes da caracterização do óbice à atividade de fiscalização; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - orientar o Agente de Fiscalização quanto à maneira de realizar o trabalho, determinando a precisão e clareza dos seus objetivos e dispondo sobre as características e forma de utilização do Auto de Infração, do Laudo de Vistoria, do Relatório de Fiscalização e das notificações, dentre outros documentos.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art10Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 10. Os procedimentos de fiscalização são as técnicas padronizadas de investigação utilizadas para verificar o cumprimento de obrigações e conformidades por parte da fiscalizada, podendo ser realizados, dentre outros, por meio de:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - auditoria;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - averiguação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - ensaio;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - medição;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - monitoração;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - radiovideometria;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VII - vistoria; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VIII - inspeção.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art11Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 11. Os procedimentos de fiscalização têm por objetivo, dentre outros:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - dispor sobre os métodos a serem utilizados para a consecução dos objetivos da ação de fiscalização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - colher evidências que possibilitem verificar o cumprimento de obrigações e conformidades por parte da fiscalizada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - avaliar a confiabilidade e fidedignidade de dados e informações da fiscalizada; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - gerar dados e informações para fins de administração dos serviços, do espectro de radiofrequências e do uso de órbita.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Organização da Execução da Fiscalização
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Seção I
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Processo de Organização da Execução da Fiscalização
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art12Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 12. O processo de organização da execução da fiscalização constitui-se da elaboração das Diretrizes de Fiscalização (DF), do Plano Anual de Fiscalização (PAF) e do Plano Operacional de Fiscalização (POF.)
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art13Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 13. As DF determinam os objetivos e metas da fiscalização da Anatel e devem ser elaboradas pela Superintendência responsável pela fiscalização, em interação com os demais órgãos da Agência envolvidos, para submissão ao Conselho Diretor.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art14Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 14. As DF devem considerar as diretrizes estratégicas da política nacional de telecomunicações, as decisões do Conselho Diretor, os registros consolidados da central de atendimento da Anatel e das centrais de atendimento aos usuários dos órgãos integrantes do Sistema Nacional de Defesa do Consumidor, as demandas dos órgãos da Agência, dos Poderes Executivo, Legislativo e Judiciário e do Ministério Público, as recomendações ou determinações de órgãos de controle interno e externo e as características e particularidades de cada região ou Unidade da Federação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art15Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 15. O PAF determina as atividades e recursos necessários para cumprir as DF e será elaborado e aprovado pela Superintendência responsável pela fiscalização.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art16Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 16. No PAF devem ser considerados, entre outros, os seguintes aspectos:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - os objetivos e metas constantes das DF;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - os riscos das ações de fiscalização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - as características e particularidades regionais do país;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - os recursos necessários à execução das ações de fiscalização; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - previsão das ações sistêmicas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O processo de elaboração do PAF contará com a participação dos demais órgãos da Agência envolvidos, sendo coordenado pela Superintendência responsável pela fiscalização e deve ser orientado para resultados, segundo os princípios de eficiência, eficácia e efetividade.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art17Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 17. O POF deve ser elaborado e aprovado pela Superintendência responsável pela fiscalização em conformidade com o PAF.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art18Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 18. No POF devem ser especificados, entre outros, os seguintes aspectos:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - a quantificação das ações de fiscalização a serem executadas ao longo do ano;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - a previsão dos recursos necessários à realização das ações de fiscalização, inclusive para atendimento de necessidades excepcionais;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - a estimativa do esforço necessário para a execução das ações de fiscalização, inclusive por meio da alocação de horas a serem utilizadas ou de outra métrica aplicável; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - os órgãos executante e solicitante, a natureza da fiscalização e o seu período.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Os recursos de que trata este artigo incluem, dentre outros, os de natureza tecnológica, metodológica, material, logística, humana e financeira.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art19Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 19. A Superintendência responsável pela fiscalização deve divulgar as DF e o PAF aprovados na página da Anatel na internet.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art20Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 20. As demais Superintendências devem elaborar relatório anual, provendo a Superintendência responsável pela fiscalização de informações referentes à aplicação útil do material reunido nas ações de fiscalização realizadas em atendimento a suas demandas, com o objetivo de reorientar ou estimular a adequação da atividade de fiscalização às práticas mais eficientes, visando o aprimoramento do processo de organização da execução da fiscalização.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Seção II
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Aprovação e dos Prazos
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art21Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 21. No procedimento de elaboração e aprovação das DF, do PAF e do POF devem ser observadas as seguintes regras e prazos:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - o recebimento de demandas, solicitações e recomendações se estende por todo o ano;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - a elaboração da proposta das DF deve iniciar no mês de junho do ano anterior ao de sua aprovação, considerando as demandas, solicitações e recomendações recebidas nos doze meses anteriores;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - a proposta das DF deve ser encaminhada ao Conselho Diretor até 31 de dezembro do ano anterior ao de sua aprovação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - a proposta do PAF deve ser encaminhada ao Superintendente responsável pela fiscalização até 135 (cento e trinta e cinco) dias após a aprovação das DF;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - a proposta do POF deve ser encaminhada ao Superintendente responsável pela fiscalização até 45 (quarenta e cinco) dias após a aprovação do PAF; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - o POF deve ser aprovado até 31 de dezembro do ano anterior ao de sua execução.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A Superintendência responsável pela fiscalização poderá propor ao Conselho Diretor a aprovação de DF plurianuais.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Seção III
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Acompanhamento e Avaliação da Execução do Plano Operacional de Fiscalização (POF)
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art22Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 22. A Superintendência responsável pela fiscalização deve acompanhar a execução do POF e proceder aos ajustes necessários para o seu cumprimento e para atender a determinações do Conselho Diretor da Anatel e a necessidades excepcionais.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art23Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 23. A Superintendência responsável pela fiscalização deve elaborar relatório anual contendo análise da efetividade do POF com o objetivo de aprimorar o processo de organização da execução da fiscalização.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo IV
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Ação de Fiscalização
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art24Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 24. As ações de fiscalização devem ser precedidas de programação específica, considerando:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - o POF;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - a coleta e análise de dados e informações preliminares;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - a definição do escopo da ação a ser executada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - a composição da equipe técnica;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - a necessidade de amparo judicial e apoio policial; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - os recursos necessários.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art25Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 25. A fiscalização poderá ser realizada pelos seguintes modos:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - presencial: por meio de visitas, entrevistas e reuniões;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - on-line: por meio da utilização de aplicativos, sistemas, recursos e facilidades tecnológicos;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - não presencial: por meio da expedição de requerimento de informações, ofícios e/ou outras formas que não caracterizem os modos de acesso on-line e presencial
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Os modos de fiscalização previstos neste artigo podem ser realizados em tempo real ou diferido e de forma concomitante ou não.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art26Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 26. Cabe ao Agente de Fiscalização determinar a extensão, profundidade, conveniência e oportunidade na obtenção dos dados e das informações necessários para a realização da ação de fiscalização.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Caso o Agente de Fiscalização observe indícios de descumprimento de obrigações e conformidades diversos daquele objeto da ação de fiscalização em curso, poderá, com a ciência da autoridade competente, proceder a sua averiguação, desde que não haja comprometimento da segurança e da ação em andamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art27Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 27. A fiscalizada, por intermédio de representante indicado, poderá acompanhar a fiscalização da Anatel, ressalvados os casos em que a prévia intimação ou o acompanhamento presencial sejam incompatíveis com a natureza da apuração ou em que o sigilo seja necessário para garantir a sua eficácia.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A identificação do Agente de Fiscalização é obrigatória perante a fiscalizada, podendo, em caráter excepcional e transitório, ser motivadamente dispensada quando o sigilo for essencial à eficácia da ação de fiscalização.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º As atividades ocorridas durante a ação de fiscalização devem ser registradas em Relatório de Fiscalização, de cujo teor será dado conhecimento à fiscalizada após o seu término.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º No caso de acesso on-line serão sempre assegurados à fiscalizada o conhecimento simultâneo da realização do procedimento e a rastreabilidade dos dados e informações acessados pela Anatel.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art28Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 28. No curso de uma ação de fiscalização, o Agente de Fiscalização poderá lavrar Auto de Infração.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º O Auto de Infração deve ser lavrado na forma prescrita pelo Regimento Interno e conter referência às disposições constantes dos arts. 11 e 20, do Regulamento de Aplicação de Sanções Administrativas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º O Auto de Infração não pode ser revogado ou anulado, salvo pela autoridade competente.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art29Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 29. O Agente de Fiscalização poderá interromper cautelarmente o funcionamento de estação, bem como lacrar e apreender bens, produtos e serviços, lavrando os correspondentes termos.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art30Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 30. A interrupção cautelar do funcionamento de estação ocorrerá nos casos de:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - risco à vida;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - desenvolvimento clandestino de atividades de telecomunicação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - interferências prejudiciais a outras estações de radiocomunicação regularmente autorizadas;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - uso de equipamentos sem a devida certificação ou homologação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - necessidade de assegurar o planejamento, o gerenciamento e a coordenação do uso do espectro de radiofrequências.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art31Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 31. A interrupção cautelar do funcionamento de estação ocorrerá
+                <em>
+                 ad referendum
+                </em>
+                da autoridade competente, devendo ser considerados o interesse público envolvido e a razoabilidade da adoção da medida perante outras menos gravosas, se existentes, que produzam o mesmo resultado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art32Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 32. A interrupção cautelar do funcionamento de estação, bem como a apreensão de bens ou de produtos sem a correspondente certificação ou homologação, não exime a fiscalizada das sanções aplicáveis pela Agência, sem prejuízo das sanções de natureza civil e penal, conforme o caso.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art33Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 33. A Anatel deve comunicar às autoridades competentes a atividade clandestina de telecomunicações da qual tenha conhecimento em ação de fiscalização.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo V
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Fiscalização de Dados e Informações
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art34Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 34. Na condição de Órgão Regulador das telecomunicações e de Poder Concedente, a Anatel, no cumprimento de suas funções institucionais, tem a prerrogativa de acesso e obtenção de dados e informações pertinentes às obrigações da fiscalizada.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art35Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 35. O procedimento de fiscalização de dados e informações deve atender, entre outros, aos princípios da legalidade, da finalidade, da necessidade, da proporcionalidade, da segurança física e lógica, da responsabilidade e da prevenção.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art36Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 36. Os dados e as informações acessados e obtidos pela Agência nos termos deste Regulamento são aqueles diretamente relacionados às obrigações da fiscalizada e indispensáveis ao exercício efetivo da função fiscalizadora da Anatel, mantendo-se inviolável o fluxo das comunicações entre os usuários.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º No procedimento de fiscalização será garantido o tratamento confidencial dos dados e informações de natureza técnica, operacional, econômico-financeira e contábil acessados e obtidos pela Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Estende-se à Anatel o dever de sigilo das informações pessoais dos usuários a que se submetem as prestadoras de serviços fiscalizadas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º A fiscalizada pode solicitar o sigilo de informações relativas a sua atividade empresarial, cuja divulgação possa representar vantagem competitiva a seus concorrentes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 4º Para a utilização do modo de acesso on-line a Anatel deve habilitar e credenciar os Agentes de Fiscalização, manter o registro de acessos e assegurar que estes ocorram a partir de instalações previamente definidas e nas quais o ingresso seja controlado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art37Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 37. O acesso on-line deve observar práticas de gestão da segurança da informação e ser estabelecido de modo a preservar e garantir a continuidade dos serviços, a segurança e integridade de dados, programas e sistemas e a primariedade, confidencialidade e autenticidade de dados e informações.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º O acesso on-line deve permitir à fiscalização da Anatel a visualização e reprodução fiéis dos dados e informações constantes dos sistemas da fiscalizada, sem qualquer interferência em suas fontes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Compete à fiscalizada a implantação e gestão do acesso on-line a aplicativos, sistemas, recursos e facilidades tecnológicos próprios ou por ela utilizados, devendo observar as melhores práticas para o gerenciamento de riscos e de serviços de tecnologia da informação, bem como as instruções e procedimentos relativos à operacionalidade do acesso on-line enunciados pela Superintendência responsável pela fiscalização da Agência.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO III
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS OBRIGAÇÕES DAS FISCALIZADAS E DAS SANÇÕES
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Obrigações das Fiscalizadas
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art38Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 38. As fiscalizadas submetem-se à fiscalização da Anatel mediante as seguintes obrigações, dentre outras constantes da legislação e regulamentação:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - fornecer dados e informações de natureza técnica, operacional, econômico-financeira, contábil ou outras pertinentes, no prazo, local e demais condições requeridas, que estejam disponíveis ou que sejam passíveis de obtenção por meio de consulta aos aplicativos, sistemas, recursos e facilidades tecnológicos da fiscalizada ou por ela utilizados, seja em arquivo eletrônico, meio físico ou qualquer outro meio existente, em seu poder, em poder de terceiros ou de terceiros em seu poder;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - permitir o acesso do Agente de Fiscalização às instalações, equipamentos, aplicativos, sistemas, recursos e facilidades tecnológicos, documentos, dados e informações de natureza técnica, operacional, econômico-financeira, contábil ou outras pertinentes, em seu poder, em poder de terceiros ou de terceiros em seu poder;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - possibilitar que a Agência tenha conhecimento dos aplicativos, sistemas, recursos e facilidades tecnológicos utilizados para coleta, tratamento e apresentação de dados e informações, bem como de sua atualização e substituição, viabilizando, quando necessário, a perfeita compreensão de sua operação por parte dos servidores da Agência;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - disponibilizar, sem ônus para a Anatel, os recursos e facilidades tecnológicos necessários ao acesso on-line aaplicativos, sistemas, recursos e facilidades tecnológicos utilizados para coleta, tratamento e apresentação de dados, informações e outros aspectos, responsabilizando-se pela sua integridade, disponibilidade, consistência, fidelidade e privacidade;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - manter em seus arquivos dados e informações sujeitos à fiscalização durante os prazos estabelecidos na legislação e regulamentação específica;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - submeter-se à interrupção cautelar;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VII - disponibilizar, sempre que solicitado, representante apto a dar suporte à ação de fiscalização, com conhecimento para prestar dados, informações e outros aspectos relativos ao seu objeto.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art39Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 39. Caracterizado o óbice à ação de fiscalização na forma definida por este Regulamento, será instaurado o competente Pado, devendo ser adotadas as medidas necessárias com o objetivo de concluir a ação de fiscalização obstruída.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. No curso do Pado ou, excepcionalmente, antes dele, o Superintendente responsável pela fiscalização poderá adotar medidas cautelares.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Sanções
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art40Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 40. O descumprimento de qualquer das obrigações previstas neste Regulamento sujeitará a infratora às sanções previstas no
+                <a href="/legislacao/leis/2-lei-9472#art173" rel="noopener noreferrer" target="_blank" title="Acesse o Artigo">
+                 art. 173
+                </a>
+                da LGT e no
+                <a href="/legislacao/resolucoes/34-2012/191-resolucao-589#art3" rel="noopener noreferrer" target="_blank" title="Acesse o Artigo">
+                 art. 3º
+                </a>
+                do Regulamento de Aplicação de Sanções Administrativas da Anatel.
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO IV
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DO AGENTE DE FISCALIZAÇÃO
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art41Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 41. No exercício de suas funções, o Agente de Fiscalização está sujeito ao que estabelecem este Regulamento, bem como a legislação relativa ao regime jurídico dos servidores públicos civis, à criação das carreiras e organização de cargos efetivos das Agências Reguladoras, à ética profissional do servidor público civil do Poder Executivo Federal e à ética dos servidores da Anatel.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art42Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 42. O Agente de Fiscalização é identificado por credencial emitida pela Anatel para uso exclusivo em ação de fiscalização.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art43Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 43. Constatando indícios dos crimes de resistência, desobediência, ameaça, desacato ou corrupção, o Agente de Fiscalização, em situação de segurança, pode dar voz de prisão em flagrante ou solicitar à autoridade policial que o faça, na forma da lei.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Em qualquer caso, o Agente de Fiscalização deve requerer a instauração do correspondente inquérito policial à autoridade competente.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art44Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 44. Mediante solicitação, a Procuradoria-Geral Federal poderá representar judicialmente o Agente de Fiscalização quando o ato pelo qual esteja sendo demandado em juízo tenha sido praticado no exercício de suas atribuições constitucionais, legais ou regulamentares, na defesa do interesse público, nos termos da legislação aplicável.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art45Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 45. Praticará infração aos deveres do servidor, nos termos do art. 116, incisos I, III e VIII, da
+                <a href="http://www.planalto.gov.br/ccivil_03/leis/L8112compilado.htm" rel="nofollow" title="Acesse a Lei">
+                 Lei nº 8.112, de 1990
+                </a>
+                , sem prejuízo da responsabilidade penal e civil cabível, na forma dos arts. 121 e 125 daquela Lei, o Agente de Fiscalização que:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - Não proceder com o devido zelo na guarda e utilização dos dados e informações sigilosos acessados e obtidos em ação de fiscalização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - Acessar e obter imotivadamente dados e informações protegidos por sigilo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art46Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 46. O Agente de Fiscalização que divulgar ou revelar dados e informações sigilosos a que teve acesso no exercício de suas atribuições fica sujeito à penalidade prevista no art. 132, inciso IX, da
+                <a href="http://www.planalto.gov.br/ccivil_03/leis/L8112compilado.htm" rel="nofollow" title="Acesse a Lei">
+                 Lei nº 8.112, de 1990
+                </a>
+                .
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO V
+               </span>
+              </p>
+              <p align="center" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DISPOSIÇÕES FINAL E TRANSITÓRIA
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art47Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 47. No período de transição do modelo de organização da execução da fiscalização atualmente vigente para aquele previsto no Capítulo III do Título II deste Regulamento, a Superintendência responsável pela fiscalização deve atentar para a estrita observância da programação das ações de fiscalização, em conformidade com as diretrizes emanadas do Conselho Diretor, e para o prazo prescrito no inciso VI do
+                <a href="#art21" rel="nofollow" title="Acesse o artigo">
+                 art. 21
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A observância aos demais prazos previstos no
+                <a href="#art21" rel="nofollow" title="Acesse o artigo">
+                 art. 21
+                </a>
+                fica dispensada pelo período de até 3 (três) anos, a contar da entrada em vigor deste Regulamento, para o perfeito encadeamento dos prazos com as medidas a eles referidas.
+               </span>
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_308">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/2012" rel="tag">
+                 2012
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação">
+                 Aprovação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20normativo">
+                 Ato normativo
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento">
+                 Regulamento
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Fiscalização">
+                 Fiscalização
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviços%20de%20telecomunicações">
+                 Serviços de telecomunicações
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Prestadora%20de%20serviços%20de%20telecomunicações">
+                 Prestadora de serviços de telecomunicações
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Rede%20de%20telecomunicações">
+                 Rede de telecomunicações
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Recursos%20de%20numeração">
+                 Recursos de numeração
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Espectro%20de%20radiofrequência">
+                 Espectro de radiofrequência
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Certificação%20de%20produtos">
+                 Certificação de produtos
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Homologação%20de%20produtos">
+                 Homologação de produtos
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaFiscalizacao">
+                 NormaFiscalizacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaCertificacao">
+                 NormaCertificacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaRadiofrequencia">
+                 NormaRadiofrequencia
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaMovel">
+                 TelefoniaMovel
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=BandaLarga">
+                 BandaLarga
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaFixa">
+                 TelefoniaFixa
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TvporAssinatura">
+                 TvporAssinatura
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=SeAC">
+                 SeAC
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=FiscalizacaoRegulatoria">
+                 FiscalizacaoRegulatoria
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada">
+                 ResolucaoRevogada
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="d55292b0b06a11a9e193bee6-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="d55292b0b06a11a9e193bee6-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="d55292b0b06a11a9e193bee6-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="d55292b0b06a11a9e193bee6-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-d55292b0b06a11a9e193bee6-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="d55292b0b06a11a9e193bee6-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="d55292b0b06a11a9e193bee6-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="d55292b0b06a11a9e193bee6-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

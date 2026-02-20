@@ -1,0 +1,1924 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Portaria Anatel nº 2534, de 20 de janeiro de 2023</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/instrucoes-de-fiscalizacao/1849-portaria-2534">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Instrução, Fiscalização, Tratamento de Inferências, PortariaVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Instrução de Fiscalização sobre Tratamento de Interferências.">
+	<title>Anatel - Portaria Anatel nº 2534, de 20 de janeiro de 2023</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=814737116" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1130448067" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"26129873bf62229bfe42dba963b22577","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1940661137" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025011714" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/instrucoes-de-fiscalizacao/1849-portaria-2534">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/instrucoes-de-fiscalizacao" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/instrucoes-de-fiscalizacao" class="pathway">Instruções de Fiscalização</a> <span class="separator">&gt;</span> <span>Portaria Anatel nº 2534, de 20 de janeiro de 2023</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202 current active"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948be6730ec32800&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Portaria Anatel nº 2534, de 20 de janeiro de 2023		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quarta, 25 Janeiro 2023 10:49			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Terça, 26 Novembro 2024 14:43			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 1489			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Instrução de Fiscalização sobre Tratamento de Interferências.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico <a href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=10961048&amp;id_orgao_publicacao=0">25/1/2023</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O GERENTE DE SUPORTE À FISCALIZAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram&nbsp;<span class="Texto_Justificado_Recuo_Primeira_Linha">conferidas pelo<a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2013/450-resolucao-612#art190">&nbsp;art. 190</a>, inciso I, do Regimento Interno da Anatel, aprova</span>do pela&nbsp;Resolução nº 612, de 29 de abril de 2013, e o constante nos autos do <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlA8EJMsEpkCBvtA0AQm7IrU8n6-MGnkgfYLvrWisHuH_">processo&nbsp;53500.048487/2022-51</a>,</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha texto-recuo-1a-linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span class="legis auto art" contenteditable="true" data-ref="XZcraGO0LpKycCMS"><a name="art1" data-art="1"></a>Art. 1º</span>&nbsp;Aprovar a Instrução de Fiscalização de Interferências, na forma do <a href="#anexo1">Anexo</a> a esta Portaria.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span class="legis auto art" contenteditable="true" data-ref="oDPv3lOxrTfwXGHZ"><a name="art2" data-art="2"></a>Art. 2º</span>&nbsp;Revogar a <a href="https://informacoes.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/1338-portaria-1525">Portaria nº 1525, de 16 de agosto de 2019</a>, que aprova o Procedimento de Fiscalização de Interferência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span class="legis auto art" contenteditable="true" data-ref="0G5jN03exdk4jGE9"><a name="art3" data-art="3"></a>Art. 3º</span>&nbsp;Esta Portaria entra em vigor na data de sua publicação no Boletim de Serviço Eletrônico.</p>
+<p style="text-align: center;">ALEXANDRE ATAÍDE GONÇALVES OLIVEIRA<br>Gerente de Suporte à Fiscalização</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><a id="anexo1"></a>ANEXO I</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong>INSTRUÇÃO DE FISCALIZAÇÃO DE INTERFERÊNCIAS</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;">CAPÍTULO I</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DISPOSIÇÕES GERAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art1"></a>Art. 1º A presente Instrução de Fiscalização (IF) estabelece regras e procedimentos para orientar o Agente de Fiscalização na investigação e resolução de casos de interferências em estações de telecomunicações e de radiodifusão.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Os procedimentos que tratam da admissibilidade de denúncias de interferências e da fiscalização responsiva estão dispostos na&nbsp;vigente Instrução para o Tratamento de Denúncias e nos respectivos Planos de Ação de Inspeção Centralizada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art2"></a>Art. 2º Na execução da Inspeção de interferências, o Agente de Fiscalização deve observar a regulamentação aplicável, em especial a Instrução de Fiscalização sobre Preparação, Execução e Conclusão de Inspeções no âmbito da Atividade de Inspeção Regulatória, aprovada pela <a href="https://informacoes.anatel.gov.br/legislacao/instrucoes-de-fiscalizacao/1632-portaria-2106">Portaria nº 2106, de 15 de novembro de 2021</a>, ou outra que vier a substituí-la, observando a necessidade de utilização dos seguintes documentos de referência:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - licenças e autorizações relacionadas;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - glossário de Termos da Anatel;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - recomendações internacionais aplicáveis;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - normas da Associação Brasileira de Normas Técnicas (ABNT) aplicáveis a emissões radioelétricas produzidas por equipamentos eletroeletrônicos; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - manuais dos equipamentos utilizados na atividade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art3"></a>Art. 3º Os Agentes de Fiscalização envolvidos em qualquer etapa desta IF devem possuir acesso aos módulos de consulta dos sistemas da Anatel, ferramentas de predição e demais recursos pertinentes, necessários à obtenção de informações sobre as estações de telecomunicações e de radiodifusão, como também as respectivas áreas de cobertura do serviço.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">CAPÍTULO II</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DEFINIÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art4"></a>Art. 4º Para efeitos desta IF, além das definições constantes na regulamentação aplicável aos serviços de telecomunicações e de radiodifusão, e no Glossário de Termos da Anatel, são adotadas as seguintes:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - Ação de Inspeção: atividade realizada por Agente de Fiscalização, no âmbito do processo de Acompanhamento, para acesso, obtenção e averiguação de dados e informações, com a finalidade de reunir evidências para a apuração do cumprimento de obrigações e conformidades por parte da Fiscalizada e verificar a forma de execução dos serviços de telecomunicações, bem como aspectos técnicos de radiodifusão, por meio dos instrumentos da Inspeção;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - Bloqueador de Sinais de Radiocomunicações (BSR): equipamento de Radiação Restrita destinado a bloquear sinais de radiocomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - caráter primário: operação de estação de telecomunicações com direito à proteção contra interferência prejudicial;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - caráter secundário: operação de estação de telecomunicações sem à proteção contra interferência prejudicial;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V -&nbsp;<span class="dark-mode-color-white">centralizador temático: Unidade Descentralizada (UD) designada pela Gerência de Fiscalização (FIGF) para tratamento centralizado de denúncias de temas específicos, como interferências, clandestinidade, aspectos técnicos, entre outros;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - coordenação: procedimento que visa tornar viável o uso, por mais de um interessado, de radiofrequência, faixa ou canal de radiofrequências de forma a prevenir ou corrigir a ocorrência de interferência prejudicial entre as estações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - Estação terrena: estação localizada sobre a superfície da Terra ou dentro da atmosfera terrestre que se comunica com uma ou mais estações espaciais ou, ainda, com uma ou mais estações do mesmo tipo por meio de um ou mais satélites refletores ou outros objetos no espaço;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VIII - Estação terrestre: estação localizada sobre a superfície da Terra que se comunica com uma ou mais estações do mesmo tipo por meio de enlaces terrestres;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IX -&nbsp;<em>Indoor Unit</em>&nbsp;(IDU): unidade interna de um sistema de radiocomunicação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">X -&nbsp;<em>Industrial, Scientific and Medical</em>&nbsp;(<em>ISM</em>): aplicações de equipamentos ou dispositivos destinados a gerar e utilizar localmente energia radioelétrica com fins industriais, científicos, médicos, domésticos ou similares, excluindo as aplicações de telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XI - Inspeção: auditoria, averiguação, ensaio, levantamento, medição, monitoração, radiovideometria, vistoria, entre outros, realizada por Agente de Fiscalização no âmbito da execução de uma Ação de Inspeção.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XII - interferência com risco à vida: interferência em serviços de radiocomunicação usados para salvaguarda da vida humana, incluindo o uso de qualquer das faixas de radiofrequências atribuídas aos serviços de radiodeterminação, radiolocalização, radionavegação, móvel aeronáutico, móvel marítimo e de segurança, conforme disposto no Plano de Atribuição, Destinação e Distribuição de Frequências no Brasil;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIII - interferência prejudicial: qualquer emissão, radiação ou indução que obstrua, degrade, interrompa repetidamente, ou que comprometa a qualidade da comunicação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIV -&nbsp;<em>Low Noise Block</em>&nbsp;(LNB): equipamento responsável pela amplificação e conversão de frequências do sinal recebido por uma estação terrena em sistemas via satélite;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XV -<em>&nbsp;Outdoor Unit</em>&nbsp;(ODU): unidade externa de um sistema de radiocomunicação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XVI - radiodeterminação: determinação da posição, velocidade ou outras características de um objeto, ou obtenção de informação relativa a esses parâmetros utilizando as propriedades de propagação de ondas eletromagnéticas;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XVII - radiogoniometria: técnica que utiliza a recepção de ondas de rádio para determinar a direção de uma estação ou de um objeto;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XVIII - radiolocalização: é a radiodeterminação utilizada para outros fins que não radionavegação. É empregada para determinar a posição de um radiotransmissor, pela interseção de marcações feitas por duas ou mais estações de monitoração, obtidos por técnica de radiogoniometria;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIX - radionavegação: técnica de navegação que se vale de sinais de radiofrequência para determinar a posição de um objeto móvel; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XX - reforçador de sinais: equipamento destinado a operar em ambiente interno ou fechado que recebe, amplifica e retransmite em baixa potência, sem translação de frequência, os sinais de um conjunto específico de canais de radiofrequência.</p>
+<p style="text-align: center;">CAPÍTULO III</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DA EXECUÇÃO DA FISCALIZAÇÃO</p>
+<p class="Texto_Centralizado" style="text-align: center;"><b>Seção I</b></p>
+<p class="Texto_Centralizado" style="text-align: center;"><b>Do Planejamento da Fiscalização</b></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art5"></a>Art. 5º Criada a Ação de Inspeção, o Agente de Fiscalização responsável deve contatar o denunciante para obtenção de informações atualizadas, verificando se a interferência persiste.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Acerca da interferência, recomenda-se que sejam feitos os seguintes questionamentos ao denunciante:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - quando teve início;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - se é constante ou intermitente;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - se há um horário específico em que ocorre;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - se é perceptível em outros sistemas, aparelhos ou equipamentos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - se houve alteração técnica recente no sistema interferido;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - se houve alteração recente na região, como instalação de torres, indústrias, manutenção na rede de energia elétrica, entre outros; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - se é possível ouvir alguma informação do sinal interferente, tal como programação de emissora de rádio, conversa telefônica, nome de pessoas ou de organizações, indicativo de chamada, entre outros; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VIII - a descrição do equipamento ou sistema que sofre a interferência<i>.</i></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Para reclamações de interferências em estações em deslocamento, o Agente de Fiscalização deve verificar com o reclamante a existência de novas ocorrências.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art6"></a>Art. 6º Ao planejar a Inspeção, o Agente de Fiscalização deve adotar as seguintes providências, entre outras:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - selecionar os formulários necessários para a execução da atividade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - coletar informações nos sistemas da Agência, identificando as entidades autorizadas a transmitir na frequência interferida, ou frequências autorizadas cujos harmônicos ou produtos de intermodulação possam estar causando a interferência;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - obter informações adicionais de outras fontes que possam contribuir para a resolução da interferência;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - delimitar a área dos trabalhos em campo a partir do local da estação interferida, preferencialmente utilizando ferramenta de predição, de forma a definir os melhores pontos de monitoração ou escuta de áudio;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - definir o período da fiscalização nos casos em que as fontes de interferência apresentem comportamento intermitente ou sofram influências externas, considerando as informações contidas na reclamação;&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - avaliar a necessidade de acompanhamento da atividade por responsáveis pelas estações envolvidas, bem como eventual necessidade de apoio policial; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - pesquisar no histórico de interferências semelhantes informações que possam&nbsp;contribuir para o planejamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art7"></a>Art. 7º Ao definir os recursos a serem aplicados na execução da Inspeção, o Agente de Fiscalização deve considerar a utilização das estações que compõem a rede de monitoramento da Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art8"></a>Art. 8º Quando a Atividade de Inspeção necessitar da atuação de duas ou mais Unidades Descentralizadas, caberá ao Centralizador Temático designar uma delas para coordenar as atividades, fornecendo as orientações necessárias para a sua execução.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art9"></a>Art. 9º O Agente de Fiscalização deve solicitar autorização e apoio junto à Fundação Nacional do Índio (Funai), ao Departamento de Polícia Federal ou ao Ministério da Justiça quando a atividade envolver diligências em áreas indígenas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art10"></a>Art. 10. As atividades que envolvam Segurança Pública ou Segurança Nacional devem ser realizadas sob sigilo, observando as orientações do Centralizador Temático ou da Gerência de Fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção II<br>Das Atividades em Campo</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art11"></a>Art. 11. Para a identificação e caracterização do sinal interferente, o Agente de Fiscalização deve realizar análise espectral nos locais planejados ou em outros identificados durante o deslocamento, que se mostrem adequados à realização da monitoração.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º O Agente de Fiscalização deve, preferencialmente, utilizar analisador de espectro de tempo real para melhor visualização de sinais sobrepostos numa mesma faixa de frequência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Para evitar que sinais indesejáveis mascarem a monitoração, é recomendável&nbsp;<span class="dark-mode-color-black">o uso de antenas passivas&nbsp;</span>e filtros seletivos,&nbsp;<span class="dark-mode-color-black">operando na faixa de interesse, restringindo os efeitos de sinais externos à faixa em análise</span>, principalmente na atividade realizada próxima a locais que concentrem outras estações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="dark-mode-color-black">§ 3º Os sistemas de monitoração que utilizam antenas ativas, a exemplo da ETM, devem ser utilizados livres de distorções, no range dinâmico do&nbsp;<em>mixer</em>&nbsp;de entrada e em sua região linear de operação, evitando que os sinais apresentados tenham origem interna, ao operar na região de saturação;&nbsp;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 4º O equipamento utilizado deve ser configurado de forma a se obter registros que evidenciem de forma adequada as características do sinal analisado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 5º Além da análise espectral, podem ser empregadas outras técnicas de investigação como, por exemplo, demodulação de áudio, video ou dados, buscando identificar e caracterizar o sinal interferente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art12"></a>Art. 12. No caso de sinais interferentes provenientes de sistemas diretivos, recomenda-se ao Agente de Fiscalização:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - posicionar-se em locais elevados sempre que possível, visto que a possibilidade de detectar o sinal interferente, estando fora da linha de visada da sua fonte geradora, é praticamente nula;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - utilizar antenas diretivas (baixo ângulo de abertura), de ganho elevado e amplificadores de baixo ruído; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - empregar filtros seletivos na entrada do amplificador, evitando que sinais gerados por distorções ou intermodulações sejam confundidos com o sinal interferente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art13"></a>Art. 13. A localização de fontes interferentes pode ser agilizada com o uso de&nbsp;<em>drones</em>, especialmente em áreas de difícil acesso, uma vez que o equipamento possibilita a monitoração aérea da região.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art14"></a>Art. 14. Na busca pela fonte do sinal interferente, recomenda-se ao Agente de Fiscalização manter os equipamentos de monitoração ligados durante o deslocamento, o que possibilita um monitoramento ininterrupto da faixa interferida.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art15"></a>Art. 15. O Agente de Fiscalização deve registrar todas as evidências obtidas durante a Inspeção, tais como: análise espectral, fotografias, gravações de áudio, de vídeo, relatórios técnicos de equipamentos ou sistemas interferidos, indicadores de taxa de erros, entre outros.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art16"></a>Art. 16. Compete ao Centralizador Temático verificar se o local da denúncia de interferência se encontra dentro do contorno protegido ou da área geográfica definida para a exploração do serviço interferido, bem como avaliar se o sinal desejado apresenta níveis suficientes para recepção no local em análise, descartando as áreas de sombra&nbsp;que descaracterizam o contorno protegido.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Caso não sejam atendidas as condições descritas no caput, não estará configurado o direito à proteção contra interferências.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art17"></a>Art. 17. O Agente de Fiscalização pode solicitar o desligamento da estação interferida de modo a facilitar a constatação da existência do sinal interferente, assim como a análise de suas características.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Caso seja necessário realizar a monitoração utilizando qualquer equipamento da estação interferida, deve-se solicitar apoio técnico do reclamante para a realização desta tarefa.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Quando possível, nos casos de monitoração com analisador de espectro na interligação entre a IDU e a ODU, o Agente de Fiscalização deve:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - utilizar um divisor e um bloqueador de corrente contínua (DC&nbsp;<em>Block</em>) na conexão com o analisador para protegê-lo, isolando-o da tensão de alimentação da ODU, que deve permanecer alimentada durante a monitoração; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II – considerar que entre a IDU e a ODU serão monitoradas as frequências intermediárias (FI) de transmissão e recepção.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art18"></a>Art. 18. Sempre que necessário, o responsável pela estação interferida deve fornecer informações detalhadas sobre o sistema de recepção, tais como o tipo de filtro de recepção utilizado, as características da antena receptora, sistema de aterramento, entre outras.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art19"></a>Art. 19. Caso não seja constatada a presença de sinal passível de causar interferência, o Agente de Fiscalização pode avaliar com o denunciante as condições técnicas de funcionamento da estação interferida.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art20"></a>Art. 20. Constatada a presença de sinal, o Agente de Fiscalização deve avaliar se é possível afirmar com segurança que o sinal investigado ocupa canal ou faixa de frequência destinado ao sistema interferido, causando queda de desempenho ou qualidade do canal de comunicação sob análise, de forma que seja caracterizada interferência prejudicial.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º A queda de desempenho ou de qualidade da comunicação pode ser caracterizada por dificuldade de demodulação do sinal, taxas de erro atípicas na recepção, indicadores de queda de chamadas, de disponibilidade, entre outros fatores, conforme o sistema afetado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Uma vez constatada a presença de sinal passível de causar interferência na faixa reclamada, o Agente de Fiscalização pode solicitar o desligamento da sua fonte geradora, de modo a avaliar a eventual melhoria dos efeitos na degradação no sistema interferido, possibilitando a comprovação da interferência prejudicial.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art21"></a>Art. 21. O Agente de Fiscalização deve considerar que as fontes de interferência podem ter, entre outras, as seguintes naturezas:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - emissões intencionais, autorizadas ou não;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - espúrios ou harmônicos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - produtos de intermodulação entre duas ou mais portadoras; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - ruído radioelétrico.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art22"></a>Art. 22. As características do sinal encontrado na análise espectral podem ajudar a identificar a tecnologia utilizada pela fonte interferente, bem como o serviço de telecomunicações ou de radiodifusão associado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. O Agente de Fiscalização deve considerar as fontes de interferências recorrentes constatadas em atividades anteriores, das quais alguns exemplos são apresentados na <a href="#tabela1">Tabela 1</a>.</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela1"></a>Tabela 1 -&nbsp;Fontes interferentes mais recorrentes</p>
+<table style="margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><b>SERVIÇO INTERFERIDO</b></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><b>FAIXA DE FREQUÊNCIA</b></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><b>POSSÍVEL FONTE</b></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><b>CARACTERÍSTICAS DO SINAL</b></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Serviço Limitado Móvel Aeronáutico</p>
+<p class="Tabela_Texto_Centralizado">(SMA)</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">108 a 13<span class="dark-mode-color-black">7</span>&nbsp;MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estações do Serviço de Radiodifusão Sonora em Frequência Modulada (FM)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Telefones de longo alcance</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Intermitente</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Radar Meteorológico</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">5340 a 5460 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estações de SCM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="6">
+<p class="Tabela_Texto_Centralizado">Serviço Móvel Pessoal</p>
+<p class="Tabela_Texto_Centralizado">(SMP)</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">700 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Microfones sem fio</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Intermitente</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Vazamento de sinais de TV a cabo;</p>
+<p class="Tabela_Texto_Centralizado">câmeras de segurança (com ou sem fio) e</p>
+<p class="Tabela_Texto_Centralizado"><i>High-Definition Multimedia Interface</i></p>
+<p class="Tabela_Texto_Centralizado">(HDMI)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">850 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Reforçadores de sinais</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">900 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Transceptores de radiação restrita</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2500 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Transceptores de radiação restrita, câmeras de segurança (com ou sem fio)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Todas</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">BSR</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">FM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><span class="dark-mode-color-black">76&nbsp;</span>a 108 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Canais adjacentes e emissoras não outorgadas</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Serviço de Radiodifusão de Sons e Imagens</p>
+<p class="Tabela_Texto_Centralizado">(TV)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">470 a&nbsp;<span class="dark-mode-color-black">698</span>&nbsp;MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estações de FM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Todos</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Diversas</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Rede elétrica</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Equipamentos de radiação não intencional</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Constante ou intermitente</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art23"></a>Art. 23. O Agente de Fiscalização deve observar o ambiente no entorno do local interferido, com o intuito de verificar a existência de sistemas irradiantes, de rede de energia elétrica, de indústrias ou maquinários que possam ser a fonte da interferência reclamada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art24"></a>Art. 24.&nbsp;Durante a localização de emissões, utilizando técnicas de radiogoniometria, o Agente de Fiscalização deve atentar-se à ocorrência de sinais refletidos, que possam alterar os resultados e levar a indicações equivocadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art25"></a>Art. 25. A fonte interferente é identificada quando for possível apontar com segurança os dispositivos que estão gerando o sinal investigado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Em casos específicos, como interferências causadas por produto de intermodulação, pode existir mais de uma fonte interferente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art26"></a>Art. 26. Após a comprovação da ocorrência de interferência e da sua origem, o Agente de Fiscalização deve planejar a abordagem, considerando a natureza da entidade, condições de acesso ao local, possibilidade da execução de atividade clandestina e de risco à sua segurança, entre outros.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art27"></a>Art. 27. Caberá interrupção cautelar do funcionamento da estação interferente nos casos de interferências prejudiciais a outras estações regularmente autorizadas, considerando o interesse público envolvido e a razoabilidade da adoção da medida perante outras menos gravosas, se existentes, que produzam o mesmo resultado, nos termos da<a href="https://informacoes.anatel.gov.br/legislacao/instrucoes-de-fiscalizacao/1632-portaria-2106"> Portaria nº 2106, de 15 de novembro de 2021</a>, ou outra que vier a substituí-la.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Destaca-se que interferências prejudiciais nem sempre decorrem de irregularidades técnicas, hipóteses em que não cabem autuação, mesmo quando da interrupção cautelar.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;CAPÍTULO IV</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS SITUAÇÕES ESPECÍFICAS</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Seção I</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências de Risco à Vida</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art28"></a>Art. 28. Consideram-se casos de risco à vida as interferências em serviços de radiocomunicação de segurança à vida, definidos como aqueles usados permanente ou temporariamente para salvaguarda da vida humana, incluindo o uso de qualquer das faixas de radiofrequências atribuídas aos serviços de radiodeterminação, radiolocalização, radionavegação, móvel aeronáutico, móvel marítimo e de segurança, conforme disposto no Plano de Atribuição, Destinação e Distribuição de Frequências no Brasil.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art29"></a>Art. 29. Os casos de interferências definidos como de risco à vida devem ser tratados prioritariamente e as Ações de Inspeção iniciadas imediatamente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Após a identificação da fonte interferente, o Agente de Fiscalização deve planejar a adoção de medidas visando sanar imediatamente a interferência e, não sendo possível, interromper o funcionamento do equipamento interferente, como medida cautelar, conforme normas vigentes da Agência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Quando o responsável pelo equipamento interferente não permitir a interrupção cautelar, o Agente de Fiscalização deve levar o fato ao conhecimento da gerência imediata, para que sejam tomadas as medidas cabíveis, inclusive judiciais, quando for o caso.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º Na impossibilidade de identificação da fonte interferente de maneira célere, o Agente de Fiscalização pode propor, quando possível, adoção de medidas no sistema interferido, visando minimizar os efeitos da interferência, até a solução definitiva do problema.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art30"></a>Art. 30. Em se tratando de interferências recorrentes em sistemas de radiocomunicação ou radionavegação aeronáutica que forem percebidas apenas no espaço aéreo, sem recepção de sinal em solo, pode-se verificar junto ao órgão regional do Departamento de Controle do Espaço Aéreo (DECEA) a possibilidade de apoio do Grupamento Especial de Inspeção em Voo (GEIV).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art31"></a>Art. 31. O Agente de Fiscalização pode utilizar ferramentas de suporte na análise de interferências nos sistemas de radiocomunicação ou radionavegação aeronáutica, tais como:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - serviços&nbsp;<em>web</em>, a exemplo do&nbsp;<em>Flight Radar</em>, que registram o histórico de voos e podem ser utilizados para verificar a informação contida na reclamação, uma vez que apresentam registros que podem indicar se a aeronave estava na posição informada no momento da interferência;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II -&nbsp;<em>softwares&nbsp;</em>de georreferenciamento, a exemplo do&nbsp;<em>Google Earth</em>, que podem ser utilizados para estabelecer a rota e a posição das aeronaves na ocasião em que ocorreram os reportes, para estabelecer uma área inicial de buscas e identificar os pontos mais altos e acessíveis para monitoração; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III -&nbsp;<em>softwares&nbsp;</em>de predição, a exemplo do<em>&nbsp;ICS Telecom</em>&nbsp;com a função geolocalização, que podem ser utilizados para delimitar a região com maior probabilidade de localização da fonte interferente, a partir das informações apresentadas nos reportes de interferência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art32"></a>Art. 32. Para avaliação de interferências nos sistemas de radiocomunicação ou radionavegação aeronáutica, é importante que o Agente de Fiscalização tenha conhecimento dos termos utilizados no Sistema de Controle do Espaço Aéreo Brasileiro, que podem ser obtidos junto ao Centralizador Temático ou diretamente com o reclamante.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Seção II</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências entre entidades com Autorização de Uso de Radiofrequência</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art33"></a>Art. 33. Quando a interferência prejudicial ocorrer entre entidades que possuam autorização para o uso de radiofrequências, o Agente de Fiscalização deve planejar a realização de inspeção técnica nas instalações da estação interferente e, caso necessário, da interferida.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art34"></a>Art. 34. Para os casos de Atividades de Inspeção em que seja necessária a participação das partes envolvidas, faz-se necessário o agendamento prévio para a realização de inspeções em suas estações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Os representantes das entidades que farão o acompanhamento deverão ter capacidade técnica para operar os equipamentos instalados nas estações a serem vistoriadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º As partes envolvidas devem ser notificadas de que a ausência de representante da entidade no local e período agendados pode acarretar:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - ao denunciante, o arquivamento da denúncia; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - ao interferente, a abertura de processo de apuração por obstrução à atividade de fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º A impossibilidade do comparecimento de qualquer das partes por motivos justificados, inclusive dos Agentes de Fiscalização, deve ser levada ao conhecimento dos demais com maior antecedência possível, estabelecendo-se, de comum acordo, nova ocasião para a atividade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art35"></a>Art. 35. Caso sejam encontradas irregularidades técnicas relacionadas com a interferência, o interferente deve corrigi-las imediatamente sob pena de interrupção cautelar do funcionamento da estação, considerando o interesse público envolvido.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Caberá a interrupção cautelar do funcionamento da estação interferente cuja causa da interferência seja o uso de radiofrequências, faixa ou canal diverso do autorizado, conforme o disposto no <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2016/911-resolu%C3%A7%C3%A3o-671#art1">Regulamento de Uso do Espectro de Radiofrequências</a> (RUE), ou outro que venha a substituí-lo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art36"></a>Art. 36. Nos casos em que o sistema interferido seja uma estação em caráter primário e o interferente uma estação operando em caráter secundário, o interferente deve ser orientado a cessar a transmissão de sua estação imediatamente e proceder aos ajustes necessários para eliminar a interferência prejudicial.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. A medida citada no caput não se aplica se o sistema interferido estiver operando com irregularidades técnicas e o interferente estiver operando com as características técnicas autorizadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art37"></a>Art. 37. No caso do sistema interferido ser uma estação operando em caráter secundário e o interferente uma estação operando em caráter primário, deve ser verificado se as estações interferente e interferida estão operando conforme as características técnicas autorizadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Constatadas irregularidades técnicas, o interferente deve ser notificado para que tome medidas para corrigi-las, sob pena de interrupção cautelar, sem prejuízo das sanções aplicáveis.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Quando não forem constatadas irregularidades técnicas ou nos casos em que as correções das irregularidades não sejam suficientes para cessar ou minimizar a interferência, o Agente de Fiscalização deve comunicar ao denunciante a ausência de direito à proteção.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art38"></a>Art. 38. Para os casos de entidades operando em mesmo caráter (primário ou secundário), quando não se constatar qualquer irregularidade técnica, ou nos casos em que a correção das irregularidades verificadas não seja suficiente para cessar ou mitigar a interferência, ou ainda, não seja possível sua imediata implementação, caberá coordenação, conforme disposto no RUE ou em outro regulamento que venha a substituí-lo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="dark-mode-color-white">§ 1º O Agente de Fiscalização pode propor medidas p</span>ara mitigar o problema<span class="dark-mode-color-white">, como a redução de potência, até que seja identificada a real causa da interferência, cabendo a implementação dessas medidas às entidades envolvidas.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º As medidas adotadas devem constar no Relatório de Fiscalização, que será encaminhado à Superintendência competente para que promova coordenação, conforme Procedimento para Tratamento de Conflitos na Coordenação de Uso de Radiofrequências, ou outro que venha a substituí-lo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção III</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências em receptores de usuários dos Serviços de Radiodifusão</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art39"></a>Art. 39. Quando não for constatada a presença de sinal interferente durante a Inspeção, o Agente de Fiscalização deve considerar que a interferência reportada por usuário dos serviços de radiodifusão pode, eventualmente, decorrer da não conformidade do sistema de recepção utilizado e, nesse caso, observar se:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - o receptor utilizado pelo sistema&nbsp;<span class="dark-mode-color-black">interferido</span>&nbsp;está em boas condições de conservação e funcionamento;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - a antena utilizada é adequada para a faixa de frequências em questão, está em boas condições e direcionada corretamente;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - a linha física de&nbsp;<span class="dark-mode-color-black">recepção&nbsp;</span>é de boa qualidade e encontra-se em bom estado de conservação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - são utilizados adaptadores de impedância adequados;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - as conexões estão firmes e sem indícios de oxidação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - há emendas nos cabos ou fios; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - existem filtros que rejeitam faixas de frequências indesejadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Caso seja constatada alguma desconformidade dentre os itens listados, o Agente de Fiscalização deve sugerir ao&nbsp;<span class="dark-mode-color-black">denunciante</span>&nbsp;que efetue as correções necessárias e esclarecer que somente com o sistema de recepção em boas condições técnicas será possível confirmar a procedência da denúncia.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art40"></a>Art. 40. Em sistemas de recepção com utilização de antena coletiva, deve-se orientar o&nbsp;<span class="dark-mode-color-black">denunciante</span>&nbsp;a solicitar a um técnico que verifique o sistema como um todo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art41"></a>Art. 41. Caso seja constatado que o sistema de recepção utiliza amplificadores de sinais (<em>Boosters</em>) a&nbsp;<span class="dark-mode-color-black">denúncia</span>&nbsp;será considerada improcedente, tendo em vista que a utilização de tais dispositivos potencializa a ocorrência de interferências.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. No caso de emprego de&nbsp;<em>Boosters</em>, o denunciante&nbsp;deve ser orientado a verificar se:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - a utilização do dispositivo é imprescindível;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - o tipo de amplificador é o mais adequado para a faixa de frequência; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - o dispositivo conta com blindagem adequada.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Seção IV</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências no Serviço Móvel Pessoal (SMP)</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art42"></a>Art. 42. Nos casos de interferências em estações do SMP, o Agente de Fiscalização deve analisar o relatório encaminhado pela operadora, visando identificar:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - se os indicadores são afetados de forma constante ou intermitente;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - se as frequências das fontes indicadas correspondem aos canais autorizados afetados na Estação Rádio Base; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - quais as fontes com maior probabilidade de causar interferência, nos casos em que é indicada mais de uma fonte.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Havendo necessidade de informações complementares, o Agente de Fiscalização deve solicitá-las à operadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art43"></a>Art. 43. Nos casos de indicação de múltiplas fontes, o Agente de Fiscalização deve priorizar as com maior potencial interferente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art44"></a>Art. 44. Sendo constatados indícios de que a interferência seja proveniente de local diverso do indicado e não sendo possível o acesso ao equipamento interferente durante a Inspeção, podem ser adotados os procedimentos de fiscalização responsiva, nos termos do Plano de Ação de Inspeção Centralizada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="dark-mode-color-white"><a name="art45"></a>Art. 45. Nos casos de interferências em estações do SMP causadas por repetidores ou reforçadores de sinais instalados por terceiros e sem qualquer responsabilidade de operadora, caso não haja orientação específica, o Agente de Fiscalização deve interagir com a FIGF.&nbsp;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Não cabe interrupção cautelar na hipótese de o equipamento interferente ser comprovadamente de responsabilidade de uma operadora do SMP, devendo esta ser notificada para adotar providências no intuito de sanar a interferência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art46"></a>Art. 46. Concluída a Inspeção, o Agente de Fiscalização deve confirmar junto ao representante da operadora a cessação da interferência.<br>Parágrafo único. Caso não seja confirmada a cessação da interferência, deve ser solicitado à operadora um novo relatório técnico, indicando efetivamente a fonte interferente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção V</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências em Serviços via Satélite</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art47"></a>Art. 47. A interferência em comunicações via satélite pode se dar no segmento espacial ou terrestre, sendo que a espacial ocorre no enlace Terra-Satélite ou Satélite-Terra, gerada por estações terrenas ou outro satélite, enquanto a interferência terrestre é a provocada por estações terrestres e afeta estações terrenas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Os casos de interferências espaciais são tratados no âmbito do Plano de Ação de Monitoração de Satélites (PM-SAT) e os terrestres pelo Centralizador Temático.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º No tratamento das Ações de Inspeção decorrentes do PM-SAT, o Agente de Fiscalização deve adotar precauções adicionais na identificação da fonte interferente, considerando a diretividade, o apontamento das antenas, as altas frequências envolvidas e a baixa intensidade dos sinais.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art48"></a>Art. 48. Os satélites de baixa ou média órbita podem sofrer interferência espacial originada de estações terrestres ou terrenas, caso em o Agente de Fiscalização deve observar o Relatório de Interferência Prejudicial encaminhado pela operadora do satélite afetado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Na busca da fonte interferente, o Agente de Fiscalização deve priorizar as estações operando com potências elevadas, a exemplo dos serviços de radiodifusão.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Identificada a origem da interferência, o Agente de Fiscalização deve proceder conforme disposto no <a href="#art37">artigo 37</a> desta IF.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art49"></a>Art. 49. As causas de interferências em estações terrenas podem variar desde um sinal externo na mesma frequência do canal de satélite a distorções decorrentes da saturação do LNB, de forma que o caso concreto determinará as ações a serem adotadas pelo Agente de Fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Para os efeitos desta IF, as estações receptoras dos sistemas de posicionamento global (<em>GPS</em>) e similares também são consideradas como estações terrenas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art50"></a>Art. 50. Em caso de monitoração com analisador de espectro na saída do LNB, devem ser adotados os seguintes cuidados:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - utilizar um divisor e um bloqueador de corrente contínua (DC&nbsp;<em>Block</em>) na conexão com o analisador para protegê-lo, isolando-o da tensão de alimentação do LNB, que deve permanecer alimentado durante a monitoração; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - atentar para o fato de que nesse caso serão monitoradas as frequências intermediárias (FI) de recepção.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção VI</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências envolvendo equipamentos de Radiação Restrita</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art51"></a>Art. 51. As estações de radiocomunicação que utilizam equipamentos de radiação restrita não têm direito à proteção contra interferências prejudiciais, conforme regulamentação aplicável.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art52"></a>Art. 52. No caso de equipamento de radiação restrita causando interferência prejudicial em sistemas operando em caráter primário ou secundário, o Agente de Fiscalização deve determinar ao responsável pelo equipamento a adoção de medidas para eliminar a interferência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Caso a interferência persista, o Agente de Fiscalização pode decidir pela interrupção cautelar do funcionamento do equipamento interferente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Constatadas irregularidades, deverão ser adotadas as medidas administrativas cabíveis.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção VII</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências causadas por fontes de emissões não intencionais</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art53"></a>Art. 53. Para tratar os casos de interferências causadas por emissões provenientes de redes de telecomunicações que utilizem meios confinados, dispositivos&nbsp;<em>ISM</em>&nbsp;ou eletroeletrônicos que emitam perturbações eletromagnéticas de forma não intencional, o Agente de Fiscalização deve:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - avaliar as condições de funcionamento da estação interferida, observando as situações que possam potencializar os efeitos da interferência e, quando couber, propor adequações para atenuá-los; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - obter informações referentes ao dispositivo emissor da perturbação, considerando certificações e laudos de avaliação de compatibilidade eletromagnética, quando disponíveis.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art54"></a>Art. 54. Identificada a origem da interferência, o Agente de Fiscalização deve comunicar a situação ao responsável pelo dispositivo interferente e solicitar a adoção de medidas para sanar o problema.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Para situações em que o sistema interferido envolva risco à vida, o Agente de Fiscalização deve solicitar o desligamento do equipamento ofensor imediatamente, até que sejam realizadas as devidas correções.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Não sendo possível sanar a interferência durante a Inspeção, o Agente de Fiscalização deve informar a situação à gerência imediata que, por meio de ofício, solicitará providências, estabelecendo prazo para solução do problema.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º Não sendo atendida a solicitação referida no parágrafo anterior, a gerência tomará as medidas cabíveis, com o objetivo de cessar a interferência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção VIII</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências causadas por redes de distribuição de Energia Elétrica</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art55"></a>Art. 55. As redes de transmissão e distribuição de energia elétrica podem emitir perturbações afetando o espectro radioelétrico, situação em que a metodologia geral para avaliação dessas emissões são as mesmas aplicáveis às fontes de emissões não intencionais.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art56"></a>Art. 56. Constatada interferência provocada por Rede de Energia Elétrica, a gerência imediata encaminhará ofício à entidade responsável, solicitando providências e estabelecendo prazo para solução do problema.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º As evidências obtidas em campo pelo Agente de Fiscalização de que a interferência seja oriunda da rede verificada devem ser anexadas ao ofício referido no&nbsp;<em>caput</em>&nbsp;deste artigo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Com o objetivo de determinar o elemento de rede causador da interferência, o Agente de Fiscalização pode propor a realização de atividade conjunta com representantes da concessionária responsável.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;<strong>Seção IX</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências causadas por Produtos de Intermodulação</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art57"></a>Art. 57. Em casos de interferências causadas por produtos de intermodulação que decorram da combinação de sinais distintos o Agente de Fiscalização deve verificar os níveis de harmônicos e espúrios produzidos pelas estações envolvidas, bem como identificar em qual(is) das estações o sinal interferente está sendo gerado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art58"></a>Art. 58. Constatadas irregularidades técnicas nas estações envolvidas, o Agente de Fiscalização deve solicitar aos representantes das entidades providências para a correção imediata de tais irregularidades, sem prejuízo das sanções administrativas e das medidas cautelares, quando cabíveis.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art59"></a>Art. 59. Verificada a existência da interferência, sem a constatação de irregularidades em qualquer das estações envolvidas, ou que tenham sido corrigidas, deve-se propor medidas para minimizar o problema, tais como redução temporária de potência, instalação de filtros ou outras ações necessárias, até a solução definitiva.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º O Agente de Fiscalização deve considerar a possibilidade de que a intermodulação ocorra no sistema supostamente interferido, caso em que devem ser avaliadas ações junto ao denunciante que possam solucionar o problema.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Caso as medidas adotadas não sejam suficientes para cessar a interferência, a situação deve ser registrada no Relatório de Fiscalização, que será encaminhado à Superintendência competente para que se promova coordenação.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Seção X</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências causadas por Bloqueador de Sinais de Radiocomunicações (BSR)</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art60"></a>Art. 60. Em caso de denúncias de interferências causadas por BSR, deve-se verificar o cumprimento das condições de instalação definidas na <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2002/257-resolucao-308">Resolução nº 308, de 11 de setembro de 2002</a>, ou outra que vier a substituí-la, considerando que esse equipamento opera em caráter secundário e não pode causar interferência em serviço operando em caráter primário.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art61"></a>Art. 61. Em razão do interesse público envolvido, a Anatel pode intermediar o diálogo entre as partes, para que a interferência seja resolvida sem a interrupção do funcionamento do BSR.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. A entidade responsável pela operação do BSR deve ser orientada a iniciar procedimento de coordenação com o denunciante.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art62"></a>Art. 62. Na situação de interferência causada por BSR em que for caracterizada a clandestinidade, nos termos da <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2002/257-resolucao-308">Resolução nº 308, de 11 de setembro de 2002</a>, ou outra que vier a substituí-la, o Agente de Fiscalização deve:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - solicitar ao responsável pelo equipamento que adote medidas para mitigar ou cessar a interferência, cabendo à Gerência de Fiscalização avaliar a aplicação de interrupção cautelar e demais medidas administrativas, quando envolver interesse público; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - adotar as ações previstas para as estações sem autorização de uso de radiofrequência, quando não envolver interesse público.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Seção XI</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências em Regiões de Fronteiras</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art63"></a>Art. 63. Para fins desta IF, consideram-se como regiões fronteiriças as regiões geográficas próximas às fronteiras internacionais onde podem ocorrer interferências entre estações instaladas em países distintos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art64"></a>Art. 64. Os casos de interferências envolvendo redes de comunicação operando em regiões fronteiriças destinadas aos serviços de radionavegação e radiocomunicação aeronáutica e de comunicação de socorro ou segurança do Serviço Móvel Marítimo receberão tratamento prioritário.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art65"></a>Art. 65. Na hipótese de reclamações de estações brasileiras causando interferência em estações instaladas no exterior, o Agente de Fiscalização deve observar os procedimentos estabelecidos nesta IF para constatação da interferência e localização da fonte interferente, adotando as medidas administrativas cabíveis.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º O caráter de operação de estações instaladas no exterior deve ser considerado primário.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º A adoção de medida cautelar em estações brasileiras deve levar em consideração a relação institucional com o país reclamante, além do interesse público local envolvido.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art66"></a>Art. 66. Constatada a interferência proveniente de estação instalada em outro país, o Agente de Fiscalização deve:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - realizar as monitorações e a busca de informações sobre a fonte interferente, identificando o país onde ela se localiza; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - consolidar no Relatório de Fiscalização as informações obtidas do Órgão Regulador do país vizinho.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção XII</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Do Uso não Autorizado de Radiofrequência</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art67"></a>Art. 67. Quando a interferência prejudicial decorrer do uso não autorizado de radiofrequência, ainda que o serviço associado esteja outorgado pela Anatel ou pelo Ministério ao qual a Agência está vinculada, o Agente de Fiscalização deve planejar a interrupção cautelar do funcionamento da estação interferente, assim como adotar medidas cabíveis, observando o disposto na <a href="https://informacoes.anatel.gov.br/legislacao/instrucoes-de-fiscalizacao/1632-portaria-2106">Portaria nº 2106, de 15 de novembro de 2021</a>, ou outra que venha a substituí-la.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Nas situações em que a estação interferente esteja operando por força de decisão judicial, o Agente de Fiscalização deve adotar as ações previstas para as estações cujo uso da radiofrequência esteja autorizado, finalizar a Ação de Inspeção e encaminhar o Relatório de Fiscalização à gerência imediata para análise e providências cabíveis.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Seção XIII</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das interferências causadas por equipamentos não Homologados ou Certificados</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art68"></a>Art. 68. Caberá a lacração ou apreensão de equipamentos não homologados, nos termos da regulamentação específica, observando o disposto na <a href="https://informacoes.anatel.gov.br/legislacao/instrucoes-de-fiscalizacao/1632-portaria-2106">Portaria nº 2106, de 15 de novembro de 2021</a>, ou outra que vier a substituí-la.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Seção XIV</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Das Ações Corretivas</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art69"></a>Art. 69. As possíveis ações corretivas são resumidas na tabela a seguir.</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><colgroup><col><col><col><col><col><col span="2"><col><col></colgroup>
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="3" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Interferido</p>
+</td>
+<td style="text-align: center;" colspan="2" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Interferente</p>
+</td>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Ações para mitigar ou<br>cessar a interferência</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Passível de interrupção imediata<br>[1]</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Referência</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">No interferente</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">No interferido</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="3">
+<p class="Tabela_Texto_Centralizado">Risco a vida, segurança pública ou nacional</p>
+</td>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Todos</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 29</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="15">
+<p class="Tabela_Texto_Centralizado">Entidades c/ autorização<br>de uso de RF</p>
+</td>
+<td style="text-align: center;" rowspan="7">
+<p class="Tabela_Texto_Centralizado">Caráter<br>primário</p>
+</td>
+<td style="text-align: center;" rowspan="3">
+<p class="Tabela_Texto_Centralizado">Sem<br>irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Caráter<br>secundário</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Com ou sem<br>irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 36</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Caráter<br>primário</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Sem irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 38</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Com irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 38</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="4">
+<p class="Tabela_Texto_Centralizado">Com<br>irregularidades</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Caráter<br>secundário</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Sem irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 36</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Com irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 36</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Caráter<br>primário</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Sem irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 38</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Com irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 38</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="8">
+<p class="Tabela_Texto_Centralizado">Caráter<br>secundário</p>
+</td>
+<td style="text-align: center;" rowspan="4">
+<p class="Tabela_Texto_Centralizado">Sem<br>irregularidades</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Caráter<br>secundário</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Sem irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 38</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Com irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 38</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Caráter<br>primário</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Sem irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 37</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Com irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 37</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="4">
+<p class="Tabela_Texto_Centralizado">Com<br>irregularidades</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Caráter<br>secundário</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Sem irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 38</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Com irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 38</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Caráter<br>primário</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Sem irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 37</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Com irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 37</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="3" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Usuários de serviço de radiodifusão</p>
+</td>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Sem irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 39<br>a<br>Art. 41</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Com irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="3" rowspan="5">
+<p class="Tabela_Texto_Centralizado">Estações do SMP</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Reforçador<br>de sinal</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">De responsabilidade<br>de operadora</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Art. 45</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">De responsabilidade de terceiros</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="3">
+<p class="Tabela_Texto_Centralizado">BSR</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Em local<br>autorizado</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;" rowspan="3">
+<p class="Tabela_Texto_Centralizado">Art. 60</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Em local não autorizado e com interesse público</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Em local não autorizado e sem interesse público</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="3">
+<p class="Tabela_Texto_Centralizado">Serviços<br>via satélite</p>
+</td>
+<td style="text-align: center;" colspan="2" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Estações terrenas</p>
+</td>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Sem irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 49</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Com irregularidades</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 49</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Satélites de baixa e média órbita</p>
+</td>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Todos</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 35<br>c/c<br>Art. 48</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="3">
+<p class="Tabela_Texto_Centralizado">Equipamento de radiação restrita</p>
+</td>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Todos</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 51</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="3" rowspan="4">
+<p class="Tabela_Texto_Centralizado">Todos</p>
+</td>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Equipamentos de radiação restrita</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 52</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Dispositivos de Radiação<br>não Intencional</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 53<br>c/c<br>Art. 54</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Redes de energia elétrica</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 55<br>c/c<br>Art. 56</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Sem autorização de uso de RF</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NÃO</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">SIM</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Art. 67</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Alinhado_Esquerda" style="text-align: center;">&nbsp;[1] Entende-se como interrupção imediata aquela realizada pelo Agente de Fiscalização, como medida cautelar, quando não for possível sanar a interferência durante a Inspeção.</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">CAPÍTULO V</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DO RELATÓRIO DE FISCALIZAÇÃO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art70"></a>Art. 70.&nbsp;O Agente de Fiscalização deve registrar no Relatório de Fiscalização as evidências obtidas, a descrição dos procedimentos adotados e os fatos verificados durante o atendimento da demanda, em especial:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - resultados de goniometria e de análise espectral;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - fotografias, gravação de áudio, gravação de vídeo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - instrumentos utilizados, indicando suas configurações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - informações referentes aos locais de monitoração, incluindo as coordenadas geográficas;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - características das estações envolvidas, inclusive se os equipamentos utilizados estão de acordo com a certificação expedida ou aceita pela Anatel;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - qualificação da entidade responsável pela estação interferente, quando aplicável;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - irregularidades técnicas, se houver;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VIII - resultados de consultas realizadas na base de dados da Anatel;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IX - ações corretivas realizadas; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">X - eventuais medidas administrativas adotadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">CAPÍTULO VI</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art71"></a>Art. 71. Na hipótese de denúncias de interferências semelhantes, reportadas em Unidades Federativas diferentes, cabe ao Centralizador Temático ou à Gerência de Fiscalização designar a responsável pela coordenação da atividade de fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art72"></a>Art. 72. Quando a interrupção cautelar for cabível, nos termos desta Instrução de Fiscalização, mas não for permitida pela entidade fiscalizada, o Agente de Fiscalização deve:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - comunicar o fato à gerência imediata, nos casos de entidades com autorização de uso de radiofrequência, para que sejam adotadas as medidas cabíveis, inclusive judiciais, sem prejuízo das eventuais sanções decorrentes da obstrução da fiscalização; ou</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - solicitar apoio de autoridade policial para os casos de entidades sem autorização de uso de radiofrequência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art73"></a>Art. 73. Compete à Gerência de Fiscalização resolver os casos omissos e adotar as medidas adicionais necessárias à plena operacionalização desta Instrução de Fiscalização.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1849"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Instrução" class="link-categoria">Instrução</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Fiscalização" class="link-categoria">Fiscalização</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Tratamento%20de%20Inferências" class="link-categoria">Tratamento de Inferências</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PortariaVigente" class="link-categoria">PortariaVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

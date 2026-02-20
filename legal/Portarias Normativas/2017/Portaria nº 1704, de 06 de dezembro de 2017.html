@@ -1,0 +1,2015 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Portaria nº 1704, de 06 de dezembro de 2017</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas/2017/1132-portaria-1704">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Publicação, Revisão, Plano Diretor de Tecnologia da Informação e Comunicação, Alteração, Vigência, PortariaVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Publica a primeira revisão do Plano Diretor de Tecnologia da Informação e Comunicação (PDTIC) da Anatel 2017-2019, com alteração da sua vigência para o biênio 2017-2018, e dá outras providências.">
+	<title>Anatel - Portaria nº 1704, de 06 de dezembro de 2017</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1392624272" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=489356538" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"7086f07a151760aacebd9d17322f973b","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=109335923" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025133649" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/portarias-normativas/2017">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/portarias-normativas/2017">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/portarias-normativas/2017">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/portarias-normativas/2017" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/portarias-normativas" class="pathway">Portarias Normativas</a> <span class="separator">&gt;</span> <a href="/legislacao/portarias-normativas/2017" class="pathway">2017</a> <span class="separator">&gt;</span> <span>Portaria nº 1704, de 06 de dezembro de 2017</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 active deeper parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a><ul><li class="item-517"><a href="/legislacao/portarias-normativas/2025">2025</a></li><li class="item-496"><a href="/legislacao/portarias-normativas/2024">2024</a></li><li class="item-492"><a href="/legislacao/portarias-normativas/2023">2023</a></li><li class="item-485"><a href="/legislacao/portarias-normativas/2022">2022</a></li><li class="item-437"><a href="/legislacao/portarias-normativas/2021">2021</a></li><li class="item-431"><a href="/legislacao/portarias-normativas/2020">2020</a></li><li class="item-393"><a href="/legislacao/portarias-normativas/2019">2019</a></li><li class="item-320"><a href="/legislacao/portarias-normativas/2018">2018</a></li><li class="item-321 current active"><a href="/legislacao/portarias-normativas/2017">2017</a></li><li class="item-322"><a href="/legislacao/portarias-normativas/2016">2016</a></li><li class="item-323"><a href="/legislacao/portarias-normativas/2015">2015</a></li><li class="item-324"><a href="/legislacao/portarias-normativas/2014">2014</a></li><li class="item-325"><a href="/legislacao/portarias-normativas/2013">2013</a></li><li class="item-326"><a href="/legislacao/portarias-normativas/2012">2012</a></li><li class="item-327"><a href="/legislacao/portarias-normativas/2011">2011</a></li><li class="item-328"><a href="/legislacao/portarias-normativas/2010">2010</a></li><li class="item-329"><a href="/legislacao/portarias-normativas/2009">2009</a></li><li class="item-330"><a href="/legislacao/portarias-normativas/2008">2008</a></li><li class="item-331"><a href="/legislacao/portarias-normativas/2007">2007</a></li><li class="item-332"><a href="/legislacao/portarias-normativas/2006">2006</a></li><li class="item-333"><a href="/legislacao/portarias-normativas/2005">2005</a></li><li class="item-334"><a href="/legislacao/portarias-normativas/2004">2004</a></li><li class="item-335"><a href="/legislacao/portarias-normativas/2003">2003</a></li><li class="item-336"><a href="/legislacao/portarias-normativas/2002">2002</a></li><li class="item-337"><a href="/legislacao/portarias-normativas/2001">2001</a></li><li class="item-338"><a href="/legislacao/portarias-normativas/2000">2000</a></li><li class="item-339"><a href="/legislacao/portarias-normativas/1999">1999</a></li><li class="item-340"><a href="/legislacao/portarias-normativas/1998">1998</a></li><li class="item-341"><a href="/legislacao/portarias-normativas/1997">1997</a></li></ul></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;949021cf0ad3caf2&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Portaria nº 1704, de 06 de dezembro de 2017		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 15 Dezembro 2017 14:33			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quinta, 21 Janeiro 2021 12:22			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 7433			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Publica a primeira revisão do&nbsp;Plano Diretor de Tecnologia da Informação e Comunicação (PDTIC) da Anatel 2017-2019, com alteração da sua vigência para o biênio 2017-2018, e dá outras providências.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no&nbsp;Boletim de Serviço Eletrônico em<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4uRoeNwWGwjri-Gz4BRVvC2OBw8WehVmZe4RH9412Qp8LtndaHu8idaBytJytxAQ-Wn8NoAn2USOeWRMocWCaU">&nbsp;15/12/2017</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O PRESIDENTE DA&nbsp;AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das competências que lhe&nbsp;foram conferidas pelo <a href="http://legislacao.anatel.gov.br/resolucoes/2013/450-resolucao-612#art136">art. 136</a> do Regimento Interno da Anatel, aprovado pela&nbsp;Resolução nº 612, de 29 de abril de 2013, bem como pelo <a href="http://anatelnet/Portal/exibirPortalRedireciona.do?codigoDocumento=311935">art. 2º</a>, inciso IV, da&nbsp;Portaria Anatel nº 390, de 12 de maio de 2014;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO a manifestação favorável da Comissão Interna de Tecnologia da Informação (CITI) em sua <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBPwvdAdJlkqe2mVRllh4UpmSFbVMejH7yPanv-TE1KCG_">22ª Reunião Ordinária, realizada em 30 de outubro de 2017</a> (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBPwvdAdJlkqe2mVRllh4UpmSFbVMejH7yPanv-TE1KCG_">SEI nº 2050195</a>); e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?5gYoR1KAsC6DjRCbPhmMOOVg9zRBSU6KM_dMM2dffV6uXABkpM3AC_FvsJjJLZawJGpS7XJ2Cix36pBUfTFiDXfudkP-oWYh1Dg8HgZ6hS285RiNE4XZ37xczRe1W-XY">processo nº 53500.001802/2016-38</a>,</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="art1"></a>Art. 1º Aprovar a primeira revisão do Plano Diretor de Tecnologia da Informação e Comunicação (PDTIC), inicialmente previsto para o triênio 2017-2019, que passa a ter vigência bienal 2017-2018, na forma&nbsp;estabelecida no <a href="#anexo">anexo</a> a esta Portaria.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a name="art2"></a>Art. 2º Esta Portaria&nbsp;entra em vigor na data de sua publicação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: center;">JUAREZ MARTINHO QUADROS DO NASCIMENTO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: center;">&nbsp;Presidente</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><strong><a id="anexoI"></a>ANEXO I</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;">PLANO DIRETOR DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO 2017-2019 (1ª REVISÃO)</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;">&nbsp;</p>
+<p class="Item_Nivel1" style="text-align: justify;"><a id="item1"></a>1.INTRODUÇÃO</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item1.1"></a>1.1. O Plano Diretor de Tecnologia da Informação e Comunicação (PDTIC)&nbsp;é um instrumento de diagnóstico, planejamento e gestão dos recursos e processos de Tecnologia da Informação que visa atender às necessidades tecnológicas e de informação de um&nbsp;órgão&nbsp;para um determinado período.</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item1.2"></a>1.2. O PDTIC&nbsp;da Anatel foi&nbsp;aprovado por&nbsp;meio da <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO7Rwzb_XSZNle1asaz8vk2jSDnqOiyJ0PeUOcOSu7iVpK2a3Sd8uttoEKdn72gQIOyP24ic83yHw3j6QtmKpXAj">Portaria nº 1700, de 08 de dezembro de 2016</a> (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO7Rwzb_XSZNle1asaz8vk2jSDnqOiyJ0PeUOcOSu7iVpK2a3Sd8uttoEKdn72gQIOyP24ic83yHw3j6QtmKpXAj">SEI nº 1027113</a>), para vigência de três anos,&nbsp;2017 a 2019. Sua elaboração foi realizada por um Grupo de Trabalho composto por um representante de cada&nbsp;Superintendência,&nbsp;GPR, SCD, OV, AIN, ATC,&nbsp;APC, ARI e&nbsp;CRG, sob a coordenação da Superintendência de Gestão Interna da Informação (SGI).</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a id="item1.3"></a>1.3.O&nbsp;PDTIC&nbsp;é um instrumento dinâmico e&nbsp;para tanto&nbsp;prevê&nbsp;atualizações e revisões periódicas. As atualizações podem ser&nbsp;realizadas&nbsp;para&nbsp;subsidiar a elaboração da proposta orçamentária&nbsp;de TI&nbsp;para o exercício seguinte e, quando a Comissão Interna de Tecnologia da Informação (CITI) entender pertinente, de modo a&nbsp;incorporar novas necessidades. Já as&nbsp;revisões são anuais e visam&nbsp;atualizar diretrizes, planos e projetos.&nbsp;</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item1.4"></a>1.4. A&nbsp;integração e o alinhamento entre os instrumentos de&nbsp;planejamento é um fator chave para a consecução dos&nbsp;objetivos. Nesse&nbsp;sentido, o <a href="http://www.planejamento.gov.br/publicacoes/tecnologia-da-informacao/pdti_2017-2019.pdf/view">PDTIC&nbsp;2017-2019</a> foi elaborado com base&nbsp;nos instrumentos de planejamentos vigentes à época -<a href="http://www.planejamento.gov.br/assuntos/planeja/plano-plurianual">&nbsp;Plano Plurianual 2016/2019</a>, <a href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=327138&amp;pub=original&amp;filtro=1&amp;documentoPath=327138.pdf">Plano Estratégico Institucional da Anatel 2015/2024</a> e <a href="https://www.governodigital.gov.br/documentos-e-arquivos/egd-estrategia-de-governanca-digital-da-administracao-federal-2016-2019.pdf">Estratégia de Governança Digital da Administração Pública Federal&nbsp;2016/2019</a>. Destaca-se que no decorrer de&nbsp;2017 a Anatel elaborou o seu <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">Plano Operacional (Tático)&nbsp;para 2018</a>.</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item1.5"></a>1.5. Nesse contexto, o presente documento discorre sobre a primeira revisão&nbsp;do <a href="http://www.planejamento.gov.br/publicacoes/tecnologia-da-informacao/pdti_2017-2019.pdf/view">PDTIC 2017-2019</a>, a qual&nbsp;objetiva&nbsp;principalmente realizar o alinhamento entre&nbsp;o <a href="http://www.planejamento.gov.br/publicacoes/tecnologia-da-informacao/pdti_2017-2019.pdf">Plano Diretor de TIC 2017-2019</a> e o <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">Plano Operacional (Tático)&nbsp;para 2018</a>,&nbsp;apresentando assim a nova configuração do planejamento de TIC para 2018, além&nbsp;do resultado parcial do&nbsp;primeiro ano de vigência do Plano Diretor.</p>
+<p class="Item_Nivel1" style="text-align: justify;"><a name="item2"></a>2. RESULTADOS&nbsp;ALCANÇADOS</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item2.1"></a>2.1. A&nbsp;presente revisão&nbsp;foi iniciada em&nbsp;setembro de 2017, tendo em vista a necessidade de&nbsp;tempo hábil para sua aprovação pela Comissão Interna de Tecnologia da Informação (CITI) e pelo Presidente da Agência antes do início de 2018.&nbsp;Dessa forma, os resultados aqui expostos são parciais, refletindo&nbsp;o realizado entre os meses de&nbsp;&nbsp;janeiro a setembro de 2017.&nbsp;&nbsp;</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item2.2"></a>2.2. O <a href="http://www.planejamento.gov.br/publicacoes/tecnologia-da-informacao/pdti_2017-2019.pdf/view">PDTIC 2017-2019</a> foi aprovado com a previsão&nbsp;inicial de 13 (treze) metas&nbsp;e 76 (setenta e seis) ações a serem realizadas durante o triênio 2017 a 2019, conforme tabelas baixo:</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela01"></a>Tabela 01: Metas&nbsp;PDTIC 2017-2019&nbsp;</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto; width: 1133px;" border="1" cellspacing="0" cellpadding="1">
+<tbody>
+<tr>
+<td style="text-align: center; width: 63px;" scope="col">
+<p class="Tabela_Texto_Centralizado" align="center"><strong>ID</strong></p>
+</td>
+<td style="width: 1062px; text-align: left;" scope="col">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Metas</p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M01</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Ampliar a disponibilidade de dados abertos</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M02</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Ampliar o grau de conformidade com a Metodologia de Gestão de SIC</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M03</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Expandir a prestação de serviços públicos digitais</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M04</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Mapear e aprimorar os processos de trabalho por &nbsp;meio da TI</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M05</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Facilitar e universalizar o uso e o acesso aos serviços digitais</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M06</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Compartilhar e integrar dados, processos, sistemas, serviços e infraestrutura</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M07</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Aprimorar a interação com a sociedade</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M08</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Prover infraestrutura adequada de TI para a Agência</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M09</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Prover serviços e sistemas de qualidade</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M10</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Adequar os sistemas de TI ao Plano Estratégico</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M11</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Implementar projeto para desenvolver solução de computação em nuvem</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M12</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Elaborar e implementar programa para reestruturar a Gestão da Informação</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 63px;">
+<p class="Tabela_Texto_Centralizado">M13</p>
+</td>
+<td style="width: 1062px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Sanar fraquezas identificadas na análise de SWOT e necessidades identificadas na Pesquisa de Satisfação dos Usuários Internos de TICs</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;<a id="tabela02"></a>Tabela 02: Número de Ações PDTIC 2017-2019&nbsp;</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="1">
+<tbody>
+<tr>
+<td colspan="3">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Plano de Ação do PDTIC 2017-2019</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="1" rowspan="1">
+<p class="Tabela_Texto_Centralizado">13 Metas</p>
+</td>
+<td style="text-align: center;" colspan="1" rowspan="1">
+<p class="Tabela_Texto_Centralizado">76 Ações</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda" style="text-align: left;">Previsão para realização&nbsp;2017 a 2019</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.3"></a>2.3. Entretanto, no início de 2017, identificou-se a necessidade de&nbsp;detalhamento do&nbsp;Plano de Ação, passando-se das&nbsp;76 (setenta e seis) ações inicialmente previstas, cuja realização perpassava&nbsp;três anos, para&nbsp;190 (cento e noventa) ações, distribuídas nos três&nbsp;anos. Conforme Registro feito na <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4Fj0NHeli0umDhWLqJHN7l0WqRa6nJBDPYBcP2K6o3oZDcg9ZUzT2lQ7njKs4OUc4h-ztfjTeLHyxzaIvd4H4h">20ª Reunião Ordinária da Comissão Interna de TI</a> (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4Fj0NHeli0umDhWLqJHN7l0WqRa6nJBDPYBcP2K6o3oZDcg9ZUzT2lQ7njKs4OUc4h-ztfjTeLHyxzaIvd4H4h">SEI nº 1483727</a>)&nbsp;e detalhamento&nbsp;abaixo.</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela03"></a>Tabela 03: Distribuição das ações após atualização&nbsp;</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="1">
+<tbody>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Distribuição das ações do PDTIC 2017-2019</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="1" rowspan="3">
+<p class="Tabela_Texto_Centralizado">13</p>
+<p class="Tabela_Texto_Centralizado">Metas</p>
+</td>
+<td style="text-align: center;" colspan="1" rowspan="3">
+<p class="Tabela_Texto_Centralizado">190</p>
+<p class="Tabela_Texto_Centralizado">Ações</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">69 ações</p>
+</td>
+<td style="text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Previstas para serem concluídas em 2017</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">67 ações</p>
+</td>
+<td style="text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Previstas para serem concluídas em 2018</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">54 ações</p>
+</td>
+<td style="text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Previstas para serem concluídas em 2019</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.4"></a>2.4. Sobre a&nbsp;execução do PDTIC, no final do terceiro trimestre de 2017,&nbsp;25% (vinte e cinco por cento) das ações previstas para o ano&nbsp;encontravam-se concluídas, 20% (vinte por cento) canceladas e 55% (cinquenta e cinco&nbsp;por cento)&nbsp;em andamento, conforme gráfico e tabelas abaixo.</p>
+<p style="text-align: center;">Figura 01: Status das ações do PDTIC 2017-2019</p>
+<p style="text-align: center;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port1704/img.jpg" alt="" width="598" height="352">&nbsp;</p>
+<p style="text-align: center;"><a id="tabela04"></a>Tabela 04: Resultado&nbsp;Execução do PDTIC&nbsp;</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="1">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="4">
+<p class="Tabela_Texto_Centralizado"><strong>Status das ações previstas para 2017</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="1" rowspan="3">
+<p class="Tabela_Texto_Centralizado">13</p>
+<p class="Tabela_Texto_Centralizado">Metas</p>
+</td>
+<td style="text-align: center;" colspan="1" rowspan="3">
+<p class="Tabela_Texto_Centralizado">69</p>
+<p class="Tabela_Texto_Centralizado">Ações</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p class="Tabela_Texto_Centralizado">38 ações</p>
+</td>
+<td style="text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Em andamento</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="1">
+<p class="Tabela_Texto_Centralizado">14 ações</p>
+</td>
+<td style="text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Canceladas</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="1">
+<p class="Tabela_Texto_Centralizado">17 ações</p>
+</td>
+<td style="text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Concluídas</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">&nbsp;<a name="tabela05:"></a>Tabela 05: Lista de Ações Concluídas&nbsp;</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto; width: 1133px;" border="1" cellspacing="0" cellpadding="1">
+<tbody>
+<tr>
+<td style="width: 70px;" scope="col">
+<p class="Tabela_Texto_Centralizado" align="center">ID Ação</p>
+</td>
+<td style="width: 1055px;" scope="col">
+<p class="Tabela_Texto_Centralizado">Ações concluídas</p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A001</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Alcance do&nbsp;nível 1 de disponibilização de uso e dados abertos</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A017</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Compartilhamento&nbsp;de sistemas com outros órgãos da Administração Pública Federal</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A052</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Prorrogação do serviço de STFC DDR Local para Anatel - Sede</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A053</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Contratação do&nbsp;STFC Nacional DDR, LDN e LDI</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A054</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Prorrogação do&nbsp;SMP Nacional</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A059</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Contratação de&nbsp;serviço de suporte técnico especializado para infraestrutura de TIC - Produção</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A077</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Contratação de&nbsp;serviço de interligação de unidades descentralizadas da Anatel</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A128</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Realização de&nbsp;estimativa&nbsp;de gasto e emissão de nova RMS para suportar o gasto com Publicação Oficial no DOU</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A177</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Proposta ao RH de&nbsp;plano de capacitação para TI</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A180</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Renovação do&nbsp;serviço de outsourcing de impressão</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A188</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Auxilio aos responsáveis pelos processos ou atividades identificadas como críticas a elaborar os planos de gerenciamento de incidentes, de continuidade de negócios e de recuperação de negócios</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A189</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Encaminhamento de&nbsp;planos relacionados a gestão de riscos&nbsp;para aprovação do&nbsp;Conselho Diretor</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A004</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Implementação dos itens 3.1.1 a 3.1.3 da Norma Complementar 02/IN01/DSIC/GSIPR, de 13/10/2008</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A016</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Firmado acordo para compartilhamento da&nbsp;estrutura de datacenter</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A026</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Aprimoramento do gerenciamento de serviços de acordo com a biblioteca da infraestrutura de TI (ITIL)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A044</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Aquisição de&nbsp;certificados digitais A1 para serviços de internet</p>
+</td>
+</tr>
+<tr>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado">A144</p>
+</td>
+<td style="width: 1055px; text-align: left;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Prorrogação do&nbsp;convênio com Serpro para acesso ás bases de dados de CPF/CNPJ</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="padding-left: 30px; text-align: justify;"><a name="item2.5"></a>2.5. Sobre esse ponto, cabe&nbsp;ressaltar que&nbsp;a maior parte das ações planejadas para 2017&nbsp;possuem previsão de conclusão para&nbsp;o mês de dezembro, não sendo possível portanto aferir neste momento o resultado final do primeiro ano de execução&nbsp;do&nbsp;Plano Diretor.</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item2.6"></a>2.6. Em relação às&nbsp;ações&nbsp;em andamento, assim como as canceladas e seus respectivos motivos, o conteúdo consta da&nbsp;planilha (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?5gYoR1KAsC6DjRCbPhmMOOVg9zRBSU6KM_dMM2dffV6uXABkpM3AC_FvsJjJLZawJGpS7XJ2Cix36pBUfTFiDXfudkP-oWYh1Dg8HgZ6hS285RiNE4XZ37xczRe1W-XY">SEI nº 2100164</a>).&nbsp;</p>
+<p class="Item_Nivel2" style="text-align: justify;"><a name="item3"></a>3. RESULTADO DOS INDICADORES</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item3.1"></a>3.1. O PDTIC 2017-2019 previu&nbsp;16 (dezesseis) indicadores, cujo resultado até o mês de setembro de 2017 foi o seguinte:</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela06"></a>Tabela 06: Resultado indicadores PDTIC 2017-2019 até set/17&nbsp;</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto; width: 1133px;" border="1" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 286px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Indicador</strong></p>
+</td>
+<td style="width: 286px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Fórmula</p>
+</td>
+<td style="width: 239px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Meta</p>
+</td>
+<td style="width: 232px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Resultado até set/17</p>
+</td>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Análise do Resultado</p>
+</td>
+</tr>
+<tr>
+<td style="width: 286px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Nível de disponibilização e&nbsp;uso de dados abertos</p>
+</td>
+<td style="width: 286px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Classificação em Níveis conforme descrição abaixo:</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Nível 1 – o órgão iniciou o processo de elaboração de Plano de Dados Abertos e tem alguns dados publicados e catalogados no portal brasileiro de dados abertos, tendo participado ativamente do processo de catalogação. Fornece os metadados<br>obrigatórios, incluindo e-mail de contato para que os utilizadores dos dados possam tirar dúvidas sobre os mesmos</p>
+</td>
+<td style="width: 239px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Nível 1</p>
+</td>
+<td style="width: 232px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Nível 1</p>
+</td>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Meta atingida</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Itens da Norma Complementar nº&nbsp;02/IN01/DSIC/GSIPR&nbsp;implementados</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Item implementado por ano</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">Implementar os Itens 3.1.1 a 3.1.3 da Norma Complementar 02/IN01/DSIC/GSIPR, de 13/10/2008</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">Implementados&nbsp;os Itens 3.1.1 a 3.1.3 da Norma Complementar 02/IN01/DSIC/GSIPR, de 13/10/2008</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">Meta atingida</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Proporção de serviços públicos digitais em relação ao&nbsp;número de serviços públicos cadastrados no Portal de&nbsp;Serviço</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Quantidade de serviços públicos digitais dividido pela quantidade de serviços públicos do órgão cadastrados no Portal de Serviços</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">20%</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">10%</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">50%</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de automatização dos processos Estruturantes da Agência</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Quantidade de processos estruturantes automatizados pela SGI dividido pela quantidade de processos estruturantes recomendado pelo GIAPE</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">As ações relacionadas ao indicador foram canceladas tendo em vista&nbsp;que a automatização dos processos estruturantes da agência está sendo realizada por meio das ações&nbsp; 110 a 122, aferidas pelo indicador Índice de Adequação dos Sistemas de TI ao PEI</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">n/a</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de maturidade em&nbsp;acessibilidade digital</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Classificação em Níveis conforme descrição abaixo:</p>
+<p class="Tabela_Texto_Centralizado">Nível 0 – Acessibilidade não é considerada no desenvolvimento<br>Nível 1 – Testes de acessibilidade fazem parte dos requisitos para comprovação da execução das entregas e sua homologação<br>Nível 2 – Produtos de desenvolvimento são homologados com verificação da acessibilidade das entregas através de<br>validação automática<br>Nível 3 – Produtos de desenvolvimento são homologados com verificação da acessibilidade das entregas através de<br>validação humana</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">Sem meta prevista para 2017</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">Sem meta prevista para 2017</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">n/a</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Taxa de compartilhamento de sistemas</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Sistemas utilizados de forma compartilhada dividido pelo número total de sistemas utlizados pela Agência</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">9%</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">10%</p>
+<p class="Tabela_Texto_Centralizado">Foram compartilhados mais 2 sistemas. Com isto, são 12 de 119 sistemas utilizados de forma compartilhada: SIAFI, SIAPE, SEI, SCDP, e-SIC, SRD, SIASG, SIORG, Mosaico, OUV, OCR-Server e Módulo Peticionamento eletrônico do SEI</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">Meta atingida</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Nível de disponibilização de canais de interação</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Classificação em Níveis conforme descrição abaixo:<br>Nível 0 – Órgão não fornece canal digital de interação direta com a sociedade<br>Nível 1 – Órgão fornece e-mail ou formulário eletrônico de contato como canais efetivos para interação com a sociedade<br>Nível 2 – Órgão disponibiliza canais que permitem a interação pública efetiva com o órgão, como mídias sociais e plataformas interativas de participação.<br>Nível 3 – Órgão interage com os cidadãos em canais digitais públicos e efetivos, de forma ágil e responsiva, atento à<br>necessidade do cidadão e ao contexto do meio utilizado</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">Atingir o nível 2</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">As ações relacionadas ao indicador foram canceladas&nbsp;tendo em vista que os canais de interação com a sociedade já se encontram divulgados&nbsp;no Portal da Agência</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">n/a</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de disponibilidade dos links de dados</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Quantidade de horas de disponibilidade no ano dividida pela quantidade de horas totais no ano</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">95%</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">95,32%</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">Meta atingida</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de satisfação dos usuários internos com as soluções e sistemas disponibilizados pela TI</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Percentual correspondente ao resultado esperado em pesquisa de satisfação considerados bom e ótimos</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">27%</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">40%</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">Meta atingida</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de Adequação dos Sistemas de TI ao PEI</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Quantidade de Sistemas/aplicações implantados pela SGI dividido pela quantidade de sistemas/aplicações previstos para serem implantadas na meta "Adequar os Sistemas de TI ao Plano Estratégico" do PDTIC 2017-2019.</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">29%</p>
+<p class="Tabela_Texto_Centralizado">Previsão de&nbsp;2 sistemas implantados</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">0%</p>
+</td>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">0%</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Implementar uma solução de computação em nuvem</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Número de soluções relacionadas à computação em nuvem implementadas</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">As ações relacionadas ao indicador foram canceladas tendo em vista&nbsp;que o custo não justifica a implementação da solução de computação em nuvem a curto prazo</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">n/a</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de bases de dados tratadas</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">&nbsp;Número total bases tratadas sobre numero total de bases previstas para o período.</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">Bases de Dados das Etapas 1&nbsp;e 2</p>
+<p class="Tabela_Texto_Centralizado">Etapa 1:</p>
+<p class="Tabela_Texto_Centralizado">Dados&nbsp;que compõem os indicadores ARPU, Penetração, Cobertura Domiciliar, Cobertura Transporte, Adensamento de Estações, Eficiência do Uso de Espectro, Tributos Totais Sobre Receita Bruta, Incentivos Financeiros Sobre Investimento, Margem EBITDA, Nível de Endividamento, Receita Liquida, &nbsp;HHI, Densidade, Velocidade Contratada, e Índice de Satisfação com o Consumidor</p>
+<p class="Tabela_Texto_Centralizado">Etapa 2:&nbsp;bases que possuem dados que compõem os indicadores Dispêndio, Investimento Sobre Receita Liquida, Preço, Perfil de Uso de Voz, Perfil de Uso de Dados, &nbsp;e Nível de competição.</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">Base de dados da etapa 1&nbsp;tratadas, o que corresponde a 71% de realização</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">71%</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de execução das ações do PDTIC</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Número de ações do PDTIC concluídas no ano divididas pelo número total de ações previstas para serem realizadas no ano</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">85%</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">25% (17 ações concluídas sobre 69 previstas)</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">25%</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de&nbsp;disponibilidade&nbsp;de Sistemas</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Quantidade de horas de disponibilidade no ano dividida pela quantidade de horas totais no ano</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">99%</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">O cálculo do indicador previa o uso de ferramenta que não pode ser implementada integralmente de forma que o cálculo do indicador ficou prejudicado</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">n/a</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de Execução do Plano Anual de Contratações</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Número de itens do Plano Anual de Contratações concluídos no ano de referência dividido pelo número total de itens do Plano Anual de Contratações do ano de referência</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">90%</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">Realizado 46% do PCTIC (Plano de Contratações de Soluções de TI)</p>
+</td>
+<td style="text-align: center; width: 70px;">
+<p class="Tabela_Texto_Centralizado">46%</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Índice de Implantação dos processos de Gestão de TIC.</p>
+</td>
+<td style="text-align: center; width: 286px;">
+<p class="Tabela_Texto_Centralizado">Quantidade de processos de gestão de TIC implantados na SGI dividida pela quantidade de processos recomendados pela HPE</p>
+</td>
+<td style="text-align: center; width: 239px;">
+<p class="Tabela_Texto_Centralizado">40%</p>
+</td>
+<td style="text-align: center; width: 232px;">
+<p class="Tabela_Texto_Centralizado">Implantação dos processos será iniciada pela Agência em 2017</p>
+</td>
+<td style="width: 70px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">n/a</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Item_Nivel2" style="text-align: justify;"><br><a name="item4"></a>4. EXECUÇÃO ORÇAMENTÁRIA</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item4.1"></a>4.1. A <a href="http://www.planejamento.gov.br/assuntos/orcamento-1/orcamentos-anuais/2017/loa/lei-13414/@@download/file/LOA%202017%20-%20LEI%20N%C2%BA%2013.414,%20DE%2010%20DE%20JANEIRO%20DE%202017.pdf">Lei Orçamentária Anual&nbsp;(LOA) de&nbsp;2017 </a>previu um&nbsp;total de&nbsp;R$ 35.833.457,00&nbsp;para execução do Plano Diretor. Desses, ao final do mês de setembro, R$ 13.771.639,82 haviam sido empenhados e&nbsp;R$ 7.743.319,28&nbsp;liquidados. Sobre o índice de execução, cabe ressaltar que&nbsp;apesar do valor inicialmente previsto em LOA,&nbsp;no decorrer do ano a Agência sofreu&nbsp;diversos&nbsp;contingenciamentos orçamentários, o que&nbsp;comprometeu o planejamento da execução do Plano Orçamentário.</p>
+<p class="Item_Nivel2" style="text-align: justify;"><a name="item5"></a>5. ALINHAMENTO COM A ESTRATÉGIA DA ORGANIZAÇÃO</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item5.1"></a>5.1. Em&nbsp;2017,&nbsp;a Anatel elaborou o seu <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">Plano Operacional (Tático) para o ano&nbsp;de 2018</a>, atualmente em vistas de aprovação&nbsp;(<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">SEI nº 2007637</a>).</p>
+<p class="Item_Nivel2" style="padding-left: 30px; text-align: justify;"><a name="item5.2"></a>5.2. O respectivo Plano&nbsp;apresenta&nbsp;25 (vinte e cinco) Iniciativas Estratégicas. As&nbsp;18 (dezoito) primeiras compõem&nbsp;a implementação da nova cadeia de valor da Anatel, ou seja, a implantação de&nbsp;dezoito macroprocessos de negócios, as outras&nbsp;7 (sete)&nbsp;foram selecionadas por serem consideradas&nbsp;de maior impacto&nbsp;no alcance dos objetivos&nbsp;e&nbsp;diretrizes estratégicas da Agência.<br><br></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela07"></a>Tabela 07:&nbsp;Iniciativas Plano Operacional (Tático) 2018</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" width="546" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Seq</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado"><strong>Área</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado"><strong>Iniciativa</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>1</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SAF</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Finanças e Arrecadação</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>2</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SUE</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Controles Internos e Riscos</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>3</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SAF</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Aquisições e Contratos</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>4</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SUE</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Planejamento</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>5</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SUE</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Inteligência Institucional</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>6</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SFI</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Realizar Fiscalização Regulatória</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>7</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">APC</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Comunicação</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>8</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SGI</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Informação e Conhecimento</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>9</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">ARI</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Relacionamento Institucional</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>10</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SOR</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Recursos à Prestação</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>11</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SRC</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Acolher e Tratar Demandas dos Consumidores</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>12</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SAF</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Pessoas</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>13</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SCP</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Realizar Gestão Econômica da Prestação</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>14</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SGI</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Serviços de TI</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>15</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SPR</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Regulamentação</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>16</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">CD</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Tratar Demandas Decisórias</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>17</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SAF</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Gerir Infraestrutura e Serviços</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>18</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">PFE</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">[CAD] Implementar Realizar Suporte Jurídico</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>19</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">OV</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">Avaliar a Satisfação dos Usuários com os Serviços Prestados pela Anatel</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>20</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SOR</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">Reavaliar o modelo de outorga e licenciamento</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>21</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">APC</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">Promover ações de orientação para provedores regionais</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>22</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SCO</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">Reavaliar o modelo de gestão da qualidade de serviços de telecomunicações</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>23</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">SCO</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">Implementar novo modelo de gestão da qualidade</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>24</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">ARI</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">Elaborar e Implementar Plano de Ação de fortalecimento da relação institucional</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>25</strong></p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Centralizado">AIN</p>
+</td>
+<td style="text-align: center;" nowrap="nowrap">
+<p class="Tabela_Texto_Alinhado_Esquerda">Elaborar e implementar programa de fortalecimento das relações internacionais&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Item_Nivel2" style="padding-left: 30px;"><br><a name="item5.3"></a>5.3. Diante do exposto,&nbsp;com o&nbsp;intuito de adequar o PDTIC ao <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">Plano Operacional (Tático) 2018</a>,&nbsp;foram realizadas as seguintes alterações no PDTIC:</p>
+<p class="Item_Inciso_Romano" style="padding-left: 60px;">I - Ajuste do período de validade: o <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">Plano Operacional (Tático)&nbsp;da Anatel&nbsp;</a>foi proposto para&nbsp;o período de 1 (um ano). Assim, buscando o alinhamento entre ambos planos táticos&nbsp;optou-se por&nbsp;ajustar o período de validade do&nbsp;PDTIC, de trienal para bienal, passando a viger&nbsp;ente&nbsp;2017 e&nbsp;2018.&nbsp;</p>
+<p class="Item_Inciso_Romano" style="padding-left: 60px;">II - Atualização do&nbsp;Levantamento de Necessidades: as áreas de negócio da Anatel foram instadas, por meio do <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBP46dizr9Klwhn6vbj4aCXbeYIDziCx9jIoDmS2OT8WnL">Memorando-Circular nº 4/2017/SEI/SGI</a> (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBP46dizr9Klwhn6vbj4aCXbeYIDziCx9jIoDmS2OT8WnL">SEI nº&nbsp;1897400</a>), a atualizarem o Levantamento de Necessidades&nbsp;realizado durante a elaboração do PDTIC,&nbsp;com foco no<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">&nbsp;Plano Operacional (Tático) 2018</a> e nas necessidades operacionais da&nbsp;área, o que resultou no&nbsp;novo Levantamento de Necessidades&nbsp;(<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBPwcoSMyLaT1gEcl7cKI2zbcmdlFygaifMYNmEJILHq5s">SEI nº&nbsp;2057613</a>).</p>
+<p class="Item_Inciso_Romano" style="padding-left: 60px;">III - Cancelamento dos&nbsp;critérios&nbsp;de&nbsp;priorização: optou-se por&nbsp;substituir&nbsp;os critérios&nbsp;elaborados&nbsp;para priorização&nbsp;das necessidades&nbsp;de TIC. As ações foram agrupadas em três classes, conforme quadro abaixo:<br><br></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela08"></a>Tabela 08: Classificação priorização das ações</p>
+<table class="tamanho-padrao" border="1" width="546" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;" scope="col">
+<p class="Tabela_Texto_Centralizado"><strong>Classificação</strong></p>
+</td>
+<td style="text-align: center;" scope="col">
+<p class="Tabela_Texto_Centralizado"><strong>Descrição</strong></p>
+</td>
+<td style="text-align: center;" scope="col">
+<p class="Tabela_Texto_Centralizado"><strong>Ordem de prioridade</strong></p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Operacionais</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Ações relacionadas ao&nbsp;funcionamento operacional da área de TI</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">1ª (não há ordem entre as ações)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estratégicas</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Ações relacionadas ao alcance das iniciativas previstas no <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">Plano Operacional (Tático) 2018</a> e a Estratégia de Governança Digital</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">2ª (ações priorizadas conforme definido pelo <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">Plano Operacional (Tático) 2018</a>, seguidas das ações da EGD)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Negociais</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Ações relacionadas as demais necessidades das áreas de negócio</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">3ª (ações priorizadas pela&nbsp;CITI)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Item_Inciso_Romano" style="padding-left: 60px;">IV - Ajuste do Plano&nbsp;de Ação, Gestão de Pessoas e Orçamentário:&nbsp;devido a atualização&nbsp;do período de vigência e&nbsp;levantamento de necessidades do PDTIC, as ações&nbsp;previstas&nbsp;para 2018/2019 foram revistas,&nbsp;passando-se&nbsp;para o total de 69 (sessenta e nove) ações a serem realizadas em&nbsp;2018.&nbsp;Sobre esse ponto, cabe destacar que o novo PDTIC&nbsp;da Agência&nbsp;será&nbsp;elaborado no&nbsp;decorrer de 2018, alinhado ao Plano Tático da Agência para 2019, momento em que será&nbsp;avaliada a pertinência de inserção das&nbsp;ações ora&nbsp;canceladas. Ademais, consequentemente,&nbsp;também houve atualização do Plano de Gestão de Pessoas e Orçamentário, conforme&nbsp;novo Plano de Ação, Gestão de Pessoas e Orçamentário, planilha <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBPwcoSMyLaT1gEcl7cKI2zbcmdlFygaifMYNmEJILHq5s">SEI nº2057613</a>.</p>
+<p class="Item_Inciso_Romano" style="padding-left: 60px;">V - Revisão das metas&nbsp;e indicadores:&nbsp;Foram definidas metas&nbsp;para cada ação na forma de etapas de execução representadas por percentuais e distribuídas ao longo do ano. Dessa forma,&nbsp;cada ação tem como indicador o próprio percentual de execução da etapa. Ademais, com vistas a adequar o PDTIC ao <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4CgBcERp3Bz9aGhoGEq2K4KKgBWY-6b_RCMvxqWERFD6Hh7iyWYbjOD5snUjpfXbxIUuGEjyJcDAtd4oQ-Bsy-">Plano Operacional (Tático)&nbsp;para 2018</a>, o que inicialmente foi chamado de "Meta" (<a href="#tabela01:">Tabela 01: Metas&nbsp;PDTIC 2017-2019</a>), foi revisto, alterado e renomeado para "Iniciativas". Como resultado,&nbsp;as iniciativas estratégicas&nbsp;previstas no&nbsp;Plano Operacional (Tático) 2018, cujos processos de negócio estavam&nbsp;maduros o suficiente para&nbsp;identificação de&nbsp;necessidades de TI, foram inseridas no PDTIC.&nbsp;Adicionalmente, foram mantidas&nbsp;no&nbsp;Plano Diretor&nbsp;iniciativas relacionadas à&nbsp;EGD&nbsp;e ao&nbsp;PEI,&nbsp;consideradas essenciais&nbsp;pela SGI. Assim, após&nbsp;revisão,&nbsp;o PDTIC passou a contar&nbsp;com&nbsp;seguinte rol de&nbsp;iniciativas:<br><br></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela09"></a>Tabela 09:&nbsp;Iniciativas Estratégicas - PDTIC 2017-2018</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" width="679" cellspacing="0" cellpadding="1">
+<tbody>
+<tr>
+<td style="text-align: center;" scope="col">
+<p class="Tabela_Texto_Centralizado" align="center"><strong>ID</strong></p>
+</td>
+<td style="text-align: center;" scope="col">
+<p class="Tabela_Texto_Centralizado">Iniciativa</p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">IN01</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Implementar Gerir Finanças e Arrecadação</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">IN02</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Implementar Gerir Informação e Conhecimento</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">IN03</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Implementar Gerir Recursos a prestação</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">IN04</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Implementar Acolher e Tratar Demandas dos Consumidores</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">IN05</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Implementar Gerir Serviços de TI</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">IN06</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Promover ações visando atender a EGD 2017/2019</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">IN07</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Prover serviços e sistemas de qualidade</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">IN08</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Prover infraestrutura adequada de TI para a Agência</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a name="item6"></a>6. CONCLUSÃO</p>
+<p class="Item_Nivel2" style="padding-left: 30px;"><a name="item6.1"></a>6.1. O Plano Diretor de Tecnologia da Informação e Comunicação da Anatel foi elaborado no decorrer do ano de 2016 para vigência entre 2017-2019. O PDTIC&nbsp;é o instrumento&nbsp;utilizado para representar o planejamento de TIC no nível tático, sendo primordial que esteja alinhado aos demais instrumentos de planejamento.</p>
+<p class="Item_Nivel2" style="padding-left: 30px;"><a name="item6.2"></a>6.2. O&nbsp;PDTIC da Anatel foi elaborado com&nbsp;base nos instrumentos de planejamento vigentes à época - <a href="http://www.planejamento.gov.br/assuntos/planeja/plano-plurianual">Plano Plurianual 2016/2019,&nbsp;Plano Estratégico Institucional da Anatel 2015/2024</a> e <a href="https://www.governodigital.gov.br/documentos-e-arquivos/egd-estrategia-de-governanca-digital-da-administracao-federal-2016-2019.pdf">Estratégia de Governança Digital da Administração Pública Federal&nbsp;2016/2019</a>. No decorrer de&nbsp;2017, a Anatel elaborou proposta de seu&nbsp;Plano Operacional (Tático), definindo 25 iniciativas estratégicas&nbsp;a serem implementadas pela&nbsp;Agência&nbsp;em&nbsp;2018.</p>
+<p class="Item_Nivel2" style="padding-left: 30px;"><a name="item6.3"></a>6.3. Nesse cenário, considerando a previsão de revisão anual do PDTIC e a elaboração do Plano Operacional (Tático) da Agência,&nbsp;realizou-se&nbsp;a presente revisão, com&nbsp;o levantamento&nbsp;dos&nbsp;resultados alcançados&nbsp;e&nbsp;as alterações&nbsp;necessárias para&nbsp;seu&nbsp;alinhamento ao&nbsp;Plano Tático&nbsp;da Agência, como&nbsp;alteração&nbsp;do prazo de validade,&nbsp;Levantamento de Necessidades,&nbsp;Critérios de Priorização, Metas e Indicadores,&nbsp;Plano de Ação, Gestão de Pessoas e Orçamentário, de modo a apresentar o&nbsp;planejamento de TIC para 2018.</p>
+<p class="Item_Nivel2"><a name="item7"></a>7. ANEXOS</p>
+<p class="Item_Nivel2" style="padding-left: 30px;"><a name="item7.1"></a>7.1. Anexo I: Plano Diretor de Tecnologia da Informação e Comunicação&nbsp;2017-2019 (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBP0vrk-TdCiikyeE7yIfbRoZJ6OGkiAqUw6CHwsCV6rvb">SEI nº1027113</a>);</p>
+<p class="Item_Nivel2" style="padding-left: 30px;"><a name="item7.2"></a>7.2. Anexo II: Registro&nbsp;20ª Reunião Ordinária da Comissão Interna de TI&nbsp;(<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBP7IzhYKY1wVEbTePii3zLczliIuvqBGmQ6Rz5RhK1QqU">SEI nº&nbsp;1483727</a>);</p>
+<p class="Item_Nivel2" style="padding-left: 30px;"><a name="item7.3"></a>7.3. Anexo III: Resultado execução do PDTIC 2017-2019 até setembro de 2017 (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?NMLZh5iV6nbOCmPPhjssYO7ecW3Ia5ZtxFzuL_reIqZ8L3mCXpDwpWj43Y64iTm1DEA9jNIPIyHBKZq354jBPyOtOdVEC1k-3mwZb48tFf3amlZnyicCpRKDSBJm_UaD">SEI nº&nbsp;2100164</a>);</p>
+<p class="Item_Nivel2" style="padding-left: 30px;"><a name="item7.4"></a>7.4. Anexo IV: Proposta de Plano Tático (Operacional) da Agência para 2018 (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO6Ozc0ki9osAi95aVkw4yjc9oNgEwRqV-Zi-aG8yOvvquU4YeKDOS-l9oOcYTmaLRij-MJVhSSn1uA4gsVm6Zcw">SEI nº&nbsp;2007637</a>);</p>
+<p class="Item_Nivel2" style="padding-left: 30px;"><a name="item7.5"></a>7.5. Anexo V: Novo Levantamento de Necessidades, Plano de Ação, Gestão de Pessoas e Orçamentário (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?5gYoR1KAsC6DjRCbPhmMOOVg9zRBSU6KM_dMM2dffV6uXABkpM3AC_FvsJjJLZawJGpS7XJ2Cix36pBUfTFiDcQ8vskaJztYVOpBdIkmjwqIX-n7ZJwXUTmhVw-CxZSe">SEI nº&nbsp;2057613</a>);</p>
+<p class="Item_Nivel2" style="padding-left: 30px;"><a name="item7.6"></a>7.6. Anexo VI: Registro 22ª Reunião Ordinária da Comissão Interna de TI (<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO72-LOnZ5blRMISwIQJ5GqUv5LEghE2NiNrMQaUvXPIYqB04sEx5ZjQs-0zjyZrsTzruq3V1Zq9A0_eXKxE0kRw">SEI nº&nbsp;2050195</a>).</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1132"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/portarias-normativas">Portarias Normativas</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/portarias-normativas/2017">2017</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Publicação" class="link-categoria">Publicação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Revisão" class="link-categoria">Revisão</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Plano%20Diretor%20de%20Tecnologia%20da%20Informação%20e%20Comunicação" class="link-categoria">Plano Diretor de Tecnologia da Informação e Comunicação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Alteração" class="link-categoria">Alteração</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Vigência" class="link-categoria">Vigência</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PortariaVigente" class="link-categoria">PortariaVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

@@ -1,0 +1,3439 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="41d70da6a919e89079a5599e-text/javascript">
+  </script>
+  <script type="41d70da6a919e89079a5599e-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="41d70da6a919e89079a5599e-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 498, de 27 de março de 2008 (REVOGADA)
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2008/180-resolucao-498"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Ato Normativo, Certificação de Produtos, Homologação de Produtos, Transmissor, Televisão digital, Equipamento de telecomunicações, NormaCertificacao, RecursosPrestacao, ResolucaoRevogada" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Norma para Certificação e Homologação de Transmissores e Retransmissores para o Sistema Brasileiro de Televisão Digital Terrestre. (Revogada pela Resolução nº 686/2017)" name="description"/>
+   <title>
+    Anatel - Resolução nº 498, de 27 de março de 2008 (REVOGADA)
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1653633383" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=976407145" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"2d0e320d6c5b5b50ea3368288dc2c7e0","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="41d70da6a919e89079a5599e-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="41d70da6a919e89079a5599e-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="41d70da6a919e89079a5599e-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="41d70da6a919e89079a5599e-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="41d70da6a919e89079a5599e-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=2133411110" type="41d70da6a919e89079a5599e-text/javascript">
+    </script>
+    <script type="41d70da6a919e89079a5599e-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="41d70da6a919e89079a5599e-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026163742" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/2008/180-resolucao-498">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/2008" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/2008">
+             2008
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 498, de 27 de março de 2008 (REVOGADA)
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169 current active">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-41d70da6a919e89079a5599e-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-41d70da6a919e89079a5599e-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="41d70da6a919e89079a5599e-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="41d70da6a919e89079a5599e-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 498, de 27 de março de 2008 (REVOGADA)
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Terça, 01 Abril 2008 02:00
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Segunda, 17 Fevereiro 2025 16:26
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 17041
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td style="padding-right: 25px; width: 50%; text-align: left;" valign="center">
+                  <a href="http://www.anatel.gov.br/legislacao/resolucoes/2017/952-resolucao-686#art1" rel="alternate" title="Acesse a Resolução">
+                   Revogada pela Resolução nº 686/2017
+                  </a>
+                 </td>
+                 <td style="width: 50%; text-align: justify;" valign="center">
+                  <p>
+                   Norma para Certificação e Homologação de Transmissores e Retransmissores para o Sistema Brasileiro de Televisão Digital Terrestre.
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p style="text-align: justify;">
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=366&amp;data=01/04/2008" title="Acesse o DOU">
+                1/4/2008
+               </a>
+               .
+              </p>
+              <p style="text-align: justify;">
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+                </strong>
+                , no uso das atribuições que lhe foram conferidas pelo
+                <a href="/legislacao/leis/2-lei-9472#art22" rel="nofollow" title="Acesse o Artigo">
+                 art. 22
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997, e pelo
+                <a href="/legislacao/decretos/3-decreto-2338#art35" rel="nofollow" title="Acesse o Artigo">
+                 art. 35
+                </a>
+                do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO os comentários recebidos em decorrência da
+                <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=57&amp;data=24/10/2007" rel="nofollow" title="Acesse Consulta Pública ">
+                 Consulta Pública nº 830
+                </a>
+                , de 19 de outubro de 2008, publicada no Diário Oficial da União de 24 de outubro de 2007;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO que, de acordo com o que dispõe o inciso I do
+                <a href="/legislacao/leis/2-lei-9472#art214" rel="nofollow" title="Acesse o Artigo">
+                 art. 214
+                </a>
+                , da Lei nº 9.472, de 1997, cabe à Anatel editar regulamentação em substituição aos regulamentos, normas e demais regras em vigor;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO o princípio geral dos processos de certificação e homologação de produtos para telecomunicações de assegurar que os produtos comercializados ou utilizados no País estejam em conformidade com os Regulamentos editados ou as normas adotadas pela Anatel, conforme previsto na
+                <a href="/legislacao/resolucoes/15-2000/129-resolucao-242" rel="nofollow" title="Acesse a Resolução">
+                 Resolução nº 242, de 30 de novembro de 2000
+                </a>
+                ;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO deliberação tomada em sua Reunião nº 472, realizada em 19 de março de 2008;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO o constante dos autos do processo nº 53500.024779/2007;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 RESOLVE:
+                </strong>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha">
+               <span style="text-decoration: line-through;">
+                <a id="art1">
+                </a>
+                Art. 1º Aprovar Norma para Certificação e Homologação de Transmissores e Retransmissores para o Sistema Brasileiro de Televisão Digital Terrestre, na forma do
+                <a href="#anexo" title="Acesse o Anexo">
+                 Anexo
+                </a>
+                a esta Resolução.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha">
+               <span style="text-decoration: line-through;">
+                <a id="art2">
+                </a>
+                Art. 2º Esta Resolução entra em vigor na data de sua publicação.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                RONALDO MOTA SARDENBERG
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Presidente do Conselho
+               </span>
+              </p>
+              <p style="text-align: center;">
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="anexo">
+                </a>
+                ANEXO À RESOLUÇÃO Nº 498, DE 27 DE MARÇO DE 2008
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="font-size: medium;">
+                <strong>
+                 <span style="text-decoration: line-through;">
+                  NORMA PARA CERTIFICAÇÃO E HOMOLOGAÇÃO DE TRANSMISSORES E RETRANSMISSORES PARA O SISTEMA BRASILEIRO DE TELEVISÃO DIGITAL TERRESTRE
+                 </span>
+                </strong>
+               </span>
+              </p>
+              <p style="text-align: left;">
+               <span style="text-decoration: line-through;">
+                <a name="item1">
+                </a>
+                1. Objetivo.
+               </span>
+              </p>
+              <p>
+               <span style="text-decoration: line-through;">
+                Esta norma estabelece os requisitos mínimos a serem demonstrados na avaliação da conformidade dos equipamentos transmissores e retransmissores, aplicáveis ao Sistema Brasileiro de Televisão Digital Terrestre – ISDB-TB, para efeito de certificação e homologação na Agência Nacional de Telecomunicações - Anatel.
+               </span>
+              </p>
+              <p>
+               <span style="text-decoration: line-through;">
+                <a name="item2">
+                </a>
+                2. Abrangência.
+               </span>
+              </p>
+              <p>
+               <span style="text-decoration: line-through;">
+                Esta norma se aplica aos equipamentos transmissores e retransmissores empregados nos serviços de interesse coletivo de transmissão de TV Digital no Brasil.
+               </span>
+              </p>
+              <p>
+               <span style="text-decoration: line-through;">
+                <a name="item3">
+                </a>
+                3. Referências.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                Para fins desta norma, são adotadas as seguintes referências:
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref1">
+                </a>
+                I - Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela
+                <a href="/legislacao/resolucoes/15-2000/129-resolucao-242" rel="nofollow" title="Acesse a Resolução">
+                 Resolução nº 242
+                </a>
+                , de 30 de novembro de 2000.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref2">
+                </a>
+                II - Regulamento para Certificação de Equipamentos de Telecomunicações quanto aos Aspectos de Compatibilidade Eletromagnética, aprovado pela Resolução nº 442, de 21 de julho de 2006.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref3">
+                </a>
+                III - Regulamento para Certificação de Equipamentos de Telecomunicações quanto aos Aspectos de Segurança Elétrica, aprovado pela Resolução nº 238, de 09 de novembro de 2000.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref4">
+                </a>
+                IV – Norma IEC 62273-1: Methods of Measurement for radio transmitters – Part 1: Performance characteristics of terrestrial digital television transmitters.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref5">
+                </a>
+                V – ABNT NBR 15601 – Televisão digital terrestre – Sistema de transmissão.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref6">
+                </a>
+                VI – ABNT NBR 15602, partes 1, 2 e 3 – Televisão digital terrestre – Codificação de vídeo, áudio e multiplexação.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref7">
+                </a>
+                VII – ABNT NBR 15603, partes 1, 2 e 3 – Televisão digital terrestre – Multiplexação e serviços de informação (SI).
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref8">
+                </a>
+                VIII – ABNT NBR 15604 – Televisão digital terrestre - Receptores.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref9">
+                </a>
+                IX – Norma ISDB-TB N05/2007 – Sistema Brasileiro de TV Digital Terrestre – Tópicos de Segurança, Volume 1 – Acesso Condicional.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref10">
+                </a>
+                X – ABNT NBR 15606, partes 1, 2 e 3 – Televisão digital terrestre – Codificação de dados e especificações de transmissão para radiodifusão digital.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref11">
+                </a>
+                XI – Norma ISDB-TB N07/2007 – Sistema Brasileiro de TV Digital Terrestre – Canal de Interatividade.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref12">
+                </a>
+                XII – Norma ARIB STD-B21 – Receiver for Digital Broadcasting.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref13">
+                </a>
+                XIII – Norma ARIB STD-B31 - Transmission System for Digital Terrestrial Television Broadcasting.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref14">
+                </a>
+                XIV – Plano Básico de Distribuição de Canais Digitais, aprovado pela Resolução nº 407, de 10 de junho de 2005.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="ref15">
+                </a>
+                XV – Norma para Certificação e Homologação de Transmissores e Transceptores Digitais para o Serviço Fixo em Aplicações Ponto-Multiponto nas Faixas de Freqüências abaixo de 1GHz, aprovado pela Resolução nº 359, de 1º de abril de 2004.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item4">
+                </a>
+                4. Definições.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                Para os efeitos desta Norma, aplicam-se as seguintes definições:
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                Emissão fora de faixa: Emissão em freqüências imediatamente fora da largura de faixa necessária a uma classe de emissão. A emissão fora de faixa é resultante do processo de modulação, excluídas as emissões espúrias.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                Emissão Espúria: Emissão em freqüências que são fora da largura de faixa necessária a uma classe de emissão que pode ter o seu nível reduzido sem afetar a transmissão da informação em questão. As emissões espúrias incluem emissões harmônicas, emissões parasitas, produtos de intermodulação e produtos de conversão de freqüência. No entanto, as emissões fora de faixa não fazem parte das emissões espúrias.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                Emissões indesejadas: Consistem nas emissões espúrias e nas emissões fora de faixa.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                Domínio fora de faixa: É o espaço de freqüência formado pelas freqüências que não pertencem ao conjunto de freqüências da faixa necessária a uma classe de emissão, excluídas as freqüências do domínio dos espúrios. Acontece nesse domínio a maior parte das emissões fora de faixa.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                Domínio das emissões espúrias: O espaço de freqüência que não faz parte do domínio fora de faixa e onde a maior parte das emissões espúrias acontecem.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                Largura de Faixa Necessária : É a largura de faixa de freqüência tal que garanta a transmissão da informação com qualidade e taxa requerida e sob as condições especificadas, para uma determinada classe de emissão.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                Aplicam-se também outras definições contidas na
+                <a href="#ref5" rel="nofollow">
+                 referência V
+                </a>
+                .
+               </span>
+              </p>
+              <p>
+               <span style="text-decoration: line-through;">
+                <a name="item5">
+                </a>
+                5. Características gerais.
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item5.1">
+                </a>
+                5.1. Condições gerais.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item5.1.1">
+                </a>
+                5.1.1. Esta Norma adota todas as especificações de sistema estabelecidas pela ABNT no conjunto de normas do Sistema Brasileiro de Televisão Digital Terrestre citadas nas referências.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item5.1.2">
+                </a>
+                5.1.2. Esta Norma define os requisitos e ensaios para qualificação dos transmissores e retransmissores adequando-os aos mínimos admissíveis para correto funcionamento dos sistemas digitais de radiodifusão de sons e imagens e de retransmissão de televisão.
+               </span>
+              </p>
+              <p>
+               <span style="text-decoration: line-through;">
+                <a name="item6">
+                </a>
+                6. Do Transmissor e do Retransmissor
+               </span>
+              </p>
+              <p style="padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1">
+                </a>
+                6.1. Dos ensaios para certificação
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.1">
+                </a>
+                6.1.1. Os ensaios a serem aplicados ao transmissor e ao retransmissor do Sistema Brasileiro de Televisão Digital Terrestre seguem aqueles definidos na
+                <a href="#ref4">
+                 referência IV
+                </a>
+                com os requisitos definidos nesta norma.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.2">
+                </a>
+                6.1.2. Condições Gerais de Medida
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.2.1">
+                </a>
+                6.1.2.1. Temperatura e Umidade
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                a) O equipamento a ser medido deve ser operado em um ambiente que atenda às recomendações de temperatura e umidade descritas nas especificações técnicas do equipamento.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                b) Os ensaios de Desvio de Freqüência de Transmissão Permissível deverão ser realizados também com variação de temperatura conforme apontado nos itens específicos.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.2.2">
+                </a>
+                6.1.2.2. Fonte de Alimentação
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                a) As medidas são realizadas na tensão de alimentação nominal e na freqüência nominal de operação da fonte de alimentação do equipamento, conforme as especificações técnicas.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                b) Os ensaios de Desvio de Freqüência de Transmissão Permissível deverão ser realizados também com variação de tensão de alimentação conforme apontado nos itens específicos.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.2.3">
+                </a>
+                6.1.2.3. Potência de Saída
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                a) Os testes devem ser executados com o transmissor configurado para a potência máxima, depois de decorrido o tempo necessário para estabilização da mesma, conforme citado nas especificações técnicas.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                b) O teste deverá ser repetido para a potência mínima admissível especificada pelo fabricante para o mesmo equipamento.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.2.4">
+                </a>
+                6.1.2.4. Carga de Teste
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                a) A impedância da carga de testes na qual o transmissor será conectado deverá ser a mesma da linha de transmissão na qual o transmissor será posteriormente conectado, quando em operação. A impedância deverá permanecer adequadamente constante dentro da banda de testes.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.2.5">
+                </a>
+                6.1.2.5. Equipamentos auxiliares
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                a) Se a especificação técnica do transmissor faz referência a equipamentos auxiliares como filtros passa-faixa, multiplexadores e outros que compõem o produto, estes devem ser usados durante os testes.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                b) Os equipamentos auxiliares deverão ser adequadamente identificados e deverão constar como parte integrante do equipamento no certificado de homologação emitido pela ANATEL.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                c) A saída do conjunto transmissor/filtro de máscara ou retransmissor/filtro de máscara deve possuir mecanismos aferidos que permitam extrair uma amostra do sinal para a realização de medidas com o transmissor instalado e operando, sem que para isso seja necessário retirar o transmissor ou retransmissor de operação.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.3">
+                </a>
+                6.1.3. Freqüência de Operação
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.3.1">
+                </a>
+                6.1.3.1. Largura de Banda de Freqüência
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                a) Definição: largura de banda ocupada por um sinal é à parte da resposta em freqüência do canal que está situada na faixa de 3dB da resposta na freqüência central.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                b) Especificação: para a radiodifusão de televisão digital terrestre deve ser usada a largura de banda de 5,7 MHz. A freqüência nominal da portadora deve ser considerada a freqüência central das portadoras OFDM.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                c) Método de Medição: A
+                <a href="#figura1" title="Acesse a Figura">
+                 figura 1
+                </a>
+                mostra a configuração utilizada para se medir a largura de faixa ocupada.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                Os parâmetros de transmissão deverão ser:
+               </span>
+              </p>
+              <table border="1" style="margin-left: auto; margin-right: auto;" width="80%">
+               <tbody>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    PRBS
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    2^23-1
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Modo
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    3 (8K)
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Modulação
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    64 QAM
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    FEC
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    7/8
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Intervalo de Guarda
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    1/8
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Time Interleaving
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    200 ms
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="figura1">
+                </a>
+                Figura 1 - Sistema para medida de largura de banda em freqüência ocupada
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                A largura de faixa deve ser determinada contendo 99% da energia do sinal OFDM medido no analisador de espectro. As configurações do analisador de espectro são mostradas na
+                <a href="#tabela1">
+                 tabela 1
+                </a>
+                .
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                d) Referência: ver
+                <a href="#ref4">
+                 referências IV e V
+                </a>
+                .
+               </span>
+              </p>
+              <p>
+              </p>
+              <table border="1" style="margin-left: auto; margin-right: auto;" width="80%">
+               <tbody>
+                <tr>
+                 <td align="center" width="102">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Freqüência Central
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="48">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    SPAN
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="40">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    RBW
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="48">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    VBW
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="65">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Modo de Detecção
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="102">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Freqüência central das portadoras OFDM do canal
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="48">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    20 MHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="40">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    10 kHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="48">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    300 Hz ou menos
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="65">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Detecção de pico positivo
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tabela1">
+                </a>
+                Tabela 1
+               </span>
+              </p>
+              <p>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.3.2">
+                </a>
+                6.1.3.2. Desvio de Freqüência de Transmissão Permissível
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                a) Definição: o desvio de freqüência é a diferença entre o valor da freqüência nominal especificada para a freqüência central das portadoras OFDM e a freqüência efetivamente sintetizada pelo transmissor para a mesma portadora, que não deve exceder a tolerância especificada.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                b) Especificação: o desvio máximo de freqüência de transmissão permissível deverá ser de 1 Hz na freqüência central das portadoras OFDM.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                c) Método de Medição: deverá ser utilizado um analisador de espectro ou equipamento adequado para o sistema ISDB-TB devidamente calibrado e realizar a medição na saída do transmissor na frequência central das portadoras OFDM do canal de operação (deslocada positivamente em 1/7 MHz da freqüência central do canal). É necessário verificar que o oscilador local do transmissor e o analisador de sinal OFDM para ISDB-TB estejam em regime normal de funcionamento antes da medição.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                d) Referência: ver
+                <a href="#ref4">
+                 referências IV e V
+                </a>
+                .
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                e) O ensaio deverá ser repetido para uma variação de tensão de alimentação de +15% e para uma variação de tensão de alimentação de – 15% da tensão nominal do equipamento.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                f) O ensaio deverá ser repetido para uma temperatura de +10º C e para uma temperatura de +50º C.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                g) Para os ensaios de variação de tensão de alimentação e variação de temperatura, poderão ser testados apenas os componentes ou subsistemas responsáveis pela geração e conversão de freqüência.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                h) As medidas indicadas deverão ser realizadas durante 6 horas, em intervalos de 1 (uma) hora.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.4">
+                </a>
+                6.1.4. Potência de Saída
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                a) Definição: para um sinal digital com modulação OFDM, a potência é uniformemente distribuída através do canal de transmissão. Portanto, ao se fazer medidas neste tipo de sinais, a largura de faixa total do sinal modulado deve ser levada em consideração. A potência de saída é o primeiro parâmetro a ser medido quando se estiver verificando parâmetros de desempenho ou realizando verificações de conformidade. No caso de sinais digitais, o valor da potência média é o mais apropriado para o tipo de modulação utilizada.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                b) Especificação: é aceitável uma variação de ±2% do valor nominal especificado pelo fabricante do transmissor.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                c) Método de Medição: a potência de saída pode ser medida utilizando um Wattímetro de absorção ou um analisador de espectro que possua este recurso. No caso do uso de analisador de espectro, conecte-o no ponto de medida utilizando um cabo cuja perda tenha sido calibrada. Se o nível de potência no ponto de medida for muito alto, ajuste-o de tal forma a cair dentro da faixa de medida do analisador de espectro, utilizando um acoplador direcional e atenuador calibrados.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                A Configuração do analisador de espectro deve seguir a
+                <a href="#tabela2" title="Acesse a Tabela">
+                 tabela 2
+                </a>
+                .
+               </span>
+              </p>
+              <p>
+              </p>
+              <table border="1" style="margin-left: auto; margin-right: auto;" width="80%">
+               <tbody>
+                <tr>
+                 <td align="center" width="78">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Freqüência Central
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="40">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Span
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="40">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    RBW
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="40">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    VBW
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="64">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Modo de Detecção
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="41">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    BW do canal
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="78">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Freqüência central das portadoras OFDM do Canal
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="40">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    10 MHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="40">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    30 kHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="40">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    300 kHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="64">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Sample (detecção de amostragem)
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="41">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    5,7 MHz
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="tabela2">
+                </a>
+                Tabela 2
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                A potência é determinada através da leitura do analisador de espectro e do valor de calibração (perda do acoplador direcional ou valor de atenuação).
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                Potência (dBm) = leitura do analisador de espectro (dBm) + perda do cabo (dB) + calibração (dB)
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                P (W) = 10 p(dBm)/10 /1000
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                d) Referência: ver
+                <a href="#ref4">
+                 referência IV
+                </a>
+                .
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                e) A medida deve ser feita após o tempo de estabilização definido pela especificação técnica do equipamento ou no mínimo após 2 (duas) horas do equipamento em uso.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                f) O ensaio deverá ser repetido para a potência mínima especificada pelo fabricante para o equipamento.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                g) O mecanismo previsto no
+                <a href="#item6.1.2.5" title="Acesse o Item">
+                 item 6.1.2.5
+                </a>
+                , inciso "c", deve ser aferido quanto à atenuação relativa à potência de saída do conjunto transmissor/filtro de máscara ou retransmissor/filtro de máscara. A potência medida no mecanismo poderá ter uma variação máxima de ±2% do valor da potência calculada a partir da potência de saída medida de acordo com o inciso "c", aplicada a atenuação especificada pelo fabricante. O método de medição deste teste deve ser o mesmo indicado no inciso "c".
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.5">
+                </a>
+                6.1.5. Emissões espúrias
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                a) Definição: emissões espúrias são emissões em freqüências que estão fora da largura de faixa do canal e cujos níveis podem ser reduzidos sem afetar a transmissão do sinal principal. São consideradas emissões espúrias as emissões de harmônicas, emissões parasitas, produtos de intermodulação, produtos de conversão de freqüência entre outros que podem ser detectadas numa gama de frequências além de +/- 15 MHz da freqüência central das portadoras OFDM do canal.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                b) especificações:As emissões espúrias devem estar pelo menos 60 dB abaixo da potência média do sinal digital para transmissores ou retransmissores digitais de potência média superior a 25 W, sem, no entanto, exceder 1 mW para VHF e 20 mW para UHF. Para transmissores ou retransmissores digitais com potência média igual ou inferior a 25 W, as emissões espúrias não podem exceder 25 ?W. A
+                <a href="#tabela3">
+                 tabela 3
+                </a>
+                mostra os limites permissíveis.
+               </span>
+              </p>
+              <p style="text-align: center;">
+              </p>
+              <table border="1" style="margin-left: auto; margin-right: auto;" width="80%">
+               <tbody>
+                <tr>
+                 <td align="center" width="126">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Separação em relação à portadora central do sinal digital
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="177">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Atenuação mínima em relação à potência média medida na freqüência da portadora central
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="126">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    &gt; 15 MHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="177">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    60 dB para P &gt; 25 W, limitada a 1 mW em VHF e 20 mW em UHF
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="126">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    &lt; - 15 MHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="177">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Para P &lt; 25 W, limitada a 25 µW em VHF e UHF
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="tabela3">
+                </a>
+                Tabela 3 – Potência de emissão espúria permissível
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                c) Método de Medida: as medidas são realizadas usando a configuração mostrada na
+                <a href="#figura1" title="Acesse a Figura">
+                 figura 1
+                </a>
+                . O analisador de espectro a ser utilizado deve ter faixa dinâmica de pelo menos 70 dB e parâmetros conforme
+                <a href="#tabela4">
+                 tabela 4
+                </a>
+                . Os parâmetros de transmissão deverão ser:
+               </span>
+              </p>
+              <p style="text-align: center;">
+              </p>
+              <table border="1" style="margin-left: auto; margin-right: auto;" width="80%">
+               <tbody>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    PRBS
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    2^23-1
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Modo
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    3 (8K)
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Modulação
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    64 QAM
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    FEC
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    7/8
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Intervalo de Guarda
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    1/8
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="201">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Time Interleaving
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="191">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    200 ms
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: center;">
+              </p>
+              <p style="text-align: left; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                d) Referência: ver referências IV e V.
+               </span>
+              </p>
+              <table border="1" style="margin-left: auto; margin-right: auto;" width="80%">
+               <tbody>
+                <tr>
+                 <td align="center" width="271">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Freqüência Central
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="64">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    SPAN
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="224">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    RBW (*)
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="128">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    VBW
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="128">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Modo de Detecção
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="130">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Observações
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="271">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Coloque a freqüência central das portadoras OFDM e SPAN de tal forma a incluir a faixa de medição
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="64">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="224">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    10-100 kHz (30 MHz a 1GHz) 0,1 - 1 MHz (acima de 1 GHz -&gt;)
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="128">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    3 a 10 vezes RBW
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="128">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Detecção de pico positivo
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="130">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Quando checar a existência de espúrios
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="271">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Freqüência do Espúrio
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="64">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    20 MHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="224">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    100 kHz (30 MHz a 1GHz) 1 MHz (acima de 1 GHz)
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="128">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Aproximadamente 10 vezes RBW
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="128">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Detecção em amostragem
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="130">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: center;">
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="tabela4">
+                </a>
+                Tabela 4
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                (*) valores entre parênteses mostram a faixa de freqüência medida
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                Observações: As medidas de atenuação de harmônicos deverão ser realizadas nas seguintes faixas de freqüências:
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                - de 30 MHz a 2 GHz, quando a freqüência central está localizada entre 300 MHz e 600 Mhz;
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                - de 30 MHz à freqüência do terceiro harmônico, quando a freqüência central está localizada acima de 600 Mhz.
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.6">
+                </a>
+                6.1.6. Potência Consumida, Fator de Potência e Eficiência Total
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                a) Definições: Potência Consumida é a potência entregue pela rede elétrica ao equipamento
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                transmissor. Eficiência total é a relação entre a potência de saída do transmissor e a potência consumida pelo equipamento. Fator de Potência é a razão entre a energia elétrica ativa e a raiz quadrada da soma dos quadrados das energias elétricas ativa e reativa, consumidas num mesmo período especificado.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                b) Especificação: A potência consumida do equipamento deve considerar os seguintes equipamentos:
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                modulador OFDM, amplificador de potência, conversor de freqüência, dispositivo de controle remoto, dispositivo de refrigeração interno, outros módulos constituintes do sistema.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                c) Método de Medição: utilizar instrumento adequado que permita realizar a medição do Fator de Potência, Distorção Harmônica Total (THD) e a Potência Consumida do sistema. Os valores medidos destas grandezas devem ser indicados no relatório do ensaio do equipamento.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                d) A eficiência do sistema é dada pela razão entre a potência de saída e a potência de entrada do sistema.
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                e) Referências: ver
+                <a href="#ref4">
+                 referência IV
+                </a>
+                .
+               </span>
+              </p>
+              <p style="padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.7">
+                </a>
+                6.1.7. Características do Sinal Transmitido
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.7.1">
+                </a>
+                6.1.7.1. Máscara de Transmissão
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                a) Definição: a definição da máscara de emissão está diretamente relacionada com a intermodulação ou interferência gerada pelo equipamento. Para transmissões com múltiplas portadoras, como é o caso do OFDM, a intermodulação é causada principalmente pela não linearidade dos amplificadores de potência do transmissor. A intermodulação é composta de energia espectral indesejável tanto dentro quanto fora da banda. A energia espectral dentro da banda irá causar degradação do sinal transmitido, e a energia espectral fora da banda irá causar interferência em canais adjacentes.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                b) Especificação: o equipamento poderá se enquadrar em 3 diferentes tipos de máscara: Não Crítica, Sub-Crítica e Crítica, conforme definidos pela ABNT na
+                <a href="#ref5">
+                 referência V
+                </a>
+                .
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                c) Método de Medição: os valores indicados pela ABNT para cada tipo de máscara devem ser medidos com a configuração do analisador de espectro definida na
+                <a href="#tabela5" title="Acesse a Tabela">
+                 tabela 5
+                </a>
+                , no ponto de medida do transmissor destinado a este fim, definido no inciso "c" do
+                <a href="#item6.1.2.5" title="Acesse o Item">
+                 item 6.1.2.5
+                </a>
+                . O ponto de corte deve ser medido usando um analisador de espectro ajustado para span de 20 MHz ou menos e uma resolução de largura de banda (RBW) de 10 kHz. Note que deve ser usada uma largura de banda de vídeo (VBW) de 300 Hz ou menos.
+               </span>
+              </p>
+              <p>
+              </p>
+              <table border="1" style="margin-left: auto; margin-right: auto;" width="80%">
+               <tbody>
+                <tr>
+                 <td align="center" width="94">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Freqüência Central
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="46">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    SPAN
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="42">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    RBW
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="52">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    VBW
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="69">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Modo de Detecção
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="94">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Freqüência central das portadoras OFDM do canal.
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="46">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    20 MHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="42">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    10 kHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="52">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    300 Hz ou menos
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="69">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Detecção de pico positivo
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tabela5">
+                </a>
+                Tabela 5
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                d) Referência: ver
+                <a href="#ref4">
+                 referências IV, V
+                </a>
+                e
+                <a href="#ref14">
+                 XIV
+                </a>
+                .
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.7.2">
+                </a>
+                6.1.7.2. Taxa de Erro de Modulação (MER)
+               </span>
+              </p>
+              <p style="padding-left: 150px;">
+               <span style="text-decoration: line-through;">
+                a) Definição: este parâmetro é a medida da degradação total no sinal transmitido devido à presença residual da portadora (a portadora não foi totalmente suprimida) e degradações nas respostas de amplitude/freqüência e fase/freqüência. A forma de cálculo do parâmetro pode ser obtida na
+                <a href="#ref5">
+                 referência V
+                </a>
+                . A soma dos quadrados das magnitudes dos vetores de símbolo é dividida pela soma dos quadrados das magnitudes dos vetores de erro de símbolo. O resultado, expresso como uma relação de potências em dB, é definido como MER.
+               </span>
+              </p>
+              <p style="padding-left: 150px;">
+               <span style="text-decoration: line-through;">
+                b) Especificação: o valor de MER deve ser determinado com o uso de um receptor com o menor fator de ruído possível, com o objetivo de evitar a inserção de distorção. Um valor de MER de pelo menos 30 dB deve ser alcançado.
+               </span>
+              </p>
+              <p style="padding-left: 150px;">
+               <span style="text-decoration: line-through;">
+                c) as medidas são realizadas utilizando-se a mesma configuração da
+                <a href="#figura1" title="Acesse a Figura">
+                 figura 1
+                </a>
+                , porém um medidor de MER deve ser usado no lugar do analisador de espectro. Se o instrumento de medição tiver ambas as funções "Convencional" e "Camada", a Convencional deve ser escolhida.
+               </span>
+              </p>
+              <p style="padding-left: 150px;">
+               <span style="text-decoration: line-through;">
+                d) Referência: ver
+                <a href="#ref5">
+                 referência V
+                </a>
+                .
+               </span>
+              </p>
+              <p style="padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.7.3">
+                </a>
+                6.1.7.3. Ruído de Fase
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                a) Definição: o ruído de fase em qualquer processo de conversão de freqüência pode ocorrer devido à instabilidade dos osciladores locais. Em processos de modulação OFDM, o ruído de fase pode causar um erro de fase generalizado que afeta todas as portadoras ao mesmo tempo.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                O ruído de fase causa tanto CPE (common phase error) como ICI (inter carrier interference). Ele reduz a margem de ruído do transmissor e aumenta a BER.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                b) Especificação: valores de referência para o ruído de fase aceitável podem ser obtidos na
+                <a href="#ref5">
+                 referência V
+                </a>
+                ou na
+                <a href="#tabela6" title="Acesse a Tabela">
+                 tabela 6
+                </a>
+                .
+               </span>
+              </p>
+              <p>
+               <span style="text-decoration: line-through;">
+               </span>
+              </p>
+              <table border="1" style="margin-left: auto; margin-right: auto;" width="80%">
+               <tbody>
+                <tr>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Offset de Freqüência
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Nível
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    10 Hz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    -65 dBc/Hz
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    100 Hz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    -85 dBc/Hz
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    1 KHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    -85 dBc/Hz
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    10 KHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    -95 dBc/Hz
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    100 KHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    -113 dBc/Hz
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    1 MHz
+                   </span>
+                  </p>
+                 </td>
+                 <td align="center" width="318">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    -130 dBc/Hz
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="tabela6">
+                </a>
+                Tabela 6
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                c) Método de Medição: a medida é feita na saída do oscilador local ou em saída equivalente, utilizando um analisador de espectro.
+               </span>
+              </p>
+              <p style="padding-left: 120px;">
+               <span style="text-decoration: line-through;">
+                d) Referência: ver
+                <a href="#ref5">
+                 referência V
+                </a>
+                .
+               </span>
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_180">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/2008" rel="tag">
+                 2008
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20Normativo">
+                 Ato Normativo
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Certificação%20de%20Produtos">
+                 Certificação de Produtos
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Homologação%20de%20Produtos">
+                 Homologação de Produtos
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Transmissor">
+                 Transmissor
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Televisão%20digital">
+                 Televisão digital
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Equipamento%20de%20telecomunicações">
+                 Equipamento de telecomunicações
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaCertificacao">
+                 NormaCertificacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RecursosPrestacao">
+                 RecursosPrestacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada">
+                 ResolucaoRevogada
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="41d70da6a919e89079a5599e-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="41d70da6a919e89079a5599e-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="41d70da6a919e89079a5599e-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="41d70da6a919e89079a5599e-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-41d70da6a919e89079a5599e-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="41d70da6a919e89079a5599e-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="41d70da6a919e89079a5599e-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="41d70da6a919e89079a5599e-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

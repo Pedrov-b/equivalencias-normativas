@@ -1,0 +1,1732 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Portaria nº 50632, de 17 de dezembro de 2015</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/892-portaria-50632">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Revisão, Procedimento, Fiscalização, Radiointerferência, Grandes eventos, NormaFiscalizacao, PortariaVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprova a Revisão do Procedimento de Fiscalização de Radiointerferências em Grandes Eventos. Processos nº 53500.025723/2012 e 53500.201349/2015-87">
+	<title>Anatel - Portaria nº 50632, de 17 de dezembro de 2015</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=396355938" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1165760144" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"17262e2165d588c42d8653a0bfc422d7","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1567391558" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025010904" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/procedimentos-de-fiscalizacao/892-portaria-50632">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/procedimentos-de-fiscalizacao" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/procedimentos-de-fiscalizacao" class="pathway">Procedimentos de Fiscalização</a> <span class="separator">&gt;</span> <span>Portaria nº 50632, de 17 de dezembro de 2015</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203 current active"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948bda7a3f7b27e3&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Portaria nº 50632, de 17 de dezembro de 2015		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quinta, 24 Dezembro 2015 10:24			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Terça, 19 Maio 2020 10:47			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 32431			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Aprova a Revisão do Procedimento de Fiscalização de Radiointerferências em Grandes Eventos.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"> <strong> Observação </strong> </span> : Este texto não substitui o publicado no boletim de serviço&nbsp;<a title="Acesse o boletim de serviço" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_publicacao_legado=&amp;id_documento=199805&amp;id_orgao_publicacao=0" rel="nofollow">24/12/2015</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span class="texto-recuo-1a-linha"><strong> O GERENTE DE SUPORTE À FISCALIZAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</strong>, no uso das atribuições que lhe foram conferidas&nbsp;pelo <a title="Acesse o artigo" href="http://www.anatel.gov.br/legislacao/resolucoes/2013/450-resolucao-612#190" rel="nofollow">art. 190</a>, I, do Regimento Interno da ANATEL, aprovado pela Resolução nº 612, de 29 de abril de 2013; </span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span class="texto-recuo-1a-linha"> CONSIDERANDO o disposto no <a title="Acesse o artigo" href="http://www.planalto.gov.br/ccivil_03/LEIS/L9472.htm#art2" rel="nofollow">art. 2º</a>&nbsp;da Lei nº 9.472, de 16 de julho de 1997; </span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span class="texto-recuo-1a-linha"> CONSIDERANDO a <a title="Acesse a Portaria" href="http://anatelnet/Portal/BoletimServico/304952.pdf">Portaria nº 864, de 30 de outubro de 2013</a>, que alterou a <a title="Acesse a Portaria" href="http://anatelnet/Portal/BoletimServico/288712.pdf">Portaria nº 946, de 13 de novembro de 2012</a>, que instituiu o Grupo de&nbsp;Trabalho para elaborar o Plano de Logística Operacional de Fiscalização no âmbito dos Grandes Eventos Internacionais; </span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span class="texto-recuo-1a-linha"> CONSIDERANDO as contribuições recebidas em decorrência da Consulta Interna nº 678, realizada no período de 21 de setembro a 30 de setembro&nbsp;de 2015; </span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span class="texto-recuo-1a-linha"> CONSIDERANDO o constante dos autos do Processo nº <a title="Acesse o processo" href="http://sistemas.anatel.gov.br/sicap/web/displayWeb.asp?id=4190077" rel="nofollow">53500.025723/2012</a>; e </span></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span class="texto-recuo-1a-linha"> CONSIDERANDO o constante dos autos do processo nº <a title="Acesse o processo" href="https://sei.anatel.gov.br/sei/institucional/pesquisa/processo_exibir.php?g3XpuoWYp-7HVPth0qfy4BTnTQGB-1fZe5x7Wj6r2vuhM6dOLCiK0CL1GZeQlMs2PdPE2ZGCaFe32-3axRUIGw,," rel="nofollow">53500.201349/2015-87</a>. </span></p>
+<p class="resolve" style="text-align: justify;"><span class="texto-recuo-1a-linha"> RESOLVE: </span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span class="texto-recuo-1a-linha"><a id="art1"></a> Art. 1º&nbsp; Aprovar a revisão do Procedimento de Fiscalização de Radiointerferências em Grandes Eventos (PF.056), na forma do Anexo a esta Portaria. </span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span class="texto-recuo-1a-linha"><a id="art2"></a> Art. 2º&nbsp; Revogar o art. 5º da <a title="Acesse a Portaria " href="http://anatelnet/Portal/BoletimServico/313443.pdf">Portaria nº 474, de 13 de junho de 2014</a>, publicada no Boletim de Serviço nº 111, de 25 de junho de 2014. </span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span class="texto-recuo-1a-linha"><a id="art3"></a> Art. 3º&nbsp; Esta Portaria entra em vigor na data de sua publicação no Boletim de Serviço Eletrônico. </span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">&nbsp;</p>
+<p style="text-align: center;">ELMANO RODRIGUES PINHEIRO FILHO</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">ANEXO À PORTARIA N° 50632, DE 17 DE DEZEMBRO DE 2015</p>
+<p style="text-align: center;"><strong>PROCEDIMENTO DE FISCALIZAÇÃO DE RADIOINTERFERÊNCIAS EM GRANDES EVENTOS</strong></p>
+<p style="text-align: justify;"><a name="item1"></a>1. OBJETIVO</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item1.1"></a>1.1. O presente Procedimento de Fiscalização estabelece os procedimentos que devem ser adotados nos casos de interferência radioelétrica&nbsp;reclamada ou constatada pela fiscalização da Agência antes e durante Grandes Eventos a serem realizados no Brasil.</p>
+<p style="text-align: justify;"><a name="item2"></a>2. REFERÊNCIAS</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item2.1"></a>2.1. Para fins deste Procedimento de Fiscalização são aplicáveis os seguintes documentos:</p>
+<p style="padding-left: 60px; text-align: justify;">I - <a title="Acesse a lei" href="http://www.planalto.gov.br/ccivil_03/LEIS/L9472.htm" rel="nofollow">Lei nº 9.472, de 16 de julho de 1997</a>, que dispõe sobre a organização dos serviços de telecomunicações, a criação e funcionamento de&nbsp;um órgão regulador e outros aspectos institucionais, nos termos da Emenda Constitucional nº 8, de 1995 (LGT);</p>
+<p style="padding-left: 60px; text-align: justify;">II -<a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/15-2000/129-resolucao-242" rel="nofollow"> Resolução nº 242, de 30 de novembro de 2000</a>, que aprova o Regulamento para Certificação e Homologação de Produtos para&nbsp;Telecomunicações;</p>
+<p style="padding-left: 60px; text-align: justify;">III - <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2001/231-resolucao-259" rel="nofollow">Resolução nº 259, de 19 de abril de 2001</a>, que aprova o Regulamento de Uso do Espectro Radioelétrico (RUER);</p>
+<p style="padding-left: 60px; text-align: justify;">IV - <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2012/191-resolucao-589" rel="nofollow">Resolução nº 589, de 7 de maio de 2012</a>, que aprova o Regulamento para Aplicação de Sanções Administrativas;</p>
+<p style="padding-left: 60px; text-align: justify;">V - <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2012/308-resolucao-596" rel="nofollow">Resolução nº 596, de 6 de agosto de 2012</a>, que aprova o Regulamento de Fiscalização;</p>
+<p style="padding-left: 60px; text-align: justify;">VI - <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2013/450-resolucao-612" rel="nofollow">Resolução nº 612, de 29 de abril de 2013</a>&nbsp;que aprova o Regimento Interno da Anatel (RIA);</p>
+<p style="padding-left: 60px; text-align: justify;">VII - <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2014/764-resolucao-635" rel="nofollow">Resolução nº 635, de 09 de maio de 2014</a>, que aprova o Regulamento sobre Autorização de Uso Temporário de Radiofrequências;</p>
+<p style="padding-left: 60px; text-align: justify;">VIII - Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil;</p>
+<p style="padding-left: 60px; text-align: justify;">IX - Demais regulamentos dos diversos serviços de telecomunicações e radiodifusão;</p>
+<p style="padding-left: 60px; text-align: justify;">X - Procedimento de Elaboração de Relatórios em Grandes Eventos (PF.060);</p>
+<p style="padding-left: 60px; text-align: justify;">XI - Glossário de Termos da Anatel, disponível em: <a title="Acesse o site" href="http://www.anatel.gov.br/legislacao/glossario-anatel" rel="nofollow">http://www.anatel.gov.br/legislacao/glossario-anatel</a> .</p>
+<p style="text-align: justify;"><a name="item3"></a>3. DEFINIÇÕES</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item3.1"></a>3.1. Para fins deste Procedimento de Fiscalização são adotadas as definições constantes dos documentos referenciados no item anterior e as&nbsp;seguintes:</p>
+<p style="padding-left: 60px; text-align: justify;">I - PRIORIDADES DE ATENDIMENTO: ordem de atendimento das reclamações de interferência, definida por parte da Coordenação Local&nbsp;Boletim de Serviço Eletrônico em 24/12/2015&nbsp;da Anatel, de acordo com escala de prioridades, previamente definida em função do impacto da interferência na realização ou segurança do&nbsp;evento;</p>
+<p style="padding-left: 60px; text-align: justify;">II - RECLAMAÇÃO DE INTERFERÊNCIA: exposição formal de um fato à Coordenação Local da Anatel, de forma não anônima, com&nbsp;fundamentação técnica e descritiva dos fatos, contemplando a identificação e contato do reclamante e, se possível, a indicação do&nbsp;interferente; e</p>
+<p style="padding-left: 60px; text-align: justify;">III - VARREDURA E ANÁLISE ESPECTRAL: atividade indireta de monitoração espectral realizada por meio de analisadores de espectro,&nbsp;receptores scanners e/ou estações de monitoração, fixas, móveis ou portáteis, para fins de coleta de informações sobre a utilização das faixas&nbsp;de frequência essenciais à realização de Grandes Eventos, com o objetivo de prevenir eventuais interferências prejudiciais e dimensionar a&nbsp;utilização das faixas por entidades autorizadas dos serviços de telecomunicações e de radiodifusão, além de coibir o uso não autorizado de&nbsp;radiofrequência nos seus locais de realização.</p>
+<p style="text-align: justify;"><a name="item4"></a>4. DISPOSIÇÕES GERAIS</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.1"></a>4.1. Faixas de frequência e equipamentos</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.1.1"></a>4.1.1. Diversos equipamentos de telecomunicações são comumente utilizados em eventos por equipes de jornalismo, emissoras de rádio e televisão,&nbsp;empresas de telefonia, sites especializados, equipes da organização do evento, forças de segurança pública, dentre outras, com o propósito de permitir sua&nbsp;organização, realização e transmissão ao vivo, incluindo a cobertura móvel por parte de jornalistas e repórteres.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.1.2"></a>4.1.2. Nesse sentido, mostra-se imprescindível que os Agentes de Fiscalização detenham informações prévias sobre algumas características técnicas&nbsp;destes equipamentos, principalmente suas frequências de operação.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.2"></a>4.2. Cobertura e transmissão dos eventos</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.2.1"></a>4.2.1. A cobertura e a transmissão dos eventos por emissoras de rádio e televisão mostram-se de extrema importância para os mesmos, dados os altos&nbsp;valores de investimentos em equipamentos, contratos de transmissão e propagandas envolvidos. A utilização de equipamentos de telecomunicações, com ou&nbsp;sem fio, é intensificada pelas entidades nacionais e estrangeiras envolvidas em Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.2.2"></a>4.2.2. Os principais serviços e equipamentos utilizados por tais entidades estão descritos abaixo:</p>
+<p style="padding-left: 90px; text-align: justify;">I - Sistemas de câmeras de alta definição portáteis (<em>microlinks</em>);</p>
+<p style="padding-left: 90px; text-align: justify;">II - Sistemas de microfones sem fio;</p>
+<p style="padding-left: 90px; text-align: justify;">III - Sistemas de transmissão/recepção de sinais de vídeo/áudio via satélite (<em>uplinks/downlinks</em>);</p>
+<p style="padding-left: 90px; text-align: justify;">IV - Sistemas de transmissão/recepção de sinais de vídeo/áudio terrestre (SARC);</p>
+<p style="padding-left: 90px; text-align: justify;">V - Sistemas de comunicação portátil terrestre (HT).</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.2.3"></a>4.2.3. Características técnicas e frequências de operação desses equipamentos encontram-se descritas no&nbsp;<a title="Acesse o item" href="#item7.1.1" rel="alternate">item 7.1.1</a></p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.3"></a>4.3. Organização dos eventos</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.3.1"></a>4.3.1. A organização de Grandes Eventos comumente encontra-se subdividida entre: produção artística, empresas de segurança privada, equipes&nbsp;técnicas de som e imagem, equipes de iluminação, equipes de logística, dentre outras.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.3.2"></a>4.3.2. Em todos os casos, são utilizados equipamentos portáteis do tipo radiocomunicadores HTs, ou seja, estações do Serviço Limitado Privado (SLP) ou&nbsp;Serviço Limitado Especializado (SLE), conforme o caso.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.3.3"></a>4.3.3. Também há que se considerar que alguns rádios comunicadores mais modernos utilizam faixas de frequências de radiação restrita que não&nbsp;necessitam de licenciamento pela Anatel.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.3.4"></a>4.3.4. No entanto, sendo necessária ou não a Licença de Funcionamento da Estação, em ambos os casos a certificação/homologação é obrigatória.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.3.5"></a>4.3.5. As equipes ligadas à organização dos eventos valem-se, também, da utilização de sistemas troncalizados de despacho (<em>trunking</em>),&nbsp;correspondentes ao Serviço Móvel Especializado (SME), para a execução de suas tarefas.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.3.6"></a>4.3.6. As principais características técnicas e frequências de operação desses equipamentos também se encontram descritas no <a title="Acesse o item" href="#item7.1.1" rel="alternate">item 7.1.1</a>.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.4"></a>4.4. Segurança Pública</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.4.1"></a>4.4.1. As forças de segurança pública estaduais, mais precisamente, a Polícia Civil, a Polícia Militar e o Corpo de Bombeiros, estarão em atuação&nbsp;durante os Grandes Eventos, todos integrados à Secretaria Especial de Segurança dos Grandes Eventos (SESGE), da qual também fazem parte as Forças Armadas&nbsp;e a Polícia Federal.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.4.2"></a>4.4.2. As Forças Armadas (Exército, Marinha e Aeronáutica) estão liberadas do licenciamento de suas estações quando se utilizam de suas faixas de&nbsp;frequência específicas designadas pela Anatel.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.4.3"></a>4.4.3. Para a intercomunicação de seus integrantes, são utilizados rádios comunicadores HTs com autorização do SLP ou do Serviço Limitado Móvel&nbsp;Privativo (SLMP).</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.4.4"></a>4.4.4. Também podem ser utilizados Veículos Aéreos Não Tripulados (VANTs) para a coleta de imagens aéreas visando ampliar a segurança dos locais&nbsp;de realização de Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.4.5"></a>4.4.5. Características técnicas e frequências de operação desses equipamentos se encontram descritas no <a title="Acesse o item" href="#item7.1.1" rel="alternate">item 7.1.1</a>.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.5"></a>4.5. Serviços de interesse coletivo</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.5.1"></a>4.5.1. Os serviços de telecomunicações de interesse coletivo são, em muitos casos, essenciais para a realização do evento, a começar pelo Serviço Móvel Especializado (SME) que é muito utilizado pelas equipes de produção na sua intercomunicação. Também, o Serviço Móvel Pessoal (SMP), com seus&nbsp;serviços de voz aliados às tecnologias de transmissão e recepção de dados 2G, 3G e 4G, representam importante contribuição para a realização dos eventos,&nbsp;seja pelas transações em máquinas de cartões de crédito sem fio, seja pela utilização dos serviços móveis por equipes de reportagem ou pela própria&nbsp;comunicação do público presente.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.5.2"></a>4.5.2. Considerando a relevante importância desses serviços para a realização de Grandes Eventos, torna-se necessário o conhecimento das faixas de&nbsp;operação e tecnologias presentes em cada região do País, visando subsidiar as ações dos Agentes de Fiscalização quando constatadas interferências&nbsp;prejudiciais que podem afetar a satisfatória fruição dos serviços.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.5.3"></a>4.5.3. No <a title="Acesse o item" href="#item7.1.2" rel="alternate">item 7.1.2</a>&nbsp;são apresentadas as faixas de operação autorizadas para o SMP e SME em todo o Brasil, incluindo as faixas destinadas aos&nbsp;serviços 4G.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.6"></a>4.6. Redes wi-fi</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.6.1"></a>4.6.1. Em eventos de médio e grande porte, tem-se percebido o aumento da disponibilização de redes wi-fi nas faixas de 2,4 e de 5,8 GHz ao público em&nbsp;geral, em função da instalação de pontos de acesso espalhados por todas as áreas de interesse.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.6.2"></a>4.6.2. Entretanto, por operarem em faixas de frequência de radiação restrita, tais equipamentos estão altamente suscetíveis a interferências&nbsp;prejudiciais provocadas pelos demais equipamentos que operam nesta faixa.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.6.3"></a>4.6.3. No <a title="Acesse o item" href="#item7.1.1" rel="alternate">item 7.1.1</a>&nbsp;são apresentados alguns equipamentos utilizados na instalação de pontos de acesso em eventos e suas faixas de operação de&nbsp;radiação restrita, para fins de facilitar o reconhecimento dos Agentes de Fiscalização em caso de necessidade de atuação.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.7"></a>4.7. Entidades clandestinas</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.7.1"></a>4.7.1. Diversas são as possibilidades de interferências prejudiciais provocadas por entidades clandestinas em eventos, a começar pelas próprias&nbsp;emissoras clandestinas de rádio, que podem provocar interferências nas comunicações aeronáuticas e comprometer a segurança aérea durante a realização de&nbsp;Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.7.2"></a>4.7.2. Também poderá ser constatada a utilização de rádios comunicadores não autorizados e que, de maneira intencional ou não, poderão interferir&nbsp;nas comunicações da organização dos eventos e das forças de segurança pública.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item4.8"></a>4.8. Classificação das prioridades de atendimento</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.1"></a>4.8.1. Para a classificação das prioridades de atendimento dos casos de interferência prejudicial em Grandes Eventos, deve-se basicamente levar em&nbsp;consideração os seguintes fatores:</p>
+<p style="padding-left: 90px; text-align: justify;">I - Riscos para a segurança do público e da organização do evento;</p>
+<p style="padding-left: 90px; text-align: justify;">II - Relevância para a própria realização/organização do evento;</p>
+<p style="padding-left: 90px; text-align: justify;">III - Danos causados às transmissões ao vivo por emissoras de rádio e televisão e/ou outros meios de comunicação;</p>
+<p style="padding-left: 90px; text-align: justify;">IV - Prejuízos causados aos serviços de interesse coletivo;</p>
+<p style="padding-left: 90px; text-align: justify;">V - Impactos nos serviços de interesse restrito e em equipamentos de radiação restrita.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.2"></a>4.8.2. A priorização do atendimento às ocorrências de interferências serve como referencial para orientar a Coordenação Local da Anatel e os Agentes&nbsp;de Fiscalização quanto aos riscos e relevância para o sucesso de Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.3"></a>4.8.3. Poderá haver ocasiões em que, a critério da Coordenação Local da Anatel, a classificação de prioridades não seja aplicável, considerando que o&nbsp;tratamento de demandas de interferências prejudiciais apresenta grande diversidade de situações.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.4"></a>4.8.4. Todas as reclamações devem ser atendidas pela Anatel em tempo hábil, independentemente de sua classificação.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item4.8.5"></a>4.8.5. Segue abaixo a Tabela de Classificação de Prioridades de Atendimento de Interferências a ser utilizada como referência em Grandes Eventos:</p>
+<p style="text-align: center;"><a id="tabelaI"></a>Tabela de Classificação de Prioridades de Atendimento de Interferências</p>
+<table style="margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td align="center" width="192">
+<p>TIPO DE INTERFERÊNCIA</p>
+</td>
+<td align="center" width="192">
+<p>RISCOS</p>
+</td>
+<td align="center" width="192">
+<p>GRAU DE PRIORIDADE</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="192">
+<p>Radiocomunicação das Forças de Segurança Pública, Forças Armadas, Ambulâncias, Corpo de Bombeiros, Radionavegação Aeronáutica e Veículos Aéreos Não Tripulados (VANT)</p>
+</td>
+<td align="center" width="192">
+<p>Não atendimento de emergências médicas;</p>
+<p>Comprometimento da segurança do público e da organização do evento;</p>
+<p>Prejuízos ou paralisação da comunicação aeronáutica nos aeroportos locais.</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="192">
+<p>Zero</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="192">
+<p>Equipamentos de telemetria e radiocomunicação utilizados para a realização do próprio evento (por exemplo: pontos eletrônicos de árbitros, controle de placares eletrônicos, rádios HTs da organização e de empresas de segurança privada)</p>
+</td>
+<td align="center" width="192">
+<p>Interrupção de disputas esportivas;</p>
+<p>Alterações em resultados;</p>
+<p>Comprometimento da organização e da segurança do evento.</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="192">
+<p>Um</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="192">
+<p>Equipamentos e frequências utilizados na cobertura e transmissão do evento por emissoras de rádio e televisão e/ou outros meios de comunicação (por exemplo: câmeras sem fio, microfones sem fio, "<em>uplinks</em>" via satélite, etc.)</p>
+</td>
+<td align="center" width="192">
+<p>Perda de qualidade ou interrupção das transmissões do evento.</p>
+</td>
+<td align="center" width="192">
+<p>Dois</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="192">
+<p>Estações de serviços de interesse coletivo (Serviço Móvel Pessoal, Serviço Móvel Especializado, Serviço de Comunicação Multimídia, etc.)</p>
+</td>
+<td align="center" width="192">
+<p>Perda de qualidade ou interrupção dos serviços prestados;</p>
+<p>Prejuízos às empresas que utilizam meios de pagamento eletrônico sem fio (máquinas portáteis de cartão de débito/crédito) e aos usuários em geral.</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="192">
+<p>Três</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="192">
+<p>Entidades autorizadas dos serviços de interesse restrito (rádios comunicadores de empresas de iluminação, apoio logístico, manutenção, limpeza, etc.)</p>
+</td>
+<td align="center" width="192">
+<p>Impacto na execução de suas atividades nos eventos.</p>
+</td>
+<td align="center" width="192">
+<p>Quatro</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><a name="item5"></a>5. METODOLOGIA DE PREVENÇÃO E TRATAMENTO DE INTERFERÊNCIAS</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item5.1"></a>5.1. Varreduras espectrais</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.1.1"></a>5.1.1. Os Agentes de Fiscalização designados para as atividades de monitoração de frequências deverão, com o uso das estações de monitoração ou de&nbsp;analisadores de espectro, efetuar varreduras espectrais periódicas, antes e durante a realização de Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.1.2"></a>5.1.2. A metodologia de execução de tais varreduras está detalhada no Procedimento de Fiscalização de Monitoração de Espectro de Radiofrequência&nbsp;em Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.1.3"></a>5.1.3. Constatada qualquer emissão não autorizada ou irradiação de espúrios sobre determinada faixa, mesmo que não haja qualquer reclamação de&nbsp;interferência registrada, deve-se proceder a imediata busca pela identificação e/ou localização da potencial fonte de interferência, de maneira a coibir o uso&nbsp;irregular ou não autorizado de radiofrequência.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.1.4"></a>5.1.4. Identificada e/ou localizada a fonte de irradiação dos sinais interferentes, os Agentes de Fiscalização deverão comunicar imediatamente à&nbsp;Coordenação Local da Anatel para que tome medidas cabíveis.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item5.2"></a>5.2. Teste e Etiquetagem</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.2.1"></a>5.2.1. Durante a etapa de testes amostrais e etiquetagem de equipamentos de telecomunicações a serem utilizados em Grandes Eventos, os Agentes&nbsp;de Fiscalização deverão analisar as emissões de harmônicos e espúrios dos mesmos, com a finalidade de prevenir eventuais interferências prejudiciais em&nbsp;outros equipamentos regulares.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.2.2"></a>5.2.2. Constatada qualquer anormalidade, deve-se proceder às ações constantes do Procedimento de Teste e Etiquetagem de Equipamentos Utilizados&nbsp;em Grandes Eventos.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item5.3"></a>5.3. Reclamações de interferência</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.3.1"></a>5.3.1. Toda e qualquer reclamação de interferência prejudicial deverá ser informada, para fins de registro formal na Anatel e controle das ocorrências,&nbsp;em formulário próprio constante do <a title="Acesse o item" href="#item7.1.3" rel="alternate">item 7.1.3</a>, o qual poderá ser disponibilizado em arquivo eletrônico às entidades quando da realização dos testes e&nbsp;etiquetagem de equipamentos, além de permanecer à disposição nas salas de apoio da Anatel nos locais dos eventos, junto à Coordenação Local da Anatel.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.3.2"></a>5.3.2. Caso a reclamação seja remetida à Anatel por meio eletrônico (e-mail), deve-se enviar resposta ao reclamante informando da necessidade de&nbsp;preenchimento de tal formulário.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.3.3"></a>5.3.3. No caso em que as reclamações de interferência sejam feitas de maneira verbal aos Agentes de Fiscalização antes e durante os eventos, os mesmos devem orientar o reclamante a preencher o formulário próprio junto à Coordenação Local da Anatel.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.3.4"></a>5.3.4. Toda e qualquer reclamação de interferência deverá ser analisada pela Coordenação Local da Anatel antes de serem adotadas as medidas&nbsp;fiscalizatórias cabíveis, tal como a definição da prioridade de atendimento do caso e a designação dos Agentes de Fiscalização para investigação e/ou análise.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.3.5"></a>5.3.5. Não serão aceitas reclamações incompletas ou infundadas, muito menos reclamações que não contenham subsídios fáticos e técnicos&nbsp;suficientes para demandar uma ação fiscalizadora da Agência.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.3.6"></a>5.3.6. Havendo necessidade de maiores detalhes técnicos sobre as interferências reclamadas, a Anatel poderá solicitar ao reclamante o envio de&nbsp;informações complementares antes de qualquer ação de fiscalização.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.3.7"></a>5.3.7. Os prazos para atendimento das reclamações, respeitadas as limitações do quantitativo de Agentes de Fiscalização e de equipamentos de&nbsp;fiscalização disponíveis, deverão ser sempre os menores possíveis, buscando serem imediatos quando se tratar de reclamações classificadas como prioridade&nbsp;“zero” e “um”.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item5.4"></a>5.4. Interferências na radiocomunicação das Forças de Segurança Pública, Forças Armadas, ambulâncias, Corpo de Bombeiros e VANT</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.4.1"></a>5.4.1. Diversos tipos de interferência prejudicial podem ocorrer nas frequências de operação das forças de Segurança Pública, Forças Armadas,&nbsp;ambulâncias e Corpo de Bombeiros durante os Grandes Eventos. Há riscos de eventual sabotagem eletrônica, com a interrupção das comunicações entre seus&nbsp;integrantes provocada por ruídos gerados intencionalmente nas suas faixas de operação. Há também que serem considerados os potenciais riscos de&nbsp;interferência nas comunicações aeronáuticas em razão de emissões espúrias de entidades clandestinas de radiodifusão FM ou outros serviços irregulares.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.4.2"></a>5.4.2. Antes da adoção de qualquer medida fiscalizatória, deve ser preenchido e entregue à Coordenação Local da Anatel o Formulário de Reclamação&nbsp;de Interferência Prejudicial, constante do <a title="Acesse o item" href="#item7.1.3" rel="nofollow">item 7.1.3</a>, para que esta defina os Agentes de Fiscalização e as medidas investigativas/fiscalizatórias que serão&nbsp;adotadas.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.4.3"></a>5.4.3. Havendo constatação de qualquer interferência prejudicial em tais faixas, devem ser adotados os procedimentos de atendimento imediato&nbsp;(prioridade “0”), utilizando todos os recursos técnicos possíveis disponibilizados pela Anatel para sua solução em tempo hábil.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.4.4"></a>5.4.4. Caso a fonte das interferências prejudiciais seja localizada em área de risco à integridade dos Agentes de Fiscalização, a Coordenação Local da&nbsp;Anatel deverá solicitar apoio imediato das forças de segurança pública atuantes em Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.4.5"></a>5.4.5. Sendo o causador da interferência prejudicial uma entidade:</p>
+<p style="padding-left: 90px; text-align: justify;">I - Clandestina de qualquer serviço de telecomunicações ou de radiodifusão, deve-se seguir o definido no Procedimento de Fiscalização&nbsp;para Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 90px; text-align: justify;">II - Autorizada de qualquer serviço de telecomunicações ou de radiodifusão, deverá ser efetuada vistoria/inspeção técnica na(s)&nbsp;estação(ões) interferente(s), conforme definido no Procedimento de Fiscalização para Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 90px; text-align: justify;">III - Atuante nos próprios Grandes Eventos (estrangeira ou não) e:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Autorizada pela Anatel (equipamentos possuem a devida etiqueta de autorização), deve-se efetuar vistoria/inspeção técnica nos&nbsp;equipamentos com o intuito de confirmar a fonte da interferência e verificação de seus parâmetros técnicos junto ao seu cadastro de&nbsp;etiquetagem. Caso alguma anormalidade seja constatada, deve-se seguir o definido no Procedimento de Fiscalização para Abordagem em&nbsp;Grandes Eventos;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Não autorizada pela Anatel (equipamentos não possuem etiqueta de autorização), nacional ou não, deve-se seguir a recomendação&nbsp;específica de abordagem definida no Procedimento de Fiscalização para Abordagem em Grandes Eventos.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item5.5"></a>5.5. Interferências em equipamentos de telemetria e de radiocomunicação da organização dos eventos</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.5.1"></a>5.5.1. Os equipamentos de telemetria e de radiocomunicação da organização de Grandes Eventos são de suma importância para a realização dos mesmos. No entanto, por se tratarem, em sua maioria, de equipamentos sensíveis à interferências prejudiciais diversas, tornam-se vulneráveis aos prejuízos&nbsp;causados pela ação proposital ou pelas emissões espúrias de outros equipamentos utilizados.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.5.2"></a>5.5.2. Antes da adoção de qualquer medida fiscalizatória, deve ser preenchido e entregue à Coordenação de Fiscalização Local da Anatel o Formulário&nbsp;de Reclamação de Interferência Prejudicial constante do<a title="Acesse o item" href="#item7.1.3" rel="nofollow"> item 7.1.3</a>, para que esta defina os Agentes de Fiscalização e as medidas investigativas/fiscalizatórias&nbsp;que serão adotadas.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.5.3"></a>5.5.3. Havendo constatação de qualquer interferência prejudicial em suas faixas de operação, devem-se adotar os procedimentos de atendimento&nbsp;imediato (prioridade “1”), utilizando todos os recursos técnicos possíveis disponibilizados pela Anatel para sua solução em tempo hábil.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.5.4"></a>5.5.4. Caso a fonte das interferências prejudiciais seja localizada em área de risco à integridade dos Agentes de Fiscalização, a Coordenação Local da&nbsp;Anatel deverá solicitar apoio imediato das forças de segurança pública atuantes em Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.5.5"></a>5.5.5. Sendo o causador da interferência prejudicial uma entidade:</p>
+<p style="padding-left: 90px; text-align: justify;">I - Clandestina, de qualquer serviço de telecomunicações ou de radiodifusão, deve-se seguir o definido no Procedimento de Fiscalização&nbsp;de Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 90px; text-align: justify;">II - Autorizada, de qualquer serviço de telecomunicações ou de radiodifusão, deverá ser efetuada vistoria/inspeção técnica na(s)&nbsp;estação(ões) interferente(s), conforme definido no Procedimento de Fiscalização de Abordagem em Grandes Eventos.</p>
+<p style="padding-left: 90px; text-align: justify;">III - Atuante nos próprios Grandes Eventos (estrangeira ou não) e:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Autorizada pela Anatel (equipamentos possuem a devida etiqueta de autorização), deve-se efetuar vistoria/inspeção técnica nos&nbsp;equipamentos com o intuito de confirmar a fonte da interferência e checagem de seus parâmetros técnicos junto ao seu cadastro de&nbsp;etiquetagem. Caso alguma anormalidade seja constatada, deve-se seguir o que está definido no Procedimento de Fiscalização de Abordagem&nbsp;em Grandes Eventos;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Não autorizada pela Anatel (equipamentos não possuem etiqueta de autorização), nacional ou não, deve-se seguir a recomendação&nbsp;específica definida no Procedimento de Fiscalização de Abordagem em Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.5.6"></a>5.5.6. Deverão ser empreendidos esforços para garantir a perfeita utilização de equipamentos classificados como de radiação restrita pela organização&nbsp;de Grandes Eventos, caso sejam avaliados pelo Coordenador Local como essencial ao sucesso do evento, dando atendimento contra eventuais interferências&nbsp;prejudiciais ou incompatibilidades que, porventura, ocorreram, na prioridade assinalada pela coordenação da Anatel.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item5.6"></a>5.6. Interferências em equipamentos utilizados na cobertura e transmissão dos eventos</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.6.1"></a>5.6.1. Todas as entidades relacionadas com a cobertura e transmissão de Grandes Eventos operam com sistemas em redundância, garantindo a máxima&nbsp;segurança em caso de falhas e/ou interferências prejudiciais que porventura ocorram.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.6.2"></a>5.6.2. No entanto, diversos equipamentos e sistemas de transmissão estão vulneráveis a ações propositais ou a problemas provocados por emissões&nbsp;espúrias provenientes de outros equipamentos utilizados.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.6.3"></a>5.6.3. Antes da adoção de qualquer medida fiscalizatória, deve ser preenchido e entregue à Coordenação Local da Anatel o Formulário de Reclamação&nbsp;de Interferência Prejudicial constante do <a title="Acesse o item" href="#item7.1.3" rel="alternate">item 7.1.3</a>, para que essa defina os Agentes de Fiscalização e as medidas investigativas/fiscalizatórias que serão&nbsp;adotadas.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.6.4"></a>5.6.4. Havendo constatação de qualquer interferência prejudicial em suas faixas de operação, devem-se adotar os procedimentos de rápido&nbsp;atendimento (prioridade “2”), utilizando todos os recursos técnicos possíveis disponibilizados pela Anatel para sua solução em tempo hábil.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.6.5"></a>5.6.5. Caso a fonte das interferências prejudiciais seja localizada em área de risco à integridade dos Agentes de Fiscalização, a Coordenação Local da&nbsp;Anatel deverá solicitar apoio imediato das forças de segurança pública atuantes em Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.6.6"></a>5.6.6. Sendo o causador da interferência prejudicial uma entidade:</p>
+<p style="padding-left: 90px; text-align: justify;">I - Clandestina, de qualquer serviço de telecomunicações ou de radiodifusão, deve-se seguir o definido no Procedimento de Fiscalização&nbsp;de Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 90px; text-align: justify;">II - Autorizada, de qualquer serviço de telecomunicações ou de radiodifusão, deverá ser efetuada vistoria/inspeção técnica na(s)&nbsp;estação(ões) interferente(s), conforme definido no Procedimento de Fiscalização de Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 90px; text-align: justify;">III - Atuante nos próprios Grandes Eventos (estrangeira ou não) e:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Autorizada pela Anatel (equipamentos possuem a devida etiqueta de autorização), deve-se efetuar vistoria/inspeção técnica nos&nbsp;equipamentos com o intuito de confirmar a fonte da interferência e verificação de seus parâmetros técnicos junto ao seu cadastro de&nbsp;etiquetagem. Caso alguma anormalidade seja constatada, deve-se seguir o definido no Procedimento de Fiscalização de Abordagem em&nbsp;Grandes Eventos;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Que não esteja autorizada pela Anatel (equipamentos não possuem etiqueta de autorização), nacional ou não, deve-se seguir a&nbsp;recomendação específica definida no Procedimento de Fiscalização de Abordagem em Grandes Eventos.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item5.7"></a>5.7. Interferências em serviços de interesse coletivo e redes Wi-Fi</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.1"></a>5.7.1. Os serviços de telecomunicações de interesse coletivo são essenciais para a realização do evento, a começar pelo Serviço Móvel Especializado&nbsp;(SME), muito utilizado pelas equipes de produção para sua intercomunicação e também pelo próprio público presente.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.2"></a>5.7.2. Também o Serviço Móvel Pessoal (SMP), com seus serviços de voz, aliados às tecnologias de transmissão/recepção de dados 2G, 3G e 4G,&nbsp;representam importantíssima contribuição para a realização dos eventos, seja pelas transações em máquinas de cartões de crédito sem fio, seja pela utilização&nbsp;dos serviços móveis por equipes de reportagem, seja pela própria comunicação do público presente.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.3"></a>5.7.3. É sabido, entretanto, que diversas fontes podem provocar interferências prejudiciais nas faixas de operação de tais serviços. Uma delas trata-se&nbsp;da própria irradiação do 2º harmônico de rádios comunicadores operando na faixa de 450 a 470 MHz. Outras fontes comuns de interferência são equipamentos&nbsp;de radiação restrita operando irregularmente na faixa de 907 a 915 MHz, tais como babás eletrônicas, câmeras e roteadores de internet sem fio.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.4"></a>5.7.4. Também os equipamentos reforçadores e repetidores de celular representam um sério problema quando instalados sem a administração por&nbsp;parte das prestadoras do SMP e SME, uma vez que causam interferências em suas redes. Além disso, há o risco de utilização de jammers, mais conhecidos&nbsp;como bloqueadores de sinais de telefonia celular, que acabam interferindo nos sinais de telefonia celular em uma grande área.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.5"></a>5.7.5. No tocante às redes de acesso wi-fi, sua disponibilização se dá nas faixas de 2,4 GHz e 5,8 GHz, por meio da instalação de pontos de acesso&nbsp;espalhados por todas as áreas de interesse, formando os denominados clusters. Entretanto, por operarem em faixas de frequência de radiação restrita, tais&nbsp;equipamentos estão altamente suscetíveis a interferências prejudiciais provocadas por diversos outros equipamentos de radiação restrita, tais como&nbsp;impressoras e telefones sem fio.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.6"></a>5.7.6. Antes da adoção de qualquer medida fiscalizatória, deve ser preenchido e entregue à Coordenação Local da Anatel o Formulário de Reclamação&nbsp;de Interferência Prejudicial constante do <a title="Acesse o item" href="#item7.1.3" rel="nofollow">item 7.1.3</a>, para que esta defina os Agentes de Fiscalização e as medidas investigativas/fiscalizatórias que serão&nbsp;adotadas.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.7"></a>5.7.7. Havendo constatação de qualquer interferência prejudicial devem-se adotar os procedimentos de rápido atendimento da mesma (prioridade “3”),&nbsp;utilizando todos os recursos técnicos possíveis disponibilizados pela Anatel para sua solução em tempo hábil.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.8"></a>5.7.8. Caso a fonte das interferências prejudiciais seja localizada em área de risco à integridade dos Agentes de Fiscalização, a Coordenação Local da&nbsp;Anatel deverá solicitar apoio imediato das forças de segurança pública atuantes nos Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.9"></a>5.7.9. Sendo o causador da interferência prejudicial uma entidade:</p>
+<p style="padding-left: 90px; text-align: justify;">I - Clandestina, de qualquer serviço de telecomunicações ou de radiodifusão, deve-se seguir o definido no Procedimento de Fiscalização&nbsp;de Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 90px; text-align: justify;">II - Autorizada de qualquer serviço de telecomunicações ou de radiodifusão, deverá ser efetuada vistoria/inspeção técnica na(s)&nbsp;estação(ões) interferente(s), conforme definido no Procedimento de Fiscalização de Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 90px; text-align: justify;">III - Entidade atuante nos próprios Grandes Eventos (estrangeira ou não) e:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Autorizada pela Anatel (equipamento com a devida etiqueta de autorização), deve-se efetuar vistoria/inspeção técnica nos equipamentos&nbsp;com o intuito de confirmar a fonte da interferência e checagem de seus parâmetros técnicos junto ao seu cadastro de etiquetagem. Caso&nbsp;alguma anormalidade seja constatada, deve-se seguir o definido no Procedimento de Fiscalização de Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Que não esteja autorizada pela Anatel (equipamentos sem a etiqueta de autorização), nacional ou não, deve-se seguir a recomendação&nbsp;específica definida no Procedimento de Fiscalização de Abordagem em Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.7.10"></a>5.7.10. A utilização de bloqueadores de telefonia celular ou reforçadores e repetidores nos Grandes Eventos deve ser combatida pela Anatel e, se&nbsp;constatada, deverá ser lavrado Auto de Infração e os equipamentos apreendidos cautelarmente, sem prejuízo do encaminhamento e representação criminal às&nbsp;autoridades competentes.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item5.8"></a>5.8. Interferências em serviços de interesse restrito diversos</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.8.1"></a>5.8.1. Para a intercomunicação de equipes, são utilizados equipamentos portáteis do tipo radiocomunicadores HTs, (estações do Serviço Limitado&nbsp;Privado ou Serviço Limitado Especializado) ou rádios comunicadores, cujos mais modernos utilizam faixas de frequências de equipamentos de radiação restrita,&nbsp;que não necessitam de licenciamento por parte da Anatel.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.8.2"></a>5.8.2. Entretanto, embora tais empresas estejam relacionadas diretamente com a realização do evento, a ocorrência de interferências prejudiciais em&nbsp;seus sistemas de radiocomunicação não representa, a princípio, sérios riscos à realização de Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.8.3"></a>5.8.3. Antes da adoção de qualquer medida fiscalizatória, deve ser preenchido e entregue à Coordenação Local da Anatel o Formulário de Reclamação&nbsp;de Interferência Prejudicial constante do <a title="Acesse o item" href="#item7.1.3" rel="alternate">item 7.1.3</a>, para que esta defina os Agentes de Fiscalização e as medidas investigativas/fiscalizatórias que serão&nbsp;adotadas.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.8.4"></a>5.8.4. Havendo constatação de qualquer interferência prejudicial em tais faixas, devem-se adotar os procedimentos de rápido atendimento da mesma&nbsp;(prioridade “4”), utilizando todos os recursos técnicos possíveis disponibilizados pela Anatel para sua solução hábil.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.8.5"></a>5.8.5. Caso a fonte das interferências prejudiciais seja localizada em área de risco à integridade dos Agentes de Fiscalização, a Coordenação Local da&nbsp;Anatel deverá solicitar apoio imediato das forças de segurança pública atuantes em Grandes Eventos.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.8.6"></a>5.8.6. Sendo o causador da interferência prejudicial uma entidade:</p>
+<p style="padding-left: 90px; text-align: justify;">I - Clandestina, de qualquer serviço de telecomunicações ou de radiodifusão, deve-se seguir o definido no Procedimento de Fiscalização&nbsp;de Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 90px; text-align: justify;">II - Autorizada de qualquer serviço de telecomunicações ou de radiodifusão, deverá ser efetuada vistoria/inspeção técnica na(s)&nbsp;estação(ões) interferente(s), seguindo o definido no Procedimento de Fiscalização de Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 90px; text-align: justify;">III - Entidade atuante nos próprios Grandes Eventos (estrangeira ou não) e:</p>
+<p style="padding-left: 120px; text-align: justify;">a) Autorizada pela Anatel (equipamento com a devida etiqueta de autorização), deve-se efetuar vistoria/inspeção técnica nos equipamentos&nbsp;com o intuito de confirmar a fonte da interferência e checagem de seus parâmetros técnicos junto ao seu cadastro de etiquetagem. Caso&nbsp;alguma anormalidade seja constatada, deve-se seguir o definido no Procedimento de Fiscalização de Abordagem em Grandes Eventos;</p>
+<p style="padding-left: 120px; text-align: justify;">b) Que não esteja autorizada pela Anatel (equipamentos sem etiqueta de autorização) nacional ou não, deve-se seguir o definido no&nbsp;Procedimento de Fiscalização de Abordagem em Grandes Eventos.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item5.9"></a>5.9. Radiointerferências em comunicações via satélites geoestacionários</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.9.1"></a>5.9.1. Caso o evento possua demanda relevante de transmissões via satélite(s) geoestacionário(s) e seja necessário destacar equipe de tratamento de&nbsp;interferências, a depender do escopo de atuação da Anatel, poderá ser necessário obter informações adicionais, inclusive de redes de satélites adjacentes&nbsp;àqueles a serem utilizados para atividades diretamente relacionadas ao evento.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.9.2"></a>5.9.2. Para tal, o Coordenador local da Anatel no evento deverá contatar o Coordenador de Projetos e Radiomonitoração de Satélites da Gerência de&nbsp;Fiscalização (FIGF) com prazo mínimo recomendado de 6 meses de antecedência ao evento, para estudos e definição do escopo de atuação, incluindo&nbsp;planejamento de eventuais cenários previamente configurados para geolocalização de eventuais fontes interferentes a transponder(s) que serão utilizados.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.9.3"></a>5.9.3. A Coordenação local do evento será responsável por obter junto a organizadores e potenciais entidades que atuarão no evento (com&nbsp;antecedência mínima de 1 mês) dados sobre estações que farão uso de serviços via satélites geoestacionários, sob orientação prévia da Gerência de&nbsp;Fiscalização (FIGF) que informará quais dados deverão ser solicitados.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.9.4"></a>5.9.4. Interferência em Estação Terrena Receptora utilizada em grande evento: Na ocorrência de uma interferência em estação terrena de recepção que&nbsp;esteja sendo utilizada no evento, a coordenação local poderá solicitar à equipe MSAT a realização de uma atividade de medição espectral pontual, por meio da&nbsp;Estação de Radiomonitoração de Satélites da Anatel (EMSAT), visando a coleta de medidas relativas ao sinal de descida do transponder (<em>downlink</em>). Tal&nbsp;informação poderá ser usada para fins de comparação com o resultado de medição no local, obtido nas proximidades ou no sistema de recepção da estação&nbsp;interferida para caracterizar o caso como interferência terrestre e reduzir o tempo de solução.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.9.5"></a>5.9.5. Interferência em Estação Espacial utilizada em Grandes Eventos: Poderão ser canalizados os melhores esforços para geolocalização e&nbsp;identificação da estação terrena transmissora na região de cobertura do satélite interferido. Entretanto, devido ao alto nível de abrangência das redes e&nbsp;complexidade de atividade de geolocalização, a solução de interferência em estação espacial poderá levar prazo superior ao tempo destinado ao evento.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item5.9.6"></a>5.9.6. A fim de se minimizarem falsas expectativas, o coordenador local da Anatel no evento deverá alertar previamente a organização do evento de que&nbsp;a(s) entidade(s) deve(m) prever meios de redundância alternativos ao(s) sistema(s) via satélite a fim de mitigar eventuais riscos à organização e transmissão do&nbsp;evento.</p>
+<p style="text-align: justify;"><a name="item6"></a>6. REGISTRO DE OCORRÊNCIAS E RELATÓRIO DE INTERFERÊNCIAS</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item6.1"></a>6.1. Visando possibilitar o controle e registro de ocorrências de interferências pela Anatel, toda e qualquer reclamação de interferência prejudicial&nbsp;deverá ser informada em formulário próprio constante do <a title="Acesse o item" href="#item7.1.3" rel="alternate">item 7.1.3</a>.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item6.2"></a>6.2. Após a conclusão de atividades/diligências relativas ao tratamento de interferências, os Agentes de Fiscalização envolvidos nos trabalhos devem&nbsp;elaborar o Relatório de Interferência Radioelétrica, constante no Procedimento de Elaboração de Relatórios em Grandes Eventos, no qual devem detalhar os&nbsp;procedimentos adotados para a solução das interferências, suas causas e consequências para a realização de Grandes Eventos.</p>
+<p style="text-align: justify;"><a name="item7"></a>7. INFORMAÇÕES ADICIONAIS</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item7.1"></a>7.1. Nas seções seguintes são apresentadas informações adicionais úteis às equipes de fiscalização.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item7.1.1"></a>7.1.1. Características Técnicas dos Equipamentos de Telecomunicações Utilizados em Eventos</p>
+<p style="padding-left: 90px; text-align: justify;">I - Cobertura e Transmissão dos Eventos</p>
+<p style="padding-left: 120px; text-align: justify;">a) Sistemas de câmeras de alta definição sem fio (<em>microlinks</em>):</p>
+<p style="padding-left: 60px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image01.png" alt=""></p>
+<p style="text-align: center;">Figura&nbsp; 1 - Câmera portátil sem fio HD (acoplada ao módulo de RF e Antena)</p>
+<p style="text-align: justify;">Características:</p>
+<p style="text-align: justify;">Frequências de Operação: na maioria dos casos, operam entre 1,8 GHz e 2,5 GHz. Existem alguns modelos ajustáveis que operam em faixas superiores a 5&nbsp;GHz;&nbsp;</p>
+<p style="text-align: justify;">Licença de Funcionamento: Serviço Auxiliar de Radiodifusão e Correlatos – SARC Reportagem Externa ou Serviço Limitado Privado. Na ausência destes, faz-se&nbsp;necessária a Autorização de Uso Temporário do Espectro;</p>
+<p style="text-align: justify;">Potência de operação: ajustável até 5 W;</p>
+<p style="text-align: justify;">Largura de Banda ocupada: até 20 MHz. Em geral utilizam 8 ou 10 MHz;</p>
+<p style="text-align: justify;">Modelos mais comuns: RF Central CMT II (Certificado Anatel nº 2277-09-5480) / Gigawave HD D-Cam (certificação não encontrada) / XDCam AR370HD&nbsp;(certificação não encontrada) / Vislink L1500 SD/HD (certificação não encontrada).</p>
+<p style="text-align: justify; padding-left: 120px;">b) Sistemas de microfones sem fio UHF</p>
+<p><img src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image02.png" alt="" width="143" height="183"> <img src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image03.png" alt="" width="65" height="203"> <img src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image04.png" alt="" width="132" height="132"> <img src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image05.png" alt="" width="140" height="140"> <img src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image06.png" alt="" width="225" height="156"></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">Figura 2 - Microfones UHF utilizados por equipes de reportagem e produção dos eventos</p>
+<p style="text-align: justify;">Características:</p>
+<p style="text-align: justify;">Frequências de Operação: na maioria dos casos, operam na faixa UHF entre 500 e 700 MHz;</p>
+<p style="text-align: justify;">Licença de Funcionamento: Por serem equipamentos de radiação restrita, não necessitam licenciamento de estação junto à Anatel. Na ausência de&nbsp;certificação, necessitam de Autorização de Uso Temporário do Espectro;</p>
+<p style="text-align: justify;">Potência de operação: existem modelos com até 200 mW;</p>
+<p style="text-align: justify;">Modulação: FM (maioria);</p>
+<p style="text-align: justify;">Canalização: em geral ocupam canalização de 100 kHz;</p>
+<p style="text-align: justify;">Modelos mais comuns: Shure UR1 (Certificado Anatel nº 2065-08-3473) / Lectrosonics SMQV (Certificado Anatel nº 2666-12-8279) / Sony WRT-8P (Certificado&nbsp;Anatel n° 3294-11-5419).</p>
+<p style="text-align: justify; padding-left: 120px;">c) Sistemas de transmissão/recepção de sinais de vídeo/áudio via satélite (<em>uplinks/downlinks</em>):</p>
+<p>&nbsp; <img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image07.png" alt=""></p>
+<p style="text-align: center;">Figura 3 - Estações terrenas de transmissão/recepção de satélite em eventos</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image08.png" alt=""></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">Figura 4 - Estação móvel de transmissão/recepção via satélite</p>
+<p style="text-align: justify;">Características:</p>
+<p style="text-align: justify;">Frequências de Operação: Bandas C (3,7 a 6,425 GHz) e Ku (10,95 a 14,50 GHz);</p>
+<p style="text-align: justify;">Licença de Funcionamento: Serviço Limitado Privado/Especializado por Satélite ou Serviço de Comunicação Multimídia – Estação Terrena. Na ausência destes,&nbsp;faz-se necessária a Autorização de Uso Temporário do Espectro.</p>
+<p style="text-align: justify; padding-left: 120px;">d) Sistemas de transmissão/recepção de sinais de vídeo/áudio terrestre (SARC):</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image09.png" alt=""></p>
+<p style="text-align: center;">Figura 5 - Estação móvel do SARC – Reportagem Externa</p>
+<p>&nbsp; <img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image10.png" alt=""></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">Figura 6 - Helicóptero de captura e transmissão de áudio e vídeo</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image11.png" alt=""></p>
+<p style="text-align: center;">Figura 7 - Motolink (câmera acoplada ao módulo de RF e Antena no bagageiro)</p>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Características:</p>
+<p style="text-align: justify;">Frequências de Operação: aquelas definidas na regulamentação do Serviço Auxiliar de Radiodifusão e Correlatos – SARC – Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2012/145-resolucao-584" rel="nofollow">Resolução Anatel nº 584,&nbsp;de 27 de março de 2012</a>;</p>
+<p style="text-align: justify;">Licença de Funcionamento: Serviço Auxiliar de Radiodifusão e Correlatos – SARC Reportagem Externa. Na ausência desta, faz-se necessária a Autorização de Uso Temporário do Espectro.</p>
+<p style="text-align: justify; padding-left: 120px;">e) Sistemas de comunicação portáteis terrestres:</p>
+<p style="text-align: justify;">&nbsp; <img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image12.png" alt=""></p>
+<p style="text-align: center;">Figura 8 - Radiocomunicador portátil tipo HT</p>
+<p style="text-align: justify;">Características:</p>
+<p style="text-align: justify;">Frequências de Operação: aquelas definidas no Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2011/35-resolucao-568" rel="nofollow">Resolução Anatel nº 568, de 15 de junho de 2011</a>&nbsp;(faixa de 148 a 174 MHz) e no Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2010/24-resolucao-558" rel="nofollow">Resolução&nbsp;Anatel nº 558, de 20 de dezembro de 2010</a>&nbsp;(faixa de 450 a 470 MHz);</p>
+<p style="text-align: justify;">Equipamentos de radiação restrita: operam na faixa de 902 a 907,5 MHz e de 915 a 928 MHz, de acordo com o Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2008/104-resolucao-506" rel="nofollow">Resolução Anatel nº 506, de 1º de&nbsp;julho de 2008</a>. Exemplo: Transceptor Motorola DTR620 (Certificado Anatel nº 0244-06-0506);</p>
+<p style="text-align: justify;">Licença de Funcionamento: Serviço Limitado Privado – SLP ou Serviço Limitado Especializado – SLE. Os equipamentos de radiação restrita não necessitam&nbsp;licenciamento de estação junto à Anatel. Neste caso, não havendo a certificação, necessitam de Autorização de Uso Temporário do Espectro;</p>
+<p style="text-align: justify;">Canalização: aquelas definidas nos regulamentos específicos descritos.</p>
+<p style="text-align: justify; padding-left: 90px;">II- Organização dos Eventos</p>
+<p>&nbsp; <img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image13.png" alt=""></p>
+<p style="text-align: center;">Figura 9 - Radiocomunicador portátil tipo HT</p>
+<p style="text-align: justify;">Características:</p>
+<p style="text-align: justify;">Frequências de Operação: aquelas definidas no Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2011/35-resolucao-568" rel="nofollow">Resolução Anatel nº 568, de 15 de junho de 2011</a>&nbsp;(faixa de 148 a 174 MHz) e no Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2010/24-resolucao-558" rel="nofollow">Resolução&nbsp;Anatel nº 558, de 20 de dezembro de 2010</a>&nbsp;(faixa de 450 a 470 MHz);</p>
+<p style="text-align: justify;">Equipamentos de radiação restrita: operam na faixa de 902 a 907,5 MHz e de 915 a 928 MHz, de acordo com o Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2008/104-resolucao-506" rel="nofollow">Resolução Anatel nº 506, de 1º de&nbsp;julho de 2008</a>. Exemplo: Transceptor Motorola DTR620 (Certificado Anatel nº 0244-06-0506);</p>
+<p style="text-align: justify;">Licença de Funcionamento: Serviço Limitado Privado – SLP ou Serviço Limitado Especializado – SLE. Os equipamentos de radiação restrita não necessitam&nbsp;licenciamento de estação junto à Anatel. Neste caso, não havendo a certificação, necessitam de Autorização de Uso Temporário do Espectro;</p>
+<p style="text-align: justify;">Canalização: aquelas definidas nos regulamentos específicos descritos;</p>
+<p style="text-align: justify;">Informação Complementar: Muitos representantes das equipes de produção dos eventos valem-se da utilização de sistemas troncalizados de despacho&nbsp;(<em>trunking</em>), correspondentes ao Serviço Móvel Especializado – SME, para a execução de suas tarefas.</p>
+<p style="text-align: justify; padding-left: 90px;">III - Segurança Pública e Forças Armadas</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image14.png" alt=""></p>
+<p style="text-align: center;">Figura 10 - Radiocomunicador portátil tipo HT</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image15.png" alt=""></p>
+<p style="text-align: center;">Figura 11 - Veículo Aéreo Não Tripulado – VANT pertencente às Forças Armadas do Brasil</p>
+<p style="text-align: justify;">Características:</p>
+<p style="text-align: justify;">Frequências de Operação: aquelas definidas no Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2011/35-resolucao-568" rel="nofollow">Resolução Anatel nº 568, de 15 de junho de 2011</a>&nbsp;(faixa de 148 a 174 MHz), no Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2010/20-resolucao-557" rel="nofollow">Resolução nº&nbsp;557, de 20 de dezembro de 2010</a>&nbsp;(faixa de 380 a 400 MHz) e no Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2010/24-resolucao-558" rel="nofollow">Resolução Anatel nº 558, de 20 de dezembro de 2010</a>&nbsp;(faixa de 450 a 470 MHz);</p>
+<p style="text-align: justify;">Licença de Funcionamento: Serviço Limitado Privado – SLP e Serviço Limitado Móvel Privativo – SLMP. As Forças Armadas (Exército, Marinha e Aeronáutica) não&nbsp;necessitam de autorização/licenciamento da Anatel quando se utilizam das faixas destinadas exclusivamente para fins militares;</p>
+<p style="text-align: justify;">Canalização: aquelas definidas nos regulamentos específicos descritos;</p>
+<p style="text-align: justify;">Informação Complementar: Ainda se encontra em estudos pela Área de Engenharia do Espectro da Anatel a destinação de faixas de frequências aos Veículos&nbsp;Aéreos Não Tripulados – VANT’s. Dentre elas, estão sendo estudadas as faixas de 448-450 MHz, 803-806 MHz e 5030-5250 MHz para tal propósito.</p>
+<p style="text-align: justify; padding-left: 90px;">IV - Redes wi-fi</p>
+<p style="text-align: justify;">&nbsp; <img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image16.png" alt=""></p>
+<p style="text-align: center;">Figura 12 - Cluster wi-fi utilizado em eventos</p>
+<p>&nbsp; <img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image17.png" alt=""></p>
+<p style="text-align: center;">Figura 13 - Modelo de access point utilizado em eventos</p>
+<p style="text-align: justify;">Características:</p>
+<p style="text-align: justify;">Frequências de Operação: 2,4 GHz e 5,8 GHz definidas no Anexo à <a title="Acesse a resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2008/104-resolucao-506" rel="nofollow">Resolução Anatel nº 506, de 1º de julho de 2008</a>. Podem também ser encontrados&nbsp;equipamentos roteadores sem fio operando na faixa de 902 a 907,5 MHz e de 915 a 928 MHz;</p>
+<p style="text-align: justify;">Licença de Funcionamento: Por se tratarem de equipamentos de radiação restrita, não necessitam de licenciamento junto à Anatel. Entretanto, a&nbsp;certificação/homologação é obrigatória;</p>
+<p style="text-align: justify;">Canalização: aquelas definidas no regulamento específico descrito;</p>
+<p style="text-align: justify;">Informação Complementar: Embora tais equipamentos sejam classificados como radiação restrita e, portanto, operarem em caráter secundário, há que se&nbsp;considerar que em alguns eventos os mesmos representam suma importância para algumas atividades dos eventos.</p>
+<p style="text-align: justify; padding-left: 90px;">V - Serviços de interesse coletivo</p>
+<p>&nbsp; <img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image18.png" alt=""></p>
+<p style="text-align: center;">Figura 14 - Estação Rádio-Base móvel (cow) muito utilizada em eventos</p>
+<p style="text-align: justify;">Características:</p>
+<p style="text-align: justify;">Frequências de Operação: aquelas definidas no<a title="Acesse o item" href="#item7.1.2" rel="nofollow"> item 7.1.2</a> .</p>
+<p style="text-align: justify;">Licença de Funcionamento: Serviço Móvel Pessoal – SMP e Serviço Móvel Especializado – SME. Uso temporário do espectro na ausência destas.</p>
+<p style="text-align: justify; padding-left: 120px;">a) Tipos de interferências sofridas mais comuns:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image19.png" alt=""></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">Figura 15 - Telefones sem fio DECT 6.0 operando na Banda F do SMP</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image20.png" alt=""></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">Figura 16 - Equipamentos de radiação restrita operando irregularmente entre 907,5 e 915 MHz</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image21.png" alt=""></p>
+<p style="text-align: center;">Figura 17 - Equipamentos repetidores e reforçadores de sinais não autorizados</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image22.png" alt=""></p>
+<p style="text-align: center;">Figura 18 - Equipamentos bloqueadores de sinais celulares (jammers)</p>
+<p>&nbsp;</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item7.1.2"></a>7.1.2. Frequências e Áreas do SMP e SME no Brasil</p>
+<p style="text-align: justify; padding-left: 90px;">I - Bandas do Serviço Móvel Pessoal – SMP</p>
+<table style="margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td align="center" width="185">
+<p>Banda</p>
+</td>
+<td align="center" width="186">
+<p>Downlink (ERB)</p>
+</td>
+<td align="center" width="186">
+<p>Uplink (Móvel)</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>450 MHz</p>
+</td>
+<td align="center" width="186">
+<p>461,00 a 468,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>451,00 MHz a 458,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" align="center" width="185">
+<p>A</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>869,00 a 880,00 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>824,00 a 835,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>890,00 a 891,50 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>845,00 a 846,50 MHz</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" align="center" width="185">
+<p>B</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>880,00 a 890,00 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>835,00 a 845,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>891,50 a 894,00 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>846,50 a 849,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" align="center" width="185">
+<p>&nbsp;</p>
+<p>D</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>955,00 a 957,50 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>910,00 a 912,50 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>1805,00 a 1820,00 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>1710,00 a 1725,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" align="center" width="185">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>E</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>957,50 a 960,00 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>912,50 a 915,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>1835,00 a 1850,00 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>1740,00 a 1755,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>F</p>
+</td>
+<td align="center" width="186">
+<p>2110,00 a 2125,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1920,00 a 1935,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>G</p>
+</td>
+<td align="center" width="186">
+<p>2125,00 a 2135,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1935,00 a 1945,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>H</p>
+</td>
+<td align="center" width="186">
+<p>2135,00 a 2145,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1945,00 a 1955,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>I</p>
+</td>
+<td align="center" width="186">
+<p>2145,00 a 2155,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1955,00 a 1965,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>J</p>
+</td>
+<td align="center" width="186">
+<p>2155,00 a 2165,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1965,00 a 1975,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>L</p>
+</td>
+<td align="center" width="186">
+<p>1975,00 a 1980,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1895,00 a 1900,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>M</p>
+</td>
+<td align="center" width="186">
+<p>1850,00 a 1860,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1755,00 a 1765,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>P</p>
+</td>
+<td align="center" width="186">
+<p>2620,00 a 2630,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>2500,00 a 2510,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" align="center" width="185">
+<p>V</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>2650,00 a 2660,00 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>2530,00 a 2540,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>2660,00 a 2670,00 MHz</p>
+<p>&nbsp;</p>
+</td>
+<td align="center" width="186">
+<p>&nbsp;</p>
+<p>2540,00 a 2550,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>W</p>
+</td>
+<td align="center" width="186">
+<p>2630,00 a 2650,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>2510,00 a 2530,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>X</p>
+</td>
+<td align="center" width="186">
+<p>2670,00 a 2690,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>2550,00 a 2570,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>943,50 a 946,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>898,50 a 901,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>952,50 a 955,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>907,50 a 910,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1820,00 a 1822,50 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1725,00 a 1727,50 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1822,50 a 1825,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1727,50 a 1730,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1825,00 a 1827,50 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1730,00 a 1732,50 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1827,50 a 1830,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1732,50 a 1735,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1830,00 a 1832,50 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1735,00 a 1737,50 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1832,50 a 1835,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1737,50 a 1740,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1860,00 a 1865,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1765,00 a 1770,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1865,00 a 1870,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1770,00 a 1775,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1870,00 a 1872,50 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1775,00 a 1777,50 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1872,50 a 1875,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1777,50 a 1780,00 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1875,00 a 1877,50 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1780,00 a 1782,50 MHz</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="185">
+<p>Extensão</p>
+</td>
+<td align="center" width="186">
+<p>1877,50 a 1880,00 MHz</p>
+</td>
+<td align="center" width="186">
+<p>1782,50 a 1785,00 MHz</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: left; padding-left: 90px;">II - Bandas do Serviço Móvel Especializado – SME</p>
+<table style="margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td align="center" width="186">
+<p>Downlink (ERB)</p>
+</td>
+<td align="center" width="185">
+<p>Uplink (Móvel)</p>
+</td>
+<td align="center" width="186">
+<p>Resolução Anatel</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>421,675 a 425,850 MHz</p>
+</td>
+<td align="center" width="185">
+<p>411,675 a 415,850 MHz</p>
+</td>
+<td align="center" width="186">
+<p>395/2005</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>378,875 a 380,000 MHz</p>
+</td>
+<td align="center" width="185">
+<p>368,875 a 370,000 MHz</p>
+</td>
+<td align="center" width="186">
+<p>556/2010</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>392,550 a 394,575 MHz</p>
+</td>
+<td align="center" width="185">
+<p>382,550 a 384,575 MHz</p>
+</td>
+<td align="center" width="186">
+<p>557/2010</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>851,000 a 866,000 MHz</p>
+</td>
+<td align="center" width="185">
+<p style="text-align: center;">806,000 a 821,000 MHz</p>
+</td>
+<td align="center" width="186">
+<p>455/2006</p>
+</td>
+</tr>
+<tr>
+<td align="center" width="186">
+<p>935,000 a 937,500 MHz</p>
+</td>
+<td align="center" width="185">
+<p>896,000 a 898,500 MHz</p>
+</td>
+<td align="center" width="186">
+<p>455/2006</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: justify; padding-left: 120px;">a) Para informações sobre as bandas ocupadas por prestadoras e por região ou município, deve-se acessar o sistema de banco de dados da&nbsp;Agência – SITAR. Devido à complexidade e grande quantidade de informações, as mesmas não foram disponibilizadas neste documento.</p>
+<p style="padding-left: 120px;">b) No tocante ao SMP, a consulta sobre as áreas de prestação e faixas de frequência por prestadora pode ser acessada diretamente no&nbsp; link&nbsp;<a title="Acesse o site" href="http://sistemas.anatel.gov.br/stel/Consultas/SMP/AreaPrestacaoFrequencia/tela.asp?SISQSmodulo=18839" rel="nofollow">http://sistemas.anatel.gov.br/stel/Consultas/SMP/AreaPrestacaoFrequencia/tela.asp?SISQSmodulo=18839</a>&nbsp;</p>
+<p style="padding-left: 120px;">c) Já em relação ao SME, a relação de entidades e áreas de cobertura encontra-se no link:&nbsp;<a title="Acesse o site" href="http://www.anatel.gov.br/Portal/verificaDocumentos/documentoVersionado.asp?  numeroPublicacao=226291&amp;documentoPath=226291.pdf&amp;Pub=&amp;URL=/Portal/verificaDocumentos/documento.asp" rel="nofollow">http://www.anatel.gov.br/Portal/verificaDocumentos/documentoVersionado.asp? &nbsp;numeroPublicacao=226291&amp;documentoPath=226291.pdf&amp;Pub=&amp;URL=/Portal/verificaDocumentos/documento.asp</a>&nbsp;</p>
+<p style="padding-left: 60px;"><a name="item7.1.3"></a>7.1.3. Formulário de Reclamação de Interferência Prejudicial</p>
+<p style="text-align: left;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port50632/image23.png" alt=""></p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item7.1.4"></a>7.1.4. Todos os formulários estão disponíveis no repositório de normas da Superintendência (SFINET - Regulamentação).</p>
+<p>&nbsp;</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_892"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Revisão" class="link-categoria">Revisão</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Procedimento" class="link-categoria">Procedimento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Fiscalização" class="link-categoria">Fiscalização</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Radiointerferência" class="link-categoria">Radiointerferência</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Grandes%20eventos" class="link-categoria">Grandes eventos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaFiscalizacao" class="link-categoria">NormaFiscalizacao</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PortariaVigente" class="link-categoria">PortariaVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

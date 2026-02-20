@@ -1,0 +1,3518 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="1fe76eb629cdb60149b83520-text/javascript">
+  </script>
+  <script type="1fe76eb629cdb60149b83520-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="1fe76eb629cdb60149b83520-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 217, de 21 de março de 2000 (REVOGADA)
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2000/580-resolucao-217"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Aprovação, Regulamento, Gestão da qualidade, Plano Geral de Metas de Qualidade, PGMQ, Atendimento ao consumidor, Telefone público, Código de acesso do assinante, Telefonia fixa, Serviço Telefônico Fixo Comutado, STFC, TelefoniaFixa, PrestacaoServicosTelecom, ResolucaoRevogada" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Aprova o Regulamento de Indicadores de Qualidade do Serviço Telefônico Fixo Comutado. (Revogada pela Resolução nº 417/2005)" name="description"/>
+   <title>
+    Anatel - Resolução nº 217, de 21 de março de 2000 (REVOGADA)
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1694832264" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=22616895" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"dd701a070621539de75cbf44226023e7","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="1fe76eb629cdb60149b83520-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="1fe76eb629cdb60149b83520-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="1fe76eb629cdb60149b83520-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="1fe76eb629cdb60149b83520-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="1fe76eb629cdb60149b83520-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1185604564" type="1fe76eb629cdb60149b83520-text/javascript">
+    </script>
+    <script type="1fe76eb629cdb60149b83520-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="1fe76eb629cdb60149b83520-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026164404" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/2000/580-resolucao-217">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/2000" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/2000">
+             2000
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 217, de 21 de março de 2000 (REVOGADA)
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177 current active">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-1fe76eb629cdb60149b83520-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-1fe76eb629cdb60149b83520-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="1fe76eb629cdb60149b83520-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="1fe76eb629cdb60149b83520-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 217, de 21 de março de 2000 (REVOGADA)
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Quinta, 23 Março 2000 09:16
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Quinta, 20 Fevereiro 2025 11:52
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 8375
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">
+                  <a href="/legislacao/resolucoes/2005/390-resolucao-417#art2" rel="noopener noreferrer" target="_blank" title="acesse à resolução">
+                   Revogada pela Resolução nº 417/2005
+                  </a>
+                 </td>
+                 <td style="width: 50%; text-align: justify;" valign="middle">
+                  <p style="text-align: justify;">
+                   Aprova o Regulamento de Indicadores de Qualidade do Serviço Telefônico Fixo Comutado.
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p style="text-align: justify;">
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=52&amp;data=23/03/2000">
+                23/3/2000
+               </a>
+               .
+              </p>
+              <p style="text-align: justify;">
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+                </strong>
+                , no uso das atribuições que lhe foram conferidas pelo
+                <a href="/legislacao/leis/2-lei-9472#art22" rel="noopener noreferrer" target="_blank" title="Acesse o artigo">
+                 art. 22
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997, e pelo
+                <a href="/legislacao/decretos/3-decreto-2338#art35" rel="noopener noreferrer" target="_blank" title="Acesse o artigo">
+                 art. 35
+                </a>
+                do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO os comentários recebidos em decorrência da Consulta Pública nº 174, de 26 de agosto de 1999, publicada no Diário Oficial da União de 27 de agosto de 1999;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <span class="texto-recuo-1a-linha">
+                 CONSIDERANDO deliberação tomada em sua Reunião nº 108, realizada em 15 de março de 2000,
+                </span>
+               </span>
+              </p>
+              <p class="resolve" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                RESOLVE:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art1">
+                </a>
+                Art. 1º Aprovar o Regulamento de Indicadores de Qualidade do Serviço Telefônico Fixo Comutado, na forma do Anexo a esta Resolução.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art2">
+                </a>
+                Art. 2º Esta Resolução entra em vigor na data de sua publicação.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                RENATO NAVARRO GUERREIRO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Presidente do Conselho
+               </span>
+              </p>
+              <p>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                ANEXO À RESOLUÇÃO Nº 217, DE 21 DE MARÇO DE 2000
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                REGULAMENTO DE INDICADORES DE QUALIDADE DO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                SERVIÇO TELEFÔNICO FIXO COMUTADO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DISPOSIÇÕES GERAIS
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Abrangência e dos Objetivos
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art1">
+                </a>
+                Art. 1º Este regulamento estabelece as definições, métodos e freqüência de coleta de informações, consolidação e envio, à Agência Nacional de Telecomunicações - Anatel, dos indicadores de qualidade apresentados no Plano Geral de Metas de Qualidade para o Serviço Telefônico Fixo Comutado - PGMQ, aprovado pela Resolução nº 30, de 29 de junho de 1998.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art2">
+                </a>
+                Art. 2º O conjunto de informações do presente regulamento tem por objetivo possibilitar o desenvolvimento do processo de gestão, pela Anatel, da qualidade do Serviço Telefônico Fixo Comutado, destinado ao uso do público em geral - STFC, prestado nos regimes público e privado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Este regulamento é aplicável a todas as chamadas realizadas no âmbito da rede de suporte do STFC, assim como, a todas as chamadas entre esta rede e redes de suporte a outros serviços de telecomunicações, dentre eles o Serviço Móvel Celular.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Disposições Gerais
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art3">
+                </a>
+                Art. 3º Todos os custos relacionados com o cumprimento do disposto no presente regulamento serão suportados exclusivamente pelas prestadoras do STFC, conforme estabelecido no parágrafo 1º do Art. 1º do PGMQ.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art4">
+                </a>
+                Art. 4º É obrigatória pelas prestadoras do STFC, a coleta, a consolidação e o envio à Anatel, das informações relativas a todos os indicadores definidos no presente regulamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º O resultado consolidado por indicador deve ser enviado, mensalmente, à Anatel até o dia 10 do mês subsequente ao da coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º A fim de facilitar a gestão das informações relativas aos indicadores tratados, a Anatel definirá modo, formato e meio de envio a ser utilizado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art5">
+                </a>
+                Art. 5º A Anatel, em face dos avanços tecnológicos, poderá rever o disposto no presente regulamento, conforme observado no parágrafo 2º do Art. 1º do PGMQ.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art6">
+                </a>
+                Art. 6º Observado o disposto no parágrafo 4º do Art. 1º do PGMQ a Anatel poderá solicitar o detalhamento da composição de cada indicador por região, estado, localidade ou área de operação, considerando o método de coleta e consolidação definido neste regulamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Deve ser elaborado e encaminhado, à Anatel, até o dia 10 do mês subsequente ao da coleta, relatório específico incluindo diagnóstico e ações desenvolvidas, para todos os casos onde o indicador não atingir a meta estabelecida no PGMQ.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art7ºAs">
+                </a>
+                Art. 7ºAs informações coletadas e consolidadas mensalmente para cada indicador devem ser mantidas pelas respectivas prestadoras de STFC, por um período mínimo de 30 meses.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A Anatel pode solicitar, a seu critério, o envio das informações citadas no caput do artigo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art8">
+                </a>
+                Art. 8º A qualquer tempo e sem prévia comunicação, a coleta e consolidação poderão ser acompanhadas pela Anatel, que poderá, a seu critério, realizar a coleta de dados, utilizando recursos próprios ou, sob sua gerência, de terceiros ou da prestadora.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art9">
+                </a>
+                Art. 9º A Anatel pode, nos termos contidos no Contrato de Concessão ou Termo de Autorização, tornar disponíveis ao público em geral as informações apresentadas pelas prestadoras, relativas a este Regulamento.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições Gerais
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art10">
+                </a>
+                Art. 10. Para fins deste Regulamento, são adotadas as seguintes definições:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - Acesso: conjunto de recursos físicos e lógicos pelos quais um usuário é conectado a uma rede de telecomunicações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - Acesso Digital: acesso que faz uso, exclusivamente, de recursos digitais a partir da interface da central local à qual o usuário está conectado;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - Acesso Instalado: acesso, inclusive os destinados ao uso coletivo, que encontra-se em serviço ou dispõe de todas as facilidades necessárias para entrar em serviço;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - Acesso em Serviço: acesso instalado, inclusive os destinados ao uso coletivo, colocado a disposição de usuário;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - Assinante: pessoa natural ou jurídica que firma contrato com a Prestadora, para fruição do serviço;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - Chamada Completada: aquela que resulta em comunicação com o destino desejado pelo usuário chamador;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VII - Chamada Não Completada por Congestionamento: chamada que não resultou em comunicação com o usuário chamado, devido a congestionamento na rede;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VIII - Código de Acesso: conjunto de caracteres numéricos ou alfanuméricos, estabelecido em Plano de Numeração, que permite a identificação de assinante, de terminal de uso público ou de serviço a ele vinculado;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IX - Congestionamento: estado da rede de telecomunicações caracterizado pela não disponibilidade adequada de meios para estabelecimento da comunicação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                X - Conta: valor cobrado pela prestadora de STFC, referente a prestação de modalidade de serviço de sua outorga, por meio de documento de cobrança emitido por ela própria ou por terceiros;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XI - Conta com Reclamação de Erro: conta sobre a qual o usuário registra reclamação contestando informações nela contidas;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XII - Conta Contestada com Crédito Devolvido: conta com reclamação de erro, sobre a qual foi efetivada a devolução de valores cobrados;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XIII - Localidade: toda a parcela circunscrita do território nacional que possua um aglomerado permanente de habitantes, caraterizada por um conjunto de edificações, permanentes e adjacentes, formando uma área continuamente construída com arruamentos reconhecíveis, ou dispostas ao longo de uma via de comunicação, tais como Capital Federal, Capital Estadual, Cidade, Vila, Aglomerado Rural e Aldeia;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XIV - Período de Maior Movimento - PMM: para efeito da coleta de dados, utilizados no cálculo dos indicadores de qualidade do PGMQ, devem ser adotados os horários a seguir indicados, referenciados ao horário local, salvo disposição em contrário.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                a) PMM matutino - das 9 horas às 11 horas;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                b) PMM vespertino - das 14 horas às 16 horas; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                c) PMM noturno - das 20 horas às 22 horas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XV - Ponto de Coleta: ponto físico onde devem ser coletados os dados a serem utilizados para cálculo dos indicadores de qualidade do PGMQ;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XVI - Sinal de Discar: aquele que indica ao usuário chamador que a rede está preparada para receber as informações que permitem o estabelecimento de uma chamada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XVII - Solicitação de Reparo: toda comunicação, verbal ou escrita, de anormalidade no funcionamento do acesso de usuário e TUP;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XVIII - Solicitação de Reparo Atendida: solicitação de reparo cujo processo de reparo foi considerado concluído;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XIX - Solicitação de Reparo Originada por Terceiros: solicitação feita por um usuário e relacionada ao funcionamento de serviço utilizado por outro usuário;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XX - Solicitação de Reparo Procedente: solicitação cuja existência de anormalidade foi confirmada pela prestadora de serviço;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXI - Solicitação de Reparo Repetida: nova solicitação feita por usuário em tempo menor ou igual a 30 dias contados da data da solicitação original, independentemente da execução ou não do reparo;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXII - Solicitação de Serviço de Mudança de Endereço: solicitação de mudança do local de prestação do serviço;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXIII - Solicitação de Serviço de Mudança de Endereço Atendida: solicitação que teve a ativação do acesso no novo endereço;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXIV - Solicitação de Serviço de Mudança de Endereço Pendente: solicitação que está aguardando a ativação do acesso no novo endereço;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXV - Telefone de Uso Público - TUP: aquele que permite, a qualquer pessoa, utilizar, por meio de acesso de uso coletivo, o Serviço Telefônico Fixo Comutado, independentemente de assinatura ou inscrição junto à prestadora ;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXVI - Usuário: qualquer pessoa que se utiliza do Serviço Telefônico Fixo Comutado, independentemente de assinatura ou inscrição junto à prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DOS INDICADORES DE QUALIDADE DO SERVIÇO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art11">
+                </a>
+                Art. 11. O indicador Obtenção do Sinal de Discar é definido como a taxa de tentativas de obtenção do sinal de discar, em um tempo máximo de espera de até 3 segundos, após o acionamento do terminal para a condição de dar início a discagem ou marcação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de tentativas nas quais se obtém sinal de discar em até 3 segundos, e o total de tentativas para obtenção do sinal de discar, realizadas no período de coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art12">
+                </a>
+                Art. 12. O indicador Chamadas Locais Originadas Completadas é definido como a taxa de tentativas de originar chamadas locais que resultam em comunicação com o usuário chamado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de chamadas locais originadas completadas, e o número total de tentativas de originar chamadas locais, realizadas no período de coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art13">
+                </a>
+                Art. 13. O indicador Chamadas de Longa Distância Nacionais Originadas Completadas é definido como a taxa de tentativas de originar chamadas de longa distância nacionais, utilizando uma determinada Prestadora, que resultam em comunicação com o usuário chamado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de chamadas de longa distância nacionais originadas completadas, utilizando uma determinada Prestadora, e o número total de tentativas de originar chamadas de longa distância nacionais, utilizando a mesma Prestadora, realizadas no período de coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art14">
+                </a>
+                Art. 14. O indicador Chamadas de Longa Distância Internacionais Terminadas Completadas é definido como a taxa de tentativas de terminar chamadas de longa distância internacionais que resultam em comunicação com o usuário chamado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de chamadas de longa distância internacionais terminadas completadas, e o número total de tentativas de terminar chamadas de longa distância internacionais, realizadas no período de coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art15">
+                </a>
+                Art. 15. O indicador Chamadas Locais Originadas Não Completadas por Congestionamento é definido como a taxa de tentativas de originar chamadas locais que não resultam em comunicação com o usuário chamado, por motivo de congestionamento na rede.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de tentativas de originar chamadas locais que não resultam em comunicação com o usuário chamado, por motivo de congestionamento na rede, e o número total de tentativas de originar chamadas locais, realizadas no período de coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art16">
+                </a>
+                Art. 16. O indicador Chamadas de Longa Distância Nacionais Originadas Não Completadas por Congestionamento é definido como a taxa de tentativas de originar chamadas de longa distância nacionais, utilizando uma determinada Prestadora, que não resultam em comunicação com o usuário chamado, por motivo de congestionamento na rede.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de tentativas de originar chamadas de longa distância nacionais, utilizando uma determinada Prestadora, que não resultam em comunicação com o usuário chamado, por motivo de congestionamento na rede, e o número total de tentativas de originar chamadas de longa distância nacionais utilizando a mesma Prestadora, realizadas no período de coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art17">
+                </a>
+                Art. 17. O indicador Chamadas de Longa Distância Internacionais Terminadas Não Completadas por Congestionamento é definido como a taxa de tentativas de terminar chamadas de longa distância internacionais que não resultam em comunicação com o usuário chamado, por motivo de congestionamento na rede.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de tentativas de terminar chamadas de longa distância internacionais que não resultam em comunicação com o usuário chamado, por motivo de congestionamento na rede, e o número total de tentativas de terminar chamadas de longa distância internacionais, realizadas no período de coleta.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art18">
+                </a>
+                Art. 18. A coleta deve ser realizada em cada PMM, uma vez a cada mês, em dia determinado no calendário anual estabelecido pela Anatel.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Para os indicadores referentes às chamadas de longa distância nacionais e internacionais, os PMMs devem ser referenciados ao horário de Brasília.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art19">
+                </a>
+                Art. 19. Para os indicadores Obtenção de Sinal de Discar, Chamadas Locais Originadas Completadas, Chamadas Locais Originadas Não Completadas por Congestionamento, Chamadas de Longa Distância Nacionais Originadas Completadas e Chamadas de Longa Distância Nacionais Originadas Não Completadas por Congestionamento, o ponto de coleta deve ser a central de comutação com função local, considerando a seguinte amostra:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - 90% das centrais com mais de 1.500 e até 5.000 acessos instalados;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - 95% das centrais com mais de 5.000 e com até 10.000 acessos instalados; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - 100% das centrais com mais de 10.000 acessos instalados.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O processo de seleção dos pontos de coleta deve assegurar que todas as centrais, , inclusive as com menos de 1500 acessos, sejam incluídas para aferição, pelo menos uma vez, no período de 6 meses.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art20">
+                </a>
+                Art. 20. Os indicadores Chamadas de Longa Distância Nacionais Originadas Completadas e Chamadas de Longa Distância Nacionais Originadas Não Completadas por Congestionamento, bem como, os indicadores Chamadas de Longa Distância Internacionais Terminadas Completadas e Chamadas de Longa Distância Internacionais Terminadas Não Completadas por Congestionamento devem ser calculados, respectivamente, pelas prestadoras do STFC nas Modalidades Longa Distância Nacional e Internacional.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A aferição das metas relativas ao STFC na Modalidade Longa Distância Nacional tomará por base os indicadores fornecidos pelas prestadoras do STFC na Modalidade Local.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º As informações fornecidas pelas prestadoras do STFC nas Modalidades Longa Distância Nacional e Internacional serão utilizadas, a critério da Anatel, no processo de acompanhamento e gestão da qualidade do STFC.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º O pontode coleta, no caso das prestadoras do STFC na Modalidade Longa Distância Internacional, deve ser a central de comutação, com função trânsito, da respectiva Prestadora, para a entrada do tráfego internacional em território brasileiro.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art21">
+                </a>
+                Art. 21. O ponto de coleta, no caso das prestadoras do STFC na Modalidade Longa Distância Nacional, deve ser cada central de comutação com função de interconexão com a Modalidade Local, considerando como amostra a totalidade de tais centrais em serviço.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art22">
+                </a>
+                Art. 22. A consolidação de cada indicador de qualidade de serviço deve ser realizada, para cada PMM, considerando a seguinte seqüência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - cálculo do valor para cada ponto de coleta definido;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - consolidação do valor do indicador por área local, calculado como a média ponderada dos valores obtidos por ponto de coleta, utilizando como ponderador o total de tentativas dos pontos de coleta de cada área local;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - consolidação do valor do indicador por área de numeração, calculado como a média ponderada dos valores obtidos por área local, utilizando como ponderador o total de tentativas de cada área local que compõe a área de numeração;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - consolidação do valor do indicador por área de atuação da prestadora, calculado como a média ponderada dos valores obtidos por área de numeração, utilizando como ponderador o total de tentativas de cada área de numeração que compõe a área de atuação da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DOS INDICADORES DE ATENDIMENTO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                ÀS SOLICITAÇÕES DE REPARO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art23">
+                </a>
+                Art. 23. O indicador Número de Solicitações de Reparo é definido como o número de solicitações de reparo por 100 acessos em serviço.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único .O indicador é calculado como a relação entre o número de solicitações de reparo recebidas, no período de coleta, e o número de acessos em serviço, em múltiplos de 100, ao final do período de coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art24">
+                </a>
+                Art. 24. O indicador Atendimento de Solicitações de Reparo de Usuários Residenciais é definido como a taxa de solicitações de reparo de acessos de usuários residenciais atendidas em até 24 horas, após a respectiva solicitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de solicitações de reparo de acessos de usuários residenciais atendidas em até 24 horas, após a respectiva solicitação, e o número de solicitações de reparo de acessos de usuários residenciais, recebidas no período de coleta, somadas ao número de solicitações de reparo de acessos de usuários residenciais recebidas anteriormente ao período de coleta e ainda pendentes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art25">
+                </a>
+                Art. 25. O indicador Atendimento de Solicitações de Reparo de Usuários Não Residenciais é definido como a taxa de solicitações de reparo de acessos de usuários não residenciais atendidas em até 8 horas, após a respectiva solicitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de solicitações de reparo de acessos de usuários não residenciais atendidas em até 8 horas, após a respectiva solicitação, e o número de solicitações de reparo de acessos de usuários não residenciais, recebidas no período de coleta, somadas ao número de solicitações de reparo de acessos de usuários não residenciais recebidas anteriormente ao período de coleta e ainda pendentes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art26">
+                </a>
+                Art. 26. O indicador Atendimento de Solicitações de Reparo de Usuários que são Prestadores de Serviços de Utilidade Pública é definido como a taxa de solicitações de reparo de acessos de tais usuários atendidas em até 2 horas, após a respectiva solicitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de solicitações de reparo de acessos de usuários que são prestadores de serviços de utilidade pública atendidas em até 2 horas, após a respectiva solicitação, e o número de solicitações de reparo de acessos de usuários que são prestadores de serviços de utilidade pública recebidas, no período de coleta, somadas ao número de solicitações de reparo de acessos de usuários que são prestadores de serviços de utilidade pública recebidas anteriormente ao período de coleta e ainda pendentes.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art27">
+                </a>
+                Art. 27. A coleta deve ser realizada mensalmente, computada no último dia do mês em todos os meses do ano.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art28">
+                </a>
+                Art. 28. A coleta deve tomar por base as informações constantes dos registros de solicitações de reparo e atendimento das solicitações de reparo de todos os centros de atendimento da prestadora, considerando que:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - devem ser computadas todas as solicitações de reparo originadas por usuários e por terceiros, iniciais e repetidas, procedentes e improcedentes causadas por interrupção programada ou não, decorrentes de defeito de mesma causa ou não, mesmo que os usuários tenham sido informados das respectivas ocorrências;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - não devem ser computadas as solicitações de reparo que têm como causa, defeitos nas instalações internas dos usuários.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único.Deve ser assegurada ao usuário, a disponibilidade do registro seqüencial da solicitação de reparo.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art29">
+                </a>
+                Art. 29. A consolidação de cada indicador deve ser realizada considerando a seguinte seqüência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - cálculo do valor do indicador, por área local;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - consolidação do valor do indicador, por área de numeração, calculado como a média ponderada dos valores obtidos por área local, utilizando como ponderador o total de solicitações de reparo de cada área local que compõe a área de numeração;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - consolidação do valor do indicador por área de atuação da prestadora, calculado como a média ponderada dos valores obtidos por área de numeração, utilizando como ponderador o total de solicitações de reparo de cada área de numeração que compõe a área atuação da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO IV
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DOS INDICADORES DE ATENDIMENTO ÀS SOLICITAÇÕES
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DE MUDANÇA DE ENDEREÇO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art30">
+                </a>
+                Art. 30. O indicador Atendimento às Solicitações de Serviço de Mudança de Endereço de Usuários Residenciais, é definido como a taxa de solicitações de serviço de mudança de endereço de usuários residenciais, dentro de uma área local, atendidas em até 3 dias úteis, contados a partir do recebimento da solicitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de solicitações de serviço de mudança de endereço de usuários residenciais, dentro de uma área local, atendidas em até 3 dias úteis, contados a partir do recebimento da solicitação, e o número total de solicitações de serviço de mudança de endereço de usuários residenciais recebidas, para a mesma área local, durante o período de coleta, somadas às recebidas anteriormente ao período de coleta e ainda pendentes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art31">
+                </a>
+                Art. 31. O indicador Atendimento às Solicitações de Serviço de Mudança de Endereço de Usuários Não Residenciais é definido como a taxa de solicitações de serviço de mudança de endereço de usuários não residenciais, dentro de uma dada área local, atendidas em até 24 horas, contadas a partir do recebimento da solicitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de solicitações de serviço de mudança de endereço de usuários não residenciais, dentro de uma área local, atendidas em até 24 horas, contadas a partir do recebimento da solicitação, e o número total de solicitações de serviço de mudança de endereço de usuários não residenciais recebidas, para a mesma área local, durante o período de coleta, somadas às recebidas anteriormente ao período de coleta e ainda pendentes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art32">
+                </a>
+                Art. 32. O indicador Atendimento de Solicitações de Serviço de Mudança de Endereço de Usuários que são Prestadores de Serviços de Utilidade Pública é definido como a taxa de solicitações de serviço de mudança de endereço de tais usuários, atendidas em até 6 horas após a respectiva solicitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de solicitações de serviço de mudança de endereço de usuários que são prestadores de serviços de utilidade pública, dentro de uma área local, atendidas em até 6 horas após a respectiva solicitação, e o número total de solicitações de serviço de mudança de endereço de tais prestadores recebidas no período de coleta, somadas às recebidas anteriormente ao período de coleta e ainda pendentes.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art33">
+                </a>
+                Art. 33. A coleta deve ser realizada mensalmente, computada no último dia do mês em todos os meses do ano.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art34">
+                </a>
+                Art. 34. A coleta deve tomar por base as informações constantes dos registros de solicitações de serviço de mudança de endereço e atendimento dessas solicitações em todos os centros de atendimento da prestadora.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Deve ser assegurada ao usuário, a disponibilidade do registro seqüencial de solicitação de serviço de mudança de endereço.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art35">
+                </a>
+                Art. 35. A consolidação de cada indicador deve ser realizada considerando a seguinte seqüência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - cálculo do valor do indicador, por área local;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - consolidação do valor do indicador por área de numeração, calculado como a média ponderada dos valores obtidos por área local, utilizando como ponderador o total de solicitações recebidas, no período de coleta, somadas às recebidas anteriormente ao período de coleta e ainda pendentes, de cada área local que compõe a área de numeração;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - consolidação do valor do indicador por área de atuação da prestadora, calculado como a média ponderada dos valores obtidos por área de numeração, utilizando como ponderador o total de solicitações recebidas, no período de coleta, somadas às recebidas anteriormente ao período de coleta e ainda pendentes, de cada área de numeração que compõe a área de atuação da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO V
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DOS INDICADORES DE ATENDIMENTO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                POR TELEFONE AO USUÁRIO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art36">
+                </a>
+                Art. 36. O indicador Atendimento por Telefone ao Usuário é definido como a taxa de chamadas destinadas a serviços das prestadoras, que utilizem auto-atendimento ou intervenção de telefonistas, atendidas em até 10 segundos, contados a partir do término da marcação, pelo usuário, do respectivo código de acesso ao serviço.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de chamadas atendidas em até 10 segundos, contados a partir do término da marcação, pelo usuário, do respectivo código de acesso ao serviço, e o número total de chamadas originadas para o respectivo serviço, no período de coleta.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art37">
+                </a>
+                Art. 37. A coleta deve ser realizada para cada PMM, uma vez a cada mês, em dia determinado no calendário anual estabelecido pela Anatel.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art38">
+                </a>
+                Art. 38. A coleta deve ser feita nas centrais de comutação com função local, considerando as chamadas destinadas a todos os pontos de atendimento da prestadora, com base na seguinte amostra:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - 90% das centrais com mais de 1.500 e até 5.000 acessos instalados;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - 95% das centrais com mais de 5.000 e com até 10.000 acessos instalados; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - 100% das centrais com mais de 10.000 acessos instalados.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O processo de seleção dos pontos de coleta deve assegurar que todas as centrais, inclusive as com menos de 1.500 acessos, sejam incluídas para aferição, pelo menos, uma vez, no período de 6 meses.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art39">
+                </a>
+                Art. 39. A consolidação do indicador Atendimento por Telefone ao Usuário deve ser realizada, para cada PMM, considerando a seguinte seqüência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - cálculo do valor do indicador, para cada ponto de coleta definido;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - consolidação do valor do indicador por área local., calculado como a média ponderada dos valores obtidos por ponto de coleta, utilizando como ponderador o número total de chamadas originadas de cada ponto de coleta da área local, para o respectivo serviço;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - consolidação do valor do indicador por área de numeração calculado como a média ponderada dos valores obtidos por área local, utilizando como ponderador o total de chamadas originadas de cada área local que compõe a área de numeração, para o respectivo serviço;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - consolidação do valor do indicador por área de atuação da prestadora, calculado como a média ponderada dos valores obtidos por área de numeração, utilizando como ponderador o total de chamadas originadas de cada área de numeração que compõe a área de atuação da prestadora, para o respectivo serviço.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO VI
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DOS INDICADORES DE QUALIDADE
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                PARA TELEFONE DE USO PÚBLICO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art40">
+                </a>
+                Art. 40. O indicador Número de Solicitações de Reparo de Telefones de Uso Público é definido como o número de solicitações de reparo de telefones de uso público por 100 telefones de uso público em serviço.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação entre o número de solicitações de reparo de telefones de uso público recebidas, no período de coleta, e o número de telefones de uso público em serviço, em grupos de 100, ao final do período de coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art41">
+                </a>
+                Art. 41. O indicador Atendimento de Solicitações de Reparo de Telefones de Uso Público é definido como a taxa de solicitações de reparo de telefones de uso público atendidas em até 8 horas após a respectiva solicitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de solicitações de reparo de telefones de uso público atendidas em até 8 horas após a respectiva solicitação, e o número total de solicitações de reparo de telefones de uso público recebidas, no período de coleta, somadas ao número de solicitações recebidas anteriormente e ainda pendentes.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art42">
+                </a>
+                Art. 42. Para os indicadores Número de Solicitações de Reparo de Telefones de Uso Público e Atendimento de Solicitações de Reparo de Telefones de Uso Público as coletas devem ser realizadas mensalmente, computadas no último dia do mês em todos os meses do ano.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A coleta de dados deve tomar por base as informações constantes dos registros de todas as solicitações de reparo e de seus atendimentos.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Devem ser computadas todas as solicitações de reparo recebidas de empregados, do público em geral, iniciais e repetidas mesmo que causadas por interrupção programada ou, ainda, por ocorrência de defeito de mesma causa.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art43">
+                </a>
+                Art. 43. A consolidação de cada indicador deve ser realizada considerando a seguinte seqüência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - para o indicador Número de Solicitações de Reparo em TUPs:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                a) cálculo do valor do indicador por área local;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                b) consolidação do valor do indicador por área de numeração, calculado como a média ponderada dos valores obtidos por área local, utilizando como ponderador o número total de TUPs em serviço de cada área local que compõe a área de numeração;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                c) consolidação do valor do indicador por área de atuação da prestadora, calculado como a média ponderada dos valores obtidos por área de numeração, utilizando como ponderador o número total de TUPs em serviço em cada área de numeração que compõe a área de atuação da prestadora.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - para o indicador Atendimento de Solicitações de Reparo de TUPs:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                a) cálculo do valor do indicador por área local;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                b) consolidação do valor do indicador por área de numeração, calculado como a média ponderada dos valores obtidos por área local, utilizando como ponderador o número total de solicitações de reparo recebidas, no período de coleta, em cada área local que compõe a área de numeração, somada às solicitações recebidas anteriormente e ainda pendentes;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                c) consolidação do valor do indicador por área de atuação da prestadora, calculado como a média ponderada dos valores obtidos por área de numeração, utilizando como ponderador o número total de solicitações de reparo recebidas, no período de coleta, em cada área de numeração que compõe a área de atuação de prestadora, somadas as solicitações recebidas anteriormente e ainda pendentes.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO VII
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DO INDICADOR DE INFORMAÇÃO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DO CÓDIGO DE ACESSO DO USUÁRIO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art44">
+                </a>
+                Art. 44. O indicador Informação do Código de Acesso do Usuário é definido como a taxa de consultas referentes ao código de acesso de usuários respondidas em até 30 segundos, após o atendimento de cada consulta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de consultas referentes ao Código de Acesso de Usuários respondidas em até 30 segundos, contados após o atendimento de cada consulta, e o número de consultas recebidas no período de coleta.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art45">
+                </a>
+                Art. 45. A coleta deve ser realizada mensalmente, computada no último dia do mês em todos os meses do ano.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art46">
+                </a>
+                Art. 46. A coleta deve tomar por base os registros de todos os centros de atendimento de informações de código de acesso.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art47">
+                </a>
+                Art. 47. A consolidação do indicador deve ser realizada considerando a seguinte seqüência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - cálculo do indicador por centro de atendimento;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - consolidação do indicador por área de atuação da prestadora, da seguinte forma:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                a) para um ou mais centros que atendem apenas uma prestadora, o indicador deve ser calculado pela média ponderada dos valores obtidos por centro de atendimento, utilizando como ponderador o total de solicitações de cada centro de atendimento que compõe a área de atuação da prestadora;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                b) para centros que atendem mais de uma prestadora, no todo ou em parte, o indicador deve ser calculado a partir das consultas referentes a cada prestadora, utilizando os registros de todos os centros.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO VIII
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DO INDICADOR DE ATENDIMENTO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                À CORRESPONDÊNCIA DO USUÁRIO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art48">
+                </a>
+                Art. 48. O indicador Atendimento à Correspondência do Usuário é definido como a taxa de correspondências de usuário, que requerendo resposta, são respondidas em até 5 dias úteis, após seu registro de entrada na prestadora.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de correspondências de usuário que requerem resposta, respondidas em até 5 dias úteis, após seu registro de entrada na prestadora de serviço, e o número de correspondências recebidas, no período de coleta, que requerem resposta, somadas àquelas pendentes.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art49">
+                </a>
+                Art. 49. A coleta deve ser realizada mensalmente, computada no último dia do mês em todos os meses do ano.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art50">
+                </a>
+                Art. 50. A coleta deve tomar por base as informações constantes dos registros de recebimento de correspondências de usuário da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art51">
+                </a>
+                Art. 51. O cálculo do indicador Atendimento à Correspondência do Usuário deve ser realizado considerando a área de atuação da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO IX
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DO INDICADOR DE ATENDIMENTO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                PESSOAL AO USUÁRIO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art52">
+                </a>
+                Art. 52. O indicador Atendimento Pessoal ao Usuário é definido como a taxa de atendimentos pessoais ao usuário, iniciados em até 10 minutos.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de atendimentos pessoais aos usuários, iniciados em até 10 minutos, e o número total de atendimentos pessoais aos usuários, realizados no período de coleta.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art53">
+                </a>
+                Art. 53. A coleta deve ser realizada mensalmente, computada no último dia do mês em todos os meses do ano.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art54">
+                </a>
+                Art. 54. A coleta deve tomar por base as informações constantes dos registros de atendimento pessoal ao usuário de todos os centros de atendimento pessoal da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art55">
+                </a>
+                Art. 55. A consolidação do indicador deve ser realizada considerando a seguinte seqüência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - cálculo do valor do indicador por centro de atendimento pessoal;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - consolidação do valor do indicador por área de atuação da prestadora, calculado pela média ponderada dos valores por centro de atendimento pessoal, utilizando como ponderador o número total de atendimentos pessoais aos usuários, realizados em cada centro de atendimento que compõe a área de atuação da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO X
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DOS INDICADORES DE EMISSÃO DE CONTAS
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art56">
+                </a>
+                Art. 56. O indicador Número de Contas com Reclamação de Erro é definido como o número de reclamações de erro em contas por 1.000 contas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º O indicador deve considerar todas as reclamações de erro em contas, sendo calculado para cada modalidade de serviço de responsabilidade da prestadora.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Para as modalidades Longa Distância Nacional e Internacional, quando prestadas simultaneamente pela mesma prestadora, um único indicador deve ser calculado para representar Número de Contas com Reclamação de Erro.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º O indicador deve considerar as reclamações de erro em contas constantes nos documentos de cobrança emitidos pela própria prestadora ou por outras.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 4º. O indicador é calculado como a relação entre o número de reclamações de contas, incluindo as contestações de valores referentes a serviços prestados por terceiros e de todos os problemas de inteligibilidade das mesmase o número total de contas, em múltiplos de 1.000, no período de coleta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art57">
+                </a>
+                Art. 57. O indicador Número de Contas Contestadas com Crédito Devolvido é definido como a taxa de contas contestadas que tiveram seus créditos devolvidos pela prestadora ou por terceiros, designados por ela, antes da próxima conta.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º O indicador deve considerar todas as contas contestadas com créditos devolvidos antes da próxima conta, sendo calculado para cada modalidade de serviço de responsabilidade da prestadora.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Para as modalidades Longa Distância Nacional e Internacional, quando prestadas simultaneamente pela mesma prestadora, um único indicador deve ser calculado para representar o Número de Contas Contestadas com Crédito Devolvido.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º O indicador deve considerar as contas contestadas com crédito devolvido antes da próxima conta, constantes nos documentos de cobrança emitidos pela própria prestadora ou por outras.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 4º O indicador é calculado como a relação percentual entre o número de contas contestadas que tiveram seus créditos devolvidos, incluindo as contestações de valores referentes a serviços prestados por terceiros, antes da próxima conta, e o número de contas contestadas registradas no período de coleta.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art58">
+                </a>
+                Art. 58. A coleta deve ser realizada mensalmente, computada no último dia do mês em todos os meses do ano.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art59">
+                </a>
+                Art. 59. A coleta deve tomar por base as informações constantes dos registros de contestação de contas da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art60">
+                </a>
+                Art. 60. A consolidação de cada indicador deve ser realizada considerando a seguinte seqüência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - cálculo do valor do indicador por área de numeração;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - consolidação do valor por área de atuação da prestadora, calculado pela média ponderada dos valores obtidos por área de numeração, utilizando como ponderador:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                a) no caso do indicador Número de Contas com Reclamação de Erro, o número de reclamações de erro em conta em cada área de numeração que compõe a área de atuação da prestadora;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                b) no caso do indicador Número de Contas Contestadas com Crédito Devolvido, o número de contas contestadas registradas em cada área de numeração que compõe a área de atuação da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO XI
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DO INDICADOR DE MODERNIZAÇÃO DE REDE
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art61">
+                </a>
+                Art. 61. O indicador Modernização de Rede é definido como a taxa de digitalização da rede local.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O indicador é calculado como a relação percentual entre o número de acessos digitais instalados e o total de acessos instalados existentes no período de coleta.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método e Freqüência de Coleta
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art62">
+                </a>
+                Art. 62. A coleta deve ser realizada mensalmente, no último dia útil de cada mês, em todos os meses do ano.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art63">
+                </a>
+                Art. 63. A coleta deve tomar por base as informações constantes dos registros da prestadora, considerando todos os acessos digitais instalados no universo de acessos instalados da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Método de Consolidação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art64">
+                </a>
+                Art. 64. A consolidação do indicador deve ser realizada considerando a seguinte seqüência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - cálculo do valor do indicador por área local;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - consolidação do valor do indicador por área de numeração, calculado pela média ponderada dos valores obtidos por área local, utilizando como ponderador o número total de acessos instalados por área local que compõe a área de numeração;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - consolidação do valor do indicador por área de atuação da prestadora, calculado pela média ponderada dos valores obtidos por área de numeração, utilizando como ponderador o número total de acessos instalados por área de numeração que compõe a área de atuação da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO XII
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS SANÇÕES
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art65">
+                </a>
+                Art. 65. A infração deste Regulamento ou demais atos relativos a qualidade de prestação do STFC, prestado nos regimes público ou privado, sujeitará os infratores às seguintes sanções, aplicáveis pela Anatel, observado o disposto no Título VI "Das Sanções", do Livro III, da Lei nº 9.472, de 1997:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - por ato ou omissão contrário às disposições constantes do Contrato de Concessão, Termo de Autorização ou da regulamentação, que acarrete prejuízo na qualidade da prestação do STFC; multa de até R$ 40.000.000,00 (quarenta milhões de reais);
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - por ato ou omissão que traga óbice ou dificuldade ao exercício das atividades de fiscalização, dentre as quais as de acompanhamento da coleta e consolidação dos indicadores definidos neste Regulamento; multa de até R$ 20.000.000,00 (vinte milhões de reais);
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - pelo descumprimento de qualquer obrigação prevista, expressamente, na regulamentação de qualidade de prestação do STFC, exceto as indicadas nos incisos anteriores, cujas sanções já estejam neles estabelecidas; multa de até R$ 15.000.000,00 (quinze milhões de reais).
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Além do disposto no Contrato de Concessão ou Termo de Autorização, a infração, prescrita no inciso I, estará caracterizada quando a prestadora não cumprir, nos prazos estabelecidos na regulamentação, suas obrigações quanto a disponibilidade e correto funcionamento da rede, compatível com as metas de qualidade definidas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Além do disposto no Contrato de Concessão ou Termo de Autorização, a infração, prescrita no inciso II, terá sua gravidade definida em função da relevância da atividade de fiscalização obstada e será caracterizada pela violação, comissiva ou omissiva, direta ou indireta, da prestadora ou de seus prepostos, que impeça ou dificulte a atividade de fiscalização exercida pela Anatel, seus prepostos, agentes ou mesmo pelos usuários, especialmente:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                a) recusa da prestadora em atender solicitação de informação, formulada pela Anatel, relacionada a informações coletadas, métodos de coleta e processos de consolidação dos indicadores de qualidade de prestação do STFC ou outras informações a eles afetos;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                b) oferecimento de entrave à atuação dos agentes de fiscalização da Anatel;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                c) não envio ou envio intempestivo de qualquer dado, informação, relatório ou documento que, por força da regulamentação, deveria ser remetido à Anatel, nos prazos e condições por esta fixados.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art66">
+                </a>
+                Art. 66. Para aplicação das multas previstas, cobrança de multa moratória, reajuste de valores e definição da gravidade das sanções, serão observadas as disposições do respectivo contrato de concessão, termo de permissão ou termo de autorização.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO XIII
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DISPOSIÇÕES TRANSITÓRIAS
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art67">
+                </a>
+                Art. 67. As solicitações de mudança de endereço de usuários residenciais e não residenciais, cuja primeira instalação tenha sido realizada no período de 01/07/1999 a 30/06/2001, podem ser excluídas do cálculo dos respectivos indicadores de atendimento às solicitações de mudança, desde que as mesmas sejam realizadas em até 180 dias, contados a partir da data de instalação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º O prazo máximo para a exclusão das solicitações, conforme caput do artigo, é de 180 dias, contados a partir da data de solicitação de mudança, limitado a 31/12/2001.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º As solicitações de mudança de endereço de usuários que tenham sido excluídas, conforme tratado no caput do artigo, deverão ter seus registros de atendimento realizados separadamente contendo:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - número de solicitações pendentes ao final de cada mês; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - tempo médio de atendimento ao final de cada mês.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                TÍTULO XIV
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DISPOSIÇÕES FINAIS
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art68">
+                </a>
+                Art. 68. A fiscalização relativa ao cumprimento das definições, método e freqüência de coleta de informações e consolidação estabelecidas neste regulamento poderá ser realizada, nos termos da regulamentação, das seguintes formas:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - acompanhamento da coleta e consolidação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - auditoria realizada pela Anatel;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - pesquisas junto aos usuários dos serviços; e
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - ações de acompanhamento e avaliação realizadas por usuários ou grupo de usuários.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art69">
+                </a>
+                Art. 69. A Anatel, excepcionalmente, poderá analisar, conforme estabelecido em regulamentação, situações particulares de desempenho de prestadoras do serviço, quanto a indicadores específicos.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="art70">
+                </a>
+                Art. 70. A critério da Anatel poderão ser realizadas reuniões gerenciais específicas para acompanhamento e avaliação dos resultados obtidos pelas prestadoras.
+               </span>
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_580">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/2000" rel="tag">
+                 2000
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação">
+                 Aprovação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento">
+                 Regulamento
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Gestão%20da%20qualidade">
+                 Gestão da qualidade
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Plano%20Geral%20de%20Metas%20de%20Qualidade">
+                 Plano Geral de Metas de Qualidade
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PGMQ">
+                 PGMQ
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Atendimento%20ao%20consumidor">
+                 Atendimento ao consumidor
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Telefone%20público">
+                 Telefone público
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Código%20de%20acesso%20do%20assinante">
+                 Código de acesso do assinante
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Telefonia%20fixa">
+                 Telefonia fixa
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Telefônico%20Fixo%20Comutado">
+                 Serviço Telefônico Fixo Comutado
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=STFC">
+                 STFC
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaFixa">
+                 TelefoniaFixa
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PrestacaoServicosTelecom">
+                 PrestacaoServicosTelecom
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada">
+                 ResolucaoRevogada
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="1fe76eb629cdb60149b83520-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="1fe76eb629cdb60149b83520-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="1fe76eb629cdb60149b83520-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="1fe76eb629cdb60149b83520-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-1fe76eb629cdb60149b83520-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="1fe76eb629cdb60149b83520-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="1fe76eb629cdb60149b83520-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="1fe76eb629cdb60149b83520-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

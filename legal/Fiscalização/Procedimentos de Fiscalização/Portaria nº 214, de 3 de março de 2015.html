@@ -1,0 +1,1129 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Portaria nº 214, de 3 de março de 2015</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/813-portaria-214">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Procedimento, Fiscalização, Verificação, Cumprimento, Obrigação de fazer, Prestadora de serviço de telecomunicações, Serviço de Comunicação Multimídia, SCM, Exploração clandestina, BandaLarga, NormaFiscalizacao, PortariaVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprova o Procedimento de Fiscalização para verificação do cumprimento das obrigações técnicas pelas prestadoras autorizadas do Serviço de Comunicação Multimídia (SCM) e da exploração clandestina desse serviço">
+	<title>Anatel - Portaria nº 214, de 3 de março de 2015</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=160835033" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1250706927" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"17262e2165d588c42d8653a0bfc422d7","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=687042883" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025010945" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/procedimentos-de-fiscalizacao/813-portaria-214">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/procedimentos-de-fiscalizacao" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/procedimentos-de-fiscalizacao" class="pathway">Procedimentos de Fiscalização</a> <span class="separator">&gt;</span> <span>Portaria nº 214, de 3 de março de 2015</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203 current active"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948bdb7a5a0a27e3&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Portaria nº 214, de 3 de março de 2015		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quarta, 04 Março 2015 09:05			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Segunda, 23 Dezembro 2019 14:54			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 41105			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">Aprova o Procedimento de Fiscalização para verificação do cumprimento das obrigações técnicas pelas prestadoras autorizadas do Serviço de Comunicação Multimídia (SCM) e da exploração clandestina desse serviço.</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço nº 214, de 4/3/2015.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><strong>O GERENTE DE SUPORTE À FISCALIZAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</strong>, no uso das competências que lhe foram atribuídas pelo <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/450-resolucao-612#art190" rel="nofollow">art. 190</a>, I, do Regimento Interno da Agência, aprovado pela Resolução nº 612, de 29 de abril de 2013;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o Regulamento do Serviço de Comunicação Multimídia, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2013/465-resolucao-614" rel="nofollow">Resolução nº 614, de 28 de maio de 2013</a>;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a necessidade de orientar e estabelecer regras e procedimentos para verificação do cumprimento das obrigações técnicas do Serviço de Comunicação Multimídia (SCM) e da exploração clandestina desse serviço;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO as definições previstas no <a title="Acesse o artigo" href="/legislacao/resolucoes/2012/308-resolucao-596#art3" rel="nofollow">art. 3º</a>, XII e XX, do Regulamento de Fiscalização, aprovado pela Resolução nº 596, de 6 de agosto de 2012; bem como as regras fixadas nos arts.<a title="Acesse o artigo" href="/legislacao/resolucoes/2012/308-resolucao-596#art8" rel="alternate"> 8º </a>a <a title="Acesse o artigo" href="/legislacao/resolucoes/2012/308-resolucao-596#art11" rel="alternate">11</a>&nbsp;do referido Regulamento;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO as contribuições recebidas em decorrência da Consulta Interna nº 627, realizada no período de 16/07/2014 a 18/08/2014;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o processo" href="http://sistemas.anatel.gov.br/sicap/web/displayWeb.asp?id=1867591" rel="nofollow">Processo nº 53500.021107/2006</a>.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><strong>R E S O L V E:</strong></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a name="art1"></a>Art. 1º&nbsp; Aprovar o Procedimento de Fiscalização para verificação do cumprimento das obrigações técnicas do Serviço de Comunicação Multimídia (SCM) e da exploração clandestina desse serviço.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a name="art2"></a>Art. 2º&nbsp; Revogar o PF.039, aprovado pela Portaria nº 989, de 12 de novembro de 2008.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a name="art3"></a>Art. 3º&nbsp; Esta Portaria entra em vigor na data de sua publicação no Boletim de Serviço.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;">RAPHAEL GARCIA DE SOUZA</p>
+<p style="text-align: center;">ANEXO À PORTARIA Nº 214, DE 03 DE MARÇO DE 2015.</p>
+<p style="text-align: center;">Procedimento de Fiscalização para verificação do cumprimento das obrigações técnicas do Serviço de Comunicação Multimídia (SCM) e da exploração clandestina desse serviço.</p>
+<p class="1-PFT1" style="margin-top: 6.0pt; text-align: center; tab-stops: 3.0cm;" align="center">Capítulo I</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: center; tab-stops: 3.0cm; layout-grid-mode: char;" align="center">Do Objetivo</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 30px;" align="center"><a name="item1"></a>1. O presente Procedimento de Fiscalização estabelece os procedimentos para a verificação do cumprimento das obrigações técnicas nas entidades autorizadas do Serviço de Comunicação Multimídia (SCM) e a fiscalização da exploração clandestina deste serviço.</p>
+<p class="1-PFT1" style="margin-top: 6.0pt; text-align: center; tab-stops: 3.0cm;" align="center">Capítulo II</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: center; tab-stops: 2.0cm 3.0cm; layout-grid-mode: char;" align="center">Das referências</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 30px;" align="center"><a name="item2"></a>2.&nbsp;Para fins destes Procedimentos de Fiscalização são aplicáveis os seguintes documentos:</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">a)&nbsp;<a title="Acesse a Lei" href="/legislacao/leis/2-lei-9472" rel="nofollow">Lei nº 9.472, de 16 de julho de 1997</a> - Lei Geral de Telecomunicações (LGT).</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">b) Regulamento de Serviços de Telecomunicações, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/1998/34-resolucao-73" rel="nofollow">Resolução nº 73, de 25 de novembro de 1998</a>, e suas alterações.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">c) Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2000/129-resolucao-242" rel="nofollow">Resolução nº 242, de 30 de novembro de 2000</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">d) Regulamento sobre as condições de uso de radiofrequências da faixa de 2400 MHz a 2483,5 MHz por equipamentos utilizando tecnologia de espalhamento espectral ou tecnologia de multiplexação ortogonal por divisão de frequências, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2005/323-resolucao-397" rel="nofollow">Resolução nº 397, de 6 de abril de 2005</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">e) Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita, republicado, com alterações, pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2008/104-resolucao-506" rel="nofollow">Resolução nº 506, de 1º de julho de 2008</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">f) Regulamento para Definição de Formatos e Tolerâncias para Dados Geodésicos Fornecidos à Anatel, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2011/44-resolucao-571" rel="nofollow">Resolução nº 571, de 28 de setembro de 2011</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">g) Regulamento de Exploração Industrial de Linha Dedicada (EILD) aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2012/332-resolucao-590" rel="nofollow">Resolução nº 590, de 15 de maio de 2012</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">h) Regulamento de Fiscalização, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2012/308-resolucao-596" rel="nofollow">Resolução nº 596, de 6 de agosto de 2012</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">i) Regimento Interno da Anatel, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2013/450-resolucao-612" rel="nofollow">Resolução nº 612, de 29 de abril de 2013</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">j) Regulamento de Aplicação de Sanções Administrativas (RASA), aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2012/191-resolucao-589" rel="nofollow">Resolução nº 589, de 7 de maio de 2012</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">k) Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2013/465-resolucao-614" rel="nofollow">Resolução nº 614, de 28 de maio de 2013</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">l) Regulamento do Serviço Limitado Privado, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2013/480-resolucao-617" rel="nofollow">Resolução nº 617, de 19 de junho de 2013</a>;</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">m) Regulamento Geral de Interconexão (RGI), aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2005/167-resolucao-410" rel="nofollow">Resolução nº 410, de 11 de julho de 2005</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">n) Regulamento de Uso do Espectro Radioelétrico, aprovado pela <a title="Acesse a resolução" href="/legislacao/resolucoes/2001/231-resolucao-259" rel="nofollow">Resolução nº 259, de 19 de abril de 2001</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">o) Norma sobre Preparação, Execução e Conclusão de Missões de Fiscalização, aprovada pela <a title="Acesse a portaria" href="/legislacao/instrucoes-de-fiscalizacao/801-portaria-n%C2%BA-613,-de-29-de-maio-de-2007" rel="nofollow">Portaria nº 613, de 29 de maio de 2007</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">p) <a title="Acesse a norma" href="http://www.anatel.gov.br/hotsites/Direito_Telecomunicacoes/TextoIntegral/ANE/prt/minicom_19950531_148.pdf" rel="alternate">Norma nº 004/95</a>&nbsp;– Uso de meios da rede pública de telecomunicações para acesso à Internet, aprovada pela <a title="Acesse a portaria" href="/legislacao/normas-do-mc/78-portaria-148" rel="nofollow">Portaria nº 148, do Ministério das Comunicações</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">q) Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - 2014, aprovado pelo <a title="Acesse o ato" href="http://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=1&amp;pagina=51&amp;data=11/07/2014&amp;captchafield=firistAccess" rel="nofollow">Ato nº 6.363, de 08 de julho de 2014</a>.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">r) Glossário de Termos da Anatel, disponível em: <a title="Acesse o link" href="/legislacao/glossario" rel="nofollow">http://legislacao.anatel.gov.br/glossario</a>.</p>
+<p class="1-PFT1" style="margin-top: 6.0pt; text-align: center; tab-stops: 2.0cm 3.0cm;" align="center">Capítulo III</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: center; tab-stops: 2.0cm 3.0cm; layout-grid-mode: char;" align="center">Das definições</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 30px;" align="center"><a name="item3"></a>3.&nbsp;Para fins deste Procedimento de Fiscalização são adotadas as definições constantes dos documentos referenciados no item anterior e as seguintes:</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">a) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=ASSINANTE&amp;faqid=795" rel="nofollow">ASSINANTE</a>: pessoa natural ou jurídica que possui vínculo contratual com a Prestadora para fruição do SCM.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">b) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=CONEX%C3%83O%20%C3%80%20INTERNET&amp;faqid=2384" rel="nofollow">CONEXÃO À INTERNET</a>: habilitação de um terminal para envio e recebimento de pacotes de dados pela Internet, mediante a atribuição ou autenticação de um endereço IP.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">c)<a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=ESTA%C3%87%C3%83O%20DE%20TELECOMUNICA%C3%87%C3%95ES&amp;faqid=1001" rel="nofollow"> ESTAÇÃO ou ESTAÇÃO DE TELECOMUNICAÇÕES</a>: conjunto de equipamentos ou aparelhos, dispositivos e demais meios necessários à realização de telecomunicação, seus acessórios e periféricos e, quando for o caso, as instalações que os abrigam e complementam, inclusive, terminais portáteis.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">d) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=EXPLORA%C3%87%C3%83O%20INDUSTRIAL%20DE%20LINHA%20DEDICADA&amp;faqid=1376" rel="nofollow">EXPLORAÇÃO INDUSTRIAL DE LINHA DEDICADA (EILD)</a>: modalidade de exploração industrial em que uma prestadora de serviços de telecomunicações fornece a outra prestadora de serviços de telecomunicações, mediante remuneração preestabelecida, linha dedicada com características técnicas definidas para constituição da rede de serviços desta última.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">e) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=INFORMA%C3%87%C3%83O%20MULTIM%C3%8DDIA&amp;faqid=2385" rel="nofollow">INFORMAÇÃO MULTIMÍDIA</a>: sinais de áudio, vídeo, dados, voz e outros sons, imagens, textos e outras informações de qualquer natureza.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">f) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=INTERCONEX%C3%83O&amp;faqid=1910" rel="nofollow">INTERCONEXÃO</a>: ligação entre Redes de Telecomunicações funcionalmente compatíveis, de modo que os Usuários de serviços de uma das redes possam se comunicar com Usuários de serviços de outra ou acessar serviços nela disponíveis.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">g) <a title="Acesse a licença" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=LICEN%C3%87A%20PARA%20FUNCIONAMENTO%20DE%20ESTA%C3%87%C3%83O&amp;faqid=1495" rel="nofollow">LICENÇA PARA FUNCIONAMENTO DE ESTAÇÃO</a>: ato administrativo que autoriza o início do funcionamento da estação individual, em nome da concessionária, permissionária e autorizada de serviços de telecomunicações e de uso de radiofrequências.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">h) <a title="Acesse o link" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=LINHA%20DEDICADA&amp;faqid=1508" rel="alternate">LINHA DEDICADA</a>: oferta de capacidade de transmissão de sinais digitais entre dois pontos fixos, em âmbito nacional e internacional, utilizando quaisquer meios dentro de uma área de prestação de serviço.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">i) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=PRESTADORA&amp;faqid=2386" rel="nofollow">PRESTADORA</a>: pessoa jurídica que, mediante autorização, presta o SCM.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">j) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=PSCM&amp;faqid=2387" rel="nofollow">PSCM</a>: Prestadora do Serviço de Comunicação Multimídia.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">k) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=REDE%20DE%20ACESSO&amp;faqid=902" rel="nofollow">REDE DE ACESSO</a>: segmento de rede que vai do terminal de usuário até o primeiro ponto de comutação.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">l) <a title="Descrição" href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=REDE%20DE%20TRANSPORTE&amp;faqid=921" rel="nofollow">REDE DE TRANSPORTE (TRONCO)</a>: rede de comunicação responsável pela agregação do tráfego oriundo das redes de acesso, pela distribuição do tráfego dirigido às redes de acesso, bem como sua interconexão a outras redes de acesso ou transporte.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">m) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=LINHA%20DEDICADA&amp;faqid=1508" rel="nofollow">LINHA DEDICADA</a>: oferta de capacidade de transmissão de sinais digitais entre dois pontos fixos, em âmbito nacional e internacional, utilizando quaisquer meios dentro de uma área de prestação de serviço.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">n) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=LINHA%20DEDICADA&amp;faqid=1508" rel="nofollow">LINHA DEDICADA</a>: oferta de capacidade de transmissão de sinais digitais entre dois pontos fixos, em âmbito nacional e internacional, utilizando quaisquer meios dentro de uma área de prestação de serviço.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">o) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=TERMINA%C3%87%C3%83O%20DE%20REDE&amp;faqid=1281" rel="nofollow">TERMINAÇÃO DE REDE</a>: ponto de acesso individualizado de uma dada rede de telecomunicações.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 60px;" align="center">p) <a title="Definição" href="/legislacao/glossario?view=faq&amp;catid=&amp;search=VELOCIDADE&amp;faqid=690" rel="nofollow">VELOCIDADE</a>: capacidade de transmissão da informação multimídia expressa em bits por segundo (bps), medida conforme critérios estabelecidos em regulamentação específica.</p>
+<p class="1-PFT1" style="margin-top: 0cm; padding-left: 30px; text-align: center;" align="center">Capítulo IV</p>
+<p class="1-PFT1" style="margin-top: 0cm; padding-left: 30px; text-align: center;" align="center">Das disposições gerais</p>
+<p class="1-PFT1" style="margin-top: 0cm; padding-left: 30px; text-align: center;" align="center">Seção I</p>
+<p class="1-PFT1" style="margin-top: 0cm; padding-left: 30px; text-align: center;" align="center">Da metodologia e procedimentos gerais</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 30px;" align="center"><a name="item4"></a>4.&nbsp;Este Procedimento de Fiscalização é composto pela descrição dos métodos desenvolvidos para a verificação do cumprimento das obrigações técnicas pelas prestadoras do SCM e a fiscalização da exploração clandestina deste serviço.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 30px;" align="center"><a name="item5"></a>5.&nbsp;O Agente de Fiscalização deverá possuir acesso completo ao módulo de consulta dos Sistemas Interativos da Anatel, do Sistema de Fiscalização, do Sistema de Informações Técnicas para Administração das Radiocomunicações (Sitarweb), módulos do Sistema de Serviços de Telecomunicações (STEL), do Sistema de Coleta de Informações&nbsp;(SICI) e do Sistema de Informações Geográficas (SigAnatel), de visualizadores de informações geográficas, além de outros julgados pertinentes.</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 30px;" align="center"><a name="item6"></a>6.&nbsp;Cabe aos Agentes de Fiscalização adotar as providências adicionais a este Procedimento de Fiscalização, necessárias para obtenção de provas adequadas e suficientes para sustentar suas constatações, inclusive extensão de períodos de análise, promovendo o pleno convencimento acerca da verificação do cumprimento das obrigações ou do cometimento de irregularidades, buscando sempre obter a verdade sobre os atos, fatos e atividades fiscalizados.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Seção II</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Do planejamento da ação de fiscalização</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item7"></a>7.&nbsp;Os Agentes de Fiscalização deverão consultar o sistema de informações técnicas referente às estações de telecomunicações do SCM e aos radioenlaces associados ao SCM da Prestadora submetida à fiscalização, no Sitarweb, módulo STEL, opção Consulta, bem como no SICI, para obtenção prévia dos dados das estações objetos de fiscalização. O resultado da pesquisa servirá de suporte para comparação das características técnicas autorizadas com aquelas constatadas durante a ação de fiscalização.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item8"></a>8.&nbsp;Recomenda-se consultar os sítios de Internet ou outras fontes de informação a fim de subsidiar a atividade de fiscalização, em especial:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">a)&nbsp;Procurar pelo sítio da entidade fiscalizada para verificar os responsáveis pelo sítio e, através de seus meios de publicidade, as características operacionais e práticas comerciais que utiliza; e</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">b)&nbsp;Pesquisar no Sistema de Fiscalização o histórico de atividades realizadas no endereço e/ou na entidade fiscalizada.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item9"></a>9. No caso de denúncias de entidade não outorgada, existindo uma estação do SCM licenciada no endereço reclamado, poderá ser remetido Requerimento de Informações (RI) à PSCM responsável pela estação, de modo a:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">a)&nbsp;Identificar o responsável pela PSCM;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">b)&nbsp;Obter números de telefones e e-mails válidos, para eventuais contatos;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">c)&nbsp;Solicitar cópia dos contratos firmados entre a PSCM e a entidade denunciada;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">d)&nbsp;Solicitar cópia dos contratos firmados entre a entidade fiscalizada e seus assinantes;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">e)&nbsp;Solicitar cópia de contrato que caracterize o fornecimento de enlaces de dados (contrato de EILD, de interconexão, etc.);</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">f)&nbsp;Solicitar diagrama de interligação de todas as estações que compõe a rede de transporte e de acesso;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">g)&nbsp;Solicitar comprovante de Inscrição Estadual da PSCM no Cadastro de Contribuintes do ICMS do Estado onde está explorando o serviço; e</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">h)&nbsp;Solicitar outras informações necessárias à ação de fiscalização.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item10"></a>10.&nbsp;O procedimento acima descrito poderá ser adotado também no caso em que o denunciante expressamente associar uma PSCM à entidade denunciada.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item11"></a>11.&nbsp;Caso a ação de fiscalização ocorra em estações assistidas por prepostos da Prestadora que se encontrem em município, localidade ou região distinta de onde ocorrerá a ação de fiscalização, recomenda-se agendamento prévio.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item12"></a>12.&nbsp;A comunicação, quando necessária, será endereçada ao representante da entidade por ofício, com aviso de recebimento, ou simplesmente por correio eletrônico, solicitando confirmação do destinatário, contendo as seguintes informações:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">a)&nbsp;A previsão do período da fiscalização;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">b)&nbsp;O município, localidade ou região das estações que serão fiscalizadas; e</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">c)&nbsp;Indicação e contatos dos Agentes de Fiscalização que, a princípio, serão responsáveis pela ação de fiscalização.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item13"></a>13.&nbsp;Caso a tentativa de comunicação por correio eletrônico não seja bem sucedida, deverá ocorrer uma segunda tentativa por ofício.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item14"></a>14.&nbsp;Caso a Prestadora, de forma injustificada, não disponibilize acesso às suas estações, no período previsto e após confirmação do recebimento do ofício referido nos itens anteriores, o Agente de Fiscalização deverá adotar as providências cabíveis no sentido de autuá-la com base na Norma sobre Requerimento de Informações e Tratamento dos Casos de Obstrução à Atividade de Fiscalização c/c arts. <a title="Acesse o artigo" href="/legislacao/resolucoes/2012/308-resolucao-596#art38" rel="nofollow">38</a>&nbsp;e <a title="Acesse o artigo" href="/legislacao/resolucoes/2012/308-resolucao-596#art39" rel="nofollow">39</a>&nbsp;do Regulamento de Fiscalização.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Seção III</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Da execução da ação de fiscalização</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center"><a id="subseção I"></a>Subseção I</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Da averiguação preliminar</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item15"></a>15.&nbsp;O objetivo dessa etapa é caracterizar, em sede de ação de fiscalização, o uso de redes de telecomunicação para prestação de serviço de interesse coletivo, com ou sem uso de radiofrequência (RF).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item16"></a>16.&nbsp;No caso de redes do SCM com uso da tecnologia Wi-Fi, recomenda-se o uso de analisador de redes sem fio, tendo em vista a consistência das evidências técnicas que o dispositivo permite obter, tais como:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">a)&nbsp;Relação de redes sem fio ativas na região fiscalizada nas bandas de 2,4 GHz e 5,8 GHz;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">b)&nbsp;Comparação do Service Set IDentifier - SSID (“nome da rede”) detectado com o informado na demanda de fiscalização;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">c)&nbsp;O canal de RF utilizado pela estação fiscalizada, de forma a auxiliar os casos em que seja necessária a análise espectral da faixa;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">d)&nbsp;Os endereços Media Access Control – MAC (“endereço físico associado à interface de comunicação, que conecta um dispositivo à rede”) dos equipamentos transceptores de RF utilizados na estação fiscalizada, bem como a existência e a quantidade de estações remotas (hosts) conectadas;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">e)&nbsp;A direção mais precisa de onde fica a estação em caso de dúvida quanto à localização do transceptor fiscalizado; e</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">f)&nbsp;Registros das telas do analisador de espectro para ilustração do uso de RF, previamente monitorados com analisador de redes Wi-Fi. Esta análise pode auxiliar em casos de radio interferência, podendo, ainda, ser considerada mais um indício da exploração clandestina do SCM.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item17"></a>17.&nbsp;Em situações que são utilizados meios confinados (ex.: fibra óptica, cabo coaxial e cabos multipares), o Agente de Fiscalização deve estar atento à topologia da rede com registro de pontos de concentração de acesso (ex.: <em>hub</em>, <em>switch</em> e roteadores), bem como aos pontos de terminação de rede.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item18"></a>18.&nbsp;Nos resultados das medições obtidas devem constar, no mínimo, as seguintes informações: endereço, data, horário e coordenadas geográficas do local da medição.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item19"></a>19.&nbsp;O Agente de Fiscalização deve obter o máximo possível de registros fotográficos, detalhando a edificação e o sistema irradiante (ex.: torre, mastro e antenas) de modo que fique claro que o endereço a ser abordado é o constante da demanda e registrar a identificação da empresa por meio de sua marca ou outros símbolos que a identifiquem.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item20"></a>20.&nbsp;Ao final da averiguação preliminar pode ser constatado:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">a)&nbsp;Serviço prestado por entidade outorgada:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 90px;" align="center">i.&nbsp;estação isenta de licenciamento;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 90px;" align="center">ii.&nbsp;estação não licenciada;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 90px;" align="center">iii.&nbsp;estação licenciada;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">b)&nbsp;Serviço prestado por entidade não outorgada:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 90px;" align="center">i.&nbsp;exploração clandestina de SCM com provimento de rede de acesso;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 90px;" align="center">ii.&nbsp;exploração clandestina de SCM com participação de uma PSCM;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 90px;" align="center">iii.&nbsp;transferência da autorização e da responsabilidade pela exploração e execução da prestação do serviço.</p>
+<p class="1-PFT1" style="margin-top: 6pt; padding-left: 30px; text-align: center;" align="center">Subseção II</p>
+<p class="1-PFT1" style="margin-top: 6pt; padding-left: 30px; text-align: center;" align="center">Do serviço prestado por entidade outorgada</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item21"></a>21. De posse de todos os dados obtidos na etapa de Averiguação Preliminar, o Agente de Fiscalização deverá realizar verificações técnicas.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item22"></a>22.&nbsp;Constatando-se a existência de estações isentas e não cadastradas, o Agente de Fiscalização deverá orientar quanto ao cadastramento no Banco de Dados da Agência, conforme previsto do <a title="Acesse o artigo" href="/legislacao/resolucoes/2008/104-resolucao-506#art3" target="_blank" rel="alternate noopener noreferrer">art. 3º</a>, parágrafo único, II, do Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item22.1"></a>22.1.&nbsp;O fato de a estação de telecomunicações ser isenta de licenciamento não a desobriga de realizar o cadastramento no Banco de Dados da Agência, conforme disposto no Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item23"></a>23.&nbsp;Caso seja encontrada uma estação que não esteja licenciada, mas se enquadre nos casos de licenciamento obrigatório, o Agente de Fiscalização deverá autuar a Prestadora por ausência de licenciamento de estação, abstendo-se de verificar qualquer aspecto técnico, sem prejuízo quanto à verificação da certificação/homologação dos equipamentos.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item23.1"></a>23.1. Para autuação da fiscalizada e indicação das obrigações verificadas, o Agente de Fiscalização deverá utilizar os Termos de Fiscalização e Laudos de Vistoria específicos.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item23.2"></a>23.2.&nbsp;Atentar para os prazos e etapas que precedem o licenciamento de estações do SCM, notadamente para a necessária diferenciação entre funcionamento em caráter experimental e comercial, conforme disposto nos arts. <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art19" rel="alternate">19</a>&nbsp;e <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art20" rel="alternate">20</a>&nbsp;do Regulamento do Serviço de Comunicação Multimídia (RSCM).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item24"></a>24.&nbsp;A estação licenciada deve ser vistoriada quanto ao número cadastrado no sistema STEL, coordenadas geográficas, tipo da estação, endereço e todos os outros itens constantes do Laudo de Vistoria comparando as informações coletadas com as características autorizadas, inclusive conforme disposto na Licença de Funcionamento da Estação, e procedendo ao preenchimento do competente Laudo de Vistoria.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item24.1"></a>24.1.&nbsp;Havendo dúvida na confirmação do endereço verificado, tomar como referência o endereço constante no boleto de cobrança de IPTU ou nos registros da Empresa de Correios e Telégrafos (ECT) ou, ainda, no boleto de cobrança de concessionária de serviços públicos.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item24.2"></a>24.2.&nbsp;A licença de funcionamento, ou sua cópia, não precisa estar afixada dentro da estação, devendo ser apresentada caso seja solicitada.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item24.3"></a>24.3.&nbsp;Atentar para o fato que, de acordo com o <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art19" rel="alternate">art. 19</a>&nbsp;do Regulamento do SCM, uma entidade autorizada de SCM pode entrar em operação comercial sem sequer ter licenciada uma estação para este serviço, uma vez que não há mais necessidade de licenciamento de estação para início da operação comercial, pois este ente pode estar utilizar uma estação autorizada por outro ente autorizado de SCM para prestar o serviço.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item24.4"></a>24.4.&nbsp;Nos casos que envolvam a inspeção de equipamentos instalados em locais de difícil acesso ou em locais de risco, tais como torres, terraços, instalações subterrâneas e subestações de energia, caso o Agente de Fiscalização considere que há riscos de acidente, não deverá proceder com a inspeção, buscando outros meios para constatar a situação da fiscalizada.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Subseção III</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: center;" align="center"><span style="color: black;">Do </span>serviço prestado por entidade não outorgada</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 30px;" align="center"><a name="item25"></a>25.&nbsp;De posse dos dados obtidos na etapa de Averiguação Preliminar, o Agente de Fiscalização deve realizar diligências (ex.: entrevistas, consultas, etc.) com a finalidade de confirmar o modus operandi da exploração clandestina e de determinar com exatidão quem, de fato, é o prestador a ser autuado. É possível encontrar, nesta situação, a prática das seguintes irregularidades:</p>
+<p class="1-PFT1" style="margin-top: 0cm; padding-left: 60px; text-align: justify;" align="center">a)&nbsp;Pela não outorgada - exploração clandestina de SCM (<a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art10" rel="alternate">art. 10</a>&nbsp;do RSCM c/c <a title="Acesse o artigo" href="/legislacao/resolucoes/1998/34-resolucao-73#art53" rel="alternate">art. 53</a>&nbsp;do Regulamento de Serviços de Telecomunicações c/c <a title="Acesse o artigo" href="/legislacao/leis/2-lei-9472#art131" rel="alternate">art. 131&nbsp;</a>da LGT);</p>
+<p class="1-PFT1" style="margin-top: 0cm; padding-left: 60px; text-align: justify;" align="center">b)&nbsp;Pela outorgada do SCM - transferência da autorização e da responsabilidade pela exploração e execução da prestação do serviço (arts.<a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art29" rel="alternate"> 29</a>&nbsp;e <a title="acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art36" rel="alternate">36</a>&nbsp;do RSCM c/c <a title="Acesse o artigo" href="/legislacao/resolucoes/1998/34-resolucao-73#art61" rel="alternate">art. 61</a>, §§ 1º e 2º, do Regulamento de Serviços de Telecomunicações c/c <a title="Acesse o artigo" href="/legislacao/leis/2-lei-9472#art140" rel="alternate">art. 140</a>&nbsp;da LGT).</p>
+<p class="1-PFT1" style="margin-top: 0cm; text-align: justify; padding-left: 30px;" align="center"><a name="item26"></a>26.&nbsp;Nos casos de exploração clandestina de serviços, devem ser adotadas as medidas previstas na Norma sobre preparação, execução e conclusão de missões de fiscalização, aprovada pela <a title="Acesse a portaria" href="/legislacao/instrucoes-de-fiscalizacao/801-portaria-n%C2%BA-613,-de-29-de-maio-de-2007" rel="nofollow">Portaria nº 613 de 29 de maio de 2007</a>, ou em outra que venha a substituí-la, bem como realizada a comunicação da prática de ilícito penal à autoridade competente (<em>notitia criminis</em>).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center"><a id="subseção IV"></a>Subseção IV</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Da exploração clandestina de SCM com provimento de rede de acesso</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item27"></a>27.&nbsp;Neste caso o prestador possui sua própria rede de acesso, fornecendo tanto a conexão de telecomunicações para interligar os assinantes às estações da rede (seja por via de enlaces de RF, seja por meios confinados), quanto a capacidade de tráfego de dados, para permitir a conexão do assinante com a Internet, mediante a utilização de link contratado junto a uma PSCM, assumindo também todas as demais atividades inerentes à prestação do serviço (vendas, instalação, gerenciamento de contratos, cobrança, manutenção, etc.).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item28"></a>28.&nbsp;Ao fornecer capacidade de tráfego para conexão à Internet sem autorização, a entidade incorre na exploração clandestina de serviço de telecomunicações. A Figura 1.a do <a title="Acesse o anexo" href="#ANEXO I" rel="alternate">Anexo I</a>&nbsp;representa graficamente o modelo de negócios típico para esse tipo de infração.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item29"></a>29.&nbsp;A materialização da exploração clandestina pode ser obtida a partir dos seguintes dados e parâmetros:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">a) Adotar os passos descritos na <a title="Acesse a subseção" href="#subseção I" rel="nofollow">subseção I</a>&nbsp;desta seção;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">b)&nbsp;Inspecionar os equipamentos da estação, verificando a sua respectiva homologação, obtendo registros fotográficos de modo a detalhar interligação dos equipamentos que constituem a rede da entidade fiscalizada;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">c)&nbsp;Solicitar e registrar informações quanto a planos de serviço, panfleto de publicidade, boleto de cobrança ou outras formas de pagamento, contrato com cliente e relação de clientes;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">d)&nbsp;Fazer o levantamento do diagrama de rede, de modo a explicitar como é feita a interligação dos assinantes com a(s) estação(ões) tronco da entidade fiscalizada e como este provê a fruição dos assinante para a Internet;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">e)&nbsp;Em caso de negativa do fornecimento de documentos ou em caso da real inexistência deles, recomenda-se o preenchimento dos formulários de entrevista estruturada constante nos Anexos <a title="Acesse o anexo II" href="#ANEXO I" rel="alternate">II</a>&nbsp;e <a title="Acesso o anexo III" href="#ANEXO III" rel="alternate">III</a>. A partir das entrevistas, podem ser obtidas e registradas as informações essenciais para a caracterização da atividade clandestina;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">f)&nbsp;A oferta gratuita não afasta a exploração clandestina do serviço quando o Agente de Fiscalização puder comprovar que a fiscalizada presta o serviço ou compartilha capacidade de tráfego de dados, de modo que seja permitida a conexão de outras pessoas com a Internet; e</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">g)&nbsp;Em caso de equipamentos desligados e de alegação de estação de telecomunicação inoperante, com a utilização de RF, deve-se comparar os endereços MAC dos transceptores com os registrados na etapa de monitoração prévia realizada com o analisador de rede. Neste caso, a Averiguação Preliminar é determinante para evidenciar operação da rede do SCM, inclusive a quantidade de clientes conectados no momento da monitoração.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item30"></a>30.&nbsp;Caracterizado o uso de redes de telecomunicação para prestação de serviço de interesse coletivo com exploração direta por entidade não outorgada, já existem elementos suficientes para caracterizar a exploração clandestina de SCM e proceder à autuação com base no <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art10" target="_blank" rel="alternate noopener noreferrer">art. 10</a>&nbsp;do RSCM c/c <a title="Acesse o artigo" href="/legislacao/resolucoes/1998/34-resolucao-73#art53" target="_blank" rel="alternate noopener noreferrer">art. 53</a>&nbsp;do Regulamento de Serviços de Telecomunicações c/c <a title="Acesse o artigo" href="/legislacao/leis/2-lei-9472#art131" rel="alternate">art. 131</a>&nbsp;da LGT.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center"><a id="subseção V"></a>Subseção V</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Da exploração clandestina de SCM com participação de uma PSCM</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item31"></a>31.&nbsp;Este tipo de exploração clandestina geralmente é praticada por prestadores de serviços muitas vezes autodenominados “PSCI” (Provedor de Serviço de Conexão à Internet), “PSVA” (Prestador de Serviço de Valor Adicionado), “parceiro”, “representante comercial”, etc., que se associam a uma PSCM.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item32"></a>32. Nestes casos, o suposto PSCI (ou PSVA, etc.) se faz valer da rede de acesso e de uma licença de funcionamento de estação pertencentes a uma PSCM e assume claramente, dentre outras obrigações, a de fornecimento de capacidade de tráfego de dados, contratado junto a uma terceira prestadora de serviços de telecomunicações (devidamente autorizada), para que o assinante seja interligado à Internet. Este provimento caracteriza exploração clandestina de SCM, uma vez que a entidade não é outorgada. A Figura 1.b do <a title="Acesse o anexo I" href="#ANEXO I" rel="alternate">Anexo I</a>&nbsp;representa graficamente o modelo de negócios típico para esse tipo de infração, que configura a revenda do SCM.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item33"></a>33. Quando existe contrato entre as partes (PSCM e não outorgada), verifica-se que o mesmo apresenta indícios de extrapolar os limites do permitido pela regulamentação nos termos do <a title="Acesse o artigo" href="/legislacao/resolucoes/1998/34-resolucao-73#art60" rel="alternate">art. 60</a>&nbsp;do Regulamento dos Serviços de Telecomunicações e do<a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art41" rel="alternate"> art. 41</a> do RSCM.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item34"></a>34. Em conformidade com a legislação, a PSCM têm assegurado o direito de empregar, na execução dos serviços, equipamentos e infraestrutura que não lhe pertençam ou até mesmo de contratar com terceiros o desenvolvimento de atividades inerentes, acessórias ou complementares ao serviço, bem como a implementação de projetos associados. Entretanto, em qualquer caso, a PSCM continuará responsável perante esta Agência e os usuários pela execução e exploração do serviço, devendo, sempre, manter os vínculos contratuais junto aos usuários quanto ao provimento do serviço.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item35"></a>35. É permitido que a PSCM celebre acordos com terceiros para a consecução das obrigações assumidas no Termo de Autorização, sendo-lhe defeso, no entanto, transferir a responsabilidade pela prestação do serviço que lhe foi autorizado. É possível, por exemplo, atribuir a outrem a responsabilidade pela manutenção de sua rede física, bem como repassar a terceiros a atividade de cobrança, desde que o façam em nome da autorizada, e não em nome próprio, como se responsável pelo serviço fossem, sob pena de restar configurada transferência do direito de execução e exploração do serviço, ou seja, da própria outorga.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item36"></a>36. É preciso verificar também se o contrato entre a PSCM e a terceira encontra-se em desacordo com o Código Civil (<a title="Acesse a lei" href="http://www.planalto.gov.br/ccivil_03/leis/2002/l10406.htm" rel="alternate">Lei nº 10.406/2002</a>), que define no <a title="Acesse o artigo" href="http://www.planalto.gov.br/ccivil_03/leis/2002/l10406.htm#Art166" rel="alternate">art. 166</a>&nbsp;os motivos de nulidade do contrato, entre os quais àquelas que possuem como objetivo fraudar lei imperativa. A situação de fraude a lei ocorre quando as partes simulam um contrato para aproveitar artificialmente um aparente conflito de normas que deveriam ser aplicadas, chamando a si próprio o direito mais vantajoso. No caso em análise, visando a evasão tributária, cobra-se mais por um suposto SVA do que pelo próprio serviço de telecomunicações que lhe dá suporte.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item37"></a>37.<span style="text-decoration: line-through;"> Com o advento do novo RSCM, pacificou-se na Anatel o entendimento de que não é obrigatório um PSCI intermediando a relação entre o usuário e a PSCM, entendimento este já firmado na jurisprudência nacional, permanecendo a <a title="Acesse a norma" href="http://www.anatel.gov.br/hotsites/Direito_Telecomunicacoes/TextoIntegral/ANE/prt/minicom_19950531_148.pdf" rel="alternate">Norma nº 004/95</a>&nbsp;como situação específica a ser cumprida pelas concessionárias do Serviço Telefônico Fixo Comutado destinado ao uso do público em geral (STFC). Outras formas de SVA exigem uma série de equipamentos, programas de computador (hardware e software) e rotinas que não podem ser confundidos com o mero compartilhamento da conexão</span>.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center">37. Com o advento do novo RSCM, pacificou-se na Anatel o entendimento de que não é obrigatório um PSCI intermediando a relação entre o usuário e a PSCM, entendimento este já firmado na jurisprudência nacional. Algumas formas de SVA exigem uma série de equipamentos, programas de computador (hardware e software) e rotinas que não podem ser confundidos com o mero compartilhamento da conexão. (<a title="Acesse a portaria" href="http://www.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/827-portaria-n%C2%BA-587,-de-06-de-julho-de-2015#art1" rel="alternate">Redação dada pela&nbsp;Portaria nº 587, de 06 de julho de 2015</a>)</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item38"></a>38. <span style="text-decoration: line-through;">Ainda que fosse possível equiparar o compartilhamento de acesso à Internet às atividades dos provedores de acesso, caberia levar em conta que o Serviço de Conexão a Internet, por si só, não possibilita a emissão, transmissão ou recepção de informações multimídia, podendo-se constatar em loco a ausência de conexão direta com o autorizado</span>.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center">38. Ainda que seja possível equiparar o compartilhamento de acesso à Internet às atividades dos provedores de acesso, cabe levar em conta que o Serviço de Conexão a Internet, por si só, não possibilita a emissão, transmissão ou recepção de informações multimídia, podendo-se constatar em loco a ausência de conexão direta com o autorizado.&nbsp;(<a title="Acesse a portaria" href="http://www.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/827-portaria-n%C2%BA-587,-de-06-de-julho-de-2015#art1" rel="alternate">Redação dada pela&nbsp;Portaria nº 587, de 06 de julho de 2015</a>)</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item39"></a>39. Para a materialização da exploração clandestina por meio da revenda de serviço, o Agente de Fiscalização deverá adotar inicialmente os passos descritos na <a title="Acesse a subseção" href="#subseção I" rel="nofollow">subseção I</a>&nbsp;desta seção.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item40"></a>40. No intuito de corroborar a identificação da entidade que efetivamente explora o SCM, poderá ser solicitada cópia de contrato de compra e venda ou contrato de locação de espaço físico em edifícios ou condomínios. Normalmente, estes contratos estão em poder dos síndicos, administradores ou zeladores.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item41"></a>41.<span style="text-decoration: line-through;"> A materialização da exploração clandestina por meio da revenda de serviço pode verificada nas seguintes situações</span>:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center">41. A materialização da exploração clandestina por meio da revenda de serviço pode ser verificada nas seguintes situações: (<a title="Acesse a portaria" href="http://www.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/827-portaria-n%C2%BA-587,-de-06-de-julho-de-2015#art1" rel="nofollow">Redação &nbsp;dada pela&nbsp;Portaria nº 587, de 06 de julho de 2015</a>)</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">a) Existência de contrato único firmado entre o revendedor, a PSCM e o assinante (contrato tripartite) ou de dois contratos (PSCM/assinante e revendedor/assinante), no qual várias das responsabilidades inerentes à prestação do SCM são repassadas ao revendedor (ex.: pagamento de TFI e TFF, atendimento ao cliente, oferta de capacidade do sistema, número de canais e largura de banda ou taxa de transmissão).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">b) Existência de cláusulas nos contratos firmados entre a PSCM e o revendedor que obrigam este último a remunerar a primeira de alguma forma, ao contrário daquilo que seria esperado, que é a PSCM remunerar terceiros contratados para prestação de serviços inerentes à exploração do SCM.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">c) Cobrança de valor irrisório ou zero, assim como de valores iguais ou inferiores aos cobrados por outros serviços inerentes ou acessórios à prestação do SCM.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">d) Existência de documentos de cobrança constando Razão Social e CNPJ distintos dos da PSCM, assim como o recebimento de valores pela prestação do SCM pelo revendedor.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">e) Utilização do enlace de dados contratado pelo revendedor junto a uma Prestadora pelo revendedor para escoar o tráfego dos assinantes do SCM, uma vez que somente Prestadoras de serviços de telecomunicações podem escoar o tráfego dos enlaces necessários à condução de informações entre a Internet e o cliente final.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">f) Existência de cláusula no contrato de fornecimento de enlaces de dados firmado entre uma Prestadora e o revendedor que vede o compartilhamento de acesso por parte do contratante.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Subseção VI</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Da transferência da autorização e da responsabilidade pela exploração e execução da prestação do serviço</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item42"></a>42. Caso haja conivência da PSCM na exploração clandestina do serviço descritos nas subseções<a title="Acesse o anexo IV" href="#subseção IV" rel="alternate"> IV</a>&nbsp;e <a title="Acesse o anexo V" href="#subseção V" rel="alternate">V</a>&nbsp;desta seção, pratica aquela a transferência da autorização e da responsabilidade pela exploração e execução da prestação do serviço (arts.<a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art29" rel="alternate"> 29</a> e <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art36" rel="alternate">36</a>&nbsp;do RSCM c/c <a title="Acesse o artigo" href="/legislacao/resolucoes/1998/34-resolucao-73#art61" rel="alternate">art. 61</a>, §§ 1º e 2º, do Regulamento de Serviços de Telecomunicações c/c <a title="Acesse o artigo" href="/legislacao/leis/2-lei-9472#art140" target="_blank" rel="alternate noopener noreferrer">art. 140</a>&nbsp;da LGT).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Seção IV</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Do relatório de fiscalização</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item43"></a>43. O Agente de Fiscalização deverá descrever no Relatório de Fiscalização todos os fatos por ele verificados durante a ação de fiscalização.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Subseção I</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Do serviço prestado por entidade outorgada (estação isenta de licenciamento, estação não licenciada, estação licenciada e uso não autorizado de radiofrequência)</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item44"></a>44. Deve constar do Relatório de Fiscalização, quando for o caso, as orientações quanto ao cadastramento de estações isentas de licenciamento no Banco de Dados da Agência, as autuações realizadas e Laudos de Vistoria e Termos de Fiscalização preenchidos, bem como a descrição das infrações constatadas ou a informação de que não foram verificadas infrações às obrigações técnicas do serviço. Devem constar também do Relatório de Fiscalização as informações referentes à interrupção do serviço ou a justificativa para não interrupção, no caso de uso não autorizado de radiofrequência, citando a faixa de frequência utilizada e a potência constatada, caso seja possível realizar tais medidas.&nbsp;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Subseção II</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Do Serviço Prestado por Entidade não Outorgada</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item45"></a>45. No caso de serviço prestado por entidade não outorgada, o Agente após a análise de toda a documentação obtida durante a ação de fiscalização, caso seja configurada a exploração clandestina de SCM pela entidade fiscalizada, deve finalizar o Relatório de Fiscalização concluindo pela prática de exploração clandestina de SCM, em infringência ao <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art10" target="_blank" rel="alternate noopener noreferrer">art. 10</a>&nbsp;do RSCM c/c <a title="Acesse o artigo" href="/legislacao/leis/2-lei-9472#art131" target="_blank" rel="nofollow noopener noreferrer">art. 131</a>&nbsp;da Lei Geral de Telecomunicações.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item46"></a>46. Também deverá ser elaborado Relatório de Fiscalização apartado concluindo pelo descumprimento dos arts. <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art29" rel="alternate">29</a>&nbsp;e <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/465-resolucao-614#art36" rel="alternate">36</a>&nbsp;do RSCM c/c <a title="Acesse o artigo" href="/legislacao/resolucoes/1998/34-resolucao-73#art61" rel="alternate">art. 61</a>, §§ 1º e 2º, do Regulamento de Serviços de Telecomunicações c/c <a title="Acesse o artigo" href="/legislacao/leis/2-lei-9472#art140" rel="nofollow">art. 140</a>&nbsp;da LGT, por parte da PSCM quando constatado que ela adota alguma das seguintes condutas:&nbsp;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">a) Não se responsabiliza pela prestação do serviço ou pelos clientes, delegando à entidade não outorgada responsabilidades exclusivas da PSCM;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">b) Licencia estações e cede as respectivas licenças para revendedores de SCM;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center">c) Delega ao parceiro/representante comercial, o pagamento de taxas como TFI e TFF.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item47"></a>47. Constatada a exploração clandestina de SCM, recomenda-se que a Prestadora que fornece o enlace de dados, desde que não seja conivente com a conduta irregular, seja oficiada sobre o uso irregular do serviço de telecomunicações contratado.&nbsp;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item47.1"></a>47.1. Caso a prestadora que fornece o enlace de dados seja conivente com a conduta irregular, ela deve ser oficiada de que ela incorre na mesma pena que esta última entidade, pois concorre direta ou indiretamente para o crime de desenvolvimento clandestino de atividades de telecomunicações, nos termos do <a title="Acesse o artigo" href="/legislacao/leis/2-lei-9472#art183" rel="alternate">art. 183</a>, parágrafo único, da LGT, devendo o fato ser comunicado para a autoridade competente na notitia criminis.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item48"></a>48. Se as provas obtidas durante a ação de fiscalização não demonstrarem a clandestinidade na prestação do SCM por parte da entidade fiscalizada, o Relatório de Fiscalização, que deverá reunir toda a documentação obtida, deve concluir pela ausência de materialidade de infração e a ação de fiscalização deve ser encerrada como “denúncia improcedente em relação à clandestinidade do SCM”.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item48.1"></a>48.1. No caso acima, deve ficar comprovado que a entidade fiscalizada só presta atividades complementares ou de suporte ao SCM, tais como manutenção e instalação de clientes, coleta de valores para repassar à PSCM (terceirização do faturamento), aluguel de torre ou terreno, zeladoria, etc.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Capítulo V</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Das restrições quanto à prestação do SCM</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item49"></a>49. Não é permitida a oferta de serviço com as características do Serviço Telefônico Fixo Comutado destinado ao uso do público em geral (STFC), em especial o encaminhamento de tráfego telefônico, por meio da rede de SCM simultaneamente originado e terminado nas redes do STFC, sob pena de configuração de prestação clandestina de STFC.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Seção I</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Da exploração clandestina de STFC através de PSCM</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item50"></a>50. Caso a rede responsável pela prestação do serviço de voz que chega ao usuário de SCM seja de responsabilidade da prestadora de STFC contratada pela PSCM, o serviço nem mesmo seria VoIP e estaria melhor caracterizada uma revenda de STFC através da prestadora do SCM. Trata-se, portanto, de exploração de STFC sem autorização, atividade clandestina, pois as faturas são emitidas pela PSCM.&nbsp;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item51"></a>51. Caso a rede responsável pelo serviço de VoIP que chega no usuário de SCM seja de responsabilidade da própria PSCM, poderíamos ter uma situação em que o usuário não teve informação adequada de que o serviço VoIP não permitiria portabilidade. A portabilidade só é garantida como direito de usuário vinculado à prestadora do STFC ou SMP (<a title="Acesse o artigo" href="/legislacao/resolucoes/22-2007/8-resolucao-460#art10" target="_blank" rel="alternate noopener noreferrer">art. 10</a>, I, do Regulamento Geral de Portabilidade).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Seção II</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Da exploração clandestina de outros serviços através de PSCM</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item52"></a>52. Não é permitida a distribuição de sinais de áudio e/ou vídeo de forma irrestrita e simultânea para assinantes, sob pena de configuração de prestação clandestina de Serviços de TV por Assinatura/SeAC.&nbsp;</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item53"></a>53. Não é permitida a distribuição de sinais de áudio e/ou vídeo de forma irrestrita e simultânea para recepção pelo público em geral, sob pena de configuração de prestação clandestina de Serviços de Radiodifusão.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Capítulo VI</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Do licenciamento de estações conforme RSCM<br>(faixas de 2400 a 2483,5 Mhz e 5725 a 5850 Mhz)</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item54"></a>54. Deverão ser licenciadas as estações de telecomunicações da rede que se interligam diretamente a uma empresa autorizada pela Anatel (ex.: Embratel, Telefônica, OI / Telemar, Sercomtel, Net, etc.), das quais recebem a capacidade (Mbps) contratada.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item55"></a>55. Deverão ser licenciadas as estações de telecomunicações operando com equipamentos de radiocomunicação de radiação restrita que utilizem a faixa de radiofrequência de 2400 a 2483,5 MHz, com potência E.I.R.P. superior a 400 mW e que estejam instaladas em localidade com mais de 500 mil habitantes.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item56"></a>56. Deverão ser licenciadas as estações que utilizem outros meios, diferentes da radiação restrita (ex.: fibra óptica; par trançado; radiofrequência; etc.) como suporte para a atividade de telecomunicações. É obrigatório o licenciamento dessas estações, mesmo que não se enquadrem nos itens <a title="Acesse o item" href="#item54" rel="alternate">54</a>&nbsp;e&nbsp;<a title="Acesse o item" href="#item55" rel="alternate">55</a>.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item57"></a>57. As estações que não se enquadrem nos itens <a title="Acesse o item" href="#item54" rel="alternate">54</a>, <a title="Acesse o item" href="#item55" rel="alternate">55</a>&nbsp;e <a title="Acesse o item" href="#item56" rel="alternate">56</a>, que utilizem somente equipamentos de radiação restrita como meio de transmissão e recepção de informações multimídia, operando em conformidade com o Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita e possuam Certificado de Homologação dos equipamentos, são isentas de licença para instalação e funcionamento, mesmo que tais estações estejam instaladas em município diferente daquele da estação principal.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Capítulo VII</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Das considerações finais</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item58"></a>58. Quando constatado que a PSCM reclamada atua em mais de uma Unidade da Federação e já esteja sendo fiscalizada com objeto idêntico ao reclamado, a Gerência Regional responsável pela demanda deverá informar à Coordenação de Fiscalização na Sede acerca da possibilidade de realização de atividade em âmbito nacional (Atividade Centralizada).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item58.1"></a>58.1. Caso a constatação seja feita pela Coordenação de Fiscalização na Sede, caberá a ela verificar junto às Gerências Regionais responsáveis pelas demandas a possibilidade de realização de atividade em âmbito nacional (atividade centralizada).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item59"></a>59. Especificamente sobre o provimento de serviços telecomunicações pelas Prefeituras Municipais, os seguintes esclarecimentos são aplicáveis:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item59.1"></a>59.1. O Parágrafo único do <a title="Acesse o artigo" href="/legislacao/resolucoes/2013/480-resolu%C3%A7%C3%A3o-n%C2%BA-617#art18" rel="alternate">art. 18</a>&nbsp;do Regulamento do Serviço Limitado Privado estabeleceu que as redes de suporte ao SLP de órgãos ou entidades da Administração Pública direta ou indireta do Governo Federal, Estadual, Municipal ou do Distrito Federal, assim como de entidades sem fins lucrativos, poderão disponibilizar conexão à Internet:</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 90px;" align="center">a) Se a própria Prefeitura implementar a rede de telecomunicações, com infraestrutura própria, para disponibilizar o serviço de telecomunicações para os munícipes, deverá obter na Anatel a autorização para explorar o Serviço Limitado Privado (SLP).</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 90px;" align="center">b) Se a Prefeitura desejar contratar empresa para prestar serviço de telecomunicações aos munícipes, essa empresa deverá possuir autorização da Anatel para explorar o SCM.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 60px;" align="center"><a name="item59.2"></a>59.2. Observar também as vedações contidas no <a title="Avesse o artigo" href="/legislacao/resolucoes/2013/480-resolu%C3%A7%C3%A3o-n%C2%BA-617#art19" rel="alternate">art. 19</a>&nbsp;do Regulamento do SLP.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: justify; padding-left: 30px;" align="center"><a name="item60"></a>60. Constatados indícios de evasão fiscal, comunicar às autoridades competentes para que verifiquem possíveis irregularidades.</p>
+<p class="1-PFT1" style="margin-top: 6pt; text-align: center;" align="center">Capítulo VIII<br>Dos anexos</p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: justify;" align="center"><a name="item61"></a>61. ANEXO I: Representação gráfica de modelos de negócio – SCM.</p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: justify;" align="center"><a name="item62"></a>62. ANEXO II: Ficha de Entrevista – SCM.&nbsp;</p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: justify;" align="center"><a name="item63"></a>63. ANEXO III: Ficha de Entrevista – Cliente do SCM.</p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: justify;" align="center"><a name="item64"></a>64. ANEXO IV: Processo de Trabalho – Fiscalização Técnica e prestação não outorgada do SCM.</p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: justify;" align="center">&nbsp;</p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: center;" align="center"><a id="ANEXOI"></a>ANEXO I&nbsp;</p>
+<p style="text-align: center;">Modelos de negócio - Serviço de Comunicação Multimídia&nbsp;</p>
+<p style="text-align: center;"><span style="text-decoration: line-through;">Figura 1.a – Contratação de Capacidade de Tráfego</span></p>
+<p style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/Portarias/port214/image-REVOGADA.JPG" alt=""></p>
+<p style="text-align: center;">Figura 1.a – Contratação da Capacidade de Tráfego&nbsp;(<a title="Acesse a portaria" href="http://www.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/827-portaria-n%C2%BA-587,-de-06-de-julho-de-2015#ANEXOI" target="_blank" rel="alternate noopener noreferrer">Redação &nbsp;dada pela&nbsp;Portaria nº 587, de 06 de julho de 2015</a>)</p>
+<p style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/Portarias/port587/image01.jpg" alt=""></p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: center;" align="center"><span style="text-decoration: line-through;">Figura 1.b - Contratação de Capacidade de Tráfego&nbsp;</span></p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: center;" align="center"><img src="/legislacao/arquivos_e_imagens/imagens/Portarias/port214/image02 -revogada.jpg" alt=""></p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: center;" align="center">Figura 1.b – Contratação da Capacidade de Tráfego&nbsp;(<a title="Acesse a portaria" href="http://www.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/827-portaria-n%C2%BA-587,-de-06-de-julho-de-2015#ANEXOI" rel="nofollow">Redação &nbsp;dada pela&nbsp;Portaria nº 587, de 06 de julho de 2015</a>)</p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: center;" align="center"><img src="/legislacao/arquivos_e_imagens/imagens/Portarias/port587/image02.jpg" alt=""></p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: center;" align="center"><a id="ANEXO II"></a>ANEXO II</p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: center;" align="center"><a id="ANEXO III"></a>ANEXO III</p>
+<p class="1-PFT1 texto-recuo-1a-linha" style="margin-top: 6pt; text-align: center;" align="center"><a id="ANEXO IV"></a>ANEXO IV&nbsp;</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_article_813">
+<table>
+<caption>Anexos:</caption>
+<thead>
+<tr><th class="at_filename">Arquivo</th><th class="at_description">Descrição</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td class="at_filename"><a class="at_icon" href="/legislacao/attachments/article/813/ANEXOII.docx" target="_blank" title="Fazer download deste arquivo (ANEXOII.docx)"><img src="/legislacao/media/com_attachments/images/file_icons/wordx.gif" alt="Fazer download deste arquivo (ANEXOII.docx)"></a><a class="at_url" href="/legislacao/attachments/article/813/ANEXOII.docx" target="_blank" title="Fazer download deste arquivo (ANEXOII.docx)">ANEXOII.docx</a></td><td class="at_description">&nbsp;</td></tr>
+<tr class="even"><td class="at_filename"><a class="at_icon" href="/legislacao/attachments/article/813/ANEXOIII.docx" target="_blank" title="Fazer download deste arquivo (ANEXOIII.docx)"><img src="/legislacao/media/com_attachments/images/file_icons/wordx.gif" alt="Fazer download deste arquivo (ANEXOIII.docx)"></a><a class="at_url" href="/legislacao/attachments/article/813/ANEXOIII.docx" target="_blank" title="Fazer download deste arquivo (ANEXOIII.docx)">ANEXOIII.docx</a></td><td class="at_description">&nbsp;</td></tr>
+<tr class="odd"><td class="at_filename"><a class="at_icon" href="/legislacao/attachments/article/813/ANEXOIV.doc" target="_blank" title="Fazer download deste arquivo (ANEXOIV.doc)"><img src="/legislacao/media/com_attachments/images/file_icons/word.gif" alt="Fazer download deste arquivo (ANEXOIV.doc)"></a><a class="at_url" href="/legislacao/attachments/article/813/ANEXOIV.doc" target="_blank" title="Fazer download deste arquivo (ANEXOIV.doc)">ANEXOIV.doc</a></td><td class="at_description">&nbsp;</td></tr>
+</tbody></table>
+</div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Procedimento" class="link-categoria">Procedimento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Fiscalização" class="link-categoria">Fiscalização</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Verificação" class="link-categoria">Verificação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Cumprimento" class="link-categoria">Cumprimento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Obrigação%20de%20fazer" class="link-categoria">Obrigação de fazer</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Prestadora%20de%20serviço%20de%20telecomunicações" class="link-categoria">Prestadora de serviço de telecomunicações</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20de%20Comunicação%20Multimídia" class="link-categoria">Serviço de Comunicação Multimídia</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=SCM" class="link-categoria">SCM</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Exploração%20clandestina" class="link-categoria">Exploração clandestina</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=BandaLarga" class="link-categoria">BandaLarga</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaFiscalizacao" class="link-categoria">NormaFiscalizacao</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PortariaVigente" class="link-categoria">PortariaVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

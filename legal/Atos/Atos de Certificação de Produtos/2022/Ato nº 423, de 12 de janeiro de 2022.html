@@ -1,0 +1,1205 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 423, de 12 de janeiro de 2022</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1633-ato-423">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Alteração, Anexo I, Ato, Requisitos Técnicos, Avaliação da Conformidade, Equipamentos de Radiação Restrita, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Alterar os seguintes itens e seus respectivos subitens do Anexo I do Ato nº 14.448, de 4 de dezembro de 2017, que aprovou os Requisitos Técnicos para a Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita, e outros.">
+	<title>Anatel - Ato nº 423, de 12 de janeiro de 2022</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1768687368" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1478195345" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=524807542" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141420" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2022">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2022">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2022">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2022" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2022" class="pathway">2022</a> <span class="separator">&gt;</span> <span>Ato nº 423, de 12 de janeiro de 2022</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;949058c40e1dcb39&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 423, de 12 de janeiro de 2022		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quarta, 19 Janeiro 2022 14:02			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quarta, 26 Outubro 2022 10:38			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 13074			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no&nbsp;Boletim de Serviço Eletrônico de <a title="Acesse o Boletim de Serviço Eletrônico" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=8931853&amp;id_orgao_publicacao=0">19/1/2022</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram conferidas pela <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715">Resolução nº 715, de 23 de outubro de 2019</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência dada pelos incisos XIII e XIV do <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art19">art. 19</a> da Lei nº&nbsp;9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO&nbsp;a competência dada pelo&nbsp;§2º, do <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715#art22Anexo">art. 22</a>, do Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº 715, de 23 de outubro de 2019;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO&nbsp;as&nbsp;alterações promovidas nas&nbsp;faixas de radiofrequências com restrições de uso&nbsp;e nas&nbsp;faixas de radiofrequências utilizáveis por equipamentos de radiação restrita com limites de emissão alternativos,&nbsp;aprovadas pela <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1411-resolucao-726">Resolução nº 726, de&nbsp;05 de&nbsp;maio de 2020</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO&nbsp;o&nbsp;advento de novas tecnologias utilizadas nas faixas de 5 GHz e de 70&nbsp;GHz, proporcionando&nbsp;o acesso a novas soluções,&nbsp;a maiores taxas de transmissão e o aumento na&nbsp;eficiência das redes dos serviços de telecomunicações&nbsp;em&nbsp;benefício de melhores experiências aos usuários;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a evolução tecnológica aplicada a&nbsp;dispositivos embarcados em veículos para o auxílio e a proteção de&nbsp;condutores e passageiros;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o surgimento de soluções de&nbsp;conectividade veicular às redes comunicações móveis em meios urbanos, rurais e&nbsp;de rodovias,&nbsp;para envio e&nbsp;recepção&nbsp;de dados e informações de&nbsp;auxílio&nbsp;à condução no trânsito, das condições de tráfego&nbsp;e de&nbsp;manutenção preventiva&nbsp;do&nbsp;veículo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO as contribuições recebidas em decorrência da <a title="Acesse a Consulta Pública" href="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/05/2021&amp;jornal=515&amp;pagina=5">Consulta Pública nº 21, de 30&nbsp;de abril&nbsp;de 2021</a>, publicada no Diário Oficial da União de 21&nbsp;de maio&nbsp;de 2021; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlB8P9ZxT4QHreVsE2XFBOKLVNl7FKCZeRsDckEzJbIR_">processo nº&nbsp;53500.054441/2020-17</a>,</p>
+<p class="resolve" style="text-align: justify;">RESOLVE:</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art1"></a>Art. 1º Alterar os seguintes&nbsp;itens e seus respectivos subitens do <a title="Acesse o Anexo" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1139-ato-14448#anexoI">Anexo I</a> do Ato nº 14.448, de 4 de dezembro de 2017, que aprovou os&nbsp;Requisitos Técnicos para a Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita, que passam a vigorar com a&nbsp;seguinte redação:</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;">"2. REFERÊNCIAS NORMATIVAS</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.4. Requisitos técnicos para&nbsp;avaliação da conformidade de Transceptor para&nbsp;Estação&nbsp;Rádio Base, aprovados pelo&nbsp;Ato nº 3153, de 12 de junho de 2020.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.5. 3GPP TR 36.889 V1.0.1 (2015-06) -&nbsp;<em>3rd Generation Partnership Project, Technical Specification Group Radio Access Network, Study on Licensed-Assisted Access to Unlicensed Spectrum.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.6. 3GPP TR 36.785 V14.0.0 (2016-10) -&nbsp;<em>3rd Generation Partnership Project; Technical Specification Group Radio Access Network; Vehicle to Vehicle (V2V) services based on LTE sidelink; User Equipment (UE) radio transmission and reception.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.7. CEPT ERC Recommendation 70-03 (2020-06) -&nbsp;<em>Relating to the use of Short Range Devices (SRD), Doc. FM(19)075 - Annex 39, Explanatory paper related to RLAN equipment using the 5 GHz bands in vehicles, including the usage under the non-specific SRD regulation.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.8. CISPR 16-1-1:2019 (2019-05)&nbsp;<em>Specification for radio disturbance and immunity measuring apparatus and methods - Part 1-1: Radio disturbance and immunity measuring apparatus - Measuring apparatus.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.9. ETSI EN 302 729-1 V1.1.2 (2011-03) -&nbsp;<em>Electromagnetic compatibility and Radio spectrum Matters (ERM); Short Range Devices (SRD); Level Probing Radar (LPR) equipment operating in the frequency ranges 6 GHz to 8,5 GHz, 24,05 GHz to 26,5 GHz, 57 GHz to 64 GHz, 75 GHz to 85 GHz; Part 1: Technical characteristics and test methods.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.10. ETSI TS 125 141 V12.6.0 (2015-01) -&nbsp;<em>Universal Mobile Telecommunications System (UMTS); Base Station (BS) conformance testing (FDD) (3GPP TS 25.141 version 12.6.0 Release 12).</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.11. ETSI TS 136 141 V15.4.0 (2018-10) -&nbsp;<em>Generation Partnership Project; Technical Specification Group Radio Access Network; Evolved Universal Terrestrial Radio Access (EUTRA); Base Station (BS) conformance testing (Release 15).</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.12. ETSI TR 103 103 V1.1.1 (2012-09) -&nbsp;<em>Fixed Radio Systems; Point-to-Point Systems; ATPC, RTPC, Adaptive Modulation (mixed-mode) and Bandwidth Adaptive Functionalities; Technical Background and Impact on Deployment, Link Design and Coordination.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.13. ETSI EN 302 372 V2.1.1 (2016-12) -&nbsp;<em>Short Range Devices (SRD); Tank Level Probing Radar (TLPR) equipment operating in the frequency ranges 4,5 GHz to 7 GHz, 8,5 GHz to 10,6 GHz, 24,05 GHz to 27 GHz, 57 GHz to 64 GHz, 75 GHz to 85 GHz; Harmonised Standard covering the essential requirements of article 3.2 of the Directive 2014/53/EU.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.14. ETSI EN 302 571 V2.1.1 (2017-02) -&nbsp;<em>Intelligent Transport Systems (ITS); Radiocommunications equipment operating in the 5 855 MHz to 5 925 MHz frequency band; Harmonised Standard covering the essential requirements of article 3.2 of Directive 2014/53/EU.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.15. ETSI EN 301 893 V2.1.1 (2017-05) - 5 GHz RLAN;&nbsp;<em>Harmonised Standard covering the essential requirements of article 3.2 of Directive 2014/53/EU.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.16. ETSI EN 302 567 V2.1.1 (2017-07) -&nbsp;<em>Multiple-Gigabit/s radio equipment operating in the 60 GHz band; Harmonised Standard covering the essential requirements of article 3.2 of Directive 2014/53/EU.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.17. FCC 13-112 (2013-08) -&nbsp;<em>Report and Order ET Docket No. 07-113 - Revision of Part 15 of the Commission’s Rules Regarding Operation in the 57-64 GHz Band.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.18. FCC 14-2 (2014-01) -&nbsp;<em>Report and Order ET Docket No. 10-23 - Amendment of Part 15 of the Commission’s ) Rules To Establish Regulations for Tank Level ) Probing Radars in the Frequency Band ) 77-81 GHz.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.19. FCC 17-94 (2017-06) -&nbsp;<em>Report and Order ET Docket No. 15-26 - Amendment of Parts 1, 2, 15, 90 and 95 of the Commission’s Rules to Permit Radar Services in the 76-81 GHz Band.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.20. FCC-CIRC1711-02 (2017-10) -&nbsp;<em>Second Report and Order, Second Further Notice of Proposed Rulemaking, Order on Reconsideration and Memorandum Opinion and Order, GN Docket No. 14-177 - Use of Spectrum Bands Above 24 GHz for Mobile Radio Services.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.21. FCC ET Docket No. 17-183 (2020-04) -&nbsp;<em>Unlicensed Use of the 6 GHz Band.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.22. IEEE Std 802.11-2020 -&nbsp;<em>IEEE Standard for Information Technology - Telecommunications and information exchange between systems - Local and metropolitan area networks - Specific requirements Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications</em>.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.23. ITU-R M.1652-1 (2011-05) -&nbsp;<em>Dynamic frequency selection in wireless access systems including radio local area networks for the purpose of protecting the radiodetermination service in the 5 GHz band.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.24. ITU-R M.2003-2 (2018-01) -&nbsp;<em>Multiple Gigabit Wireless Systems in frequencies around 60 GHz.</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.25. ITU-R RESOLUTION 229 (REV. WRC-19) -&nbsp;<em>Use of the frequency bands 5 150-5 250 MHz, 5 250-5 350 MHz and 5 470-5 725 MHz by the mobile service for the implementation of wireless access systems including radio local area networks</em>.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">2.26. ISED -&nbsp;<em>Radio Standards Specification RSS-247 (2017-05), Issue 2, Digital Transmission Systems (DTSs), Frequency Hopping Systems (FHSs) and Licence-Exempt Local Area Network (LE-LAN) Devices, replaces RSS- 247, Issue 1, dated May 2015</em>.</p>
+<p class="Texto_Justificado" style="padding-left: 30px; text-align: justify;">3. DEFINIÇÕES</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">3.1. Para os efeitos deste documento, são adotadas as seguintes definições, além daquelas constantes da referência 2.3:</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.1. Ambiente fechado (<em>indoor</em>): é aquele capaz de produzir atenuação por penetração em edificações de forma a permitir que os níveis das emissões de um transmissor sejam degradados em diversas direções.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.2. Dispositivo de Auxílio Auditivo: aparelho usado para prover auxílio auditivo a pessoa ou grupo de pessoas com deficiência. Tal dispositivo pode ser usado para treinamento auricular em uma instituição de educação, para auxílio auditivo em locais de encontros públicos, tais como igreja, teatro, ou auditórios e, em outros locais, exclusivamente para auxílio auditivo a indivíduos portadores de deficiência.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.3. Dispositivo de Telemedição Biomédica: equipamento usado para transmitir medidas de fenômenos biomédicos humanos ou animais para um receptor, dentro de uma área restrita.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.4.&nbsp;<em>Duty Cycle:&nbsp;</em>é o valor da soma das larguras de pulsos em um período de operação, dividido pelo tamanho desse período.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.5. EIRP: potência equivalente isotropicamente radiada.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.6. Emissor-sensor de Movimentação Interativa: dispositivo utilizado&nbsp;para capturar gestos ou movimentos em espaço tridimensional vazio.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.7. Emissor-sensor de Variação de Campo Eletromagnético: dispositivo que estabelece um campo eletromagnético em sua vizinhança e detecta mudanças naquele campo como resultante do movimento de seres vivos ou objetos dentro de sua faixa de atuação.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.8. Emissor-sensor de Varredura Corporal para Aplicação de Segurança:&nbsp;dispositivo&nbsp;utilizado para a detecção de objetos carregados junto ao corpo humano, em vestes e acessórios de uso pessoal, formado por dois painéis com arranjos de antenas&nbsp;dispostos frente-a-frente.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.9. Equipamento Bloqueador de Sinais de Radiocomunicações (BSR): equipamento destinado a restringir o emprego de radiofrequências ou faixas de radiofrequências específicas para fins de comunicações.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.10. Equipamento de Localização de Cabo: dispositivo usado de forma não contínua com o objetivo de localizar cabos, linhas, dutos e elementos ou estruturas similares enterrados.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.11. Equipamento Baseado em Carga (<em>Load Based Equipment</em>&nbsp;- LBE): equipamento, cuja periodicidade da estrutura de transmissão e recepção do quadro de dados é dinâmica no tempo e de acordo com a demanda.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.12. Equipamento Baseado em&nbsp;Quadro (<em>Frame Based Equipment&nbsp;</em>- FBE): equipamento, cuja periodicidade da estrutura de transmissão e recepção do quadro de dados é fixa no tempo.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.13. Equipamento Baseado em Protocolo de Compartilhamento:&nbsp;equipamento que utiliza a&nbsp;especificação do padrão&nbsp;IEEE 802.11™&nbsp;<em>Carrier Sense Multiple Access with Collision Avoidance&nbsp;</em>(CSMA/CA)&nbsp;na implementação dos protocolos das camadas física (PHY) e de enlace (MAC).</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.14. Equipamento Cliente: equipamento que opera na faixa 5.925-7.125 MHz, cuja transmissão&nbsp;está sob o controle de um Ponto de Acesso&nbsp;<em>indoor</em>&nbsp;ou de um Ponto de Acesso Subordinado e que não possui&nbsp;capacidade para&nbsp;realizar a formação&nbsp;de uma rede.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.15. Equipamento com Potência Muito Baixa: equipamento portátil que pode operar&nbsp;na faixa 5.925-7.125 MHz em ambiente aberto (<em>outdoor</em>) ou fechado (<em>indoor</em>).</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.16. Equipamento de Radiocomunicação de Uso Geral: unidade portátil com capacidade de transmissão bidirecional para comunicação de voz.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.17. Espalhamento Espectral: tecnologia na qual a energia média do sinal transmitido é espalhada sobre uma largura de faixa muito maior do que a largura de faixa que contém a informação.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.18. Femtocélula: equipamento autoconfigurável e gerenciado pela prestadora, que opera como estação fixa para a radiocomunicação com as estações dos Usuários.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.19. Interferência Prejudicial: qualquer emissão, irradiação ou indução que obstrua, degrade seriamente ou interrompa repetidamente a telecomunicação.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.20. Microfone sem Fio: sistema composto de um microfone integrado a um transmissor e a&nbsp;um receptor que visa proporcionar ao usuário liberdade de movimentos sem as limitações impostas por um meio de transmissão físico (cabo).</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.21. Modulação Digital: processo pelo qual alguma característica da onda portadora (frequência, fase, amplitude ou combinação destas) é variada de acordo com um sinal digital (sinal constituído de pulsos codificados ou de estados derivados de informação quantizada).</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.22. Operação Contínua:&nbsp;é operação do transmissor, cujo sinal transmitido é&nbsp;ciclicamente predeterminado e possui intensidade de&nbsp;campo elétrico&nbsp;constante&nbsp;no tempo, tais como sinais de voz e vídeo.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.23. Operação Periódica: é a operação momentânea&nbsp;do transmissor, cujo sinal&nbsp;é transmitido de modo intermitente na forma de sinais pulsados em uma única portadora. Exemplos de produtos que utilizam operação periódica incluem: alarmes de emergência, controles remotos, etc.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.24. Ponto de Acesso&nbsp;<em>indoor</em>: ponto de Acesso que opera&nbsp;na faixa 5.925-7.125 MHz, que possui&nbsp;capacidade para&nbsp;realizar&nbsp;formação&nbsp;de rede,&nbsp;dispõe&nbsp;de mecanismo de&nbsp;roteamento entre segmentos de redes cabeadas&nbsp;e&nbsp;sem fio, e&nbsp;apresenta&nbsp;conexão direta com a Internet.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.25. Ponto de Acesso Subordinado: ponto de Acesso que opera na faixa 5.925-7.125 MHz, sob o controle de um Ponto de Acesso&nbsp;<em>indoor</em>, não possui conexão direta com a Internet, não sendo admitida sua&nbsp;utilização ​​para conectar dispositivos entre edifícios ou estruturas separadas.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.26. Sistema de Identificação por Radiofrequência (RFID) ou similar: sistema, composto por dispositivo transceptor, que recebe e envia sinais de radiofrequências, quando excitado por um equipamento transceptor interrogador, que tem a capacidade de efetuar a leitura, escrita ou modificação das informações contidas no dispositivo.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.27. Saltos em Frequência: técnica de espalhamento espectral na qual cada transmissor de um mesmo equipamento ocupa um número de radiofrequências no tempo, cada uma delas por um dado período de tempo, período este chamado de período de permanência (<em>Dwell Time</em>).</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.28. Sequência Direta: técnica na qual se combina a informação do sinal, que normalmente é digital, com uma sequência binária de maior velocidade, cuja combinação resultante é então usada para modular a portadora de radiofrequência. O código binário - uma sequência de bits pseudoaleatória de comprimento fixo que é reciclada continuamente pelo sistema - domina a função de modulação, sendo a causa direta do espalhamento do sinal transmitido.&nbsp;</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.29. Sequência Pseudoaleatória: sequência de dados binários que tem, na sua formação, ao mesmo tempo algumas características de sequência aleatória e também algumas de sequência não aleatória.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.30. Sistema de Acesso sem Fio em Banda Larga para Redes Locais: termo aplicado a equipamento, aparelho ou dispositivo, utilizado em aplicações diversas em redes locais sem fio que necessitem de altas velocidades de transmissão, nas faixas de radiofrequências e potências estabelecidas neste documento.&nbsp;</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.31. Sistema de Compartilhamento de Acesso ao Meio: é o sistema automático por meio do qual&nbsp;equipamentos LBE e FBE&nbsp;compartilham&nbsp;o uso das faixas de radiofrequências com&nbsp;Equipamento Baseado em Protocolo de Compartilhamento,&nbsp;que deve&nbsp;dispor dos seguintes mecanismos:</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">I - Procedimento de verificação de disponibilidade de canal (<em>Clear Channel Assessment</em>&nbsp;- CCA): mecanismo utilizado por transceptores LBE e FBE para detectarem o TL&nbsp;transmitido&nbsp;por outros equipamentos;</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">II -&nbsp;<em>Listen Before Talk</em>&nbsp;(LBT): mecanismo por meio do qual os equipamentos LBE e FBE realizam procedimento de verificação de disponibilidade de canal (CCA), antes de estabelecerem comunicação com outros equipamentos nesse canal; e</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">III - Limiar de energia detectada (<em>ED&nbsp;Threshold Level</em>&nbsp;- TL): é o valor da densidade espectral de EIRP, calculada sobre a largura total do canal, em qualquer canal.&nbsp;</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.32. Sistema de Comunicação Veicular: sistema de auxílio à condução no trânsito, constituído de dispositivos transceptores veiculares&nbsp;que se comunicam diretamente com transceptores veiculares de outros veículos, ou com transceptores de infraestrutura, nas faixas de radiofrequência e potências estabelecidas neste documento.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.33. Sistema de Proteção de Perímetro:&nbsp;emissor-sensor de variação de campo eletromagnético que emprega linhas de transmissão de radiofrequência como fonte de radiação e que são instaladas de tal forma que permitem ao sistema detectar movimentos dentro da área protegida.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.34. Sistema de Ramal sem Fio de CPCT:&nbsp;sistema consistindo de uma estação base fixa que se conecta à Central Privada de Comutação Telefônica (CPCT) e unidades terminais móveis que se comunicam diretamente com a estação base. Transmissões de uma unidade terminal móvel são recebidas pela estação base e transferida para a CPCT.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.35. Sistema de Sonorização Ambiental:&nbsp;sistema composto de um transmissor e de receptores integrados a alto-falantes, que visa substituir o meio físico de interligação da fonte sonora às caixas de som.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.36. Sistema de Telefone sem Cordão:&nbsp;sistema consistindo de dois transceptores, um sendo uma estação base fixa que se conecta à rede telefônica pública comutada e a outra uma unidade terminal móvel que se comunica diretamente com a estação base. Transmissões da unidade terminal móvel são recebidas pela estação base e transferidas para a rede do Serviço Telefônico Fixo Comutado (STFC). Informações recebidas da rede telefônica pública comutada são transmitidas pela estação base para a unidade móvel.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.37. Sistema Multigigabit sem Fio: termo aplicado a equipamento, aparelho ou dispositivo de telecomunicação, que opera em redes locais sem fio, com ou sem linha de visada direta, ou em comunicações ponto-a-ponto de curto alcance.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.38. Telecomando:&nbsp;uso das telecomunicações para a transmissão de sinais de rádio para iniciar, modificar ou terminar, à distância, funções de equipamento.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.39. Telemetria:&nbsp;uso das telecomunicações para a indicação ou registro automático, à distância, de leituras de instrumento de medida.&nbsp;</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.40. Transceptor de Infraestrutura: dispositivo instalado em infraestrutura de redes móveis destinado à comunicação com veículo&nbsp;para envio e recepção de informações de auxílio à condução no trânsito e&nbsp;de&nbsp;comunicação da&nbsp;rede com o veículo.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.41. Transceptor de Radiação Restrita:&nbsp;equipamento que&nbsp;utiliza&nbsp;tecnologia de espalhamento espectral ou outras tecnologias de modulação digital.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.42. Transceptor Ponto de Acesso Utilizado&nbsp;no Interior de Veículo de Transporte Terrestre: equipamento instalado no&nbsp;interior dos veículos de transporte terrestre,&nbsp;destinado ao&nbsp;provimento&nbsp;de&nbsp;radiocomunicação com as estações de usuários no&nbsp;interior dos veículos de transporte terrestre.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.43. Transceptor Veicular: dispositivo instalado em veículo para envio e recepção&nbsp;de informações&nbsp;entre veículos, ou desse&nbsp;com&nbsp;transceptor&nbsp;de infraestrutura, para auxílio à condução no trânsito&nbsp;e na&nbsp;comunicação do&nbsp;veículo com a rede.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.44. Valor de pico: resultado da medição da grandeza física em questão quando se utiliza um instrumento de medição com detector de valor de pico conforme especificado pela CISPR 16.&nbsp;</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.45. Valor médio: resultado da medição da grandeza física em questão quando se utiliza um detector de valor médio conforme especificado pela CISPR 16.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.46. Valor quase-pico: resultado da medição da grandeza física em questão quando se utiliza um detector de valor quase-pico conforme especificado pela CISPR 16.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.47. Valor RMS: resultado da medição da grandeza física em questão quando se utiliza um detector de valor RMS conforme especificado pela CISPR 16.</p>
+<p class="Texto_Justificado" style="padding-left: 90px; text-align: justify;">3.1.48. Veículo de transporte terrestre: veículo&nbsp;destinado&nbsp;ao transporte de cargas ou de pessoas&nbsp;cujo o&nbsp;interior&nbsp;é considerado&nbsp;ambiente fechado (<em>indoor</em>) para os&nbsp;fins deste documento. Também aplica-se o disposto neste item aos&nbsp;trens."</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>"</em>9. EMISSOR-SENSOR DE VARIAÇÃO DE CAMPO ELETROMAGNÉTICO"</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">"9.5.4.3.&nbsp;Para emissões entre 200 GHz e 220 GHz, a uma distância de 3 metros da superfície exterior da estrutura radiante, o valor é limitado ao máximo de 1.000 pW/cm<sup>2</sup>."</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">"9.6.5.2.&nbsp;O ganho da antena nos ângulos de elevação superiores a 60 graus deverão estar atenuados em no mínimo 38 dB em relação ao ganho máximo."</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">"9.7. Emissor-sensor de Varredura Corporal para Aplicação de Segurança&nbsp;deve atender às seguintes condições:</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.1. O produto<b>&nbsp;</b>deve<b>&nbsp;</b>operar&nbsp;na faixa 76-81&nbsp;GHz.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.2. O produto&nbsp;deve&nbsp;ser utilizado&nbsp;somente em ambiente&nbsp;<em>indoor</em>.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.3. A intensidade de campo na faixa de operação&nbsp;deve estar limitada a&nbsp;31.405 μV/m&nbsp;a uma distância de 3 metros.&nbsp;</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.4. A largura de faixa do sinal transmitido&nbsp;não deve exceder 0,5% da frequência central.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.5. A intensidade de campo das emissões espúrias não deve&nbsp;exceder aos limites&nbsp;estabelecidos na&nbsp;Tabela dos Limites Gerais de Emissão da referência 2.2.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.6. O produto pode utilizar antenas fixadas de modo permanente ou não.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.6.1. No caso de antenas não permanentes, o&nbsp;requerente da&nbsp;homologação&nbsp;deve fornecer informação sobre todos os tipos de antena&nbsp;que podem ser utilizadas&nbsp;​​em caso de substituição, indicando o ganho máximo permitido de cada&nbsp;antena (em dBi) e a impedância de entrada da antena.&nbsp;</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.6.2. Não é admitido o uso de conector&nbsp;de antena padrão ou&nbsp;conector elétrico nas terminações.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.7. O Emissor-sensor de Varredura Corporal&nbsp;para Aplicação de Segurança deve possuir operação periódica.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.7.1.&nbsp;Produtos com modo de funcionamento&nbsp;automático&nbsp;devem cessar a transmissão de sinais em até&nbsp;5 segundos após a ativação de seu funcionamento.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.7.2. Produtos com modo de funcionamento manual&nbsp;devem dispor de&nbsp;interruptor de contato normalmente aberto para o acionamento de&nbsp;seu funcionamento. O produto deve permanecer&nbsp;sob controle manual durante todo o tempo de funcionamento. Quando o funcionamento&nbsp;for interrompido, o transmissor deve&nbsp;cessar a transmissão em até 5 segundos após a liberação do interruptor.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">9.7.7.3. Não é admitido o uso de produtos que realizem operação contínua&nbsp;em intervalos de tempo regulares ou predeterminados. Excetuam-se&nbsp;as transmissões de sinais&nbsp;de supervisão e controle utilizados para verificação&nbsp;da integridade do sistema,&nbsp;nos quais o intervalo de tempo&nbsp;total da transmissão não exceda a 2 segundos por hora para cada transmissor."</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;">"11. SISTEMA DE ACESSO SEM FIO EM BANDA LARGA PARA REDES LOCAIS</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">11.1. Sistema de Acesso sem Fio em Banda Larga para Redes Locais&nbsp;operando na faixa 5.150–5.350 MHz deve atender às seguintes condições:</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.1.1. O valor médio da EIRP é limitado a 4 W (36 dBm)&nbsp;na faixa 5.150-5.250 MHz&nbsp;e a 1 W (30 dBm)&nbsp;na faixa de 5.250-5.350 MHz.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.1.2. O valor médio da densidade espectral da EIRP é limitado ao máximo de 50 mW/MHz (17 dBm/MHz).</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.1.3. Equipamento&nbsp;operando nas faixa&nbsp;5.150-5.350 MHz deve&nbsp;ser utilizado somente&nbsp;em ambiente fechado&nbsp;<em>(indoor)</em>.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">11.2. Aplicam-se as disposições a seguir para&nbsp;transceptores ponto de acesso&nbsp;operando na faixa 5.150–5.350 MHz instalados no interior de&nbsp;veículos de transporte terrestre e de trens.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.2.1. Transceptor&nbsp;instalado no&nbsp;interior de veículos de transporte terrestre&nbsp;deve&nbsp;atender às seguintes condições:</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.2.1.2. O valor médio da potência EIRP é limitado ao máximo de 40 mW (16 dBm).</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.2.1.3. O&nbsp;valor médio da densidade espectral de&nbsp;EIRP é limitado ao máximo de 2 mW/MHz (3dBm/MHz).</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.2.2. No caso de transceptor ponto de acesso instalado no interior de&nbsp;trens,&nbsp;as seguintes condições devem ser atendidas:</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.2.2.2. O valor médio da potência EIRP é limitado ao máximo de 200 mW&nbsp;(23&nbsp;dBm).</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.2.2.3. O&nbsp;valor médio da densidade espectral de&nbsp;EIRP é limitado ao máximo de 10&nbsp;mW/MHz (10&nbsp;dBm/MHz).</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.2.3. Não é admitida a interligação do transceptor ponto de acesso&nbsp;com outros dispositivos que tenham a finalidade de estender o raio de cobertura ou de amplificar o valor da potência EIRP acima do limite permitido neste documento.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">11.3. Sistema de Acesso sem Fio&nbsp;em Banda Larga para Redes Locais&nbsp;operando na faixa 5.470-5.725 MHz, deve&nbsp;atender às seguintes condições:</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.3.1. A potência na saída do transmissor é limitada ao máximo de 250 mW&nbsp;(24 dBm);</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.3.2. O valor médio da potência EIRP é limitado ao máximo de 1 W&nbsp;(30 dBm);</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.3.3. O valor médio da densidade espectral de potência EIRP é limitado ao máximo de 50&nbsp;mW/MHz&nbsp;(17 dBm/MHz)."</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">"11.5. Sistema de Acesso sem Fio&nbsp;em Banda Larga para Redes Locais&nbsp;operando nas faixas 5.150-5.350 MHz e&nbsp;5.470-5.725 MHz, deve&nbsp;possuir mecanismo de controle de potência de transmissão (<em>Transmit Power Control</em>&nbsp;- TPC) que permita a seleção da potência de transmissão e assegure um fator de mitigação de pelo menos 3 dB.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">11.5.1. Excepcionalmente, será permitido o uso de equipamentos sem o mecanismo TPC. Neste caso, o valor médio da potência EIRP deverá estar limitado ao valor máximo permitido, reduzido em pelo menos 3 dB para os equipamentos operando nas faixas 5.150-5.350 MHz e&nbsp;5.470-5.725 MHz."</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">"11.6.4. Para os equipamentos operando com EIRP entre 200 mW (23 dBm)&nbsp;e o valor máximo permitido,&nbsp;o mecanismo DFS deverá ser capaz de detectar sinais interferentes acima do limiar de -64 dBm, calculado durante um intervalo médio de 1 microssegundo."</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;">"17. SISTEMAS OPERANDO NA FAIXA 57-64 GHz"</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">"17.1.2. Os demais equipamentos, a exceção daqueles que se enquadram nas condições específicas de uso para Sistema Multigigabit sem Fio, não deverão exceder o valor de 9 µW/cm<sup>2</sup>&nbsp;de densidade de potência média para qualquer emissão medida durante o intervalo de transmissão. Como também não deverão exceder o valor de 18 µW/cm<sup>2</sup>, de pico de densidade de potência de qualquer emissão medida a 3 m da estrutura de radiação;"</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">"17.3.&nbsp;Sensor&nbsp;de movimentação&nbsp;interativa&nbsp;deve atender às seguintes condições:</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">17.3.1. O valor da&nbsp;potência de pico conduzida&nbsp;é limitado&nbsp;ao máximo de -10 dBm.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">17.3.2. O valor de pico de EIRP é limitado&nbsp;ao máximo de 10 dBm.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">17.4. A radiofrequência fundamental das emissões devem estar dentro da faixa de radiofrequências estabelecida neste item, em qualquer condição de operação.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">17.5. No que se refere às emissões espúrias, as seguintes condições devem ser atendidas:</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">17.5.1. Radiações emitidas abaixo de 40 GHz não deverão exceder os limites gerais contidos na Tabela II da referência 2.3;</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">17.5.2. Na faixa 40-200 GHz, o nível emissões espúrias não deve exceder 90 pW/cm2 a uma distância de 3 m;</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">17.5.3. Os níveis de emissões espúrias não devem exceder o nível de emissão na radiofrequência fundamental.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">17.6. A operação na faixa 57-64 GHz, de acordo com este item, não é permitida para os seguintes equipamentos:</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">17.6.1. Equipamentos utilizados em aeronaves ou satélites;</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">17.6.2. Sensores de perturbação de campo, incluindo sistemas de radar veicular, exceto quando&nbsp;o&nbsp;sensor de perturbação de campo for utilizado em aplicações fixas ou for utilizado como sensor&nbsp;de movimentação&nbsp;interativa.</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">17.7. Para os propósitos deste item, a referência a aplicações fixas inclui sensores de perturbação de campo instalados no equipamento fixo, até mesmo se o sensor se mover dentro do equipamento."</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;">"19. SISTEMAS OPERANDO NAS FAIXAS DE RADIOFREQUÊNCIA ULTRA LARGA"</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 60px;">"19.2. Sistemas de faixa de radiofrequência ultra larga que operam nas faixas 3.100-3.300 MHz e 3.700-10.600 MHz instalados no interior de&nbsp;veículos terrestres devem atender aos limites de emissões estabelecidos na Tabela XIV para dispositivos portáteis e sua operação de transmissão deve estar condicionada à comunicação com dispositivos portáteis integrantes do mesmo sistema."</p>
+<p class="Texto_Justificado" style="padding-left: 30px; text-align: center;">Tabela XIV</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Faixa de&nbsp;</strong><strong>Radiofrequência</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Restrição de&nbsp;</strong><strong>Operação</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Limite de Potência ou Intensidade de Campo&nbsp;</strong><strong>na Faixa de Operação</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Limite de Potência ou Intensidade de&nbsp;</strong><strong>Campo Fora da Faixa e Espúrias</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">3.100 -&nbsp;3.300 MHz</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">3.700 -&nbsp;10.600 MHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Sistemas de Formação de Imagens Médicas&nbsp;[6]</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">1) 0 dBm [1];</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">2) −41.3 dBm [2].</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">1) Tabela dos Limites Gerais de Emissão da referência 2.2 (Abaixo de 960 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">2)&nbsp; -53,3 dBm [2] (entre 960 e 1164 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">3)&nbsp; -75,3 dBm [3] (entre 1164 e 1240 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">4)&nbsp; -53,3 dBm [2] (entre 1240 e 1559 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">5)&nbsp; -75,3 dBm [3] (entre 1559 e 1610 MHz);&nbsp;</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">6) -51,3 dBm [2] (Acima 1610 MHz).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">3.100 -&nbsp;3.300 MHz</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">3.700 -&nbsp;10.600 MHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Uso restrito em ambientes internos a edificações&nbsp;[7]</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">1) 0 dBm [1];</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">2) −41.3 dBm [2].</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">1) Tabela dos Limites Gerais de Emissão da referência 2.2 (Abaixo de 960 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">2)&nbsp; -75,3 dBm [2] (entre 960 e 1164 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">3)&nbsp; -85,3 dBm [3] (entre 1164 e 1240 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">4)&nbsp; -75,3 dBm [2] (entre 1240 e 1559 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">5)&nbsp; -85,3 dBm [3] (entre 1559 e 1610 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">6) -53,3 dBm [2] (1610-1990 MHz);&nbsp;</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">7) -51,3 dBm [2] (Acima de 1990 MHz).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">3.100 -&nbsp;3.300 MHz</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">3.700 -&nbsp;10.600 MHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Dispositivos Portáteis&nbsp;[4]</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">1) 0 dBm [1];</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">2) −41.3 dBm [2].</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">1) Tabela dos Limites Gerais de Emissão da referência 2.2 (Abaixo de 960 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">2)&nbsp; -75,3 dBm [2] (entre 960 e 1164 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">3)&nbsp; -85,3 dBm [3] (entre 1164 e 1240 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">4)&nbsp; -75,3 dBm [2] (entre 1240 e 1559 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">5)&nbsp; -85,3 dBm [3] (entre 1559 e 1610 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">6) -63,3 dBm [2] (1610-1990 MHz);&nbsp;</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">7) -61,3 dBm [2] (Acima de 1990).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">22 - 29 GHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Sistemas de Radar Veicular</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">1) 0 dBm [1];</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">2) −41.3 dBm [2];&nbsp;</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">3) Todas as emissões a 30 graus</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">ou mais do plano horizontal na</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">faixa de 23.6 a 24.0 GHz devem ser atenuadas em 35 dB.</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">1) Tabela dos Limites Gerais de Emissão da referência 2.2 (Abaixo de 960 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">2)&nbsp; -75,3 dBm [2] (entre 960 e 1164 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">3)&nbsp; -85,3 dBm [3] (entre 1164 e 1240 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">4)&nbsp; -75,3 dBm [2] (entre 1240 e 1559 MHz);</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">5)&nbsp; -85,3 dBm [3] (entre 1559 e 1610 MHz);&nbsp;</p>
+<p class="Tabela_Texto_Alinhado_Esquerda">6) -51,3 dBm (Acima 1610 MHz).</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Alinhado_Esquerda"><b>Notas:</b></p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Alinhado_Esquerda">[1]: Limite de pico EIRP da emissão contido em uma resolução de largura de faixa de 50 MHz centrada na radiofrequência na qual ocorre a maior emissão é radiada. É aceitável o emprego de resolução de largura de faixa diferente, nesse caso o limite de pico EIRP deve ser 20 log (RBW/50) dBm onde RBW é a resolução da largura de faixa empregada em MHz.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Alinhado_Esquerda">[2]: Limite de Média EIRP medido usando uma resolução de largura de faixa de 1 MHz.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Alinhado_Esquerda">[3]: Limite de Média EIRP medido usando uma resolução de largura de faixa não inferior a 1 kHz.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Alinhado_Esquerda">[4]: Dispositivos relativamente pequenos que podem ser portados enquanto estão sendo operados, e que&nbsp;não empregam uma infraestrutura fixa.&nbsp;Estes dispositivos podem operar tanto em ambiente interno quanto externo.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Alinhado_Esquerda">[5]: Aos Sistemas de Radar Veicular operando na faixa 22-29 GHz, aplica-se o disposto nesta tabela, enquanto perdurarem as condições previstas&nbsp;no art. 2º deste Ato.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Alinhado_Esquerda">[6]: Sistemas de formação de imagens médicas devem ser operados manualmente&nbsp;por meio de&nbsp;interruptor&nbsp;de contato normalmente aberto&nbsp;(local ou remoto)&nbsp;que&nbsp;faça com que o transmissor cesse sua operação dentro de 10 segundos após ser liberado pelo operador.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p class="Tabela_Texto_Alinhado_Esquerda">[7]: Não é admitido o uso em ambiente&nbsp;<em>outdoor&nbsp;</em>e as emissões do equipamento não devem ser intencionalmente direcionadas para fora do ambiente&nbsp;<em>indoor</em>&nbsp;no qual está localizado, como através de janelas ou portas. Adicionalmente, o&nbsp;produto&nbsp;deve&nbsp;conter, em lugar facilmente visível da parte externa, ou&nbsp;em seu manual a seguinte mensagem: "O uso deste equipamento é restrito a ambientes&nbsp;fechados.&nbsp;O&nbsp;uso em ambiente&nbsp;<em>outdoor</em>&nbsp;é proibido e estará&nbsp;sujeito às sanções previstas na Lei nº&nbsp; 9.472, de 16 de julho de 1997".&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;">"24. SISTEMA DE COMPARTILHAMENTO DE ACESSO AO MEIO NAS FAIXAS 5.150-5.350 MHz, 5.470-5.725 MHz e&nbsp;5.725-5.850 MHz"</p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 30px;"><em>[...]</em></p>
+<p class="Texto_Justificado" style="text-align: justify; padding-left: 90px;">"24.1.2.&nbsp;Para LBE, cujo&nbsp;modo de funcionamento&nbsp;atenda as especificações dos itens 17, 19 ou&nbsp;21&nbsp;da norma IEEE Std 802.11 (referência 2.22), o TL de&nbsp;-75 dBm/MHz deve ser atendido,&nbsp;considerando a utilização de antena de recepção com ganho de 0 dBi, o&nbsp;TL independe do valor da potência transmitida."</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art2"></a>Art. 2º Alterar todo&nbsp;o <a title="Acesse o Item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1139-ato-14448#item23">item 23</a> e seus respectivos subitens do Anexo I do Ato nº 14.448, de 4 de dezembro de 2017, que aprovou os&nbsp;Requisitos Técnicos para a Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita, que passa&nbsp;a vigorar com a&nbsp;seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 30px;">"23. SISTEMA&nbsp;MULTIGIGABIT SEM FIO</p>
+<p class="Texto_Justificado" style="padding-left: 60px;">23.1. Sistema Multigigabit sem Fio operando na faixa 57-71 GHz&nbsp;em aplicações ponto-área&nbsp;<em>indoor</em>&nbsp;ou&nbsp;<em>outdoor</em>&nbsp;deve&nbsp;atender as seguintes condições:</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.1.1. O valor médio da potência EIRP é limitado ao máximo de 40 dBm.</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.1.2. O pico da potência EIRP de qualquer emissão é limitado ao máximo de 43 dBm.</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.1.3. O valor médio da densidade espectral da EIRP é limitado ao máximo de 13 dBm/MHz.</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.1.4. É obrigatória&nbsp;a utilização&nbsp;de sistema de compartilhamento de acesso ao meio nesses equipamentos.</p>
+<p class="Texto_Justificado" style="padding-left: 60px;">23.2. Sistema Multigigabit sem Fio operando&nbsp;na faixa 57-66&nbsp;GHz&nbsp;em aplicações fixas (ponto-a-ponto, ponto-multiponto ou multiponto-multiponto) deve&nbsp;atender às seguintes condições:</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.2.1. Equipamentos que operam com valor médio da potência EIRP menor ou igual a 40 dBm devem possuir pico da potência de transmissão limitado a 27 dBm.</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.2.2. Equipamentos que operam com valor médio da potência EIRP maior que 40 dBm e menor ou igual a 62 dBm devem possuir pico da potência de transmissão limitado a 27 dBm,&nbsp;antena com ganho mínimo de 24 dBi e devem ser limitados a aplicações&nbsp;<em>outdoor</em>.</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.2.3. Equipamentos para aplicações ponto-multiponto e multiponto-multiponto devem operar com valor médio da potência EIRP limitado a 62 dBm.</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.2.4. Os equipamentos devem&nbsp;dispor&nbsp;de&nbsp;controle automático de potência de transmissão (<em>Automatic Transmit Power Control</em>&nbsp;-&nbsp;ATPC)&nbsp;com faixa dinâmica mínima de 20 dB,&nbsp;que deve&nbsp;permanecer ativo em&nbsp;quaisquer circunstâncias.</p>
+<p class="Texto_Justificado" style="padding-left: 60px;">23.3. Sistema Multigigabit sem Fio operando na faixa 57-71 GHz&nbsp;em aplicações fixas&nbsp;ponto-a-ponto&nbsp;<em>outdoor</em>,&nbsp;com valor médio da potência EIRP maior que 62 dBm, deve&nbsp;atender às seguintes condições:</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.3.1. O valor médio da da potência EIRP é limitado ao máximo de 82 dBm.</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.3.2. O pico da potência de qualquer emissão é limitado ao máximo de 85 dBm.</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.3.3. Se o ganho máximo da antena for inferior a 51 dBi, o valor médio da potência EIRP máxima e do pico da potência de qualquer emissão deverão ser reduzidas em 2 dB para cada dB reduzido no ganho da antena.</p>
+<p class="Texto_Justificado" style="padding-left: 60px;">23.4. As emissões espúrias abaixo de 40 GHz não devem exceder os limites gerais estabelecidos na Tabela Geral de Emissão da referência 2.2. Acima de 40 GHz até 200 GHz, as emissões espúrias não devem exceder 90 pW/cm<sup>2</sup>&nbsp;(medidos a 3 metros).</p>
+<p class="Texto_Justificado" style="padding-left: 60px;">23.5. Sistema Multigigabit sem Fio operando em aeronaves deve&nbsp;atender as seguintes condições:</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.5.1. O uso do equipamento em aeronaves é admitido apenas:</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">I - quando a aeronave&nbsp;estiver em solo; e</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">II - durante o voo, somente em redes de comunicação fechadas e exclusivas, localizadas no ambiente fechado (indoor) de aeronaves.</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">23.5.2. Não será permitido o uso de produtos em:</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">I - Wireless Avionics Intra-Communication (WAIC) ou aplicações que utilizem dispositivos fixados à estrutura externa da aeronave; e</p>
+<p class="Texto_Justificado" style="padding-left: 90px;">II - aeromodelos, aeronaves não tripuladas, aeronaves de pulverização de culturas, aeróstatos, brinquedos, drones e outros congêneres, nos quais não é possível produzir atenuação similar ao ambiente fechado (<em>indoor</em>) de aeronaves.</p>
+<p class="Texto_Justificado" style="padding-left: 60px;">23.6. Não é permitido o uso de Sistema Multigigabit sem Fio, operando na faixa 57-71 GHz, em satélites."</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art3"></a>Art. 3º Incluir o <a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1139-ato-14448#item21.14">item 21.14</a> ao Anexo I do Ato nº 14.448, de 4 de dezembro de 2017, que aprovou os&nbsp;Requisitos Técnicos para a Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita, com a&nbsp;seguinte redação:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">"21.14. Para demais tecnologias e aplicações, adicionalmente aos itens 21.1 a 21.10, a certificação das femtocélulas deverá ser pautada pelos&nbsp;requisitos técnicos para&nbsp;avaliação da conformidade de Transceptor para&nbsp;Estação&nbsp;Rádio Base (Referência 2.4)"</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art4"></a>Art. 4º&nbsp; Excluir os itens <a title="Acesse o Item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1139-ato-14448#item9.2.4.2">9.2.4.2</a> e <a title="Acesse o Item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2017/1139-ato-14448#item9.2.4.3">9.2.4.3</a> do Anexo I do Ato nº 14.448, de 4 de dezembro de 2017, que aprovou os&nbsp;Requisitos Técnicos para a Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art5"></a>Art. 5º&nbsp; Este Ato entra em vigor na data de sua publicação no Boletim de Serviço Eletrônico da Anatel.</p>
+<p style="text-align: center;">VINICIUS OLIVEIRA CARAM GUIMARÃES<br>Superintendente de Outorga e Recursos à Prestação</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1633"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Alteração" class="link-categoria">Alteração</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Anexo%20I" class="link-categoria">Anexo I</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato" class="link-categoria">Ato</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20Técnicos" class="link-categoria">Requisitos Técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação%20da%20Conformidade" class="link-categoria">Avaliação da Conformidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Equipamentos%20de%20Radiação%20Restrita" class="link-categoria">Equipamentos de Radiação Restrita</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

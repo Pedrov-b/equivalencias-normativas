@@ -1,0 +1,3626 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="63b5f0c8fd2a12641d07068d-text/javascript">
+  </script>
+  <script type="63b5f0c8fd2a12641d07068d-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="63b5f0c8fd2a12641d07068d-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 196, de 15 de dezembro de 1999 (REVOGADA)
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/1999/202-resolucao-196"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Aprovação, Ato normativo, Plano de autorização, Serviço especial de radiochamada, RecursosPrestacao, ResolucaoRevogada" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Aprova a Norma nº 8/99 - Anatel - “Condições para Aplicação do Plano de Autorizações do Serviço Especial de Radiochamada”. (Revogada pela Resolução nº 617/2013)" name="description"/>
+   <title>
+    Anatel - Resolução nº 196, de 15 de dezembro de 1999 (REVOGADA)
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=600790983" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=475280481" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"7f74bb531ee86168f39f1c4300df8c63","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="63b5f0c8fd2a12641d07068d-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="63b5f0c8fd2a12641d07068d-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="63b5f0c8fd2a12641d07068d-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="63b5f0c8fd2a12641d07068d-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="63b5f0c8fd2a12641d07068d-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1958052720" type="63b5f0c8fd2a12641d07068d-text/javascript">
+    </script>
+    <script type="63b5f0c8fd2a12641d07068d-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="63b5f0c8fd2a12641d07068d-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026164629" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/1999/202-resolucao-196">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/1999" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/1999">
+             1999
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 196, de 15 de dezembro de 1999 (REVOGADA)
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178 current active">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-63b5f0c8fd2a12641d07068d-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-63b5f0c8fd2a12641d07068d-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="63b5f0c8fd2a12641d07068d-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="63b5f0c8fd2a12641d07068d-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 196, de 15 de dezembro de 1999 (REVOGADA)
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Quarta, 15 Dezembro 1999 18:37
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Quinta, 20 Fevereiro 2025 12:01
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 10106
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="20" cellspacing="2" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">
+                  <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617" title="Acesse a Resolução">
+                   Revogada pela Resolução nº 617/2013
+                  </a>
+                 </td>
+                 <td style="width: 50%; text-align: justify;" valign="middle">
+                  <p style="text-align: justify;">
+                   Aprova a Norma nº 8/99 - Anatel - "Condições para Aplicação do Plano de Autorizações do Serviço Especial de Radiochamada"
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p style="text-align: justify;">
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=75&amp;data=20/12/1999" title="Acesse o DOU">
+                20/12/1999
+               </a>
+               .
+              </p>
+              <p style="text-align: justify;">
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+                </strong>
+                , no uso das atribuições que lhe foram conferidas pelo
+                <a href="/legislacao/leis/2-lei-9472#art22" rel="noopener noreferrer" target="_blank" title="Acesse o artigo">
+                 art. 22
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997, e pelo
+                <a href="/legislacao/decretos/3-decreto-2338#art17" rel="noopener noreferrer" target="_blank" title="Acesse o artigo">
+                 art. 17
+                </a>
+                do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO o disposto no inciso II do
+                <a href="/legislacao/leis/2-lei-9472#art14" rel="noopener noreferrer" target="_blank" title="Acesse o artigo">
+                 art. 214
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO a
+                <a href="/legislacao/resolucoes/14-1999/201-resolucao-171" rel="noopener noreferrer" target="_blank" title="Acesse a Resolução">
+                 Resolução nº 171, de 8 de outubro de 1999
+                </a>
+                , que publicou o Plano de Autorizações do Serviço Especial de Radiochamada e a Consulta Pública nº 185, de 8 de outubro de 1999, que submeteu à consulta a nova redação da Norma Condições para Aplicação do Plano de Autorizações do Serviço Especial de Radiochamada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO que o objeto da referida consulta assim como os comentários recebidos contemplam aspectos complementares à Norma nº 15/97, aprovada pela Portaria nº 558, de 3 de novembro de 1997, do Ministério das Comunicações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO deliberação tomada em sua Reunião nº 97, de 8 de dezembro de 1999;
+               </span>
+              </p>
+              <p class="resolve">
+               <span style="text-decoration: line-through;">
+                RESOLVE:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art1">
+                </a>
+                Art. 1º Aprovar a Norma nº 8/99 - Anatel - "Condições para Aplicação do Plano de Autorizações do Serviço Especial de Radiochamada", na forma do Anexo a esta Resolução.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art2">
+                </a>
+                Art. 2º Revogar a
+                <a href="/legislacao/resolucoes/14-1999/200-resolucao-109" rel="noopener noreferrer" target="_blank" title="Acesse a Resolução">
+                 Resolução nº 109, de 5 de março de 1999
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art3">
+                </a>
+                Art. 3º Esta Resolução entra em vigor na data de sua publicação.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                RENATO NAVARRO GUERREIRO
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Presidente do Conselho
+               </span>
+              </p>
+              <p style="text-align: center;">
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                ANEXO À RESOLUÇÃO Nº 196, DE 15 DE DEZEMBRO DE 1999
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <span style="font-size: medium;">
+                 NORMA Nº 8/99 - ANATEL
+                </span>
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <span style="font-size: medium;">
+                 CONDIÇÕES PARA APLICAÇÃO DO PLANO DE AUTORIZAÇÕES DO
+                </span>
+                <span style="font-size: medium;">
+                 SERVIÇO ESPECIAL DE RADIOCHAMADA
+                </span>
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item1">
+                </a>
+                1. OBJETIVO
+                <strong>
+                 <br/>
+                </strong>
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item1.1">
+                </a>
+                1.1. Esta norma tem por objetivo estabelecer condições para aplicação do Plano de Autorizações do Serviço Especial de Radiochamada (SER), no que tange à expedição de autorização para exploração do Serviço e sua expansão, em complemento à Norma nº 15/97, aprovada pela Portaria nº 558, de 3 de novembro de 1997.
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item2">
+                </a>
+                2. REFERÊNCIAS BÁSICAS
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item2.1">
+                </a>
+                2.1.
+                <a href="/legislacao/normas-do-mc/203-portaria-558" rel="noopener noreferrer" target="_blank" title="Acesse a Norma">
+                 Norma nº 15/97
+                </a>
+                , aprovada pela Portaria nº 558, de 3 de novembro de 1997;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item2.2">
+                </a>
+                2.2.
+                <a href="/legislacao/normas-do-mc/204-portaria-1306" rel="noopener noreferrer" target="_blank" title="Acesse a Norma">
+                 Norma nº 17/96
+                </a>
+                , aprovada pela Portaria nº 1306, de 29 de outubro de 1996;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item2.3">
+                </a>
+                2.3. Plano de Autorizações do Serviço Especial de Radiochamada, aprovado pela
+                <a href="/legislacao/resolucoes/14-1999/201-resolucao-171" rel="noopener noreferrer" target="_blank" title="Acesse a Resolução">
+                 Resolução nº 171, de 8 de outubro de 1999
+                </a>
+                .
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item3">
+                </a>
+                3. DEFINIÇÕES
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item3.1">
+                </a>
+                3.1. Para os fins a que se destina esta norma aplicam-se as definições constantes nos documentos referidos no
+                <a href="#item2" title="Acesse o Item">
+                 item 2
+                </a>
+                , além das seguintes:
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item3.1a">
+                </a>
+                a) DISTÂNCIA DE COORDENAÇÃO: distância limite entre as estações de base do Serviço Especial de Radiochamada, abaixo da qual as prestadoras do serviço devem empreender negociações visando compatibilizar a operação entre as estações de base pretendidas e as estações de base existentes.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item3.1b">
+                </a>
+                b) EXPANSÃO DO SERVIÇO: aumento da capacidade de atendimento em áreas de prestação de serviço específicas, dentro de uma área de prestação autorizada, onde a capacidade do canal associado esteja esgotada.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item3.1c">
+                </a>
+                c) ZONA DE COORDENAÇÃO PARA O MERCOSUL: faixa geográfica com largura de quarenta quilômetros, medida segundo o tipo de fronteira entre os países membro:
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item3.1cI">
+                </a>
+                I - Terrestre: a partir da fronteira, para dentro do país que solicita a coordenação;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item3.1cII">
+                </a>
+                II - Lacustre, fluvial ou marítimo: desde a margem ou costa do país vizinho, para dentro do país que solicita a coordenação.
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item4">
+                </a>
+                4. CAMPO DE APLICAÇÃO
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                Esta norma se aplica às empresas interessadas na exploração ou expansão do Serviço Especial de Radiochamada.
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item5">
+                </a>
+                5. PROCESSO DE EXPEDIÇÃO DE AUTORIZAÇÃO
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item5.1">
+                </a>
+                5.1. O processo de expedição de autorização para exploração do SER e direito de uso da radiofreqüência observará o disposto no Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e Autorização de Uso de Radiofreqüência, aprovado pela
+                <a href="/legislacao/resolucoes/13-1998/164-resolucao-65" rel="noopener noreferrer" target="_blank" title="Acesse a Resolução">
+                 Resolução nº 65, de 29 de outubro de 1998
+                </a>
+                , e no
+                <a href="/legislacao/normas-do-mc/203-portaria-558#item7" rel="noopener noreferrer" target="_blank" title="Acesse o Item">
+                 item 7
+                </a>
+                da Norma nº 15/97, aprovada pela Portaria nº 558, de 3 de novembro de 1997, onde couber, e serão executados pela Anatel.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item5.2">
+                </a>
+                5.2. A expedição de autorização para exploração do SER e a outorga de uso da radiofreqüência associada serão sempre feitas a título oneroso, conforme estabelecido no
+                <a href="/legislacao/leis/2-lei-9472#art48" rel="noopener noreferrer" target="_blank" title="Acesse o artigo">
+                 art. 48
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item5.3">
+                </a>
+                5.3. A autorização para exploração do SER será por tempo indeterminado, extinguindo-se somente por cassação, caducidade, decaimento, renúncia ou anulação, conforme estabelecido
+                <a href="/legislacao/leis/2-lei-9472#art138" rel="noopener noreferrer" target="_blank" title="Acesse o artigo">
+                 art. 138
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item5.4">
+                </a>
+                5.4. A autorização de uso da radiofreqüência associada terá prazo de quinze anos, renovável uma única vez, por igual período.
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item6">
+                </a>
+                6. EXPANSÃO DO SERVIÇO
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1">
+                </a>
+                6.1. A prestadora do SER poderá obter canal adicional, para fins de expansão do serviço, em área Nacional, Regional, Mesorregional e Microrregional, dentro dos limites de sua área de autorização.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.1">
+                </a>
+                6.1.1. Para pleitear o uso de radiofreqüência para fins de expansão do serviço a autorizada deverá observar as seguintes condições:
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.1a">
+                </a>
+                a) Comprovar o atendimento de pelo menos oitenta por cento dos compromissos de disponibilidade do serviço aplicáveis a sua área de prestação de serviço estabelecidos no
+                <a href="#item8.1" title="Acesse o Item">
+                 item 8.1
+                </a>
+                desta Norma.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.1b">
+                </a>
+                b) Comprovar esgotamento da capacidade do canal na área a ser expandida, considerados todos os recursos tecnológicos disponíveis.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.2">
+                </a>
+                6.1.2. A autorização de uso de radiofreqüências para fins de expansão de serviço dependerá de licitação nos termos do
+                <a href="/legislacao/leis/2-lei-9472#art164" rel="noopener noreferrer" target="_blank" title="Acesse o artigo">
+                 art. 164
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.3">
+                </a>
+                6.1.3. Para fins de verificação de inexigibilidade da licitação prevista no
+                <a href="#item6.1.2" title="Acesse o Item">
+                 item 6.1.2
+                </a>
+                será realizado chamamento público para verificação do número de interessados.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.4">
+                </a>
+                6.1.4. A autorização de uso de radiofreqüência para fins de expansão do serviço será expedida pelo prazo remanescente da autorização original, sendo renovável em conformidade com ela.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.5">
+                </a>
+                6.1.5. Quando o canal adicional for utilizado para atender a totalidade da área de prestação de serviço da autorização atual, o percentual de municípios, referente ao compromisso de disponibilidade do serviço, estabelecido no
+                <a href="#item8.1" title="Acesse o Item">
+                 item 8.1
+                </a>
+                desta norma fica acrescido em vinte por cento.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item6.1.6">
+                </a>
+                6.1.6. Quando o canal adicional for utilizado apenas para atender uma área menor do que a área de prestação de serviço da autorização atual, a Autorizada se obriga a cumprir, adicionalmente aos compromissos de atendimento referentes à sua área de prestação de serviço, os compromissos de prestação de serviço correspondentes a essa área menor, estabelecidos no
+                <a href="#item8.1" title="Acesse o Item">
+                 item 8.1
+                </a>
+                desta norma.
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item7">
+                </a>
+                7. ADEQUAÇÃO DE ÁREA
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item7.1">
+                </a>
+                7.1. A prestadora que detiver permissão Nacional Restrita, na data de publicação do Plano de Autorizações do SER, terá sua permissão transformada, automaticamente, em Autorização Nacional.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item7.1.1">
+                </a>
+                7.1.1. Quando da transformação da área de prestação Nacional Restrita para Nacional, será expedida autorização para exploração do serviço por prazo indeterminado e autorização de uso da radiofreqüência no mesmo canal consignado, obedecendo o prazo remanescente da atual Permissão, renovável uma única vez, por quinze anos.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item7.1.2">
+                </a>
+                7.1.2. A Autorizada Nacional se obriga a cumprir os compromissos de disponibilidade e de operação regular do serviço, estabelecidos no
+                <a href="#item8.1" title="Acesse o Item">
+                 item 8.1
+                </a>
+                desta norma.
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item8">
+                </a>
+                8. DISPONIBILIDADE DO SERVIÇO
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1">
+                </a>
+                8.1. A autorização para exploração do serviço implica no compromisso de torná-lo disponível e em operação regular nos prazos e em percentuais mínimos de municípios, definidos de acordo com a população e a área de prestação do serviço, conforme segue:
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.1">
+                </a>
+                8.1.1. Área de Prestação de Serviço Nacional
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.1a">
+                </a>
+                a) trinta por cento dos municípios com população acima de trezentos mil habitantes, de pelo menos cinco Unidades da Federação (UFs), no prazo de até dois anos;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.1b">
+                </a>
+                b) sessenta por cento dos municípios com população acima de trezentos mil habitantes, de pelo menos doze UFs, no prazo de até quatro anos.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.2">
+                </a>
+                8.1.2. Área de Prestação de Serviço Regional
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.2a">
+                </a>
+                a) trinta por cento dos municípios com população acima de duzentos mil habitantes, em cada UF da região, no prazo de até dois anos;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.2b">
+                </a>
+                b) sessenta por cento dos municípios com população acima de duzentos mil habitantes, em cada UF da região, no prazo de até quatro anos.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.3">
+                </a>
+                8.1.3. Área de Prestação de Serviço Mesorregional
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.3a">
+                </a>
+                a) trinta por cento dos municípios com população acima de oitenta mil habitantes no prazo de até dois anos;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.3b">
+                </a>
+                b) sessenta por cento dos municípios com população acima de oitenta mil habitantes no prazo de até quatro anos.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.4">
+                </a>
+                8.1.4. Área de Prestação de Serviço Microrregional
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.4a">
+                </a>
+                a) trinta por cento dos municípios com população acima de cinqüenta mil habitantes no prazo de até dois anos;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.4b">
+                </a>
+                b) sessenta por cento dos municípios com população acima de cinqüenta mil habitantes no prazo de até quatro anos.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.5">
+                </a>
+                8.1.5. O serviço é considerado disponível e em operação regular no município quando houver cobertura adequada de sinal, no mínimo, na área urbana do município.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.6">
+                </a>
+                8.1.6. Nas áreas de prestação de serviço com população superior a quinhentos mil habitantes, cada prestadora deverá atender no mínimo quinhentos usuários, no prazo de um ano, contado do início da exploração comercial do serviço.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.1.6.1">
+                </a>
+                8.1.6.1 No caso das atuais prestadoras, o prazo a que se refere o
+                <a href="#item8.1.6" title="Acesse o Item">
+                 item 8.1.6
+                </a>
+                será contado à partir de 12 de março de 1999.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.2">
+                </a>
+                8.2. Os prazos a que se referem os
+                <a href="#item8.1.1" title="Acesse o Item">
+                 itens 8.1.1 a 8.1.4
+                </a>
+                começam a contar das seguintes datas:
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.2a">
+                </a>
+                a) publicação do Ato de Autorização para as empresas que já são prestadoras do Serviço Especial de Radiochamada;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.2b">
+                </a>
+                b) início de exploração comercial do serviço para as novas autorizações.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item8.3">
+                </a>
+                8.3. A contagem de população, para efeito de aplicação do
+                <a href="#item8.1" title="Acesse o Item">
+                 item 8.1
+                </a>
+                , é baseada na Resolução nº 28, da Fundação Instituto Brasileiro de Geografia e Estatísticas - IBGE, de 25 de agosto de 1998, publicado no Diário Oficial da União, de 27 de agosto de 1998.
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item9">
+                </a>
+                9. ACOMPANHAMENTO DO SERVIÇO
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item9.1">
+                </a>
+                9.1. Para que haja acompanhamento dos compromissos constantes do
+                <a href="#item8.1" title="Acesse o Item">
+                 item 8.1
+                </a>
+                , a Autorizada se obriga a formalizar, junto à ANATEL:
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item9.1.1">
+                </a>
+                9.1.1. em até seis meses da data referida no
+                <a href="#item8.2" title="Acesse o Item">
+                 item 8.2
+                </a>
+                , que municípios serão atendidos em dois e quatro anos, respectivamente.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item9.1.2">
+                </a>
+                9.1.2. em até um mês após o prazo de dois anos da data referida no
+                <a href="#item8.2" title="Acesse o Item">
+                 item 8.2
+                </a>
+                , declaração que cumpriu os compromissos referidos nos subitens
+                <a href="#item8.1.1a" title="Acesse o Item">
+                 8.1.1 a
+                </a>
+                ,
+                <a href="#item8.1.2a" title="Acesse o Item">
+                 8.1.2 a
+                </a>
+                ,
+                <a href="#item8.1.3a" title="Acesse o Item">
+                 8.1.3 a
+                </a>
+                ou
+                <a href="#item8.1.4a" title="Acesse o Item">
+                 8.1.4 a
+                </a>
+                , conforme o caso.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item9.1.3">
+                </a>
+                9.1.3. em até um mês após o prazo de quatro anos da data referida no
+                <a href="#item8.2" title="Acesse o Item">
+                 art. 8.2
+                </a>
+                , declaração que cumpriu os compromissos referidos nos subitens
+                <a href="#item8.1.1b" title="Acesse o Item">
+                 8.1.1b
+                </a>
+                ,
+                <a href="#item8.1.2b" title="Acesse o Item">
+                 8.1.2 b
+                </a>
+                ,
+                <a href="#item8.1.3b" title="Acesse o Item">
+                 8.1.3 b
+                </a>
+                ou
+                <a href="#item8.1.4b" title="Acesse o Item">
+                 8.1.4 b
+                </a>
+                , conforme o caso.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item9.1.4">
+                </a>
+                9.1.4 Os prazos referentes aos itens
+                <a href="#item9.1.2" title="Acesse o Item">
+                 9.1.2
+                </a>
+                e
+                <a href="#item9.1.3" title="Acesse o Item">
+                 9.1.3
+                </a>
+                serão acrescidos de um ano no caso de expansão de serviço a que se refere o
+                <a href="#item6.1.5" title="Acesse o Item">
+                 item 6.1.5
+                </a>
+                .
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item9.2">
+                </a>
+                9.2. O não cumprimento dos compromissos estabelecidos no
+                <a href="#item8" title="Acesse o Item">
+                 item 8
+                </a>
+                implica em retomada da radiofreqüência respectiva e caducidade da autorização, nos termos do parágrafo 2º do
+                <a href="/legislacao/decretos/205-decreto-2196#art32" rel="noopener noreferrer" target="_blank" title="Acesse o artigo">
+                 art. 32
+                </a>
+                do Regulamento de Serviços Especiais, aprovado pelo Decreto nº 2.196, de 8 de abril de 1997.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item9.2.1">
+                </a>
+                9.2.1. A Agência agirá de forma a utilizar adequadamente o espectro e preservar o interesse público. É assegurado à Autorizada o direito de defesa nos termos da legislação vigente.
+               </span>
+              </p>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a name="item10">
+                </a>
+                10. PROJETO TÉCNICO E COORDENAÇÃO DE FREQÜÊNCIA
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.1">
+                </a>
+                10.1. Os níveis de potência efetivamente irradiada das estações de base não deverão ser superiores aos limites estabelecidos na Tabela I:
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Tabela I
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Potência Efetivamente Irradiada (W)
+               </span>
+              </p>
+              <table border="1" cellpadding="0" cellspacing="0" class="tamanho-padrao" style="margin-left: auto; margin-right: auto;">
+               <tbody>
+                <tr>
+                 <td valign="top" width="331">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    Altura da antena em relação ao nível médio do terreno HNMT(m)
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    Potência Efetivamente Irradiada (W)
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="331">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    0-177
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    3500
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="331">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    178-305
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    1860
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="331">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    306-427
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    1000
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="331">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    428-610
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    500
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="331">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    611-861
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    250
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="331">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    Acima de862
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    125
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p>
+               <span style="text-decoration: line-through;">
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.1.1">
+                </a>
+                10.1.1. Os níveis de potência efetivamente irradiada somente poderão ser superiores ao estabelecido neste artigo, se os raios das áreas de cobertura das estações de base não forem superiores aos estabelecidos no
+                <a href="#item10.2" title="Acesse o Item">
+                 item 10.6
+                </a>
+                desta norma.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.1.2">
+                </a>
+                10.1.2. Para estação de base localizada na zona de coordenação para o Mercosul os níveis de potência nas bordas de um círculo de vinte km de raio e centro na estação, não poderão ser superiores a 40 dB? (100 ?V/m) no centro da banda de operação dos transmissores.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.1.3">
+                </a>
+                10.1.3. Estações de base não devem provocar, na zona de coordenação para o Mercosul, níveis de sinal superiores ao indicado no parágrafo anterior.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.1.4">
+                </a>
+                10.1.4. Estas situações deverão ser claramente comprovadas no projeto técnico da estação.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2">
+                </a>
+                10.2. Para solicitar licença de funcionamento de suas estações de base, a autorizada deverá apresentar à Anatel projeto viável tecnicamente e compatível com as normas aplicáveis, do qual deverão constar, pelo menos:
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2I">
+                </a>
+                I - localização da estação;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2II">
+                </a>
+                II - planta ou carta geográfica, em escala adequada, com a indicação da área de cobertura geográfica de cada estação de base;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2III">
+                </a>
+                III - tipo de antena a ser utilizada na estação de base, altura da antena em relação ao solo e respectivos diagramas de radiação vertical e horizontal;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2IV">
+                </a>
+                IV - traçado dos perfis altimétricos de, pelo menos, oito radiais, espaçadas de 45º, a partir do norte verdadeiro;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2V">
+                </a>
+                V - indicação da altura do sistema radiante em relação ao nível médio de cada radial;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2VI">
+                </a>
+                VI - indicação da altura do sistema radiante em relação ao nível médio do terreno;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2VII">
+                </a>
+                VII - cálculo da potência de recepção, em dBW, no limite do contorno relativo à área de cobertura geográfica da estação de base;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2VIII">
+                </a>
+                VIII - cálculo da potência efetivamente radiada da estação de base necessária para o atendimento do serviço, com qualidade satisfatória, considerando uma margem de desvanescimento de 15 dB, bem como a topografia, as edificações e demais características da área de cobertura da estação de base;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2IX">
+                </a>
+                IX - descrição das aplicações a serem oferecidas aos usuários do serviço;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2X">
+                </a>
+                X - tecnologia empregada;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2XI">
+                </a>
+                XI - fabricante, modelo e características técnicas dos equipamentos a serem utilizados e o número de certificação do transmissor;
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2XII">
+                </a>
+                XII - formulários padronizados com a descrição técnica resumida das estações; e
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2XIII">
+                </a>
+                XIII - Anotação de Responsabilidade Técnica – ART, referente ao projeto.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.2.1">
+                </a>
+                10.2.1. Quando a estação de base estiver localizada na zona de coordenação para o Mercosul, a autorizada deverá observar os procedimentos estabelecidos no "Manual de Procedimentos de Coordenação de Freqüências de Paging Unidirecional" e apresentar à Anatel o projeto técnico.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.3">
+                </a>
+                10.3. Antes de conceder a licença para funcionamento de estação, a Anatel, visando à identificação de possíveis casos de incompatibilidade de operação da estação pretendida, deverá publicar no Diário Oficial da União as informações relativas ao projeto técnico da estação.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.3.1">
+                </a>
+                10.3.1. Deve-se entender por incompatibilidade de operação da estação pretendida, qualquer conflito decorrente de interferência prejudicial, gerada pela estação pretendida, nas estações existentes e vice-versa.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.3.2">
+                </a>
+                10.3.2. Considera-se interferência prejudicial qualquer emissão, irradiação ou indução que obstrua, degrade seriamente ou interrompa repetidamente a telecomunicação.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.3.3">
+                </a>
+                10.3.3. As Autorizadas que identificarem possíveis incompatibilidades de operação entre suas estações e a estação pretendida, deverão solicitar coordenação de radiofreqüência, com as devidas justificativas, à requerente da licença e encaminhar cópia à Anatel.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 90px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.3.3.1">
+                </a>
+                10.3.3.1. A solicitação de coordenação à requerente da licença deve ser feita em até trinta dias da divulgação do projeto técnico pela Anatel.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.4">
+                </a>
+                10.4. Deverão ser consideradas, fundamentalmente, em processos de coordenação de radiofreqüência, o tipo das estações de base, a distância de coordenação entre elas, o projeto técnico da estação pretendida, as condições de instalação das estações existentes e os respectivos projetos técnicos, bem como critérios de proteção estabelecidos em normas ou, na falta destes, recomendados por instituições de idoneidade reconhecida, ou ainda, aqueles acordados entre as Autorizadas e a requerente.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.5">
+                </a>
+                10.5. Para fins de aplicação do disposto no
+                <a href="#item10.4" title="Acesse o Item">
+                 item 10.4
+                </a>
+                , as estações de base do Serviço Especial de Radiochamada são classificadas, por tipo, conforme Tabela II.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Tabela II
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Classes de Estação de Base
+               </span>
+              </p>
+              <table border="1" cellpadding="0" cellspacing="0" class="tamanho-padrao" style="margin-left: auto; margin-right: auto;">
+               <tbody>
+                <tr>
+                 <td valign="top" width="170">
+                  <span style="text-decoration: line-through;">
+                  </span>
+                 </td>
+                 <td colspan="6" valign="top" width="501">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    Potência Efetivamente Radiada (W)
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    HNMT (m)
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="66">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    0-125
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    126-250
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    251-500
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    501-1000
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="95">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    1001-1860
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    1861-3500
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    0-177
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="66">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="95">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    178-305
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="66">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="95">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    B
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    C
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    306-427
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="66">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    B
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    C
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="95">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    428-610
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="66">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    B
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    C
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="95">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    611-861
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="66">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    B
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    C
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    C
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="95">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    862-1219
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="66">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    C
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="95">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    Acima de 1220
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="66">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="95">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="85">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p>
+               <span style="text-decoration: line-through;">
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.6">
+                </a>
+                10.6. Os raios das áreas de cobertura das estações de base não deverão exceder aos valores especificados na Tabela III.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Tabela III
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Raio de Áreas de Cobertura (km)
+               </span>
+              </p>
+              <table border="1" cellpadding="0" cellspacing="0" class="tamanho-padrao" style="margin-left: auto; margin-right: auto;">
+               <tbody>
+                <tr>
+                 <td valign="top" width="321">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    Tipo de Estação de Base
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    Raio de Área de Cobertura (km)
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="321">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    32,5
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="321">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    B
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    37,0
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="321">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    C
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    41,8
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="321">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    56,3
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="321">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="350">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    83,7
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.7">
+                </a>
+                10.7. A distância de coordenação entre as estações de base que operam no mesmo canal é determinada pela Tabela IV.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Tabela IV
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Distâncias de Coordenação entre Estações de Base (km)
+               </span>
+              </p>
+              <table border="1" cellpadding="0" cellspacing="0" class="tamanho-padrao" style="margin-left: auto; margin-right: auto;">
+               <tbody>
+                <tr>
+                 <td valign="top" width="170">
+                  <span style="text-decoration: line-through;">
+                  </span>
+                 </td>
+                 <td colspan="5" valign="top" width="510">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    Tipos de Estação de Base
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    Tipos de Estação de Base
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="94">
+                  <p align="center">
+                  </p>
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                  </p>
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    B
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                  </p>
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    C
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                  </p>
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                  </p>
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    A
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="94">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    112
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    120
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    128
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    163
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    223
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    B
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="94">
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    125
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    133
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    168
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    227
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    C
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="94">
+                 </td>
+                 <td valign="top" width="104">
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    138
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    173
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    233
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    D
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="94">
+                 </td>
+                 <td valign="top" width="104">
+                 </td>
+                 <td valign="top" width="104">
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    187
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    247
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" width="170">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    E
+                   </span>
+                  </p>
+                 </td>
+                 <td valign="top" width="94">
+                 </td>
+                 <td valign="top" width="104">
+                 </td>
+                 <td valign="top" width="104">
+                 </td>
+                 <td valign="top" width="104">
+                 </td>
+                 <td valign="top" width="104">
+                  <p align="center">
+                   <span style="text-decoration: line-through;">
+                    275
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p>
+               <span style="text-decoration: line-through;">
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.8">
+                </a>
+                10.8. O processo de coordenação pode resultar em um acordo mutuamente satisfatório, inclusive nos casos em que os critérios de proteção não forem totalmente satisfeitos.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.8.1">
+                </a>
+                10.8.1. A requerente da licença deverá apresentar à Anatel uma cópia do acordo assinado por todas as autorizadas envolvidas e reapresentar o projeto de sua estação de base, caso tenha que alterá-lo.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.8.2">
+                </a>
+                10.8.2. As Autorizadas deverão, também, reapresentar projetos técnicos, à Anatel caso tenham que efetuar alterações técnicas ou alteração de local de suas estações de base.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.8.3">
+                </a>
+                10.8.3. Deverão constar do documento que firma o acordo referido no
+                <a href="#item10.8" title="Acesse o Item">
+                 item 10.8
+                </a>
+                , a denominação social das autorizadas, as possíveis alterações de características técnicas de estações e eventuais alterações de localização de estações.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.9">
+                </a>
+                10.9. Caso as autorizadas não cheguem a um acordo, seja por conflito de interesses ou pela omissão de uma ou mais autorizadas, a Anatel, por solicitação de, pelo menos uma das partes envolvidas e levando em conta a melhor forma de atender ao interesse público, poderá determinar modificações nas características técnicas das estações de base licenciadas ou da estação pretendida.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.9.1">
+                </a>
+                10.9.1. Após o recebimento da solicitação referida no
+                <a href="#item10.9" title="Acesse o Item">
+                 item 10.9
+                </a>
+                a Anatel deverá solucionar o conflito em até noventa dias.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.10">
+                </a>
+                10.10. Para determinar tais modificações, a Anatel discutirá previamente com as partes envolvidas.
+               </span>
+              </p>
+              <p style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="item10.11">
+                </a>
+                10.11. Visando resguardar a compatibilidade de operação entre as estações, de forma a assegurar a qualidade dos serviços prestados ou o direito de instalação de uma nova estação de base, as prestadoras podem solicitar à Anatel, a qualquer tempo, uma análise de conformidade do projeto com a infra-estrutura instalada, quando houver evidência de condições irregulares de operação, apresentando provas ou indícios do fato.
+               </span>
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_202">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/1999" rel="tag">
+                 1999
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação">
+                 Aprovação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20normativo">
+                 Ato normativo
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Plano%20de%20autorização">
+                 Plano de autorização
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20especial%20de%20radiochamada">
+                 Serviço especial de radiochamada
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RecursosPrestacao">
+                 RecursosPrestacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada">
+                 ResolucaoRevogada
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="63b5f0c8fd2a12641d07068d-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="63b5f0c8fd2a12641d07068d-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="63b5f0c8fd2a12641d07068d-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="63b5f0c8fd2a12641d07068d-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-63b5f0c8fd2a12641d07068d-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="63b5f0c8fd2a12641d07068d-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="63b5f0c8fd2a12641d07068d-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="63b5f0c8fd2a12641d07068d-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

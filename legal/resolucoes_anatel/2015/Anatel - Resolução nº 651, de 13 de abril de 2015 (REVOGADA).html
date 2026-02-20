@@ -1,0 +1,3427 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+  </script>
+  <script type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 651, de 13 de abril de 2015 (REVOGADA)
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Aprovação, Ato normativo, Regulamento, Serviço Limitado Móvel Aeronáutico, SLMA, Serviço Limitado Móvel Marítimo, SLMM, NormaFiscalizacao, NormaSatelite, PrestacaoServicosTelecomunicacoes, ResolucaoRevogada" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Aprova o Regulamento do Serviço Limitado Móvel Aeronáutico e do Serviço Limitado Móvel Marítimo." name="description"/>
+   <title>
+    Anatel - Resolução nº 651, de 13 de abril de 2015 (REVOGADA)
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=675867483" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1203429156" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"088824dee09336d63ce09efb4cc0cd2d","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1795605921" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+    </script>
+    <script type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026163457" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/2015/791-resolucao-651">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/2015" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/2015">
+             2015
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 651, de 13 de abril de 2015 (REVOGADA)
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255 current active">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-d6a486ec0d0ade6e7bf2f074-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-d6a486ec0d0ade6e7bf2f074-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="d6a486ec0d0ade6e7bf2f074-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 651, de 13 de abril de 2015 (REVOGADA)
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Terça, 14 Abril 2015 16:20
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Quarta, 12 Novembro 2025 14:27
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 32546
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="20" cellspacing="2" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">
+                  <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777" title="Acesse a Resolução">
+                   Revogada pela Resolução Anatel nº 777, de 28 de abril de 2025
+                  </a>
+                 </td>
+                 <td style="width: 50%; text-align: justify;" valign="middle">
+                  <p>
+                   Aprova o Regulamento do Serviço Limitado Móvel Aeronáutico e do Serviço Limitado Móvel Marítimo.
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p style="text-align: justify;">
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=45&amp;data=14/04/2015" title="Acesse o DOU">
+                14/4/2015
+               </a>
+               .
+              </p>
+              <p style="text-align: justify;">
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES,
+                </strong>
+                no uso das atribuições que lhe foram conferidas pelo
+                <a href="/legislacao/leis/2-lei-9472#art22" rel="nofollow" title="Acesse o Artigo">
+                 art. 22
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997, e pelos arts.
+                <a href="/legislacao/decretos/3-decreto-2338#art17" rel="alternate" title="Acesse o Artigo">
+                 17
+                </a>
+                e
+                <a href="/legislacao/decretos/3-decreto-2338#art35" rel="alternate" title="Acesse o Artigo">
+                 35
+                </a>
+                do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997,
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO a análise das contribuições recebidas em decorrência da
+                <a href="http://sistemas.anatel.gov.br/SACP/Contribuicoes/TextoConsulta.asp?CodProcesso=C1759&amp;Tipo=1&amp;Opcao=finalizadas" rel="nofollow" title="acesse a Consulta Pública">
+                 Consulta Pública nº 12, de 31 de março de 2014
+                </a>
+                , publicada no Diário Oficial da União do dia 2 de abril de 2014;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO deliberação tomada em sua
+                <a href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?null&amp;filtro=1&amp;documentoPath=326833.pdf" rel="nofollow" title="Acesse a Ata da Reunião">
+                 Reunião nº 773, de 9 de abril de 2015
+                </a>
+                ;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO o que consta dos autos do
+                <a href="http://sistemas.anatel.gov.br/sicap/web/displayWeb.asp?id=4164438" rel="nofollow" title="Acesse o Processo">
+                 Processo nº 53500.022999/2012-15
+                </a>
+                ,
+               </span>
+              </p>
+              <p class="resolve" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                RESOLVE:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º Aprovar o Regulamento do Serviço Limitado Móvel Aeronáutico e do Serviço Limitado Móvel Marítimo, na forma do Anexo a esta Resolução.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 2º Determinar que não sejam mais expedidas outorgas de autorização de uso de radiofrequências em canais ou faixas destinadas ao Serviço Limitado Móvel Aeronáutico ou ao Serviço Limitado Móvel Marítimo associada ao Serviço Limitado Privado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 3º Estabelecer que as novas estações transmissoras de radiocomunicação associadas à radionavegação aeronáutica ou marítima deverão ser licenciadas e estarem associadas ao Serviço Limitado Móvel Aeronáutico ou ao Serviço Limitado Móvel Marítimo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art4">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 4º Aplicar às estações do Serviço Limitado Móvel Aeronáutico e ao Serviço Limitado Móvel Marítimo os valores das taxas de fiscalização de instalação previstos nos itens 11 e 12, respectivamente, da Tabela contida no
+                <a href="/legislacao/leis/2-lei-9472#anexoIII" rel="nofollow" title="Acesse o Anexo">
+                 Anexo III
+                </a>
+                da Lei nº 9.472, de 1997.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art5">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 5º Dar nova redação ao
+                <a href="/legislacao/resolucoes/2004/6-resolucao-386#art17" rel="nofollow" title="Acesse o Artigo">
+                 art. 17
+                </a>
+                e aos anexos
+                <a href="/legislacao/resolucoes/2004/6-resolucao-386#anexoI" rel="alternate" title="acesse o anexo">
+                 I
+                </a>
+                e
+                <a href="/legislacao/resolucoes/2004/6-resolucao-386#anexoIII" rel="alternate" title="acesse o anexo">
+                 III
+                </a>
+                do Regulamento de Cobrança de Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e pelo Direito de Exploração de Satélite, aprovado pela Resolução nº 386, de 3 de novembro de 2004, e alterado pelas Resoluções nº 484, de 5 de novembro de 2007, nº 595, de 20 de julho de 2012, nº 614, de 28 de maio de 2013, e nº 617, de 19 de junho de 2013, na forma do Anexo II a esta Resolução.
+                <strong>
+                 <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                  (Revogado Pela Resolução nº 769, de 30 de setembro de 2024)
+                 </a>
+                </strong>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art6">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 6º Substituir os seguintes instrumentos normativos:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - Portaria nº 968/76, do Ministério das Comunicações, de 19 de agosto de 1976, publicada no Diário Oficial da União (DOU) em 24 de agosto de 1976 – Procedimento para Vistoria e Licenciamento das Estações-rádio Instaladas em Navios e Embarcações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - Portaria nº 1786/81, do Ministério das Comunicações, de 11 de junho de 1981, publicada no DOU de 24 de junho de 1981 – Aprova Formulário DNT-034 Licença de Estação de Navio;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III -
+                <a href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=248888&amp;pub=principal&amp;filtro=1&amp;documentoPath=248888.pdf" rel="nofollow" title="Acesse a Instrução">
+                 Instrução nº 4/81-DENTEL, de 16 de julho de 1981
+                </a>
+                , publicada no DOU de 24 de julho de 1981 – Estabelece procedimentos para a execução do Serviço Móvel Marítimo - Estações de Navio;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV -
+                <a href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?null&amp;filtro=1&amp;documentoPath=biblioteca/instrucao/anexo_instrucao_10_1981.pdf" rel="nofollow" title="Acesse a Instrução">
+                 Instrução nº 10/81-DENTEL, de 16 de julho de 1981
+                </a>
+                , publicada no DOU de 24 de julho de 1981 – Estabelece procedimentos para outorga e licenciamento do Serviço Limitado -
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Classe Móvel Marítimo: Estações Costeiras e Estações Portuárias;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - Instrução Interna nº 3381-DENTEL, de 16 de julho de 1981 – Dispõe sobre o Procedimento Interno do Dentel no que se refere à outorga e licenciamento de estações do Serviço Móvel Marítimo;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI -
+                <a href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=55707&amp;assuntoPublicacao=Instru%E7%E3o%20Interna%20n%BA06/88-Dentel,%20de%2027/12/1988&amp;caminhoRel=null&amp;filtro=1&amp;documentoPath=biblioteca/instrucao/instrucao_06_1988.pdf" rel="nofollow" title="Acesse a Instrução">
+                 Instrução Interna nº 0688-DENTEL, de 27 de dezembro de 1988
+                </a>
+                – Estabelece procedimentos para análise de pedidos e expedição de Licença de Estação e Aeronave;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VII - Instrução Interna nº 07/88-DENTEL, de 27 de outubro de 1988, publicada no DOU de 3 de novembro de 1988 – Estabelece procedimentos para análise de pedidos e expedição de Licença de Estação e Aeronave; e,
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VIII - Instrução Interna nº 3/91, do Ministério da Infraestrutura, de 8 de julho de 1991 – Procedimento para Adequação e Licenciamento de Estações Costeiras e de Navio.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. As condições de uso de radiofrequências para estações dos serviços dispostas em instrumentos normativos anteriores à Lei Geral de Telecomunicações permanecem em vigor até que sejam substituídas por instrumento normativo emitido pela Anatel.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art7">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 7º Esta Resolução entra em vigor 180 (cento e oitenta) dias após a data de sua publicação.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               JOÃO BATISTA DE REZENDE
+              </p>
+              <p style="text-align: center;">
+               Presidente do Conselho
+              </p>
+              <p style="text-align: center;">
+              </p>
+              <p style="text-align: center;">
+               <a id="Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                ANEXO I À RESOLUÇÃO Nº 651, DE 13 DE ABRIL DE 2015
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                REGULAMENTO DO SERVIÇO LIMITADO MÓVEL AERONÁUTICO E DO SERVIÇO LIMITADO MÓVEL MARÍTIMO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DISPOSIÇÕES GERAIS
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º Este Regulamento tem por objetivo disciplinar as condições de exploração do Serviço Limitado Móvel Aeronáutico – SLMA e do Serviço Limitado Móvel Marítimo – SLMM.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 2º A exploração do SLMA e do SLMM é regida pela
+                <a href="/legislacao/leis/2-lei-9472" rel="nofollow" title="Acesse a Lei">
+                 Lei nº 9.472, de 16 de julho de 1997
+                </a>
+                , pelo Regulamento dos Serviços de Telecomunicações, por este e por outros Regulamentos e Normas aplicáveis ao serviço.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 3º O SLMA é o serviço de telecomunicações móvel, de interesse restrito, explorado em âmbito nacional e internacional, no regime privado e sem exclusividade, que possibilita a transmissão e recepção de informações por meio de radiocomunicação entre Estações de Aeronave e Estações Aeronáuticas, bem como entre estas e outras estações, incluindo dispositivos de segurança e salvamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art4Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 4º O SLMM é o serviço de telecomunicações móvel, de interesse restrito, explorado em âmbito nacional e internacional, no regime privado e sem exclusividade, que possibilita a transmissão e recepção de informações por meio de radiocomunicação entre Estações Costeiras, Portuárias e Móveis Marítimas, bem como entre estas e outras estações, incluindo dispositivos de segurança e salvamento.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DEFINIÇÕES
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art5Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 5º Para os fins deste Regulamento, são adotadas as seguintes definições, além de outras adotadas pela legislação e pela regulamentação:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I -
+                <a href="/legislacao/glossario-anatel?catid=1&amp;faqid=1101" rel="nofollow" title="acesse o Glossário">
+                 Autocadastramento
+                </a>
+                : cadastramento remoto (via Internet), realizado pela Autorizada, dos dados das estações de seu sistema de telecomunicações diretamente no Banco de Dados Técnicos e Administrativos da Anatel;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II -
+                <a href="/legislacao/glossario?view=faq&amp;catid=1&amp;search=&amp;faqid=2300" rel="nofollow" title="acesse o Glossário">
+                 Autorização para Exploração do Serviço Limitado Móvel Aeronáutico ou do Serviço Limitado Móvel Marítimo
+                </a>
+                : ato administrativo vinculado que faculta a exploração, no regime privado, do SLMA ou do SLMM, quando preenchidas as condições objetivas e subjetivas necessárias;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III -
+                <a href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=Estação%20Aeronáutica&amp;faqid=937" rel="nofollow" title="acesse o Glossário">
+                 Estação Aeronáutica
+                </a>
+                : estação de telecomunicações fixa ou móvel do SLMA não instalada a bordo de aeronave;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV -
+                <a href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=Estação%20de%20Aeronave&amp;faqid=967" rel="nofollow" title="acesse o Glossário">
+                 Estação de Aeronave
+                </a>
+                : estação de telecomunicações móvel do SLMA instalada a bordo de aeronave;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V -
+                <a href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=Estação%20costeira&amp;faqid=965" rel="nofollow" title="Acesse o Glossário">
+                 Estação Costeira
+                </a>
+                : estação de telecomunicações fixa terrestre do SLMM;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI -
+                <a href="/legislacao/glossario?catid=5&amp;faqid=2301" rel="nofollow" title="acesse o Glossário">
+                 Estação Móvel Marítima
+                </a>
+                : estação de telecomunicações móvel do SLMM utilizada a bordo de embarcação ou Plataformas, em Operações Portuárias ou, ainda, dispositivos de segurança e salvamento;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VII -
+                <a href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=Estação%20Portuária&amp;faqid=2394" rel="nofollow" title="acesse o Glossário">
+                 Estação Portuária
+                </a>
+                : Estação Costeira do SLMM utilizada em Operações Portuárias;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VIII -
+                <a href="/legislacao/glossario?catid=9&amp;faqid=2302" rel="nofollow" title="acesse o Glossário">
+                 Identidade do Serviço Limitado Móvel Marítimo - MMSI (
+                 <em>
+                  Maritime Mobile Service Identity
+                 </em>
+                 )
+                </a>
+                : um número único de identificação atribuído a estações e dispositivos associados ao SLMM;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IX -
+                <a href="/legislacao/glossario?view=faq&amp;catid=-1&amp;search=Indicativo%20de%20Chamada&amp;faqid=1688" rel="nofollow" title="acesse o Glossario">
+                 Indicativo de Chamada
+                </a>
+                : característica que identifica uma estação durante as transmissões;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                X -
+                <a href="/legislacao/glossario?catid=15&amp;faqid=2303" rel="nofollow" title="acesse o Glossário">
+                 Operações Portuárias
+                </a>
+                : uso do SLMM em um porto, uma marina, uma eclusa ou em sua proximidade, por meio da comunicação entre Estações Portuárias e Estações Móveis Marítimas, cujas mensagens são restritas às relacionadas ao controle operacional, ao movimento e à segurança de embarcações e, em caso de emergência, à segurança de pessoas;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XI -
+                <a href="/legislacao/glossario?catid=16&amp;faqid=2304" rel="nofollow" title="acesse o Glossário">
+                 Plataforma
+                </a>
+                : estrutura destinada às atividades direta ou indiretamente relacionadas com a pesquisa, exploração e explotação dos recursos oriundos do leito das águas interiores e seu subsolo ou do mar, inclusive da plataforma continental e seu subsolo; e,
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XII -
+                <a href="/legislacao/glossario?catid=19&amp;faqid=2305" rel="nofollow" title="acesse o Glossário">
+                 Sistema Global de Socorro e Segurança Marítima – GMDSS (
+                 <em>
+                  Global Maritime Distress and Safety System
+                 </em>
+                 )
+                </a>
+                : sistema internacional de socorro e segurança marítima, que contém um conjunto de procedimentos, equipamentos e protocolos de comunicação utilizados com o objetivo de aumentar a segurança e facilitar o resgate de navios, barcos, plataformas e aeronaves.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS AUTORIZAÇÕES
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha">
+               <a id="art6Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 6º A exploração do SLMA e do SLMM depende de prévia autorização da Anatel, que será expedida por prazo indeterminado e a título oneroso.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A autorização para a exploração dos serviços independerá de licitação, excetuando-se a que se fizer necessária para obtenção da autorização de uso de radiofrequências correspondente.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º A extinção da autorização de uso de radiofrequências importará em cassação da autorização do serviço.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Art. 6º A exploração do SLMA e do SLMM depende de prévia autorização da Anatel, nos termos e condições estabelecidos no Regulamento Geral de Outorgas, aprovado pela
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720" title="Acesse a Resolução">
+                 Resolução nº 720, de 10 de fevereiro de 2020
+                </a>
+                .
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art25" title="Acesse a Resolução">
+                 (Redação dada pela Resolução nº 720, de 10 de fevereiro de 2020
+                </a>
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art25" title="Acesse a Resolução">
+                 )
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art7Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 7º A Autorização para a Exploração do SLMA e do SLMM será expedida pela Anatel:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Art. 7º Sem prejuízo do disposto no Regulamento Geral de Outorgas, aprovado pela
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720" title="Acesse a Resolução">
+                 Resolução nº 720, de 10 de fevereiro de 2020
+                </a>
+                , a Autorização para a Exploração do SLMA e do SLMM será expedida pela Anatel.
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art26" title="Acesse a Resolução">
+                 (Redação dada pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - à pessoa natural, residente e domiciliada no País;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - à pessoa natural, residente e domiciliada no exterior, em caráter temporário, com a finalidade de possibilitar o deslocamento de aeronave ou embarcação até o país de destino;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - à pessoa jurídica constituída sob as leis brasileiras e com sede e administração no País, e à pessoa jurídica estrangeira estabelecida no Brasil; e,
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - à pessoa jurídica estrangeira, domiciliada no exterior, em caráter temporário, com a finalidade de possibilitar o deslocamento de aeronave, plataforma ou embarcação até o país de destino.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. No caso de pessoa natural ou jurídica estrangeira, esta deverá ser proprietária ou arrendatária de aeronave, plataforma ou embarcação de bandeira nacional ou estrangeira.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art8Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 8º Com vista à obtenção de Autorização para Exploração de Serviço, a requerente deverá apresentar à Agência a seguinte documentação:
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - Formulário de Serviço Limitado Móvel Aeronáutico ou de Serviço Limitado Móvel Marítimo devidamente preenchido e assinado pela requerente ou seu representante legal;
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - cópia do documento de identidade, quando a solicitação for formulada por pessoa natural;
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - cópias dos atos constitutivos e suas alterações, devidamente arquivados ou registrados na repartição competente, quando a solicitação for formulada por pessoa jurídica ou por empresário individual
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - original ou cópia do documento que confere ao solicitante poderes para representar a pessoa natural ou jurídica; e,
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - parecer favorável ou documento equivalente dos órgãos competentes para a vistoria de aeronaves e embarcações, quando for o caso.
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O documento a que se refere o inciso I deverá ter firma reconhecida ou vir acompanhado de cópia do documento de identidade que permita identificar o subscritor do formulário
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art9Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 9º A Autorização para Exploração de Serviço será emitida após a verificação da regularidade da requerente por meio de:
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                a) prova da regularidade para com a Fazenda Federal; e,
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                b) prova de regularidade fiscal perante a Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido a inscrição em dívida ativa ou no Cadin.
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Em se tratando de multas constituídas como créditos não tributários devidos à Anatel, será considerada em situação irregular a entidade que deixar de quitar sanções aplicadas por decisão transitada em julgado, mesmo que não tenha havido a inscrição em dívida ativa ou no Cadin.
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art10Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 10. Quando da autorização para exploração dos serviços e para uso das radiofrequências associadas, incidirão o Preço Público pelo Direito de Exploração do Serviço de Telecomunicações e pelo Direito de Exploração de Satélite – PPDESS e o Preço Público pelo Direito de Uso de Radiofrequências – PPDUR, conforme disposto em regulamentação específica.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art11Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 11. O valor a ser pago, correspondente ao PPDESS, será devido no momento da primeira emissão da Licença de Funcionamento de Estação.
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art12Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 12. A autorização para exploração do SLMA e do SLMM será formalizada pela expedição de Licença para Funcionamento de Estação, que inclui a autorização para o uso das radiofrequências associadas.
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art13Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 13. O uso de radiofrequências destinadas à exploração do SLMA e do SLMM, em quaisquer de suas aplicações, dependerá de autorização da Anatel.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art14Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 14. A Autorização de Uso de Radiofrequências associada ao SLMA e ao SLMM será expedida pelo prazo de até 20 (vinte) anos, a título oneroso, prorrogável por igual período, uma única vez, também a título oneroso.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A prorrogação do prazo de vigência da Autorização de Uso de Radiofrequências, quando houver interesse, poderá ser requerida até 3 (três) anos antes do vencimento do prazo original, devendo o requerimento ser decidido em, no máximo, 12 (doze) meses.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º A Autorização de Uso de Radiofrequências emitida em nome de pessoa natural ou jurídica estrangeira, domiciliada no exterior, deverá ter prazo de até 3 (três) meses, prorrogável uma única vez por igual período.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º A Autorização fornecida para aeronaves ou embarcações em teste deverá ter prazo de validade de até 60 (sessenta) dias, prorrogável uma única vez por igual período.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1381-resolucao-719#art43">
+                 (Revogado pela Resolução nº 719, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="capituloIV">
+               </a>
+               <span style="text-decoration: line-through;">
+                CAPÍTULO IV
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DA INSTALAÇÃO E DO LICENCIAMENTO DAS ESTAÇÕES
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art15Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 15. A operação de estação transmissora de radiocomunicação associada ao SLMA e ao SLMM, inclusive aquela instalada em Plataforma, está sujeita à licença de funcionamento prévia e à fiscalização permanente, nos termos da regulamentação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Os equipamentos de telecomunicações, incluindo os sistemas radiantes, devem atender às condições estabelecidas na regulamentação vigente sobre certificação e homologação, expedida pela Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º A emissão ou alteração da licença relativa à estação de apoio à navegação marítima ou aeronáutica, bem como à estação de radiocomunicação marítima ou aeronáutica, dependerá de parecer favorável ou instrumento equivalente dos órgãos competentes para a vistoria de aeronaves e embarcações, quando aplicável.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art16Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 16. Na instalação de estação transmissora de radiocomunicação do SLMA e do SLMM, deverão ser observadas as disposições estabelecidas no Regulamento sobre Limitação da Exposição a Campos Elétricos, Magnéticos e Eletromagnéticos na faixa de Radiofrequências entre 9 KHz e 300 GHz.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art17Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 17. O licenciamento de estações de outros serviços de telecomunicações a bordo de aeronaves e de embarcações segue procedimentos descritos em regulamentação específica, após parecer favorável dos órgãos competentes para a vistoria de aeronaves e embarcações no País.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art18Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 18. O cadastro dos dados das estações do SLMA e do SLMM no Banco de Dados Técnicos e Administrativos da Anatel deverá ser realizado por meio de Autocadastramento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A requerente deverá apresentar previamente à Agência o formulário-padrão “Solicitação de Autocadastramento de Estações”, devidamente preenchido e assinado pela requerente ou seu representante legal.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º O Autocadastramento deverá seguir os procedimentos constantes do sítio da Anatel na Internet.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art19Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 19. Para cada embarcação, plataforma ou aeronave deverá ser emitida uma única Licença para Funcionamento de Estação associada ao SLMA ou ao SLMM, respectivamente, que englobará todos os equipamentos da estação, inclusive os equipamentos para comunicação a bordo e os dispositivos de segurança e salvamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art20Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 20. Concluída a instalação do sistema, a autorizada, com a finalidade de testá-lo e ajustá-lo, poderá operar em caráter experimental, nas radiofrequências autorizadas, pelo período máximo de 90 (noventa) dias, desde que comunique previamente à Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O caráter experimental da operação não exime a autorizada de suas responsabilidades quanto à emissão de interferências, devendo cessar imediatamente a transmissão que esteja causando a interferência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art21Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 21. Antes de iniciar a exploração do serviço, a autorizada deverá providenciar a emissão da respectiva Licença para Funcionamento de Estação, que deverá permanecer disponível, a qualquer tempo, à Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A Agência disponibilizará a Licença para Funcionamento de Estação à autorizada e a estação poderá entrar em operação após o recolhimento dos preços e taxas aplicáveis, nos termos da regulamentação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art22Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 22. A Taxa de Fiscalização de Instalação – TFI é devida pela autorizada no momento da emissão da Licença para Funcionamento de Estação e na emissão da licença decorrente da alteração de natureza técnica que implique modificação do funcionamento da estação licenciada ou da prorrogação do prazo de vigência da Autorização de Uso de Radiofrequências.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art23Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 23. A autorização de novo canal ou faixa de radiofrequências configura alteração de natureza técnica que implica modificação do funcionamento da estação licenciada.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Qualquer alteração efetuada nas características de uma estação, ainda que não configure alteração de natureza técnica, deverá ser devidamente atualizada no cadastro da estação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art24Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 24. A autorizada detentora de Estação Aeronáutica, Costeira ou Portuária deverá manter à disposição da Anatel, a qualquer tempo, os documentos abaixo relacionados:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - Anotação de Responsabilidade Técnica (ART), devidamente quitada, relativa à instalação da estação, fornecida pelo Conselho Regional de Engenharia e Agronomia (CREA); e,
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - Termo de Responsabilidade pela Instalação (TRI) certificando que as instalações correspondem às características técnicas das estações cadastradas no Banco de Dados Técnicos e Administrativos da Anatel.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="capituloV">
+               </a>
+               <span style="text-decoration: line-through;">
+                CAPÍTULO V
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DA EXPLORAÇÃO DO SERVIÇO
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art25Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 25. A autorizada é obrigada a observar as normas técnicas vigentes e evitar interferências prejudiciais às estações de serviços de telecomunicações regularmente instaladas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art26Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 26. O tráfego de mensagens e comunicados entre as estações reger-se-á pela legislação e procedimentos estabelecidos e pelas disposições nacionais e internacionais vigentes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art27Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 27. Na operação da estação do SLMA e do SLMM é proibido utilizar as radiofrequências de chamada e socorro com finalidade diversa de sua destinação específica.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art28Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 28. A autorizada deverá manter atualizadas todas as suas informações constantes na Anatel.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art29Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 29. A autorizada que deixar de executar o serviço sem formalizar o pedido de extinção da respectiva outorga permanece responsável pelas obrigações dela decorrentes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Quando da desativação de estação de apoio à navegação marítima ou aeronáutica, bem como de estação de radiocomunicação marítima ou aeronáutica, a autorizada deverá solicitar a exclusão do cadastro da estação do Banco de Dados Técnicos e Administrativos da Anatel, a qual dependerá de verificação ante os órgãos competentes, quando for o caso.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art30Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 30. As estações do SLMA e do SLMM somente poderão ser operadas segundo as características constantes na Licença para Funcionamento de Estação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art31Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 31. Será permitida a comunicação entre Estações de Aeronave e estações do SLMM nos canais de radiofrequências alocados para esta finalidade.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO VI
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DOS INDICATIVOS DE CHAMADA
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art32Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 32. Os Indicativos de Chamada para as estações do SLMA e do SLMM serão formados de acordo com as disposições estabelecidas na regulamentação nacional e em acordos e convenções internacionais.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art33Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 33. Sempre que uma estação do SLMA ou do SLMM for licenciada pela primeira vez, será atribuído a ela um Indicativo de Chamada.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Para aeronaves ou embarcações em teste serão expedidos indicativos provisórios pelo mesmo prazo de validade da licença.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO VII
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS IDENTIDADES DO SERVIÇO LIMITADO MÓVEL MARÍTIMO
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha">
+               <a id="art34Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 34. As estações do SLMM que participem do GMDSS devem possuir MMSI.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha">
+               <span style="text-decoration: line-through;">
+                § 1º O MMSI deverá ser programado em todos os equipamentos da estação que possuam essa facilidade.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º O MMSI poderá ser atribuído a estações e dispositivos associados a outros serviços, de acordo com as disposições estabelecidas em acordos e convenções internacionais.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO VIII
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS COMUNICAÇÕES DE EMERGÊNCIA
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art35Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 35. A todo tempo e em todas as faixas de radiofrequências, o operador da estação deverá dar prioridade às comunicações de emergência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art36Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 36. Para atender a situações de emergência ou de salvaguarda da vida, é permitido às estações do SLMA e do SLMM comunicarem-se com estações de outros serviços.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art37Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 37. É dever da autorizada disponibilizar às autoridades e aos agentes da defesa civil, nos casos de calamidade pública, todos os meios, sistemas e facilidades de comunicações que lhe forem solicitados, com o objetivo de dar suporte ou amparar as populações atingidas.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO IX
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS TRANSFERÊNCIAS
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art38Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 38. Mediante solicitação da autorizada, a transferência da autorização para exploração do serviço poderá ser realizada, a qualquer tempo, e se dará a título oneroso, após aprovação da Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A pessoa, natural ou jurídica, para a qual será transferida a autorização deverá anuir com a transferência e atender ao disposto nos arts.
+                <a href="#art7" rel="alternate" title="Acesse o Artigo">
+                 7º
+                </a>
+                e
+                <a href="#art8" rel="alternate" title="Acesse o Artigo">
+                 8º
+                </a>
+                deste Regulamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Havendo a transferência da autorização para exploração do serviço, a Autorização de Uso de Radiofrequências será transferida à sucessora, sem ônus, pelo prazo remanescente do antigo instrumento de outorga.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Art. 38. A transferência da autorização para exploração do serviço, bem como as modificações societárias que importem ou não transferência de controle da autorizada, observará o disposto no Regulamento Geral de Outorgas, aprovado pela
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720" title="Acesse a Resolução">
+                 Resolução nº 720, de 10 de fevereiro de 2020
+                </a>
+                .
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art27" title="Acesse a Resolução">
+                 (Redação dada pela Resolução nº 720, de 10 de fevereiro de 202
+                </a>
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art27" title="Acesse a Resolução">
+                 0)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art39Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 39. Quando da transferência da autorização, incidirá o preço público previsto no Regulamento de Cobrança do Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e pelo Direito de Exploração de Satélite e o preço de serviço administrativo ou operacional relativo à emissão de Licenças para Funcionamento das Estações, quando não ocorrer fato gerador da TFI.
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art40Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 40. A autorizada do SLMA ou do SLMM poderá, sem a anuência da Anatel, realizar alterações em seus atos constitutivos, devendo comunicar à Agência, em até 60 (sessenta) dias contados do registro das alterações no órgão competente, aquelas que resultarem em cisão, fusão, transformação, incorporação, redução de capital social ou transferência do controle societário da autorizada.
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art32">
+                 (Revogado pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO X
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DA EXTINÇÃO DA AUTORIZAÇÃO
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art41Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 41. A autorização para exploração do serviço extingue-se por cassação, caducidade, decaimento, renúncia ou anulação, conforme disposto na
+                <a href="/legislacao/leis/2-lei-9472" rel="nofollow" title="Acesse a Lei">
+                 Lei nº 9.472, de 1997
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Art. 41. A autorização para exploração do serviço extingue-se por cassação, caducidade, decaimento, renúncia ou anulação, observando-se o disposto nos arts.
+                <a href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art138" title="Acesse o Artigo">
+                 138
+                </a>
+                a
+                <a href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art144" title="Acesse o Artigo">
+                 144
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997, e no Regulamento Geral de Outorgas, aprovado pela
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720" title="Acesse a Resolução">
+                 Resolução nº 720, de 10 de fevereiro de 2020
+                </a>
+                .
+                <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art28" title="Acesse a Resolução">
+                 (Redação dada pela Resolução nº 720, de 10 de fevereiro de 2020)
+                </a>
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO XI
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS SANÇÕES ADMINISTRATIVAS
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art42Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 42. A infração ou a inobservância dos deveres decorrentes deste Regulamento sujeita os infratores às sanções aplicáveis pela Anatel, conforme definidas no Livro III,
+                <a href="/legislacao/leis/2-lei-9472#livroIIItituloVI" rel="nofollow" title="Acesse a Lei">
+                 Título VI “Das Sanções” da Lei nº 9.472, de 1997
+                </a>
+                , bem como aquelas decorrentes do Regulamento de Aplicação de Sanções Administrativas e demais normas regulamentares aplicáveis.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO XII
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art43Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 43. A Autorização para Uso de Radiofrequências nas faixas destinadas ao SLMA e ao SLMM, associada à autorização para execução do Serviço Limitado Privado, Submodalidade Serviço de Rede Privado, permanecerá válida pelo prazo previsto na Licença para Funcionamento de Estação, sendo vedada a sua prorrogação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="AnexoII">
+               </a>
+               <span style="text-decoration: line-through;">
+                ANEXO II À RESOLUÇÃO Nº 651, DE 13 DE ABRIL DE 2015
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                  (Revogado Pela Resolução nº 769, de 30 de setembro de 2024)
+                 </a>
+                </strong>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1AnexoII">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º Dá nova redação ao
+                <a href="/legislacao/resolucoes/2004/6-resolucao-386#art17" rel="alternate" title="Acesse o Artigo">
+                 art. 17
+                </a>
+                e aos Anexos
+                <a href="/legislacao/resolucoes/2004/6-resolucao-386#anexoI" rel="alternate noopener noreferrer" target="_blank" title="Acesse o Anexo">
+                 I
+                </a>
+                e
+                <a href="/legislacao/resolucoes/2004/6-resolucao-386#anexoIII" rel="alternate" title="Acesse o Anexo">
+                 III
+                </a>
+                do Regulamento de Cobrança de Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e pelo Direito de Exploração de Satélite, aprovado pela Resolução nº 386, de 3 de novembro de 2004, e alterado pelas Resoluções nº 484, de 5 de novembro de 2007, nº 595, de 20 de julho de 2012, nº 614, de 28 de maio de 2013, e nº 617, de 19 de junho de 2014:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 17. Para os Serviços de Radioamador, Rádio do Cidadão, Limitado Móvel Marítimo e Limitado Móvel Aeronáutico, o valor a ser pago, correspondente ao preço público, é devido no momento da primeira emissão da Licença para Funcionamento de Estação, que é o instrumento que formaliza a autorização para execução desses serviços.”
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                (...)
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                ANEXO I
+               </span>
+              </p>
+              <table border="1" class="tamanho-padrao" style="width: 80%; height: 1px; margin-left: auto; margin-right: auto;">
+               <tbody>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                   </span>
+                  </p>
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    <strong>
+                     Serviço de Telecomunicações
+                    </strong>
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                   </span>
+                  </p>
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    <strong>
+                     Preço da autorização (R$)
+                    </strong>
+                   </span>
+                  </p>
+                  <p>
+                   <span style="text-decoration: line-through;">
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Telefônico Fixo Comutado destinado ao uso do público em geral
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Móvel Global por Satélite
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço de Acesso Condicionado
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Procedimento Simplificado de Outorga (Serviço de Comunicação Multimídia, Serviço Telefônico Fixo Comutado destinado ao uso do público em geral e/ou Serviço de Acesso Condicionado)
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Limitado Especializado
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Especial Para Fins Científicos ou Experimentais
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    1.200,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço de Televisão em Circuito Fechado com a Utilização de Rádio-Enlace
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    1.200,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço de Comunicação Multimídia
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    400,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Limitado Privado
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    400,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Limitado Móvel Marítimo
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    70,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Limitado Móvel Aeronáutico
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    70,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço de Radioamador
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    20,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Rádio do Cidadão
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    20,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                (...)
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                ANEXO III
+               </span>
+              </p>
+              <table border="1" class="tamanho-padrao" style="width: 80%; height: 1px; margin-left: auto; margin-right: auto;">
+               <tbody>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <h3>
+                   <span style="text-decoration: line-through;">
+                   </span>
+                  </h3>
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    <strong>
+                     Serviço de Telecomunicações
+                    </strong>
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    <strong>
+                    </strong>
+                   </span>
+                  </p>
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    <strong>
+                     Preço da adaptação, consolidação ou transferência (R$)
+                    </strong>
+                   </span>
+                  </p>
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    <strong>
+                    </strong>
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Telefônico Fixo Comutado destinado ao uso do público em geral
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Móvel Pessoal
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Móvel Global por Satélite
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Móvel Especializado
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço de Radiocomunicação Aeronáutica Público Restrito
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço de Acesso Condicionado
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Procedimento Simplificado de Outorga (Serviço de Comunicação Multimídia, Serviço Telefônico Fixo Comutado destinado ao uso do público em geral e/ou Serviço de Acesso Condicionado)
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Limitado Especializado
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    9.000,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Especial Para Fins Científicos ou Experimentais
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    1.200,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço de Televisão em Circuito Fechado com a Utilização de Rádio-Enlace
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    1.200,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço de Comunicação Multimídia
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    400,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Limitado Privado
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    400,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Limitado Móvel Marítimo
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    70,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Limitado Móvel Aeronáutico
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    70,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço de Radioamador
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    20,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align: center;" width="496">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    Serviço Rádio do Cidadão
+                   </span>
+                  </p>
+                 </td>
+                 <td style="text-align: center;" width="171">
+                  <p>
+                   <span style="text-decoration: line-through;">
+                    20,00
+                   </span>
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                  (Revogado Pela Resolução nº 769, de 30 de setembro de 2024)
+                 </a>
+                </strong>
+               </span>
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_791">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/2015" rel="tag">
+                 2015
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação">
+                 Aprovação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20normativo">
+                 Ato normativo
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento">
+                 Regulamento
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Limitado%20Móvel%20Aeronáutico">
+                 Serviço Limitado Móvel Aeronáutico
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=SLMA">
+                 SLMA
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Limitado%20Móvel%20Marítimo">
+                 Serviço Limitado Móvel Marítimo
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=SLMM">
+                 SLMM
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaFiscalizacao">
+                 NormaFiscalizacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaSatelite">
+                 NormaSatelite
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PrestacaoServicosTelecomunicacoes">
+                 PrestacaoServicosTelecomunicacoes
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada">
+                 ResolucaoRevogada
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-d6a486ec0d0ade6e7bf2f074-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="d6a486ec0d0ade6e7bf2f074-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

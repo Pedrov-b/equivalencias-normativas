@@ -1,0 +1,1415 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 3151, de 12 de junho de 2020</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1429-ato-3151">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Ato normativo, Atualização, Requisito técnico, Avaliação, Conformidade, Telefone Móvel, Celular, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovação da atualização dos requisitos técnicos para avaliação da conformidade de Estação Terminal de Acesso na forma do Anexo a este Ato.">
+	<title>Anatel - Ato nº 3151, de 12 de junho de 2020</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=870689655" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=522871280" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=163912202" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141611" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2020">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2020">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2020">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2020" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2020" class="pathway">2020</a> <span class="separator">&gt;</span> <span>Ato nº 3151, de 12 de junho de 2020</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;94905b7b5914cb34&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 3151, de 12 de junho de 2020		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 12 Junho 2020 12:03			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quinta, 20 Fevereiro 2025 09:31			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 21111			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico em<a title="Acesse o Boletim de Serviço Eletrônico" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO6tc2nsvaR0yuZD1FaRFfN5lBSTcaiJtbONQiRzKp1T51JkZJetLP7Aywg6XDDVpEwS_9ojPFJGKinbyvI8a_sc">&nbsp;12/6/2020</a></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><strong>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL</strong>,&nbsp;no uso das atribuições que lhe foram conferidas pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715">Resolução n°&nbsp;715, de 23 de outubro de 2019</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art19">art. 19</a> da Lei n°&nbsp;9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO que&nbsp;os Requisitos Técnicos estabelecem os parâmetros e critérios técnicos verificados na Avaliação da Conformidade de um ou mais tipos de produto para telecomunicações, nos termos do <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715#art22Anexo">art. 22</a> do Regulamento para Avaliação da Conformidade e Homologação de Produtos para Telecomunicações, aprovado pela Resolução n°&nbsp;715, de 23 de outubro de 2019;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO&nbsp;a&nbsp;necessidade da publicação de&nbsp;requisitos mínimos de qualidade, segurança,&nbsp;interoperabilidade e proteção do espectro radioelétrico aplicados aos dispositivos&nbsp;a serem inseridos nas&nbsp;redes móveis de quinta geração do país (5G), considerados&nbsp;essenciais&nbsp;para o atendimento&nbsp;da crescente demanda pelo aumento da&nbsp;capacidade das&nbsp;redes móveis,&nbsp;com&nbsp;altas taxas de transmissão&nbsp;de dados e&nbsp;baixa latência, para&nbsp;aplicações&nbsp;emergentes como:&nbsp;indústria 4.0,&nbsp;sistemas de transporte inteligentes (ITS) e&nbsp;cidades inteligentes; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlPDHF_zR2GWow8COGpFqL0h2uOK5DkEj89lHAK2rXT7C">processo n°&nbsp;53500.005609/2020-52</a>.</p>
+<p class="resolve" style="text-align: justify;">RESOLVE:</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art1"></a>Art. 1°&nbsp; Aprovar a atualização dos requisitos técnicos para&nbsp;avaliação da conformidade de Estação Terminal de Acesso na forma do <a title="Acesse o Anexo" href="#anexo">Anexo</a> a este Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art2"></a>Art. 2°&nbsp;Este Ato entra em vigor na data de sua publicação no Boletim de Serviço&nbsp;Eletrônico da Anatel.</p>
+<p style="text-align: center;">&nbsp;VINICIUS OLIVEIRA CARAM GUIMARÃES</p>
+<p style="text-align: center;">Superintendente de Outorga e Recursos à Prestação</p>
+<p style="text-align: center;">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="anexo"></a>ANEXO AO ATO Nº 3151, DE 12 DE JUNHO DE 2020</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong>REQUISITOS TÉCNICOS PARA&nbsp;AVALIAÇÃO DA CONFORMIDADE&nbsp;DE ESTAÇÃO TERMINAL DE ACESSO</strong></p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a id="item1"></a>1. OBJETIVO</p>
+<section id="content-section">
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item1.1"></a>1.1. Estabelecer requisitos técnicos mínimos para avaliação da conformidade&nbsp;junto à Agência Nacional de Telecomunicações de Estação Terminal de Acesso - ETA.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item2"></a>2. REFERÊNCIAS NORMATIVAS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.1"></a>2.1. <a title="Acesse o Ato" href="https://www.anatel.gov.br/legislacao/en/atos-de-requisitos-tecnicos-de-certificacao/2018/1181-ato-1120">Ato nº 1120, de 19 de fevereiro de 2018</a>, que aprova os Requisitos Técnicos de Compatibilidade Eletromagnética para a Avaliação da Conformidade de Produtos para Telecomunicações.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.2"></a>2.2. <a title="Acesse o Ato" href="https://www.anatel.gov.br/legislacao/es/atos-de-requisitos-tecnicos-de-certificacao/2018/1193-ato-950">Ato nº 950, de 08 de fevereiro de 2018</a>, que aprova os Requisitos Técnicos de Segurança Elétrica para Avaliação da Conformidade de Produtos para Telecomunicações.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.3"></a>2.3. <a title="Acesse o Ato" href="https://www.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1169-ato-946">Ato nº 946, de 08 de fevereiro de 2018</a>, que aprova os Requisitos Técnicos para Avaliação da Conformidade de Transmissores e Transceptores Digitais para o Serviço Fixo em Aplicações Ponto-Multiponto nas Faixas de Frequências Abaixo de 1 GHz.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.4"></a>2.4. <a title="Acesse o Ato" href="https://www.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1227-ato-934">Ato nº 934, de 08 de fevereiro de 2018</a>, que aprova os Requisitos Técnicos para Avaliação da Conformidade de Transmissores e Transceptores Digitais para o Serviço Fixo em Aplicações Ponto-Multiponto nas Faixas de Frequências acima de 1 GHz.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.5"></a>2.5. <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2018/1161-resolucao-700">Resolução nº 700, de 28 de setembro de 2018</a>, que aprova&nbsp;o Regulamento sobre a Avaliação da Exposição Humana a Campos Elétricos, Magnéticos e Eletromagnéticos Associados à Operação de Estações Transmissoras de Radiocomunicação.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a name="item2.6"></a>2.6. <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/1999/276-resolucao-146">Resolução nº 146, de 16 de julho de 1999</a>, que aprova o Regulamento para certificação de sistemas de acesso fixo sem fio para prestação do STFC.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.7"></a>2.7. ETSI - EN 300733 -&nbsp;<em>Satellite Personal Communications Networks (S-PCN); Mobile Earth Stations (MES), including handheld earth stations, for S-PCN in the 1,6/2,4 GHz bands, providing voice and/or data communications under the Mobile Satellite Service (MSS)</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.8"></a>2.8. ETSI - EN 300734 -&nbsp;<em>Satellite Personal Communications Networks (S-PCN); Mobile Earth Stations (MES), including handheld earth stations, for S-PCN in the 2 GHz bands, providing voice and/or data communications under the Mobile Satellite Service (MSS).</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.9"></a><span style="text-decoration: line-through;">2.9. ETSI - ETS 300 254 -&nbsp;<em>Satellite Earth Stations and Systems (SES); Land Mobile Earth Stations (LMESs) operating in the 1,5/1,6 GHz bands providing Low Bit Rate Data Communications (LBRDCs)</em>.</span>&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1742-ato-13083">(Revogado pelo Ato nº 13083, de 14 de setembro de 2022)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.10"></a><span style="text-decoration: line-through;">2.10. ETSI - ETS 300 423 -&nbsp;<em>Satellite Earth Stations and Systems (SES); Land Mobile Earth Stations (LMESs) operating in the 1,5/1,6GHz bands providing voice and/or data communications.</em></span><em>&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1742-ato-13083">(Revogado pelo Ato nº 13083, de 14 de setembro de 2022)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.11"></a>2.11. TIA/EIA-98-C -&nbsp;<em>Recommended Minimum Performance Standards for Dual-Mode Spread Spectrum Mobile Stations</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.12"></a>2.12. TIA/EIA/IS-137-A -&nbsp;<em>TDMA Cellular/PCS - Radio Interface - Minimum Performance Standard for Mobile Stations</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.13"></a>2.13. 3GPP TS 51.010-1 V6.5.0 (2005-11) -<em>&nbsp;3rd Generation Partnership Project; Technical Specification Group GSM/EDGE Radio Access Network Digital cellular telecommunications system (Phase 2+); Mobile Station (MS) conformance specification; Part 1: Conformance specification (Release 6).</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.14"></a>2.14. 3GPP2 C.S0011-A:&nbsp;<em>Recommended Minimum Performance Standards for cdma2000 Spread Spectrum Mobile Stations</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.15"></a>2.15. ETSI TS 134 121-1 V9.1.0 (2010-07) -&nbsp;<em>Universal MobileTelecommunications System (UMTS); User Equipment (UE) conformance specification; Radio transmission and reception (FDD); Part 1: Conformance specification (3GPP TS 34.121-1 version 9.0.0 Release 9)</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.16"></a>2.16. ETSI TS 134 121-1 V9.4.0 (2011-03) -&nbsp;<em>Universal Mobile Telecommunications System (UMTS); User Equipment (UE) conformance specification; Radio transmission and reception (FDD); Part 1: Conformance specification (3GPP TS 34.121-1 version 9.4.0 Release 9).</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.17"></a>2.17. 3GPP TS 36.521-1 V9.5.0 (2011-06) -&nbsp;<em>3rd Generation Partnership Project; Technical Specification Group Radio Access Network; Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) conformance specification Radio transmission and reception Part 1: Conformance Testing; (Release 9)</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.18"></a>2.18. ETSI TS 136 521-1 V14.4.0 (2017-11) -&nbsp;<em>LTE; Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) conformance specification; Radio transmission and reception; Part 1: Conformance testing (3GPP TS 36.521-1 version 14.4.0 Release 14)</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.19"></a><span style="text-decoration: line-through;">2.19. ETSI TS 136 521-1 V14.4.0 (2017-11) -&nbsp;<em>LTE; Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) conformance specification; Radio transmission and reception; Part 1: Conformance testing (3GPP TS 36.521-1 version 14.4.0 Release 14)</em>.</span></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;">2.19. ETSI TS 136 521-1 V16.8.1 (2021-06) -&nbsp;<em>LTE; Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) conformance specification; Radio transmission and reception; Part 1: Conformance testing (3GPP TS 36.521-1 version 16.8.1 Release 16)</em>. <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.20"></a>2.20. ETS 300086 -&nbsp;<em>Radio Equipment and Systems; Land mobile servisse; Technical characteristics and test conditions for radio equipment with an internal or external RF connector intended primarily for analogue speech</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.21"></a><span style="text-decoration: line-through;">2.21. 3GPP TS 38.521-1 V16.2.0 (2019-12) -&nbsp;<em>3rd Generation Partnership Project; Technical Specification Group Radio Access Network; NR; User Equipment (UE) conformance specification; Radio transmission and reception;Part 1: Range 1 Standalone; (Release 16)</em>.</span></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;">2.21. ETSI TS 138 521-1 V16.6.0 (2021-02) - 5G; NR;&nbsp;<em>User Equipment (UE) conformance specification; Radio transmission and reception; Part 1: Range 1 standalone (3GPP TS 38.521-1 version 16.6.0 Release 16).</em>&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.22"></a><span style="text-decoration: line-through;">2.22. 3GPP TS 38.521-3 V16.2.0 (2019-12) -&nbsp;<em>3rd Generation Partnership Project; Technical Specification Group Radio Access Network; NR; User Equipment (UE) conformance specification; Radio transmission and reception; Part 3: Range 1 and Range 2 Interworking operation with other radios (Release 16)</em>.</span></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;">2.22. ETSI TS 138 521-2 V16.6.0 (2021-02) -&nbsp;<em>5G; NR; User Equipment (UE) conformance specification; Radio transmission and reception; Part 2: Range 2 standalone (3GPP TS 38.521-2 version 16.6.0 Release 16)</em>.&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.23"></a>2.23. ETSI TS 138 521-3 V16.6.0 (2021-01) -<em>&nbsp;5G; NR; User Equipment (UE) conformance specification; Radio transmission and reception; Part 3: Range 1 and Range 2 Interworking operation with other radios (3GPP TS 38.521-3 version 16.6.0 Release 16)</em>.&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Incluído pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.24"></a>2.24.&nbsp;ETSI EN 301 426 V2.1.2 (2016-11) –&nbsp;<em>Satellite Earth Stations and Systems (SES); Harmonised Standard for Low data rate Land Mobile satellite Earth Stations (LMES) and Maritime Mobile satellite Earth Stations (MMES) not intended for distress and safety communications operating in the 1,5 GHz/1,6 GHz frequency bands covering the&nbsp;essential requirements of article 3.2 of the Directive 2014/53/EU</em>; <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1742-ato-13083">(Incluído pelo Ato nº 13083, de 14 de setembro de 2022)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.25"></a>2.25. ETSI EN 301 681&nbsp;V2.1.2 (2016-11) –&nbsp;<em>Satellite Earth Stations and Systems (SES); Harmonised Standard for Mobile Earth Stations (MES) of Geostationary mobile satellite systems, including handheld earth stations, for Satellite Personal Communications Networks (S-PCN) under the Mobile Satellite Service (MSS), operating in the 1,5 GHz and 1,6 GHz frequency bands covering the essential requirements of article 3.2 of the Directive 2014/53/EU</em>;&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1742-ato-13083">(Incluído pelo Ato nº 13083, de 14 de setembro de 2022)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.26"></a>2.26.&nbsp;ETSI EN 301 444 V2.2.1 (2021-04) –&nbsp;<em>Satellite Earth Stations and Systems (SES); Land Mobile Earth Stations (LMES) and Maritime Mobile Earth Stations (MMES) providing voice and/or data communications, operating in the 1,5 GHz and 1,6 GHz frequency bands; Harmonised Standard for access to radio spectrum</em>.&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1742-ato-13083">(Incluído pelo Ato nº 13083, de 14 de setembro de 2022)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify;"><a name="item3"></a>3. DEFINIÇÕES</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item3.1"></a>3.1. Aplicam-se as definições contidas nas referências normativas listadas no item anterior.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item4"></a>4. REQUISITOS GERAIS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.1"></a>4.1. Os requisitos estabelecidos neste documento abrangem as características mínimas obrigatórias a serem observadas no processo de avaliação da conformidade de Estações Terminais de Acesso - ETA para efeito de homologação junto a Agência Nacional de Telecomunicações.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.2"></a>4.2. Os interessados na homologação deverão observar, além dos requisitos mínimos estabelecidos pela Agência, padrões, normas e critérios para o correto funcionamento do produto nas redes das prestadoras de telecomunicações no Brasil, bem como os estabelecidos por outras instituições competentes.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.3"></a>4.3. Os requisitos estabelecidos neste documento são complementados por aqueles contidos na regulamentação vigente sobre canalização e condições de uso do espectro radioelétrico e&nbsp;no Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil, nas faixas de frequências de operação do equipamento.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item4.3.1"></a>4.3.1. Os equipamentos sob avaliação da conformidade devem atender aos limites de potência, de emissões espúrias, de&nbsp;emissões fora da faixa, as faixas de frequências autorizadas e demais condições contidas nas&nbsp;respectivas regulamentações vigentes sobre canalização e condições de uso do espectro, ainda que as referências normativas apontem limites diferentes.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item5"></a>5. REQUISITOS APLICÁVEIS A TODAS AS TECNOLOGIAS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1. Atender, no que for aplicável, os Requisitos Técnicos de Compatibilidade Eletromagnética para a Avaliação da Conformidade de Produtos para Telecomunicações.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2. Atender, no quer for aplicável, os Requisitos Técnicos de Segurança Elétrica para Avaliação da Conformidade de Produtos para Telecomunicações.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.3"></a>5.3. Atender aos seguintes itens do Regulamento sobre a Avaliação da Exposição Humana a Campos Elétricos, Magnéticos e Eletromagnéticos Associados à Operação de Estações Transmissoras de Radiocomunicação:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Titulo II – Capítulo I - Art. 4º, § 1º, aplicando os procedimentos de ensaio definidos no Titulo II – Capítulo III&nbsp;(Dos Procedimentos de Avaliação de Estações Terminais Portáteis).</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item6"></a><span style="text-decoration: line-through;">6. REQUISITOS APLICÁVEIS AOS EQUIPAMENTOS DO SERVIÇO MÓVEL GLOBAL POR SATÉLITE – SMGS</span></p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;">6. REQUISITOS APLICÁVEIS AOS EQUIPAMENTOS DO SERVIÇO MÓVEL POR SATÉLITE&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.1"></a><span style="text-decoration: line-through;">6.1. Referências normativas:</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) ETSI - EN 300733.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">b) ETSI - EN 300734.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">6.1. Referências normativas:&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1742-ato-13083">(Redação dada pelo pelo Ato nº 13083, de 14 de setembro de 2022)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) ETSI EN 300 733.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">b) ETSI EN 300 734.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">c) ETSI EN 301 426.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">d) ETSI EN 301 681.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">e) ETSI EN 301 444.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.2"></a>6.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.2.1"></a>6.2.1. Apresentar conformidade aos seguintes itens da norma ETSI - EN 300733:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 5 - Emissões indesejadas fora da banda.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 6 - Emissões indesejadas dentro da banda.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) 7 - Densidade de EIRP (potência equivalente irradiada por uma fonte isotrópica) dentro da banda operacional.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) 8 - Emissão indesejada com transmissor em repouso.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.2.2"></a>6.2.2. Apresentar conformidade aos seguintes itens da norma ETSI - EN 300734:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 5 - Emissões indesejadas fora da banda.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 6 - Emissões indesejadas dentro da banda.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) 7 - Emissão indesejada com transmissor em repouso.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.2.3"></a><span style="text-decoration: line-through;">6.2.3. Apresentar conformidade aos seguintes itens da norma ETSI - ETS 300 254:</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">a) 4.2.1 - Emissões indesejadas fora das bandas 1626,5 - 1645,5 MHz e 1656,5 - 1660,5 MHz.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">b) 4.2.2 - Emissões indesejadas máximas dentro das bandas 1626,5 - 1645,5 MHz e 1656,5 - 1660,5 MHz.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">c) 4.2.4 - Proteção do serviço de radioastronomia contra os LMES operando nas faixas 1660,0 - 1660,5 MHz.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 60px;">6.2.3. Apresentar conformidade aos seguintes itens da norma ETSI EN 301 426:&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1742-ato-13083">(Redação dada pelo pelo Ato nº 13083, de 14 de setembro de 2022)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">a) 4.2.1 – Emissões indesejadas fora das bandas;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">b) 4.2.2&nbsp;– Emissões indesejadas máximas dentro das bandas;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">c) 4.2.3 – Funções de controle e monitoramento (CMF) da da estação móvel terrena&nbsp;(<em>mobile earth station</em>&nbsp;- MES).</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.2.4"></a><span style="text-decoration: line-through;">6.2.4. Apresentar conformidade aos seguintes itens da norma ETSI - ETS 300 423:</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">a) 6.1 - Emissão indesejada fora das bandas de 1631,5 a 1634,5 MHz e 1656,5 a 1660,5 MHz.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">b) 6.2 - Emissão indesejada máxima dentro das bandas de 1631,5 a 1634,5 MHz e 1656,5 a 1660,5 MHz.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">c) 6.3 - Densidade de emissão EIRP máxima na banda nominal.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">d) 6.5 - Proteção do serviço de radioastronomia contra emissões produzidas pelo LMES operando na banda de 1660,0 a 1660,5 MHz.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 60px;">6.2.4. Apresentar conformidade aos seguintes itens da norma&nbsp;ETSI EN 301 681:&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1742-ato-13083">(Redação dada pelo pelo Ato nº 13083, de 14 de setembro de 2022)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">a) 4.2.1 – Emissões indesejadas fora da&nbsp;banda 1626,5 MHz a 1660,5 MHz;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">b) 4.2.2 – Emissões indesejadas dentro das bandas&nbsp;1626,5 MHz a 1660,5 MHz e 1 660,5 MHz a 1 662,5 MHz;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">c) 4.2.3 – Emissões indesejadas no estado portadora desligada;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">d)&nbsp;4.2.4 – Funções de controle e monitoramento (CMF) da MES;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">e) 4.2.6 – Proteção do serviço de radioastronomia na banda 1 660 MHz a 1 660,5 MHz.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 60px;">6.2.5. Apresentar conformidade aos seguintes itens da norma&nbsp;ETSI EN 301 444:&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1742-ato-13083">(Incluído pelo pelo Ato nº 13083, de 14 de setembro de 2022)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">a) 4.2.1 – Emissões indesejadas fora da&nbsp;banda&nbsp;1625,8 MHz a 1661,2 MHz e fora da banda 1667,3 MHz a 1675,7 MHz;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">b) 4.2.2&nbsp;– Emissões indesejadas máximas dentro da&nbsp;banda&nbsp;1625,8 MHz a 1661,2 MHz e dentro da banda 1667,3 MHz a 1675,7 MHz;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">c) 4.2.3&nbsp;– Funções de controle e monitoramento (CMF);</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 90px;">d) 4.2.4&nbsp;– Proteção do serviço de radioastronomia na banda 1660,0 MHz a 1660,5 MHz e na banda 1668,0 MHz a 1670,0 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify;"><a name="item6.3"></a>6.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 30px;">a) Os procedimentos de ensaio encontram-se nas próprias&nbsp;referências normativas.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item7"></a>7. REQUISITOS APLICÁVEIS AOS EQUIPAMENTOS DOS SERVIÇOS MÓVEIS EM APLICAÇÕES PONTO-MULTIPONTO</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item7.1"></a>7.1. Referências normativas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Requisitos técnicos para avaliação da conformidade de transmissores e transceptores digitais para o serviço fixo em aplicações ponto-multiponto nas faixas de frequências abaixo de 1 GHz.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Requisitos técnicos para avaliação da conformidade de transmissores e transceptores digitais para o serviço fixo em aplicações ponto-multiponto nas faixas de frequências acima de 1 GHz.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 30px;"><a name="item7.2"></a>7.2.&nbsp; Requisitos:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a)&nbsp; Apresentar conformidade, na íntegra,&nbsp;às referência normativas.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item7.3"></a>7.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se nas próprias&nbsp;referências normativas.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item8"></a>8. REQUISITOS APLICÁVEIS AOS EQUIPAMENTOS DO SERVIÇO DE TELEFONIA FIXA COMUTADA – STFC (COM ACESSO SEM FIO)</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item8.1"></a>8.1. Referências normativas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Regulamento para certificação de sistemas de acesso fixo sem fio para prestação do STFC.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) ETS 300086.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item8.2"></a>8.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 60px;">8.2.1. Apresentar conformidade aos seguintes itens do Regulamento para certificação de sistemas de acesso fixo sem fio para prestação do STFC:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Art. 15. Emissão de espúrios fora da faixa de transmissão.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) Art. 16. Emissão de espúrios.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) Art. 17. Emissão de espúrios.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) Art. 18. Imunidade do receptor.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item8.3"></a>8.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se nas próprias&nbsp;referências normativas.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Para&nbsp;o teste de imunidade do receptor&nbsp;poderá ser adotado o método de busca limitada especificada pelo ETSI, ETS 300086, item 8.6.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item9"></a><span style="text-decoration: line-through;">9. REQUISITOS&nbsp;APLICÁVEIS&nbsp;AOS EQUIPAMENTOS PARA ACESSO A CONTEÚDO MULTIMÍDIA</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2023/1879-ato-9281">(Revogado pelo Ato nº 9281, de 05 de julho de 2023)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item9.1"></a><span style="text-decoration: line-through;">9.1. Referência normativa:</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) Requisitos Técnicos de Compatibilidade Eletromagnética para a Avaliação da Conformidade de Produtos para Telecomunicações.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">b) Requisitos Técnicos de Segurança Elétrica para Avaliação da Conformidade de Produtos para Telecomunicações.</span></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item9.2"></a><span style="text-decoration: line-through;">9.2. Requisitos:</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) Apresentar conformidade,&nbsp;no que for aplicável,&nbsp;aos requisitos das&nbsp;referências normativas.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">b) Os requisitos&nbsp;para Estação Terminal de Acesso a Conteúdo Multimídia aplicam-se ao produto que utiliza-se da comunicação entre dispositivos de radiação restrita para&nbsp;obter acesso a um serviço de telecomunicações, como, por exemplo, ao Serviço de Comunicação Multimídia (SCM)&nbsp;ofertado por uma operadora.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">c) Estes requisitos não são aplicáveis a televisores e a&nbsp;computadores.</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><a name="item9.2.1"></a><span style="text-decoration: line-through;">9.2.1.&nbsp;</span></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 30px;"><a name="item9.3"></a><span style="text-decoration: line-through;">9.3. Procedimentos de ensaio:</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) Os procedimentos de ensaio encontram-se nas próprias&nbsp;referências normativas.</span></p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item10"></a>10. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA CDMA DO SERVIÇO MÓVEL PESSOAL - SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item10.1"></a>10.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) TIA/EIA-98-C.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item10.2"></a>10.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item10.2.1"></a>10.2.1. Apresentar conformidade aos seguintes itens da referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 4.1.1 - Exatidão de frequência.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 4.4.1 - Faixa de potência de saída em&nbsp;<em>loop&nbsp;</em>aberto.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) 4.4.5 - Potência de saída de RF máxima.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) 4.4.6 - Potência de saída mínima controlada.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">e) 4.5.1 - Emissão de espúrios conduzidos.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item10.3"></a>10.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios não deverão levar em consideração variações de temperatura e tensão de alimentação.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item11"></a>11. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA TDMA DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item11.1"></a>11.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) TIA/EIA/IS-137-A.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item11.2"></a>11.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item11.2.1"></a>11.2.1. Apresentar conformidade aos seguintes itens da referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 3.1.2.2 - Estabilidade de frequência.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 3.2.1.2 - Potência de saída de RF digital.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) 3.4.2.2 - Emissão de espúrios e harmônicos conduzidos.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item11.3"></a>11.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios não deverão levar em consideração variações de temperatura e tensão de alimentação</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item12"></a>12. REQUISITOS&nbsp;APLICÁVEIS&nbsp;ÀS TECNOLOGIAS GSM/GPRS/EDGE DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item12.1"></a>12.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) 3GPP TS 51.010-1 V6.5.0 (2005-11).</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item12.2"></a>12.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item12.2.1"></a>12.2.1. Apresentar conformidade aos seguintes itens da referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 12.1.1 - Emissão de espúrios conduzidos - terminal em comunicação.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 12.1.2 - Emissão de espúrios conduzidos - terminal inativo.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) 13.1 - Erro de frequência e fase.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) 13.3 - Potência de saída de transmissão, controle de potência e tempo de&nbsp;<em>burst</em>, com exceção de variações de temperatura e de tensão de alimentação.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">e) 13.4 - Espectro de RF de saída.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">f) 13.16.1 - Erro de frequência e fase na configuração&nbsp;GPRS&nbsp;multiquadro.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">g) 13.16.2 - Potência de saída de transmissão na configuração&nbsp;GPRS multiquadro.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">h) 13.16.3 - Espectro de RF de saída na configuração&nbsp;GPRS&nbsp;multiquadro.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">i) 13.17.1- Erro de frequência e exatidão de modulação na configuração&nbsp;EGPRS (EDGE).</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">j) 13.17. 3 - Potência de saída do transmissor&nbsp;EGPRS (EDGE).</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">k) 13.17.4 - Espectro de RF de saída na configuração&nbsp;EGPRS (EDGE).</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item12.3"></a>12.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios não deverão levar em consideração variações de temperatura e tensão de alimentação.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item13"></a>13. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA CDMA2000&nbsp;DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item13.1"></a>13.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) 3GPP2 C.S0011-A.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item13.2"></a>13.2 Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item13.2.1"></a>13.2.1. Apresentar conformidade aos seguintes itens da referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 4.1 - Exatidão de frequência.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 4.4.1 - Faixa de potência de saída em&nbsp;<em>loop&nbsp;</em>aberto.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) 4.4.5 - Potência de saída de RF máxima.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) 4.5.1 - Emissão de espúrios conduzidos.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item13.3"></a>13.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios não deverão levar em consideração variações de temperatura e tensão de alimentação.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item14"></a>14. REQUISITOS&nbsp;APLICÁVEI&nbsp;ÀS TECNOLOGIAS WCDMA/HSDPA/HSUPA DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item14.1"></a>14.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) ETSI TS 134 121-1 V9.1.0 (2010-07).</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item14.2"></a>14.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item14.2.1"></a>14.2.1. Apresentar conformidade aos seguintes itens da referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 5.2 - Potência Máxima de Saída.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 5.2AA - Potência Máxima de Saída com HS-DPCCH.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) 5.2B - Potência Máxima de Saída com HS-DPCCH e E-DCH.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) 5.2C - Acurácia do código de domínio de potência relativo do EU.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">e) 5.2D - Acurácia do código de domínio de potência relativo para HS-DPCCH&nbsp; e E-DCH.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">f) 5.3 - Erro de Frequência.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">g) 5.4.1 - Controle de potência em&nbsp;<em>loop</em>&nbsp;aberto no&nbsp;<em>uplink</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">h) 5.4.2 - Controle de potência em&nbsp;<em>loop&nbsp;</em>interno no&nbsp;<em>uplink</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">i) 5.4.3 - Potência Mínima de Saída.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">J) 5.5.1 - Potência emitida com o transmissor desligado.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">k) 5.5.2 - Máscara temporal do transmissor.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">l) 5.7 - Configuração de potência no modo comprimido –&nbsp;<em>uplink</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">m) 5.7 A - Controle de potência HS-DPCCH.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">n) 5.9 - Máscara espectral de emissão.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">o) 5.9A&nbsp;- Máscara espectral de emissão HS-DPCCH.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">p) 5.9B - Máscara espectral de emissão E-DCH.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">q) 5.11 - Emissões de Espúrios Conduzidos.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">r) 5.13.1 - Erro do vetor de magnitude.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">s) 5.13.1 A - Erro do vetor de magnitude com HS-DPCCH.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">t) 5.13.1 AA - Erro do vetor de magnitude e descontinuidade de fase com HS-DPCCH.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">u) 5.13.2A - Erro de domínio de código relativo com HS-DPCCH.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">v) 5.13.2B - Erro de domínio de código relativo com HS-DPCCH e E-DCH.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item14.3"></a>14.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios não deverão levar em consideração variações de temperatura e tensão de alimentação.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item15"></a>15. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA&nbsp;HSPA+ DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item15.1"></a>15.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) ETSI TS 134 121-1 V9.4.0 (2011-03).</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a name="item15.2"></a>15.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item15.2.1"></a>15.2.1. Apresentar conformidade aos seguintes itens da referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 5.2E - Precisão relativa da potência no domínio do código para HS-DPCCH e E-DCH com 16QAM.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 5.13.1AAA - EVM e deslocamento original do IQ para HS-DPCCH e E-DCH com 16QAM.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) 5.13.2C - Erro relativo no domínio do código para HS-DPCCH e E-DCH com 16QAM.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item15.3"></a>15.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios não deverão levar em consideração variações de temperatura e tensão de alimentação.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item16"></a>16. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA&nbsp;LTE DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item16.1"></a>16.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) 3GPP TS 36.521-1 V9.5.0 (2011-06).</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a)&nbsp;3GPP TS 36.521-1 V17.6.1 (2023-07).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item16.2"></a>16.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item16.2.1"></a>16.2.1. Apresentar conformidade aos seguintes itens da referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 6.2.2 - Potência de transmissão.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 6.2.3 - Máxima redução de potência.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) 6.2.5 - Potência de transmissão configurada.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) 6.3.2 - Potência mínima de transmissão.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">e) 6.3.4.1 - Máscara do tempo de transmissão/recepção (para a modalidade TDD).</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">f) 6.5.1 - Estabilidade de frequência.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">g) 6.5.2.1 - Magnitude do Vetor de Erro – EVM.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">h) 6.5.2.2 - Desvio da potência da portadora.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">i) 6.5.2.3 - Emissões indesejáveis na banda de operação.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">j) 6.6.1 - Largura de banda ocupada.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">k) 6.6.2.1 - Máscara espectral de emissão.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">l) 6.6.2.3 - Razão de interferência ao canal adjacente.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">m) 6.6.3.1 - Emissões de espúrios conduzidos.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item16.3"></a>16.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios não deverão levar em consideração variações de temperatura e tensão de alimentação.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item17"></a>17. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA NB-IOT LTE CAT.&nbsp;M1 DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item17.1"></a>17.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">a) ETSI TS 136 521-1 V14.4.0 (2017-11).</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 30px;"><span style="text-decoration: line-through;">a)&nbsp;ETSI TS 136 521-1 V16.8.1 (2021-06).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 30px;">a)&nbsp;3GPP TS 36.521-1 V17.6.1 (2023-07).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item17.2"></a>17.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item17.2.1"></a><span style="text-decoration: line-through;">17.2.1. Apresentar conformidade aos seguintes itens da referência normativa, excetuando-se os ensaios relativos às tecnologias&nbsp;<em>Multi-Carrier,</em>&nbsp;<em>Carrier-Aggregation e&nbsp;Up Link - MIMO</em>:</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>a) 6.2.2EA - UE Maximum Output Power for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>b)&nbsp;</em><em>6.2.3EA - Maximum Power Reduction (MPR) for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>c) 6.2.4EA - Additional Maximum Power Reduction (A-MPR) for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>d) 6.2.5EA - Configured UE transmitted Output Power for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;">&nbsp;<em>e) 6.3.2EA - Minimum Output Power for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>f) 6.3.3EA - UE Transmit OFF power for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>g) 6.3.4EA - ON/OFF time mask for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>h) 6.3.5EA - Power Control for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>i) 6.5.1EA - Frequency Error for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>j) 6.5.1EA_1 - Frequency Error for UE category M1 (CEmodeB).</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>k) 6.5.2.1EA - Error Vector Magnitude (EVM) for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>l) 6.5.2.2EA - Carrier leakage for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>m) 6.5.2.3EA - In-band emissions for non allocated RB for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>n) 6.5.2.4EA - EVM equalizer spectrum flatness for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>o) 6.6.1EA - Occupied bandwidth for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>p) 6.6.2.1EA - Spectrum Emission Mask for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>q) 6.6.2.2EA - Additional Spectrum Emission Mask for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>r) 6.6.2.3.EA - Adjacent Channel Leakage power Ratio for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>s) 6.6.3EA - Spurious emission for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>t) 6.7EA - Transmit intermodulation for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>u) 7.3EA - Reference sensitivity level for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>v) 7.4EA - Maximum input level for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>w) 7.5EA - Adjacent Channel Selectivity (ACS) for category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>x) 7.6.1EA - In-band blocking for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>y) 7.6.3EA - Narrow band blocking for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>z) 7.8.1EA - Wide band Intermodulation for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>aa) 7.9EA - Spurious emissions for UE category M1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><em>17.2.1.&nbsp;Apresentar conformidade aos seguintes itens da referência normativa, excetuando-se os ensaios relativos às tecnologias&nbsp;Multi-Carrier,&nbsp;Carrier-Aggregation e&nbsp;Up Link - MIMO:&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>a) 6.2.2EA - UE Maximum Output Power for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>b) 6.2.5EA - Configured UE transmitted Output Power for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>c) 6.3.2EA - Minimum Output Power for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>d) 6.3.3EA - UE Transmit OFF power for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>e) 6.3.4EA - ON/OFF time mask for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>f) 6.3.4EA.2.1 PRACH time mask&nbsp;for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>g)&nbsp;6.3.4EA.2.2 SRS time mask for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>h) 6.3.5EA.1 Power Control Absolute power tolerance for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>i)&nbsp;6.3.5EA.2 Power Control Relative power tolerance for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>j)&nbsp;6.3.5EA.3 Aggregate power control tolerance for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>k) 6.5.1EA - Frequency Error for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>l) 6.5.1EA_1 - Frequency Error for UE category M1 (CEmodeB)</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>m) 6.5.2.1EA - Error Vector Magnitude (EVM) for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>n) 6.5.2.2EA - Carrier leakage for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>o) 6.5.2.3EA - In-band emissions for non allocated RB for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>p) 6.5.2.4EA - EVM equalizer spectrum flatness for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>q) 6.6.1EA - Occupied bandwidth for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>r) 6.6.2.1EA - Spectrum Emission Mask for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>s) 6.6.2.2EA - Additional Spectrum Emission Mask for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>t) 6.6.2.3.EA - Adjacent Channel Leakage power Ratio for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>u) 6.6.3EA - Spurious emission for UE category M1</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>v) 7.9EA - Spurious emissions for UE category M1</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item17.3"></a>17.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios não deverão levar em consideração variações de temperatura e tensão de alimentação.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item18"></a><span style="text-decoration: line-through;">18. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA NB-IOT CAT. NB1 DO SMP</span></p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;">18. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA NB-IOT CAT. NB1 E NB2&nbsp;DO SMP&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item18.1"></a>18.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) ETSI TS 136 521-1 V14.4.0 (2017-11).</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a)&nbsp;ETSI TS 136 521-1 V16.8.1 (2021-06).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a)&nbsp;3GPP TS 36.521-1 V17.6.1 (2023-07).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item18.2"></a>18.2. Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item18.2.1"></a><span style="text-decoration: line-through;">18.2.1. Apresentar conformidade aos seguintes itens da referência normativa, excetuando-se os ensaios relativos às tecnologias&nbsp;<em>Multi-Carrier,</em>&nbsp;<em>Carrier-Aggregation e&nbsp;Up Link - MIMO</em>:</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>a) 6.2.2F - UE Maximum Output Power for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>a) 6.2.2F - UE Maximum Output Power for&nbsp;category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>b) 6.2.3F - Maximum Power Reduction (MPR) for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>b) 6.2.3F - Maximum Power Reduction (MPR) for&nbsp;category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>c) 6.2.5F - Configured UE transmitted Output Power for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>c) 6.2.5F - Configured UE transmitted Output Power for UE category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>d) 6.3.2F - Minimum Output Power for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>d) 6.3.2F - Minimum Output Power for category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>e) 6.3.3F - UE Transmit OFF power for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>e) 6.3.3F - Transmit OFF power for&nbsp;category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>f) 6.3.4F - ON/OFF time mask for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>f) 6.3.4F - ON/OFF time mask for category NB1 and NB2.</em>&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>g) 6.3.5F - Power Control for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>g) 6.3.5F - Power Control for category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>h) 6.5.1F - Frequency Error for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>h) 6.5.1F - Frequency Error for&nbsp;category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>i) 6.5.2.1F.1 - Error Vector Magnitude (EVM) for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>i) 6.5.2.1F.1 - Error Vector Magnitude (EVM) for&nbsp;category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>j) 6.5.2.2F - Carrier leakage for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>j) 6.5.2.2F - Carrier leakage for&nbsp;category NB1 and NB2.</em>&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>k) 6.5.2.3F - In-band emissions for non allocated RB for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>k) 6.5.2.3F - In-band emissions for non allocated RB for&nbsp;category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>l) 6.6.1F - Occupied bandwidth for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>l) 6.6.1F - Occupied bandwidth for category NB1 and NB2</em>.&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>m) 6.6.2.1F - Spectrum Emission Mask for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>m) 6.6.2.1F - Spectrum Emission Mask for category NB1 and NB2.</em>&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>n) 6.6.2.3.F - Adjacent Channel Leakage power Ratio for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>n) 6.6.2.3.F - Adjacent Channel Leakage power Ratio for category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>o) 6.6.3F - Spurious emission for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>o) 6.6.3F - Spurious emission for&nbsp;category NB1 and NB2.</em>&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>p) 6.7F - Transmit intermodulation for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>p) 6.7F - Transmit intermodulation for category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>q) 7.3F - Reference sensitivity level for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>q) 7.3F - Reference sensitivity level for&nbsp;category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>r) 7.4F - Maximum input level for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>r) 7.4F - Maximum input level for category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>s) 7.5F - Adjacent Channel Selectivity (ACS) for category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>s) 7.5F - Adjacent Channel Selectivity (ACS) for category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>t) 7.6.1F - In-band blocking for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>t) 7.6.1F - In-band blocking for category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>u) 7.8.1F - Wide band Intermodulation for UE category NB1.</em></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><span style="text-decoration: line-through;"><em>u) 7.8.1F - Wide band Intermodulation for category NB1 and NB2.&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">18.2.1. Apresentar conformidade aos seguintes itens da referência normativa, excetuando-se os ensaios relativos às tecnologias&nbsp;<em>Multi-Carrier,</em>&nbsp;<em>Carrier-Aggregation e&nbsp;Up Link - MIMO</em>:&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>a) 6.2.2F - UE Maximum Output Power for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>b) 6.2.5F - Configured UE transmitted Output Power for UE category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>c)&nbsp;6.3.2F - Minimum Output Power for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>d)&nbsp;6.3.3F - Transmit OFF power for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>e)&nbsp;6.3.4F - ON/OFF time mask for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>f)&nbsp;6.3.5F.1 Power Control Absolute power tolerance for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>g)&nbsp;6.3.5F.2 Power Control Relative power tolerance for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>h)&nbsp;6.3.5F.3 Aggregate power control tolerance for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>i) 6.5.1F - Frequency Error for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>j)&nbsp;6.5.2.1F.1 - Error Vector Magnitude (EVM) for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>k)&nbsp;6.5.2.2F - Carrier leakage for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>l)&nbsp;6.5.2.3F - In-band emissions for non allocated RB for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>m)&nbsp;6.6.1F - Occupied bandwidth for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>n)&nbsp;6.6.2.1F - Spectrum Emission Mask for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>o)&nbsp;6.6.2.3.F - Adjacent Channel Leakage power Ratio for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>p)&nbsp;6.6.3F - Spurious emission for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><em>q)&nbsp;7.9F Spurious emissions for Category NB1</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item18.3"></a>18.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios não deverão levar em consideração variações de temperatura e tensão de alimentação.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item19"></a>19. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA 5G NR (<em>NEW RADIO</em>)&nbsp;<em>FREQUENCY RANGE 1 STANDALON</em>E DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item19.1"></a>19.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) 3GPP TS 38.521-1 V16.3.0 (2020-03).</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a)&nbsp;ETSI TS 138 521-1 V16.6.0 (2021-02).&nbsp;<em>&nbsp;</em><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a)&nbsp;3GPP TS 38.521-1 V17.7.0 (2023-02).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item19.2"></a>19.2. Requisitos:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) 6.2.1&nbsp;<em>UE maximum output power</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><em>b) 6.2.4&nbsp;</em>Configured transmitted power.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">c) 6.3.1&nbsp;<em>Minimum output power</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">d) 6.3.3.2&nbsp;<em>General ON/OFF time mask</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">e) 6.4.1&nbsp;<em>Frequency Error</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">f) 6.4.2.1&nbsp;<em>Error Vector Magnitude</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">g) 6.4.2.2&nbsp;<em>Carrier leakage</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">h) 6.4.2.3&nbsp;<em>In-band emissions</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">i) 6.5.1<em>&nbsp;Occupied bandwidth</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">j) 6.5.2.2&nbsp;<em>Spectrum emission mask</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">K) 6.5.2.4.1&nbsp;<em>NR ACLR</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">l) 6.5.3.1&nbsp;<em>General spurious emissions</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">m) 7.9&nbsp;<em>Spurious emissions</em>.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item19.2.1"></a>19.2.1. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item20"></a>20. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA 5G NR (<em>NEW RADIO</em>)<em>&nbsp;FREQUENCY RANGE 1 NON-STANDALONE INTRA-BAND NON-</em><em>CONTIGUOUS</em>&nbsp;DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item20.1"></a>20.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) 3GPP TS 38.521-3 V16.3.0 (2020-03).</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a)&nbsp;ETSI TS 138 521-3 V16.6.0 (2021-01).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) 3GPP TS 38.521-3 V17.7.0 (2023-02).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item20.2"></a>20.2. Requisitos:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) 6.2B.1.2&nbsp;<i>UE Maximum Output Power for intra-band non-contiguous EN-DC</i>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) 6.3B.1.2&nbsp;<em>Minimum output power for intra-band non-contiguous EN-DC</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">c) 6.3B.3.2&nbsp;<em>Tx ON/OFF time mask for intra-band non-contiguous EN-DC.</em></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">d) 6.4B.1.2&nbsp;<em>Frequency error for Intra-band non-contiguous EN-DC</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">e) 6.4B.2.2.1&nbsp;<em>Error Vector Magnitude for intra-band non-contiguous EN-DC</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">f) 6.4B.2.2.2&nbsp;<em>Carrier Leakage for intra-band non-contiguous EN-DC</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">g) 6.4B.2.2.3&nbsp;<em>In-band Emissions for intra-band non-contiguous EN-DC</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">h) 7.9B.2&nbsp;<em>Spurious Emissions for intra-band non-contiguous EN-DC in FR1(2 CCs)</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">i)&nbsp;6.2B.2.2&nbsp;<em>UE Maximum Output Power reduction for Intra-Band Non-Contiguous EN-DC</em>.&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Incluído pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">j) 6.5B.3.2.1&nbsp;<em>General spurious emissions for Intra-band non-contiguous EN-DC</em>.&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Incluído&nbsp;pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item20.3"></a>20.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item21"></a>21. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA 5G NR (<em>NEW RADIO</em>)<em>&nbsp;FREQUENCY RANGE 1 NON-STANDALONE INTER-BAND&nbsp;</em>DO SMP</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item21.1"></a>21.1. Referência normativa:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) 3GPP TS 38.521-3 V16.3.0 (2020-03).</span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a)&nbsp;ETSI TS 138 521-3 V16.6.0 (2021-01).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Redação dada pelo Ato nº 10002, de 16 de novembro de 2021)</a></span></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) 3GPP TS 38.521-3 V17.7.0 (2023-02).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item21.2"></a>21.2. Requisitos:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) 6.2B.1.3&nbsp;<em>UE Maximum Output Power for inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) 6.2B.2.3&nbsp;<em>UE Maximum Output Power reduction for inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">c) 6.3B.1.3&nbsp;<em>Minimum output power for inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">d) 6.3B.3.3&nbsp;<em>Tx ON/OFF time mask for inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">e) 6.4B.1.3&nbsp;<em>Frequency error for Inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">f ) 6.4B.2.3.1&nbsp;<em>Error Vector Magnitude for inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">g) 6.4B.2.3.2&nbsp;<em>Carrier Leakage for inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">h) 6.4B.2.3.3<em>&nbsp;In-band Emissions for inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">i) 6.5B.1.3&nbsp;<em>Occupied bandwidth for Inter-Band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">j) 6.5B.2.3.1&nbsp;<em>Spectrum emissions mask for Inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">k) 6.5B.3.3&nbsp;<em>Spurious Emissions for Inter-band EN-DC within FR1</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">l) 7.9B.3&nbsp;<em>Spurious Emissions for inter-band EN-DC within FR1(2 CCs)</em>.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">m)&nbsp;6.5B.2.3.3&nbsp;<em>Adjacent channel leakage ratio for inter-band EN-DC within FR1</em>.&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Incluído&nbsp;pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item21.3"></a>21.3. Procedimentos de ensaio:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Os ensaios nos quais a referência normativa não permite a aplicação da abordagem “<i>LTE anchor agnostic</i>” poderão ser executados com ancoragem em 3 (três) bandas LTE (banda com frequência inferior, banda com frequência intermediária e banda com frequência superior), realizando-se a combinação das 3 bandas LTE com todas as bandas NR 5G.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify;"><a id="item22"></a>22<strong>. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA 5G NR (<em>NEW RADIO</em>)&nbsp;<em>FREQUENCY RANGE 2&nbsp;STANDALON</em>E DO SMP&nbsp;</strong><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Incluído&nbsp;pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item22.1"></a>22.1. Referência normativa:&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a)ETSI TS 138 521-2&nbsp;V16.6.0 (2021-02).&nbsp;</span></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) 3GPP TS 38.521-2 V17.7.0 (2023-02).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item22.2"></a>22.2. Requisitos:&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) 6.2.1&nbsp;<em>UE maximum output power</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>b) 6.2.4&nbsp;</em>Configured transmitted power.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">c) 6.3.1&nbsp;<em>Minimum output power</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">d) 6.3.3.2&nbsp;<em>General ON/OFF time mask</em>.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">e) 6.4.1&nbsp;<em>Frequency Error</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">f) 6.4.2.1&nbsp;<em>Error Vector Magnitude</em>.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">g) 6.4.2.2&nbsp;<em>Carrier leakage</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">h) 6.4.2.3&nbsp;<em>In-band emissions</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">i)&nbsp;6.5.1<em>&nbsp;Occupied bandwidth</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">j)&nbsp;6.5.2.1&nbsp;<em>Spectrum emission mask</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">k) 6.5.2.3<em>&nbsp;Adjacent channel leakage ratio.&nbsp;</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">l) 6.5.3.1&nbsp;<em>Transmitter Spurious emissions</em>.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">m) 7.9&nbsp;<em>Spurious emissions</em>.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item22.3"></a>22.3. Procedimentos de ensaio:&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify;"><a id="item23"></a>23<strong>. REQUISITOS&nbsp;APLICÁVEIS&nbsp;À TECNOLOGIA 5G NR (<em>NEW RADIO</em>)<em>&nbsp;FREQUENCY RANGE 2&nbsp;NON-STANDALONE INTER-BAND&nbsp;</em>DO SMP&nbsp;</strong><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1604-ato-10002">(Incluído&nbsp;pelo Ato nº 10002, de 16 de novembro de 2021)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item23.1"></a>23.1. Referência normativa:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">a) ETSI TS 138 521-3 V16.6.0 (2021-01).</span></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) 3GPP TS 38.521-3 V17.7.0 (2023-02).&nbsp;<a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Redação dada pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item23.2"></a>23.2. Requisitos:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) 6.2B.1.4&nbsp;<em>UE Maximum Output Power for Inter-Band EN-DC including FR2</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">b) 6.2B.4.1.4&nbsp;<em>Configured Output Power for Inter-Band EN-DC including FR2</em>.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">c)&nbsp;6.3B.1.4&nbsp;<em>UE Minimum Output Power for EN-DC Inter-band EN-DC including FR2</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">d) 6.4B.1.4&nbsp;<em>Frequency Error for inter-band EN-DC including</em>&nbsp;FR2.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">e) 6.5B.1.4&nbsp;<em>Occupied bandwidth for Inter-Band EN-DC including FR2 (2 CCs)</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">f) 6.5B.2.4.1&nbsp;<em>Spectrum emissions mask for Inter-band EN-DC including FR2 (2 CCs)</em>.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">g) 6.5B.2.4.3&nbsp;<em>Adjacent channel leakage ratio for Inter-band EN-DC including FR2 (2 CCs)</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">h) 6.5B.3.4.1&nbsp;<em>General Spurious Emissions for Inter-band including FR2 (2 CCs)</em>.&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item23.3"></a>23.3. Procedimentos de ensaio:&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria&nbsp;referência normativa.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">b) Os ensaios nos quais a referência normativa não permite a aplicação da abordagem “<i>LTE anchor agnostic</i>” poderão ser executados com ancoragem em 3 (três) bandas LTE (banda com frequência inferior, banda com frequência intermediária e banda com frequência superior), realizando-se a combinação das 3 bandas LTE com todas as bandas NR 5G.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify;"><a id="item24"></a>24<strong>. REQUISITOS APLICÁVEIS À TECNOLOGIA NB-NTN&nbsp;<em>(Narrow Band Non-Terrestrial Networks)</em>&nbsp;</strong><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Incluído pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item24.1"></a>24.1. Referência normativa:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) 3GPP TS 36.521-4 V18.1.0 (2024-03).</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item24.2"></a>24.2. Requisitos:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>a) 6.2B.1&nbsp;UE maximum output power for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>b)&nbsp;6.2B.4 Configured transmitted Power for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>c)&nbsp;6.3B.1 UE Minimum output power for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>d)&nbsp;6.3B.3.1 General ON/OFF time mask for category NB1 and NB2</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><i>e)&nbsp;6.4B.1 Frequency error for UE category NB1 and NB2</i></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><i>f)&nbsp;6.4B.2.1 Error Vector Magnitude (EVM) for Category NB1 and NB2</i></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><i>g)&nbsp;6.4B.2.2 Carrier leakage for Category NB1 and NB2</i></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><i>h)&nbsp;6.4B.2.3 In-band emissions for Category NB1 and NB2</i></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><i>i)&nbsp;6.5B.2 Occupied bandwidth for category NB1 and NB2</i></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><i>j)&nbsp;6.5B.3.2 Spectrum emission mask for category NB1 and NB2</i></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><i>k)&nbsp;6.5B.3.4 Adjacent Channel Leakage Ratio for category NB1 and NB2</i></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><i>l)&nbsp;6.5B.4.2 Transmitter Spurious emissions for category NB1 and NB2</i></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><i>m) 7.9B&nbsp;Spurious emissions for category NB1 and NB2</i></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item24.3"></a>24.3. Procedimentos de ensaio:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria referência normativa.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify;"><a id="item25"></a>25<strong>. REQUISITOS APLICÁVEIS À TECNOLOGIA 5G NR (<em>NEW RADIO</em>)<em>&nbsp;FREQUENCY RANGE 1&nbsp;</em>RedCap&nbsp;<em>(Reduced Capability)</em>&nbsp;</strong><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Incluído pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item25.1"></a>25.1. Referência normativa:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) 3GPP TS 38.521-1 V17.7.0 (2023-02).</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item25.2"></a>25.2. Requisitos:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>a)&nbsp;6.2I.1 UE maximum output power for RedCap</em></p>
+<p class="Citacao" style="text-align: justify; padding-left: 60px;"><em>Obs.: os demais requisitos de ensaio referentes à tecnologia 5G NR FR1 Standalone também devem ser realizados quando aplicável, conforme item 19 do Ato 3151, com exceção do item 6.2.1 UE maximum output power.</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item25.3"></a>25.3. Procedimentos de ensaio:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria referência normativa.</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify;"><a id="item26"></a>26<strong>. REQUISITOS APLICÁVEIS À TECNOLOGIA NB-IOT LTE CAT. 1BIS&nbsp;</strong><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2025/2010-ato-2105">(Incluído pelo Ato nº 2105, de 14 de fevereiro de 2025)</a></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item26.1"></a>26.1. Referência normativa:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a)&nbsp;3GPP TS 36.521-1 V17.6.1 (2023-07)."</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item26.2"></a>26.2. Requisitos:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>a)&nbsp;6.2.2EB&nbsp;UE Maximum Output Power for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>b)&nbsp;6.2.5EB&nbsp;Configured UE transmitted Power for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>c)&nbsp;6.3.2EB&nbsp;Minimum Output Power for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>d)&nbsp;6.3.3EB&nbsp;UE Transmit OFF power for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>e)&nbsp;6.3.4EB.1 General ON/OFF time mask for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>f)&nbsp;6.3.4EB.2.1 PRACH time mask for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>g)&nbsp;6.3.4EB.2.2 SRS time mask for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>h)&nbsp;6.3.5EB.1&nbsp;Power Control Absolute power tolerance for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>i)&nbsp;6.3.5EB.2 Power Control Relative power tolerance for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>j)&nbsp;6.3.5EB.3 Aggregate power control tolerance for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>k)&nbsp;6.5.1EB&nbsp;Frequency Error for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>l) 6.5.2.1EB&nbsp;Error Vector Magnitude (EVM) for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>m)&nbsp;6.5.2.2EB&nbsp;Carrier leakage for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>n)&nbsp;6.5.2.3EB&nbsp;In-band emissions for non allocated RB for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>o)&nbsp;6.5.2.4EB&nbsp;EVM equalizer spectrum flatness for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>p)&nbsp;6.6.1EB&nbsp;Occupied bandwidth for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>q)&nbsp;6.6.2.1EB&nbsp;Spectrum Emission Mask for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>r)&nbsp;6.6.2.2EB&nbsp;Additional Spectrum Emission Mask for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>s)&nbsp;6.6.2.3EB&nbsp;Adjacent Channel Leakage power Ratio for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>t)&nbsp;6.6.3EB.1&nbsp;Transmitter Spurious emissions for UE category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><em>u)&nbsp;7.9EB&nbsp;Spurious emissions for UE Category 1bis</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><a id="item26.3"></a>26.3. Procedimentos de ensaio:</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">a) Os procedimentos de ensaio encontram-se na própria referência normativa.</p>
+</section> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1429"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20normativo" class="link-categoria">Ato normativo</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Atualização" class="link-categoria">Atualização</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisito%20técnico" class="link-categoria">Requisito técnico</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação" class="link-categoria">Avaliação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Conformidade" class="link-categoria">Conformidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Telefone%20Móvel" class="link-categoria">Telefone Móvel</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Celular" class="link-categoria">Celular</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

@@ -1,0 +1,1496 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Portaria Anatel nº 2672, de 9 de agosto de 2023</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/1884-portaria-2672">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Verificação, Obrigações, Conexões de Dados, Franquias. PortariaVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprova o Procedimento de Fiscalização para a verificação de cumprimento de obrigações de atendimento a entidades com conexões de dados baseadas em velocidades e franquias.">
+	<title>Anatel - Portaria Anatel nº 2672, de 9 de agosto de 2023</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1830094583" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1372741323" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"17262e2165d588c42d8653a0bfc422d7","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=184199179" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025010626" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/procedimentos-de-fiscalizacao/1884-portaria-2672">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/procedimentos-de-fiscalizacao" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/procedimentos-de-fiscalizacao" class="pathway">Procedimentos de Fiscalização</a> <span class="separator">&gt;</span> <span>Portaria Anatel nº 2672, de 9 de agosto de 2023</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203 current active"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948bd6a09b936f89&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Portaria Anatel nº 2672, de 9 de agosto de 2023		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quinta, 10 Agosto 2023 15:56			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Terça, 26 Novembro 2024 14:36			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 1008			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Aprova o Procedimento de Fiscalização para a verificação de cumprimento de obrigações de atendimento a entidades com conexões de dados baseadas em velocidades e franquias.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico de <a href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=12051726&amp;id_orgao_publicacao=0">10/8/2023</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">O&nbsp;<strong>GERENTE DE SUPORTE À FISCALIZAÇÃO&nbsp;</strong><b>DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram conferidas pelo&nbsp;<a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2013/450-resolucao-612#art190" target="_blank" rel="noopener noreferrer">art. 190</a>, inciso I, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, e considerando as disposições do&nbsp;<a href="https://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=287817&amp;ass" target="_blank" rel="noopener noreferrer">Edital de Licitação nº 004/2012/PVCP/SPV - ANATEL</a>, o&nbsp;<a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO72GVjSKJhmQMh1vBtjReHxT-UANh4PPCZeVED4eDYFo0u9-q6uDadbGqffl8dGVP4CzzohU3hkPualp_CLjAEF" target="_blank" rel="noopener noreferrer">Acórdão nº 194, de 07 de junho de 2022</a>, publicado no Boletim de Serviço Eletrônico em 09 de junho de 2022 e no Diário Oficial da União (DOU) de 09 de junho de 2022, seção 1, página 23&nbsp;e as informações constantes nos autos do <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?92AHliMZAlcgWWxm2w2qy-GDVz335h7FYd_mrGCDn9UEi2XStDTUZKOJ_damneHH9mwnSMIjw0l3j23hD04TshS67oFE0ynYYA45HMS-pa_8L9fCYTgxfWlqlsXX7uV0">processo nº&nbsp;53500.330393/2022-22</a>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha texto-recuo-1a-linha resolve" style="text-align: justify;">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="uOnY6mMO1tdcb4x1"><a name="art1" data-art="1"></a>Art. 1º</span>&nbsp;Aprovar o Procedimento de Fiscalização para a verificação do cumprimento das obrigações de atendimento a entidades com conexões de dados baseadas em velocidades e franquias, na forma do <a href="#AnexoI">Anexo I </a>desta Portaria.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="XdanY5f2UoVVMWHj"><a name="art2" data-art="2"></a>Art. 2º</span>&nbsp;Revogar a <a href="https://informacoes.anatel.gov.br/legislacao/procedimentos-de-fiscalizacao/1564-portaria-1984">Portaria nº 1984, de 27 de maio de 2021 </a>(SEI nº&nbsp;6945374), e seus Anexos, publicada no Boletim de Serviço Eletrônico em 22 de junho de 2021.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="Cd8d6diNGmZHR2Qk"><a name="art3" data-art="3"></a>Art. 3º</span>&nbsp;Esta Portaria entra em vigor na data de sua publicação no Boletim de Serviço Eletrônico.</p>
+<p style="text-align: center;">THIAGO CARDOSO HENRIQUES BOTELHO<br>Gerente de Suporte à Fiscalização</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><a id="AnexoI"></a>ANEXO I</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong>PROCEDIMENTO DE FISCALIZAÇÃO PARA A VERIFICAÇÃO DO CUMPRIMENTO DAS OBRIGAÇÕES DE ATENDIMENTO A ENTIDADES COM CONEXÕES DE DADOS BASEADAS EM VELOCIDADES E FRANQUIAS</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><span class="legis auto cap" contenteditable="true" data-ref="lhRMX4KlxooIXAuE">CAPÍTULO I</span></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;">DAS DISPOSIÇÕES GERAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="ILMlh6TGLiLcCjNr"><a id="art1anexoI"></a>Art. 1º</span>&nbsp;Este Procedimento de Fiscalização (PF) estabelece as diretrizes e os procedimentos para orientar os Agentes de Fiscalização na verificação do cumprimento das obrigações de atendimento a entidades com conexões de dados baseadas em velocidades e franquias.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="gXhIYbqAQvECUolI"><a id="art2anexoI"></a>Art. 2º</span>&nbsp;Os dados pessoais obtidos durante a execução da Ação de Inspeção serão utilizados pela Anatel para a verificação do cumprimento de obrigação legal ou regulatória, ressalvando-se que eles poderão ser compartilhados, quando necessários para subsidiar ou atender finalidades específicas de execução de políticas públicas e de atribuição legal, respeitados os princípios de proteção de dados pessoais elencados na <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">Lei nº 13.709, de 14 de agosto de 2018</a>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="W6LMaOzaBVxnqTay"><a id="art3anexoI"></a>Art. 3º</span>&nbsp;O Agente de Fiscalização poderá adotar providências adicionais a este PF para obtenção de provas adequadas e suficientes para sustentar suas constatações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: center;"><span class="legis auto cap" contenteditable="true" data-ref="tFmkInjQAR0e9AVG">CAPÍTULO II</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: center;">DAS DEFINIÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="qLPPZuUoZSepWSqP"><a id="art4anexoI"></a>Art. 4º</span>&nbsp;Para efeito deste PF, além das definições constantes na regulamentação aplicável aos serviços de telecomunicações e no Regulamento de Fiscalização Regulatória (RFR), aprovado pela<a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1561-resolucao-746"> Resolução nº 746, de 22 de junho de 2021</a>, são adotadas as seguintes definições:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="Texto_Justificado_Recuo_Primeira_Linha">I - Ação de Inspeção: atividade realizada po</span>r Agente de Fiscalização, no âmbito do processo de Acompanhamento, para acesso, obtenção e averiguação de dados e informações, com a finalidade de reunir evidências para a apuração do cumprimento de obrigações e conformidades por parte da Fiscalizada e verificar a forma de execução dos serviços de telecomunicações, bem como aspectos técnicos de radiodifusão,&nbsp;por meio dos instrumentos da Inspeção, constantes do <a href="https://informacoes.anatel.gov.br/legislacao/instrucoes-de-fiscalizacao/1632-portaria-2106#art7AnexoI">art. 7º</a> do Anexo da Portaria Anatel nº 2106, de 15 de novembro de 2021;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - Ação de Inspeção Centralizada: Ação de Inspeção principal realizada com a participação de uma ou mais unidades regionais;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - Ação de Inspeção Parcial: Ação de Inspeção realizada com o intuito de obter informações para subsidiar a atividade de Inspeção Centralizada;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - Agente de Fiscalização: servidor da Anatel que e<span class="Texto_Justificado_Recuo_Primeira_Linha">xecuta inspeção;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="egohq4AkRsHw9u5z">V -&nbsp;</span>alunos desconectados: alunos que não possuem meios de acesso e fruição da internet no ambiente escolar;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="JHwlB6uT7yipv0AK">VI -&nbsp;</span>conectividade: disponibilidade de acesso à internet para os indivíduos;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="PWl8tMzxQRjWSxCN">VII -&nbsp;</span>credencial: documento pessoal e intransferível de identificação de Agente de Fiscalização para utilização exclusiva em&nbsp;inspeção;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VIII - ESAQ: Entidade de Suporte à Aferição da Qualidade que suporta o processo de aferição dos indicadores de qualidade das redes de Telecomunicação no Brasil (<a href="https://www.brasilbandalarga.com.br/" target="_blank" rel="noopener noreferrer">https://www.brasilbandalarga.com.br/</a>);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IX - Fiscalização Regulatória: conjunto de medidas de acompanhamento, análise, verificação, prevenção, persuasão, reação e correção, realizadas no curso dos processos de acompanhamento e de controle, com o objetivo de alcançar os resultados regulatórios esperados e promover conformidade e melhoria na prestação dos serviços de telecomunicações, bem como nos aspectos técnicos de radiodifusão;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">X - Fiscalizada: pessoa natural ou jurídica sujeita à Ação de Inspeção;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="bG8uSonrVykCaOK2">XI -&nbsp;</span>formulário de inspeção: laudo de vistoria, termo ou ficha de campo emitido por Agente de Fiscalização para registrar as informações, dados, parâmetros e medidas obtidos na inspeção, servindo de base para emissão do Relatório de Fiscalização e, quando for o caso, do Auto de Infração;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XII - INEP: Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira é o órgão federal responsável pelas evidências educacionais que atua nas avaliações e exames educacionais; pesquisas estatísticas e indicadores educacionais; e gestão do conhecimento e estudos (<a href="https://www.gov.br/inep/pt-br" target="_blank" rel="noopener noreferrer">https://www.gov.br/inep/pt-br</a>);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIII - Mbps: abreviação de&nbsp;<em>Megabits</em>&nbsp;por segundo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="boho7XTVmLpEQL8w">XIV -</span>&nbsp;obstrução à atividade de Fiscalização Regulatória: ato, comissivo ou omissivo, direto ou indireto, do administrado ou de seus prepostos, que impeça, dificulte ou embarace a Ação de Inspeção da Anatel, mediante oferecimento de entrave à atuação dos Agentes de Fiscalização ou de servidor da Anatel atuando em atividade de Fiscalização Regulatória e recusa no atendimento, não envio ou envio intempestivo de quaisquer dados e informações pertinentes à obrigação da Fiscalizada ou o envio de informações inverídicas ou que possam levar a uma interpretação equivocada dos dados;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="Lrk3GZHTeADAEb4w">XV -</span>&nbsp;outorgada: pessoa natural ou jurídica detentora de concessão, permissão ou autorização para exploração de serviço de telecomunicações, inclusive de radiodifusão, de autorização de uso de radiofrequências ou de direito de exploração de satélite;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XVI - Relatório de Fiscalização: documento emitido por Agente de Fiscalização em que são descritos os procedimentos aplicados, as análises efetuadas e os resultados obtidos em&nbsp;inspeção;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="YJbpHlbcFKOXlU7M">XVII -</span>&nbsp;representante da Fiscalizada pessoa jurídica: pessoa natural que represente a Fiscalizada, registrada no Cadastro Nacional de Pessoa Jurídica (CNPJ), incluindo preposto, responsável técnico, sócio, administrador, diretor e gerente, dentre outros, desde que devidamente designado para exercer tal representação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="0FQa4pJaz1B7NeUJ">XVIII -</span>&nbsp;representante da Fiscalizada pessoa natural: pessoa natural com poderes de representação da Fiscalizada, registrada no Cadastro de Pessoa Física (CPF);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIX Requerimento de Informações (RI): documento expedido pela Anatel, por meio do qual são solicitados dados e informações pertinentes às obrigações da Fiscalizada;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XX - Requisição de Informações: documento por meio do qual são reiterados pedidos de dados e informações não apresentados ou apresentados de forma não satisfatória, em Requerimento de Informações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XXI - SIMET: é um sítio eletrônico medidor de taxas de transmissão internet<em>&nbsp;</em>banda larga (<a href="https://beta.simet.nic.br/" target="_blank" rel="noopener noreferrer">https://beta.simet.nic.br/</a>);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XXII - SPEEDTEST: é um sítio eletrônico medidor de taxas de transmissão internet banda larga (<a href="https://www.speedtest.net/pt" target="_blank" rel="noopener noreferrer">https://www.speedtest.net/pt</a>);</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XXIII - telepresença: modalidade de fiscalização presencial realizada à distância, em ambiente virtual; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XXIV - taxa de&nbsp;<em>upload</em>&nbsp;e&nbsp;<em>download</em>: entende-se como a capacidade de transmissão de um volume de&nbsp;<em>bits&nbsp;</em>em um intervalo de 1 (um) segundo ocorrida no sentido consumidor-rede e rede-consumidor, respectivamente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XXV - velocidade de&nbsp;<em>download&nbsp;</em>e&nbsp;<em>upload</em>: sinônimo de taxa de&nbsp;<em>download&nbsp;</em>e&nbsp;<em>upload</em>, respectivamente, correspondendo à velocidade de envio e recebimento de dados por meio da internet.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">CAPÍTULO III</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">DO PROCEDIMENTO DE FISCALIZAÇÃO</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong><span class="legis auto sec" contenteditable="true" data-ref="QYRcDZDulhj5LNHF">Seção I</span></strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Da Obtenção de Informações</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="7OJyOoPqlra2uEcC"><a id="art5anexoI"></a>Art. 5º</span>&nbsp;A verificação quanto ao cumprimento das metas relativas a cada item será realizada com a coleta, a análise e a avaliação das informações disponibilizadas pelas prestadoras fiscalizadas, bem como as oriundas de outras fontes de dados coletadas pelos Agentes de Fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="3LrIYEB3Xfg2oJqj">§ 1º</span>&nbsp;A análise e a avaliação das informações disponibilizadas pelas prestadoras têm o objetivo de verificar como cada item está sendo administrado,&nbsp;por exemplo, se há inconsistência em algum dado e se a meta está sendo cumprida, de modo que, nessa etapa, a avaliação será realizada com base em dados armazenados pela própria Prestadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="ckUmZqU4k70vOmKa">§ 2º</span>&nbsp;A coleta de dados por meio de outras fontes tem o objetivo de verificar eventuais inconsistências entre o que é informado pela Prestadora e o que é verificado pela Fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong><span class="legis auto sec" contenteditable="true" data-ref="RLyiBT3OXqFNRH9p">Seção II</span></strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Dos Itens de Verificação</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="NVFl6zQlSxyHTMoO"><a id="art6anexoI"></a>Art. 6º</span>&nbsp;Para efeitos deste PF, os itens de verificação das obrigações baseadas em velocidade e franquia, quando aplicável, são:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - consistência das informações prestadas à Anatel pela operadora do SMP;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="NdngRIqCPfbOgC0d">II -&nbsp;</span>atendimento&nbsp;das entidades nos locais de instalação que integram a obrigação; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="dark-mode-color-black">III - taxa mínima de conexão de&nbsp;</span><em><span class="dark-mode-color-black">download</span></em><strong><span class="dark-mode-color-black">&nbsp;</span></strong><span class="dark-mode-color-black">e</span><em><span class="dark-mode-color-black">&nbsp;</span></em><em><span class="dark-mode-color-black">upload</span></em><span class="dark-mode-color-black">&nbsp;disponível nos locais de atendimento.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong><span class="legis auto sec" contenteditable="true" data-ref="xrhj94Y9GaUmMaIG">Seção III</span></strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Da Metodologia</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="bsnANuyyLsYq3F83"><a id="art7anexoI"></a>Art. 7º</span>&nbsp;Na execução deste PF, o Agente de Fiscalização deverá solicitar acesso remoto aos sistemas e às bases de dados da Prestadora para a obtenção e análise de informações, bem como&nbsp;realizar visitas técnicas presenciais para conhecimento detalhado dos sistemas de interesse, além da coleta de informações por meio de RI ou outros meios.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="oFgcnO1XiXbCymFH">Parágrafo único.</span>&nbsp;A fiscalização de forma presencial será realizada mediante acesso aos sistemas da Prestadora, tais como os sistemas de gerenciamento dos equipamentos de rede, ou diretamente nas dependências de instalação dos acessos nas entidades atendidas pela obrigação para a obtenção das informações pertinentes às verificações das obrigações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="dark-mode-color-black"><a id="art8anexoI"></a>Art. 8º Na etapa de coleta das informações, o Agente de Fiscalização deverá possuir acesso ao Sistema de Coleta de Informações (SICI) da Anatel, ou outro sistema que venha substituí-lo, para consultas e extração de relatórios relacionados às entidades.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="dark-mode-color-black">Parágrafo único. O fornecimento de relatório pelo demandante contendo os dados para a execução da Atividade de Fiscalização substituirá a necessidade de acesso aos sistemas internos da Anatel.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong><span class="dark-mode-color-black">Seção IV</span></strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong><span class="dark-mode-color-black">Métodos Amostrais</span></strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="dark-mode-color-black"><a id="art9anexoI"></a>Art. 9º Na impossibilidade de análise censitária nos dados ou informações, o Agente de Fiscalização poderá fazer uso de técnicas amostrais, observando os conceitos e procedimentos descritos na&nbsp;</span><a href="https://informacoes.anatel.gov.br/legislacao/instrucoes-de-fiscalizacao/1653-portaria-2154" target="_blank" rel="noopener noreferrer"><span class="dark-mode-color-black">Portaria nº 2154, de 08 de dezembro de 2021,</span></a><span class="dark-mode-color-black">&nbsp;que aprovou a Instrução de Fiscalização sobre a Utilização de Métodos Amostrais nas Ações de Inspeção, ou outra que vier a substitui-la.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. A critério do centralizador e de forma motivada, poderá ser utilizada outra metodologia para a constatação do cumprimento dos itens de verificação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong><span class="legis auto sec" contenteditable="true" data-ref="RrGikPwEOZFIyvNn">Seção V</span></strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Dos Procedimentos de Preparação</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="zRXDFO2AR1AGAjwX"><a id="art10anexoI"></a>Art. 10</span>. Na execução dos procedimentos preparatórios, o centralizador deverá emitir RI à Prestadora solicitando:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - o relatório contendo todos as locais de atendimento&nbsp;na área de Prestação de serviços, constando, no mínimo, os campos da <a href="#tabelaI">Tabela&nbsp;1</a>, a seguir:</p>
+<table style="margin-left: auto; margin-right: auto;" border="1"><caption>
+<p class="Texto_Centralizado"><a id="tabelaIanexoI"></a>Tabela 1 - Informações mínimas a serem solicitadas às Prestadoras fiscalizadas</p>
+</caption>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">CAMPO</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">DESCRIÇÃO</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">FORMATO</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Código de Identificação</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Código de identificação (nº INEP para instituição de ensino)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">UF</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Unidade de Federação</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Município</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Município</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Código do Município</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Código do IBGE que identifica o município</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Numérico</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Nome</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Nome da entidade</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Endereço</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Endereço da instituição de ensino (Av, Rua, Praça, número, Bairro, etc.)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">CEP</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">CEP correspondente ao endereço da escola</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto/Numérico</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Dependência (esfera)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Identificação da esfera responsável pela entidade (Municipal/Estadual/Federal)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Latitude</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Coordenada geográfica da entidade no&nbsp;<em>datum&nbsp;</em>WGS84, apresentada em grau decimal, com 6 dígitos decimais</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto/Numérico</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Longitude</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Coordenada geográfica da entidade no&nbsp;<em>datum&nbsp;</em>WGS84, apresentada em grau decimal, com 6 dígitos decimais</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto/Numérico</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Modem/Roteador</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Indicar o fabricante/modelo dos equipamentos instalados na&nbsp;entidade</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Taxa de&nbsp;<em>download</em></p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Taxa de&nbsp;<em>download&nbsp;</em>configurada para o equipamento da entidade (Mbps)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Numérico</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Taxa de<em>&nbsp;</em><em>upload</em></p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Taxa de&nbsp;<em>upload&nbsp;</em>configurada para o equipamento da entidade (Mbps)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Numérico</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Dados trafegados</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Volume total de dados trafegados nos últimos 30 dias da data do Requerimento de Informações em Mbytes</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Numérico</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Tecnologia</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Tecnologia empregada na conexão da&nbsp;entidade (satélite, rede celular, fibra óptica, etc)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Estação SMP</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Número da Estação no cadastro da Anatel, no caso de atendimento por SMP</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Data da ativação</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Data que a entidade foi atendida (DD-MM-AAAA)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Data</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Número da OS</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Número da ordem de serviço para atendimento da&nbsp;entidade</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Texto/Numérico</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Franquia de dados</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Valor do volume de dados contratado em&nbsp;<em>Megabytes&nbsp;</em>(não aplicável no caso das escolas rurais)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Alinhado_Esquerda">Numérico</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - a relação dos sistemas utilizados para a extração e composição do relatório requerido no inciso I deste artigo, assim como o detalhamento da navegação nos menus desses sistemas, para a realização de auditoria ou consultas individualizadas das informações prestadas;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - a relação de sistemas que permitem a verificação das taxas de<em>&nbsp;</em><em>download</em><strong>&nbsp;</strong>e&nbsp;<em>upload</em><strong>&nbsp;</strong>configuradas, assim como configurações relacionadas à existência de franquia de dados, com o encaminhamento das telas dos sistemas relacionados;.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - registros fotográficos, imagens de divulgação ou manuais de operação (em formato PDF) que ilustrem a aparência dos modens ou roteadores instalados nas escolas para fins de facilitação da identificação desses equipamentos pelos Agentes de Fiscalização;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto inc" contenteditable="true" data-ref="HNgTOlj1zx4kt0Aq">V -&nbsp;</span>digitalização das ordens de serviço lavradas pelo representante da Prestadora quando do atendimento da entidade; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - informações de contato dos representantes ou técnicos em cada Unidade da Federação, correspondentes à região a ser fiscalizada, para fins de acompanhamento das atividades de campo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="qMuC7H4O8t5TtlC2">§ 1º</span>&nbsp;O centralizador deverá analisar as informações apresentadas pela Prestadora e disponibilizará as análises para as equipes de fiscalização das Unidades Descentralizadas (UD).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="cttM4ta4toMSpFLH">§ 2º</span>&nbsp;Caso seja identificada a ausência de informações relevantes na ficha de campo, como aquelas necessárias para a localização da escola, o centralizador deverá supri-las ou requerer à Prestadora que as complemente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="4DiUkqakYFR7TqYa">§ 3º</span>&nbsp;O tratamento das informações apresentadas pela Prestadora compreenderá, além de outras medidas que o centralizador julgar pertinentes, a geração automática das fichas de campo relacionadas a todas as escolas informadas pela Prestadora, preenchidas com as informações necessárias e suficientes para a devida identificação da escola a ser fiscalizada pela equipe de campo, conforme apresentado no <a href="#AnexoV">Anexo V</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção VI</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Da Validação dos Dados de Velocidade, Tecnologia da Rede de Acesso e Franquia de Dados</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art11anexoI"></a>Art. 11. O Agente de Fiscalização deverá auditar, de forma amostral, as informações do relatório das escolas referentes às velocidades, às tecnologias empregadas nas redes de acesso e, quando aplicável, a franquia de dados contratada, com a finalidade de comprovar a consistência das informações prestadas, das velocidades configuradas nos equipamentos de rede, e dos meios de transmissão instalados.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§1º A fiscalização poderá ser realizada de forma presencial acessando os sistemas da prestadora e gerências dos equipamentos de rede para a obtenção das informações pertinentes às verificações das obrigações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§2º Para obtenção ou análise das informações, também poderá ser solicitado, conforme viabilidade técnica, o acesso remoto aos sistemas da prestadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§3º Caso as informações recebidas em resposta ao RI sejam inconsistentes, o Agente de Fiscalização deverá entrar em contato com o setor regulatório da Prestadora para detalhar as inconsistências nas informações e, na hipótese de não serem devidamente retificadas, deverá adotar as medidas previstas na <a href="https://informacoes.anatel.gov.br/legislacao/instrucoes-de-fiscalizacao/1632-portaria-2106">Portaria Anatel nº 2106/2021</a>, ou outra que vier a substituí-la.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;CAPÍTULO IV</p>
+<p class="Texto_Centralizado" style="text-align: center;">DA CONSISTÊNCIA DAS INFORMAÇÕES PRESTADAS À ANATEL</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art12anexoI"></a>Art. 12. Este item de verificação consiste em averiguar se a Prestadora cumpre a obrigação descrita no inciso I do <a href="#art6anexoI">art. 6º</a>, que consiste em fornecer à Anatel informações fidedignas relacionadas ao cumprimento da obrigação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção I</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><b>Análise das Informações Recebidas ou Obtidas</b></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art13anexoI"></a>Art. 13. De forma censitária, o Agente de Fiscalização deverá proceder ao cruzamento das informações utilizando como chave o campo “Código de Identificação”, comparando as velocidades configuradas nas entidades informadas no relatório fornecido pela Prestadora com as informações de velocidades cadastradas nos sistemas internos da Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art14anexoI"></a>Art. 14. Similarmente à etapa descrita no&nbsp;<span class="Texto_Justificado_Recuo_Primeira_Linha">artigo anterior</span>, o Agente de Fiscalização deverá comparar a informação das tecnologias empregadas nos meios de transmissão recebida em resposta ao RI em relação às informações cadastradas nos sistemas internos da Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção II</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><b>Relatório de Fiscalização</b></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art15anexoI"></a>Art. 15. O Agente de Fiscalização deverá descrever no Relatório de Fiscalização todos os fatos por ele verificados durante a ação de fiscalização, relatando, especialmente:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - as inconsistências gerais de informações verificadas entre as informações cadastradas nos sistemas da Anatel e o relatório da Prestadora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - as inconsistências das informações de velocidades verificadas entre as informações cadastradas nos sistemas da Anatel e o relatório da Prestadora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - as inconsistências entre as informações cadastradas nos sistemas da Anatel das tecnologias empregadas nos meios de transmissão das redes de acesso e as informações constantes no relatório da Prestadora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - a quantificação do resultado e a demonstração dos valores encontrados em forma percentual; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - outras informações e outros parâmetros técnicos que julgar pertinentes.</p>
+<p class="Texto_Centralizado" style="text-align: center;">CAPÍTULO V</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO ATENDIMENTO DAS ENTIDADES NAS LOCALIDADES QUE INTEGRAM A OBRIGAÇÃO</p>
+<p class="Texto_Centralizado">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art16anexoI"></a>Art. 16. Este item de verificação consiste em averiguar se a Prestadora cumpre a obrigação descrita no inciso II do<a href="#art6anexoI"> art. 6º</a>, que consiste em atender com conectividade as entidades nas localidades que integram a obrigação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção I</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><b>Análise das Informações Recebidas ou Obtidas</b></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art17anexoI"></a>Art. 17. De forma censitária, o Agente de Fiscalização deverá proceder ao cruzamento das informações utilizando como chave o campo “Município”, comparando essas informações recebidas em resposta ao RI com a listagem dos municípios definidas na obrigação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art18anexoI"></a>Art. 18. O Agente de Fiscalização deverá identificar e listar todos os municípios que não foram atendidos com conectividade pela Prestadora.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção II</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><b>Relatório de Fiscalização</b></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art19anexoI"></a>Art. 19. O Agente de Fiscalização deverá descrever no Relatório de Fiscalização todos os fatos por ele verificados durante a ação de fiscalização, relatando, especialmente:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - a listagem das entidades integrantes da obrigação que não foram atendidas com conectividade pela Prestadora;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - a quantificação do resultado e a demonstração dos valores encontrados em forma percentual; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - outras informações que julgar pertinentes.</p>
+<p class="Texto_Centralizado" style="text-align: center;">CAPÍTULO VI</p>
+<p class="Texto_Centralizado" style="text-align: center;">DA TAXA MÍNIMA DE CONEXÃO DE DOWNLOAD E UPLOAD DISPONÍVEL NOS LOCAIS DE ATENDIMENTO</p>
+<p class="Texto_Centralizado">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art20anexoI"></a>Art. 20. Este item de verificação consiste em averiguar se a Prestadora cumpre a obrigação descrita no inciso III do <a href="#art6anexoI">art. 6º</a>, que consiste em garantir&nbsp;<span class="dark-mode-color-black">taxas mínimas de velocidade de&nbsp;</span><em><span class="dark-mode-color-black">download</span></em><strong>&nbsp;</strong><span class="dark-mode-color-black">e</span><em>&nbsp;</em><em><span class="dark-mode-color-black">upload</span></em>&nbsp;nas entidades situadas nos locais que integram a obrigação.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Seção I</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><b>Análise das Informações Recebidas ou Obtidas</b></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art21anexoI"></a>Art. 21. De forma censitária, o Agente de Fiscalização deverá proceder ao cruzamento das informações utilizando como chave os campos “Taxa de&nbsp;<em>download</em>” e “Taxa de&nbsp;<em>upload</em>”, comparando essas informações recebidas em resposta ao RI com as velocidades mínimas definidas na obrigação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art22anexoI"></a>Art. 22. O Agente de Fiscalização deverá identificar e listar todos as entidades cuja conectividade apresente taxa de&nbsp;<em>download&nbsp;</em>ou&nbsp;<em>upload</em>&nbsp;abaixo do fixado na obrigação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. O Agente de Fiscalização poderá indicar os casos em que a taxa de&nbsp;<em>download</em>&nbsp;supere significativamente o valor mínimo fixado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong>Seção II</strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><b>Relatório de Fiscalização</b></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art23anexoI"></a>Art. 23. O Agente de Fiscalização deverá descrever no Relatório de Fiscalização todos os fatos por ele verificados durante a ação de fiscalização, relatando, especialmente:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - a listagem das entidades integrantes da obrigação que não foram atendidas com velocidade mínima;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - a listagem das entidades cuja velocidade de&nbsp;<em>download&nbsp;</em>superou significativamente a velociadade mínima;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - a quantificação do resultado e a demonstração dos valores encontrados em forma percentual; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - outras informações que julgar pertinentes.</p>
+<p class="Texto_Centralizado" style="text-align: center;">CAPÍTULO V</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO PROCEDIMENTO DE FISCALIZAÇÃO PRESENCIAL</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art24anexoI"></a>Art. 24. Este procedimento consiste em verificar presencialmente nas entidades integrantes da obrigação se a Prestadora cumpre os requisitos relacionadas às velocidade de&nbsp;<em>download</em>&nbsp;e&nbsp;<em>upload</em>, ao fidedigno fornecimento da informação de localização da entidade, a efetividade da política pública de prover conectividade às escolas situadas em regiões rurais, e outros aspectos relacionados ao fornecimento de conectividade.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong><span class="dark-mode-color-black"><span class="legis auto sec" contenteditable="true" data-ref="0JttcXiA4s4DqIQE">Seção I</span></span></strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong><span class="dark-mode-color-black">Dos Procedimentos de Verificação em Campo</span></strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="EutSk5DaacV83GJe"><a id="art25anexoI"></a>Art. 25.</span>&nbsp;Considerando que a execução da Ação de Inspeção Parcial será realizada com o uso de microcomputador ou de outro equipamento portátil, para promover celeridade na coleta de informações, todas as fichas de campo e anexos serão disponibilizadas em formato eletrônico, dispensando o uso de formulários impressos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="1kTXHKi4evQhpQfy">§ 1º</span>&nbsp;Caso o coordenador da ação de inspeção decida fazer uso da ficha de campo em meio impresso, as informações colhidas deverão ser transpostas para o formulário eletrônico correspondente para consolidação pelo centralizador.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="ERyhPu4silnuPeP6">§ 2º</span>&nbsp;Para otimizar o tempo da fiscalização na entidade, os registros fotográficos poderão ser inseridos no formulário correspondente posteriormente à execução da ação de campo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="atyro1Jp0YcAxgs5"><a id="art26anexoI"></a>Art. 26.</span>&nbsp;A equipe de fiscalização deverá utilizar o relatório auditado, disponibilizado pelo centralizador, para fim de seleção das entidades&nbsp;a serem fiscalizadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="KEs1wVx8uztD4tVl">§ 1º</span>&nbsp;Se a quantidade total de entidades&nbsp;tornar viável a análise censitária, a fiscalização deverá ser realizada com base nesse critério, do contrário a fiscalização poderá empregar método amostral.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - a escolha das entidades para avaliação do atendimento ao requisito pode ser feita por qualquer processo de sorteio aleatório, a critério do responsável pela fiscalização de campo, tendo como universo a relação de entidades fornecidas pela Prestadora no relatório auditado pelo centralizador.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="ozaOVYBGKFDPlSO1">§ 2º</span>&nbsp;alternativamente, com a finalidade de verificar o melhor alcance do cumprimento da obrigação, poderão ser selecionadas entidades, em número não inferior ao obtido pela aplicação do método amostral indicado no §1º deste artigo, localizadas em municípios identificados a partir da seleção do<strong>&nbsp;</strong>menor&nbsp;Índice de Desenvolvimento Humano (IDH) e o maior<strong>&nbsp;</strong>número beneficiários da implantação na entidade<em>,&nbsp;</em>considerando dados oficiais.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="p5AC9mmyGaTB9sHk">§ 3º</span>&nbsp;A combinação a que se refere o § 2º poderá ser realizada a partir da seleção de entidades instaladas em municípios distribuídos ao longo da rota e que apresentam menor IDH a partir da ordenação<strong>&nbsp;</strong>decrescente<strong>&nbsp;</strong>da informação indicativa do número de beneficiários da implantação na entidade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="REaPorrEzMk6jeBf">§ 4º</span>&nbsp;Caso a equipe de fiscalização de campo selecione outra metodologia para a seleção de entidades&nbsp;a serem fiscalizadas, os critérios empregados deverão constar no Relatório de Fiscalização Parcial.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="eTWHDJzvihrI7WlT">§ 5º</span>&nbsp;Durante a fase de medições das taxas de&nbsp;<em>download</em>&nbsp;e&nbsp;<em>upload</em>, o responsável pela fiscalização deverá transpor os resultados para a ficha de campo, especificada no <a href="#AnexoII">Anexo II</a>, na qual constam os campos para preenchimento dos dados obtidos nessa etapa de testes, além do levantamento de outras informações relacionadas ao objetivo da fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="EKOhqWKycQvPFwE7"><a id="art27anexoI"></a>Art. 27.</span>&nbsp;O Agente de Fiscalização deverá coletar as informações das taxas de&nbsp;<em>download</em><strong>&nbsp;</strong>e&nbsp;<em>upload</em><strong>&nbsp;</strong>conectando o microcomputador portátil (<em>notebook</em>) ao modem ou ao roteador da Prestadora, via cabo&nbsp;<em>ethernet</em>, realizando 3 (três) rodadas de medições dessas taxas em dois ou mais simuladores diferentes, tais como, ESAQ, SpeedTest e SIMET (<a href="https://beta.simet.nic.br/" target="_blank" rel="noopener noreferrer">https://beta.simet.nic.br/</a>).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="dtiCz2jAtjBSK6ij">§ 1º</span>&nbsp;Para minimizar ou eliminar os efeitos da utilização da conexão instalada na entidade&nbsp;por outros usuários, antes da realização das rodadas de medições, o Agente de Fiscalização deverá desconectar ou solicitar ao responsável da Prestadora que desconecte, momentaneamente, a rede da entidade em relação ao modem ou ao roteador relacionado à obrigação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="vG7WY6qxZtQwxqFZ">§ 2º</span>&nbsp;Para cada entidade&nbsp;fiscalizada, o Agente de Fiscalização deverá capturar as telas contendo os resultados das rodadas de medições, devendo inseri-las no formulário padronizado, apresentado no<a href="#AnexoIII"> Anexo III</a>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="iUEpve8oiKNm4C80"><a id="art28anexoI"></a>Art. 28.</span>&nbsp;Será facultado à Prestadora o acompanhamento das fiscalizações por meio de responsável ou técnico designado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="3sf1mwwYnM38klj6">Parágrafo único.</span>&nbsp;Recomenda-se o acompanhamento da Prestadora nas fiscalizações de campo por meio de profissional habilitado a identificar os elementos instalados na entidade&nbsp;e a realizar reparos caso sejam necessários, de acordo com o cronograma estabelecido pela equipe de fiscalização de campo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="Xgptgmv1TcNeQ19e"><a id="art29anexoI"></a>Art. 29.</span>&nbsp;Caso seja encontrado problema técnico que inviabilize as medições na entidade&nbsp;fiscalizada, poderá ser concedido ao responsável da Prestadora tempo razoável para resolução do problema, de modo a permitir a aferição das taxas de&nbsp;<em>download</em><strong>&nbsp;</strong>e&nbsp;<em>upload</em>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="aBxdknDPimaFghnj">§ 1º</span>&nbsp;Caso o problema seja solucionado, o Agente de Fiscalização deverá realizar as medições, e responder à pergunta da ficha de campo “A conectividade estava disponível antes do início das medições?” como “Não”.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="oDjClK3oiUzBVdRw">§ 2º</span>&nbsp;Caso o problema não seja solucionado, o Agente de Fiscalização deverá manter o valor 0 (zero) de cada medição na ficha de campo, e prosseguir com a avaliação dos demais questionamentos apresentados, marcando na coluna "NA/NV" somente aqueles prejudicados pela ausência de conectividade.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="kUQdz5cLK0kD48Eq"><a id="art30anexoI"></a>Art. 30.</span>&nbsp;Nos casos em que haja mais de uma Prestadora provendo acesso à internet entidade, sendo uma delas a Prestadora obrigada, o Agente de Fiscalização deverá realizar as medições no equipamento relacionado à obrigação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="9sHXL98eR2bmUm2t">Parágrafo único.</span>&nbsp;Para a aferição da obrigação, é suficiente que a conectividade à internet esteja instalada e em funcionamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="iKY4wRzSn5ZkSBEf"><a id="art31anexoI"></a>Art. 31.</span>&nbsp;A equipe de campo fará uso da ficha de Registros Fotográficos do <a href="#AnexoIV">Anexo IV</a>, onde serão inseridos todos os registros fotográficos realizados durante a atividade de fiscalização, compreendendo registros básicos e registros acessórios.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong><span class="legis auto sec" contenteditable="true" data-ref="flrgAgxuAmC2Zpxu">Seção VI</span></strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Do Relatório de Fiscalização Parcial</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="QXNITpFaexY4KLov"><a id="art32anexoI"></a>Art. 32.</span>&nbsp;No Relatório de Fiscalização Parcial, o Agente de Fiscalização deverá descrever os fatos verificados durante a Ação de Inspeção Parcial, relatando, especialmente:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - o tamanho da amostra e o total de escolas cujas medições foram realizadas com sucesso;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - a relação de entidades&nbsp;cujas medidas de&nbsp;<em>download</em>&nbsp;ou&nbsp;<em>upload</em>&nbsp;apresentaram valores abaixo do mínimo estabelecido na obrigação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - a relação de entidades&nbsp;com indisponibilidade ou inexistência de conexão à internet;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - o quantitativo de entidades&nbsp;com disponibilidade de conectividade à internet mas que não é utilizada pela entidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - o número da ficha de campo para informações adicionais&nbsp;nos casos em que foram constatadas situações que comprometeram o resultado da fiscalização, o cumprimento&nbsp;da obrigação ou a sua finalidade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - outras informações que o centralizador ou o Agente de Fiscalização julgar pertinentes, indicando o número da ficha de campo correspondente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="HfAYZF5jqNT9oDBm">Parágrafo único.</span>&nbsp;O centralizador da fiscalização poderá fornecer planilha eletrônica preparada para facilitar a consolidação dos dados encontrados em campo.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong><span class="legis auto sec" contenteditable="true" data-ref="Hql5oFO3AOanjnV8">Seção VII</span></strong></p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>Do Relatório de Fiscalização Centralizada</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="XXkaxxZ2YG1pRUDH"><a id="art33anexoI"></a>Art. 33.</span>&nbsp;No Relatório de Fiscalização Centralizada, o centralizador deverá consolidar todos os resultados obtidos na etapa de fiscalização de campo, relatando, especialmente:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - a quantificação dos resultados e a demonstração, em forma percentual, do número de entidades&nbsp;atendidas com conectividade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - a quantificação dos resultados e a demonstração, em forma percentual, do número de entidades&nbsp;sem conectividade;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - a quantificação das demais informações coletadas nas entidades, que serão aproveitadas por outros órgãos da Anatel ou outras entidades; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - outras informações que julgar pertinentes a partir dos Relatórios de Fiscalização Parciais.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="T78Q2Y3BH0OfEYOV">§ 1º</span>&nbsp;Para a&nbsp;consolidação dos resultados, o centralizador deverá fazer uso dos dados lavrados nas fichas de campo e demais anexos produzidos na etapa de fiscalização parcial, colhendo eventuais detalhamentos disponíveis nos Relatórios de Fiscalização correspondentes.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="U5N1ltkRfL1TvB9j">§ 2º</span>&nbsp;O centralizador poderá fazer uso da planilha eletrônica apresentada no <a href="#AnexoV">Anexo V</a>, que realizará a leitura automatizada das fichas de campo preenchidas, extraindo as informações pertinentes e consolidando aquelas referentes aos itens de verificação indicados nos incisos II e III do<a href="#art6anexoI"> art. 6º</a> deste Anexo I, sem prejuízo do emprego de outras técnicas de análise que o centralizador julgue mais apropriadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><span class="legis auto cap" contenteditable="true" data-ref="ohuFDTqzMdaIidAE">CAPÍTULO IV</span></p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS DISPOSIÇÕES FINAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="Va37afol9BUU2ohu"><a id="art34anexoI"></a>Art. 34.</span>&nbsp;Compete à Gerência de Fiscalização (FIGF) resolver os casos omissos e adotar as medidas adicionais necessárias à plena operacionalização deste Procedimento de Fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong><span class="legis auto anexo" contenteditable="true" data-ref="DLd8tvHrKO08Z01l"><a id="AnexoII"></a>ANEXO II</span></strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong><span class="legis auto anexo" contenteditable="true" data-ref="DLd8tvHrKO08Z01l">FICHA DE CAMPO</span></strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto anexo" contenteditable="true" data-ref="DLd8tvHrKO08Z01l"><a id="art1anexoII"></a>Art. 1º&nbsp;</span>Este Anexo apresenta a ficha de campo, que será fornecida em formato&nbsp;<em>Microsoft Excel</em>, para preenchimento simplificado pelo Agente de Fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span class="legis auto par" contenteditable="true" data-ref="8GWITEYcx7Zi3Qom">§ 1º</span>&nbsp;As fichas de campo serão fornecidas pelo centralizador preenchidas previamente com informações suficientes para a devida identificação da entidade&nbsp;e coleta das medições.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><span class="legis auto par" contenteditable="true" data-ref="V0Gy5U6wTtVh2Sv5">§ 2º</span>&nbsp;A ficha de campo deverá ser numerada pelo Agente de Fiscalização seguindo o formato "UFAAAAMMDDhhmm", correspondendo às seguintes informações:</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Tabela_Texto_Centralizado"><a id="tabelaIanexoII"></a>Tabela 1 - Formatação do número da ficha de campo</p>
+</caption>
+<thead>
+<tr>
+<th scope="col">
+<p class="Tabela_Texto_Centralizado">Sigla</p>
+</th>
+<th scope="col">
+<p class="Tabela_Texto_Centralizado">Informação</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">UF</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Sigla da unidade da Federação onde ocorreu a fiscalização.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">AAAAMMDD</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Ano no formato de 4 dígitos, o mês no formato de dois dígitos e o dia em que foi realizada a fiscalização.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">hhmm</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">O instante correspondente à hora e aos minutos de início da fiscalização.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Exemplo:&nbsp;<em>SP202307011025</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="6ZxO6mcVtOdiAo2i">§ 3º</span>&nbsp;O nome do arquivo correspondente à ficha de campo conterá as informações abaixo descritas, e será disponibilizada pelo centralizador previamente nomeada no formato "FC_UF_Município_Sequência Numérica.xlsx", conforme tabela a seguir:</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Tabela_Texto_Centralizado"><a id="tabelaIIanexoII"></a>Tabela 2 - Formatação do nome do arquivo da ficha de campo</p>
+</caption>
+<thead>
+<tr>
+<th scope="col">
+<p class="Tabela_Texto_Centralizado">Sigla</p>
+</th>
+<th scope="col">
+<p class="Tabela_Texto_Centralizado">Informação</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Iniciais do arquivo</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">FC, indicando se tratar da Ficha de Campo.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">UF</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Sigla da unidade de federação onde se localiza a entidade.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Município</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Município de localização da entidade.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Sequência numérica</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Código de identificação da entidade.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Exemplo:&nbsp;<em>FC_SP_Osasco_1234567.xlsx</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="G4wa5P82BGPb3yIm"><a id="art2anexoII"></a>Art. 2º</span>&nbsp;A equipe de fiscalização de campo, após definir os municípios que contém as entidades&nbsp;a serem fiscalizadas, realizará a separação das fichas de campo correspondentes a esses municípios, conferindo o correto preenchimento dos campos nelas contidos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="oV9s4wEjusjJsT0F"><a id="art3anexoII"></a>Art. 3º</span>&nbsp;O número da Ficha de Registro de Medições, apresentada no <a href="#AnexoIII">Anexo III</a>, deverá ser o mesmo atribuído à ficha de campo, assim como o nome do arquivo correspondente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="XtgmgmHMOWYX69gv"><a id="art4anexoII"></a>Art. 4º</span>&nbsp;A ficha de campo não deverá ser alterada pelo centralizador ou pelo Agente de Fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">FICHA DE CAMPO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: center;">&nbsp;<img src="/legislacao/arquivos_e_imagens/imagens/procedimentos-de-fiscalizacao/port-2672/imagem1.png" alt="" width="1111" height="957"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><strong><span class="legis auto anexo" contenteditable="true" data-ref="diSmeyyW7rcoJrIn"><a id="AnexoIII"></a>ANEXO III</span></strong></p>
+<p style="text-align: center;"><strong>FICHA DE REGISTRO DAS MEDIÇÕES</strong></p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art1anexoIII"></a>Art. 1º<strong>&nbsp;</strong>Este Anexo apresenta a Ficha de Registro das Medições (RM), que deverá ser fornecida em formato&nbsp;<em>Microsoft Word</em>, para preenchimento simplificado pelo Agente de Fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="XsHj0PoJgmyR1Z8m"><a id="art2anexoIII"></a>Art. 2º</span>&nbsp;O número da Ficha de Registro das Medições deverá ser o mesmo atribuído à Ficha de Campo, devendo o nome do arquivo a ser salvo no computador apresentar a seguinte formatação:</p>
+<table style="margin-left: auto; margin-right: auto;" border="1"><caption><a id="tavela1anexoIII"></a>Tabela 1 - Formatação do número da ficha de registro das medições</caption>
+<thead>
+<tr>
+<th scope="col">
+<p class="Tabela_Texto_Centralizado">Sigla</p>
+</th>
+<th scope="col">
+<p class="Tabela_Texto_Centralizado">Informação</p>
+</th>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">RM</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Sigla indicativa da ficha de Registro das Medições.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Número da Ficha de Campo</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Número utilizado na identificação da ficha de campo associada à ficha de registro das medições.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p class="Tabela_Texto_Centralizado">Exemplo:&nbsp;<em>RM_SP202307011025.docx</em></p>
+</td>
+</tr>
+</thead>
+</table>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="kUTfpFab8gDDjbvH"><a id="art3anexoIII"></a>Art. 3º</span>&nbsp;Após realizar a captura da tela para cada medição finalizada, o Agente de Fiscalização deverá substituir a imagem previamente apresentada na ficha de registro das medições, seguindo as instruções indicadas na primeira página da ficha, abaixo reproduzida:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Figura 1 - Instruções para substituição das imagens na ficha de registro das medições</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/procedimentos-de-fiscalizacao/port-2672/imagem-2.png" alt="" width="1101" height="1559"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art4anexoIII"></a><span class="legis auto art" contenteditable="true" data-ref="rAOEi7JUhqJP7nx3">Art. 4º</span>&nbsp;Após realizadas as substituições correspondentes às medições realizadas, o Agente de Fiscalização salvará o arquivo produzido nomeando-o conforme indicado no <a href="#art2anexoIII">art. 2º</a> deste Anexo III.</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong><a id="AnexoIV"></a>ANEXO IV</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong><span class="Texto_Centralizado">FIC<span class="Texto_Centralizado_Maiusculas_Negrito">HA DE R</span>EGISTROS FOTOGRÁFICOS</span></strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="rAOEi7JUhqJP7nx3"><a id="art1anexoIV"></a>Art. 1º</span>&nbsp;Este Anexo apresenta a ficha de Registros Fotográficos (RF), que deverá ser fornecida em formato&nbsp;<em>Microsoft Word</em>, para preenchimento simplificado pelo Agente de Fiscalização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="vzuxamuVhvY7lDVP"><a id="art2anexoIV"></a>Art. 2º</span>&nbsp;O número da ficha de registros fotográficos deverá ser o mesmo atribuído à ficha de campo, devendo o nome do arquivo a ser salvo no computador&nbsp;apresentar a seguinte formatação:</p>
+<table style="margin-left: auto; margin-right: auto;" border="1"><caption>
+<p class="Tabela_Texto_Centralizado"><a id="tabela1anexoIV"></a>Tabela 1 - Formatação do número da ficha de registros fotográficos</p>
+</caption>
+<thead>
+<tr>
+<th scope="col">
+<p class="Tabela_Texto_Centralizado">Sigla</p>
+</th>
+<th scope="col">
+<p class="Tabela_Texto_Centralizado">Informação</p>
+</th>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">RF</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Sigla indicativa da ficha de registro fotográfico.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Número da Ficha de Campo</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Número utilizado na identificação da ficha de campo associada à ficha de registro fotográfico.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Exemplo:&nbsp;<em>RF_SP202307011025.docx</em></p>
+</td>
+</tr>
+</thead>
+</table>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="qEpoEyZXygqhtagL"><a id="art3anexoIV"></a>Art. 3º</span>&nbsp;Realizados os registros fotográficos, o Agente de Fiscalização deverá substituir a imagem previamente apresentada na ficha de registros fotográficos, seguindo as instruções indicadas na primeira página da ficha, abaixo reproduzida:</p>
+<p class="Texto_Centralizado" style="text-align: center;">Figura 1 - Instruções para substituição das imagens na ficha de registro fotográfico</p>
+<p class="Texto_Centralizado" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/procedimentos-de-fiscalizacao/port-2672/imagem3.png" alt="" width="1102" height="1560"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art1anexoIV"></a>Art. 4º Após realizadas as substituições correspondentes às medições realizadas, o Agente de Fiscalização salvará o arquivo produzido nomeando-o conforme indicado no <a href="#art2anexoIV">art. 2º</a> deste Anexo IV.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="itlamOeNfWofmboe">Parágrafo único.</span>&nbsp;O preenchimento da ficha de registros fotográficos poderá ser realizado em momento posterior à realização da atividade de campo.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><strong><a id="AnexoV"></a>ANEX</strong><strong>O V</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong>GERAÇÃO E CONSOLIDAÇÃO AUTOMATIZADA DAS FICHAS DE CAMPO</strong></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="GTAtQ4mG0qQI9Png"><a id="art1anexoV"></a>Art. 1º</span>&nbsp;Este Anexo apresenta sugestão de planilha eletrônica desenvolvida para automatizar o processo de geração das fichas de campo a partir das informações fornecidas pela Prestadora, assim como consolidar as informações coletadas nas mesmas fichas após a conclusão das fiscalizações parciais.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto par" contenteditable="true" data-ref="5ZSnVCYrWPQUQDbX">Parágrafo único.</span>&nbsp;Para a correta execução das rotinas inseridas na planilha eletrônica será necessário o seguinte:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - Preparação das pastas e arquivos:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">a) cópia do arquivo "Geração e Consolidação das Fichas de Campo.xlsm" em uma pasta do computador onde serão geradas as fichas de campo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">b) cópia do arquivo "Ficha_de_campo_base.xlsx" na mesma pasta do arquivo indicado na alínea "a";</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">c) criação de duas subpastas nomeadas de "Fichas_Preparadas" e "Fichas_Preenchidas".</p>
+<p class="Texto_Centralizado" style="text-align: center;">Figura 1 - Disposição dos arquivos e pastas a serem utilizados na geração das fichas de campo</p>
+<p class="Texto_Centralizado" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/procedimentos-de-fiscalizacao/port-2672/imagem4.png" alt="" width="978" height="554"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - Preparação dos dados fornecidos pela Prestadora</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">a) as informações fornecidas pela Prestadora em resposta ao RI, auditadas pelo centralizador, deverão ser copiadas e organizadas manualmente na planilha (aba) "Dados Brutos RI", conforme disposição das colunas apresentadas;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">b) o centralizador deverá verificar a existência de eventuais lacunas, suprindo as informações quando possível.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Figura 2 - Planilha onde deverão ser copiados os dados auditados pelo centralizador</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/procedimentos-de-fiscalizacao/port-2672/imagem5.png" alt="" width="1003" height="622"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - Geração das fichas de campo</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">a) a geração automatizada das fichas de campo é realizada por meio de um clique no botão "Gerar fichas de campo", na planilha (aba) "Rotinas";</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">b) as fichas de campo serão geradas e copiadas automaticamente na subpasta "Fichas_Preparadas", seguindo o formato indicado no <a href="#AnexoII">Anexo II</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">c) as fichas de campo geradas poderão ser agrupadas para distribuição para os Agentes de Fiscalização que executarão a fiscalização centralizada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Figura 3 - Comando para geração das fichas de campo</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/procedimentos-de-fiscalizacao/port-2672/imagem7.png" alt="" width="1003" height="622"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - Consolidação dos dados coletados pela fiscalização parcial</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">a) os arquivos recebidos pelas equipes de fiscalização das unidades descentralizadas deverão ser copiados, em formato Microsoft Excel, na subpasta "Fichas_Preenchidas";</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">b) a execução da rotina de consolidação ocorrerá por meio de um clique no botão "Consolidar Resultados", disponível na aba "Rotinas", conforme Figura 4;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">c) será gerada a consolidação total para a Prestadora fiscalizada, e consolidações parciais por UF.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Figura 4 - Comando para a consolidação das informações coletadas</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/procedimentos-de-fiscalizacao/port-2672/imagem8.png" alt="" width="1003" height="622"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">d) a consolidação será inserida na aba "Consolidado", e conterá a contagem das escolas fiscalizadas, e o cômputo das escolas cujos valores de leitura das taxas de&nbsp;<em>download</em>&nbsp;e&nbsp;<em>upload</em>&nbsp;atenderam à obrigação;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">e) serão também consolidadas as leituras de todas as respostas aos questionamentos apresentados na ficha de campo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Figura 5 - Consolidação das informações</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/procedimentos-de-fiscalizacao/port-2672/imagem9.png" alt="" width="1003" height="622"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art2anexoV"></a><span class="legis auto art" contenteditable="true" data-ref="grfOKPfvl0vvuKGp">Art. 2</span>º A apresentação da consolidação das informações poderá ser personalizada quando da elaboração do Relatório de Fiscalização Centralizada no Sistema Eletrônico de Informações (SEI).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span class="legis auto art" contenteditable="true" data-ref="grfOKPfvl0vvuKGp"><a id="art3anexoV"></a>Art.&nbsp;</span>3º Ao final da consolidação será gerado o arquivo "Dados_Entidades.txt", em formato de texto plano&nbsp;com campos separados por ponto e vírgula, contendo a consolidação das informações coletadas pela fiscalização parcial, incluindo a coordenada geográfica de cada entidade fiscalizada, sem informações pessoais, permitindo a rápida importação do seu conteúdo para qualquer plataforma digital ou painel de dados.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Figura 6 - Consolidação das informações e observações</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/procedimentos-de-fiscalizacao/port-2672/imagem10.png" alt="" width="978" height="554"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art4anexoV"></a>Art. 4º Na mesma pasta será criado o arquivo "Observações.txt", em formato de texto plano com campos separados por ponto e vírgula, contendo somente as observações lavradas pelos Agentes de Fiscalização, com referência ao nome do arquivo e número da ficha de campo correspondentes.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1884"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Verificação" class="link-categoria">Verificação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Obrigações" class="link-categoria">Obrigações</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Conexões%20de%20Dados" class="link-categoria">Conexões de Dados</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Franquias.%20PortariaVigente" class="link-categoria">Franquias. PortariaVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

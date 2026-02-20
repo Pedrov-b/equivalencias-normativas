@@ -1,0 +1,1045 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351869~103351871~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Resolução nº 706, de 27 de dezembro de 2018</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2018/1221-resolucao-706">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Regulamento, Metodologia, Estimativa, Custo Médio Ponderado de Capital, CMPC, Serviço Telefônico Fixo Comutado, TelefoniaFixa, Serviço Móvel Pessoal, TelefoniaMovel, GestaoEconomicaPrestacao, ResolucaoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprova o Regulamento da Metodologia de Estimativa do Custo Médio Ponderado de Capital – CMPC.">
+	<title>Anatel - Resolução nº 706, de 27 de dezembro de 2018</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=276360816" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=629382302" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"8c0be25a5a70f825d18cd2bc113484bf","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1582066430" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025015451" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/resolucoes/2018">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/resolucoes/2018">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/resolucoes/2018">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/resolucoes/2018" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes" class="pathway">Resoluções</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes/2018" class="pathway">2018</a> <span class="separator">&gt;</span> <span>Resolução nº 706, de 27 de dezembro de 2018</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 active deeper parent"><a href="/legislacao/resolucoes">Resoluções</a><ul><li class="item-516"><a href="/legislacao/resolucoes/2025">2025</a></li><li class="item-501"><a href="/legislacao/resolucoes/2024">2024</a></li><li class="item-493"><a href="/legislacao/resolucoes/2023">2023</a></li><li class="item-488"><a href="/legislacao/resolucoes/2022">2022</a></li><li class="item-438"><a href="/legislacao/resolucoes/2021">2021</a></li><li class="item-430"><a href="/legislacao/resolucoes/2020">2020</a></li><li class="item-367"><a href="/legislacao/resolucoes/2019">2019</a></li><li class="item-312 current active"><a href="/legislacao/resolucoes/2018">2018</a></li><li class="item-299"><a href="/legislacao/resolucoes/2017">2017</a></li><li class="item-294"><a href="/legislacao/resolucoes/2016">2016</a></li><li class="item-255"><a href="/legislacao/resolucoes/2015">2015</a></li><li class="item-226"><a href="/legislacao/resolucoes/2014">2014</a></li><li class="item-164"><a href="/legislacao/resolucoes/2013">2013</a></li><li class="item-165"><a href="/legislacao/resolucoes/2012">2012</a></li><li class="item-166"><a href="/legislacao/resolucoes/2011">2011</a></li><li class="item-167"><a href="/legislacao/resolucoes/2010">2010</a></li><li class="item-168"><a href="/legislacao/resolucoes/2009">2009</a></li><li class="item-169"><a href="/legislacao/resolucoes/2008">2008</a></li><li class="item-170"><a href="/legislacao/resolucoes/2007">2007</a></li><li class="item-171"><a href="/legislacao/resolucoes/2006">2006</a></li><li class="item-172"><a href="/legislacao/resolucoes/2005">2005</a></li><li class="item-173"><a href="/legislacao/resolucoes/2004">2004</a></li><li class="item-174"><a href="/legislacao/resolucoes/2003">2003</a></li><li class="item-175"><a href="/legislacao/resolucoes/2002">2002</a></li><li class="item-176"><a href="/legislacao/resolucoes/2001">2001</a></li><li class="item-177"><a href="/legislacao/resolucoes/2000">2000</a></li><li class="item-178"><a href="/legislacao/resolucoes/1999">1999</a></li><li class="item-179"><a href="/legislacao/resolucoes/1998">1998</a></li><li class="item-180"><a href="/legislacao/resolucoes/1997">1997</a></li><li class="item-181"><a href="/legislacao/resolucoes/resolucoes-conjuntas">Resoluções Conjuntas</a></li></ul></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948c1d887b1c6f91&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Resolução nº 706, de 27 de dezembro de 2018		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Segunda, 31 Dezembro 2018 08:18			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Segunda, 17 Fevereiro 2025 12:41			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 10099			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Aprova o Regulamento&nbsp;da Metodologia de Estimativa do Custo Médio Ponderado de Capital – CMPC.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de<a title="Acesse o Artigo" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=515&amp;pagina=27&amp;data=31/12/2018"> 31/12/2018</a>, retificado em <a title="Acesse o Artigo" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/01/2019&amp;jornal=515&amp;pagina=5">3/1/2019</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram conferidas pelo <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472#art22">art. 22</a> da&nbsp;Lei nº 9.472, de 16 de julho de 1997, e pelos art. <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/decretos/3-decreto-2338#art17">17 </a>e <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/decretos/3-decreto-2338#art35">35</a> do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo&nbsp;Decreto nº 2.338, de 7 de outubro de 1997,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o disposto no <a title="Acesse o Artigo" href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472/#art19">art. 19</a>&nbsp;da Lei n° 9.472/1997, que atribui à Anatel a competência para adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento das telecomunicações brasileiras;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO os comentários recebidos decorrentes da <a title="Acesse a Consulta Pública " href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO7uvhm73z1_eOWPS3vykdwVQ2xHV5xwtct0XQO8XhDBLzxuKRVXN5gj0OImbcFsnCmgT2PKxKAwpuGxYPzyEuLm">Consulta Pública nº 7, de&nbsp;8 de março de 2018</a>, publicada no Diário Oficial da União do dia&nbsp;9 de&nbsp;março de 2018;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO deliberação tomada por meio do <a title="Acesse o Circuito Deliberativo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO5qjazw6nk9y3nefb2UbDlfnlD2SUnGm0CjftHw-06hf2sp3G30J5a-bFnyz50G1LLJqqWl_7ezjoJ61pV9Bqpq">Circuito Deliberativo nº 254, de 27 de dezembro de 2018</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo " href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlJn561fMxztoSswiVq8UiIOM7NewwDa6Xlo3_MIJZwcu">Processo nº 53500.072105/2017-42</a>,</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1"></a>Art. 1º Aprovar o Regulamento&nbsp;da Metodologia de Estimativa do Custo Médio Ponderado de Capital (CMPC), na forma do Anexo a esta Resolução.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2"></a>Art. 2º&nbsp;Revogar a <a title="Acesse a Resolução" href="http://www.anatel.gov.br/legislacao/resolucoes/2014/741-resolucao-630">Resolução nº 630, de 10 de fevereiro de 2014</a>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art3"></a>Art. 3º Esta Resolução entra em vigor na data de sua publicação.&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">LEONARDO EULER DE MORAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Presidente do Conselho</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="anexo"></a>ANEXO</p>
+<p class="Texto_Centralizado" style="text-align: center;">REGULAMENTO DA METODOLOGIA DE ESTIMATIVA DO CUSTO MÉDIO PONDERADO DE CAPITAL</p>
+<p class="Texto_Centralizado" style="text-align: center;">TÍTULO I</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS DISPOSIÇÕES GERAIS</p>
+<p class="Texto_Centralizado" style="text-align: center;">CAPÍTULO I</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO OBJETIVO E DA ABRANGÊNCIA</p>
+<p class="Texto_Centralizado" style="text-align: center;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art1Anexo"></a>Art. 1º Aprova&nbsp;o Regulamento da Metodologia de Estimativa do Custo Médio Ponderado de Capital – CMPC.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art2Anexo"></a>Art. 2º O CMPC será estimado para o setor de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º O cálculo do CMPC pode ser realizado por meio de outro Critério de Agregação, conforme disposto no<a title="Acesse o Artigo" href="#art3Anexo"> art.&nbsp;3º</a>, inciso II, deste Regulamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º O Critério de Agregação poderá ser&nbsp;individualizado por empresa ou Grupo econômico para fins especificados pela&nbsp;Anatel.</p>
+<p class="Texto_Centralizado" style="text-align: center;">CAPÍTULO II</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS DEFINIÇÕES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art3Anexo"></a>Art. 3º Para efeitos deste Regulamento, são adotadas as seguintes definições, além de outras estabelecidas pela legislação e pela regulamentação:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - Coeficiente de Risco Sistemático (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAVCAMAAACqsJS4AAAAAXNSR0IArs4c6QAAAEtQTFRFAAAAAAAAAABmADqQAGa2OgA6OjqQOpDbZgAAZgA6ZgBmZrb/kDoAkDo6kGYAkNu2kNv/tmYAtv//25A62////7Zm/9uQ//+2///bfBmKqgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAb0lEQVQoU5WQyQ6AIAxEiysKLohQ/v9LLUuRm3EOTUrnTUMB/gilEIoBlApcf5fWDvB2QSvw41lGuByy+pLJzBxSsbCR3VC4ZWsMQUnOoOnJT7sQCXNUHW3LshHhuBRCWBauV/O5uIkVdNeOPk/wAKBEBG6lWNR7AAAAAElFTkSuQmCC">): medida de risco não diversificável, referente ao Critério de Agregação escolhido.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - Critério de Agregação (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAATCAMAAABvPjdRAAAAAXNSR0IArs4c6QAAADZQTFRFAAAAAAA6AABmADqQAGa2OgAAOgBmZrb/kDoAkDo6kNv/tmYAtv//25A62////7Zm/9uQ///bMw/hJgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAANklEQVQYV2NgwAIEOdhhogKszHxANi8LSIAbJCzIyQUkBdh4gCQ/WJIbJAnRw88EEmYEqcAFAEVhAScva+seAAAAAElFTkSuQmCC">): referência de segmentação do capital para fins de cálculo do CMPC.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - Custo do Capital Próprio (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAVCAMAAACXIvXeAAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgA6OpDbZgAAZgA6ZgBmZpDbZrb/kDoAkDo6kNv/tmYAtv//25A62////7Zm/9uQ//+2///bWIqEHAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAgElEQVQoU52PyxaDMAhEoWrjo2k0avj/P3XGVGuz6nE2wBy4gMg9mdd6XlQbSS0yQtZnEPNO7B1SP9FZ6hkFouoDARodu+A4WQca4KhjcmJSF2IGHgImT52KDVEcJ37HoELfpYUrR5xm/peWtxeKr8I4wF/781NxxXXMfLW//Z82rR8FhXJDkK8AAAAASUVORK5CYII=">): custo de oportunidade nominal, apurado antes da incidência de tributos e expresso em taxa percentual ao ano, de uma unidade adicional de recursos próprios, referente ao Critério de Agregação escolhido.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - Custo do Capital de Terceiros (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAWCAMAAAD6gTxzAAAAAXNSR0IArs4c6QAAAFRQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OpDbZgAAZgA6ZgBmZjqQZpCQZrb/kDoAkDo6kDpmkNv/tmYAtv//25A62////7Zm/9uQ/9vb//+2///bf8X6DQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAkElEQVQoU5VP2Q7CIBBkLVS8igULlf3//3SPaGl5chJCmMyFMf8Dg+tMxTOFAWwuAM7UC8AkqvUcifd0JpxfQhWb8RnpJt09C5U864RK7s0cZYGEriM8Rmms17hY1X9BUWrcsJA2sVM6dBY9SdmK4BRNorUYDok8Qnr3ofqZBr/0jas3/d9hzN4Whk7UtbXEB2PrButeld2DAAAAAElFTkSuQmCC">): custo de oportunidade nominal, apurado antes da incidência de tributos e expresso em taxa percentual ao ano, de uma unidade adicional de dívida contraída em moeda local ou estrangeira.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - Data de Cálculo (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAATCAMAAAB1AtffAAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjqQOpDbZgAAZgA6Zma2Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///bp3AYWwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAASklEQVQYV2NgwAtE2RhBgFmQQYRFGIhEOYQZhHgZhFgZxHhAGsX5OKH6xbj5oSxRdkEoS4hFGMoSgCvj4oUIifMxMsF04HcDHlkADd0CRDBw0IoAAAAASUVORK5CYII=">): dia utilizado como referência para a realização da estimativa do CMPC.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - Prêmio de Risco de Crédito (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAATCAMAAAAztHR1AAAAAXNSR0IArs4c6QAAAG9QTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOmZmOpC2OpDbZgAAZgA6ZgBmZmYAZpDbZrb/kDoAkDo6kDpmkGaQkNv/tmYAtmY6tmZmtv+2tv/btv//25A629uQ2////7Zm/9uQ//+2///b27jwNQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAA2klEQVQ4T82S2xKCMAxEE0G8i4JKvQC28P/f6G6kM77ZF2fsDHNoSXaTFJE/WqFQnTXfC+p0KzLsKhnK9nv0WFciPkuIpJZJhgIpcMhap/OJOEF9lPGqm8vTuF6BeJmL3O7loQrLx5m8NuJnDZ0BcfgcabrY0yIsmsnKIrN2rNGYqyTSmmPpngpkTj/OCZuwbGU8QQIc9tPcGNFRBRkk8iznnf7xRB96sTgbE7Qh5rdEKPL+GCm1KrscyoNdUfRzdjrWmvdF/oyMlxJsPKmrg1L6cil/SrrczyNfCIQSsLJpAg4AAAAASUVORK5CYII=">): taxa adicional à remuneração dos Certificados de Depósito Interbancário (CDI), calculado como a média ponderada dos prêmios, na forma centesimal, incluídos nas taxas de rendimentos pós-fixadas pagas aos tomadores de títulos devedores mobiliários emitidos em até três anos da Data de Cálculo&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAMAAACnUt2HAAAAAXNSR0IArs4c6QAAAFFQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOpDbZgAAZgA6ZgBmZma2Zrb/kDoAgWYAkNv/tmYAtv//25A62////7Zm/9uQ//+2///bhwv3zAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAgklEQVQoU61OWw6DMAwzAzZeox1QaHr/g655UG2fSERVkiZ2bOBKJD/EZ8VRf1ojxteCo9nziz1nHifvgOAQWtCcO8GW3SBMem856wo0LVKFiFURsWOE/bO09EEVDGRIKzbUmzTyqXJT1JOvHiqk6ipXwswU3T8TNKoBlj49/JJv6b9REAbYeCXx2gAAAABJRU5ErkJggg==">&nbsp;pelas empresas prestadoras de telecomunicações do Brasil.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII – Prêmio de Risco País (RP): prêmio de risco em contratos de&nbsp;<strong>swaps</strong>&nbsp;de crédito para títulos da dívida externa (<strong>Credit Default Swap - CDS</strong>) ou índice de mercado relacionado ao Risco País, desde que devidamente fundamentado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VIII - Quociente Ótimo de Capital Próprio&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAcCAMAAAAtIK2eAAAAAXNSR0IArs4c6QAAAG9QTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOpDbZgA6ZgBmZjqQZrb/kDoAkDo6kDpmkGY6kGaQkLb/kNvbkNv/tmYAtmY6tmZmttv/tv//25A62////7Zm/7aQ/9uQ/9u2/9vb//+2///bUsV9CwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAABF0lEQVQ4T71T2Q6CMBAsKh54X9QDaxX+/xvdowttEUOMcR9ImE6ns92pUr+v563WNIO8pW8PPmQnwrCzZp8wiiRJfXa5uNJvtQl1gZcMjvtdiBrea0ahcLm8qTPreMWS1XoVwiZy4FYLlG68O1RHmx1sp3BaywW0cmrfjirnAJK8Vxr6G7YsO7s6IndOVGfQX9Zz4KD6DRmMfio8HP2ClX5F5J4Nkt/46rqOoUnHQ+ki01DoU1cYY4IdZGhSnAUMZopfbKHa4gJlNZdks132AcEEVxXHmMmcVYE49ZxUg73KLTI5yKoLv6JnBWYk2XaM88mcP25HnhUZwR9dPxlSRkiy6j+9xwWD2UyHyH5W728CLjfInv9YLxXlE6M++07bAAAAAElFTkSuQmCC">: percentual de 80% (oitenta&nbsp;por cento) utilizado no cálculo do Custo Médio Ponderado de Capital.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IX - Quociente Ótimo de Capital de Terceiros&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAcCAMAAAAtIK2eAAAAAXNSR0IArs4c6QAAAGxQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOpDbZgA6ZgBmZjqQZrb/kDoAkDo6kDpmkGY6kGaQkLb/kNv/tmYAtmY6tmZmttv/tv//25A62////7Zm/7aQ/9uQ/9u2/9vb//+2///bUsKibQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAABE0lEQVQ4T71TixKCIBDE3lnZUyqVKP3/f+weoIDYOE3TzeiMy7LuHYsQv69X1WqqSd7X1xcH00vL0OtuX0sok2TusOttQV/NwdMFFtKa88mDFW9VM0+43lXNPuvZYslwRaVClPCEVaJ0552XZdbbT7hegevQBXQifWMsUm/AB8l3Jbm/fpFdGV2KsGUK/iLNxJRR9RsyOP1UNCbwC1bGFZFHNkh+g9EN/oVGFxzKIJkOhV5teSlm1EBqiiGFMEBxMk2KmyMuIDTJbbDZLvvgZJoUMxkgcSssxKnnpHrJZLJyU2LCL+haOcnUCzyf1Phj4/ZakRH86JJJyghdTfPu1Xve/WQSGSGaANQjcv3tBNnzH+sNu/ATlHSqz4UAAAAASUVORK5CYII=">: percentual de 20% (vinte&nbsp;por cento) utilizado no cálculo do Custo Médio Ponderado de Capital.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">X - Quociente Real de Capital Próprio&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAcCAMAAADLCWbaAAAAAXNSR0IArs4c6QAAAGlQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOpDbZgA6ZgBmZjqQZrb/kDoAkDo6kDpmkNv/tmYAtmY6tmZmtpCQtrbbttv/tv//25A62////7Zm/7aQ/9uQ/9u2/9vb//+2///bk9CUfQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAABIklEQVQ4T7WT7VrDIAyFYW5T6z50qHOMVcv9X6Q5CdDQdd18fJYfpUA4vISDMf8JP9t9HnuBH/UfZjulHPftcqP67WOZbZ/VqhGYbnWQ0fiqFY3x1tpqExMWkhnmtWS3PpqPpFJpxa2Gwkprk0Yh8TyggGXGDVYi5wl7nG1O/O81ueleMCDKfTg60EOFSYdmQjeEGrs01yCdPlcDcn/OJLhLwfUAIhCuhmTecCJBzFWKW2txr0EVPvtPqpQqzz6BOdQWxX9SeflOR5CrkHtOct7yAeMbpor/EqFsT14DDSxXMrP/soOlDaTlm2xa0cz+y042/DqIAZqM0i5xC032X3kdfHz0nDTwO2uiQ/6rXs/3F7xG9UEDbM5M/jtN1kY47x6/+p4ULYlzwkoAAAAASUVORK5CYII=">: percentual que representa a participação do Valor Real do Capital Próprio&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAMAAABVlYYBAAAAAXNSR0IArs4c6QAAAE5QTFRFAAAAAAAAAABmADqQAGa2OgA6OgBmOpDbZgAAZgA6ZgBmZrb/kDoAkDpmkJC2kNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bLS6wDgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAlElEQVQoU61PURbCMAij6qy6zm2uduX+FxUI3fZ8fpqfEhpCIHKUcFpK35i//KQcLl/NH5RTJE5B0dPkA2s3inS9LkSzVOX8FsrJdoAosqqd5kglWrc+ZMq+4ItgNjyZot5HeolGIR0N0Ja5seqgVR8eINYOfK1CDPO1DNluOGTwvO7Z8uKqHY3WG0axarvxKP1T/QG7FwayDz3gpAAAAABJRU5ErkJggg==">&nbsp;no Valor Real da Empresa Deduzido das Disponibilidades&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAUCAMAAAAePVXsAAAAAXNSR0IArs4c6QAAAFdQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOpDbZgAAZgA6ZgBmZma2Zrb/kDoAkDpmkJC2kNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bIIWk3QAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAA+0lEQVQ4T91S2xaCMAzbxBuoTJ0yx/b/32mbDhmw48FX+9SFpklblBrCaYrti57h3H3QLPG66nw7+xJNzYhlclWkxZtyeldq+CvGWtGQ0OZOVMrgdh6o0LpVNon2By7vjx35YPvylvCZMa5QD/rm0TcazMqPaLhM4CVvxF1WhtwxBVmB52rlsTxZuJSJKltP+gs9zCdnQIlFj3Ai4zgGMkANFqF1EiH8mS5EnHQ4DN3vqQ+ygs8cZy3Rg1s7jBcuy/m4Il6lJ3NkPijjRxl70SO7A2pl1ZgP68XPiQbI0vw5T/Bsn5P9jZN9y8TiZBFriAMhNCK/MrC9f4830cIPNMYoPsMAAAAASUVORK5CYII=">.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XI - Quociente Real de Capital de Terceiros<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAdCAMAAAAAVbV/AAAAAXNSR0IArs4c6QAAAGlQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOpDbZgA6ZgBmZjqQZrb/kDoAkDo6kDpmkNv/tmYAtmY6tmZmtpCQtrbbttv/tv//25A62////7Zm/7aQ/9uQ/9u2/9vb//+2///bk9CUfQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAABJUlEQVQ4T81TW1vDIAyFbc5ZtXVl3lpklv//I81JSL+wdfPy5HkoJQnhJDk492fkzvvN6FxsNcUn7RRx1etvfqLfwXt/M3vT7exNd+bUApnp4V2snEZR0g2+MUdiuSCClmJ6HHPXOlpMZMkFh6FMuYbGaZbiGDipIUy70DocpcUi7cC0vpzIh82IGp5LGTgx3aMUyVwQpD9YLHthGGzkQo/YFIh+7mw/LkZSul9HErFL4NtBERS+hUT+oCKhqF06lxv5Vv0LxipdKp1fkJvLr2nLw5LOy/c64poHJjOu5Zb3cMHGIi8M5fpabhIJ7WH8qmBZYyU3iYzlkcwa5Ndh5Za2mEKj2ptfB5ePnZEb54Tt0Nev5/h2IjeOhI2K/rjaG+H5j/AF2EUV+zp3u1QAAAAASUVORK5CYII=">: percentual que representa a participação do Valor Real do Capital de Terceiros Deduzido das Disponibilidades&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAMAAABGQsb1AAAAAXNSR0IArs4c6QAAAEtQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOpDbZgAAZgA6ZgBmZma2Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///b0+pnqAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAqUlEQVQoU8VQWwLDIAije7+tdave/6QjAVzbC4wfEx4hKBJRBo3DW2l9TD1roKUrnoyW/ba46V1SzLWkQ7uRKtTPR2uZz0jOl0nK8OpcPvTQElIkLWHA0iJlQYgLCkRh3YgpYJlrOcg8pd51Oc8iYmjFD4UpmU8qQBRVdISFHGvr02fdBFX4SejmBA3wAH4y7RHxbn539+jb+mPH/Gys6pGuNxpbBx3+K75OQwl//NOQwwAAAABJRU5ErkJggg==">&nbsp;no Valor Real da Empresa Deduzido das Disponibilidades&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAUCAMAAAAePVXsAAAAAXNSR0IArs4c6QAAAFdQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOpDbZgAAZgA6ZgBmZma2Zrb/kDoAkDpmkJC2kNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bIIWk3QAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAA+0lEQVQ4T91S2xaCMAzbxBuoTJ0yx/b/32mbDhmw48FX+9SFpklblBrCaYrti57h3H3QLPG66nw7+xJNzYhlclWkxZtyeldq+CvGWtGQ0OZOVMrgdh6o0LpVNon2By7vjx35YPvylvCZMa5QD/rm0TcazMqPaLhM4CVvxF1WhtwxBVmB52rlsTxZuJSJKltP+gs9zCdnQIlFj3Ai4zgGMkANFqF1EiH8mS5EnHQ4DN3vqQ+ygs8cZy3Rg1s7jBcuy/m4Il6lJ3NkPijjRxl70SO7A2pl1ZgP68XPiQbI0vw5T/Bsn5P9jZN9y8TiZBFriAMhNCK/MrC9f4830cIPNMYoPsMAAAAASUVORK5CYII=">.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XII - Taxa Livre de Risco do Custo de Capital de Terceiros na Data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAXCAMAAACs0OZeAAAAAXNSR0IArs4c6QAAAGZQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjqQOpDbZgAAZgA6ZgBmZjqQZmYAZma2ZpCQZrb/kDoAkDpmkNv/tmYAtmY6tv+2tv//25A625Bm27Zm2////7Zm/9uQ/9vb//+2///bq+nF8QAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAABDklEQVQ4T9VSyxLCIAwsan3UZ6loq1bh/3/SZFMg1R69mOmUgWw2u4Gi+GUEW4LOGVknols81Gm/4U3P6HFiwAQLgISvjKkZbgyTPFftF3+n+gZbhwYQx1VUh6ql4Zgj4bfnTEEq/J7F+Z0QEwGK6HuuoRoMMQjvyte9LIYkWaDuXc2LPwKl5XDn07KkqnQqdMqjY7e+mrcORjnZtJCBEMdKNONDc90d6ksyEmwSKXg1J/CTkEiYzSh+dRGCH7nWJcIsIOW3U3c26gAiX+XuOGB/dKXxTlQFDypYM0veYJ1/t3O/GWac8XlQH4J4mweUkhO+EkV8A0rN1Hsj9zJtPOFRTL7niPBVNvVZ+Nf7N2wUEciQc95OAAAAAElFTkSuQmCC">&nbsp;: rendimento do Certificado de Depósito Interbancário (CDI) em uma data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAATCAMAAAB1AtffAAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjqQOpDbZgAAZgA6Zma2Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///bp3AYWwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAASklEQVQYV2NgwAtE2RhBgFmQQYRFGIhEOYQZhHgZhFgZxHhAGsX5OKH6xbj5oSxRdkEoS4hFGMoSgCvj4oUIifMxMsF04HcDHlkADd0CRDBw0IoAAAAASUVORK5CYII=">.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIII - Taxa Livre de Risco do Custo de Capital Próprio na Data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAATCAMAAAB1AtffAAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjqQOpDbZgAAZgA6Zma2Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///bp3AYWwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAASklEQVQYV2NgwAtE2RhBgFmQQYRFGIhEOYQZhHgZhFgZxHhAGsX5OKH6xbj5oSxRdkEoS4hFGMoSgCvj4oUIifMxMsF04HcDHlkADd0CRDBw0IoAAAAASUVORK5CYII=">&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAXCAMAAAC27AbQAAAAAXNSR0IArs4c6QAAAGBQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjqQOpDbZgAAZgA6ZgBmZmYAZma2ZpDbZrb/kDoAkDo6kDpmkNv/tmYAtmY6tv+2tv//25A625Bm2////7Zm/9uQ//+2///bAHeWEQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAA1UlEQVQ4T82S2RqCIBCFIds0K0kpLYT3f0tnYRntspu4wA/458zhoFI/DKsPq+pp/9mqOSTKfjB1IXyjscBp+synkY8mIRoeg29x33Z05riDvwxFBup3uGRQqWCIjShzrlbzHbzM5+iQm8hWiuwAkzdZwaJj31Sj1ewh9GNsAQt2jUzoX+21eyZjweQwCgP8kUW2QzIr5wJkJjoXOUotrqUZTUI2Wlcx2MSxAmWI03twtb+tDaULloDyxTKYbOYw0gMUqfymEBHHQf+DHN//jG/oOf9/LAqjDdKpqUYFAAAAAElFTkSuQmCC">: rendimento baseado em ativos , denominados em reais, com prazo até o vencimento de no mínimo 5 (cinco) anos, em uma data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAATCAMAAAB1AtffAAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjqQOpDbZgAAZgA6Zma2Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///bp3AYWwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAASklEQVQYV2NgwAtE2RhBgFmQQYRFGIhEOYQZhHgZhFgZxHhAGsX5OKH6xbj5oSxRdkEoS4hFGMoSgCvj4oUIifMxMsF04HcDHlkADd0CRDBw0IoAAAAASUVORK5CYII=">, ou rendimento médio de títulos de longo prazo emitidos pelo Tesouro norte-americano, em prazo compatível com aquele usualmente praticado em projetos envolvendo investimentos em infraestrutura.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIV - Taxa de Retorno do Índice de Mercado na Data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAATCAMAAAA6X9QPAAAAAXNSR0IArs4c6QAAAHVQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOma2OpC2OpDbZgAAZgA6ZgBmZjqQZmYAZma2ZrbbZrb/kDoAkDo6kDpmkNv/tmYAtmY6tpCQtv+2tv//25A625Bm27Zm2////7Zm/7a2/9uQ//+2///bBkxgNwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAA40lEQVQ4T81Q2RLCIAxMq9aznqDggVqB//9Ec2BBx1dn3OlLkyV7APwAvqkIg4vcjnrxEvHNXFc7XRuwI5p1wzt+fnpngh+b3s3pVhtXmyNOkAHgFLgRhG26qArbuLIqHkgNKe+C/Da0g4utFMS9QZqfPZAaVsQPy16RnsbDebVRqBnWZMo3dC5qEvOTlAbAchzflB7EDm8cSZbB2cMHmCmH8ktwOOjK6hIptFmLI7Knq+kWqRBJjQl1hd0mSHZJSD32kOwFJCLjfSd9lsg9dOWuqCfLtJIvtNkT2C9lfGr8zf8TtUER4Llx/qoAAAAASUVORK5CYII=">: taxa de retorno, em uma data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAATCAMAAAB1AtffAAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjqQOpDbZgAAZgA6Zma2Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///bp3AYWwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAASklEQVQYV2NgwAtE2RhBgFmQQYRFGIhEOYQZhHgZhFgZxHhAGsX5OKH6xbj5oSxRdkEoS4hFGMoSgCvj4oUIifMxMsF04HcDHlkADd0CRDBw0IoAAAAASUVORK5CYII=">, do índice de referência do mercado expresso por índice local ou, justificadamente,&nbsp;do mercado norte-americano.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XV - Tributação Incidente sobre o Resultado&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAMAAACqTK3AAAAAAXNSR0IArs4c6QAAAE5QTFRFAAAAAAAAAAA6ADqQAGa2OgA6OgBmOjqQOpDbZgAAZgA6ZgBmZrb/kDoAkGaQkNv/tmYAtmY6tv/btv//25A62////7Zm/9uQ//+2///bQ+52YgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAcklEQVQoU61PyRaAIAjE9s20Vfz/Hw2EfB06dGhOg8yCAF8RbadSXwkJtcvmszyIRzs94nbWpUW0xpiC1DhuAOl9caFli3i8ZKcNgca7zmsiK0SFg9byKA4c1zn3yynYc582vtwFoaFTFDfHPv8xhfyICyZkBV/H4rfaAAAAAElFTkSuQmCC">: percentual obtido pela composição das alíquotas marginais &nbsp;de impostos e contribuições incidentes sobre o resultado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XVI - Valor Real do Capital de Terceiros: valor de dívida onerosa que, por sua natureza, represente fonte de financiamento da empresa.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XVII - Valor Real do Capital de Terceiros Deduzido das Disponibilidades&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAMAAABGQsb1AAAAAXNSR0IArs4c6QAAAEtQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOpDbZgAAZgA6ZgBmZma2Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///b0+pnqAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAqUlEQVQoU8VQWwLDIAije7+tdave/6QjAVzbC4wfEx4hKBJRBo3DW2l9TD1roKUrnoyW/ba46V1SzLWkQ7uRKtTPR2uZz0jOl0nK8OpcPvTQElIkLWHA0iJlQYgLCkRh3YgpYJlrOcg8pd51Oc8iYmjFD4UpmU8qQBRVdISFHGvr02fdBFX4SejmBA3wAH4y7RHxbn539+jb+mPH/Gys6pGuNxpbBx3+K75OQwl//NOQwwAAAABJRU5ErkJggg==">: valor do capital de terceiros deduzido das disponibilidades, tais como caixa, bancos e aplicações financeiras líquidas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XVIII - Valor Real do Capital Próprio (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAUCAMAAABoB+dnAAAAAXNSR0IArs4c6QAAAEVQTFRFAAAAAAAAAABmADqQAGa2OgBmOpDbZgA6Zrb/kDoAkDpmkJC2kNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bu7UM2AAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAVUlEQVQYV52MSxKAMAxCqZ/6q7Yx2vsfVZLpomtZMfAA6KRhKLoyqAckTH3FbAsmq5+5AFei0/FulERoNO+cUXiXhEyyDRwUvtbdwpO02Fz817f/9QExmAJ0/l2JtgAAAABJRU5ErkJggg==">): valor que representa o capital empregado pelos acionistas da empresa.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XIX - Valor Real da Empresa Deduzido das Disponibilidades (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAUCAMAAAAjrzSKAAAAAXNSR0IArs4c6QAAAFdQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOpDbZgAAZgA6ZgBmZma2Zrb/kDoAkDpmkJC2kNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bIIWk3QAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAw0lEQVQ4T+VRyxICIQyjrq/1hYqCLPz/d9qEVdTlsmc7w0ymTdO0GDMvgmgsH9qUDr7VGqXz8aSVbHvUHRq6JjVfTJDVvPnQVcHFlROKk98gQwQmhq3XGUQbtIwR61QwzA21qGLZogLU4tZ8AC2ARtTQDb2JPEC2GO+UVtCUS78spb0a4eGIGGnHbUSohvyd16TxYa19RA3dmqdJ97KbjlMPYOQzdFyvDvhhivhK1JshV3aHLe5PVHb44pb8W+PD5p/CJ0JgCrue0YNIAAAAAElFTkSuQmCC">): resultado da soma do valor real do capital de terceiros deduzido das disponibilidades (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAMAAABcfiZ7AAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOpDbZgA6ZgBmZma2Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///b/eaLZgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAdUlEQVQoU71PSRKAIAyr+46IAv//qUlcTp7tDExomjSYfVUoUPUOKk0b7uwGjnm2KzY+KjuQ5arpS2ux3ywUC1FHwuwAkV1zI3YCH4HzQlRT4PG4EDKMECuC0G1ssQXNFa+Nf2zSDIcBGoUF4tGntENIuX6rE3XEBT/NGWVoAAAAAElFTkSuQmCC">) com o valor real do capital próprio (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAUCAMAAABoB+dnAAAAAXNSR0IArs4c6QAAAEVQTFRFAAAAAAAAAABmADqQAGa2OgBmOpDbZgA6Zrb/kDoAkDpmkJC2kNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bu7UM2AAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAVUlEQVQYV52MSxKAMAxCqZ/6q7Yx2vsfVZLpomtZMfAA6KRhKLoyqAckTH3FbAsmq5+5AFei0/FulERoNO+cUXiXhEyyDRwUvtbdwpO02Fz817f/9QExmAJ0/l2JtgAAAABJRU5ErkJggg==">).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º&nbsp;Os percentuais do Quociente Ótimo de Capital Próprio e Quociente Ótimo de Capital de Terceiros definidos neste artigo poderão ser alterados por Ato do Conselho Diretor.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º&nbsp;Em se tratando da estimativa de CMPC individualizada, será considerada a estrutura de capital da respectiva empresa ou Grupo Econômico.</p>
+<p class="Texto_Centralizado" style="text-align: center;">TÍTULO II</p>
+<p class="Texto_Centralizado" style="text-align: center;">DA METODOLOGIA DE ESTIMATIVA DO CUSTO MÉDIO PONDERADO DE CAPITAL</p>
+<p class="Texto_Centralizado" style="text-align: center;">CAPÍTULO I</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO CÁLCULO DO CUSTO MÉDIO PONDERADO DE CAPITAL</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art4Anexo"></a>Art. 4º O CMPC é a taxa percentual equivalente à média ponderada dos custos de oportunidade das fontes de financiamento permanentes das prestadoras.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º&nbsp;Para fins de cálculo do CMPC, em termos nominais, referente ao Critério de Agregação escolhido, após a incidência de tributos, considera-se:</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAAoCAMAAABzRTflAAAAAXNSR0IArs4c6QAAAIpQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjoAOjqQOma2OpDbZgAAZgA6ZgBmZjoAZjo6ZjpmZjqQZma2ZpCQZpDbZrb/kDoAkDo6kDpmkGaQkLaQkLb/kNv/tmYAtmY6tmZmtpCQtv/btv//25A625CQ2/+22////7Zm/9uQ/9vb//+2///bIuZ1ZgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAFL0lEQVRoQ+1a63bTMAxOGBuXddzHOi7NgAaW0Lz/6yHJtuy0siPFh3MGZ/lB6Sz7kz/rZqVN8/j8swyMl1bV+xvjDDtEY8YwqrROfHx5b57Y2dhaA9EYMcx7WDNh+rQ/nTZt27Z9sqOBb8L44bXwxyx6HqJtkXUJoWlsGGu2bp/Tb6Q54/N90+NO+icv2qenpjecG5DyEM3dLofQNCYMgzrrRTPnNwBB0xYZGS8kNqdbZ3aapwBB02WEprFgaPSol5FPvemRpx5N6vu96CUkoHtyEJtmoHPIIAC+HkOnSaVU5vSmLcaSrqAs+qnuyUJAWCznCT2GTpNaKXQ34Tm8Ai+btmI4c+KOTs1TgJAjOy+qx9DoUS+TsXQ60/GixIfaR0oQCxtQY9QToVghd3akZSdbnV92ONP5YQlCrCkStbUY6U7/nu+SuwlPtwE/K7MxPtPlwwKEyyCFR4uRLKF1XZfqTU/m6HqIve3CYlqtShBtISjaAiOkTlB5YbkZNS4TlwMzCsQst3S0BeaL4T+ZVwERdnK4wusE3Crw/ODjBv8JudQNQsH//h49sMMvQJxYHG6hvh7QDHASBWRvu6X7GCeomp1IhQVsIqrjfKwGwh0rJhq0z/EtrtgTD3TDwDgRBrFmg21B1d+fQxU8fpXOGanBQwavcOHSu0dfdKOQZkqV1JI/MwvptYTVud35wr0GApgGk7kCdsBumuEarvyHd2/QJPC4kTAeBJNqgTwogMFKcnkcZlHVBxrjgm4ZpK+YdsMNpGYnIlmsDt/DayCILA56d1/QnK4psUAGogEe9DsCGobzn/vMDavbOLcDqe78N5qpD8wiWaGb4M1vRUqI9iaSxerACX90AdScdWYBL0bY6fOvV7vDB28MN86o+Cg6F6Vgg2d7MDL6gpGJHh/AcPf03/Givb6g6siPiGTd7Xwoc1LaIC16JIUMfBI3ZHVATxeyqiAgLMGOfWk8XoIL3e1oX0QDemcYXIoZNA5VzDyCsnKerGN2/Z/nZPkDUH8QNJF1tPyJOkyWem0v6HaPZIVScNhM2+tLZwzB+3JFnMwdGOVR5Va0LDA8d06BrAofkdzwVJ1qN2Q+oM/cne3d1+A2PCje1iVDoY2zdDFmhXMKFWVN9JXIQvC5OsXWxaLzQIAnV4EkhxuEjwFrKnafMLi4EEeE+bU+fJPrm8PrH58hlvylbEi6H3UZas6DsiFEY6wgOwqCLhb2oeUdBqftwsWJfBpn4TJR2hlN7sJyuKLOOpufx0h77tIpuYp53n5iFmKAF9ThonQJwlflGYwl0/GXlyUxPx6lFdduFmEr4J57+vogSXM0Axrmcbic5qI6aggqMi0YKTO2F2eJNBUgpSf2XmasUSxOX1AkZLFz8/uLctaO6qgh2H+jCurKwNaut0kzkzHVcM89eX2QkIWh1ddz/iSK7ZNEHTUEhW8DRmoOttdmNmnGCb6U9NyT1weRLAo4VHTwcLExl6ijhXAxy4Ax80JTCbS2ARtK15Oe+7xGQfM4apgXEdNBJQRVNRaMSNZSn3IekmzS6VwfUeSee7Ss06RR6v3N1VFCuPg+e7T9RWUOrBbzwUXuuSc1AZj5vGGuyLleOSUElTNrMap50C3gnETuuUeysCqfV7kGv9dBUOW/GkO32VopCsWZEpbJovFZp9aSfVUQTofVGLU0KOdnXq4vzDb9aGMdxAP8YchRmFAybKtUll4PyqA2DKXitWJrfmlm/KHZGogH+WM2uNY//kyy1uAe5z8y8F8z8AdToJJdmNGEugAAAABJRU5ErkJggg=="></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º&nbsp;Para fins de cálculo do CMPC, em termos nominais, referente ao Critério de Agregação escolhido, antes da incidência de tributos, considera-se:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAAAmCAMAAADUZwg0AAAAAXNSR0IArs4c6QAAAIdQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOma2OpC2OpDbZgAAZgA6ZgBmZjoAZjo6ZjpmZjqQZma2ZpCQZrb/kDoAkDo6kGaQkLaQkLb/kNv/tmYAtmY6tmZmtpCQtrZmtv/btv//25A625CQ27Zm2/+22////7Zm/9uQ//+2///bFYgL5gAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAACCklEQVRYR+1Xi1LCMBBMKEXBFnzRiragNmKb9P+/z730oQxhmKQBxtEbhkCP5vbuNtuDsb9r8rq4bPJ1mlwMgOCcR6eKrmLOR1md8hARsCT0BtPpNk6sDyU6kNNngPGLRU4SVgUFk3fjkmF72p3aLXCNdU5WRawab0MmQrUo5IvPaqgYIZEhq5bTkqn7W0q9AhhC0TtZznlQiIjJaUmofBqlr239TIkvr1BylgMVOXonEidgIV4fRfPFm+XUfSLA6nOeqUfKHjxImvQ7J0pAzQE/AnDBLw1U3JZUzuqnbJ0JAkT0ozC901u+ho3UnKpOFY7qdDnT9e+L3zvPgkAkLA+KJqYuBNWig4fynAxEnSJpcJxiYKno7Otrmhut01f0ntg7G8qJFp+cEwVBACxCaxBZ66xTcg62IU2FHjmaLzUHSfbNQs3l5Calc+xcSiMRLdS8fN2Oss0bNN1VTU0iaKPm4DpCD2lIdzp/dsJGzfVJI013tBot3L/VRs31k08/84nRWnHJnOndiJU3NW/h2C7fcvkb1dxTF86q5mYCn0rNMYQ5nhjjbfZqLvS87M9sNRC9NWmPOyCXscKIQP996B7YNnhcRlojgnXmSA+Xivbz2a5yumwFFTap+bEaHgiVuz5Vj8Xb95sRDBmvbDEI4xSjFu8rrzpxEBbNECZFULHLSbDN/v/3thX4Ak+kPy3GRMgrAAAAAElFTkSuQmCC"></p>
+<p class="Texto_Centralizado" align="center">CAPÍTULO II</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO CÁLCULO DO CUSTO DO CAPITAL DE TERCEIROS&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAWCAMAAAD6gTxzAAAAAXNSR0IArs4c6QAAAFRQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OpDbZgAAZgA6ZgBmZjqQZpCQZrb/kDoAkDo6kDpmkNv/tmYAtv//25A62////7Zm/9uQ/9vb//+2///bf8X6DQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAkElEQVQoU5VP2Q7CIBBkLVS8igULlf3//3SPaGl5chJCmMyFMf8Dg+tMxTOFAWwuAM7UC8AkqvUcifd0JpxfQhWb8RnpJt09C5U864RK7s0cZYGEriM8Rmms17hY1X9BUWrcsJA2sVM6dBY9SdmK4BRNorUYDok8Qnr3ofqZBr/0jas3/d9hzN4Whk7UtbXEB2PrButeld2DAAAAAElFTkSuQmCC" width="18" height="22"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art5Anexo"></a>Art. 5º Para fins de cálculo do Custo do Capital de Terceiros, considera-se:</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAAAYCAMAAADNue8BAAAAAXNSR0IArs4c6QAAAIFQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOmZmOpC2OpDbZgAAZgA6ZgBmZjqQZmYAZma2ZpCQZpDbZrb/kDoAkDo6kDpmkGaQkNv/tmYAtmY6tmZmtv+2tv/btv//25A625Bm27Zm29uQ2////7Zm/9uQ/9vb//+2///bPbWhtQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAACWklEQVRIS+1WgZKTMBAN1wNPLdZTixXUK3qC4f8/0Pd2kwAlgY4zd6OOmensANnN27dvNzXmb19DlUsKTab2D1jdniC658LjGUhlbsssOxJQlt3+eB56lIHUGqrjcDpL0YjrqdZQIV8knRvPQPIk1Mq+JTf2ILiMGSqm0L+MEtYXWXZTb+NuM8dD47TQv6gl8shAKggQNfnP73mAQFdj2qnKR4XZ8jhC36Defe5UCzDDR0QODCS9kfT7Ise+VpNBDkKTe5R3I6Ju54jcYikwjuQkcLPXVJWBGP+23J0bkTRhnM6CRHMRG0fUF9ylvpSEi4G0CBU6ef0J7rCvxqILOOhI66gM6LGUlCx+GU5fD/fHz0ERQ3WBJI4IhyHaF/r2dw8+RndTMyEY5A9AzjoeJVf7pm63WlnTXazGKdIjmuUheeFM+rIIGkPQ7MAyXNGw3obQDAnqtWory5dnvkUbLVk1lhX1obDEStrsPzz0d2dD8dKCEkKllCkhFYEk694tq4Y98TF1yRFdZ9OcKOjL+mgM302EOPlNOZJE4xyEbUI1VXXRPb5a06oHRK4mjE+xuG4gKRjDMH1x+/jBW3wWCrmr5RBrMCSDXpfVI6/f6m5v382/aSItsYZ7ziNiw/CtPdzLmNTa8IrmW47lx4KHqgUpQuFkEJDQ1RvEmLHZPC4/BdYkmJjnC5dWemfatXhav6vm8DUia7Cx5mckN6uI5/Gmwo45Rv+A2HKDWNNcc7O5cjXzKRTjYILMlteF3uIs8T1G5ZX0/uaJ625DtbwDY++e5PD/Qf9JBn4BaZg3b7g/4rUAAAAASUVORK5CYII="></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Em caso de quantidade reduzida de títulos mobiliários emitidos pelas prestadoras no mercado local, podem ser utilizadas para a estimativa do Custo do Capital de Terceiros:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - preferencialmente, dados informados por bancos de investimento e analistas de mercado, entre outros; ou,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II -&nbsp;a taxa resultante da média ponderada dos valores monetários a título de juros contratados em todas as linhas de empréstimo utilizadas pelas empresas à época do cálculo.</p>
+<p class="Texto_Centralizado" style="text-align: center;">CAPÍTULO III</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO CÁLCULO DO CUSTO DO CAPITAL PRÓPRIO&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAVCAMAAACXIvXeAAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgA6OpDbZgAAZgA6ZgBmZpDbZrb/kDoAkDo6kNv/tmYAtv//25A62////7Zm/9uQ//+2///bWIqEHAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAgElEQVQoU52PyxaDMAhEoWrjo2k0avj/P3XGVGuz6nE2wBy4gMg9mdd6XlQbSS0yQtZnEPNO7B1SP9FZ6hkFouoDARodu+A4WQca4KhjcmJSF2IGHgImT52KDVEcJ37HoELfpYUrR5xm/peWtxeKr8I4wF/781NxxXXMfLW//Z82rR8FhXJDkK8AAAAASUVORK5CYII=" width="17" height="21"></p>
+<p class="Texto_Centralizado" style="text-align: center;" align="center">Seção I</p>
+<p class="Texto_Centralizado" style="text-align: center;">Do Custo do Capital Próprio<b>&nbsp;</b><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAVCAMAAACXIvXeAAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgA6OpDbZgAAZgA6ZgBmZpDbZrb/kDoAkDo6kNv/tmYAtv//25A62////7Zm/9uQ//+2///bWIqEHAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAgElEQVQoU52PyxaDMAhEoWrjo2k0avj/P3XGVGuz6nE2wBy4gMg9mdd6XlQbSS0yQtZnEPNO7B1SP9FZ6hkFouoDARodu+A4WQca4KhjcmJSF2IGHgImT52KDVEcJ37HoELfpYUrR5xm/peWtxeKr8I4wF/781NxxXXMfLW//Z82rR8FhXJDkK8AAAAASUVORK5CYII=" width="17" height="21"></p>
+<p class="Texto_Centralizado" style="text-align: center;"><em>&nbsp;&nbsp;</em></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art6Anexo"></a>Art. 6º Para fins de cálculo do Custo do Capital Próprio, referente ao Critério de Agregação escolhido, considera-se a fórmula geral:</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALUAAAAjCAMAAADlsrvFAAAAAXNSR0IArs4c6QAAAJlQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjo6OjpmOjqQOma2OpC2OpDbZgAAZgA6ZgBmZjoAZjqQZmY6Zma2ZpCQZpDbZrb/kDoAkDo6kDpmkGaQkJA6kLb/kNv/tmYAtmY6tmZmtpA6ttuQtv+2tv//25A625Bm25CQ27Zm29uQ2/+22//b2////7Zm/9uQ//+2///bXvGB1AAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAADM0lEQVRYR+1YiVLbMBC1yVHa0LgXrVPS2qE0pi3Esv//4/p2ZR2RD5lgZYYZdojNkL21u29FFL1SkAxUSbwOojis0mJ+CGsgiPb8Jaa63qRBkhFWqbjchzUQRHs5YVlXyUUWxMmWUi7rPI7jlJ6z0YmvN+1+KAIW29HQkGUtvkXlOhJX0Wi71QeTVbFEyKCCQg9GYmVmXc7phb0Fnmm0G3vCufGv+nxAyKD6ZvRJnRJb4RwuzNHPpp0rlUbXit3DZRzL3rCzcYpbHpnq43FSYA5u4KnCIcBEELPfKo2uwgJHowhH9GcflSkVWQdBF/cLv7tbX8etmSwhOtSC8Nud0U0zXmSlKkyq/XK2N+ocd2xownlAJ7y2qsb+HRFy66q3VGUxw5D2yGW+/wJJseRovXgIBvQmVTrS2KY2NNXbQ/3dagrLKTJmf1yvSZmWdZlvf0CaHxz2IEEJTxqZRiY+M3XG0usqWVSJPvN6Yys1XpND4k3GjpVmnhsGqte8kVVMWmj7dxGV7yV++7yGt4N4wV7XN3dvL+9wIl1knIIunlP0tpQahnL+b6kmkmLSQldi9bh9kGNWei2T1yYU6fyRQQRDrdOnpkJQkF1fHx0LdB0Yfy0QPmbACODpT8YUkxZKxepX2vzVl2tUl4v0x5ZkY7gT1ArBpJJahHYdp5csBpS1WuEUkxLaZShDVRqebuT+wKdK+rCOwyYW4FMnImqnWA9S2ZpbSjV9SfVOxhSTEkLJo8Kb5cG3nRJgiiU03fdBJWeP2uh2v8u6uLTXDL75RSZB2JBmEO8+ybihRjEZIcpOIUVdlOmbJwMQrY326LJn93C7Kmzy7gM2BA5NwL5mtAOnsf4sUgvbgDHWb/YFz52xHBjrVSIn+egtsSc0jS9DxsiOWQY8XTkwI5QPDdg+K9tSeIQxyTjclfVmwmuOL6wnGHu9M/qSOd33+s6IZXq2L3hL8MHmdNZP1KTvjOInjQKeYeLr9YnaziWm7oyUY1wYaYbV24eehelcTo2zIyGJRjzddLFWnHFwjPOwiwuQU11TdRD24OUF1tNNTShJd8Y1JjdtMFVCV8WX+N/KCRNyXlX/AeqpWkhGzj0zAAAAAElFTkSuQmCC"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Onde:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAATCAMAAACwcE1OAAAAAXNSR0IArs4c6QAAAGZQTFRFAAAAAAAAAAA6AABmADqQAGa2OgA6OgBmOjqQOma2OpDbZgAAZgA6ZjoAZjo6ZjpmZma2ZpCQZrb/kDoAkDo6kGaQkLaQkNv/tmYAtmY6tv//25A62/+22////7Zm/9uQ//+2///b6ek6JAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAqElEQVQoU9WOWxbCIAxEB2vV1vqgVaHFIux/k04C5+gG/DA/XJLJZICfVp4MawS+oeVJ/tnFa78gNEuBqHDerkAwveSKZJkU2DmCPaxIl5Msw1OkS56WCvNDDK0oeWJEOlLygftzcOkqZuCIyeSKgobp8s3NLki+YlchDeIX+zzZTo8yoIoqaCuM8M1SpHlSUQXR0hmhR9zIOBh9KkTTwhvJxCQa7V/rDcj/DS5xe81FAAAAAElFTkSuQmCC">&nbsp;é o Prêmio de Risco de Mercado;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAAAAXNSR0IArs4c6QAAAEtQTFRFAAAAAAAAAAA6AABmADqQAGa2OgA6OgBmOjqQOpDbZgA6ZgBmZjqQZrb/kDoAkDo6kNv/tmYAtv//25A62////7Zm/9uQ//+2///b13LGyAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAcUlEQVQoU6WQyQ6AMAhEwb0utVht+f8vFVxiYj1o7GVSGF4YAP48tljMd0CoXMJcUhtQmdjYDkkttu9wXnEeEfNpE/myNVKL/cyjU4mdtjLhLbhLCaE5A9AAXvyEVyYdIAMioZ6OzaSvBkLD9iHVh3Ou9L0E3Np/jD8AAAAASUVORK5CYII=">&nbsp;é a expectativa do índice de inflação brasileiro;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAATCAMAAABSrFY3AAAAAXNSR0IArs4c6QAAAFpQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6Oma2OpDbZgAAZgA6ZgBmZjqQZmY6Zrb/kDoAkDpmkNvbkNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bfJXeegAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAi0lEQVQoU61Ryw7CMAxLugHreLTQQl/p//8mzhA3ekBapESRndhRS7RvdM9z+S3ZTmHgVUcrFA+Dle7dgJHz/zZZbTIzm4dnJ6ves53bvQUj10KvVDEU4drvNzCZDWplBpodwATWKv+JrVO0LRibS1YhDbkkegat0VI7wvTLRPRTwgtCU1YTNPf9nTeCsAdBg6GRowAAAABJRU5ErkJggg==">&nbsp;é a expectativa do índice de inflação norte-americano; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">RP é o Prêmio de Risco País.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º&nbsp;Caso seja necessário utilizar o rendimento de um ativo de curto prazo como Taxa Livre de Risco do Custo de Capital Próprio&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAXCAMAAAC27AbQAAAAAXNSR0IArs4c6QAAAGBQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjqQOpDbZgAAZgA6ZgBmZmYAZma2ZpDbZrb/kDoAkDo6kDpmkNv/tmYAtmY6tv+2tv//25A625Bm2////7Zm/9uQ//+2///bAHeWEQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAA1UlEQVQ4T82S2RqCIBCFIds0K0kpLYT3f0tnYRntspu4wA/458zhoFI/DKsPq+pp/9mqOSTKfjB1IXyjscBp+synkY8mIRoeg29x33Z05riDvwxFBup3uGRQqWCIjShzrlbzHbzM5+iQm8hWiuwAkzdZwaJj31Sj1ewh9GNsAQt2jUzoX+21eyZjweQwCgP8kUW2QzIr5wJkJjoXOUotrqUZTUI2Wlcx2MSxAmWI03twtb+tDaULloDyxTKYbOYw0gMUqfymEBHHQf+DHN//jG/oOf9/LAqjDdKpqUYFAAAAAElFTkSuQmCC">, será realizado um ajuste no cálculo para capturar as expectativas de longo prazo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º&nbsp;Caso o Custo de Capital Próprio seja estimado com base em dados do mercado norte-americano, o Prêmio de Risco País pode ser estimado pela média do CDS para o mercado brasileiro ou índice de mercado relacionado ao Risco País considerado adequado no período avaliado, por período de pelo menos 01 (um) ano,&nbsp;desde que devidamente fundamentado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º&nbsp;O Custo de Capital Próprio, quando estimado por meio de dados do mercado norte-americano, deve ser ajustado pelas expectativas de inflação dos respectivos mercados brasileiro e norte-americano, adotando-se como referência os dados divulgados por meio do Sistema de Metas de Inflação do Banco Central do Brasil ou outra fonte oficial que venha a sucedê-lo, para o caso da projeção de inflação brasileira, e os dados&nbsp;divulgados por&nbsp;meio do índice&nbsp;<strong>Consumer Price Index (CPI)</strong> ou outra fonte que melhor reflita as projeções&nbsp;de inflação norte-americana.</p>
+<p class="Texto_Centralizado" align="center">Seção II</p>
+<p class="Texto_Centralizado" style="text-align: center;">Do Coeficiente de Risco Sistemático</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art7Anexo"></a>Art. 7º O Coeficiente de Risco Sistemático pode ser estimado por meio de Método de Cálculo, observado o disposto na Subseção I desta Seção, preferencialmente, ou por meio de Método de Referências, observado o disposto na Subseção II desta Seção:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. O Método de Referências será escolhido em qualquer das seguintes situações:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - na ausência de ações de empresas do setor de telecomunicações abertas em bolsa de valores brasileira e com volume de negociações representativo; ou,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - a critério da Anatel, desde que devidamente fundamentado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art8Anexo"></a>Art. 8º A periodicidade diária deve ser utilizada para os dados do cálculo do Coeficiente de Risco Sistemático.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art9Anexo"></a>Art. 9º A estimação do Coeficiente de Risco Sistemático pelo Método de Cálculo deve levar em conta período considerado relevante, informado e justificado na memória de cálculo do CMPC.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. A critério da Anatel, desde que devidamente fundamentado, podem ser desconsiderados dados do período que reflitam situações de anormalidade do mercado para efeito de cálculo do Coeficiente de Risco Sistemático.</p>
+<p class="Texto_Centralizado" style="text-align: center;">Subseção I</p>
+<p class="Texto_Centralizado" align="center">Do Método de Cálculo do Coeficiente de Risco Sistemático</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art10Anexo"></a>Art. 10. A estimativa do Coeficiente de Risco Sistemático obtida pelo Método de Cálculo deve ser desalavancada e realavancada, conforme abaixo:</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAAApCAMAAAAGT7wdAAAAAXNSR0IArs4c6QAAAHhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjoAOjqQOpDbZgAAZgA6ZgBmZjqQZmY6Zma2Zrb/kDoAkDo6kDpmkGYAkGaQkJC2kNu2kNvbkNv/tmYAtmY6tmZmtpCQtv/btv//25A62////7Zm/9uQ//+2///bKMHKKQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAEK0lEQVRoQ+1aDXPTMAxNBhRYuzHaja+2g6VN8v//IZb8GVexpSTuHVxzxzGw6jw/P0vy66rqP3vO9bu383a5RTW1mnC56eKZDnX9/sSYXgKj/1E19QfGpBjCQNCwIHJfSMTxXsCLmgYjO7cO6Hc1PKCvV0IVOHy3RwhmvN+t1T/a+9FNPpidyiLAWXlRmoMALIuU7NwmoP2kln7cV83dZyfes9cbDDdAkR1vPwIjSUmetcKyCMQcVBYsiwEGAgPRAFY7u4L9xSfgAIb7HXCix/ud4kNJoUkdSz1YgAMHlkdCFoEJaNbVGRf/++QOQ8ABLgdD9bhFQXHgDk73CMcqi0CuAwd2UQ4Qd1xtPAe47ZU94bAwe9gJHRz3JkvoTy3PAQk2QUcWgQ7oHvbDZNhtMEnWNYoDhkH67kUH86PhYhjtGMKoLAKxDi7AZuSQRaADMMvEj9cBDrcrJxRHB50PDiawEAck2Pk6gLX0LxEPngNc6iHoJCIdDAGgauApxAEJdj4HgPZCMp4DNdzvwnbS5QOqw+oe/3zXTUeZfECCnc2B6lTt0Q/mchzg8CD76bpw+f/46W6j26lCdYEGO5uDTFK5HNZbnMtFY/0BNliNSreqx1JJnq+W3BvpcStwyNwk7GzSpOdl5CUT4l7gIPQvT4qD7ssJlaLVNhEGixQzd7fZur5m+LmpL+82vlKSSGwK9btgIRzWUDhg7SoNAxXX4QByGN1hTuWAtQPh6hwEhUM1ehXw0D//etY1pCQMey3cVvqWc/GUfHm4OsggCKFdYfqFY/D6dnwyB7QkDNsG/tzYKhb3dFfyD7oHDQGKBvxR1oa6oIIgrqQDOAa2rYmUgCSZvrjAX07lCQj2LBR4vZrSIhhPB0UPYrjDCQjXyQeQf8IqGbREJQ9iyEEIYTQtJcxS7Iz0/Q6v5IIHlwj5aKyWXYmDFASng3Gz1FzSIInILWBcYnv/zVyCZ9UFqY8XZrsUhKuchcAQmlUbvY9HGa8j6tRCS0HwOvDObjSZN3XVT6aSyVxdV4Fm9gfOQQuM1+y51BykIHgdRGYpZeq6Pkfo6qYuOJJ84Hy8wHjlcZC9Yxm1DJsV0tQ1G7GkqyvgwPt4gfHK44AZFZmlpKlrrIuUq6u/gVAXeObtXcCB1MeTdICmfg2dXcrUtYpKubrqixJt6zJdHAEHjPvy5ISDMEKSx0xda9SlXV1r6/LcPAEHUh9PrIOYZMrUNTEZVxdvpepZnAOpjyfmICaZMnUhpvtqVgcFh/yma6CW7DZnA5y8xT6emIOYZMrUhRiMS36la2zd5fNBNrmTATySIeqCZMLU1TFgQ6VcXWvrLl8XSnMgmj/bcWDnxfMqedskgjcM5r2AFxXOzKhSsas7tgrJL8FMYILxmzA46wQYTFeXi2DC4m4fuTFwY+CfZOAve19182qpQ7IAAAAASUVORK5CYII="></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Onde:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAMAAACqTK3AAAAAAXNSR0IArs4c6QAAAEtQTFRFAAAAAAAAAAA6ADqQAGa2OgAAOgBmOjoAOpDbZgA6Zrb/kDoAkDpmkNv/tmYAtmY6tmZmtpCQtv//25A62////7Zm/9uQ//+2///bsXSHYgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAYUlEQVQoU6WPyQ7AIAhEx652sRtq/f8vrVIa49XOBTKBNwBUKywqaY6A4xKKH2K3G1Azqtay6aTC91qmSMNxf1rZZFYiZd2TydzXZnop6oCwFvYW0fSF8jTxoV969cO/Fh+hjQL79C1pAQAAAABJRU5ErkJggg==">é a estimativa de capital próprio utilizada nos Quocientes Ótimos de Capital Próprio e de Terceiros;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjoAOpDbZgA6Zrb/kDoAkNv/tmYAtmZmtpCQtv//25A62////7Zm/9uQ//+2///bzkXGQwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAbUlEQVQoU6VQWxKAIAgEe1pmiZn3v2nAYDN9uz/Kug9GgB7UgIju0IgzWVJZEhDuAORWHLOyN581THwrszcdyUgiuLKZa2AbRHn48GycX0NzKS8VnCTiDxoXrc/Y6Nk5tMWUJN4YfwU9H9DlfQEjpwNhaFZnKgAAAABJRU5ErkJggg==">é a estimativa de capital de terceiros utilizada nos Quocientes Ótimos de Capital Próprio e de Terceiros; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAATCAMAAADGSv/FAAAAAXNSR0IArs4c6QAAAGBQTFRFAAAAAAAAAAA6ADqQAGa2OgAAOgA6OjqQOpDbZgAAZgA6ZgBmZjqQZmY6Zrb/kDoAkDo6kDpmkGYAkNu2kNvbkNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bCb/OlQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAo0lEQVQoU72Q2xLCIAxEg1YFtTe1KLTA//9lN1DRGYtvujMwQA7JJkR/ltsPRFZIrCq0olnKeyXSOfQ1AH8eyZ8MTVWONzRtR9y01AA5EHrDXJLFQwSwWQkMUOhuHZJFhbahWNvthEB5zv4w9/ppgPzxqvi/V5uBlwaWUi3i7Pp1/ZxbtlAaKXuysYl1sUevvpRwhwt7LyvPq4S89bOOwMKPNQONFgkaMJzWogAAAABJRU5ErkJggg==">é o Coeficiente de Risco Sistemático Alavancado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art11Anexo"></a>Art. 11. Para fins do Método de Cálculo do Coeficiente de Risco Sistemático Alavancado, considera-se;</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAAArCAMAAADhYYyDAAAAAXNSR0IArs4c6QAAAI1QTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOma2OpC2OpDbZgAAZgA6ZgBmZjqQZmYAZmY6ZmZmZma2ZrbbZrb/kDoAkDo6kDpmkGYAkJC2kNu2kNvbkNv/tmYAtmY6tmZmtpCQtv+2tv//25A625Bm27Zm2//b2////7Zm/7a2/9uQ//+2///b9A8+qAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAD/0lEQVRoQ+1ZC3PTMAxOuq2w0W4woFl5NGM0wEKS///zsGQ5lh3bcZzcVu7qO7a1kWx9eln5yLLzejEPdA+HFzuLH1Tl+dUSB1eXz9HbSNkyzzfRKlGCU2zwb9gVzKyuCODCmDVvj2IvQynK2CwTrsd1+VzDrwvYp1+EJWVf8C3FtDJiW4/6uwa0KWe2WzxJWP3rUG/aT4YLJJbmjc7wZv2uyD8XK3/OMwk0KmtvDeFq5/UyxawrhEgKFhEY2Lx9L459tC1ELLi1Wk+/V4dqdRhIgjsgrpuMS2BEJCK1nKVPqhnFDNSSsHSFyqv2zkgwGS3bFuHWctftbUmemFoCdzRTbHiIqQqfAH0SlqxZUz7Xg56FWNCWdntxLEUEhVsFkObm7wCMSwJDWkKBqKcWMomDqeJnqP40LJRlYsdBFSAWsKXb/7z7sBOZJXKxuX7u4bPccUqALtfXScDTrlelxJiBxd8mAQs5qFkParbdUg+UnckhgTgwLvZTU5dUVTbOwGI1Gp6/Ki521TCZ/k+zxuXXGovrqamqYzYDi3SccN0NMxG/1PWSVfDZkLDxoIS5sF6ktx1Ptaz1ML32lceadd4XTLv92GOhq0tYxSXcdlvfYtNi+txZvGB41wfcqT1ZNknosqU0F28J2er1/SLzECR8y5WpsgWCKvzwusJS9dyVeGVXwrYqv+oKvBVdaYBt0Lw0NBYakAiwH8zwiZysdBsOuYJpGzMMNAk0u9vfg0/EnQ7eH94f4Op+Hmuu/3x1xQX6P3UqkIhfJV34anAI3rB6W2O2bLc7GhzKDbgCMIh9cEwJLH6/iBjCmGnN/I4bKA6ZRIXOGl3mzA9ZinESP6BDAJ7u4fsrvQNp4xNcASHFOsE63mB6/Tg+3gfqdtRZryXQ3n7bQlTADfAPKkIGSC7run4tM6POhfRS19+4ApX+Sf6SLTA4MYwDPBkJKPXQi/p/lGNQ+upCOBn/JhrSXH9Zjo8JMhup70uK0xgH6Lzdx9XcEkFmYxqnwQ6Q1Sz8NEbJBIfryZgCzMZEToMzONCexPvDaIey5ufJ1psKAWbDtGSU0+D8DBEY9Qtf335mYyKnkTG0MqTBN7uZMXCryyxzMBsTOQ2DwQFdEdeneJp5EWw+ZsPPaVhTEhETBoMjsMC0OIEyXwSLl9mQc9Jo/Tol4mesRTCoTbzHRnASuIeP01jUyqjNer/zSkV845wEHmC0bjoySMRGmZUi1DMbjHggkgaNDHISeKCX00gxZ44OORVewcXIapI0mtOI5CR6Q4jTmGNYgq5mNgzigf5vgUbYSE6iP15xGgn2LKMCxIMVF7VxHCexjBmL7MKIByJp+m0TOIlFTDpvcvbAbA/8Ax7veqFp92/FAAAAAElFTkSuQmCC"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Onde:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAXCAMAAAA1KD/rAAAAAXNSR0IArs4c6QAAAF1QTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOjqQOma2OpDbZgAAZgA6ZgBmZmYAZrb/kDoAkDo6kDpmkJC2kNv/tmYAtmY6tv+2tv//25A62//b2////7Zm/9uQ//+2///bz6MlaQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAcUlEQVQoU4VQVw6AIAwt4sSBiANFuP8xJRpjWiP2s2+2AN/jex1BA+RlumGGrYjCdHjx8nTNcjKc4MvIAttkl0LNTdtN2kt+EQD2nJhZGm9IvJdBsZdPBVfrYMMSfNhIS6o78k4u1gHd4QSxiD/qFz0AFJ8E5Klc+4cAAAAASUVORK5CYII=">é o retorno, na data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAATCAMAAACECYxSAAAAAXNSR0IArs4c6QAAAD9QTFRFAAAAAAAAAAA6ADqQAGa2OgAAOgBmOma2OpDbZgA6Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///bNMEKfwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAANklEQVQYV2NgwAv4OUDSItxcQFKIlZGRiQdIs/GBBAVZwDp5kVQwCHPyCLGDBBmZBfAbjCILAFs0AUMuugUqAAAAAElFTkSuQmCC">, da carteira escolhida; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAMAAABIkLa5AAAAAXNSR0IArs4c6QAAAG9QTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOjqQOma2OpC2OpDbZgAAZgA6ZgBmZjqQZmYAZrbbZrb/kDoAkDo6kDpmkJC2kNv/tmYAtmY6tpCQtv+2tv//25A627Zm2//b2////7Zm/7a2/9uQ//+2///buXmMywAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAg0lEQVQoU52Q0RqCIAyFBxZaVjY0qKTQwfs/Y6ifFysu+tzl2c7ZvwFsKFIHLa5aGuZ9vKRx0ty5Cg7BYuz6eTbURW8FQmxNkqgaZ7l7nhtMvnDxVHpS+yWXFGbghp3PqO44GSreiToFkBIcNJwmQpvLXjF5DJXv2+/KUH/dv+GR/1g+c0gHVggPi+8AAAAASUVORK5CYII=">é retorno do Índice de Mercado local na data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAATCAMAAACECYxSAAAAAXNSR0IArs4c6QAAAD9QTFRFAAAAAAAAAAA6ADqQAGa2OgAAOgBmOma2OpDbZgA6Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///bNMEKfwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAANklEQVQYV2NgwAv4OUDSItxcQFKIlZGRiQdIs/GBBAVZwDp5kVQwCHPyCLGDBBmZBfAbjCILAFs0AUMuugUqAAAAAElFTkSuQmCC">;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Para a estimativa do Coeficiente de Risco Sistemático pelo Método de Cálculo deverão ser consideradas as empresas de telecomunicações que atuam no país.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art12Anexo"></a>Art. 12. Para fins de cálculo do Quociente Real de Capital de Terceiros da empresa selecionada considera-se que:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - o Valor Real do Capital de Terceiros Deduzido das Disponibilidades&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAVCAMAAABmKa5TAAAAAXNSR0IArs4c6QAAAEhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOpDbZgA6ZgBmZma2Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///b/eaLZgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAs0lEQVQoU71RSRLCMAxz2dcQAm3+/1Nkycl0CgM3fEgV25Fk1+x3lM3DrAwIBzad77gSImo6xmGWvWeNqtl44MfK9jP/U1SnGynwbBVIvDVdcaqJXGXwxLj3rkYb3N5Vk+tEf4AMY72VIzQvNKeyhDIqQt27yjTIEWV1USbRuMPDNm8gSfHMTXq6eI4eZRQSNXFdLiZBPqEWFy4aR5w/PH5f6myScDzzTUhLi+g/9K3yr8QLPQgKB/3anWMAAAAASUVORK5CYII=">&nbsp;é o valor contábil do passivo oneroso deduzido das disponibilidades, como caixa e equivalentes de caixa;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - o Valor Real do Capital Próprio&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAMAAAB1/u6nAAAAAXNSR0IArs4c6QAAAEVQTFRFAAAAAAAAAABmADqQAGa2OgBmOpDbZgA6Zrb/kDoAkDpmkJC2kNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bu7UM2AAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAkklEQVQoU61Q2xaCMAzrVCYKKmPK/3+qTbKKeA5v9qFr06SXme1bOc5W02GqvRli2nLJ7gYr6YT02U2EC7PVKvmv80hJgnkXD+FVlPYOhuStR6sCZnjzgahmq4okFMze6LmFMfjhpB84tv3AGgm/XEXnSK2ACXE3iTyn8BhtonN2jo+qtli/yhvHZ0L7FQfzv+8bdXQGou7i/VwAAAAASUVORK5CYII=">&nbsp;&nbsp;é o valor de mercado das ações das empresas; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - o cálculo é realizado pela seguinte representação matemática:</p>
+<p class="Texto_Centralizado"><br><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAAApCAMAAAD+r0fqAAAAAXNSR0IArs4c6QAAAKJQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjo6OjqQOma2OpC2OpDbZgAAZgA6ZgBmZjoAZjo6ZjpmZjqQZmZmZma2ZpCQZrbbZrb/kDoAkDo6kDpmkGZmkGaQkJC2kLaQkNu2kNv/tmYAtmY6tmZmtpCQttuQtv/btv//25A625Bm27Zm2/+22//b2////7Zm/7aQ/7a2/9uQ//+2///b/XevkAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAFmUlEQVRoQ+1aDZMTNwzdu6MpkF5oC9xxKS2QPQq3LWXL7v7/v1ZZ8oe8lmwlc3SOGTwMc0kU+elZku236brvo87AcAbj0Wcwmn++++bIOhn9tM1jXfaX7o3esXFR8DDcPBhm1sARWB39CnsWzPTULb199A+FiWOBSyGyYJbX60Vf9pAK5wdklwokG8dUyyhn1drlcAY5iP8VI4s2e1EC9xmRo582P+3PXu0xnnKwYIZy+unxHcByCz/9KHx//MGcPn8dxsv5qmk+/77txicl544dNln2ohOA40Qr9H/+fX4Yzg+3MhFdDEZa3xEgLXuHwP1VjOU3xakUsAYgs/333YtPV325IlDvQyQie1Fp42v00Af6GyV9IOlDMBKvOPngOEgwOHD5XVi9fLhGW/IsWb3/+PrlR5nebC7+QksIwpzQQ6TAwrT9omx/3qe0usveVUUP/uivsm6hdKR62/EqX/aOiLKM5tIKiqe/UVqfRoSalmv084vP4HraaPXsKknJ/fkZpD7uQviXUBsyP920wcbixwhEzLuySZVWPRhBXxZJ14gQi9bN3ES/iscvtpTlyNG0AVyerYIKpTa6kTYbGuruYrPyXjQiNAiEuYp+FQ56EnMfP+lDi5CavltscfTCdlsa2qzoewoRStGGL3D04rGLgcJgxNyH9k0F3rlGLjRzeVd1viHBDXurzcoTwfctbIGUbnLREuYMPVSicobwrvCIIC0ttnUMhxq8ULr6ekArNBw8bVYBQaA2AZOBUwYV6FsnYQwmUSynuvKuP89Ln2YNQHVqs6pgsgNXTxDBOwZj95eDcnurMgbholaa2qx0JuzAp6f/vKmvsgumElD1yxUctgZgs9Ix2IFLO3jud3j0VYiAs4N4e1oFZbNSmbAT0a55IIIuFCeMamZOm3qbpvlsVmqTOhG45A+JkG6+BmIG3F1hVWmsvNDNtTVsVrKXk4GLRFxEIla3pdpL8kREqMtlodcSSwTSdRxTlKGyd48IIpiGYL5SaeCxrjlsVv9TabBdo6l4jrAtjiHlqUfIpaGev7OgbFYqnalZNoEnH1kI6W2+a7QVz+UNV4sqzRLvO81hs9LdBCLawJOPPIScCPu5JMek716W0k813iAM7glR9PQnD39dPxW4NKELJtzqG3otfB0twsWjEq1tg7dZOXjwz0s20694IaYtSgNek2pjCLkRBhMFB0WvZQITmnoFct5p6W8rfZsVRH3jruFeCBiv4bnD/PwXnFoDXki1XCILIeRGGEy8zSp6LXPDJSFR3EZ8kupdpKPNCr/Gcu/2rRPXr2kGFfhaquVExBAyI0QT51H0WuYGxNIxnA+0FZ137ASh3tVtVkRf0h2WPz49O8xXPhgNeCHVciJCCLkRBRM0XEWvTW6wwOLuqRxws9JXtRObFRGRxMJpC/hvD0GxUoAXUi0jIoaQG5EnP5GkeOanBGfx3h8ntbXOz5vwVAX8s+eqXusSrMpeHnSxtDuMl8v+ehsFswrw6G11zuEhsE2VlGivimuKZ+KT67iKpus3u3jUBSKYTjbvXmLdiFarp3LBlguFrq4v7mKaNYDHQNftvmxY/tkEJYam1yY3ziKIPbKC7HendOR3tQc6GUUOJGCLkaxiF4+moR2l7ckF7mo8XmzrwCUieAiJjxAMie6aXpuIcLnq8/SIR36ZThZ7bbEq5VM5sgXWQuCkfEOyh4uMAnytWbOMCCFkJikY9+hM1WujG9JxaU844iGw08nyjCjbAdYnPZX7EJInbVCSPb0nAi80a5bTPoTchG0Hxc8C9Lnxk2N+FsB0MlcTyuW9aPUVW9blROAtzdqlPzsN8mCO/b2FYaoGlff0sQS8qVmnTocosmBaj4Jy3A/7p0NtzbrjJg8omHvKjuCmrVmLD6bvGcV3d986A/8BGP2+cOggWCMAAAAASUVORK5CYII="></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Onde:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAfCAMAAACMGl7YAAAAAXNSR0IArs4c6QAAAHtQTFRFAAAAAAAAAAA6AABmADqQAGZmAGa2OgAAOgA6OgBmOjoAOjqQOma2OpDbZgAAZgA6ZgBmZjqQZrb/kDoAkDo6kDpmkJBmkNv/tmYAtmY6tmZmtpCQtrbbttv/tv/btv//25A62////7Zm/7aQ/9uQ/9u2/9vb//+2///bvdpgEwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAABjklEQVRIS81Ua1eDMAxt2RybilNw0vkCapX+/19oSkraQmB6jh/Ml0Kad3OvEIzYSsptJ4Quudt1nX2shWillDuhsid5dbdpYocvCBuJzsCaF7Uzh/dT4mz2sbW5SWNhUshdCHtq2tLcpoH7+xBsqDKW/qGzVSngEOB3rk0OoZJKw792s0nuCkhbCD1xCSYhnUuSiiqFU8IBwk68HeOm/YO5a0ltO3c8N2Z/DXVMxRx817OqFc7LHRACGp9Lf/RjohLYt5pOGo2oVbU4F2dm8nRDfAaFvdiK6YktIlb6jH/hDNP5qbgKxl59+RcrTQzIeXVgfEzqdXyqNRC3Wf0Svzc9lV+SNRDbV5PDugZs05LQR6iQATFOacS2psdHALAgBjiPd1kdYTtsJdbNgtg7uwUHjBC2IwbAT82B2DvrASlBYqQPNJSAGO1M7vYGgmJjJDENQVZEL4GYGAAzu7tzHZQT2vp8S0BMDIDO7m4TaOFjkWqH2ogBfM+p8sIiswzA08I8EssAC7TwO0D9C+tvicglyIk6cMQAAAAASUVORK5CYII=">é o Quociente Real de Capital de Terceiros na data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAATCAMAAACECYxSAAAAAXNSR0IArs4c6QAAAD9QTFRFAAAAAAAAAAA6ADqQAGa2OgAAOgBmOma2OpDbZgA6Zrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///bNMEKfwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAANklEQVQYV2NgwAv4OUDSItxcQFKIlZGRiQdIs/GBBAVZwDp5kVQwCHPyCLGDBBmZBfAbjCILAFs0AUMuugUqAAAAAElFTkSuQmCC">&nbsp;das empresas relacionadas; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAMAAACTKxybAAAAAXNSR0IArs4c6QAAAGZQTFRFAAAAAAAAAAA6AABmADqQAGa2OgA6OgBmOjqQOma2OpDbZgAAZgA6ZjoAZjo6ZjpmZma2ZpCQZrb/kDoAkDo6kGaQkLaQkNv/tmYAtmY6tv//25A62/+22////7Zm/9uQ//+2///b6ek6JAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAa0lEQVQYV62MWxbCIAxEB23V0ie0GtoUGva/SQkr8MP5uSdn5gb4MXk1bZkW+IJraiLAxqqd3CtC5lEL7J/nAXYP0vH7HEiWpFtcXd5oJ9YvSDavrkOoPnuE+yFDVTYCW6SbHsGoKX3FX/MFedIGRdDGMyEAAAAASUVORK5CYII=">&nbsp;é o número total dos Quocientes de Capital de Terceiros das empresas relacionadas, durante todo o período de dados histórico utilizado para as estimativas dos Quocientes de Capital Próprio e de Terceiros.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art13Anexo"></a>Art. 13. Para fins de cálculo do Quociente Real de Capital de Terceiros da empresa selecionada considera-se que:</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAAdCAMAAABfaPhzAAAAAXNSR0IArs4c6QAAAGxQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOpDbZgAAZgA6ZgBmZjqQZrb/kDoAkDo6kDpmkNv/tmYAtmY6tmZmtpCQtrbbttv/tv//25A62////7Zm/7aQ/9uQ/9u2/9vb//+2///bOo0TwAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAB1ElEQVRIS+WWa1eDMAyGy5xT8TJ0eO2QSf//fzQhLSSljIB4jufYL2y0fZImaV6M+WPDbg6vx96nL/Z7kaeuyLItQKp92M6R1ebAqO6t3nXL4H19xWeV5hnSPcJ+m2XZZbeXIeub82dr7j+UJnu6Ftl6xgY6KUJhqt5nnRcC6Q9ts5xtDsgK88FG83A0L+KssXuTHggk8FyxN4jth0fihBgVzw7N2HlHl8gKTmzzOHyEHNRTGTmDa65nZV0igYfeRFhCDqIO5fUc1XdzN1Lw6VqVUQdeuT1i1fJkEjIOaQn1dhEddJAanyfLrg8vWZ4l5MF/fPDiImSpyWfJKzWYcUWeLgY1EgiTxTvuYdK4HqlfCT42txA8HMHhdYx7aOqBgRkLZDAuvPLn0SCT6YwzMWVcrtcjNdURcqMLu6qGCRkiNxQ+mPPiOnbVjI1as2yI00jfERLCZzpxHWkyKBmpm65HjnYvrkFx1zl/O2cgqelK4XNP2OM6cZ0pLL6Pa5AUJCl8ZDyI60JJ1SAJLYWPjAdxXfgxoUK20sSFr95RF/MquPQzSoeEwKMBJnztyfEdiOvsoGMJzUCe3iPha417cf1c8PFqzA+QlPNVxy8gV/Xv/8C+AUfALk61ztipAAAAAElFTkSuQmCC"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art14Anexo"></a>Art. 14. As informações contábeis consideradas para o cálculo das médias dos Quocientes Reais de Capital de Terceiros são as declaradas no balanço patrimonial das empresas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 1º&nbsp;O período de dados histórico a ser utilizado para as estimativas dos Quocientes Reais de Capital Próprio e de Terceiros será dos 2 (dois) últimos anos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;">§ 2º&nbsp;A periodicidade dos dados utilizados para as estimativas dos Quocientes Reais de Capital Próprio e de Terceiros é trimestral para empresas com capital aberto e anual para empresas com capital fechado.</p>
+<p class="Texto_Centralizado" align="center">Subseção II</p>
+<p class="Texto_Centralizado" style="text-align: center;">Do Método de Referências para o Coeficiente de Risco Sistemático</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art15Anexo"></a>Art. 15. O Método de Referências para a determinação do Coeficiente de Risco Sistemático pode ser obtido por meio de estimativas externas do Coeficiente de Risco Sistemático.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. As estimativas externas do Coeficiente de Risco Sistemático devem ser desalavancadas e realavancadas, para melhor representarem as estruturas de capital das empresas relacionadas com o Critério de Agregação escolhido, conforme abaixo:</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN8AAAAoCAMAAABJsN+/AAAAAXNSR0IArs4c6QAAAIdQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjoAOjqQOma2OpDbZgAAZgA6ZgBmZjqQZmZmZpDbZrbbZrb/kDoAkDo6kDpmkGYAkGaQkLb/kNu2kNv/tmYAtmY6tmZmtpCQtv+2tv/btv//25A625CQ29uQ29v/2////7Zm/9uQ//+2///b+LUzdgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAER0lEQVRoQ+1Z6XITMQzeLW0pJWkKJJzZFpoFssf7Px86vLbs9Zmk0GHi6Y8kliV91mm1qhKrretXuxTR4ftNXV/uDz9+/Mn2ucU/u4D4HZD4cVPjWgPpo8+YtH+xJU6KYNws4Et/GzROc8WCHXyRE1VbL/rrE3sTi+9vANbDtmov3hh/6pSGar9F/BNB/xrRtrUhmV1jx55h44ueGFY7+DveJyUHFq90AaDXaBZeAh/ujxsEwwTjBrCCCdsIvoo3WQCHeeJEd0X3nLnyQluJX1QdAfu+Nw4q8JGqRMoE03348GlnZlsoAZPbTScAsLVwHzTGEMleTUbuMPE3Y23wkbmqKaJQ6Sm4PPZ72KoY41MBfMOyNp4ChgV8w922K4q+bHzA2UksIJ4XKYH76Fz6Zhv1UeG0qTV6ogrgA0eXxkJgTb0uSy/Z+Pxub+xH+/21trCG6o+/RhFG8VXdlJHpBg/JK9n4UM3xkxvaBh/BkNwc+9kRQ9bGFccH9sqIn1gwZuNDReZ12OCDfYoQvXT8+TQcVk9fMGf648+cgEQUS7/pNJOLj3OZCHdmrfHRvqUK58/573RuWHIr4Mmf9gkI26J86SLOxZe+KZeCTZNYVv3zJkYrBFPc3DvWEYPZLajOge1hRiFWJE7+tFG06eZ+0n643+OtwtfLPbgBehvbb1iuTX8yu6QD8QHXmT/bvCfnieJLh6DWHvuPdjF+3A6rH6td/1XjQzfR/dfJ8KWc06QiDtVA4bbLvIep1h6KDtivoz5flSq6QjQqd8Pedaj9ToQPVFXvEj9DrT0mK8ADVuzf/1RtOOEb7r4tZRZ3e40ja1ASZ9Q/KQnHUpXWHnpTTOEUfvCZgoPwoWtO5dhnf9h2Wt0TfkX9jX8axkYR2fV51ItqT/i0A0NoBvAlbXAMQcJ+iRoWTR50FptBGWQvyz9TD4ZJe+814I9cM8Bdx4030v5tfhE9u9dHtPb9W88+4utvP6to5AesuwrwiSlNgcNK/wQOkAJNr5cIPpzvKO07mMzMmlXEJx4B3jxVgE9PaQJTqFgBUvUPC5UAJV7M/sNae3g0zy2I+NrJav704nk2hG2jpxJyCpUypZVfgIPQIxV82LAwezL8TBLi041w4AVZYj+Qxk4up1BF+JqFaDUiXYdiqtv44f7XzdNvV5SVdAKjrgJ8FH/k5HIKVYIPOegsYHWwiQcJ+Glz8SGCz36eCsICfPMpTQob7kv/BA5GnhV89ObPec9JkTn0Bfgy3kTBBM35BcJPO6XdcbfYhdopJNJ0KTEnxuef0qRsKO2HHJTaMD6zFuKTRWBYvks8wPLsXWA//5SmAB9VBk7CqpYaiGhfKgIMHAn/Mr7AlCYTH87nW3y7hadmThFI4SuZz6eUPGI/30G4CBTYL0erfPE53IL5JeewVQTQgYuG9QEJLwhfzh0U0/zv/58uvpDzgfMNnG8g9wb+AHLeduPg7WQwAAAAAElFTkSuQmCC"></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Onde:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAATCAMAAAB86XelAAAAAXNSR0IArs4c6QAAADZQTFRFAAAAAAAAAAA6ADqQAGa2OgA6OpDbZgA6kDoAkDo6kNv/tmYA25A62////7Zm/9uQ//+2///beVW86gAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAU0lEQVQoU5WOSxKAMAhDQbRWPlXuf1nRlhmXNdu8lwnAfLwiWUNcu3JuDF7L8BuZH5xjUp52JDxMDODaWcmyC+1DakxLou929B1VXBgkDsz//UfeTbICGqd+MfYAAAAASUVORK5CYII=">é o número de Coeficientes de Risco Sistemático de referência selecionados; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAMAAABLXLayAAAAAXNSR0IArs4c6QAAAHJQTFRFAAAAAAAAAAA6ADqQAGa2OgAAOgA6OgBmOjqQOma2OpDbZgAAZgA6ZgBmZjqQZpDbZrbbZrb/kDoAkDo6kGYAkLb/kNu2kNv/tmYAtmY6tv+2tv/btv//25A625CQ29uQ29v/2////7Zm/9uQ//+2///bcJHoNwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAuElEQVQoU6WR2RKCMAxFUxAXELS4tCoVu/D/v+hNQWcEZnwgT03Se27SEi0PI4RYjTChEEKiFirb1ZKQphb3ci4VklxqiRwyk3cnFcp72fgLegac2NOSoHNCJIp8xiTG+LWCvmxIpxZqf3g2nFHYXwtWke5HiXY4sx3jNB9m4ms308MEZFgbwT/RbwSm302EfnsefHOfjV7FffKbmijNMGJXY/QRFXYxQtVuHq/5VcDWyXH5Z/4hvAE+8wxznLAdrQAAAABJRU5ErkJggg==">&nbsp;é o Coeficiente de Risco Sistemático desalavancado de referência:</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAAeCAMAAACPBqXuAAAAAXNSR0IArs4c6QAAAKVQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjo6OjqQOma2OpDbZgAAZgA6ZgBmZjqQZmY6ZmZmZpDbZrbbZrb/kDoAkDo6kDpmkGYAkGaQkLb/kNu2kNvbkNv/tmYAtmY6tmZmtpA6tpCQtrbbttv/tv+2tv/btv//25A625CQ27a229uQ29v/2//b2////7Zm/7aQ/9uQ/9u2/9vb//+2///bbKMJAgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAC90lEQVRYR+1Xa1fbMAxNutIxllLYRmGvpoyNJXvF85b8/582vewkEFvuIfvAOfgcoMQ3lnQlS7dZ9rRUBurF7qZRUX91iHpGFGAWu/gB3We7utBt2OfKOfoRUYQ9mYuJdlM90JfY692lykOd57nGOpkwR/M4Srmp8wJ/HXXbnNJpliqh7VmTXaeQlRB0SiTd1Tk4ilYzTBKH32316jN5DthuCxEqq75DKebicJbLogSnyL/uqiKHsyzlBuBrsGo9JHvMxLfrnPIFRpAJ+HfZgNPBSB2eCwiwgCSr3eVHKc2UzAP9e8jFfldq7LSnVPDt+oJLymCZFVAR7eZ2U9n3gYR4PFG3gjQUlHSot/250HM3WRNHlfDisyrr3n1SKZVCwkPJUWAFHkHpwF2MtDiPpyAXO/xBq3AEcktLJcl7bl8kNNMSz0V3qaSQlXLZAK/29bcq2L08PnIDUm6IvG4Ku9JSz3G3px/W1EuQFXhAJQqfmRysR1q+Yj1+Hkcjp/Rb5ChmnahNXCl4YVRifNgfX0nDkkvx1eGhSsLwQyJPMEqMYmOpkdVJw/dT7/D2ZcRC+mVKcJOHAndO+BA13B/n8dFb4NrThJKDIYsNIjNqV/JGqT3Zk7d8U5Ku3wC/30VCk4Y/oeRocI9nYHg6SAVRw/fSJGq4Z9ThgZhIkcosSclrVBxxYzYwGHyPjhvuLbqe3p79OP76M+gJD/KRkgMlII/gapDaosWPA7dP3sG75GSOYth55GURMFsu3gQd5XSOlBwbdYKCxYtg2vWrQYPEseyyhWpgLPMUw0lJHID48JGSY0dZUIjawtvMXwXwsVs3vwAprRi11VzCeToGsj9QcqReIN8sKGQH3WBhiI46CDcgln/A6P/9KkITD030So4YFUHh1BZIvJ5oH7Epvjcs/2BzJn0fKYk/X8ZKjjwSQcFqiyUekIm9FW+2LAPM+73f6pevQ8syiBclx9QNl2zgXLy3aG/eAacGFBwlsRmTOH9U40+AR8/APyBDVnH4BytMAAAAAElFTkSuQmCC"></p>
+<p class="Texto_Centralizado" align="center">Seção III</p>
+<p class="Texto_Centralizado" style="text-align: center;">Do Prêmio de Risco de Mercado</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art16Anexo"></a>Art. 16. O Prêmio de Risco de Mercado&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAATCAMAAAA6X9QPAAAAAXNSR0IArs4c6QAAAGlQTFRFAAAAAAAAAAA6AABmADqQAGa2OgA6OgBmOjqQOma2OpDbZgAAZgA6ZgBmZjoAZjo6ZjpmZma2ZpCQZrb/kDoAkDo6kGaQkLaQkNv/tmYAtmY6tv//25A62/+22////7Zm/9uQ//+2///bk2ZikgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAA3klEQVQ4T9WRyxaCMAxEUxGVhy9ApVAp7f9/pJmkHnUhOxdmwblNk5k0EP0mYldS7AxHSx+Qsx9ftBbAMW96fLcjuWxU8ALH9UTkTEnkQdzESnpAkQKafbObKJwOuHZQ1XqyaIUUrASGG2wacQx7Tki5KIeKq19wvdd9OL8ZQ4ybKn4QSACGcxEv/dCrECzxcMwAvwShhqEvY9cUMlUaTjG1KkjKtWSzUbs0JTVJOQFSbE2uJL+SSlmQjOyMZhS8ycka5HlqWY28Pe1Tp/wWOpzsezmeJbLHpbD6c/4jHogkEx+tbYmMAAAAAElFTkSuQmCC">&nbsp;é o excedente médio da taxa de retorno do índice de mercado em relação à Taxa Livre de Risco do Custo do Capital Próprio.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Para fins de cálculo de Prêmio de Risco de Mercado, considera-se:</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKYAAAAnCAMAAACyusM4AAAAAXNSR0IArs4c6QAAAI1QTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgA6OgBmOjqQOma2OpC2OpDbZgAAZgA6ZgBmZjoAZjo6ZjpmZjqQZmYAZmZmZma2ZpCQZpDbZrbbZrb/kDoAkDo6kDpmkGaQkLaQkNv/tmYAtmY6tpCQtv+2tv//25A627Zm2/+22////7Zm/7a2/9uQ//+2///bQPyfIwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAADEElEQVRYR+1Ya1ebQBCFWNOaRu07FmoLad02FPj/P693ZtkHsC9zjOH0uB90Nctw586dO6tZ9t+u9urgzU3keb5dROYiv/Tj6D4e2jcP58fZl1sRgNlss+aVn+znxK9gUoHtdQEW6zynb0tYCmZ3bcuwL4Gvu10IRvCki96u88Lw1gBmvZD+IVRGm02+qjTOJTE5hgn2TtkvdchTovIXBlpfJkWynohGt1REjnLco3iOmltbEtrIkqcbAzzsEeCyDDGJiCbnb09jwyN5utGEfNbxRP+tkjKvJQHSh1E3LPzG3hBb+DlKFFUlZpTdjWkzkLN+W+ZfS6v1pkjBIn+qWrIvGQaxKsiTaUOukrXvKQGRZi5ReY6n0s/fq0qsqr0NfQwUg6y9ay4zfXWQ1aAwLADevMbzzQ6Xi+7DuxQyWUpB7U1qLgpUs7/3jwGWJmDq52SeNV7CJNZAzZv9DyJ4R4hTVrsOlFDGp2QuHmqoCMoDxnbzd4ZTnaDTODLUeig3JFggBkKZzfc/N1X3RRUL2cnl5UwERcww+/tft58KlJquUFeHdj27vugTkpm+1LbHpWYUFIk3VOd2g5T3lbtB9V3D8BwxHMkmememoQkBjhPySVakutFgI5uy2fblbjMUK6HqdXgSDTDj9zvfCYapSaMNhySRK8iK5UDRdZ6ejIYXiKjH+04QfF0x3lBIVDzDE02wLwwkX6n0CWXPhfRMr32YnpnkS6CEuuTwpsEYlNeJYWLNGdJTQEk9xpJUEn0lz4TTeBadcCXihR/Wox4HfIxcLLJML0JO4dq7EomL2vl+PQ7o05gw6Yymg6b1aHLO488TOfbqoccBeUXaCBi8gAwoPNnmiRx7kdNTgE3AEmZcQ+1dTB/xRGIR1Od6HEyFGasn2jVqHvFEUmFaauR7lV4uEIO1p8ZOSCQ1lOlb/GE5WuBqbCjd9eeYW6W+9bHnzACXBmotcCsNReInhLg7nmfpceB+/cRQzgYzTI40lAWwGYY5NhSSxVL+ozTC/XSGclJJx53xpK9/Cf7CwLMz8A9FE0wfVYVK0gAAAABJRU5ErkJggg=="></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Onde:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAMAAAA4a6b0AAAAAXNSR0IArs4c6QAAAGBQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOjqQOpC2OpDbZgAAZgA6ZgBmZmYAZpDbZrb/kDoAkDo6kDpmkNv/tmYAtmY6tpCQtv+2tv//25A627Zm2////7Zm/9uQ//+2///bpNRKHwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAoUlEQVQoU7VRyxLCIBBbqlZbq2BBBeXx/3/ZhT7ELT14MBdmNpkkEwB+gGKHstqu7r5l+zeAZenJEG7SdxoPihMv1FYSbyOdwzbgrpjhjt9eqI0xyJilgG93WrHRO/Q6iCWmf3YXfo8JiRNZMVfTMnO8JfU/tUyzsVwWSRT+LMHVJzHVI+zjVcn1kElkOJTj4ppoWgAuU47BKbe+3KT9/4oBOA0H3wUqQuwAAAAASUVORK5CYII=">é a Taxa Livre de Risco do Custo do Capital Próprio &nbsp;no mercado brasileiro ou de títulos soberanos do Tesouro norte-americano na data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAATCAMAAACawLzhAAAAAXNSR0IArs4c6QAAAE5QTFRFAAAAAAAAAAA6AABmAGa2OgAAOgA6OgBmOjqQOpDbZgAAZgBmZmYAZrb/kDoAkNv/tmYAtmZmtv+2tv//25A62////7Zm/9uQ//+2///bFlcZNQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAATUlEQVQYV52NOxaAIBADB/GHgKIg4P0v6oq9hdPkZVIEflEXHYPqYT+s82WKUAZPGTfIorMWkwwEKddqyJ0s1Tr1JGU+39skcyM0/8kN0kECl/TRtDQAAAAASUVORK5CYII=">, em termos anuais;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAAAXNSR0IArs4c6QAAAGxQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOjqQOma2OpC2OpDbZgAAZgA6ZgBmZjqQZmYAZpDbZrbbZrb/kDoAkDo6kDpmkNv/tmYAtmY6tpCQtv+2tv//25A627Zm2////7Zm/7a2/9uQ//+2///biLFHZAAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAiUlEQVQoU62QyxbCIAxEAypWq7YNNlWLtIH//0fTx0KUZbOcw1zuGYDNjs3JqsZqSojPtyan6ZGm4BA6jG0/vw3lru8UQryTRFyMc9y+rhVKL9w8Hz2bw8JlgxnlYe8zqTtnwmhRIOKacMKFYHId1m++iuL6DxLXqfJzoVQpdlGucyPLKpttv4I+djEIHoK0gFUAAAAASUVORK5CYII=">é o retorno do Índice de Mercado local ou do mercado norte-americano na data&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAATCAMAAACawLzhAAAAAXNSR0IArs4c6QAAAE5QTFRFAAAAAAAAAAA6AABmAGa2OgAAOgA6OgBmOjqQOpDbZgAAZgBmZmYAZrb/kDoAkNv/tmYAtmZmtv+2tv//25A62////7Zm/9uQ//+2///bFlcZNQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAATUlEQVQYV52NOxaAIBADB/GHgKIg4P0v6oq9hdPkZVIEflEXHYPqYT+s82WKUAZPGTfIorMWkwwEKddqyJ0s1Tr1JGU+39skcyM0/8kN0kECl/TRtDQAAAAASUVORK5CYII=">, em termos anuais; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAATCAMAAAB1AtffAAAAAXNSR0IArs4c6QAAADxQTFRFAAAAAAAAAAA6AABmADqQAGa2OgBmOpDbZgAAZrb/kDoAkNv/tmYAtv//25A62////7Zm/9uQ//+2///b9swjcQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAASUlEQVQYV4WN0RaAIAhDp5UlpVb8/782yGfdA+dugwMwlkqgsi09qaAuhXSvzR1w7XSWqWS8Bx0nDwz+wlW3DireWBTiOfk9rz/RcwHFaMhXuwAAAABJRU5ErkJggg==">&nbsp;é o número de observações no período de dados histórico utilizado para a estimativa do Prêmio de Risco de Mercado, observado o disposto no <a title="Acesse o Artigo" href="#art18">artigo 18</a>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art17Anexo"></a>Art. 17. A periodicidade dos dados para a estimativa do Prêmio de Risco de Mercado é diária.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art18Anexo"></a>Art. 18. O período de dados históricos a ser utilizado será o considerado pela Anatel como relevante para representar a estimativa do Prêmio de Risco de Mercado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º&nbsp;O período de dados históricos utilizado para a estimativa do Prêmio de Risco de Mercado não deverá ser inferior a 5 (cinco) anos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º&nbsp;A critério da Anatel, desde que devidamente fundamentado, podem ser desconsiderados dados do período que reflitam situações de anormalidade do mercado para efeito de cálculo da estimativa do Prêmio de Risco de Mercado.</p>
+<p class="Texto_Centralizado" align="center">TÍTULO III</p>
+<p class="Texto_Centralizado" style="text-align: center;">DO VALOR REAL DOS ATIVOS DE EMPRESAS DE CAPITAL FECHADO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art19Anexo"></a>Art. 19. Em se tratando da estimativa de CMPC individualizada para empresa de capital fechado, o Valor Real do Capital Próprio&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAMAAAB1/u6nAAAAAXNSR0IArs4c6QAAAEVQTFRFAAAAAAAAAABmADqQAGa2OgBmOpDbZgA6Zrb/kDoAkDpmkJC2kNv/tmYAtmY6tmZmtv//25A62////7Zm/9uQ//+2///bu7UM2AAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAkklEQVQoU61Q2xaCMAzrVCYKKmPK/3+qTbKKeA5v9qFr06SXme1bOc5W02GqvRli2nLJ7gYr6YT02U2EC7PVKvmv80hJgnkXD+FVlPYOhuStR6sCZnjzgahmq4okFMze6LmFMfjhpB84tv3AGgm/XEXnSK2ACXE3iTyn8BhtonN2jo+qtli/yhvHZ0L7FQfzv+8bdXQGou7i/VwAAAAASUVORK5CYII=">&nbsp;será estimado por processo interativo utilizando CMPC variável, por meio do Modelo de Precificação de Ativos Financeiros com estrutura de capital variável, devendo a prestadora informar à Agência sobre a estimativa de fluxos de caixa operacional, investimento e financiamento no período de 10 anos, o valor terminal, o endividamento e respectivas condições de pagamento.</p>
+<p class="Texto_Centralizado" style="text-align: center;">TÍTULO IV</p>
+<p class="Texto_Centralizado" style="text-align: center;">DAS DISPOSIÇÕES FINAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: justify; padding-left: 30px;"><a id="art20Anexo"></a>Art. 20. A estimativa do CMPC deverá ser declarada pela Anatel em conjunto com as seguintes informações:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - Critério de Agregação escolhido;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - Data de Cálculo;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - Período de dados histórico utilizado para a estimativa do Coeficiente de Risco Sistemático;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - Período de dados histórico utilizado para a estimativa do Prêmio de Risco de Mercado;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - Método de estimativa do Coeficiente de Risco Sistemático;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - Custo do Capital de Terceiros;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VII - Custo do Capital Próprio;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VIII - Quociente Ótimo de Capital de Terceiros;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IX - Quociente Ótimo de Capital Próprio;&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">X - Tributação Incidente sobre o Resultado;&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XI -&nbsp;Nomes das empresas e dos índices de mercado selecionados para a determinação do Coeficiente de Risco Sistemático pelo Método de Referências;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">XII - Fonte de dados utilizados para a projeção de inflação brasileira e norte-americana.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Quando o Critério de Agregação for somente o setor de telecomunicações, todas as informações relacionadas no&nbsp;<strong>caput</strong>&nbsp;deste artigo deverão ser publicadas no sitio eletrônico da Anatel na internet.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art21Anexo"></a>Art. 21. A estimativa do CMPC será expressa com 2 (duas) casas decimais, na forma percentual, sem arredondamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art22Anexo"></a>Art. 22. Na hipótese de algum índice ser descontinuado, a Anatel pode substituí-lo, justificadamente, até a revisão deste Regulamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art23Anexo"></a>Art. 23. Na definição de preço de referência pelo direito de exploração de satélite, a Anatel deverá utilizar, preferencialmente, o definido nesta Norma e, extraordinariamente, em metodologia alternativa, desde que devidamente justificado.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art24Anexo"></a>Art. 24. Para fins de conversão do CMPC nominal em CMPC real, tendo por base a metodologia desta norma, será utilizada como referência a expectativa de inflação divulgada por meio do Sistema de Metas de Inflação do Banco Central do Brasil ou outra fonte oficial que venha a sucedê-lo,&nbsp;para o caso da projeção de inflação brasileira, e os dados&nbsp;divulgados por&nbsp;meio do índice&nbsp;<strong>Consumer Price Index (CPI)</strong> ou outra fonte que melhor reflita as projeções&nbsp;de inflação norte-americana.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1221"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes">Resoluções da Anatel</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes/2018">2018</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento" class="link-categoria">Regulamento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Metodologia" class="link-categoria">Metodologia</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Estimativa" class="link-categoria">Estimativa</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Custo%20Médio%20Ponderado%20de%20Capital" class="link-categoria">Custo Médio Ponderado de Capital</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=CMPC" class="link-categoria">CMPC</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Telefônico%20Fixo%20Comutado" class="link-categoria">Serviço Telefônico Fixo Comutado</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaFixa" class="link-categoria">TelefoniaFixa</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Móvel%20Pessoal" class="link-categoria">Serviço Móvel Pessoal</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaMovel" class="link-categoria">TelefoniaMovel</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=GestaoEconomicaPrestacao" class="link-categoria">GestaoEconomicaPrestacao</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoVigente" class="link-categoria">ResolucaoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

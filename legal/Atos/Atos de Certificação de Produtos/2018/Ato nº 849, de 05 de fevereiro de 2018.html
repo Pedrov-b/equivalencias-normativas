@@ -1,0 +1,1522 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 849, de 05 de fevereiro de 2018</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1173-ato-849">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovar, Requisitos, Técnicos, Avaliação, Conformidade, Acumuladores, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovar os requisitos técnicos para a avaliação da conformidade de acumuladores alcalinos de níquel-cádmio estacionários, conforme o Anexo I deste Ato.">
+	<title>Anatel - Ato nº 849, de 05 de fevereiro de 2018</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=614775071" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=858681447" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=130926166" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141918" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2018">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2018">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2018">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2018" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2018" class="pathway">2018</a> <span class="separator">&gt;</span> <span>Ato nº 849, de 05 de fevereiro de 2018</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9490600d6d0dcb34&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 849, de 05 de fevereiro de 2018		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 09 Fevereiro 2018 10:42			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Segunda, 17 Outubro 2022 14:11			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 8257			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico em <a href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=2770831&amp;id_orgao_publicacao=0">9/2/2018</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><strong>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL,&nbsp;</strong>no uso das atribuições que lhe foram conferidas pela <a href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a href="http://www.anatel.gov.br/legislacao/leis/2-lei-9472#art19">Art. 19 </a>da Lei n.º 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o Inciso II do <a href="http://www.anatel.gov.br/legislacao/resolucoes/15-2000/129-resolucao-242#art9">Art. 9º</a> do Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela Resolução n.º 242, de 30 de novembro de 2000;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO&nbsp;o <a href="http://www.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419#art1">Art. 1º</a> da Portaria nº 419 de 24 de maio de 2013;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlMQIxVFMjgT6h5ruBY3GOF58qpDe4Y1JqEyYq7wv0G67">processo nº&nbsp;</a><span id="span2473083" title="Certificação de Produto: Requisitos Técnicos"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlMQIxVFMjgT6h5ruBY3GOF58qpDe4Y1JqEyYq7wv0G67">53500.081239/2017-54</a>,</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1"></a>Art. 1º&nbsp;Aprovar os requisitos técnicos para a avaliação da conformidade de acumuladores alcalinos de níquel-cádmio estacionários, conforme o <a href="#anexoI">Anexo I</a> deste Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2"></a>Art. 2º&nbsp; Este Ato entra em vigor no dia 12 de fevereiro de 2018.</p>
+<p style="text-align: center;">VITOR ELISIO GOES DE OLIVEIRA MENEZES</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Superintendente de Outorga e Recursos à Prestação</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">&nbsp;</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="anexoI"></a>ANEXO I</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;">REQUISITOS TÉCNICOS E PROCEDIMENTOS DE ENSAIO PARA AVALIAÇÃO DA CONFORMIDADE DE ACUMULADORES ALCALINOS DE NÍQUEL-CÁDMIO ESTACIONÁRIOS</p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item1"></a>1.OBJETIVO</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem1.1"></a>1.1.Estabelecer os requisitos mínimos a serem demonstrados na avaliação da conformidade dos acumuladores alcalinos de níquel-cádmio estacionários, recarregáveis, utilizados como fonte de energia elétrica, excluindo os acumuladores regulados por válvula, para efeito de avaliação da conformidade junto à Agência Nacional de Telecomunicações – Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem1.2"></a>1.2.Os requisitos estabelecidos neste documento aplicam-se aos acumuladores alcalinos de níquel-cádmio estacionários, utilizados no Serviço Telefônico Fixo Comutado – STFC e no Serviço Móvel Pessoal – SMP.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item2"></a>2.REFERÊNCIAS NORMATIVAS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem2.1"></a>2.1.Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela&nbsp;<a href="http://www.anatel.gov.br/legislacao/resolucoes/15-2000/129-resolucao-242">Resolução nº 242, de 30 de novembro de 2000</a>.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item3"></a>3.DEFINIÇÕES</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.1"></a>3.1.Acumulador Alcalino: acumulador elétrico cujo eletrólito é uma solução aquosa alcalina;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.2"></a>3.2.Acumulador Alcalino de Níquel-Cádmio: acumulador alcalino no qual a matéria ativa das placas positivas é constituída por hidróxido de níquel e das placas negativas por óxido de cádmio ou por óxido de cádmio e óxido de ferro e o eletrólito é uma solução aquosa de hidróxido de potássio e hidróxido de lítio;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.3"></a>3.3.Acumulador Elétrico: dispositivo capaz de transformar energia química em energia elétrica e vice-versa, em reações quase completamente reversíveis, destinado a armazenar sob forma de energia química a energia elétrica que lhe tenha sido fornecida, restituindo a mesma em condições determinadas;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.4"></a>3.4.Acumulador Estacionário: acumulador que, por natureza do serviço, funciona imóvel, permanentemente conectado a uma fonte de corrente contínua;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.5"></a>3.5.Auto descarga: descarga proveniente de processos eletroquímicos internos do acumulador;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.6"></a>3.6.Bateria: conjunto de elementos interligados eletricamente;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.7"></a>3.7.Capacidade em Ampère-hora (Ah): produto da corrente, em Ampère, pelo tempo, em hora, corrigido para a temperatura de referência, fornecido pelo acumulador em determinado regime de descarga, até atingir a tensão final de descarga;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.8"></a>3.8.Capacidade Especificada: capacidade em Ampère-hora definida para um determinado regime de descarga, podendo ser o nominal ou o indicado;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.9"></a>3.9.Capacidade Indicada (Ci): capacidade em Ampère-hora definida para um regime de descarga diferente do nominal, em corrente constante à temperatura de referência (25°C), até a tensão final de 1,75 V por elemento;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.10"></a>3.10.Capacidade Nominal (C5): capacidade em Ampère-hora definida para um regime de descarga de 5 horas, em corrente constante à temperatura de referência (25°C), até a tensão final de 1,75 V por elemento;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.11"></a>3.11.Carga de um Acumulador: operação pela qual ocorre a conversão de energia elétrica em energia química dentro do acumulador;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.12"></a>3.12.Carga de Flutuação: carga aplicada visando compensar as perdas por auto descarga, mantendo-o no estado de plena carga;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.13"></a>3.13.Carga com Tensão Constante: carga realizada mantendo-se limitada a tensão na fonte de corrente contínua;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.14"></a>3.14.Circuito Aberto: condição na qual o elemento ou monobloco ou bateria encontra-se desconectado de circuito externo, não havendo circulação de corrente entre pólos ou terminais;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.15"></a>3.15.Coeficiente de Temperatura para a Capacidade: constante utilizada para corrigir a temperatura de referência, o valor da capacidade obtida à uma determinada temperatura;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.16"></a>3.16.Corrente de Carga: corrente fornecida ao acumulador no processo de carga;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.17"></a>3.17.Corrente de Descarga: corrente fornecida pelo acumulador quando o mesmo está em descarga;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.18"></a>3.18.Descarga de um Acumulador: operação pela qual a energia química armazenada é convertida em energia elétrica alimentando um circuito externo;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.19"></a>3.19.Elemento: conjunto constituído de dois grupos de placas de polaridades opostas, isolados entre si por meio de separadores e/ou distanciadores, imersos no eletrólito dentro do vaso que os contém. O mesmo que acumulador elétrico;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.20"></a>3.20.Eletrólito: solução aquosa de hidróxido de potássio e hidróxido de lítio que banha as placas, permitindo a condução de íons;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.21"></a>3.21.Família de Acumuladores: conjunto de modelos de acumuladores constituídos pelo mesmo tipo de placas, considerando as suas características físicas e elétricas, diferenciando apenas no tamanho do vaso e quantidade de placas empregadas;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.22"></a>3.22.Instante Final de Descarga: instante em que um elemento atinge a tensão final de descarga especificada;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.23"></a>3.23.Monobloco: conjunto de dois ou mais elementos interligados eletricamente, montados em um único vaso, em compartimentos separados com eletrólito independente;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.24"></a>3.24.Placa: conjunto constituído pelas grades e matéria ativa;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.25"></a>3.25.Plena Carga: estado do elemento quando atinge as condições do instante final de carga;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.26"></a>3.26.Regime de Descarga: condição de descarga de um acumulador, definido por uma corrente necessária para que seja atingida a tensão final de descarga, em tempo e condições especificados;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.27"></a>3.27.Regime de Flutuação: condição em que o elemento ou bateria é mantido a uma carga de flutuação contínua;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.28"></a>3.28.Tampa: peça de cobertura do vaso fixada ao mesmo, com aberturas para a passagem dos pólos e colocação de válvula;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.29"></a>3.29.Temperatura Ambiente: temperatura do local onde está instalado o elemento ou bateria;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.30"></a>3.30.Temperatura do Elemento: valor da temperatura obtida na superfície do elemento;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.31"></a>3.31.Temperatura Média Anual: valor da média ponderada da temperatura do local de instalação do elemento ou bateria no período de 12 meses;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.32"></a>3.32.Temperatura Média de Descarga: média das temperaturas dos elementos durante a descarga;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.33"></a>3.33.Temperatura de Referência: temperatura à qual devem ser referidos os valores medidos. Para os acumuladores estacionários a temperatura de referência é de 25°C;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.34"></a>3.34.Tensão de Circuito Aberto: tensão existente entre os pólos de um elemento em circuito aberto;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.35"></a>3.35.Tensão Final de Descarga: tensão na qual se considera o elemento tecnicamente descarregado para um determinado regime de descarga;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.36"></a>3.36.Tensão de Flutuação: tensão acima da tensão de circuito aberto, estabelecida para elemento carregado, acrescida apenas do necessário para compensar as perdas por auto descarga, mantendo o elemento carregado. Para este tipo de acumulador, é utilizada também como tensão de recarga;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.37"></a>3.37.Tensão Nominal de um Elemento: valor de tensão que caracteriza o tipo de acumulador. Para acumulador alcalino de níquel-cádmio, a tensão nominal é de 1,2 V por elemento, à temperatura de referência;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.38"></a>3.38.Válvula: dispositivo destinado a permitir a liberação de gases formado no interior do acumulador, dificultando a saída de partículas do eletrólito arrastadas durante o processo de carga e impedindo a entrada de impurezas no mesmo. Esta válvula pode apresentar características de segurança, evitando a penetração de gases e explosão do elemento;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.39"></a>3.39.Válvula Reguladora: dispositivo do elemento/monobloco que permite o escape de gases quando a pressão interna atinge um valor pré-determinado, impedindo, entretanto, a entrada de ar;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.40"></a>3.40.Vaso: recipiente que contém os grupos de placas, seus separadores e/ou distanciadores e o eletrólito;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.41"></a>3.41.Vida Útil de um Acumulador: intervalo de tempo entre o início de operação e o instante no qual sua capacidade atinge a 80% do valor da capacidade nominal, nas condições normais de operação;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="subitem3.42"></a>3.42.Vida Útil Projetada: vida útil de um acumulador, baseada nas suas características de projeto, fabricação e aplicação.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">4.REQUISITOS GERAIS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">4.1.Os acumuladores descritos nesta lista de requisitos, em função do regime de descarga, são classificados como:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">4.1.1.Tipo X - Altíssima intensidade de descarga: corresponde a tempos de descarga maiores que 7C5 aplicados a sistemas de energia ininterrupta (UPS);</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">4.1.2.Tipo H - Alta intensidade de descarga: corresponde a tempos de descarga maiores que 3,5C5 e menores ou iguais a 7C5 aplicados a partida de grupo motor-gerador;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">4.1.3.Tipo M - Média intensidade de descarga: corresponde a tempos de descarga maiores que 0,5C5 e menores ou iguais a 3,5C5, aplicados a sistemas de fontes de corrente contínua convencionais;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">4.1.4.Tipo L - Baixa intensidade de descarga: corresponde a tempos de descarga iguais ou menores que 0,5C<sub>5</sub>, aplicados a sistemas de painéis fotovoltáicos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">4.2.Todos os materiais plásticos, borrachas e separadores utilizados, devem apresentar resistência mecânica compatível com a aplicação e serem inertes em relação ao eletrólito, devendo ter estabilidade química frente ao mesmo e/ou material ativo e estabilidade dimensional à variação de temperatura.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">4.3.As válvulas devem ser de material inerte e quimicamente estável ao eletrólito, devendo permitir a liberação de gases, e impedir a entrada de impurezas, ar ambiente e faíscas no interior do acumulador, atuando como um dispositivo antiexplosão.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">4.4.O selante e/ou adesivo caso utilizado na fabricação dos acumuladores deve ser inerte e ter características de resistência ao eletrólito e a temperatura de trabalho, sem perder as suas propriedades específicas.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item4.5"></a>4.5.Todos os elementos/monoblocos devem ter indicados, no mínimo, os seguintes dados, gravados de forma legível e indelével:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">a)fabricante/fornecedor;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">b)tipo;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">c)número de série de fabricação;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">d)mês e ano de fabricação;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">e)capacidade nominal;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">f)identificação dos pólos na cor vermelha e/ou “+” e na cor azul ou preta e/ou “-”;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">g)tensão nominal (exclusivo para monoblocos);</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">4.6.A temperatura ambiente para operação do acumulador deve estar entre -10ºC e 45ºC, sendo a temperatura de referência igual a 25ºC.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item5"></a>5.TRATAMENTO PRÉVIO PARA ENSAIOS ELÉTRICOS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item5.1"></a>5.1.Objetivo:&nbsp;preparação inicial da amostra, somente para realização dos ensaios elétricos de tipo, de modo que antes do início dos ensaios constante desta lista de requisitos, o acumulador (bateria ou elemento) apresente valor estável em sua capacidade.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">5.2.Requisito:&nbsp;As amostras devem ser submetidas a no mínimo 2 e no máximo 10 ciclos de carga e descarga para que se obtenha dois valores consecutivos de capacidade, nas mesmas condições, maior ou igual a 100% e com diferença menor ou igual a 2%.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">5.3.Se não forem atingidas as condições requeridas no item anterior, a amostra deverá ser substituída.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">5.4.As medidas de tensão e temperatura dos elementos durante a descarga devem ser registradas em, no mínimo, 10%, 25%, 50% e 80% da duração esperada da mesma e, em seguida, em intervalos de tempo que permitam determinar a passagem pelo valor da tensão final de descarga de 1,00 V.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">5.5.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left"><a id="item5.5.1"></a>5.5.1.Proceder a descarga com corrente constante e numericamente igual a capacidade nominal especificada pelo fabricante, dividida por 6. A descarga é considerada terminada quando qualquer dos elementos atingir a tensão final de 1,00 V.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">5.5.2.Durante a descarga a temperatura do eletrólito deve ficar entre 20°C e 30°C.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left"><a id="item5.5.3"></a>5.5.3.Para atingir o estado de plena carga, aplicar uma carga utilizando o processo de corrente constante, conforme segue:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">a)aplicar uma carga na bateria ou elemento com corrente constante de valor numericamente igual a 0,2 C<sub>5</sub>, que deve prolongar-se por um período de tempo de 1 hora a 2 horas após atingir o instante final de carga. Como instante final de carga considera-se o momento em que foi realizada a primeira de 3 leituras de tensão, consecutivamente estáveis em intervalos de 30 minutos, corrigidos em temperatura, conforme indicação do fornecedor, no elemento que por último atingiu a estabilização;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">b)durante a carga a temperatura dos elementos não deve ultrapassar 45°C, caso isto ocorra, a carga deve ser interrompida e reiniciada após o eletrólito atingir 35°C;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">c)após a carga, os elementos devem ser mantidos em repouso no mínimo por 1 hora e no máximo por 4 horas, até que a temperatura do eletrólito e a tensão estabilizem, antes do inicio de nova descarga;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">d)o tratamento prévio de preparação para os ensaios elétricos estará concluído, quando forem alcançados os resultados determinados em 5;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">e)no caso de acumuladores seco-descarregados, deve-se seguir estritamente o indicado pelo fornecedor para a sua ativação, observando os procedimentos para enchimento com eletrólito, ciclos de preparação e etc. Somente após a conclusão da ativação, deve-se iniciar a preparação para os ensaios elétricos.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item6"></a>6.REQUISITOS COMUNS AOS ENSAIOS DE CAPACIDADE</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">6.1.Para os ensaios de capacidade, deve ser obedecida a preparação determinada em 5.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">6.2.A densidade nominal do eletrólito a temperatura de referência, deve ser de 1,200 g/cm<sup>3</sup>&nbsp;± 0,010 g/cm<sup>3</sup>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">6.3.Cada elemento deve estar com o nível do eletrólito na marca de máximo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">6.4.Para iniciar-se a descarga é necessário o atendimento ao repouso mínimo de 1 hora e máximo de 4 horas, após o término da carga.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">6.5.Deve ser escolhido, aleatoriamente, um elemento para cada seis elementos do número de elementos da bateria para servir de elemento piloto, para efeito de acompanhamento da temperatura no decorrer do ensaio. A média aritmética das temperaturas de todos os elementos adotados como piloto, prevalecerá como a temperatura média da bateria.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">6.6.No transcorrer da descarga, a cada intervalo de leitura, os elementos piloto devem passar a ser aqueles que apresentarem os menores valores de tensão.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item6.7"></a>6.7.A corrente de descarga deve ser mantida constante com variação máxima de 1% durante toda a descarga, sendo permitidas variações de 5%, desde que não ultrapassem 20 segundos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item6.8"></a>6.8.Para qualquer regime de descarga a bateria é considerada descarregada, quando qualquer elemento da mesma, atingir a tensão final de descarga especificada, sendo neste momento definida a capacidade em Ampère-hora da bateria.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item6.9"></a>6.9.A capacidade em Ampère-hora obtida não deve ser inferior a 100% da capacidade especificada.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha"><a id="item7"></a>7.CAPACIDADE EM AMPÈRE-HORA NAS CONDIÇÕES NOMINAIS (C<sub>5</sub>)</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">7.1.Objetivo:&nbsp;determinar a capacidade em Ampère-hora nas condições nominais da bateria com qualquer número de elementos. Para tanto é necessário submetê-los a uma descarga por um período de 5 horas.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">7.2.Requisito:&nbsp;garantir que a bateria ou elemento esteja no estado de plena carga, que é obtido submetendo a bateria ou elemento a uma carga conforme <a href="#item5.5.3">subitem 5.5.3</a>, observando o disposto no <a href="#item5.5.3">subitem 5.5.3</a> alínea (b). Devem ser observados os requisitos comuns conforme <a href="#item6">item 6</a>. A capacidade obtida corrigida para 25°C, não deve ser inferior a 100% da capacidade nominal.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">7.3.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item7.3.1"></a>7.3.1.Antes de iniciar o ensaio, devem ser anotados os seguintes dados:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">a)temperatura ambiente;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">b)tensão de todos os elementos em circuito aberto;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">c)temperatura do eletrólito dos elementos pilotos;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">d)densidade de todos os elementos;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">e)características do derivador (<em>shunt</em>) a ser utilizado.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item7.3.2."></a>7.3.2.A média aritmética das temperaturas obtidas durante a leitura dos elementos piloto deve ser considerada como temperatura inicial para efeito do ensaio.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item7.3.3"></a>7.3.3.A corrente de descarga deve ser numericamente igual a 0,2C<sub>5</sub>, devendo ser interrompida conforme definido em <a href="#item6.8">6.8</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item7.3.4"></a>7.3.4.Iniciar a descarga após conectar à bateria uma carga resistiva em série com um derivador, para medição da corrente de descarga, ajustando-a para o valor de corrente definido em <a href="#item7.3.3">7.3.3</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item7.3.5"></a>7.3.5.As leituras de temperatura dos elementos piloto e leituras de tensão de todos os elementos da bateria durante a descarga, devem ser registradas no mínimo em 10%, 20%, 50% e 80% da duração esperada da mesma (5 horas) e em seguida em intervalos de tempo que permitam determinar a passagem pelo valor da tensão final de descarga de 1,00 V.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">7.3.6.O resultado obtido neste ensaio deve atender aos requisitos do <a href="#item6.9">subitem 6.9</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">7.3.7.Após o término do ensaio, a bateria ou elemento deve ser recarregado conforme <a href="#item5.5.3">subitem 5.5.3</a>, observando o disposto em <a href="#item5.5.3">subitem 5.5.3</a> alínea (b).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">7.3.8.Aplicar uma carga na bateria ou elemento com tensão ajustada no retificador entre 1,50 a 1,70 V/E, conforme indicação do fornecedor, com corrente limitada em 0,2C<sub>5</sub>, até atingir o estado de plena carga. Para este método de carga consideram-se os elementos plenamente carregados, quando após 8 horas de carga, por 2 horas consecutivas, obtém-se estabilidade na corrente.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" align="left"><a id="item8"></a>8.CAPACIDADE EM AMPÈRE-HORA PARA REGIME DIFERENTE DO NOMINAL (C<sub>i</sub>)</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">8.1.Objetivo:&nbsp;determinar a capacidade em Ampère-hora da bateria com qualquer número de elementos em qualquer regime. Para tanto é necessário submetê-los a uma descarga por um período de tempo determinado em função do regime escolhido.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">8.2.Requisito:&nbsp;deve-se garantir que a bateria ou elemento esteja no estado de plena carga, que pode ser obtido submetendo a bateria ou elemento a uma carga conforme <a href="#item5.5.3">subitem 5.5.3</a>, observando o disposto no <a href="#item5.5.3">subitem 5.5.3 </a>alínea (b). Devem ser observados os requisitos comuns conforme <a href="#item6">item 6</a>. A capacidade obtida corrigida para 25ºC, não deve ser inferior a 100% da capacidade nominal.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">8.3.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item8.3.1"></a>8.3.1.Para se determinar a capacidade em Ampère-hora da bateria ou elemento em regimes diferentes do nominal, deve-se aplicar uma descarga com corrente constante numericamente igual a C<sub>i</sub>/t, onde “t” representa o regime de descarga em horas escolhido, até que qualquer elemento atinja a tensão final de descarga especificada.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">8.3.2.Antes de iniciar o ensaio, devem ser anotados os dados conforme <a href="#item7.3.1">7.3.1</a> e deve-se considerar a temperatura inicial da bateria ou elemento de acordo com <a href="#item7.3.2.">7.3.2</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item8.3.3"></a>8.3.3.Iniciar a descarga após conectar a bateria ou elemento uma carga resistiva ou eletrônica, em série com um derivador para medição da corrente de descarga, ajustando-a para o valor da corrente de descarga conforme <a href="#item8.3.1">8.3.1</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">8.3.4.As leituras de temperatura dos elementos piloto e leituras de tensão de todos os elementos da bateria durante a descarga, devem ser registradas no mínimo em 10%, 20%, 50%, e 80% da duração nominal da descarga escolhida e em seguida em intervalos de tempo, que permitam determinar a passagem pelo valor da tensão final de descarga especificada</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">8.3.5.O resultado obtido neste ensaio deve atender aos requisitos de <a href="#item6.9">6.9</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">8.3.6.Após o término do ensaio, a bateria ou elemento deve ser recarregado conforme <a href="#item5.5.3">subitem 5.5.3</a> observando o disposto no subitem <a href="#item5.5.3">5.5.3</a> alínea (b).</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">9.APTIDÃO À CARGA COM TENSÃO CONSTANTE</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">9.1.Objetivo:&nbsp;avaliar o comportamento dos acumuladores quanto à aceitação de carga.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">9.2.Requisito:&nbsp;esse ensaio deverá ser conduzido com elementos que tenham sido preparados conforme <a href="#item5">item 5</a>. O tempo de descarga não deve ser inferior a 3 horas e 30 minutos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">9.3.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">9.3.1.Aplicar uma descarga conforme subitens<a href="#item7.3.4"> 7.3.4</a> e <a href="#item7.3.5">7.3.5</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">9.3.2.Proceder em seguida uma carga com tensão constante, conforme valores indicados na <a href="#tabela1">Tabela 1</a>, por um período de 7 horas a 8 horas.</p>
+<p class="Paragrafo_Numerado_Nivel3">&nbsp;</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Tipo de acumulador</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Tensão de carga (V)</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1,425 ± 0,005</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">M e H</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1,455 ± 0,005</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">L</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1,495 ± 0,005</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela1"></a>Tabela 1 - Tensão de carga.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">9.3.3.A corrente de carga deverá ser limitada em 0,2C<sub>5</sub>&nbsp;e a temperatura ambiente deverá estar em 25°C ± 2°C.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">9.3.4.Após a carga, os elementos devem ser mantidos em repouso por no mínimo 1 hora e no máximo 4 horas a uma temperatura ambiente de 25°C ± 2°C.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">9.3.5.Proceder em seguida uma descarga conforme subitens <a href="#item7.3.4">7.3.4 </a>e<a href="#item7.3.5"> 7.3.5</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">9.3.6.A duração da descarga não deve ser inferior a 3 horas e 30 minutos.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">10.ADEQUAÇÃO À FLUTUAÇÃO E À RESERVA DE ELETRÓLITO</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">10.1.Objetivo:&nbsp;avaliar o comportamento dos acumuladores que operam em regime de flutuação, quanto ao consumo de água e estado de equalização (tensão) e capacidade.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">10.2.Requisito:&nbsp;o ensaio deverá ser executado em um grupo de 6 elementos ou em uma bateria completa, que tenha sido submetido ao tratamento prévio, conforme <a href="#item5">item 5</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">10.3.Os elementos que serão submetidos a esse ensaio devem estar no estado de plena carga conforme <a href="#item5.5.3">5.5.3</a>, e mantidos por, pelo menos 24 horas e não mais que 72 horas, em repouso em circuito aberto. Ao final desse período o nível do eletrólito deve ser completado, se necessário, até a marca de máximo pela adição de água destilada ou deionizada.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">10.4.A tensão dos elementos não deve apresentar desvios maiores que ±0,05 V em relação à tensão média dos elementos inicialmente ajustada. Ao final do ensaio os elementos devem ser submetidos a um ensaio de capacidade nominal, sendo que a capacidade obtida não deve ser inferior a C<sub>5</sub>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">10.5.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">10.5.1.Aos elementos, deve ser aplicada a tensão de flutuação informada pelo fornecedor com nível de precisão de ±0,01 V por elemento, durante dois períodos de 3 meses consecutivos.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">10.5.2.Durante todo o ensaio a temperatura do eletrólito deve estar entre os limites de 20°C e 30°C, com valor médio de 25°C ± 2°C.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">10.5.3.Após 3 meses do início do ensaio, a tensão medida nos elementos não deve apresentar desvios maiores que ±0,05 V em relação à tensão média dos elementos inicialmente ajustada.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">10.5.4.Se na primeira verificação os elementos apresentarem valores dentro dos limites esperados, devem ser mantidos na tensão de flutuação por mais 3 meses, ao fim dos quais os valores de tensão devem estar situados dentro dos limites indicados no <a href="#item8.3.3">item 8.3.3</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">10.5.5.Se após a primeira verificação os limites forem ultrapassados, deve ser aplicada uma carga de equalização conforme instruções do fornecedor. Se os elementos não voltarem a ficar dentro dos limites esperados, o ensaio deve ser encerrado.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">10.5.6.Se restabelecida a equalização da tensão, o ensaio deve continuar, sendo considerado este momento como inicial, portanto devendo ter seu nível de eletrólito completado até o nível máximo, com água destilada ou deionizada. Se durante os 3 meses seguintes, repetirem-se desvios além dos limites indicados no<a href="#item8.3.3"> item 8.3.3</a> encerra-se o ensaio. Caso contrario os elementos devem permanecer na tensão de flutuação por mais 3 meses, ao fim dos quais, os valores de tensão devem estar situados dentro dos limites indicados em no <a href="#item8.3.3">item 8.3.3</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">10.5.7.Durante este ensaio, o volume do eletrólito compreendido entre as marcas de máximo e mínimo, em qualquer momento, deve ser maior que 50% de sua reserva, caso contrário o ensaio deve ser encerrado.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">10.5.8.Ao final do ensaio os elementos devem ser submetidos a um ensaio de capacidade nominal, conforme item<a href="#item7.3.1"> 7.3.1</a><a href="http://www.anatel.gov.br/legislacao/resolucoes/2004/217-resolucao-384#item6.2.3.1" target="_blank" rel="noopener noreferrer">&nbsp;</a>a <a href="#item7.3.5">7.3.5</a>, observando-se também de <a href="#item6.7">6.7</a> a <a href="#item6.9">6.9</a>. A capacidade obtida não deve ser inferior a C<sub>5</sub>.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">11.RETENÇÃO DE CARGA (AUTODESCARGA)</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">11.1.Objetivo:&nbsp;avaliar a perda de capacidade (autodescarga) dos elementos após, determinado período em circuito aberto.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">11.2.Requisito:&nbsp;a retenção de carga, decorridos 90 dias em circuito aberto não deve ser inferior a 80% da capacidade nominal. Para esse ensaio é necessário que os elementos tenham sido preparados conforme<a href="#item5"> item 5</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">11.3.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">11.3.1.Os elementos devem ser submetidos ao ensaio de capacidade nas condições nominais, conforme <a href="#item7">item 7</a> obtendo-se a capacidade inicial (C<sub>in</sub>).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">11.3.2.Após o ensaio da capacidade inicial (C<sub>in</sub>) estando os elementos na condição de plena carga, limpar e secar a superfície externa dos mesmos.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">11.3.3.Armazenar os elementos durante 90 dias em circuito aberto, em local limpo e seco, com temperatura ambiente em 25°C ± 2°C.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">11.3.4.Após o período de armazenamento, os elementos devem ser imediatamente submetidos a uma descarga conforme<a href="#item5.5.1"> 5.5.1</a> obtendo-se a capacidade final (C<sub>f</sub>).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">11.3.5.Após o término do ensaio a bateria ou elemento deve ser recarregado conforme <a href="#item5.5.3">5.5.3</a> observando-se o disposto em<a href="#item5.5.3"> 5.3.3</a> alínea (b).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">11.3.6.A retenção de carga (R) será obtida pela equação:</p>
+<p class="Texto_Justificado texto-recuo-1a-linha" style="padding-left: 60px;">R = (C<sub>f</sub>)/C<sub>in</sub>).100%</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">11.3.7.A retenção de carga obtida não deve ser inferior a 80% da capacidade nominal.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">12.DURABILIDADE A CICLOS DE CARGA E DESCARGA</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">12.1.Objetivo:&nbsp;determinar quantos ciclos de carga/descarga nas condições de ensaio o acumulador pode suportar.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">12.2.Requisito:&nbsp;o acumulador quando submetido à verificação do número de ciclos de carga/descarga nas condições de ensaio, deve suportar, no mínimo 400 ciclos. Ao final dos 400 ciclos a capacidade obtida não deve ser inferior a 70% do valor da capacidade nominal.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">12.3.Método de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">12.3.1.O ensaio deverá ser conduzido com elementos que tenham sido submetidos ao tratamento prévio conforme <a href="#item5">item 5 </a>e que se encontrem na condição de plena carga conforme <a href="#item5.5.3">5.5.3</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">12.3.2.Durante o ensaio a temperatura do eletrólito deve ser mantida no mínimo em 20°C e não exceder a 40°C.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">12.3.3.Os elementos devem ser conectados a um dispositivo automático onde serão submetidos a uma série de ciclos contínuos de carga e descarga com corrente constante, sendo cada série composta conforme a <a href="#tabela2">Tabela 2</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">12.3.4.Se o nível do eletrólito se aproximar da marca mínima, deverá ser adicionada aos elementos, água destilada ou deionizada.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item12.3.5"></a>12.3.5.As séries de 1 a 50 ciclos deverão ser repetidas até que a duração da descarga em qualquer final de série de 50 ciclos, se torne inferior a 3 horas e 30 minutos.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item12.3.6"></a>12.3.6.Ocorrendo o disposto em <a href="#item12.3.5">12.3.5</a>, proceder a carga da bateria até o estado de plena carga conforme <a href="#item5.5.3">subitem 5.5.3</a>, observando o disposto no <a href="#item5.5.3">subitem 5.5.3</a> alínea (b). Após o repouso de 1 hora a 4 horas, aplicar uma descarga conforme <a href="#item5.5.1">5.5.1</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">12.3.7.Se o resultado obtido em <a href="#item12.3.6">12.3.6</a> for superior a 70% (3 horas e 30 minutos) reiniciar outra série de 50 ciclos.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">12.3.8.O ensaio deve ser encerrado quando ocorrer o exposto em <a href="#item12.3.5">12.3.5</a> por duas vezes consecutivas ou quando o resultado obtido em <a href="#item12.3.6">12.3.6</a> for inferior a 70% (3 horas e 30 minutos).</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Número de ciclos</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Carga</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Descarga</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,25 C5 durante 6 h</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,25 C5 por 2 h 30 min</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2 a 48</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,25 C5 durante 3 h e 30 min</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,25 C5 por 2 h 30 min</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">49</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,25 C5 durante 6 h 0,25 C5</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,25 C5 até 1,00 V/ E</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">50</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,20 C5 durante 8 h</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,2 C5 até 1,00 V/ E</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela2"></a>Tabela 2 - Ciclos de carga/descarga.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">13.DURABILIDADE À SOBRECARGA COM TENSÃO&nbsp;DE FLUTUAÇÃO E TEMPERATURA ELEVADA</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">13.1.Objetivo:&nbsp;avaliar o comportamento do acumulador submetido a condições adversas e em que grau essas condições podem afetar a vida do acumulador.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">13.2.Requisito:&nbsp;quando os acumuladores forem submetidos a condições adversas com tensão de flutuação e temperatura elevada, os elementos devem suportar no mínimo 3 trimestres. A capacidade obtida ao final do ensaio deverá ser superior a 70% da capacidade nominal (C<sub>5</sub>).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">13.3.Antes e durante o ensaio o nível do eletrólito deve ser mantido no máximo, completando-se quando necessário com água destilada ou deionizada.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left"><a id="item13.4"></a>13.4.Nesse ensaio, os elementos após submetidos ao tratamento prévio conforme <a href="#item5">item 5</a>, estando no estado de plena carga, conforme <a href="#item5.5.3">5.5.3</a>, devem ser colocados em um banho termostatizado que mantenha seu eletrólito na temperatura de 40°C ± 2°C.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;"><a id="item13.5"></a>13.5.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">13.6.Sobre os terminais do eletrólito aplica-se, então, uma tensão de 1,60 V ± 0,01 V, vezes o número de elementos associados em série, com corrente limitada a 2xI<sub>5</sub>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">13.7.Deve ser anotado o valor da corrente quando de sua estabilização ou 72 horas após estarem os elementos submetidos à condição descrita em <a href="#item13.4">13.4</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">13.8.A cada período de 3 meses, após registrar o valor da corrente, deve-se desconectar os elementos do equipamento de carga e deixá-los em repouso na temperatura ambiente (25°C ± 2°C) por 48 horas, em seguida, deve-se realizar o ensaio de capacidade nominal conforme <a href="#item7.3.1">7.3.1</a> a <a href="#item7.3.5">7.3.5</a>, observando-se também de <a href="#item6.7">6.7</a>&nbsp;a <a href="#item6.9">6.9</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">13.9.Após a descarga, verificar se a capacidade obtida é superior a 70% da capacidade nominal C<sub>5</sub>. Se isto ocorrer, repete-se o procedimento descrito e <a href="#item13.5">13.5</a>, caso contrário, o ensaio deve ser&nbsp;encerrado.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">13.10.O número de períodos trimestrais que os elementos devem suportar nas condições descritas nesse ensaio deve ser especificado pelo fornecedor, não devendo ser inferior a 3 períodos.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" align="left">14.DURABILIDADE À SOBRECARGA COM CORRENTE CONSTANTE E TEMPERATURA ELEVADA</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">14.1.Objetivo:&nbsp;avaliar o comportamento do acumulador, utilizado em regime de baixa intensidade de descarga, submetido a condições adversas e em que grau que podem afetar a sua vida. É exclusivo para sistemas fotovoltáicos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">14.2.Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">14.2.1.Quando os acumuladores forem submetidos a condições adversas com corrente constante e temperatura elevada, os elementos não devem ter uma perda de capacidade (P) superior a 30% em regime de 120 horas.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">14.2.2.Deve-se garantir que os elementos estejam em estado de plena carga. Se necessário proceder a uma carga conforme<a href="#item5.5.3"> item 5.5.3</a> alínea (a).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">14.2.3.Durante o ensaio o eletrólito deve ser mantido no máximo, completando-se, quando necessário, com água destilada ou deionizada.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">14.3.Método de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">14.3.1.Os elementos devem ser colocados em um banho termostatizado que mantenha sua temperatura em 40°C ± 2°C;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item14.3.2"></a>14.3.2. Carregar por 500 horas com uma corrente constante e numericamente igual a C<sub>120</sub>/20;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">14.3.3.Após este período de sobrecarga, os elementos devem ficar em repouso até que a temperatura do eletrólito atinja 25°C ± 2°C;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">14.3.4.Determinar a nova capacidade em regime de 120 horas (C<sub>p</sub>) conforme<a href="#item8"> item 8</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">14.3.5.A perda de capacidade (P) é calculada pela equação abaixo:</p>
+<p class="Texto_Alinhado_Esquerda" style="padding-left: 60px; text-align: center;">P(%) = (C<sub>120</sub>&nbsp;- C<sub>p</sub>)/(C<sub>120</sub>).100</p>
+<p class="Tabela_Texto_Alinhado_Esquerda" style="padding-left: 60px; text-align: center;">onde:<br>C<sub>120</sub>&nbsp;: capacidade em regime de 120 horas obtida conforme item 8;<br>C<sub>p</sub>&nbsp;: capacidade em regime de 120 horas, obtida nesse ensaio.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">14.3.6.A perda de capacidade (P), não deve ser superior a 30%, caso contrário os ensaios de tipo<br>devem ser encerrados.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">14.3.7.Após o término do ensaio, os elementos devem ser recarregados conforme <a href="#item5.5.3">item 5.5.3</a>&nbsp;alínea (a).</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" align="left">15.REGENERAÇÃO DA CAPACIDADE</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">15.1.Objetivo:&nbsp;avaliar a habilidade do acumulador em recuperar-se após uma descarga de longo período. Essa característica é importante para o acumulador utilizado em regime de baixa intensidade de descarga. É exclusivo para sistemas fotovoltáicos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">15.2.Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">15.2.1.Após o encerramento do ensaio de regeneração da capacidade, os elementos não devem apresentar perda de capacidade superior a 25%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">15.2.2.Deve-se garantir que os elementos estejam no estado de plena carga. Se necessário proceder a uma carga conforme <a href="#item5.5.3">5.5.3 </a>alínea (a).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a id="item15.2.3"></a>15.2.3.Determinar a capacidade em regime diferente do nominal dos elementos de acordo com o <a href="#item8">item 8</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">15.3.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">15.3.1.Sem recarregar, conectar um resistor com tolerância de&nbsp;±5% e cujo valor é obtido pela&nbsp;fórmula abaixo:</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="padding-left: 60px; text-align: center;">R = (2.Tensão total nominal [V]) / (C<sub>120</sub>/120 [A]).100</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">15.3.2.Manter os elementos nesta condição por 7 dias à temperatura de 25°C&nbsp;±&nbsp;2°C;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left"><a id="item15.3.3"></a>15.3.3.Desconectar o resistor e proceder a um novo ensaio de capacidade em regime diferente do nominal de acordo com o<a href="#item8"> item 8</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">15.3.4.A diferença entre a capacidade previamente obtida no <a href="#item15.2.3">item 15.2.3</a> e a obtida no <a href="#item15.3.3">item 15.3.3</a> deve ser expressa como uma porcentagem em relação a primeira. Este valor representa a perda de capacidade, a qual não deve ser superior a 25%, caso contrário os ensaios de tipo devem ser encerrados.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">15.3.5.Após o término do ensaio, os elementos devem ser recarregados conforme <a href="#item5.5.3">item 5.5.3</a> alínea (a).</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">16.EFICIÊNCIA DE CARGA/DESCARGA</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">16.1.Objetivo:&nbsp;avaliar a eficiência coulométrica em um estado de carga particular. Essa característica é importante para as baterias utilizadas em regimes de baixa intensidade de descarga. É exclusivo para sistemas fotovoltáicos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">16.2.Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">16.2.1.Os elementos devem estar no estado de plena carga. Se necessário aplicar uma carga conforme<a href="#item5.5.3"> 5.3.3</a> alínea (a).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">16.2.2.A eficiência coulométrica de carga/descarga deve ser maior que 75%, com o acumulador em estado de carga de 80%, e ser maior que 55%, com o acumulador em estado de carga de 90%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">16.2.3.Durante o ensaio, a temperatura ambiente deve estar em 25°C ± 2°C;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">16.3.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">16.3.1.Determinar a capacidade em regime de 120 horas (C<sub>120</sub>), conforme <a href="#item8">item 8</a>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">16.3.2.Recarregar os elementos de acordo com <a href="#item5.5.3">5.5.3</a> alínea (a) e<a href="#item5.5.3"> 5.5.3</a> alínea (c).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left"><a id="item16.3.3"></a>16.3.3.Descarregar os elementos com corrente constante e igual a C<sub>120</sub>/120, com exatidão de 1%,&nbsp;por 18 horas&nbsp;±&nbsp;0,05 horas, registrando a tensão total dos elementos (V<sub>e</sub>), com precisão de 1 mV por&nbsp;Volt medido, no instante imediatamente anterior ao término da descarga;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">16.3.4.Recarregar os elementos com corrente constante e igual a C<sub>120</sub>/30, com exatidão de 1%,&nbsp;por 3 horas±&nbsp;0,05 horas, mantendo-os em repouso por um período mínimo de 4 horas até que o&nbsp;eletrólito atinja a temperatura ambiente;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">16.3.5.Descarregar os elementos com corrente constante e igual a C<sub>120</sub>/30, com exatidão de 1%,&nbsp;anotando o tempo de descarga (T<sub>e</sub>) em horas, até atingir a tensão (V<sub>e</sub>) obtida no item<a href="#item16.3.3"> 16.3.3</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">16.3.6.A eficiência coulométrica em estado de carga de 90%, na temperatura ambiente, é dada por:</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="padding-left: 60px; text-align: center;">Eficiência(%) = [ T<sub>e</sub>.(C<sub>120</sub>/120) ]/[ 3.(C<sub>120</sub>/30) ].100</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">16.3.7.Recarregar os elementos conforme <a href="#item5.5.3">subitens 5.5.3</a> alínea (a) e<a href="#item5.5.3"> 5.5.3</a> alínea (c).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">16.3.8.Descarregar os elementos com corrente constante e igual a C<sub>120</sub>/120, com exatidão de 1%, por 30 horas ± 0,05 horas, registrando a tensão total dos elementos (V<sub>f</sub>), com precisão de 1 mV por Volt medido, no instante imediatamente anterior ao término da descarga;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left">16.3.9.Recarregar os elementos com corrente constante e igual a C<sub>120</sub>/30, com exatidão de 1%,&nbsp;por 3 horas±&nbsp;0,05 horas, mantendo-os em repouso por um período mínimo de 4 horas, até que o&nbsp;eletrólito atinja a temperatura ambiente;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">16.3.10.Descarregar os elementos com corrente constante e igual a C<sub>120</sub>/120, com exatidão de 1%, anotando o tempo de descarga (T<sub>f</sub>) em horas até atingir a tensão (V<sub>f</sub>), obtida no item 6.11.3.8.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">16.3.11.A eficiência coulométrica em estado de carga de 80%, na temperatura ambiente, é dada por:</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="padding-left: 60px; text-align: center;">Eficiência(%) = [ T<sub>f</sub>.(C<sub>120</sub>/120) ]/[ 3.(C<sub>120</sub>/30) ].100</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">16.3.12A eficiência coulométrica de carga/descarga obtida segundo o procedimento descrito deve ser maior do que 75%, com o acumulador em estado de carga de 80% e ser maior do que 55%, com o acumulador em estado de carga de 90%, caso contrário os ensaios de tipo devem ser encerrados.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;"><a name="item16.3.13"></a>16.3.13. Após o término do ensaio, os elementos devem ser recarregados conforme <a href="#item5.5.3">item 5.5.3</a> alínea (a).</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">17.RESISTÊNCIA INTERNA E CORRENTE DE CURTO-CIRCUITO</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">17.1.Objetivo:&nbsp;determinar a resistência interna do elemento e sua corrente de curto-circuito para o dimensionamento dos dispositivos de proteção em instalações elétricas.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">17.2.Requisitos:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">17.2.1.A resistência interna do elemento ou monobloco e sua corrente de curto-circuito devem ser devidamente informadas na documentação que acompanha o produto.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">17.2.2.Para este ensaio os elementos devem ter sido preparados conforme<a href="#item5"> item 5</a> e estarem no estado de plena carga conforme subitem 5.5.3, observando o disposto no <a href="#item5.5.3">subitem 5.5.3</a> alínea (b).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">17.2.3.Após a preparação, conforme 7.2.2, os elementos devem ser colocados em um local com temperatura apropriada até que o eletrólito atinja 25ºC ± 2ºC.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">17.3.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">17.3.1.A determinação da corrente de curto-circuito normalizada é feita por meio de resolução gráfica, da função linear U = f (I), determinando-se dois pontos, conforme procedimento apresentado a seguir nas alíneas (a) a (e) e no gráfico da <a href="#figura1">figura 1</a>.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">a)para determinar o primeiro ponto, no gráfico, descarregar os elementos com uma corrente I = (4 a 6)I<sub>5</sub>. Iniciar a leitura de corrente e tensão após 20 segundos, interrompendo a descarga até no máximo 25 segundos do início da mesma.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">b)manter os elementos em ensaio em circuito aberto durante 5 minutos.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">c)para determinar o segundo ponto, descarregar os elementos com uma corrente I = (20 a 40)I<sub>5</sub>. Decorridos 5 segundos, medir a corrente e a tensão dos elementos.</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">d)colocar estes pontos em um gráfico e traçar a reta correspondente. A característica U = f (I) é linearmente extrapolada para U = 0. A interseção indica a corrente de curto-circuito (I<sub>cc</sub>), obtida também, pela fórmula a seguir:</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: center;">I<sub>cc</sub>&nbsp;= (U<sub>1</sub>.I<sub>2</sub>&nbsp;- U<sub>2</sub>.I<sub>1</sub>) / (U<sub>1</sub>&nbsp;- U<sub>2</sub>)</p>
+<p class="Texto_Alinhado_Esquerda"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,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" width="498" height="343"></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: center;"><a id="figura1"></a>Figura 1</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">e)a resistência interna (R<sub>i</sub>) pode ser calculada com dados retirados do gráfico da <a href="#figura1">figura 1</a>, conforme&nbsp;equação a seguir:</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="padding-left: 60px;">R<sub>i</sub>&nbsp;= (U<sub>1</sub>&nbsp;- U<sub>2</sub>) / (I<sub>2</sub>&nbsp;- I<sub>1</sub>)</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">f)A exatidão obtida neste ensaio é da ordem de 10%. Pode ser utilizado o esquema indicado na <a href="#figura2">figura 2</a> para realização deste ensaio.</p>
+<p class="Item_Alinea_Letra"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,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"></p>
+<p class="Item_Alinea_Letra" style="text-align: center;"><a id="figura2"></a>Figura 2</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">18.INSPEÇÃO VISUAL</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">18.1.Objetivo:&nbsp;verificar se o aspecto geral dos elementos ou monoblocos corresponde ao indicado na documentação técnica apresentada pelo fornecedor.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">18.2.Requisito<strong>:</strong>&nbsp;cada elemento de identificação da bateria deve conter, no mínimo, as informações definidas em<a href="#item4.5"> 4.5</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">18.3.Procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;" align="left"><a name="item18.3.1"></a>18.3.1. Por meio de inspeção visual, verificar:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">a)Alinhamento correto dos pólos;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">b)Havendo furos nos pólos para conexão das interligações por meio de parafusos, verificar se estes estão localizados de forma a permitir o perfeito alinhamento das barras de interligação e se são compatíveis com os parafusos a serem utilizados;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">c)Se o vaso está limpo, sem rebarbas, quebras e uniforme quanto a cor;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">d)Ausência de trincas no vaso;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">e)Se há uniformidade e continuidade da cola / selante na junção tampa/vaso;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 60px;">f)Ausência de vazamento de solução em qualquer ponto da junção tampa/vaso e tampa/pólo.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">19.ESTANQUEIDADE</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;" align="left">19.1.Objetivo:&nbsp;verificar a hermeticidade dos elementos ou monobloco.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">19.2.Requisito e procedimento de ensaio:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">19.2.1.Conectar, por meio de mangueira adequada, dispositivo que atenda as exigências do ensaio de estanqueidade, composto de fonte de gás comprimido (ar ou nitrogênio), filtros para retenção de água e óleo, e manômetro de dois estágios de baixa pressão). A tubulação utilizada deve ser isenta de umidade condensada.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="padding-left: 60px;">19.2.1.Aplicar no interior dos elementos 7 kPa (0,07 kgf/cm<sup>2</sup>) de pressão. Após a estabilização do sistema, observar durante 60 segundos a inexistência de queda de pressão no manômetro devido a vazamento de gás ou eletrólito na junção pólo/tampa e em qualquer ponto da junção tampa/vaso, ou danos á sua integridade física.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" align="left">20.COMPOSIÇÃO DA AMOSTRA E SEQUENCIA DE ENSAIOS</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">20.1.Para a realização de ensaios, a amostra deve ser composta de 14 elementos ou 11 monoblocos sendo que o critério de amostragem deve considerar o regime de descarga (altíssima, alta, média e baixa) e sua aplicação, dividida em 4 grupos, da seguinte forma:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">a)Grupo 1 – 6 elementos ou 3 monoblocos;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">b)Grupo 2 – 3 elementos ou 3 monoblocos;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">c)Grupo 3 – 3 elementos ou 3 monoblocos;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="padding-left: 30px;">d)Grupo 4 – 2 elementos ou 2 monoblocos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">20.2.Para efeito dos ensaios elétricos dentro de cada grupo, os elementos ou monoblocos dos grupos 1, 2 e 3 devem ser associados em série. Os elementos ou monoblocos do grupo 1 devem ser dispostos em 2 filas de 3 elementos de modo a ser utilizada uma interligação entre filas.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">20.3.Os ensaios a serem realizados nos elementos ou monoblocos pertencentes aos grupos de 1 a 4 devem obedecer à distribuição e à sequência definida na<a href="#tabela3"> tabela 3</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">20.4.Os ensaios elétricos devem ser iniciados no máximo 3 meses após o fornecimento dos elementos ou monoblocos pelo fabricante e deve ser seguida a sequência pré-determinada, sem prejuízo à continuação dos ensaios.</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="1" rowspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>Distribuição e sequência de ensaios</strong></p>
+</td>
+<td colspan="4" rowspan="1">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Grupos</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>1</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>2</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>3</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>4</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Inspeção visual</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Estanqueidade</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Tratamento prévio para ensaios elétricos</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Capacidade em Ampère-hora nas condições nominais (C<sub>5</sub>)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Aptidão à carga com tensão constante</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Adequação à flutuação e à reserva de eletrólito</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Capacidade em Ampère-hora para regime diferente do nominal (C<sub>i)</sub></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Retenção de carga (autodescarga)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Durabilidade a ciclos de carga e descarga</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Resistência interna e corrente de curto-circuito</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Durabilidade à sobrecarga com tensão de flutuação e temperatura elevada</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Durabilidade à sobrecarga com corrente constante e temperatura elevada</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Regeneração da capacidade</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Eficiência de carga/descarga</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabela3"></a>Tabela 3 - Distribuição e sequência de ensaios.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha">21.IDENTIFICAÇÃO DA HOMOLOGAÇÃO</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="padding-left: 30px;">21.1.Os acumuladores deverão portar um selo de segurança que permita a fácil identificação de origem pelo usuário e pela Fiscalização da Agência, assim como a impossibilidade de falsificação, alteração, duplicação ou simulação. Este selo deve conter a logomarca Anatel, o número da homologação e identificação que permita verificar a rastreabilidade do acumulador.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1173"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovar" class="link-categoria">Aprovar</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos" class="link-categoria">Requisitos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Técnicos" class="link-categoria">Técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação" class="link-categoria">Avaliação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Conformidade" class="link-categoria">Conformidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Acumuladores" class="link-categoria">Acumuladores</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

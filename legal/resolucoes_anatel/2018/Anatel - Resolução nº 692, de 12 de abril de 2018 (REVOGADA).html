@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+  </script>
+  <script type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 692, de 12 de abril de 2018 (REVOGADA)
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2018/1025-resolucao-692"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Alteração, Regulamento, Serviço de Acesso Condicionado SeAC, Aprovação, PrestacaoServicosTelecom, ResolucaoRevogada" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Altera o Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela Resolução nº 618, de 24 de julho de 2013." name="description"/>
+   <title>
+    Anatel - Resolução nº 692, de 12 de abril de 2018 (REVOGADA)
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=445929338" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=905830821" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"7e11253d4df12a402cc0b874492b9c02","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=2095463172" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+    </script>
+    <script type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026163340" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/2018/1025-resolucao-692">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/2018" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/2018">
+             2018
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 692, de 12 de abril de 2018 (REVOGADA)
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312 current active">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-25bdf91c6c56d7da41b0e2ef-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-25bdf91c6c56d7da41b0e2ef-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="25bdf91c6c56d7da41b0e2ef-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 692, de 12 de abril de 2018 (REVOGADA)
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Segunda, 16 Abril 2018 10:05
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Quarta, 12 Novembro 2025 14:32
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 23724
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="20" cellspacing="2" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">
+                  <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777" title="Acesse a Resolução">
+                   Revogada pela Resolução Anatel nº 777, de 28 de abril de 2025
+                  </a>
+                 </td>
+                 <td style="width: 50%; text-align: justify;" valign="middle">
+                  <p style="text-align: justify;">
+                   Altera o Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela Resolução nº 618, de 24 de julho de 2013.
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p style="text-align: justify;">
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://www.imprensanacional.gov.br/web/guest/consulta?p_p_id=101&amp;p_p_lifecycle=0&amp;p_p_state=maximized&amp;p_p_mode=view&amp;_101_struts_action=%2Fasset_publisher%2Fview_content&amp;_101_returnToFullPageURL=http%3A%2F%2Fwww.imprensanacional.gov.br%2Fweb%2Fguest%2Fconsulta%3Fp_auth%3D6XRzKULf%26p_p_id%3D3%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_state_rcv%3D1&amp;_101_assetEntryId=10486401&amp;_101_type=content&amp;_101_groupId=68942&amp;_101_urlTitle=resolucao-n-692-de-12-de-abril-de-2018-10486397&amp;_101_redirect=http%3A%2F%2Fwww.imprensanacional.gov.br%2Fweb%2Fguest%2Fconsulta%3Fp_p_id%3D3%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_3_advancedSearch%3Dfalse%26_3_modifiedselection%3D1%26_3_keywords%3DAgencia%2BNacional%2Bde%2BTelecomunica%25C3%25A7%25C3%25B5es%26_3_delta%3D20%26_3_modifieddayFrom%3D16%26_3_modifiedfrom%3D16%252F04%252F2018%26_3_andOperator%3Dtrue%26_3_modified%3D%255B20180416000000%2BTO%2B20180416235959%255D%26_3_groupId%3D0%26_3_modifiedto%3D16%252F04%252F2018%26_3_modifieddayTo%3D16%26_3_ddm_21040_pubName_pt_BR_sortable%3D%26_3_modifiedyearTo%3D2018%26_3_modifiedyearFrom%3D2018%26_3_modifiedmonthFrom%3D3%26_3_resetCur%3Dfalse%26_3_cur%3D3%26_3_struts_action%3D%252Fsearch%252Fsearch%26_3_modifiedmonthTo%3D3&amp;inheritRedirect=true" title=" Acesse o DOU ">
+                16/4/2018
+               </a>
+               .
+              </p>
+              <p style="text-align: justify;">
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <b>
+                 O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+                </b>
+                , no uso das atribuições que lhe foram conferidas pelo
+                <a href="http://legislacao.anatel.gov.br/leis/2-lei-9472#art22" title="Acesse o Artigo ">
+                 art. 22
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997, e pelo
+                <a href="http://legislacao.anatel.gov.br/decretos/3-decreto-2338#art35" title="Acesse o Artigo ">
+                 art. 35
+                </a>
+                do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997,
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO o disposto nos §§ 4º e 9º da
+                <a href="http://www.anatel.gov.br/legislacao/leis/143-lei-12485" title="Acesse a Lei">
+                 Lei nº 12.485, de 12 de setembro de 2011
+                </a>
+                ;
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO as contribuições recebidas em decorrência da
+                <a href="https://sistemas.anatel.gov.br/SACP/Contribuicoes/TextoConsulta.asp?CodProcesso=C1907&amp;Tipo=1&amp;Opcao=finalizadas" title="Acesse a Consulta Pública">
+                 Consulta Pública nº 3, de 11 de março de 2016
+                </a>
+                , publicada no Diário Oficial da União do dia 14 de março de 2016;
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO deliberação tomada em sua
+                <a href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=348121&amp;assuntoPublicacao=null&amp;caminhoRel=null&amp;filtro=1&amp;documentoPath=348121.pdf" title="Acesse a Reunião">
+                 Reunião nº 847, de 5 de abril de 2018
+                </a>
+                ;
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO o constante dos autos do
+                <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?5gYoR1KAsC6DjRCbPhmMOOVg9zRBSU6KM_dMM2dffV6uXABkpM3AC_FvsJjJLZawJGpS7XJ2Cix36pBUfTFiDYKaqsMsuikoN8kOfA-GkdZ8pWuLeY0OaugknZ2Xsi4s" title="Acesse o Processo ">
+                 Processo nº 53500.008950/2014-11
+                </a>
+                ,
+               </span>
+              </p>
+              <p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                RESOLVE:
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º O
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art3" title="Acesse o Artigo ">
+                 art. 3º
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title=" Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar acrescido dos seguintes incisos:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 3º (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXXIII - Capacidade Útil Total: número máximo de Canais de Programação que podem ser distribuídos por meio da Rede da Prestadora;
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXXIV - Grade de Programação: relação e ordem sequencial de todos os Canais de Programação distribuídos pela Prestadora por meio de seus sistemas;
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XXXV - Ponto de Entrega dos Sinais da Programação: local específico, identificado por meio de coordenadas geográficas, definido pela Prestadora para a entrega dos sinais da Programação das Programadoras de que tratam os incisos II a XI do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art52" title="Acesse o Artigo ">
+                 art. 52
+                </a>
+                deste Regulamento;”
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 2º O parágrafo único do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art31" title="Acesse o Artigo ">
+                 art. 31
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title="Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 31. (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A aprovação da transferência de outorga está condicionada à assunção, pela empresa cessionária, de todas as obrigações e à manutenção das condições de autorização ou de outras condições previstas na regulamentação.”
+                <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                 (Revogado pela Resolução nº 769, de 30 de setembro de 2024)
+                </a>
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 3º O parágrafo único do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art32" title="Acesse o Artigo ">
+                 art. 32
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title="Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 32. (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A transferência da outorga entre empresas de um mesmo Grupo poderá ser efetivada pela Anatel a qualquer momento, mediante solicitação das partes interessadas e com observância das disposições contidas neste Capítulo.”
+                <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                 (Revogado pela Resolução nº 769, de 30 de setembro de 2024)
+                </a>
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art4">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 4º O
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art34" title="Acesse o Artigo ">
+                 art. 34
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title="Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 34. Deverá ser submetida previamente à Anatel alteração que possa vir a caracterizar transferência de controle, este apurado nos termos do Regulamento de Apuração de Controle e de Transferência de Controle em Empresas Prestadoras dos Serviços de Telecomunicações, quando as partes envolvidas na operação se enquadrarem nas condições dispostas no
+                <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/Lei/L12529.htm#art88" title="Acesse o Artigo ">
+                 art. 88
+                </a>
+                da Lei nº 12.529, de 2011.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A aprovação da transferência de controle levará em consideração a manutenção das condições de autorização ou de outras condições previstas na regulamentação, devendo a prestadora enviar à Agência requerimento contendo sua composição societária atual, a operação pretendida e o quadro resultante da operação, além da documentação constante do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#anexoII" title="Acesse o Anexo ">
+                 Anexo II
+                </a>
+                deste Regulamento.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º A Anatel, a seu critério, poderá determinar que as alterações societárias que não se enquadrem nos termos definidos no caput sejam submetidas à anuência prévia.”
+                <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                 (Revogado pela Resolução nº 769, de 30 de setembro de 2024)
+                </a>
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art5">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 5º O
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art39" title="Acesse o Artigo ">
+                 art. 39
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title=" Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 39. Os casos de transferência de controle que não se enquadrarem no caput e no § 2º do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art34" title="Acesse o Artigo ">
+                 art. 34
+                </a>
+                deste Regulamento, e ainda, as modificações da denominação social, do endereço da sede, a transformação do tipo societário e dos acordos de sócios que regulam as transferências de quotas e ações, bem como o exercício de direito a voto, das Prestadoras de SeAC e de suas sócias diretas e indiretas, devem ser comunicadas à Anatel, no prazo de 60 (sessenta) dias, após o registro dos atos no órgão competente.”
+                <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                 (Revogado pela Resolução nº 769, de 30 de setembro de 2024)
+                </a>
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art6">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 6º O
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art52" title="Acesse o Artigo ">
+                 art. 52
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title="Acesse o Artigo ">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 52. (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Os canais de programação com os sinais analógicos das geradoras locais, previstos no inciso I, deverão ser oferecidos aos assinantes desde o início da prestação comercial do serviço.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º-A Os canais de programação com os sinais digitais das geradoras locais deverão ser oferecidos aos assinantes a partir da data prevista na pactuação entre a Geradora Local e a Prestadora ou, caso essa não seja alcançada, a partir da exigência de sua distribuição gratuita, observado o disposto no
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art62" title="Acesse o Artigo ">
+                 art. 62
+                </a>
+                do presente Regulamento.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º No caso de inviabilidade técnica ou econômica para o cumprimento do disposto no inciso I, por prestadora de SeAC que utilize a plataforma de satélite, deve-se observar que  o carregamento de um canal de Geradora Local de radiodifusão de sons e imagens, pertencente a um conjunto de estações, sejam geradoras locais ou retransmissoras, e caracterizado pela presença em todas as regiões geopolíticas do país, pelo alcance de, ao menos, um terço da população brasileira e pelo provimento da maior parte da programação por uma das estações para as demais, implicará o carregamento de, ao menos, um canal de Geradora de cada um dos demais conjuntos de geradoras e retransmissoras com as mesmas características.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 5º É direito da Prestadora do SeAC receber das programadoras dos canais de que tratam os incisos II a XI deste artigo os sinais dos canais nas instalações indicadas pela Prestadora, devendo ser observado o seguinte:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - a Prestadora que possuir estação licenciada para serviços de televisão por assinatura localizada no mesmo município onde haja estúdio, centro de produção ou instalações similares de Programadora dos referidos canais, utilizados para programar seus canais, não poderá indicar Ponto de Entrega da Programação fora dos limites do respectivo município;
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - quando não houver estúdio, centro de produção ou instalações similares de Programadora dos referidos canais em município que contenha estação licenciada para serviços de televisão por assinatura, a Prestadora deverá indicar como Ponto de Entrega da Programação a estação mais próxima das instalações da Programadora; e,
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - é vedado à Prestadora indicar Ponto de Entrega da Programação fora dos limites territoriais da República Federativa do Brasil.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 5º-A A Prestadora não poderá inviabilizar, mediante a imposição de condições à Programadora, a entrega em suas instalações da Programação dos canais de que trata o § 5º deste artigo, devendo indicar mais de um meio de entrega, sempre que possível.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 6º A Prestadora, desde que haja viabilidade técnica, poderá possibilitar a entrega dos sinais dos canais de que tratam os incisos II a XI deste artigo por meio de seu próprio sistema, ou firmar acordos com as Programadoras desses canais para assumir ou partilhar os ônus decorrentes dessa entrega.”
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art7">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 7º O
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art53" title="Acesse o Artigo ">
+                 art. 53
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title=" Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 53. (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - a Agência definirá quais dos Canais de Programação de Distribuição Obrigatória a Prestadora estará dispensada da distribuição obrigatória em cada uma de suas estações, por meio de instrumento decisório específico;”
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º A decisão da Anatel pela dispensa da obrigação de distribuição será proferida por prazo determinado, não superior a 3 (três) anos, conforme definido em instrumento decisório específico.”
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 4º Havendo novo pedido de dispensa do carregamento dos Canais de Programação de Distribuição Obrigatória, este deverá ser protocolizado pela Prestadora com antecedência mínima de 120 (cento e vinte) dias do vencimento do prazo anteriormente estabelecido para dispensa.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 5º Em caso de indeferimento do pedido de dispensa, a Prestadora deverá cumprir a obrigação de distribuição dos Canais de Programação de Distribuição Obrigatória no prazo de até 30 (trinta) dias, contados a partir da publicação da decisão ou do fim do prazo de dispensa anteriormente concedido.”
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art8">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 8º O Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581" title=" Acesse a Resolução">
+                 Resolução nº 581, de 26 de março de 2012
+                </a>
+                , e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title=" Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar acrescido dos seguintes artigos:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 53-A. A oferta concomitante de outros serviços de telecomunicações ou de serviços de valor adicionado pela Rede da Prestadora ou ainda, o compartilhamento da Rede com outra prestadora de serviço de telecomunicações, não desobriga a disponibilização dos Canais de Programação de Distribuição Obrigatória.”
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 54-A. Na solicitação de dispensa por motivo de inviabilidade técnica, a Prestadora deve informar, no mínimo:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - a relação de todas as Geradoras Locais ou Retransmissoras existentes na Área de Abrangência do Atendimento, no caso do SeAC, ou na Área de Prestação do Serviço, para os demais serviços de televisão por assinatura;
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - Grade de Programação atualizada, a identificação comercial de cada Canal de Programação e suas respectivas larguras de banda ou taxas de transmissão, conforme o caso;
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - detalhamento das plataformas utilizadas nas estações e das tecnologias de Rede, informando a Capacidade Útil Total; e,
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - descrição detalhada da restrição técnica existente e que enseja a necessidade da dispensa de carregamento parcial ou total de Canais de Programação de Distribuição Obrigatória.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Art. 54-B. A estação da Prestadora que opera com tecnologia MMDS está dispensada da disponibilização dos Canais de Programação de Distribuição Obrigatória.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Art. 54-C. A estação da Prestadora que opera com largura de banda de 6 MHz na faixa de UHF está dispensada da disponibilização dos Canais de Programação de Distribuição Obrigatória.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Art. 54-D. Em nenhum caso será concedida dispensa por inviabilidade técnica da disponibilização dos Canais de Programação de Distribuição Obrigatória às estações da Prestadora que distribuem o serviço aos Assinantes por meios confinados.”
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" id="art9" style="text-align: justify;">
+               <a id="art9">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 9º. O
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art62" title="Acesse o Artigo ">
+                 art. 62
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title=" Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 62. (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º-A Outras soluções pactuadas entre as partes poderão ser apresentadas à Anatel para fins de apreciação e cumprimento do disposto no regulamento e garantia das disposições do caput”.
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art10">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 10. O
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art85" title="Acesse o Artigo ">
+                 art. 85
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title=" Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 85. (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Aplicam-se ao Serviço de TV a Cabo os itens 2, 8 e 9 da Norma do Serviço de TV a Cabo, aprovada pela
+                <a href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=220662&amp;assuntoPublicacao=null&amp;caminhoRel=null&amp;filtro=1&amp;documentoPath=220662.pdf" title="Acesse a Portaria ">
+                 Portaria do Ministério das Comunicações nº 256, de 18 de abril de 1997
+                </a>
+                .
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º A Prestadora que foi autorizada a proceder à adaptação de sua outorga de Serviço de TV a Cabo para o SeAC continuará obrigada a cumprir os compromissos de atendimento originalmente assumidos, na respectiva Área de Prestação do Serviço, podendo fazê-lo, após a adaptação, por meio de outras tecnologias, ainda que não seja por meio da implantação de estrutura de rede física, sem prejuízo de seu sancionamento pelas infrações cometidas sob o regime anterior.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º Nos processos com trânsito em julgado administrativo e nos processos pendentes de julgamento pelo Conselho Diretor, as determinações específicas neles contidas, nas quais se impôs a obrigação de cumprimento dos compromissos de implantação da infraestrutura de suporte ao serviço de TV a Cabo (obrigações de home passed), poderão ser cumpridas na forma do § 2º deste artigo, desde que efetivada a adaptação da prestadora ao SeAC.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 4º Nos processos em trâmite e naqueles que vierem a ser instaurados, a Anatel deverá considerar eficaz, a partir da adaptação da outorga do Serviço de TV a Cabo para o SeAC, o adimplemento dos compromissos de atendimento por meio de outras tecnologias, persistindo a faculdade de sancionamento por infrações cometidas anteriormente à adaptação, conforme parte final do § 2º deste artigo.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 5º A adaptação ao SeAC não tem o efeito de abolir a infração cometida por prestadora que, ainda sujeita ao regime anterior do Serviço de TV a Cabo, tenha-se utilizado de tecnologia diversa do cabeamento físico, na expectativa de adimplir compromissos de atendimento."
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art11">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 11. O
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art92" title="Acesse o Artigo ">
+                 art. 92
+                </a>
+                do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title=" Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 92. (...)
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Não se aplica ao TVA o disposto nos arts.
+                <a href="http://www.anatel.gov.br/legislacao/leis/143-lei-12485#art5" title="Acesse o Artigo ">
+                 5º
+                </a>
+                e
+                <a href="http://www.anatel.gov.br/legislacao/leis/143-lei-12485#art6" title="Acesse o Artigo ">
+                 6º
+                </a>
+                da Lei nº 12.485, de 2011, e o disposto no § 1º do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art50" title="Acesse o Artigo ">
+                 art. 50
+                </a>
+                e no inciso II do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art73">
+                 art. 73
+                </a>
+                deste Regulamento, sendo que permanece em vigor eventual fixação, pela Anatel, de percentual sobre o tempo de irradiação diária para a distribuição de sons e imagens por sinais não codificados, inclusive na hipótese do caput.
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art12">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 12. O
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art5anexoII" title="Acesse o Artigo ">
+                 art. 5º
+                </a>
+                do Anexo II ao Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title="Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                , passa a vigorar com a seguinte redação:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Art. 5º. Nos casos de transferência de controle disposta no
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art34" title="Acesse o Artigo ">
+                 art. 34
+                </a>
+                deste Regulamento, a Prestadora deve apresentar os documentos enumerados no inciso I, alíneas ‘a’, ‘b’, e ‘c’, e no inciso IV do art. 1º deste Anexo.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único
+                <strong>
+                 .
+                </strong>
+                Os documentos necessários à comprovação da regularidade fiscal devem ser apresentados pela Prestadora envolvida na operação até o momento da assinatura do Ato que formaliza a anuência prévia concedida pela Agência para a transferência requerida."
+                <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                 (Revogado pela Resolução nº 769, de 30 de setembro de 2024)
+                </a>
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art13">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 13. O Regulamento Geral de Acessibilidade, aprovado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2016/905-resolucao-n-667" title=" Acesse a Resolução">
+                 Resolução nº 667, de 30 de maio de 2016
+                </a>
+                , passa a vigorar acrescido do seguinte dispositivo:
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                “Título III - A
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                DA ACESSIBILIDADE NAS UNIDADES RECEPTORAS DECODIFICADORAS
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Art. 13-A. As pessoas com deficiência têm direito à Unidade Receptora Decodificadora (URD), que permita a utilização de recursos de acessibilidade no SeAC, em todas as suas saídas de sinal, analógicas e digitais, sempre que solicitado pelo assinante, independentemente do Plano de Serviço e sem custo adicional.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Na distribuição do sinal, é vedada a exclusão de qualquer tipo de recursos de acessibilidade no SeAC que estiver incluso na programação original.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º. Para efeito do disposto no caput, são considerados como recursos de acessibilidade no SeAC a legenda oculta, a audiodescrição, a janela de libras, e menus com audiolocução, dentre outros recursos.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º. Em caso de inviabilidade técnica comprovada, o cumprimento do § 1º poderá ser dispensado, de forma específica e prazo determinado, a cada recurso de acessibilidade.
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 4º. A prestadora fica obrigada a oferecer a substituição da URD de propriedade de usuário, tenha sido ela adquirida na rede da prestadora ou não, bem como garantir a plena funcionalidade de todos os recursos de acessibilidade, nos mesmos critérios inicialmente contratados.”
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art14">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 14. Revogam-se os seguintes dispositivos do Regulamento do Serviço de Acesso Condicionado (SeAC) e de seus Anexos, aprovados pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581" title=" Acesse a Resolução">
+                 Resolução nº 581, de 26 de março de 2012
+                </a>
+                , e alterado pela
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2013/537-resolucao-618" title=" Acesse a Resolução">
+                 Resolução nº 618, de 24 de julho de 2013
+                </a>
+                :
+               </span>
+              </p>
+              <p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - os art.
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art33" title="Acesse o Artigo ">
+                 33
+                </a>
+                ,
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art35" title="Acesse o Artigo ">
+                 35
+                </a>
+                e
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art36" title="Acesse o Artigo ">
+                 36
+                </a>
+                ;
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - os §§ 7º, 8º e 9º do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art52" title="Acesse o Artigo ">
+                 art. 52
+                </a>
+                ;
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - o § 2º do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art53" title="Acesse o Artigo ">
+                 art. 53
+                </a>
+                ;
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - os incisos XXI e XXII e o parágrafo único do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art73" title="Acesse o Artigo ">
+                 art. 73
+                </a>
+                ;
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - o parágrafo único do
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art3anexoII" title="Acesse o Artigo ">
+                 art. 3º
+                </a>
+                do Anexo II; e,
+                <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                 (Revogado pela Resolução nº 769, de 30 de setembro de 2024)
+                </a>
+               </span>
+              </p>
+              <p style="padding-left: 60px; text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - o
+                <a href="http://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art4anexoII" title="Acesse o Artigo ">
+                 art. 4º
+                </a>
+                do Anexo II.
+                <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">
+                 (Revogado pela Resolução nº 769, de 30 de setembro de 2024)
+                </a>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art15">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 15. Esta Resolução entra em vigor 90 (noventa) dias após sua publicação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O disposto no art. 10 desta Resolução entra em vigor imediatamente, na data de sua publicação.
+               </span>
+              </p>
+              <p class="assina" style="text-align: center;">
+               ANIBAL DINIZ
+              </p>
+              <p class="cargo" style="text-align: center;">
+               Presidente do Conselho Substituto
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_1025">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/2018" rel="tag">
+                 2018
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Alteração">
+                 Alteração
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento">
+                 Regulamento
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20de%20Acesso%20Condicionado%20SeAC">
+                 Serviço de Acesso Condicionado SeAC
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação">
+                 Aprovação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PrestacaoServicosTelecom">
+                 PrestacaoServicosTelecom
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada">
+                 ResolucaoRevogada
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-25bdf91c6c56d7da41b0e2ef-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="25bdf91c6c56d7da41b0e2ef-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

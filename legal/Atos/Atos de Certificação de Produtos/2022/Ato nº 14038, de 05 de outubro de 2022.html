@@ -1,0 +1,2396 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 14038, de 05 de outubro de 2022</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1765-ato-14038">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Aprovação, Requisitos Técnicos, Cabos Coaxiais Flexíveis, 75 Ω, Tranças de Fios de Alumínio, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aprovar os requisitos técnicos relativos à avaliação da conformidade de cabos coaxiais flexíveis de 75 Ω com trança de fios de alumínio, conforme o anexo a este Ato.">
+	<title>Anatel - Ato nº 14038, de 05 de outubro de 2022</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1926056664" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1346114416" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1680621391" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141353" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2022">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2022">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2022">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2022" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2022" class="pathway">2022</a> <span class="separator">&gt;</span> <span>Ato nº 14038, de 05 de outubro de 2022</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;949058193de0cb39&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 14038, de 05 de outubro de 2022		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quinta, 24 Novembro 2022 08:27			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Sexta, 25 Novembro 2022 15:56			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 2386			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico de <a title="Acesse o Boletim de Serviço Eletrônico" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=10442740&amp;id_orgao_publicacao=0">24/11/2022</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL,&nbsp;</b>no uso das atribuições que lhe foram conferidas pela <a title="Acesse a Portaria" href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a title="Acesse o artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art19">Art. 19</a> da Lei n.º 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o Inciso II do <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2000/129-resolucao-242#art9Anexo">Art. 9º</a> do Regulamento para Certificação e Homologação de Produtos para Telecomunicações, aprovado pela Resolução n.º 242, de 30 de novembro de 2000;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO&nbsp;o <a title="Acesse o artigo" href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419#art1">Art. 1º</a> da Portaria nº 419 de 24 de maio de 2013;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlGpvtuB2H7iq9HmXDIKLcyW2zhiI6shYHVNV6a9uOdFv">processo nº&nbsp;53500.002731/2018-52</a>;</p>
+<p class="resolve" style="text-align: justify;">RESOLVE:</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art1"></a>Art. 1º Aprovar os requisitos técnicos relativos à avaliação da conformidade de cabos coaxiais flexíveis de 75 Ω com trança de fios de alumínio, conforme o <a title="Acesse o anexo" href="#anexo">anexo</a> a este Ato.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art2"></a>Art. 2º Revogar,&nbsp;180 dias após a data da publicação deste Ato,&nbsp;os requisitos técnicos relativos à avaliação da conformidade de cabos coaxiais flexíveis de 75 Ω com trança de fios de alumínio ,aprovados pelo <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1182-ato-958">Ato nº 958, de 08 de fevereiro de 2018</a>.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art3"></a>Art. 3º Este Ato entra em vigor&nbsp;na data de sua publicação no&nbsp;Boletim de Serviços Eletrônico da Anatel, sendo mandatória a&nbsp;aplicação do seu anexo&nbsp;180 dias após a data de sua publicação.</p>
+<p style="text-align: center;">VINICIUS OLIVEIRA CARAM GUIMARÃES<br>Superintendente de Outorga e Recursos à Prestação</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><a id="anexo"></a>ANEXO AO ATO Nº 14038, DE 05 DE OUTUBRO DE 2022</p>
+<p style="text-align: center;"><strong>REQUISITOS TÉCNICOS PARA A AVALIAÇÃO DA CONFORMIDADE E HOMOLOGAÇÃO&nbsp;DE CABOS COAXIAIS&nbsp;FLEXÍVEIS DE 75 Ω&nbsp;COM TRANÇA DE FIOS DE ALUMÍNIO</strong></p>
+<p style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a id="item1"></a>1.<strong> OBJETIVO</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item1.1"></a>1.1. Este documento estabelece os requisitos mínimos a serem demonstrados na avaliação da conformidade de cabos coaxiais flexíveis com impedância de 75 Ω [ohms] com trança de fios de alumínio, para efeito de homologação junto à Agência Nacional de Telecomunicações.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item2"></a>2.<strong>&nbsp; ABRANGÊNCIA</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item2.1"></a>2.1. Este documento se aplica&nbsp;aos cabos coaxiais flexíveis de&nbsp;75 Ω com trança de fios de alumínio para utilização em redes externas ou internas para transmissão de sinais de banda larga e outros sinais de telecomunicações.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item3"></a>3.<strong> REFERÊNCIAS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.1"></a>3.1. Para fins deste documento, são adotadas as seguintes referências:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.1"></a>3.1.1. Regulamento de avaliação da conformidade e de homologação de produtos para telecomunicações, aprovado pela <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715">Resolução nº 715, de 23 de outubro de 2019</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.2"></a>3.1.2. Lista de&nbsp;referência&nbsp;de produtos para telecomunicações, aprovada pelo <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1493-ato-7280">Ato nº&nbsp;7280, de 26 de novembro de 2020</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.3"></a>3.1.3. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/6810/1">ABNT NBR 6810:2010</a> – Fios e cabos elétricos – Tração à ruptura em componentes metálicos – Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.4"></a>3.1.4. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/9141/1">ABNT NBR 9141:1998</a> – Cabos ópticos e fios e cabos telefônicos – Ensaio de tração e alongamento à ruptura – Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.5"></a>3.1.5. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/9146/1">ABNT NBR 9146:2012</a> – Fios e cabos telefônicos – Ensaio de tensão elétrica aplicada – Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.6"></a>3.1.6. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/9148/1">ABNT NBR 9148:1998</a> – Cabos ópticos e fios e cabos telefônicos – Ensaio de envelhecimento acelerado – Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.7"></a>3.1.7. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/9149/1">ABNT NBR&nbsp;9149:1998</a> –&nbsp;Cabos telefônicos&nbsp;–&nbsp;Ensaio de escoamento de composto de enchimento&nbsp;–&nbsp;Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.8"></a>3.1.8. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/13977/1">ABNT NBR 13977:1997</a> – Cabos ópticos – Determinação do tempo de indução oxidativa (OIT) - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.9"></a>3.1.9. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/14705/1">ABNT NBR 14705:2010</a> – Classificação de cabos internos para telecomunicações quanto ao comportamento frente à chama – Especificação;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.10"></a>3.1.10. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/14706/1">ABNT NBR 14706:2001</a> – Cabos ópticos, fios e cabos telefônicos – Determinação do coeficiente de absorção de ultravioleta – Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.11"></a>3.1.11. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/15443/1">ABNT NBR 15443:2006</a> – Fios, cabos e condutores elétricos — Verificação dimensional e de massa;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.12"></a>3.1.12. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/NM-IEC-60811/2">ABNT NBR NM-IEC-60811-1-1:2001</a> – Métodos de ensaio comuns para os materiais de isolação e de cobertura de cabos elétricos – Parte 1: Métodos para aplicação geral – Capítulo 1: Medição de espessuras e dimensões externas – Ensaios para a determinação das propriedades mecânicas;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.13"></a>3.1.13. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/NM-IEC-60811/2">ABNT NBR NM-IEC-60811-1-3:2001</a>, Métodos de ensaios comuns para os materiais de isolação e de cobertura de cabos elétricos - Parte 1: Métodos para aplicação geral - Capítulo 3: Métodos para determinação de densidade de massa - Ensaios de absorção de água – Ensaio de retração;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.14"></a>3.1.14. <a title="Acesse a ABNT" href="https://www.abnt.org.br/busca360/NM-IEC-60811/2">ABNT NBR NM-IEC-60811-4-1:2003</a> – Métodos de ensaios comuns para os materiais de isolação e de cobertura de cabos elétricos - Parte 4: Métodos específicos para os compostos de polietileno e de polipropileno – Capítulo 1: resistência à fissuração por ação de tensões ambientais – Ensaio de enrolamento após envelhecimento térmico no ar – Medição do índice de fluidez – Determinação do teor de negro-de-fumo e/ou de carga mineral em polietileno;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.15"></a>3.1.15. <a title="Acesse o ANSI" href="https://webstore.ansi.org/standards/scte/ansiscte032008">ANSI/SCTE 03:2008</a> –&nbsp;<em>Test method for coaxial cable structural return l​oss</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.16"></a>3.1.16. <a title="Acesse o Ansi" href="https://webstore.ansi.org/standards/scte/ansiscte442018">ANSI/SCTE 44:2018</a> –&nbsp;<em>Test method for dc loop resistance</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.17"></a>3.1.17. <a title="Acesse o ANSI" href="https://webstore.ansi.org/standards/scte/ansiscte472007">ANSI/SCTE 47:2007</a> –&nbsp;<em>Test method for coaxial cable attenuation</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.18"></a>3.1.18. <a title="Acesse o ANSI" href="https://webstore.ansi.org/standards/scte/ansiscte482021-2474675">ANSI/SCTE 48-3:2018</a> –&nbsp;<em>Test procedure for measuring shielding effectiveness of braided coaxial drop cable using the GTEM cell</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.19"></a>3.1.19. <a title="Acesse o ANSI" href="https://webstore.ansi.org/standards/scte/ansiscte592018">ANSI/SCTE 59:2018</a> –&nbsp;<em>Test method for drop cable center conductor bond to dielectric</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a id="item3.1.20"></a>3.1.20. <a title="Acesse o ANSI" href="https://webstore.ansi.org/standards/scte/ansiscte662016">ANSI/SCTE 66:2016</a> –&nbsp;<em>Test method for coaxial cable impedance</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.21"></a>3.1.21. <a title="Acesse o ANSI" href="https://webstore.ansi.org/standards/scte/ansiscte692007">ANSI/SCTE 69:2007</a> –&nbsp;<em>Test method for moisture inhibitor corrosion resistance</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.22"></a>3.1.22. <a title="Acesse o ANSI" href="https://webstore.ansi.org/standards/scte/ansiscte702007">ANSI/SCTE 70:2007</a> –<em>&nbsp;Insulation resistance megohmmeter method</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.23"></a>3.1.23. <a title="Acesse o ANSI" href="https://webstore.ansi.org/standards/scte/ansiscte1082018">ANSI/SCTE 108:2018</a> –&nbsp;<em>Test method for dielectric withstand of cable</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.24"></a>3.1.24. <a title="Acesse o ASTM" href="https://www.astm.org/a0641_a0641m-19.html">ASTM A641/A641M-19</a> –&nbsp;<em>Specification For zinc-coated (galvanized) carbon steel wire</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.25"></a>3.1.25. <a title="Acesse o ASTM" href="https://www.astm.org/b0557-15.html">ASTM B 557:2015</a> -&nbsp;<em>Standard test methods of tension testing wrought and cast aluminum and magnesium – alloy products</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.26"></a>3.1.26. <a title="Acesse o ASTM" href="https://www.astm.org/d0746-20.html">ASTM D 746:2020</a> –&nbsp;<em>Standard test method for brittleness temperature of plastics and elastomers by impact</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.27"></a>3.1.27. <a title="Acesse o ASTM" href="https://www.astm.org/d4565-20.html">ASTM D 4565:2020</a> –&nbsp;<em>Standard test methods for physical and environmental performance properties of insulations and jackets for telecommunications wire and cable</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.28"></a>3.1.28. <a title="Acesse o ASTM" href="https://www.astm.org/g0155-21.html">ASTM G 155:2021</a> –&nbsp;<em>Standard practice for operating xenon arc light apparatus for exposure of non-metallic materials</em>;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.29"></a>3.1.29. <a title="Acesse o IEC" href="https://webstore.iec.ch/publication/4839">IEC 61196-1-108:2011</a> –&nbsp;<em>Coaxial communication cables - Part 1-108: Electrical test methods - Test for characteristic impedance, phase and group delay, electrical length and propagation velocity</em>;&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item4"></a>4.<strong> DEFINIÇÕES</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.1"></a>4.1. Cabo&nbsp;coaxial: cabo constituído&nbsp;de dois condutores separados por material polimérico, tendo um eixo comum.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.2"></a>4.2. Cabo paralelo:&nbsp;conjunto formado pela reunião de dois cabos idênticos, em paralelo, em formato de&nbsp;"8".</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.3"></a>4.3. Capa externa: camada de material polimérico aplicada sobre o condutor externo&nbsp;atuando como revestimento externo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.4"></a>4.4. Composto vedante: elemento opcional que consiste em material&nbsp;não higroscópico aplicado entre o condutor externo e a capa externa.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.5"></a>4.5. Condutor central: é constituído por um fio sólido, multifilar ou um tubo liso.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.6"></a>4.6. Condutor externo ou blindagem: conjunto formado pela combinação de fita(s)&nbsp;laminada(s)&nbsp;e trança(s) de fios alumínio.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.7"></a>4.7. Dielétrico: camada de material polimérico aplicada sobre o condutor central.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.8"></a>4.8. Família de cabos: serão considerados como componentes de uma mesma família os cabos que apresentarem as mesmas características dimensionais e de materiais em relação ao núcleo do cabo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.9"></a>4.9. Feixe ou espula: conjunto de fios elementares.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.10"></a>4.10. Fio elementar: fio sólido que compõe o feixe.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.11"></a>4.11. Fita laminada de blindagem: fita polimérica com folha(s) de material(is) metálico(s) laminado aderida(s) a pelo menos uma de suas faces.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.11.1"></a>4.11.1. Primeira fita: fita laminada de blindagem aderida ao dielétrico.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.11.2"></a>4.11.2. Segunda fita: fita laminada de blindagem sobreposta à primeira trança.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.12"></a>4.12. Jaqueta:&nbsp;camada de material polimérico aplicada sobre o condutor externo atuando como revestimento externo nos cabos sem armação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.13"></a>4.13. Lance: comprimento contínuo sem emendas.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.14"></a>4.14. Núcleo do cabo: conjunto formado pelo condutor central,&nbsp;dielétrico e a primeira fita de alumínio laminado.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.15"></a>4.15. Série: denominação genérica atribuída aos modelos de cabos coaxiais contemplados neste documento, sendo que a diferenciação entre os modelos é dada por uma numeração específica.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.16"></a>4.16. Trança ou malha: blindagem constituída de feixes entrelaçados.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.16.1"></a>4.16.1. Primeira trança: trança sobreposta à primeira fita.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.16.2"></a>4.16.2. Segunda trança: trança sobreposta à segunda fita.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/Ato-14038/representacao_dos_elementos_da_tranca.png" alt=""></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: center;"><a id="figura1"></a>Figura 1 – Representação dos elementos da trança</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item5"></a>5.<strong> REQUISITOS GERAIS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1. O dielétrico deve ser constituído de material polimérico expandido aplicado concentricamente e aderido ao condutor central por um pré-revestimento de material adesivo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2. A fita laminada de blindagem aplicada sobre o dielétrico deve ser constituída por duas folhas de alumínio laminado aderidas às faces de uma fita polimérica.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.3"></a>5.3. A fita laminada de blindagem aplicada diretamente sobre o dielétrico deve possuir material adesivo em sua face interna.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.4"></a>5.4. A fita laminada de blindagem aplicada sobre a trança deve ser constituída por uma ou duas folhas de alumínio laminado aderidas às faces de uma fita polimérica.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.5"></a>5.5. A fita laminada de blindagem aplicada sobre a trança não deve ser aderida à mesma.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.6"></a>5.6. O condutor central dos cabos séries 59, 7 e 11 deve ser constituído de um fio sólido de liga de aço recoberto com uma camada contínua de cobre, metalurgicamente aderida, cobrindo totalmente o núcleo de aço.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.7"></a>5.7. O condutor central do cabo série 6 pode ser constituído de um fio sólido de liga de aço recoberto com uma camada contínua de cobre, metalurgicamente aderida, cobrindo totalmente o núcleo de aço, ou um fio sólido de cobre nu.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.8"></a>5.8. O condutor central do cabo série 15 deve ser constituído de um fio sólido de alumínio recoberto com uma camada contínua de cobre, metalurgicamente aderida, cobrindo totalmente o núcleo de alumínio.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.9"></a>5.9. A capa externa deve ser constituída de uma camada de material termoplástico, contendo aditivos adequados, que atenda aos requisitos deste documento e garanta o bom desempenho do cabo durante sua vida útil.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.10"></a>5.10. A capa externa deve ser contínua, homogênea e isenta de imperfeições.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item6"></a>6.<strong> REQUISITOS ESPECÍFICOS E MÉTODOS DE ENSAIO</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.1"></a>6.1.<strong> Requisitos e métodos de ensaio para o condutor central</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.1"></a>6.1.1. O diâmetro do condutor central deve ser conforme estabelecido na <a title="Acesse a tabela" href="#tabela1">tabela 1</a> e medido conforme o método estabelecido na norma ABNT NBR 15443.&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="tabela1"></a>Tabela 1 - Diâmetro do condutor central</p>
+</caption>
+<tbody>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Série</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Diâmetro do condutor central [mm]</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Tolerância [%]</strong></p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>59</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">0,81</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">±1</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>6</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1,02</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">±1</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>7</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1,30</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">±1</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>11</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1,63</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">±1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>15</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,77</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">±1,1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.2"></a>6.1.2. O alongamento à ruptura do condutor central, para os condutores de aço cobreado, deve ser de, no mínimo, 1%, devendo ser verificado através do método estabelecido na norma ABNT NBR 6810. O ensaio deve ser realizado em três corpos-de-prova de 250 mm de comprimento, entre marcas, com velocidade de afastamento das garras de 50 mm/min.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.3"></a>6.1.3. O alongamento à ruptura do condutor central, para os condutores de cobre nu, deve ser de, no mínimo, 1% e, no máximo, 5%, devendo ser verificado através do método estabelecido na norma ABNT NBR 6810. O ensaio deve ser realizado em três corpos-de-prova de 250 mm de comprimento, entre marcas, com velocidade de afastamento das garras de 50 mm/min.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.4"></a>6.1.4. O alongamento à ruptura do condutor central, para os condutores de alumínio cobreado, deve ser de, no mínimo, 1% e, no máximo 5%, devendo ser verificado através do método estabelecido na norma ABNT NBR 6810. O ensaio deve ser realizado em três corpos-de-prova de 250 mm de comprimento, entre marcas, com velocidade de afastamento das garras de 50 mm/min.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.2"></a>6.2.<strong> Requisitos e métodos de ensaio para o dielétrico</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.1"></a>6.2.1. A força de aderência mínima requerida para a retirada dos resíduos entre o dielétrico expandido e o condutor central deve ser conforme <a title="Acesse a tabela" href="#tabela2">tabela 2</a>,&nbsp;devendo ser verificada em três corpos-de-prova&nbsp;através do método estabelecido na norma ANSI/SCTE-59.&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado"><a name="tabela2"></a>Tabela 2 - Força de aderência mínima</p>
+</caption>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Série</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Força mínima [N]</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>59</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">22</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>6</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">22</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>7</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">36</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>11</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">67</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>15</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Não aplicável</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.3"></a>6.3.<strong> Requisitos e métodos de ensaio para o núcleo do cabo</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.1"></a>6.3.1. O diâmetro médio do núcleo do cabo deve estar de acordo com a <a title="Acesse a tabela" href="#tabela3">tabela 3</a>, devendo ser determinado pela média das medições sobre a fita de alumínio aderida, conforme o método descrito a seguir:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Utilizar instrumento com resolução metrologicamente adequada;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Devem ser tomadas quatro medidas, defasadas em aproximadamente 45º uma da outra, de uma mesma seção e anotada a média aritmética dos valores obtidos.&nbsp;</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a name="tabela3"></a>Tabela 3 - Diâmetro médio do núcleo dos cabos</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr style="text-align: center;">
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Série</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Diâmetro sobre a primeira fita [mm]</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Tolerância [mm]</strong></p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>59</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">3,86</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">±0,13</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>6</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">4,78</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">±0,13</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>7</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">5,92</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">±0,15</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>11</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7,32</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">±0,15</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>15</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">11,76</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">±0,20</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.2"></a>6.3.2. A ovalização do núcleo do cabo não deve ser superior ao estabelecido na <a title="Acesse a tabela" href="#tabela4">tabela 4</a>, devendo ser determinada pela diferença entre o diâmetro máximo e o diâmetro mínimo, medidos sobre a primeira fita, obtidos no ensaio do <a title="Acesse o item" href="#item6.3.1">item 6.3.1</a>.&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado"><a name="tabela4"></a>Tabela 4 - Ovalização máxima do núcleo</p>
+</caption>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Série</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Ovalização máxima [mm]</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>59</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,28</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>6</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,33</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>7</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,38</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>11</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,38</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>15</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,46</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.4"></a>6.4.<strong> Requisitos e métodos de ensaio para o condutor externo</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.1"></a>6.4.1. O condutor externo (blindagem) deve ser conforme um dos tipos descritos a seguir:</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.4.1.1"></a>6.4.1.1. Blindagem padrão – composta por uma fita laminada de blindagem&nbsp;com material adesivo somente em sua face interna&nbsp;aplicada longitudinalmente&nbsp;sobre o dielétrico com sobreposição mínima de 18% de sua circunferência e por uma trança de fios de alumínio&nbsp;aplicada em torno da fita de tal forma que a cobertura da trança resulte em um valor mínimo de 53%&nbsp;calculado conforme o <a title="Acesse o item" href="#item6.4.5">item 6.4.5</a> abaixo.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.4.1.2"></a>6.4.1.2. Blindagem tripla ou&nbsp;<em>trishield</em>&nbsp;– trata-se da blindagem padrão&nbsp;sobre a qual é aplicada longitudinalmente&nbsp;mais uma fita laminada de blindagem não aderida à trança&nbsp;com sobreposição mínima de 18%.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.4.1.3"></a>6.4.1.3. Blindagem quádrupla ou&nbsp;<em>quadshield&nbsp;</em>– trata-se da blindagem tripla&nbsp;sobre a qual é aplicada uma segunda trança constituída do mesmo material da primeira aplicada em torno da fita laminada de blindagem de tal forma que a cobertura da trança resulte em um valor mínimo de 32%&nbsp;calculado conforme item 6.4.5 abaixo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.2"></a>6.4.2. O diâmetro dos fios das tranças deve ser de 0,160 mm ± 0,01 mm,&nbsp;devendo ser verificado através do seguinte procedimento:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Utilizar instrumento com resolução metrologicamente adequada;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Devem ser tomadas duas medidas perpendiculares de uma mesma seção transversal e anotada a média aritmética dos valores obtidos.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.3"></a>6.4.3. A resistência à tração dos fios das tranças deve ser de no mínimo 300 MPa e o alongamento à ruptura deve ser de no mínimo 3%, devendo&nbsp;ser verificados conforme o método estabelecido na norma ASTM B&nbsp;557. Se o resultado não atender ao requisito, é permitido repetir o ensaio em um corpo de prova retirado do fio antes da confecção da trança.&nbsp;Nestes casos, a quantidade deve ser acordada entre requerente da avaliação da conformidade e laboratório, sendo no mínimo 5 m de fio.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.4"></a>6.4.4. A superfície dos fios das tranças deve ser contínua, brilhante e livre de lascas, fissuras e rachaduras, devendo ser visualmente verificada com ampliação de sete vezes.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.5"></a>6.4.5. O percentual de cobertura das tranças deve ser calculado pelas equações a seguir:&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/Ato-14038/percentual_de_cobertura_1.png" alt=""></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/Ato-14038/percentual_de_cobertura_2.png" alt=""></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/Ato-14038/percentual_de_cobertura_3.png" alt=""></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/Ato-14038/percentual_de_cobertura_4.png" alt=""></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/Ato-14038/percentual_de_cobertura_5.png" alt=""></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;">onde :</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAARCAYAAADkIz3lAAAAAXNSR0IArs4c6QAAALNJREFUKFOF0v8NAUEQhuHnOlDDKUFUgA6IDpQgUQId0IIS6IDogBLQAZnk7nLux9p/Jtl5d2a+bzaTPmu88cwS3AoDPLBNgXcsiop5H5gjwCrfB86xwagcrQnGTAEEGCLOOEXsqxjJIw59Fcv7Fya4pcBoH+BPt67WU+wxrHvcBcY2xoWHFdsFhogLdv8qtoTEgy4fW0LqYAi4IuKyOV8d/GBWAKG48q/pY3yp8lTbqIv5AmXgHof0+MEnAAAAAElFTkSuQmCC">&nbsp;é o fator de cobertura linear;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAASRJREFUOE+Nk2FNA0EQRl8dgIXiAIICwAEEB60DCBKKA8ABSKAoAOqgSKB1AHnJzGW7t2WZpD+6N/PdfG+/m7C/joEFcA4cAV9V6w2wBb4nf4j4SIEX4LDqmwEHIbzoifi2U+CqElnHmZtMeyKvscljITIFFBlmeyI/DR6XwB1wksK1iOtbCfGp4CEDhxXRxhJw02UpUq8uUKvmMbKYItK2+aLwrsg7cF9B3QBnwKq244NboAQ4ao5r9XwHg3+Sdhkog/ZZN0duHgL2sKAirQEBa82fgROi1cxNruWKmUpv4S0GtSivtNnklCK+TbCSzyueh6XnuFLPW5x2AXW+IzccQXWml9j8CD+CzXUjN/8SMfoC1q43M+RjX+xbjgSbVeZoOPwFHK1BhwyoftQAAAAASUVORK5CYII=">&nbsp;é o diâmetro do fio elementar do feixe, em milímetros;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAANCAYAAABcrsXuAAAAAXNSR0IArs4c6QAAATpJREFUOE+1lIFNQkEQRB8daAvagcQK1A5UOsAONFZgtAOhA7UDoQICHWAJagea97P7c15OSDRsciFZbndmZ/b+gN/jCLgHToFD4G3D3Y1/DbYUCvAM7P8VwLptINfAMXCxS5DXmGSyS5Cv//rRkkt5jDR5WvgxBvaAT+AJuIy7Z8Bd1OihMYrcqgappdFwQz8O4rwDc+AGSAnPgdto+hI15q4ACfTGy9JmXTJCkAXwAFhkA+8J4EpntHI/Fia366NiZwNzJ0A3csRjyCVQi0zmVMUjwW4SpVhXBvsQl40VF9iJZwVITUbfzPUPWJBWQ8dVOo9m2jTJlG+rlVM+/RhmbSlXvmqZaK6NlcUiTS6LSz9qL5VUZZSqq00Q2XpZHQ1XWDZK5rq6tk7nb/kw/ba5HLlV1tpLBfr8N1Y1Tg6tuZQUAAAAAElFTkSuQmCC">&nbsp;é o diâmetro médio da trança, em milímetros;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAQCAYAAAD0xERiAAAAAXNSR0IArs4c6QAAAQZJREFUOE+tk9FNAzEQRN91AC1AB6BUAOkAWggd5GoIJYQOgA4CFSDSAbRAOgA95I18xuQc6Va6n1t7Zmd23PF/XQAr4Bo4Bz4PnP1tdSMHBHoCTseAWsCWwAy4nQJskyZbTwH23epXTaayrDD7odWvEqyUpPFWk1852CJdmmfeCPYG3Kd/78AL8JEReOYEuNOOiMYX0AO50f67ArYpa2IKZpUqzGMv2Fliy4NpYJ0kyJy8JLrMvL0Bnj1cXpTZRSjZz+DGRPYkl+hPkHOZ0dSD1wSg9HKqmr+D5yS7W9OLiIamOsEjsDuwmH1r7G3Wgh/bdDGDOhZMC9xy9d4xYHoVC9HLUj4/IsA5Edt8GJcAAAAASUVORK5CYII=">&nbsp;é o&nbsp;diâmetro sob a trança;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAQCAYAAADqDXTRAAAAAXNSR0IArs4c6QAAAWFJREFUSEu9lI0tRFEQhb/tgBLQAVEBOvDTAR1Qgux2gA7QASoQOrAt0AH5NneSMXnP85KXvckmm/vOzJk5c+7M6D+7wBw4BHaA5R/YUZ9mA2gJH4DNUVkHwEOkl8A+cLJO0qfW6e06Sb+nnqfFV3mV0xOmuZt6npW0SqmBPJPOM5Oet+RHaXaSvgKLdLcB2H08Jz95Z5xFB7YLJ3aVP+T9BK6AbBjvDoD3YiJH4Lu9KMWclnjfuOQZZ8hc0m3goxjGTt46Zm5Qn6OPgcdUiLibdGcBXy4bSbsI7EYp/LkgnlOy7OhKlEUR51KRyK6v2/9f8sbWsaKXRqTkzjtkjwJDMk2WfRCk4sxhvPnOgL34GDO1GxMoSTwZEyvxfVTYCshEdmDieizUYsL5oYijXA6twZqsOnqVpINUnA3UTebYFmNJ+xxdebtwSq6i/yZ1LkoWctqBBqkn4/JT8YkZv2XcD3rzUol70ZoQAAAAAElFTkSuQmCC">&nbsp;é o diâmetro do fio elementar;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAHVJREFUKFNVz20NAlEMRNGzDggSWCtIAAsgAQ2sAyyABRyQ4ICVAEggk7xHuv3TdHr7MYNl7LDGGxtMQ+nf8IjYtG1yBw44YSwDZ1w68MIcoZ1Y4Yl7gBSfNh1oERWo//yhemLf1vZmHM0diKVjcxEgVq/4/gCKcxOhKtYMxgAAAABJRU5ErkJggg==">&nbsp;é o número de feixes;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAYAAAAvOAWIAAAAAXNSR0IArs4c6QAAAKBJREFUKFNt0OFNAkEQhuHnWsEOJHSAHQh0oB1AqICEDqAEpISzAhI7gBL0OtB8MptcjPNnszvvzL4znXs8Y4IBJyzr/Qk7fOTeFRTwE+/Y4Dhq8ooU/cLpesZLgQ8F5lhjhkWDW+5QGunc4g0X7P/CX9WhH8HfyE+3MRzna2k1NnpbTDFHH+dEfDNIEv9pJX9scAbJ2toWUvCIVTlHbfgB2qgfCZ7hrOEAAAAASUVORK5CYII=">&nbsp;é o número de fios por feixe;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAAXNSR0IArs4c6QAAAL1JREFUKFONkuENAUEQRt91IFEBOqAEdOCUQAlKECXQgdABJaADNdABeTKXsLeH+bcz++abb3YL6rECJkAX2AB3oBVnby+AS5EBTR0CKJO6DXdArwl8APNQfGdVvlnLgX3gDAwcKVGsamUOnAFrIFczPwU6uaIeHGmcqI3C37BpOXo4xSVZmxhtYBlLq43jE1xD7diw8Vc6HfWbv48+Kag/Vd3o10hBx9zH7/gbrPz5W4T/Av2fPq4rF9r+gp/f4CH6syBo9gAAAABJRU5ErkJggg==">&nbsp;é o passo da trança, em milímetros;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAYAAAAvOAWIAAAAAXNSR0IArs4c6QAAAJNJREFUKFNdkFERwkAQQ18dHJWABLBQHFRDkYAGcMA5qAZwwICDthJAAhMmyyzs32beJrlr+J0eWAMvYAscgTmQJrFnQwdrBViAlfch4AHY2y1nTYCOP+4BPy3Wv1p3YLR2EqyOclCcuua5eFHqLHgDyCH3jwPBD6d+ATnv8suBzlDAJdxURVE3V9FPXIHW3ye9vgEKYx3BwJUTgwAAAABJRU5ErkJggg==">&nbsp;é o ângulo formado entre o eixo do cabo e a trança.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.5"></a>6.5.<strong> Requisitos e método de ensaio para capa externa</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.1"></a>6.5.1. O material da capa externa deverá atender aos requisitos especificados na <a title="Acesse a tabela" href="#tabela5">tabela 5</a>.&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado" style="text-align: center;"><a name="tabela5"></a>Tabela 5 - Requisitos e métodos de ensaios do material da capa externa</p>
+</caption>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Propriedade</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Método de ensaio</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>PE</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>PVC</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Densidade [g/cm³]</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NBR NM IEC 60811-1-3</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,900 a 0,955</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1,45 (máximo)</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Tração à ruptura mínima [MPa]</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NBR 9141</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">8,2</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">12,40</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Alongamento mínimo [%]</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NBR 9141</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">400</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">250</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Retenção do alongamento</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">NBR 9141 e NBR 9148</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Mínimo de 75% do original após acondicionamento a 100°C por 48 h</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Mínimo de 50% do original após acondicionamento a 100°C por 168 h</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Resistência à baixa temperatura [°C]</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">ASTM D 746, método A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-20</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-5</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.2"></a>6.5.2. O material da capa externa dos cabos coaxiais para aplicação em redes externas de cor preta deve atender aos requisitos das tabelas <a title="Acesse a tabela" href="#tabela5">5</a> e <a title="Acesse a tabela" href="#tabela6">6</a>.&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado"><a name="tabela6"></a>Tabela 6 - Requisitos e métodos de ensaios adicionais da capa externa de cor preta</p>
+</caption>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Propriedade</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Método de ensaio</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>PE</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>PVC</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Teor de negro de fumo [%] mínimo</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">ABNT NBR NM-IEC-60811-4-1</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,35</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1,00</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Coeficiente de Absorção mínimo em 375 nm [ABS/cm]</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">ABNT NBR 14706</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">4000</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2800</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.3"></a>6.5.3. O material da capa externa dos cabos coaxiais para aplicação em redes externas de cor não preta deve ser submetida ao ensaio de intemperismo, conforme a norma ASTM G155, ciclo 1, durante 720 horas. Após o ensaio, devem ser verificados o alongamento à ruptura e a resistência à tração do revestimento externo, conforme a norma ABNT NBR 9141. Os valores obtidos não devem diferir em mais de 25% dos valores originais do revestimento externo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.4"></a>6.5.4. O cabo coaxial para aplicação em redes internas, mesmo que parcial, deve possuir capa externa de material retardante à chama, sendo que sua classificação deverá ser informada pelo fabricante e comprovada através do método de ensaio correspondente&nbsp;conforme estabelecido na norma ABNT NBR 14705.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.5"></a>6.5.5. O diâmetro sobre a capa externa do cabo coaxial deve ser conforme a <a title="Acesse a tabela" href="#tabela7">tabela 7</a> e&nbsp;verificado conforme o método estabelecido na norma ABNT NBR 15443.&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado" style="text-align: center;"><a name="tabela7"></a>Tabela 7 - Diâmetro sobre a capa externa [mm]</p>
+</caption>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td colspan="3" rowspan="1">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Blindagem</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Série</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Padrão</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Tripla</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Quádrupla</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>59</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">6,10 ± 0,20</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">6,20 ± 0,20</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">6,73 ± 0,20</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>6</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">6,93 ± 0,20</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7,06 ± 0,20</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7,54 ± 0,20</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>7</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">8,10 ± 0,20</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">8,20 ± 0,20</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">8,64 ± 0,20</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>11</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">10,16 ± 0,25</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">10,16 ± 0,25</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">10,34 ± 0,25</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>15</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">15,00 ± 0,25</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">15,11 ± 0,25</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">15,82 ± 0,25</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.6"></a>6.5.6. A espessura em qualquer ponto da capa externa não deve ser inferior a 0,51 mm&nbsp;e deve ser verificada através do método estabelecido na norma ABNT NBRNM-IEC-60811-1-1.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.7"></a>6.5.7. A razão entre a maior e a menor espessura da capa externa medidas em uma mesma seção transversal não deve ser maior que 1,55 mm e deve ser verificada conforme o método estabelecido na norma ABNT NBRNM-IEC-60811-1-1.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.6"></a>6.6.<strong> Requisitos e métodos de ensaio para o mensageiro integrado (opcional)</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.6.1"></a>6.6.1. Quando o cabo coaxial rígido possuir mensageiro integrado, este deverá ser constituído por um fio ou cordoalha de aço galvanizado.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.6.2"></a>6.6.2. A verificação dos requisitos deve ser feita no fio singelo ou fio elementar da cordoalha e atender aos requisitos da norma ASTM A641/A641M-19,&nbsp;<em>class&nbsp;</em>1,&nbsp;<em>hard temper</em>&nbsp;para:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Carga de ruptura mínima;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Camada de zinco;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">c) Aderência da camada de zinco;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">d) Diâmetro do mensageiro.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.6.3"></a>6.6.3. Para a medição do diâmetro do mensageiro deverá ser utilizado instrumento com resolução metrologicamente adequada e serem tomadas duas medidas perpendiculares de uma mesma seção transversal, sendo anotada a média aritmética dos valores obtidos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.7"></a>6.7.<strong> Requisitos e método de ensaio para resistência elétrica</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.7.1"></a>6.7.1. A resistência elétrica de laço do cabo coaxial com a blindagem completa&nbsp;não deve ser superior ao valor indicado na <a title="Acesse a tabela" href="#tabela8">tabela 8</a> e deve ser verificada através do método estabelecido na norma ANSI/SCTE 44&nbsp;em corrente contínua e a 20°C.&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado"><a name="tabela8"></a>Tabela 8 - Resistência elétrica de laço em corrente contínua [Ω/km a 20°C]</p>
+</caption>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;" colspan="3" rowspan="1">
+<p class="Tabela_Texto_Centralizado"><strong>Blindagem</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Série</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Padrão</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Tripla</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Quádrupla</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>59</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">199,7</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">190,3</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">184,1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>6</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">135,0</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">126,1</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">121,1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>7</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">91,2</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">81,4</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">80,0</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>11</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">65,6</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">57,1</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">54,8</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>15</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">19,9</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">13,3</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">13,0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.7.2"></a>6.7.2. O equipamento de ensaio não está restrito ao citado no método de ensaio especificado no <a title="Acesse o item" href="#item6.7.1">item&nbsp;6.7.1</a>, podendo ser utilizado um equipamento com precisão equivalente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.8"></a>6.8.<strong> Requisito e método de ensaio para impedância característica</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.8.1"></a>6.8.1. A impedância característica para os cabos coaxiais flexíveis, medida nas duas extremidades do cabo, deve ser de 75 Ω ± 3 Ω na faixa de frequência de 5 MHz a 1.000 MHz, devendo ser verificada conforme o método estabelecido na norma ANSI/SCTE-66.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.8.2"></a>6.8.2. equipamento de ensaio não está restrito ao citado no método de ensaio especificado em <a title="Acesse o item" href="#item6.8.1">6.8.1</a>, podendo ser utilizado um equipamento com precisão equivalente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.9"></a>6.9.<strong> Requisito e método de ensaio para eficiência de blindagem</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.9.1"></a>6.9.1. A eficiência da blindagem para os cabos coaxiais flexíveis não deve ser inferior aos valores estabelecidos na <a title="Acesse a tabela" href="#tabela9">tabela 9</a> na faixa de frequências de 5 MHz a 1.000 MHz&nbsp;e deve ser verificada através do método estabelecido na norma ANSI/SCTE-48-3.&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado"><a name="tabela9"></a>Tabela 9 - Eficiência da blindagem [dB]</p>
+</caption>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Blindagem</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Padrão</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Tripla</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Quádrupla</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>dB</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">65</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">75</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">95</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.9.2"></a>6.9.2. Para fins de avaliação da eficiência de blindagem em uma mesma família o interessado deve informar todas as construções de blindagem e percentuais de cobertura de trança pertencentes a esta família e&nbsp; apresentar duas amostras: uma da blindagem com construção mais complexa e a segunda da construção mais simples, conforme a <a title="Acesse a tabela" href="#tabela9">tabela 9</a>. As amostras devem possuir o menor percentual da trança na família apresentada.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.9.3"></a>6.9.3. As amostras devem ser montadas conforme o especificado no <a title="Acesse o item" href="#item8.7">item 8.7</a> abaixo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.9.4"></a>6.9.4. O equipamento de ensaio não está restrito ao citado no método de ensaio especificado no <a title="Acesse o item" href="#item6.9.1">item 6.9.1</a>, podendo ser utilizado um equipamento com precisão equivalente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.10"></a>6.10.<strong> Requisito e método de ensaio para perda de retorno estrutural</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.10.1"></a>6.10.1. A perda de retorno estrutural, respeitando a frequência máxima de operação e medida nas duas extremidades do cabo, deve ser de, no mínimo, 20 dB na faixa de frequência de 5 MHz a 1.000 MHz, devendo ser verificada conforme o método estabelecido na norma ANSI/SCTE 03.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.10.2"></a>6.10.2. O equipamento de ensaio não está restrito ao citado no método de ensaio especificado no <a title="Acesse o item" href="#item6.10.1">item 6.10.1</a>, podendo ser utilizado um equipamento com precisão equivalente</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.11"></a>6.11.<strong> Requisito e método de ensaio para atenuação do sinal de transmissão</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.11.1"></a>6.11.1. Os valores de atenuação do sinal de transmissão no cabo coaxial não devem ser maiores que os indicados na <a title="Acesse a tabela" href="#tabela10">tabela 10</a>,&nbsp;devendo&nbsp;ser verificados conforme o método estabelecido na norma ANSI/SCTE-47.&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado"><a name="tabela10"></a>Tabela 10 - Atenuação máxima [dB/100 m a 20°C]</p>
+</caption>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td colspan="12" rowspan="1">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Frequência [MHz]</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Série</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>5</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>55</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>211</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>270</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>300</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>330</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>400</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>450</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>550</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>750</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>870</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>1000</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>59</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">3,50</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">6,73</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">12,47</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">13,85</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">14,60</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">15,29</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">16,73</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">17,72</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">19,52</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">22,87</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">24,85</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">26,64</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>6</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2,70</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">5,25</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">10,00</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">11,04</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">11,64</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">12,26</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">13,61</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">14,43</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">16,08</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">18,57</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">20,04</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">21,49</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>7</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1,54</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">4,10</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7,74</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">8,78</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">9,25</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">9,72</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">10,73</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">11,35</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">12,63</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">14,99</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">16,28</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">17,45</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>11</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1,25</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">3,15</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">6,23</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7,00</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7,38</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7,71</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">8,53</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">9,02</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">9,97</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">11,97</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">13,31</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">14,27</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>15</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,69</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1,97</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">3,81</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">4,30</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">4,56</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">4,76</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">5,28</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">5,61</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">6,23</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7,32</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">7,91</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">8,50</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.11.2"></a>6.11.2. O equipamento de ensaio não está restrito ao citado no método de ensaio especificado em <a title="Acesse o item" href="#item6.11.1">6.11.1</a>, podendo ser utilizado um equipamento com precisão equivalente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.12"></a>6.12.<strong> Requisito e método de ensaio para rigidez dielétrica</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.12.1"></a>6.12.1. O dielétrico entre os condutores central e externo deve suportar por um minuto, sem ruptura, uma tensão de 1000 V<sub>CA</sub>&nbsp;(tensão alternada) ou de 1500 V<sub>CC</sub>&nbsp;(tensão contínua) e deve ser ensaiado à temperatura ambiente&nbsp;conforme o método estabelecido na norma ABNT NBR 9146.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.13"></a>6.13.<strong> Requisito e método de ensaio para resistência de isolamento</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.13.1"></a>6.13.1. A resistência de isolamento do cabo coaxial não deve ser inferior a 1.500 MΩ.km e deve ser verificada conforme o método estabelecido na norma ANSI/SCTE-70.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.14"></a>6.14.<strong> Requisito e método de ensaio para velocidade de propagação relativa</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.14.1"></a>6.14.1. A velocidade de propagação relativa deve ser de, no mínimo, 82% da velocidade da luz no vácuo, quando obtido através da equação apresentada na norma IEC 61196-1-108.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.15"></a>6.15.<strong> Requisito e método de ensaio para dobramento</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.15.1"></a>6.15.1. O cabo completo deve ser submetido ao ensaio de dobramento&nbsp;conforme o método estabelecido na norma ASTM D 4565, seção 34, não devendo apresentar danos visíveis a olho nu na capa e atendendo ao requisito de impedância do <a title="Acesse o item" href="#item6.8">item 6.8</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.16"></a>6.16.<strong> Requisito e método de ensaio para resistência à corrosão</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.16.1"></a>6.16.1. O cabo coaxial flexível que possui composto vedante não deve apresentar sinais de corrosão após ser submetido ao ensaio de resistência à corrosão conforme o método estabelecido na norma ANSI/SCTE 69.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.17"></a>6.17.<strong> Requisito e método de ensaio para tempo de indução oxidativa (OIT)</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.17.1"></a>6.17.1. O tempo de indução oxidativa a 180,0°C ± 0,3°C do dielétrico expandido&nbsp;deve ser no mínimo de 20 minutos, devendo ser verificado conforme o método estabelecido na norma ABNT NBR 13977. O valor de OIT obtido neste ensaio deverá ser referência para o ensaio de estabilidade térmica descrito no <a title="Acesse o item" href="#item6.18">item 6.18</a> a seguir.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.18"></a>6.18.<strong> Requisito e método de ensaio para estabilidade térmica</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.18.1"></a>6.18.1. Após envelhecimento de 14 dias a 90°C, o dielétrico expandido deve ser submetido ao ensaio de tempo de indução oxidativa a 180,0°C ± 0,3°C de acordo com o método estabelecido na norma ABNT NBR 13977. O valor de OIT obtido neste ensaio não deve ser inferior a 70% do valor de OIT de referência, obtido no ensaio do <a title="Acesse o item" href="#item6.17">item 6.17</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.19"></a>6.19.<strong> Requisito e método de ensaio para escoamento do composto vedante</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.19.1"></a>6.19.1. O cabo coaxial flexível que possui composto vedante deve ser submetido ao ensaio de escoamento do composto&nbsp;conforme o método estabelecido na norma ABNT NBR 9149 e não deve apresentar sinais de escoamento ou gotejamento.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item7"></a>7.<strong> ORIENTAÇÕES GERAIS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.1"></a>7.1. A regulamentação vigente, que estabelece os requisitos, critérios de formação de famílias e procedimentos de ensaios para avaliação da conformidade deve ser observada durante todo o processo de avaliação da conformidade e homologação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.2"></a>7.2. Quaisquer dúvidas quanto a sua aplicabilidade devem ser levadas à consideração da Gerência de Certificação e Numeração&nbsp;da Anatel antes do início do processo de avaliação da conformidade e homologação.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.3"></a>7.3. Para cabos não previstos na regulamentação vigente, antes de dar início ao processo de avaliação da conformidade, a Gerência de Certificação&nbsp;e Numeração da Anatel deve ser consultada.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.4"></a>7.4. Para os cabos homologados antes da entrada em vigor deste documento, aplicam-se os seguintes princípios, descritos na regulamentação vigente:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item7.4.1"></a>7.4.1. Para os cabos&nbsp;homologados, as orientações deste documento devem ser observadas por ocasião da manutenção da avaliação da conformidade do produto.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item7.4.2"></a>7.4.2. As orientações deste documento devem ser observadas sempre que ocorrer a emissão de novo documento resultante do processo de avaliação da conformidade.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.5"></a>7.5. No caso de produtos fabricados em regime de OEM (<em>Original Equipment Manufacturer</em>,&nbsp;Fabricante Original de Equipamento) que deem origem a novos requerimentos de homologação, o processo de avaliação da conformidade deve estar adequado às disposições deste documento.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.6"></a>7.6. Para os produtos fabricados em regime de OEM, os novos requerimentos devem estar adequados a este documento mesmo que o período de manutenção da avaliação da conformidade inicial ainda não tenha vencido.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item8"></a>8.<strong> AMOSTRAGEM DO CABO COAXIAL</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.1"></a>8.1. Deve ser apresentada para ensaios completos pelo menos uma amostra de cada família dos cabos, sendo que os ensaios efetuados em uma amostra de cabo de maior diâmetro externo serão válidos para os demais cabos de menor diâmetro externo&nbsp;dentro da mesma família.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.2"></a>8.2. Caso uma família de cabos para avaliação da conformidade inclua cabos com características opcionais ou especiais, deverão ser fornecidas amostras adicionais, suficientes para a realização dos ensaios específicos correspondentes.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.3"></a>8.3. Caso um determinado cabo possua jaqueta ou capa externa distintas para aplicação em áreas internas e áreas externas, deverão ser apresentadas para ensaios duas amostras deste cabo com as referidas capas. Numa amostra serão realizados os ensaios completos e na segunda amostra os ensaios aplicáveis ao material da jaqueta e capa externa, de acordo com o estabelecido nas tabelas <a title="Acesse a tabela" href="#tabela11">11</a> e <a title="Acesse a tabela" href="#tabela12">12</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.3.1"></a>8.3.1. Caso um determinado cabo possua capa externa de cores distintas, para aplicação em área interna, o interessado deve declarar formalmente que o material base, sem corante, utilizado na fabricação da amostra submetida a ensaio será mantido assim como suas características frente à chama.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.3.2"></a>8.3.2. Caso um determinado cabo possua capa externa e cobertura de cores distintas para aplicação em área externa, todos os cabos de cores distintas devem ser submetidos ao ensaio de intemperismo.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.4"></a>8.4. Os ensaios do mensageiro integrado devem ser realizados em todos os diâmetros utilizados. Caso um determinado diâmetro seja utilizado em uma ou mais famílias de cabos não é necessário repetir os ensaios do mensageiro para cada família.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.5"></a>8.5. Os ensaios nos cabos coaxiais paralelos devem ser realizados em apenas um dos cabos.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.6"></a>8.6. As amostras de cabo devem ter lance de, no mínimo, 100 m&nbsp;e estar com suas extremidades preparadas com conectores.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.7"></a>8.7. Para o ensaio específico de eficiência de blindagem as amostras devem ter os corpos-de-prova preparados conforme as instruções abaixo:&nbsp;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">a) Três amostras do cabo completo (núcleo do cabo, condutor externo e capa externa), com as suas extremidades preparadas com conectores, montadas conforme a <a title="Acesse a figura" href="#figura2">figura 2</a>;</p>
+<p class="Item_Alinea_Letra" style="text-align: center;">&nbsp;<img src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/Ato-14038/montagem_dos_corpos_de_prova_do_cabo_completo.png" alt=""></p>
+<p class="Item_Alinea_Letra" style="text-align: center;"><a id="figura2"></a>Figura 2&nbsp;– Montagem dos corpos de prova do cabo completo.</p>
+<p class="Item_Alinea_Letra" style="text-align: center;">&nbsp;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">b) Uma amostra do núcleo do cabo (condutor central e dielétrico), com as suas extremidades preparadas com conectores,&nbsp; montada conforme a <a title="Acesse a figura" href="#figura3">figura 3</a>.</p>
+<p class="Item_Alinea_Letra" style="text-align: center;"><img src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/Ato-14038/montagem_dos_corpos_de_prova_do_condutor_central_e_dieletrico.png" alt=""></p>
+<p class="Item_Alinea_Letra" style="text-align: center;"><a id="figura3"></a>Figura 3&nbsp;– Montagem dos corpos de prova do condutor central e dielétrico.</p>
+<p class="Item_Alinea_Letra" style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.8"></a>8.8. Quando os ensaios forem realizados em laboratórios distintos, as amostras deverão ser retiradas de cabos de um mesmo lote.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.9"></a>8.9. Para os ensaios específicos das capas externas as amostras de cabos a serem apresentadas para ensaios deverão ter o lance especificado de comum acordo entre o laboratório e o interessado.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.10"></a>8.10. No caso de reteste decorrente de não conformidades encontradas nos ensaios ou inclusão de cabo similar em uma mesma família, a amostra poderá ser retirada de lote diferente da amostra original.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.10.1"></a>8.10.1. Neste caso, o especialista do agente responsável pela avaliação da conformidade deve avaliar a amostra e descrever esta avaliação no relatório de avaliação da conformidade técnica, indicando claramente que a nova amostra tem as mesmas características da amostra do lote original.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.11"></a>8.11. No caso de alteração dos requisitos específicos do cabo que levem à necessidade de nova avaliação da conformidade, poderá ser utilizada amostra de lote diferente daquela usada na avaliação da conformidade inicial, desde que os procedimentos usados na avaliação da conformidade inicial estejam adequados a este documento.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.11.1"></a>8.11.1. O <a title="Acesse o item" href="#item8.10.1">item 8.10.1</a> também deve ser observado neste caso.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.12"></a>8.12. A amostra do cabo encaminhada para os ensaios deve ter impressa, na capa, a identificação ou, quando aplicável, a designação do produto, bem como: nome/identificação do fabricante (detentor da tecnologia) e/ou marca comercial do fabricante (detentor da tecnologia) e/ou marca comercial do requerente da homologação, quando devidamente autorizado pelo fabricante (detentor da tecnologia), a identificação do lote de fabricação e a classificação de retardância a chama, conforme o <a title="Acesse o item" href="#item6.5.4">item 6.5.4</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.12.1"></a>8.12.1. O cabo comercializado deve ter impressa na capa, em intervalos não superiores a 5 m, as mesmas informações previstas no <a title="Acesse o item" href="#item8.12">item 8.12</a>, bem como a identificação de homologação, conforme <a title="Acesse o item" href="#item10">item 10</a> abaixo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item8.12.2"></a>8.12.2. Se ensaios para manutenção do documento resultante do processo de avaliação da conformidade forem necessários, as amostras do cabo encaminhada para os ensaios de manutenção devem atender ao disposto no <a title="Acesse o item" href="#item8.12.1">subitem&nbsp;8.12.1</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.13"></a>8.13. Não serão considerados válidos, para fins de avaliação da conformidade e homologação, ensaios realizados em materiais de um modelo de cabo para avaliação da conformidade de outro de família diferente.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item9"></a>9.<strong> ORIENTAÇÕES ESPECÍFICAS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item9.1"></a>9.1. No caso de uma família de produtos possuírem cabos com diferentes tipos de comportamento frente à chama, uma amostra deverá ser submetida a todos os ensaios previstos para o produto.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item9.2"></a>9.2. Para os outros cabos com comportamentos frente a chama distintos, todos os ensaios referentes à capa deverão ser refeitos, conforme tabelas <a title="Acesse a tabela" href="#tabela11">11</a>&nbsp;e&nbsp;<a title="Acesse a tabela" href="#tabela12">12</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item9.3"></a>9.3. No caso de uma família de produtos possuírem cabos com outros tipos de revestimento externo, uma amostra de cada cabo deverá ser submetida a todos os ensaios referentes a esta alteração, conforme tabelas <a title="Acesse a tabela" href="#tabela11">11</a>&nbsp;e&nbsp;<a title="Acesse a tabela" href="#tabela12">12</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item9.4"></a>9.4. Para produtos que apresentarem não conformidade em algum ensaio e houver qualquer alteração no processo produtivo ou no produto que implique em uma nova amostra, esta deverá ser submetida ao ensaio no qual a primeira amostra foi reprovada e a todos os ensaios referentes àquela alteração, conforme tabelas <a title="Acesse a tabela" href="#tabela11">11</a>&nbsp;e&nbsp;<a title="Acesse a tabela" href="#tabela12">12</a>.&nbsp;</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a name="tabela11"></a>Tabela 11 – Relação de ensaios a serem refeitos</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr style="text-align: center;">
+<td>&nbsp;</td>
+<td colspan="8" rowspan="1">
+<p class="Tabela_Texto_Centralizado"><strong>Ensaios a serem refeitos</strong></p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Materiais ou partes do cabo coaxial cujos requisitos específicos não foram atendidos ou que sofreram alteração no processo de fabricação ou no produto</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Elétricos</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Transmissão</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Capa</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Condutor interno</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Condutor externo</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Dielétrico</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Mensageiro</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Composto vedante</strong></p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Capa (revestimento externo)</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Condutor interno (central)</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+<p class="Tabela_Texto_Centralizado">(ver nota 1)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Condutor externo (blindagem)</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+<p class="Tabela_Texto_Centralizado">(ver nota 1)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Dielétrico</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+<p class="Tabela_Texto_Centralizado">(ver nota 2)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Mensageiro</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Composto vedante</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">X</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><em>Nota 1: Reensaiar SOMENTE resistência elétrica</em></p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: justify; padding-left: 30px;"><em>Nota 2: Reensaiar SOMENTE resistência de isolamento e rigidez dielétrica</em>&nbsp;</p>
+<p class="Texto_Centralizado" style="text-align: center;"><a name="tabela12"></a>Tabela 12 - Descrição dos ensaios</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr style="text-align: center;">
+<td colspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>Requisitos específicos</strong></p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Ensaios elétricos</strong></p>
+</td>
+<td>
+<ul>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Resistência elétrica do condutor interno</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Rigidez dielétrica</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Resistência de isolamento</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Ensaios de transmissão</strong></p>
+</td>
+<td>
+<ul>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Atenuação</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Impedância característica</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Velocidade de propagação relativa</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Perda de retorno</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Eficiência de blindagem</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Ensaios no condutor interno<br>(central)</strong></p>
+</td>
+<td>
+<ul>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Diâmetro do condutor interno</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Alongamento à ruptura do condutor central</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Ensaios no condutor externo<br>(blindagem)</strong></p>
+</td>
+<td>
+<ul>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Diâmetro sobre o condutor externo</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Sobreposição da fita</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Diâmetro do fio das tranças</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Resistência à tração dos fios das tranças</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Percentual de cobertura das tranças</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Ensaios na capa<br>(revestimento externo)</strong></p>
+</td>
+<td>
+<ul>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Diâmetro sobre a capa externa</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Densidade</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Espessura da capa</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Razão entre a maior e menor espessura</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Tração à ruptura do material da capa externa (original)</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Alongamento mínimo do material da capa externa (original)</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Envelhecimento do material da capa externa</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Alongamento mínimo do material da capa externa (envelhecido)</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Tração à ruptura do material da capa externa (envelhecido)</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Intemperismo</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Resistência à baixa temperatura</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Impacto a frio</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Coeficiente de absorção</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Teor de negro de fumo</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Comportamento frente à chama</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Ensaios no dielétrico</strong></p>
+</td>
+<td>
+<ul>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Diâmetro médio do núcleo do cabo</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Força de aderência mínima entre o dielétrico e o condutor central</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Ovalização do núcleo do cabo</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Indução oxidativa (OIT)</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Estabilidade Térmica</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Ensaios no mensageiro</strong></p>
+</td>
+<td>
+<ul>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Carga de ruptura mínima</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Camada de zinco</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Aderência da camada de zinco</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda">Diâmetro</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Ensaios no composto vedante</strong></p>
+</td>
+<td>
+<ul>
+<li style="text-align: center;">
+<p class="Tabela_Texto_Alinhado_Esquerda">Resistência à corrosão</p>
+</li>
+<li>
+<p class="Tabela_Texto_Alinhado_Esquerda" style="text-align: center;">Escoamento do composto vedante</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a id="item10"></a>10.<strong> IDENTIFICAÇÃO DA HOMOLOGAÇÃO</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item10.1"></a>10.1. A marcação do selo ANATEL e a identificação do código de homologação devem ser apresentadas na embalagem externa do produto, em conformidade com a regulamentação vigente. Também podem ser utilizados, opcionalmente, meios de impressão gráfica nos catálogos dos produtos ou na documentação técnica pertinente.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a id="item10.2"></a>10.2. Adicionalmente,&nbsp;conforme o procedimento operacional para marcação da identificação da homologação Anatel em produtos para telecomunicações, anexo ao <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1451-ato-4088">ato nº 4088, de 31 de julho de 2020</a>,&nbsp;deve ser impressa de forma legível na capa externa dos cabos, ao longo do seu comprimento, a identificação alfanumérica da homologação do produto,&nbsp;em uma&nbsp;das&nbsp;seguintes&nbsp;formas:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">a) ANATEL HHHHH-AA-FFFFF; ou</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">b) ANATEL: HHHHH-AA-FFFFF.</p>
+<p class="Tabela_Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">Onde:</p>
+<p class="Tabela_Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">HHHHH – identifica a homologação do produto por meio de numeração sequencial com 5 (cinco) caracteres;</p>
+<p class="Tabela_Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">AA – identifica o ano de emissão da homologação com 2 (dois) caracteres numéricos;</p>
+<p class="Tabela_Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">FFFFF – identifica o fabricante do produto com 5 (cinco) caracteres alfanuméricos.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1765"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20Técnicos" class="link-categoria">Requisitos Técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Cabos%20Coaxiais%20Flexíveis" class="link-categoria">Cabos Coaxiais Flexíveis</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=75%20Ω" class="link-categoria">75 Ω</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Tranças%20de%20Fios%20de%20Alumínio" class="link-categoria">Tranças de Fios de Alumínio</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

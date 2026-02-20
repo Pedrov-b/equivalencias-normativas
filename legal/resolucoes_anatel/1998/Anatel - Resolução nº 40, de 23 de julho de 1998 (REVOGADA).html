@@ -1,0 +1,3649 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="74eb7e20fcbb336f4228353a-text/javascript">
+  </script>
+  <script type="74eb7e20fcbb336f4228353a-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="74eb7e20fcbb336f4228353a-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 40, de 23 de julho de 1998 (REVOGADA)
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/1998/166-resolucao-40"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Aprovação, Regulamento, Interconexão de redes, Prestadora de serviços de telecomunicações, Qualidade de serviço, Gestão de rede de telecomunicações, Compartilhamento de infraestrutura, Arbitragem, GestaoEconomicaPrestacao, ResolucaoRevogada" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Aprova o Regulamento Geral de Interconexão. (Revogada pela Resolução nº 410/2005)" name="description"/>
+   <title>
+    Anatel - Resolução nº 40, de 23 de julho de 1998 (REVOGADA)
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1587148107" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=844423591" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"51d86a6f2595c22c01e767f075ee3001","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="74eb7e20fcbb336f4228353a-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="74eb7e20fcbb336f4228353a-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="74eb7e20fcbb336f4228353a-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="74eb7e20fcbb336f4228353a-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="74eb7e20fcbb336f4228353a-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=19377664" type="74eb7e20fcbb336f4228353a-text/javascript">
+    </script>
+    <script type="74eb7e20fcbb336f4228353a-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="74eb7e20fcbb336f4228353a-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026164817" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/1998/166-resolucao-40">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/1998" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/1998">
+             1998
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 40, de 23 de julho de 1998 (REVOGADA)
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179 current active">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-74eb7e20fcbb336f4228353a-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-74eb7e20fcbb336f4228353a-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="74eb7e20fcbb336f4228353a-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="74eb7e20fcbb336f4228353a-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 40, de 23 de julho de 1998 (REVOGADA)
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Sexta, 24 Julho 1998 10:00
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Segunda, 11 Agosto 2025 11:32
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 14439
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">
+                  <p>
+                   <a href="/legislacao/resolucoes/20-2005/167-resolucao-410" rel="nofollow" title="Acesse a Resolução">
+                    Revogada pela Resolução nº 410/2005
+                   </a>
+                  </p>
+                 </td>
+                 <td style="width: 50%; text-align: justify;" valign="middle">
+                  <p style="text-align: justify;">
+                   Aprova o Regulamento Geral de Interconexão.
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p style="text-align: justify;">
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=143&amp;data=24/07/1998" rel="nofollow" title="Acesse o DOU">
+                24/7/1998
+               </a>
+               .
+              </p>
+              <p style="text-align: justify;">
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+                </strong>
+                , no uso das atribuições que lhe foram conferidas pelo
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art22" title="Acesse o Artigo">
+                 art. 22
+                </a>
+                da
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm" title="Acesse a Lei">
+                 Lei nº 9.472, de 16 de julho de 1997
+                </a>
+                , por meio do Circuito Deliberativo nº 29, realizado no dia 16 de julho de 1998, em conformidade com os arts. 23 a 26 do Regimento Interno da Agência;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO os comentários recebidos decorrentes da Consulta Pública nº 36, de 6 de maio de 1998 – Proposta de Regulamento de Interconexão, publicada no
+                <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=93&amp;data=07/05/1998" rel="noopener noreferrer" target="_blank" title="Acesse DOU">
+                 Diário Oficial do dia 7 de maio de 1998
+                </a>
+                ;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong style="letter-spacing: 0.2em;">
+                 RESOLVE:
+                </strong>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art1">
+                </a>
+                Art. 1º Aprovar o Regulamento Geral de Interconexão, que deverá estar disponível na página da ANATEL, na INTERNET, no endereço http://www.anatel.gov.br, a partir das 16h de 24 de julho de 1998.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art2">
+                </a>
+                Art. 2º Esta Resolução entra em vigor na data de sua publicação.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                RENATO NAVARRO GUERREIRO
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Presidente do Conselho
+               </span>
+              </p>
+              <p style="text-align: center;">
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="anexo">
+                </a>
+                ANEXO À RESOLUÇÃO Nº 40, DE 23 DE JULHO DE 1998
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <span style="font-size: medium;">
+                 REGULAMENTO GERAL DE INTERCONEXÃO
+                </span>
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloI">
+                </a>
+                TÍTULO I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DISPOSIÇÕES GERAIS
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIcapI">
+                </a>
+                Capítulo I
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Dos Objetivos e da Abrangência
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art1Anexo">
+                </a>
+                Art. 1º As interconexões entre redes de prestadoras de serviço de telecomunicação são regidas pela
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm" rel="noopener noreferrer" target="_blank" title="Acesse a Lei">
+                 Lei nº 9.472, de 16 de julho de 1997
+                </a>
+                , por este Regulamento, pelos Regulamentos e Normas específicas de cada serviço e, particularmente, pelos contratos de interconexão celebrados entre as prestadoras e homologados pela ANATEL.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art2Anexo">
+                </a>
+                Art. 2º Este Regulamento estabelece os princípios e regras básicas para a interconexão entre redes e sistemas das prestadoras de serviços de telecomunicações, abrangendo os seus aspectos comerciais, técnicos e jurídicos.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIcapII">
+                </a>
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art3Anexo">
+                </a>
+                Art. 3º Para efeito deste regulamento, considera-se:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - área local: área de prestação do Serviço Telefônico Fixo Comutado, na modalidade local definida nos termos da regulamentação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - certificação: reconhecimento, por parte da ANATEL , da compatibilidade de determinado produto frente aos Regulamentos Técnicos e Normas Técnicas adotados pela ANATEL;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - elemento de rede: facilidade ou equipamento utilizado no provimento de serviços de telecomunicações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                IV - serviço de telecomunicações: conjunto de atividades que possibilita a oferta de telecomunicação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                V - informações para faturamento: informações que permitem a uma prestadora emitir documentos de cobrança para seus usuários;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                VI - interconexão: ligação entre redes de telecomunicações funcionalmente compatíveis, de modo que os usuários de serviços de uma das redes possam comunicar-se com usuários de serviços de outra ou acessar serviços nela disponíveis;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                VII - rede de telecomunicações: conjunto operacional contínuo de circuitos e equipamentos, incluindo funções de transmissão, comutação, multiplexação ou quaisquer outras indispensáveis à operação de serviço de telecomunicações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                VIII - interoperabilidade: conjunto de características técnicas comuns que assegura o provimento de serviços através de redes de telecomunicações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                IX - ponto de interconexão: elemento de rede empregado como ponto de entrada ou saída para o tráfego a ser cursado na interconexão com outra rede, constituindo o ponto de referência para definição dos deveres e obrigações de cada uma das partes envolvidas no contrato de interconexão;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                X - ponto de presença para interconexão: elemento de rede empregado como acesso remoto de um ponto de interconexão, tornando-se o ponto de referência para definição dos deveres e obrigações de cada uma das partes envolvidas no contrato de interconexão;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                XI - portabilidade de código de acesso: facilidade de rede que possibilita ao assinante de serviço de telecomunicação manter o código de acesso a ele designado, na forma definida na regulamentação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                XII - serviço telefônico fixo comutado local: modalidade de serviço telefônico fixo comutado, destinado ao uso do público em geral, que permite a comunicação entre pontos fixos determinados situados dentro de uma mesma Área Local;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                XIII - serviço telefônico fixo comutado de longa distância nacional: modalidade de serviço telefônico fixo comutado, destinado ao uso do público em geral, que permite a comunicação entre pontos fixos determinados situados em Áreas Locais distintas do território nacional;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                XIV - serviço telefônico fixo comutado de longa distância internacional: modalidade de serviço telefônico fixo comutado, destinado ao uso do público em geral, que permite a comunicação entre um ponto fixo situado no território nacional e outro ponto no exterior;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                XV - terminal de telecomunicações: equipamento ou aparelho que possibilita o acesso do usuário a serviço de telecomunicações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                XVI - usuário: pessoa natural ou jurídica que utiliza serviço de telecomunicação ;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                XVII - serviço de valor adicionado: atividade que acrescenta, a um serviço de telecomunicação que lhe dá suporte e com o qual não se confunde, novas utilidades relacionadas ao acesso, armazenamento, apresentação, movimentação ou recuperação de informações.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                XVIII - Entidade credora: prestadora de serviço telefônico fixo comutado à qual é devido valor, pela devedora, em função do uso de sua rede, na realização de uma chamada.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                XVIII - Entidade devedora: prestadora de serviço de telecomunicações de interesse coletivo que deve valor à entidade credora pelo uso de sua rede, na realização de uma chamada.
+               </span>
+              </p>
+              <p style="text-align: center; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIcapIII">
+                </a>
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Classificação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art4Anexo">
+                </a>
+                Art. 4º As interconexões entre redes de telecomunicações são divididas em cinco Classes da seguinte forma:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - Classe I: interconexão entre redes de telecomunicações de suporte de Serviço Telefônico Fixo Comutado nas suas modalidades Local, Longa Distância Nacional e Longa Distância Internacional;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - Classe II: interconexão entre rede de telecomunicações de suporte de Serviço Telefônico Fixo Comutado e rede de telecomunicações de suporte de serviço de telecomunicação móvel de interesse coletivo;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - Classe III: interconexão entre rede de telecomunicações de suporte de Serviço Telefônico Fixo Comutado, em suas diversas modalidades, ou de serviço de telecomunicação móvel de interesse coletivo, com rede de telecomunicações de suporte a outro serviço de telecomunicação de interesse coletivo;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                IV - Classe IV: interconexão entre redes de telecomunicações de suporte de serviço de telecomunicação móvel de interesse coletivo;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                V - Classe V: interconexão entre redes de telecomunicações de suporte a outro serviço de telecomunicação de interesse coletivo que não o Serviço Telefônico Fixo Comutado ou serviço de telecomunicação móvel de interesse coletivo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art5Anexo">
+                </a>
+                Art. 5º Não constitui interconexão, a ligação entre rede de telecomunicações de suporte a serviço de telecomunicação de interesse coletivo e equipamento terminal ou rede de telecomunicação pertencente a usuário ou provedor de serviço de valor adicionado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º As ligações referidas no caput são disciplinadas pela regulamentação de cada serviço de interesse coletivo, devendo ser formalizadas por contrato de provimento do próprio serviço.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º É vetada a ligação de equipamentos terminais de usuários, redes de telecomunicações de usuários, bem como equipamentos de provedores de serviços de valor adicionado sem certificação emitida ou reconhecida pela ANATEL , conforme regulamentação específica.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art6Anexo">
+                </a>
+                Art. 6º O acesso às redes de telecomunicações que envolvam interesses da União, inclusive os relativos às Forças Armadas e segurança Nacional, será objeto de regulamentação específica.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIcapIV">
+                </a>
+                Capítulo IV
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Condições Gerais para Interconexão
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="capIVsecI">
+                </a>
+                Seção I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Disposições Gerais
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art7Anexo">
+                </a>
+                Art. 7º As condições para interconexão de redes são objeto de livre negociação entre os interessados observado o disposto na
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm" rel="noopener noreferrer" target="_blank" title="Acesse a Lei">
+                 Lei nº 9.472, de 1997
+                </a>
+                , o presente Regulamento e a regulamentação própria de cada modalidade de serviço.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art8Anexo">
+                </a>
+                Art. 8º Nas negociações destinadas a estabelecer os contratos de interconexão são coibidos os comportamentos prejudiciais à livre, ampla e justa competição entre prestadoras de serviço, no regime público e privado, em especial:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - prática de subsídios, para redução artificial de tarifas ou preços;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - uso não autorizado de informações obtidas de concorrentes, decorrentes de contratos de interconexão;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - omissão de informações técnicas e comerciais relevantes à prestação de serviço por outrem;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                IV - exigência de condições abusivas para a celebração do contrato de interconexão, tais como, cláusulas que impeçam, por confidencialidade, a obtenção de informações solicitadas pela ANATEL ou que proíbam revisões contratuais derivadas de alterações na regulamentação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                V - obstruir ou protelar intencional das negociações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                VI - coação visando à celebração do contrato de interconexão;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                VII - a imposição de condições que impliquem em uso ineficiente das redes ou equipamentos interconectados.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art9Anexo">
+                </a>
+                Art. 9º É vetada a utilização do contrato de interconexão com o objetivo de alterar condições regulamentares de provimento de serviço de telecomunicação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art10Anexo">
+                </a>
+                Art. 10. As prestadoras de serviços de interesse coletivo devem tornar disponível, aos interessados, publicações que descrevam as condições para interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art11Anexo">
+                </a>
+                Art. 11. As prestadoras de serviço de telecomunicação, ao fixar as condições para interconexão às suas redes, devem observar os seguintes princípios:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - tratamento não discriminatório dos solicitantes;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - preservação da integridade da rede interconectada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - confidencialidade das informações, inclusive aquelas de âmbito privativo de usuários.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIcapIVsecII">
+                </a>
+                Seção II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Provimento da Interconexão
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art12Anexo">
+                </a>
+                Art. 12. As prestadoras de serviço de telecomunicação de interesse coletivo são obrigadas a tornar suas redes disponíveis para interconexão quando solicitado por qualquer outra prestadora de serviço de telecomunicação de interesse coletivo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art13Anexo">
+                </a>
+                Art. 13. A interconexão deve ser feita em pontos tecnicamente viáveis da rede da prestadora que recebe o pedido de interconexão, observadas as condições estritamente necessárias à prestação do serviço.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art14Anexo">
+                </a>
+                Art. 14 A existência de interconexão bem sucedida em ponto particular de uma rede, constitui evidência de viabilidade técnica de interconexão naquele ponto, ou em ponto similar.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A existência de características técnicas, comerciais e de qualidade de serviço comuns são consideradas evidências de similaridade entre pontos de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art15Anexo">
+                </a>
+                Art. 15. A prestadora que recebe o pedido de interconexão deve oferecer alternativa compatível, quando houver indisponibilidade de meios ou facilidades no ponto de interconexão pleiteado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A utilização de ponto de interconexão ou ponto de presença para interconexão, alternativo ao originalmente pleiteado, deve ser objeto de acordo entre as partes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Não havendo acordo o assunto será objeto de arbitragem pela ANATEL.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="tituloIcapIVsecIII">
+                </a>
+                Seção III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Qualidade de Serviço
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art16Anexo">
+                </a>
+                Art. 16. A interconexão deve assegurar atendimento a padrões de qualidade de serviço, os quais devem ser explicitados no contrato de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Os padrões de qualidade de serviço adotados na interconexão entre redes de prestadoras do Serviço Telefônico Fixo Comutado devem permitir o cumprimento das metas estabelecidas no Plano Geral de Metas de Qualidade.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Observado o estabelecido no parágrafo primeiro, as prestadoras não são obrigadas a oferecer grau de qualidade de serviço superior ao empregado em suas próprias operações ou estabelecido em outros contratos de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art17Anexo">
+                </a>
+                Art. 17. A interrupção do serviço por falhas de rede, de qualquer tipo, que venham a afetar mais de 10% do total de acessos de localidade, setor ou região, deve ser informada, imediatamente, a todos os demais prestadores que possuam redes interconectadas à rede em falha, à ANATEL e ao público em geral.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A informação de interrupção do serviço deve incluir, no mínimo, a descrição objetiva da falha, localização, quantidade de acessos afetados, detalhes da interrupção, diagnóstico e ações corretivas adotadas.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIcapIVsecIV">
+                </a>
+                Seção IV
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Planejamento e Operação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art18Anexo">
+                </a>
+                Art. 18. Alteração de rede planejada por prestadora de serviço de telecomunicação que possa afetar redes de outras prestadoras, deve ser informada com antecedência mínima de 120 dias da data pretendida para sua efetivação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º As alterações somente poderão ser efetivadas após acordo com as prestadoras afetadas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º As prestadoras devem manifestar-se em até 30 dias contados a partir do recebimento da informação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art19Anexo">
+                </a>
+                Art. 19. A interconexão deve ser objeto de planejamento contínuo e integrado entre as prestadoras envolvidas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. As informações relativas ao processo de planejamento podem ser solicitadas, a qualquer tempo, pela ANATEL.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloII">
+                </a>
+                TÍTULO II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS CLASSES DE INTERCONEXÃO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIIcapI">
+                </a>
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Interconexão Classe I
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art20Anexo">
+                </a>
+                Art. 20. As concessionárias de Serviço Telefônico Fixo Comutado Local, devem solicitar interconexão junto a todas as prestadoras de Serviço Telefônico Fixo Comutado de Longa Distância Nacional ou Internacional, e outras prestadoras do Serviço Telefônico Fixo Comutado Local que ofereçam serviço em suas áreas de concessão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A existência de ponto de interconexão, ou ponto de presença para interconexão em área local é responsabilidade exclusiva das prestadoras de Serviço Telefônico Fixo Comutado de Longa Distância Nacional ou Internacional.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º As Concessionárias de Serviço Telefônico Fixo Comutado devem assegurar, no mínimo, a existência dos pontos de interconexão ou pontos de presença para interconexão descritos no
+                <a href="#anexoII" title="Acesse o Anexo II">
+                 Anexo II do presente Regulamento
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art21Anexo">
+                </a>
+                Art. 21. As redes das prestadoras de Serviço Telefônico Fixo Local devem possibilitar, em cada chamada, a escolha da prestadora de Serviço Telefônico Fixo Comutado de Longa Distância Nacional ou Internacional.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIIcapII">
+                </a>
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Interconexão Classe II
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art22Anexo">
+                </a>
+                Art. 22. As prestadoras de Serviço de Telecomunicação Móvel de Interesse Coletivo devem, quando aplicável, solicitar interconexão junto as prestadoras do Serviço Telefônico Fixo Comutado, conforme regulamentação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. As prestadoras de Serviço de Telecomunicação Móvel de Interesse Coletivo devem, quando aplicável, possibilitar, em cada chamada, a escolha de prestadora de Serviço Telefônico Fixo Comutado de Longa Distância Nacional ou Internacional.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIIcapIII">
+                </a>
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Interconexão Classe III
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art23Anexo">
+                </a>
+                Art. 23. As prestadoras de serviços de telecomunicação de interesse coletivo, não classificadas como Serviço Telefônico Fixo Comutado ou Serviço de Telecomunicação Móvel de Interesse Coletivo, podem realizar, nos termos da regulamentação, a interconexão de suas redes a redes de prestadoras de Serviço Telefônico Fixo Comutado ou de Serviço de Telecomunicação Móvel de Interesse Coletivo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. É vetada a interconexão entre redes com propósito diferente de cursar tráfego entre usuários das redes interconectadas.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIIcapIV">
+                </a>
+                Capítulo IV
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Interconexão Classe IV
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art24Anexo">
+                </a>
+                Art. 24. As prestadoras podem, nos termos da regulamentação, realizar interconexão de suas redes para cursar chamadas originadas e terminadas em suas redes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º É vetada a interconexão entre redes com propósito diferente de cursar tráfego entre usuários das redes interconectadas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º O tráfego entre prestadoras que detenham áreas de exploração distintas, deve ser encaminhado a prestadora de Serviço Telefônico Fixo Comutado de Longa Distância Nacional, salvo disposição em contrário contida na regulamentação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º O tráfego internacional originado ou terminado em redes de prestadoras deve ser encaminhado por prestadora do Serviço Telefônico Fixo Comutado de Longa Distância Internacional, salvo disposição em contrário contida na regulamentação.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIIcapV">
+                </a>
+                Capítulo V
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Interconexão Classe V
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art25Anexo">
+                </a>
+                Art. 25. As prestadoras podem, nos termos da regulamentação, realizar interconexão de suas redes para cursar chamadas, originadas e terminadas em suas redes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. É vetada a interconexão entre redes com propósito diferente de cursar tráfego entre usuários das redes interconectadas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art26Anexo">
+                </a>
+                Art. 26. As prestadoras podem estabelecer, por meios próprios ou por meios fornecidos por terceiros, enlaces para os entroncamentos entre elementos de sua rede.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art27Anexo">
+                </a>
+                Art. 27. Os padrões técnicos aplicáveis na interconexão entre redes de prestadoras são objeto de regulamentação específica.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIII">
+                </a>
+                TÍTULO III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS CONDIÇÕES TÉCNICAS PARA INTERCONEXÃO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIIIcapI">
+                </a>
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Dos Requisitos das Redes
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art28Anexo">
+                </a>
+                Art. 28. As redes de telecomunicações, destinadas a dar suporte à prestação de serviços de interesse coletivo, no regime público ou privado, devem ser organizadas como vias integradas de livre circulação, nos termos seguintes:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - é obrigatória a interconexão entre redes;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - deve ser assegurada a operação integrada das redes, em âmbito nacional e internacional;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - o direito de propriedade sobre as redes é condicionado pelo dever de cumprimento de sua função social.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art29Anexo">
+                </a>
+                Art. 29. São aplicáveis à interconexão os requisitos técnicos referentes a interfaces, incluindo características de sinalização, sincronismo, transmissão, numeração, qualidade de serviço e desempenho de rede.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art30Anexo">
+                </a>
+                Art. 30. As prestadoras de serviço de interesse coletivo devem prever alternativas de contingência de modo a garantir a continuidade e qualidade em caso de falha nos pontos de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art31Anexo">
+                </a>
+                Art. 31. É vetado o uso de rotas de interconexão para cursar tráfego artificialmente gerado ou excedente de outras rotas internas às redes interconectadas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art32Anexo">
+                </a>
+                Art. 32. Em cada ponto de interconexão deve ser assegurada uma disponibilidade operacional mensal superior a 99,8 % (noventa e nove e oito décimos por cento), sendo esta definida como a relação entre o tempo em que o sistema apresenta características técnicas e operacionais especificadas e o tempo total considerado.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIIIcapII">
+                </a>
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Compartilhamento de Meios
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIIIcapIIsecI">
+                </a>
+                Seção I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Implementação da Interconexão
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art33Anexo">
+                </a>
+                Art. 33. Nos termos do contrato de interconexão as prestadoras de serviço de telecomunicação de interesse coletivo podem compartilhar equipamentos, infra-estrutura, facilidades e outros meios visando à implementação da interconexão entre as redes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art34Anexo">
+                </a>
+                Art. 34. As prestadoras de serviço de telecomunicação de interesse coletivo devem observar, no planejamento de suas instalações, a necessidade de dispor de infra-estrutura, em área localizada nas mesmas instalações de ponto de interconexão ou ponto de presença para interconexão, para instalação de equipamentos de terceiros utilizado para a interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Não se incluem como equipamentos destinados a implantação da interconexão, comutadores e outros equipamentos utilizados para provimento de funções adicionais àquelas necessárias para assegurar a interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º A infra-estrutura necessária para instalação dos equipamentos, deve incluir, além de área, as demais facilidades requeridas para instalação dos equipamentos, tais como, energia e distribuidores.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art35Anexo">
+                </a>
+                Art. 35. Quando do compartilhamento de infra-estrutura deve ser assegurado o acesso à área em que está instalado o equipamento de propriedade da outra prestadora, através de procedimentos contidos no contrato de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Responderá administrativamente perante a ANATEL a prestadora que cometer excessos ou abusos no exercício do direito referido no caput.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art36Anexo">
+                </a>
+                Art. 36. Quando não for possível a instalação de equipamentos nas mesmas instalações do ponto de interconexão solicitado, cabe a prestadora que recebeu o pedido de interconexão ofertar, sem ônus adicional para a outra prestadora, local alternativo para instalação dos equipamentos localizado o mais próximo possível do ponto de interconexão originalmente solicitado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art37Anexo">
+                </a>
+                Art. 37. A prestadora que recebeu o pedido de interconexão, de comum acordo com a outra prestadora, pode instalar e operar os meios necessários ao estabelecimento da interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art38Anexo">
+                </a>
+                Art. 38. O custo de adaptação ou modificação da infra-estrutura, quando necessário, é de responsabilidade da prestadora que se beneficiar da modificação implementada.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIIIcapIIsecII">
+                </a>
+                Seção II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Construção das Redes
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art39Anexo">
+                </a>
+                Art. 39. As prestadoras de serviço de interesse coletivo devem tornar disponível, em condições justas e não discriminatórias, facilidades, tais como cabos, fibras, dutos, postes, torres dentre outras, para uso, quando solicitado, pelas prestadoras do Serviço Telefônico Fixo Comutado com a finalidade específica destas construírem suas redes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º As solicitações devem ser feitas formalmente e respondidas em até quarenta e cinco dias úteis, a partir da data da solicitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º No caso de resposta negativa à solicitação, a prestadora solicitada deve informar objetivamente as razões da recusa.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º A solicitante que tiver seu pleito negado poderá requerer da ANATEL avaliação a respeito da validade dos motivos alegados.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art40Anexo">
+                </a>
+                Art. 40. No relacionamento entre prestadoras de serviços de interesse coletivo deverá ser utilizada a exploração industrial de meios, que deve ser oferecida em bases justas e não discriminatórias.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="tituloIV">
+                </a>
+                TÍTULO IV
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DO CONTRATO DE INTERCONEXÃO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIVcapI">
+                </a>
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Disposições Gerais
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art41Anexo">
+                </a>
+                Art. 41. As condições para a interconexão de redes são objeto de livre negociação entre interessados, mediante acordo, que será formalizado por contrato, cuja eficácia depende de homologação pela ANATEL.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A homologação será negada se o contrato for prejudicial à ampla, livre e justa competição.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Caso a ANATEL se manifeste pela modificação do contrato, as partes terão trinta dias para fazer as alterações necessárias, encaminhando nova versão para exame.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º Decorridos trinta dias sem manifestação da ANATEL, considerar-se-á aprovado o contrato de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 4º Após a homologação, cópia do contrato de interconexão , bem como suas alterações posteriores, estarão disponíveis na Biblioteca da ANATEL para consulta do público em geral.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art42Anexo">
+                </a>
+                Art. 42. As solicitações de interconexão devem ser apresentadas formalmente à prestadora solicitada devendo conter, no mínimo, as informações do
+                <a href="#anexoI" title="Acesse o Anexo I">
+                 Anexo I
+                </a>
+                do presente Regulamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A ANATEL deverá ser informada da formalização de solicitação de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º O contrato de interconexão deve ser celebrado em até sessenta dias após a formalização da solicitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º Vencido o prazo de negociação entre os interessados e havendo impasse, a ANATEL arbitrará as condições para a interconexão, por provocação de um deles.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIVcapII">
+                </a>
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Da Arbitragem
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art43Anexo">
+                </a>
+                Art. 43. Eventuais conflitos que possam surgir em matéria de aplicação e interpretação da regulamentação, quando do desenvolvimento das negociações dos contratos de interconexão, serão equacionados pela ANATEL no exercício da sua função de órgão regulador, conforme prescrito nos
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art8" rel="noopener noreferrer" target="_blank" title="Acesse o Artigo">
+                 artigos 8º
+                </a>
+                e
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art19" title="Acesse o Artigo">
+                 19
+                </a>
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art8" rel="noopener noreferrer" target="_blank" title="Acesse o Artigo">
+                </a>
+                da
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm" title="Acesse a Lei">
+                 Lei nº 9.472, de 1997
+                </a>
+                , através do processo de arbitragem definido neste regulamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A submissão de qualquer questão à arbitragem não exime as prestadoras e a ANATEL da obrigação de dar integral cumprimento a contratos de interconexão vigentes, nem permite a interrupção das atividades vinculadas a tais contratos.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art44Anexo">
+                </a>
+                Art. 44. A arbitragem das condições de interconexão é feita pela Comissão de Arbitragem composta por três membros nomeados pelo Presidente da ANATEL e que se reúne sempre que a ANATEL for provocada.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Cabe à Comissão a homologação de acordos de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art45Anexo">
+                </a>
+                Art. 45. A Presidência da Comissão é exercida pelo árbitro a quem for distribuído o requerimento de arbitragem ou de homologação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A distribuição dos requerimentos proceder-se-á através de sorteio.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art46Anexo">
+                </a>
+                Art. 46. Não pode funcionar como árbitro o membro da Comissão que tenha com as partes ou com a controvérsia que lhe for submetida, alguma das relações que caracterizam os casos de impedimento ou suspeição, aplicando-se-lhe, no que couber, os mesmos deveres e responsabilidades previstos no Código de Processo Civil.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Os membros da Comissão têm o dever de revelar qualquer fato ou circunstância que possam comprometer, direta ou indiretamente, sua imparcialidade e independência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º A parte que pretender argüir impedimento ou suspeição de árbitro deverá fazê-lo na primeira oportunidade.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º Argüida a suspeição ou o impedimento de membro da Comissão, este poderá aceitá-la espontaneamente ou não, ocasião em que caberá ao Conselho Diretor decidir quanto ao seu acolhimento e, no mesmo ato, indicar pessoa que substituirá o árbitro afastado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art47Anexo">
+                </a>
+                Art. 47. O procedimento da arbitragem será público.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Havendo risco à segurança do país ou de prejuízo para qualquer das partes, estas podem, justificadamente, requerer tratamento confidencial, apontando as informações que devem ser mantidas em sigilo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º O pedido de sigilo deve ser apreciado pela Comissão que o decidirá com base no disposto no
+                <a href="/legislacao/decretos/3-decreto-2338#art64" rel="noopener noreferrer" target="_blank" title="Acesse o Artigo">
+                 artigo 64
+                </a>
+                do Regulamento da ANATEL, cabendo recurso ao Conselho Diretor.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º Enquanto não houver pronunciamento final da ANATEL a respeito do pedido de sigilo, as informações correspondentes terão tratamento confidencial.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art48Anexo">
+                </a>
+                Art. 48. É direito das partes a assistência de advogado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art49Anexo">
+                </a>
+                Art. 49. É dever das prestadoras oferecer todas as informações necessárias para a arbitragem de conflitos de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art50Anexo">
+                </a>
+                Art. 50. São legitimados para participar dos procedimentos de arbitragem:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - as pessoas jurídicas diretamente envolvidas no acordo;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - aqueles que sem estar diretamente envolvidos no acordo têm direitos ou interesses que possam ser afetados pela decisão a ser adotada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - as organizações e associações legalmente constituídas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art51Anexo">
+                </a>
+                Art. 51. Os atos produzidos pela Comissão devem ser reduzidos a termo, em vernáculo, com a data e o local de sua emissão e a assinatura gráfica ou eletrônica, da autoridade responsável.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Os autos do procedimento de arbitragem devem ter suas páginas numeradas seqüencialmente e rubricadas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art52Anexo">
+                </a>
+                Art. 52. Se no curso da arbitragem as partes chegarem a acordo quanto à controvérsia, a Comissão, analisando os termos do acordo, o homologará.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A notificação da homologação será feita nos termos do
+                <a href="#art56" title="Acesse o Artigo">
+                 art. 56
+                </a>
+                deste Regulamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art53Anexo">
+                </a>
+                Art. 53. As decisões são tomadas por maioria, podendo o árbitro que divergir declarar o seu entendimento, que será motivado, em separado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. As decisões devem conter, sempre, os fatos e os fundamentos que as determinaram.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art54Anexo">
+                </a>
+                Art. 54. Os membros da Comissão de Arbitragem têm o dever de atuar com honestidade, imparcialidade e legalidade não podendo fazer uso de informações ou obter qualquer vantagem em razão de sua função sob pena de incorrerem em falta administrativa, sem prejuízo do que prevêem as leis penal e de improbidade administrativa.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIVcapIII">
+                </a>
+                Capítulo III
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Procedimento
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art55Anexo">
+                </a>
+                Art. 55. O procedimento para a arbitragem de interconexão tem início com requerimento dirigido ao Presidente da Comissão, que observará as seguintes regras:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - o requerimento deverá expor os fatos de forma clara e vir instruído com os documentos necessários a sua comprovação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - recebido o requerimento, será o requerido notificado para no prazo de dez dias apresentar informações e documentos relativos à controvérsia;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - concluída a instrução, são notificadas as partes para em cinco dias apresentarem suas razões finais;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                IV - a Comissão arbitrará o termo de interconexão em quinze dias.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art56Anexo">
+                </a>
+                Art. 56. As notificações são feitas, por carta com aviso de recebimento ou por outro meio que assegure a certeza da ciência do interessado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A notificação inicial fica a cargo do requerente e as demais serão feitas pela Comissão de Arbitragem.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art57Anexo">
+                </a>
+                Art. 57. São inadmissíveis as provas obtidas por meios ilícitos.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art58Anexo">
+                </a>
+                Art. 58. A parte pode requerer diligências e perícias, arcando com o respectivo ônus.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Somente podem ser recusadas, mediante decisão fundamentada, as provas apresentadas pelos interessados, quando sejam ilícitas, desnecessárias ou protelatórias.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art59Anexo">
+                </a>
+                Art. 59. É facultada à ANATEL a possibilidade de contratar perito para auxiliá-la na sua decisão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O custo da perícia é repartido pelas partes envolvidas no acordo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art60Anexo">
+                </a>
+                Art. 60. A Comissão pode, sempre que necessário, solicitar parecer da Procuradoria.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art61Anexo">
+                </a>
+                Art. 61. Das decisões da Comissão cabe recurso ao Conselho Diretor, no prazo de dez dias.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. São irrecorríveis os atos de mero expediente.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art62Anexo">
+                </a>
+                Art. 62. Podem interpor recurso as entidades legitimadas a participar dos procedimentos de arbitragem, nos termos do
+                <a href="#art50" title="Acesse o Artigo">
+                 art. 50
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O direito ao recurso não é condicionado à prévia participação do recorrente no procedimento do qual tenha resultado o ato.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art63Anexo">
+                </a>
+                Art. 63. Os recursos são recebidos no efeito meramente devolutivo, salvo quando da execução do ato recorrido puder resultar a ineficácia da decisão final, tal como no caso de indeferimento de pedido de sigilo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art64Anexo">
+                </a>
+                Art. 64. A tramitação do recurso deve observar as seguintes regras:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - o recurso é dirigido ao Presidente da Comissão que determina a notificação do recorrido e, havendo, de outros interessados representados nos autos, para no prazo de dez dias apresentarem contra-razões;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - decorrido o prazo de contra-razões, os autos são encaminhados ao Conselho Diretor;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - proferida a decisão, o Conselho notifica as partes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Quanto ao andamento do recurso junto ao Conselho Diretor, aplicam-se, no que couber, os
+                <a href="/legislacao/resolucoes/16-2001/4-resolucao-270#art9" rel="noopener noreferrer" target="_blank" title="Acesse os Artigo">
+                 artigos 9º a 16
+                </a>
+                do Regimento Interno da ANATEL.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art65Anexo">
+                </a>
+                Art. 65. Da decisão do Conselho Diretor cabe pedido de reconsideração, nos termos do
+                <a href="/legislacao/resolucoes/16-2001/4-resolucao-270" rel="noopener noreferrer" target="_blank" title="Acesse o Regimento">
+                 Regimento Interno da ANATEL
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art66Anexo">
+                </a>
+                Art. 66. A este procedimento aplicam-se subsidiariamente as regras de atuação da ANATEL constantes de seu
+                <a href="/legislacao/resolucoes/16-2001/4-resolucao-270" rel="noopener noreferrer" target="_blank" title="Acesse o Regimento">
+                 Regimento Interno
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art67Anexo">
+                </a>
+                Art. 67. De comum acordo, as partes podem desenvolver processo de arbitragem próprio, encaminhando o resultado para avaliação e homologação da ANATEL.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloIVcapIV">
+                </a>
+                Capítulo IV
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Do Contrato de Interconexão
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art68Anexo">
+                </a>
+                Art. 68. O contrato de interconexão deve indicar:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - modo, forma e condições em que a interconexão será provida;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - direitos, garantias e obrigações das partes;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - preços a serem cobrados, quando não forem fixados pela ANATEL;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                IV - formas de acerto de contas entre as partes;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                V - condições de compartilhamento de infra-estrutura;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                VI - condições técnicas relativas a implementação e qualidade da interconexão;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                VII - multas e demais sanções;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                VIII - foro e modo para solução extrajudicial das divergências contratuais.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art69Anexo">
+                </a>
+                Art. 69. A ANATEL pode aplicar sanções às prestadoras que descumpram as obrigações pactuadas em contratos de interconexão, nos termos dos
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art173" title="Acesse o artigo">
+                 arts. 173
+                </a>
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art182" title="Acesse o Artigo">
+                 a 182
+                </a>
+                da
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm" title="Acesse a Lei">
+                 Lei nº 9.472, de 1997
+                </a>
+                , observado o procedimento sancionatório instituído no seu
+                <a href="/legislacao/resolucoes/16-2001/4-resolucao-270" rel="noopener noreferrer" target="_blank" title="Acesse o Regimento">
+                 Regimento Interno
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art70Anexo">
+                </a>
+                Art. 70. Após a homologação do contrato de interconexão pela ANATEL, as implementações previstas devem estar operacionais para a plena interconexão entre as redes em até noventa dias.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Havendo atraso, a parte responsável deve ressarcir a parte prejudicada, segundo condições e valores previstos no contrato de interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Em função de situações específicas e de comum acordo, as partes podem, no contrato de interconexão, alterar o prazo previsto no caput ou a aplicação de sanções relativas ao seu descumprimento.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloV">
+                </a>
+                TITULO V
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DOS VALORES E REMUNERAÇÕES
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art71Anexo">
+                </a>
+                Art. 71. Os valores de remuneração das redes são disciplinados em regulamentação específica.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art72Anexo">
+                </a>
+                Art. 72. Até 30 de junho de 1999, quando será possível a escolha entre as prestadoras de Serviço Telefônico Fixo Comutado de Longa Distância Nacional e Internacional, nas relações entre as diferentes prestadoras do Serviço Telefônico Fixo Comutado será considerada como Entidade devedora para efeito de remuneração de redes nas chamadas de longa distância nacionais e internacionais:
+               </span>
+              </p>
+              <ul class="remissao">
+               <li>
+                Prazo prorrogado pela
+                <a href="/legislacao/resolucoes/14-1999/183-resolucao-130" rel="noopener noreferrer" target="_blank" title="Acesse a Resolução">
+                 Resolução nº 130, de 31 de maio de 1999
+                </a>
+                .
+               </li>
+              </ul>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - a prestadora do Serviço Telefônico Fixo Comutado de Longa Distância Nacional intra-regional , definida no
+                <a href="/legislacao/decretos/52-decreto-6654#anexoIII" rel="noopener noreferrer" target="_blank" title="Acesse o Anexo">
+                 Anexo 3
+                </a>
+                do Plano Geral de Outorgas, nas chamadas de longa distância originadas e terminadas em áreas locais pertencentes ao seu próprio setor definido no
+                <a href="/legislacao/decretos/52-decreto-6654#anexoII" rel="noopener noreferrer" target="_blank" title="Acesse o Anexo">
+                 Anexo 2
+                </a>
+                do Plano Geral de Outorgas;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - a prestadora do Serviço Telefônico Fixo Comutado de Longa Distância Nacional intra-regional , definida no
+                <a href="/legislacao/decretos/52-decreto-6654#anexoIII" rel="noopener noreferrer" target="_blank" title="Acesse o Anexo">
+                 Anexo 3
+                </a>
+                do Plano Geral de Outorgas, nas chamadas em zonas limítrofes de fronteira originadas no lado brasileiro;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - a prestadora do Serviço Telefônico Fixo Comutado de Longa Distância Nacional intra ou inter-regional , definida no
+                <a href="/legislacao/decretos/52-decreto-6654#anexoIII" rel="noopener noreferrer" target="_blank" title="Acesse o Anexo">
+                 Anexo 3
+                </a>
+                do Plano Geral de Outorgas, do setor originador, definido no
+                <a href="/legislacao/decretos/52-decreto-6654#anexoII" rel="noopener noreferrer" target="_blank" title="Acesse o Anexo">
+                 Anexo 2
+                </a>
+                do Plano Geral de Outorgas, nas chamadas entre os setores:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                a. 02 e 03 ou;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                b. 19 e 20 ou;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                c. 31 e 22, 32, 33 e 34 ou;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                d. 24 e 25 ou;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                e. 29 e 30 ou;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                f. 03, 22, 25 e 33;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - prestadora do Serviço Telefônico Fixo Comutado de Longa Distância Nacional, definida no
+                <a href="/legislacao/decretos/52-decreto-6654#anexoIII" rel="noopener noreferrer" target="_blank" title="Acesse o Anexo">
+                 Anexo 3
+                </a>
+                do Plano Geral de Outorgas, nas demais chamadas de longa distância nacionais;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - prestadora do Serviço Telefônico Fixo Comutado de Longa Distância Internacional, definida no
+                <a href="/legislacao/decretos/52-decreto-6654#anexoIII" rel="noopener noreferrer" target="_blank" title="Acesse o Anexo">
+                 Anexo 3
+                </a>
+                do Plano Geral de Outorgas, nas chamadas originadas ou terminadas em outro país.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="tituloVI">
+                </a>
+                TITULO VI
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art73Anexo">
+                </a>
+                Art. 73. Para fins de interconexão entre redes de telecomunicações de suporte de Serviço Telefônico Fixo Comutado situadas em Zonas de fronteira, devem ser observadas as disposições, procedimentos e outros aspectos da Resolução GMC Nº 66, de 13 de dezembro de 1997, Regulamento Técnico MERCOSUR "Disposiciones Sobre Servicios Públicos De Telefonia Básica En Zonas Fronterizas En El Mercosur", e contido no Regulamento do Serviço Telefônico Fixo Comutado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Os procedimentos operacionais e de manutenção, o rateio de custos de implantação, operação e manutenção, assim como os demais aspectos relacionados aos recursos de telecomunicações devem ser objeto de negociação direta entre as prestadoras envolvidas e formalizados por intermédio de acordos de interconexão homologados pela ANATEL e a Administração do País limítrofe.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art74Anexo">
+                </a>
+                Art. 74. Os contratos de interconexão celebrados anteriormente à edição deste Regulamento devem ser adequados e enviados à ANATEL, em até 120 (cento e vinte) dias, para homologação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art75Anexo">
+                </a>
+                Art. 75. Os contratos de interconexão celebrados até 30 (trinta) dias após à edição deste Regulamento devem ser adequados e enviados à ANATEL, em até 120 (cento e vinte) dias, para homologação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art76Anexo">
+                </a>
+                Art. 76. Os contratos de interconexão entre redes das Concessionárias prestadoras de Serviço Telefônico Fixo Comutado e as redes das prestadoras do Serviço Móvel Celular firmados anteriormente a esta resolução continuam regidos pela Norma nº 20/96, instituída pela Portaria nº 1.533, de 4 de novembro de 1996, do Ministério das Comunicações.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art77Anexo">
+                </a>
+                Art. 77. Os regulamentos, normas e demais regras que tratavam de interconexão entre redes de prestadoras de serviço de telecomunicação ficam substituídos, nesta matéria, pelo presente Regulamento, nos termos do
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art214" rel="noopener noreferrer" target="_blank" title="Acesse o Artigo">
+                 art. 214,
+                </a>
+                I, da
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm" title="Acesse a Lei">
+                 Lei nº 9.472, de 1997
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art78Anexo">
+                </a>
+                Art. 78. O processo de adequação ou elaboração de contratos de interconexão não deve causar descontinuidade ou queda da qualidade dos serviços prestados.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art79Anexo">
+                </a>
+                Art. 79. As prestadoras de Serviço Telefônico Fixo Comutado Local que, até o dia 30 de Junho de 1999, não oferecerem a possibilidade de, a cada chamada, escolha de prestadora de Serviço Telefônico Fixo Comutado de Longa Distância Nacional ou Internacional, devem distribuir de forma eqüitativa as chamadas originadas de longa distância entre todas as prestadoras de Serviço Telefônico Fixo Comutado de Longa Distância Nacional ou Internacional, que possuam ponto de interconexão ou ponto de presença para a interconexão na área local considerada, exceto àquela que seja sua coligada, controlada ou controladora.
+               </span>
+              </p>
+              <ul class="remissao">
+               <li>
+                Prazo prorrogado pela
+                <a href="/legislacao/resolucoes/14-1999/183-resolucao-130" rel="noopener noreferrer" target="_blank" title="Acesse a Resolução">
+                 Resolução nº 130, de 31 de maio de 1999
+                </a>
+                .
+               </li>
+              </ul>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art80Anexo">
+                </a>
+                Art. 80. Este Regulamento entra em vigor na data de sua publicação.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="anexoI">
+                </a>
+                ANEXO I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                INFORMAÇÕES PARA SOLICITAÇÃO DE INTERCONEXÃO
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Art. 1º Uma solicitação de Interconexão deve conter, no mínimo, as seguintes informações:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - sobre a Empresa solicitante:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                a. razão social;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                b. CGC;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                c. endereço da sede;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                d. representante legal;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                e. responsável técnico-operacional.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - sobre área de atuação do solicitante:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                a. identificação da concessão, permissão ou autorização;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                b. modalidade de serviço a ser prestada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                c. área de abrangência geográfica;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                d. data para início das atividades.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - sobre o objetivo da interconexão solicitada:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                a. tipo (s) de tráfego e serviço(s) ofertados e pretendidos;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                b. data(s) para ativação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - sobre aspectos técnicos da interconexão solicitada:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                a. localização geográfica do(s) Ponto(s) de Interconexão ou Ponto(s) de Presença para Interconexão oferecido(s), incluindo endereço e coordenadas geográficas (latitude e longitude);
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                b. abrangência de cada Ponto de Interconexão e/ou Ponto de Presença para Interconexão;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                c. parâmetros de qualidade de serviço e performance de rede oferecidos e pretendidos;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                d. padrões para interconexão, interfaces, tipo de sinalização, informações a serem trocadas entre os Pontos de Interconexão.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a id="anexoII">
+                </a>
+                ANEXO II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                PLANO DE METAS PARA DISPONIBILIZAÇÃO DE PONTOS DE INTERCONEXÃO E PONTOS DE PRESENÇA PARA INTERCONEXÃO
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="anexoIIcapI">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Dos Objetivos e Abrangência
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art1AnexoII">
+                </a>
+                Art. 1º Este anexo contém metas relativas a implantação de pontos de Interconexão ou Pontos de Presença para Interconexão , pelas Concessionárias do Serviço Telefônico Fixo Comutado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º As metas, ora definidas, podem ser revistas pela ANATEL, em função da evolução e adequação das redes das Concessionárias do Serviço Telefônico Fixo Comutado e do processo de interconexão de redes decorrente da implementação da competição para as modalidades do Serviço Telefônico Fixo Comutado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art2AnexoII">
+                </a>
+                Art. 2º Todos os investimentos necessários a consecução das metas estabelecidas, são suportados exclusivamente pelas Concessionárias do Serviço Telefônico Fixo Comutado, que têm a obrigatoriedade de prover a interconexão a outras Redes.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <a name="anexoIIcapII">
+                </a>
+                Capítulo II
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Das Metas para Serviço Telefônico Fixo Comutado
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art3AnexoII">
+                </a>
+                Art. 3º As metas para implantação de Pontos de Interconexão ou Pontos de Presença para Interconexão expressam a obrigatoriedade de sua implantação por parte das Concessionárias do Serviço Telefônico Fixo Comutado, ao longo do tempo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="art4AnexoII">
+                </a>
+                Art. 4º As metas para Concessionárias do Serviço Telefônico Fixo Comutado Local são as seguintes:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - em áreas locais com até 10.000 códigos de acesso: a partir de 31/12/2000;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - em áreas locais com número de códigos de acesso entre 10.000 e 40.000: a partir de 31/12/1999;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - em áreas locais com número de códigos de acesso superior a 40.000: a partir de 31/12/1998;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <a id="anexoIIart5">
+                </a>
+                Art. 5º As metas para Concessionárias do Serviço Telefônico Fixo Comutado Longa Distância Nacional são as seguintes :
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                I - nas áreas locais com até 10.000 códigos de acesso: a partir de 31/12/2000;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                II - nas áreas locais com número de códigos de acesso entre 10.000 e 40.000: a partir de 31/12/1999;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">
+               <span style="text-decoration: line-through;">
+                III - nas áreas locais com número de códigos de acesso superior a 40.000: a partir de 31/12/1998.
+               </span>
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_166">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/1998" rel="tag">
+                 1998
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação">
+                 Aprovação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento">
+                 Regulamento
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Interconexão%20de%20redes">
+                 Interconexão de redes
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Prestadora%20de%20serviços%20de%20telecomunicações">
+                 Prestadora de serviços de telecomunicações
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Qualidade%20de%20serviço">
+                 Qualidade de serviço
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Gestão%20de%20rede%20de%20telecomunicações">
+                 Gestão de rede de telecomunicações
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Compartilhamento%20de%20infraestrutura">
+                 Compartilhamento de infraestrutura
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Arbitragem">
+                 Arbitragem
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=GestaoEconomicaPrestacao">
+                 GestaoEconomicaPrestacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada">
+                 ResolucaoRevogada
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="74eb7e20fcbb336f4228353a-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="74eb7e20fcbb336f4228353a-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="74eb7e20fcbb336f4228353a-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="74eb7e20fcbb336f4228353a-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-74eb7e20fcbb336f4228353a-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="74eb7e20fcbb336f4228353a-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="74eb7e20fcbb336f4228353a-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="74eb7e20fcbb336f4228353a-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

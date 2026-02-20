@@ -1,0 +1,2682 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="7fa9c2be9be724eabf491fea-text/javascript">
+  </script>
+  <script type="7fa9c2be9be724eabf491fea-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="7fa9c2be9be724eabf491fea-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 639, de 1 de julho de 2014
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2014/781-resolucao-639"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Aprovação, Ato normativo, Metodologia, Tarifa de uso, Serviço Telefônico Fixo Comutado, STFC, Valor de referência, Uso de rede, Serviço Móvel Pessoal, SMP, Exploração Industrial de Linha Dedicada, EILD, Modelo, Custos, Telefonia móvel, Telefonia fixa, TelefoniaMovel, TelefoniaFixa, GestaoEconomicaPrestacao, ResolucaoVigente" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Aprova a Norma para fixação dos valores máximos das tarifas de uso de rede fixa do Serviço Telefônico Fixo Comutado (STFC), dos valores de referência de uso de rede móvel do Serviço Móvel Pessoal (SMP) e de Exploração Industrial de Linha Dedicada (EILD), com base em Modelos de Custos." name="description"/>
+   <title>
+    Anatel - Resolução nº 639, de 1 de julho de 2014
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=960392814" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1890115334" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"a47ecc5dfa9d95303a3055e2548a81d6","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="7fa9c2be9be724eabf491fea-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="7fa9c2be9be724eabf491fea-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="7fa9c2be9be724eabf491fea-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="7fa9c2be9be724eabf491fea-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="7fa9c2be9be724eabf491fea-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=394522506" type="7fa9c2be9be724eabf491fea-text/javascript">
+    </script>
+    <script type="7fa9c2be9be724eabf491fea-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="7fa9c2be9be724eabf491fea-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026163505" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/2014/781-resolucao-639">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/2014" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/2014">
+             2014
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 639, de 1 de julho de 2014
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226 current active">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-7fa9c2be9be724eabf491fea-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-7fa9c2be9be724eabf491fea-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="7fa9c2be9be724eabf491fea-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="7fa9c2be9be724eabf491fea-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 639, de 1 de julho de 2014
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Sexta, 04 Julho 2014 08:57
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Segunda, 05 Janeiro 2026 16:01
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 23972
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="20" cellspacing="2" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">
+                 </td>
+                 <td style="width: 50%; text-align: justify;" valign="middle">
+                  <p style="text-align: justify;">
+                   Aprova a Norma para fixação dos valores máximos das tarifas de uso de rede fixa do Serviço Telefônico Fixo Comutado (STFC), dos valores de referência de uso de rede móvel do Serviço Móvel Pessoal (SMP) e de Exploração Industrial de Linha Dedicada (EILD), com base em Modelos de Custos.
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p>
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=142&amp;data=04/07/2014" title="Acesse o DOU">
+                4/7/2014
+               </a>
+               .
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span class="texto-recuo-1a-linha">
+                <strong>
+                 O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+                </strong>
+                , no uso das atribuições que lhe foram conferidas pelo
+                <a href="/legislacao/leis/2-lei-9472#art22" rel="nofollow" title="acesse à lei">
+                 art. 22
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997, e pelo
+                <a href="/legislacao/decretos/3-decreto-2338#art35" rel="nofollow" target="_parent" title="Acesse ao Artigo">
+                 art. 35
+                </a>
+                do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997,
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO as disposições contidas nos arts.
+               <a href="/legislacao/leis/2-lei-9472#art152" rel="nofollow" title="Acesse o Artigo">
+                152
+               </a>
+               e
+               <a href="/legislacao/leis/2-lei-9472#art155" rel="nofollow" title="Acesse o Artigo">
+                155
+               </a>
+               da Lei Geral de Telecomunicações nº 9.472, de 16 de julho de 1997;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO as disposições contidas no
+               <a href="/legislacao/decretos/43-decreto-4733" rel="nofollow" title="Acesse ao Decreto">
+                Decreto nº 4.733, de 10 de junho de 2003
+               </a>
+               , quanto à importância da implementação e da aplicação de sistema de otimização de custos para estimular a competição ampla, livre e justa entre as empresas exploradoras de serviços de telecomunicações;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO as disposições contidas na
+               <a href="/legislacao/resolucoes/2006/92-resolucao-438" rel="nofollow" title="Acesse à Resolução">
+                Resolução nº 438, de 10 de julho de 2006
+               </a>
+               , que aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal (SMP), quanto à determinação do valor de referência de VU-M (RVU M) de Prestadora de SMP pertencente a Grupo detentor de Poder de Mercado Significativo (PMS) na oferta de interconexão em rede móvel;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO as disposições contidas na
+               <a href="/legislacao/resolucoes/2012/374-resolucao-588" rel="nofollow" title="Acesse à Resolução">
+                Resolução nº 588, de 7 de maio de 2012
+               </a>
+               , que aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado (STFC), quanto à determinação de valores máximos das Tarifas de Uso de Rede de Concessionária do STFC e de Prestadora de STFC pertencente a grupo detentor de PMS na oferta de interconexão em rede fixa do STFC;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO as disposições contidas na
+               <a href="/legislacao/resolucoes/2012/332-resolucao-590" rel="nofollow" title="Acesse à Resolução">
+                Resolução nº 590, de 15 de maio de 2012
+               </a>
+               , que aprova o Regulamento de Exploração Industrial de Linha Dedicada (EILD), quanto à determinação dos valores de referência de EILD Padrão a serem utilizados pelas Entidades Fornecedoras pertencentes a Grupo detentor de PMS na oferta de EILD;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO as disposições contidas na
+               <a href="/legislacao/resolucoes/2012/425-resolucao-600" rel="nofollow" title="Acesse à Resolução">
+                Resolução nº 600, de 8 de novembro de 2012
+               </a>
+               , que aprova o Plano Geral de Metas de Competição (PGMC), notadamente quanto à orientação dos preços aos custos de oferta dos produtos de atacado;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO a análise das contribuições recebidas em decorrência da
+               <a href="http://sistemas.anatel.gov.br/SACP/contribuicoes/TextoConsulta.asp?CodProcesso=C1707&amp;Tipo=1&amp;Opcao=" rel="nofollow" title="Acesse à Consulta Pública">
+                Consulta Pública nº 40, de 27 de setembro de 2013
+               </a>
+               , publicada no Diário Oficial da União de 30 de setembro de 2013;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO o constante dos autos do
+               <a href="http://sistemas.anatel.gov.br/sicap/web/displayWeb.asp?id=4465599" rel="nofollow" title="Acesse ao Processo">
+                Processo nº 53500.016296/2013
+               </a>
+               ;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               CONSIDERANDO deliberação tomada em sua
+               <a href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=313439&amp;assuntoPublicacao=Ata%20da%20746%AA%20reuni%E3o%20do%20Conselho%20Diretor&amp;caminhoRel=In%EDcio-Biblioteca-Apresenta%E7%E3o&amp;filtro=1&amp;documentoPath=313439.pdf" rel="nofollow" title="Acesse à Ata da Reunião">
+                Reunião nº 746, realizada em 18 de junho de 2014
+               </a>
+               ,
+              </p>
+              <p class="resolve" style="text-align: justify;">
+               RESOLVE:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º Aprovar a Norma para Fixação dos Valores Máximos das Tarifas de Uso de Rede Fixa do Serviço Telefônico Fixo Comutado (STFC), dos Valores de Referência de Uso de Rede Móvel do Serviço Móvel Pessoal (SMP) e de Exploração Industrial de Linha Dedicada (EILD) Padrão, com base em Modelos de Custos, na forma do Anexo a esta Resolução.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               Art. 1º Aprovar a Norma para Fixação dos Valores Máximos das Tarifas de Uso de Rede Fixa do Serviço Telefônico Fixo Comutado - STFC e dos Valores de Referência de outros produtos de atacado, com base em Modelos de Custos, na forma do Anexo a esta Resolução.
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Redação dada pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2">
+               </a>
+               Art. 2º Revogar o § 2º do
+               <a href="http://www.anatel.gov.br/legislacao/resolucoes/2005/407-resolucao-396#art2-1" rel="nofollow" title="Acesse ao Artigo">
+                art. 2º
+               </a>
+               da Resolução nº 396, de 31 de março de 2005, que aprova o Regulamento de Separação e Alocação de Contas (RSAC).
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3">
+               </a>
+               Art. 3º Revogar os arts.
+               <a href="/legislacao/resolucoes/2006/92-resolucao-438#art14" rel="nofollow" title="Acesse à Resolução">
+                14
+               </a>
+               e
+               <a href="/legislacao/resolucoes/2006/92-resolucao-438#art15" rel="nofollow" title="Acesse ao Artigo">
+                15
+               </a>
+               do anexo à Resolução nº 438, de 10 de julho de 2006, que aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal – SMP.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art4">
+               </a>
+               Art. 4º Revogar os arts.
+               <a href="/legislacao/resolucoes/2012/374-resolucao-588#art12" rel="nofollow" title="Acesse ao Artigo">
+                12
+               </a>
+               ,
+               <a href="/legislacao/resolucoes/2012/374-resolucao-588#art13" rel="nofollow" title="Acesse ao Artigo">
+                13
+               </a>
+               e
+               <a href="/legislacao/resolucoes/2012/374-resolucao-588#art21" rel="nofollow" title="Acesse ao Artigo">
+                21
+               </a>
+               do anexo à Resolução nº 588, 7 de maio de 2012, que aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado (STFC).
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art5">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 5º O
+                <a href="/legislacao/resolucoes/2012/332-resolucao-590#art15" rel="nofollow" title="Acesse ao Artigo">
+                 art. 15
+                </a>
+                do anexo à Resolução nº 590, de 15 de maio de 2012, que aprova o Regulamento de Exploração Industrial de Linha Dedicada (EILD), passa a vigorar com a seguinte redação:
+               </span>
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Revogado pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">
+               <span style="text-decoration: line-through;">
+                "Art. 15. Os valores de referência de EILD Padrão apurados com base em modelo de custos e definidos em Ato do Conselho Diretor serão utilizados como referência pela Anatel nos processos de resolução de conflitos entre Prestadoras de Serviços de Telecomunicações."
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art6">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 6º Revogar o
+                <a href="/legislacao/resolucoes/2012/332-resolucao-590#art16" rel="nofollow" title="Acesse ao Artigo">
+                 art. 16
+                </a>
+                do anexo à Resolução nº 590, de 15 de maio de 2012, que aprova o Regulamento de Exploração Industrial de Linha Dedicada (EILD).
+               </span>
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Revogado pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art7">
+               </a>
+               Art. 7º Esta Resolução entra em vigor na data de sua publicação.
+              </p>
+              <p class="caption" style="text-align: center;">
+               JOÃO BATISTA DE REZENDE
+              </p>
+              <p class="caption" style="text-align: center;">
+               Presidente do Conselho
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: center;">
+              </p>
+              <p class="caption" style="text-align: center;">
+               <a id="Anexo">
+               </a>
+               ANEXO À RESOLUÇÃO Nº 639, DE 1º DE JULHO DE 2014
+              </p>
+              <p class="caption" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                NORMA PARA FIXAÇÃO DOS VALORES MÁXIMOS DAS TARIFAS DE USO DE REDE FIXA DO SERVIÇO TELEFÔNICO FIXO COMUTADO (STFC), DOS VALORES DE REFERÊNCIA DE USO DE REDE MÓVEL DO SERVIÇO MÓVEL PESSOAL (SMP) E DE EXPLORAÇÃO INDUSTRIAL DE LINHA DEDICADA (EILD) PADRÃO, COM BASE EM MODELOS DE CUSTOS
+               </span>
+              </p>
+              <p class="caption" style="text-align: center;">
+               NORMA PARA FIXAÇÃO DOS VALORES MÁXIMOS DAS TARIFAS DE USO DE REDE FIXA DO SERVIÇO TELEFÔNICO FIXO COMUTADO - STFC E DOS VALORES DE REFERÊNCIA DE OUTROS PRODUTOS DE ATACADO, COM BASE EM MODELOS DE CUSTOS
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Redação dada pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="caption" style="text-align: center;">
+               TÍTULO I
+              </p>
+              <p class="caption" style="text-align: center;">
+               DISPOSIÇÕES GERAIS
+              </p>
+              <p class="caption" style="text-align: center;">
+               CAPÍTULO I
+              </p>
+              <p class="caption" style="text-align: center;">
+               DO OBJETIVO E DA ABRANGÊNCIA
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º Esta Norma tem por objetivo estabelecer metodologia para fixação dos Valores Máximos das Tarifas de Uso de Rede Fixa do Serviço Telefônico Fixo Comutado (STFC) e dos Valores de Referência de Uso de Rede Móvel do Serviço Móvel Pessoal (SMP) e de Exploração Industrial de Linha Dedicada (EILD) Padrão, com base em Modelos de Custos.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               Art. 1º Esta Norma tem por objetivo estabelecer metodologia para fixação dos Valores Máximos das Tarifas de Uso de Rede Fixa do Serviço Telefônico Fixo Comutado - STFC e dos Valores de Referência de outros produtos de atacado, com base em Modelos de Custos.
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Redação dada pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="caption" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                CAPÍTULO II
+               </span>
+              </p>
+              <p class="caption" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                DAS DEFINIÇÕES
+               </span>
+              </p>
+              <p class="caption" style="text-align: center;">
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2029-resolucao-779" title="Acesse a Resolução">
+                (Revogado pela Resolução Anatel nº 779, de 28 de abril de 2025)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 2º Aplicam-se, para os fins deste Regulamento, além das definições previstas na regulamentação, as seguintes:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - Modelo de Custos Top-Down: método de modelagem em que se calculam os custos unitários dos serviços de telecomunicações prestados com base nos dados reais históricos das prestadoras;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - Modelo de Custos Bottom-Up: método de modelagem em que se calculam os custos unitários dos serviços de telecomunicações prestados com base em uma rede eficiente projetada para atender a demanda de serviços de telecomunicações esperada, considerando as obrigações regulatórias existentes;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - Modelo de Custos Totalmente Alocados (FAC – Fully Allocated Costs): modelo de apuração de custos no qual todos os custos contábeis da operadora, inclusive o custo de capital, são distribuídos segundo princípios de causalidade a todos os serviços por ela oferecidos, conforme Regulamento de Separação e Alocação de Contas (RSAC);
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - Modelo de Custos Incrementais de Longo Prazo (LRIC – Long Run Incremental Costs): modelo de apuração de custos no qual todos os custos incrementais de longo prazo atualizados a valores correntes relativos à prestação isolada de determinado serviço, incluído o custo de capital, são distribuídos segundo princípios de causalidade a todos os serviços ofertados, considerando um horizonte de longo prazo que permita considerar os custos fixos como variáveis, conforme Regulamento de Separação e Alocação de Contas (RSAC);
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - HCA (Base de Custos Históricos): conjunto de informações sobre ativos, passivos, receitas e despesas registradas segundo padrão contábil aceito, que são utilizados como referência para apuração dos custos operacionais e custo de capital dos serviços ofertados pelo Grupo. Os custos históricos dos ativos que compõem a HCA são determinados em geral pelo seu valor bruto de aquisição ou construção obtidos dos registros contábeis e subtraído o valor da depreciação ou da amortização acumulada;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - CCA (Base de Custos Correntes): conjunto de informações do HCA após ajuste a valor corrente dos ativos e passivos, que são utilizados como referência para apuração dos custos operacionais e custos de capital correntes dos serviços ofertados pelo Grupo. Os custos correntes dos ativos que compõem o CCA são determinados, de forma geral, considerando-se o amadurecimento das tecnologias de telecomunicações e o impacto do surgimento de possíveis tecnologias substitutas;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VII - FCM (Financial Capital Maintenance): abordagem de avaliação de ativos que procura manter o valor do capital originalmente investido;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VIII - Relações Custo-Volume (CVR: Cost-Volume Relationship): curvas matemáticas que descrevem o comportamento de determinado grupo de custos ou de ativos em relação a variações no volume do direcionador aplicável identificado; e,
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IX - EPMU (Equi-proportional Mark-Up): Metodologia de Alocação Proporcional e Equitativa segundo a qual os custos – custos operacionais ou custo de capital – são alocados aos serviços ou elementos de rede na proporção dos custos já alocados a eles em relação ao custo operacional total ou custo de capital total do Grupo, descontados os custos operacionais ou ativos classificados como não atribuíveis.
+               </span>
+              </p>
+              <p class="caption" style="text-align: center;">
+               CAPÍTULO III
+              </p>
+              <p class="caption" style="text-align: center;">
+               DA ABORDAGEM DOS MODELOS DE CUSTOS
+              </p>
+              <p class="caption" style="text-align: center;">
+               Seção I
+              </p>
+              <p class="caption" style="text-align: center;">
+               Das Características dos Modelos de Custos
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3Anexo">
+               </a>
+               Art. 3º Os modelos de custos desenvolvidos pela Anatel possuem características específicas de acordo com a abordagem, metodologia e base de custos utilizada.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               Parágrafo único. Na hipótese de modelo de custo dependente de informações das prestadoras, o processo de apuração de tarifas e valores de referência orientados a custo se utilizará das bases de dados mais recentes detidas pela Anatel e que já tenham sido suficientemente depuradas com vistas à redução dos riscos de incompletude, inconsistência, infidedignidade ou de desconformidade normativa.
+              </p>
+              <p class="caption" style="text-align: center;">
+               Subseção I
+              </p>
+              <p class="caption" style="text-align: center;">
+               Das Características do Modelo de Custos Top-Down FAC-HCA
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art4Anexo">
+               </a>
+               Art. 4º O modelo de custos Top-Down FAC-HCA apresenta as seguintes características principais:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - segue os princípios elencados no
+               <a href="/legislacao/resolucoes/2005/407-resolucao-396#item2" rel="nofollow" title="Acesse ao Item">
+                item 2
+               </a>
+               do Anexo I do RSAC e tem sua estrutura baseada no diagrama de etapas de alocação apresentado na
+               <a href="/legislacao/resolucoes/2005/407-resolucao-396#item8.1.7.4.3" rel="nofollow" title="Acesse à Figura">
+                figura 1
+               </a>
+               do Anexo I do RSAC e nos direcionadores recomendados; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - no caso de informações em desacordo com o padrão estabelecido ou ausência de informações entregues no Documento de Separação e Alocação de Contas (DSAC) dos anos de exercícios anteriores ao cálculo, a Anatel estima os dados considerando, dentre outros, o seguinte:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               a) a distribuição de direcionadores originalmente enviados pelas prestadoras;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               b) os detalhamentos presentes no Plano Geral de Separação e Alocação de Contas (PGSAC) da prestadora como a distribuição do valor do ativo imobilizado líquido nos itens de Planta Primária; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               c) a distribuição do tráfego dos serviços a partir de valores de tráfego informados por meio do
+               <a href="/legislacao/resolucoes/2005/407-resolucao-396#anexoI-apendiceA" rel="nofollow" title="Acesse ao Apêndice">
+                Apêndice A
+               </a>
+               do Anexo I do RSAC.
+              </p>
+              <p class="caption" style="text-align: center;">
+               Subseção II
+              </p>
+              <p class="caption" style="text-align: center;">
+               Das Características do Modelo de Custos Top-Down FAC-CCA
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art5Anexo">
+               </a>
+               Art. 5º O modelo de custos Top-Down FAC-CCA adotado pela Anatel apresenta as seguintes características principais:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - segue os princípios elencados no
+               <a href="/legislacao/resolucoes/2005/407-resolucao-396#item2" rel="nofollow" title="Acesse o Item">
+                item 2
+               </a>
+               do Anexo I do RSAC e tem sua estrutura baseada no diagrama de etapas de alocação apresentado na
+               <a href="/legislacao/resolucoes/2005/407-resolucao-396#item8.1.7.4.3" rel="alternate" title="Acesse à Figura">
+                figura 1
+               </a>
+               do Anexo I do RSAC e os direcionadores recomendados;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - deduz do custo a parcela equivalente à ociosidade não-planejada dos ativos utilizados, sempre que informada pela prestadora;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - considera como custos correntes os custos incorridos pela utilização de tecnologias modernas no lugar de tecnologias antigas e os custos atuais de ativos de tecnologia corrente adquiridos com custos diferentes no passado;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               IV - utiliza o cálculo da depreciação dos ativos FCM, principal responsável pela recuperação do capital investido pela prestadora, mediante ajustes nos custos de depreciação ano a ano que compensam as variações de preços dos ativos;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               V - são mantidas as mesmas classificações de ativos propostas pelas prestadoras;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VI - realiza as alocações de custos correntes por meio dos mesmos direcionadores e estrutura de centros de custos definidos para o modelo FAC-HCA, de acordo com os modelos de custos definidos; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VII - no caso de informações em desacordo com o padrão estabelecido ou ausência de informações entregues no DSAC do ano de exercício do cálculo, a Anatel estima os dados considerando, dentre outros aspectos, o seguinte:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               a) características dos grupos de ativos, como idade média e tempo de depreciação;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               b) dados de outras operadoras, quando do mesmo Grupo, ou mesmo porte;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               c) dados fornecidos pelas operadoras no contexto dos outros modelos calculados; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               d) dados do PGSAC de exercícios anteriores, para a estimativa da depreciação e da variação absoluta do valor de ativos.
+              </p>
+              <p class="caption" style="text-align: center;">
+               Subseção III
+              </p>
+              <p class="caption" style="text-align: center;">
+               Das Características do Modelo de Custos Top-Down LRIC
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art6">
+               </a>
+               Art. 6º O modelo de custos Top-Down LRIC adotado pela Anatel apresenta as seguintes características principais:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - são considerados os custos fixos compartilhados e os custos comuns, de acordo com o
+               <a href="/legislacao/resolucoes/2005/407-resolucao-396#anexoIII" rel="nofollow" title="Acesse ao Anexo">
+                Anexo III
+               </a>
+               do RSAC:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               a) os custos fixos compartilhados são considerados como aqueles custos não evitados quando se remove apenas um dos incrementos, porém evitados quando se retiram todos os incrementos de uma
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               determinada categoria de custos, representados pelos valores abaixo dos interceptos, e que são compartilhados por todos incrementos de uma CVR, distribuídos posteriormente por EPMU; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               b) os custos comuns são considerados como os mesmos do FAC-CCA e que não estão representados em nenhuma CVR, pela impossibilidade de atribuir um direcionador a eles, já distribuídos na etapa para os serviços;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - o modelo padronizado para todas as prestadoras utiliza a estrutura de alocações do modelo FAC como estrutura lógica de dependências, garantindo a compatibilidade dos direcionadores entre o LRIC e o FAC, conforme Anexo III do RSAC;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - a definição dessas características de modelagem resulta em um modelo em que, caso os custos no modelo LRIC tenham apenas CVRs retas, os seus custos devem ser idênticos aos calculados no FAC-CCA; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               IV - o modelo Top-Down LRIC é calculado para todos os serviços definidos no
+               <a href="/legislacao/resolucoes/2005/407-resolucao-396#anexoI" rel="nofollow" title="Acesse ao anexo">
+                Anexo I
+               </a>
+               do RSAC, mas não para elementos de rede.
+              </p>
+              <p style="text-align: center;">
+               Subseção IV
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: center;">
+               <span class="caption">
+                Das Características do Modelo de Custos Bott
+               </span>
+               om-Up
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art7Anexo">
+               </a>
+               Art. 7º O modelo de custos Bottom-Up adotado pela Anatel apresenta as seguintes características principais:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - segue os princípios e conceitos elencados no Documento com a Abordagem Conceitual para os Modelos LRIC Bottom-Up de Rede Móvel e Fixa, de 27 de março de 2013, e suas eventuais alterações, conforme publicado pela Anatel;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - são elaborados modelos de rede fixa e de rede móvel;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - constituem as principais características comuns ao modelo de rede móvel e ao modelo de rede fixa:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               a) são baseados em uma prestadora hipotética eficiente de forma que as características reais da rede das prestadoras ao longo do tempo (tecnologia e escala) sejam levadas em consideração, assim como as obrigações regulatórias de cada prestadora;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               b) o desenvolvimento das redes é direcionado por obrigações regulatórias históricas, tais como exigências de cobertura definidas em editais de outorga de direito de uso de radiofrequência, alocação de espectro de radiofrequência e obrigações advindas dos Regulamentos de Gestão de Qualidade e do Plano Geral de Metas de Universalização (PGMU);
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               c) os serviços modelados e suas especificidades estão listados e descritos na Seção 5 do Documento com a Abordagem Conceitual para os Modelos LRIC Bottom-Up de rede móvel e fixa, de 27 de março de 2013, sendo que os custos de rede são alocados entre os serviços modelados de acordo com uma tabela de fatores de roteamento;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               d) prevê a oferta de serviços genéricos que podem ser entregues independentemente da tecnologia de rede – legadas ou NGN;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               e) o perfil de tráfego projetado para a prestadora modelada é baseado na média do mercado, considerando a parcela do tráfego de mercado modelado;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               f) os modelos são plurianuais;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               g) utiliza-se a abordagem de depreciação econômica;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               h) o CMPC é calculado conforme regulamentação vigente e aplicado na sua forma antes de impostos;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               i) quando requerida, a abordagem EPMU é empregada para alocação de custos comuns;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               j) a modelagem da rede utiliza a abordagem nó arrasado modificado (Modified Scorched-Node) definida no Documento com a Abordagem Conceitual para os Modelos LRIC Bottom-Up de rede móvel e fixa;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               k) para o mercado de atacado, definido na forma do anexo à
+               <a href="/legislacao/resolucoes/2012/425-resolucao-600" rel="nofollow" title="Acesse à Resolução">
+                Resolução nº 600, de 8 de novembro de 2012
+               </a>
+               , apenas são calculados os custos de rede de atacado, embora gastos gerais de negócios que são comuns para operações de varejo e de rede possam ser incluídos no modelo; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               l) os modelos geram custos unitários por serviço para cada Região do PGO;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               IV - as principais características específicas ao modelo de rede móvel são:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               a) a prestadora hipotética eficiente de rede móvel presta o serviço de SMP;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               b) para cada faixa de radiofrequência a ser utilizada pela prestadora hipotética, são utilizados os montantes efetivamente pagos pelas prestadoras reais nos processos licitatórios realizados pelo Poder Concedente;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               c) a prestadora hipotética eficiente modelada desenvolve infraestrutura em tecnologias móveis e uma arquitetura de rede IP; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               d) considera-se que todos os custos incorridos são incrementais ao tráfego;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               V - as principais características específicas ao modelo de rede fixa são:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               a) a prestadora hipotética eficiente de rede fixa oferece o STFC nas modalidades local, longa distância nacional e internacional, o SCM e o SeAC;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               b) a prestadora hipotética eficiente de rede fixa desenvolve infraestrutura nas tecnologias legadas e em tecnologia de nova geração para os serviços de voz e uma arquitetura de rede IP;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               c) a cobertura da operadora hipotética eficiente de rede fixa modelada reflete os níveis atuais de cobertura regional e os níveis futuros de cobertura planejados, considerando as metas de universalização estabelecidas no Plano Geral de Metas de Universalização (PGMU);
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                d) para o EILD, considera-se que os serviços de EILD compartilham infraestrutura com os demais serviços modelados; e,
+               </span>
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Revogado pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               e) os custos dos serviços de mercado de atacado são modelados utilizando-se a abordagem exógena definida no Documento com a Abordagem Conceitual para os Modelos LRIC Bottom-Up de rede móvel e fixa em relação às migrações de tecnologias de rede; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VI - considera as melhores práticas e parâmetros de engenharia.
+              </p>
+              <p class="caption" style="text-align: center;">
+               Seção II
+              </p>
+              <p class="caption" style="text-align: center;">
+               <span class="caption">
+                Dos Resultados
+               </span>
+               dos Modelos de Custos
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art8Anexo">
+               </a>
+               Art. 8º O modelo Top-Down FAC-HCA desenvolvido pela Anatel estima valores unitários por serviço que refletem os custos incorridos historicamente por cada prestadora para a prestação dos serviços, ao alocar a totalidade dos custos sem nenhum ajuste.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               Parágrafo único. Os investimentos das prestadoras são recuperados tanto por meio de cálculo apurado pela sua depreciação nos balanços como pelo custo de capital incorrido.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art9Anexo">
+               </a>
+               Art. 9º O modelo Top-Down FAC-CCA desenvolvido pela Anatel estima valores unitários por serviço que refletem os custos de uma prestadora que:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - utilize apenas tecnologias modernas;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - não tenha ineficiências causadas por ociosidade não-planejada de ativos; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - consiga recuperar, por intermédio de depreciação, o valor investido do ativo, mesmo que as tecnologias modernas sejam diferentes.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art10Anexo">
+               </a>
+               Art. 10. O modelo Top-Down LRIC desenvolvido pela Anatel estima valores unitários por serviço que refletem os custos de uma prestadora que:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - utilize apenas tecnologias modernas;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - não tenha ineficiências causadas por ociosidade não-planejada de ativos;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - consiga recuperar, por intermédio de depreciação, o valor investido do ativo, mesmo que as tecnologias modernas sejam diferentes; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               IV - acesse todos os ganhos de escala esperados com a prestação de outros serviços, além do serviço mensurado.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art11Anexo">
+               </a>
+               Art. 11. O modelo de custos Bottom-Up desenvolvido pela Anatel estima os valores unitários por serviço que refletem os custos de uma prestadora que:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - opere em um nível máximo de eficiência para atender suas obrigações regulatórias;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - consiga recuperar os investimentos considerados na construção da empresa hipotética de acordo com a vida útil econômica dos ativos; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - acesse todos os ganhos de escala esperados com a prestação de outros serviços fornecidos pela operadora hipotética existente modelada, além do serviço mensurado.
+              </p>
+              <p class="caption" style="text-align: center;">
+               CAPÍTULO IV
+              </p>
+              <p class="caption" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <span class="caption">
+                 DOS CRITÉRIOS PARA FIXAÇÃO DOS VALORES MÁXIMOS DAS TARIFAS DE USO DE REDE FIXA DO STFC, V
+                </span>
+                ALORES DE REFERÊNCIA DE USO DE REDE MÓVEL DO SMP E DE EILD COM BASE EM MODELOS DE CUSTOS
+               </span>
+              </p>
+              <p class="caption" style="text-align: center;">
+               DOS CRITÉRIOS PARA FIXAÇÃO DOS VALORES MÁXIMOS DAS TARIFAS DE USO DE REDE FIXA DO STFC E DOS VALORES DE REFERÊNCIA DE USO DE REDE MÓVEL DO SMP COM BASE EM MODELOS DE CUSTOS
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Redação dada pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art12Anexo">
+               </a>
+               Art. 12. Os valores máximos das tarifas e os valores de referência serão fixados tendo como base os resultados dos modelos de custos, acompanhados da devida interpretação e significação desses resultados.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span class="caption">
+                § 1º Os resultados dos modelos Top-Down determinarão o primeiro valor máximo para as respectivas tarifas e valores de referência apurados com base em modelo de custos a serem fixados pela Anatel a partir da entrada em vigor desta Norma.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 2º Os valores máximos das Tarifas de Uso de Rede Fixa e valores de referência de VU-M (RVU-M) deverão convergir para os patamares dos resultados dos modelos LRIC Bottom-Up em 2019.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º Os valores de referência de EILD Padrão deverão convergir para os patamares dos resultados dos modelos LRIC Bottom-Up em 2020.
+               </span>
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Revogado pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 4º Os valores de referência de
+               <em>
+                Roaming
+               </em>
+               Nacional deverão convergir para os patamares dos resultados dos modelos LRIC
+               <i>
+                Bottom-Up
+               </i>
+               em 2026, ressalvados os casos em que a prestadora já está sujeita à aplicação imediata desses modelos por força de determinação pré-existente da Anatel.
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Incluído pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art13Anexo">
+               </a>
+               Art. 13. A definição, pela Anatel, do tempo adequado para que os valores máximos de tarifas e valores de referência convirjam a patamares dos resultados de modelo LRIC Bottom-Up levará em consideração, dentre outros aspectos, o seguinte:
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               I - os custos históricos de cada prestadora;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               II - a expansão dos investimentos de cada prestadora;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               III - a simulação de um ambiente competitivo;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               IV - o incentivo à eficiência;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               V - a evolução das características dos modelos de custos ao longo do tempo;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VI - o incentivo à competição;
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VII - a modicidade tarifária; e,
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               VIII - o tempo necessário para a adaptação dos agentes do mercado.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art14Anexo">
+               </a>
+               Art. 14. O valor de referência de VU-M (RVU-M), único para todas as Prestadoras de SMP pertencentes a Grupo detentor de Poder de Mercado Significativo, apurado com base em modelo de custos, será definido em Ato do Conselho Diretor, para cada uma das Regiões do Plano Geral de Autorizações do SMP (PGA-SMP).
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 1º O Ato estabelecerá os valores de referência aplicáveis a partir de 25 de fevereiro de 2016.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 2º Para a edição de Atos subsequentes ao que trata o parágrafo anterior serão recalculados os modelos de custo, considerando o disposto no
+               <a href="#art3" title="Acesse ao Artigo">
+                art. 3º
+               </a>
+               desta Norma.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 3º O processo de recálculo do valor de referência de VU-M (RVU-M) com base em modelos de custos ocorrerá em até 3 (três) anos, contados da publicação do ato de que trata o caput.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art15Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 15. Os valores máximos das Tarifas de Uso de Rede de Concessionária do STFC e de Prestadora de STFC pertencente a Grupo detentor de Poder de Mercado Significativo no mercado de interconexão em rede fixa, apurados com base em modelos de custos, serão definidos em Ato do Conselho Diretor, para cada Região do Plano Geral de Outorgas (PGO).
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               Art. 15. Os valores máximos das Tarifas de Uso de Rede de Prestadora de STFC pertencente a Grupo detentor de Poder de Mercado Significativo no mercado de interconexão em rede fixa, apurados com base em modelos de custos, serão definidos em Ato do Conselho Diretor, para cada Região do Plano Geral de Outorgas (PGO).
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1973-resolucao-768" title="Acesse a Resolução">
+                (Redação dada pela Resolução Anatel nº 768, de 19 de agosto de 2024)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 1º O Ato estabelecerá as tarifas aplicáveis a partir de 25 de fevereiro de 2016.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Até que estejam em vigor os valores apurados em Modelo de Custos, os valores máximos das Tarifas de Uso de Rede de Concessionária do STFC e de Prestadora de STFC pertencente a Grupo detentor de Poder de Mercado Significativo no mercado de interconexão em rede fixa serão aqueles em vigor na data de publicação desta Resolução.
+               </span>
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1973-resolucao-768" title="Acesse a Resolução">
+                (Revogado pela Resolução Anatel nº 768, de 19 de agosto de 2024)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 3º Para a edição de Atos subsequentes ao que trata o § 1º serão recalculados os modelos de custo, considerando o disposto no
+               <a href="#art3" title="Acesse ao Artigo">
+                art. 3º
+               </a>
+               desta Norma.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 4º O processo de recálculo dos valores máximos das Tarifas de Uso de Rede de Concessionária do STFC e de Prestadora de STFC pertencente a Grupo detentor de Poder de Mercado Significativo no mercado de interconexão em rede fixa com base em modelos de custos ocorrerá em até 3 (três) anos, contados da publicação do ato de que trata o caput.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 4º O processo de recálculo dos valores máximos das Tarifas de Uso de Rede de Prestadora de STFC pertencente a Grupo detentor de Poder de Mercado Significativo no mercado de interconexão em rede fixa com base em modelos de custos ocorrerá em até 3 (três) anos, contados da publicação do ato de que trata o
+               <em>
+                caput
+               </em>
+               .
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1973-resolucao-768" title="Acesse a Resolução">
+                (Redação dada pela Resolução Anatel nº 768, de 19 de agosto de 2024)
+               </a>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 5º O valor da TU-COM deve ser igual à metade do valor da TU-RL.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art16Anexo">
+               </a>
+               Art. 16. Os valores de referência de EILD Padrão a serem utilizados pelas Entidades Fornecedoras pertencentes a Grupo detentor de Poder de Mercado Significativo, apurados com base em modelo de custos, serão definidos em Ato do Conselho Diretor, para cada Região do Plano Geral de Outorgas (PGO).
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 1º O Ato estabelecerá os valores de referência, apurados com base em modelo de custos, aplicáveis a partir de 25 de fevereiro de 2016.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 2º Para a edição de Atos subsequentes ao que trata o parágrafo anterior, serão recalculados os modelos de custo, considerando o disposto no
+               <a href="#art3" title="Acesse ao Artigo">
+                art. 3º
+               </a>
+               desta Norma.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 3º O processo de recálculo do valor de referência de EILD com base em modelos de custos ocorrerá em até 4 (quatro) anos, contados da publicação do ato de que trata o caput.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 4º Até que passem a ser exigíveis os valores de referência apurados com base em modelo de custos, a Anatel poderá publicar novos valores de referência de EILD Padrão, em substituição aos atuais.
+              </p>
+              <p class="Texto_Justificado texto-recuo-1a-linha">
+               <a id="art16-AAnexo">
+               </a>
+               Art. 16-A. Os valores de referência de
+               <i>
+                Roaming
+               </i>
+               Nacional de Prestadora pertencente a Grupo detentor de Poder de Mercado Significativo, apurados com base em modelos LRIC
+               <i>
+                Bottom-Up
+               </i>
+               , serão definidos em Ato do Conselho Diretor.
+               <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783" title="Acesse a Resolução">
+                (Incluído pela Resolução Anatel nº 783, de 03 de setembro de 2025)
+               </a>
+              </p>
+              <p class="Texto_Justificado texto-recuo-1a-linha">
+               § 1º O Ato estabelecerá as tarifas aplicáveis a partir de 25 de fevereiro de 2026.
+              </p>
+              <p class="Texto_Justificado texto-recuo-1a-linha">
+               § 2º Até que estejam em vigor os valores apurados em modelos LRIC
+               <i>
+                Bottom-Up
+               </i>
+               , os valores de referência de
+               <i>
+                Roaming
+               </i>
+               Nacional de Prestadora pertencente a Grupo detentor de Poder de Mercado Significativo serão aqueles em vigor na data de publicação deste Plano.
+              </p>
+              <p class="Texto_Justificado texto-recuo-1a-linha">
+               § 3º Os valores de referência de
+               <i>
+                Roaming
+               </i>
+               Nacional de Prestadora pertencente a Grupo detentor de Poder de Mercado Significativo englobam os valores de voz, SMS, dados e mensalidade por dispositivo destinado à comunicação máquina a máquina - M2M ou de Internet das Coisas - IoT.
+              </p>
+              <p class="Texto_Justificado texto-recuo-1a-linha">
+               § 4º Os valores de referência de
+               <i>
+                Roaming
+               </i>
+               Nacional de Prestadora pertencente a Grupo detentor de Poder de Mercado Significativo constantes em Atos previamente aprovados permanecerão válidos até a vigência de novos valores apurados em modelos LRIC
+               <i>
+                Bottom-Up
+               </i>
+               .
+              </p>
+              <p class="Texto_Justificado texto-recuo-1a-linha">
+               § 5º Para a edição de Atos subsequentes ao que trata o § 1º, os modelos de custo serão recalculados considerando o disposto no art. 3º desta Norma.
+              </p>
+              <p class="Texto_Justificado texto-recuo-1a-linha">
+               § 6º O processo de recálculo dos valores de referência de
+               <i>
+                Roaming
+               </i>
+               Nacional de Prestadora pertencente a Grupo detentor de Poder de Mercado Significativo com base em modelos de custos ocorrerá em até 3 (três) anos, contados da publicação do ato de que trata o
+               <em>
+                caput
+               </em>
+               .
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art17Anexo">
+               </a>
+               Art. 17. A cada processo de recálculo dos valores máximos das tarifas e valores de referência com base em modelos de custos, a Superintendência competente elaborará avaliação sobre a convergência dos valores máximos aos patamares dos resultados dos modelos LRIC Bottom-Up, a ser submetida à apreciação do Conselho Diretor quando da edição dos Atos fixando os valores máximos para os períodos subsequentes.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 1º Na ocasião prevista no caput, a Superintendência competente analisará a conveniência e oportunidade de implementação da abordagem LRIC Bottom-Up puro, propondo convergência para esta abordagem, se for o caso.
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               § 2º Sob a abordagem LRIC Bottom-Up puro, os custos comuns e os custos não vinculados ao tráfego deverão ser necessariamente excluídos.
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_781">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/2014" rel="tag">
+                 2014
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação">
+                 Aprovação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato%20normativo">
+                 Ato normativo
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Metodologia">
+                 Metodologia
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Tarifa%20de%20uso">
+                 Tarifa de uso
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Telefônico%20Fixo%20Comutado">
+                 Serviço Telefônico Fixo Comutado
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=STFC">
+                 STFC
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Valor%20de%20referência">
+                 Valor de referência
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Uso%20de%20rede">
+                 Uso de rede
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Móvel%20Pessoal">
+                 Serviço Móvel Pessoal
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=SMP">
+                 SMP
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Exploração%20Industrial%20de%20Linha%20Dedicada">
+                 Exploração Industrial de Linha Dedicada
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=EILD">
+                 EILD
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Modelo">
+                 Modelo
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Custos">
+                 Custos
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Telefonia%20móvel">
+                 Telefonia móvel
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Telefonia%20fixa">
+                 Telefonia fixa
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaMovel">
+                 TelefoniaMovel
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaFixa">
+                 TelefoniaFixa
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=GestaoEconomicaPrestacao">
+                 GestaoEconomicaPrestacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoVigente">
+                 ResolucaoVigente
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="7fa9c2be9be724eabf491fea-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="7fa9c2be9be724eabf491fea-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="7fa9c2be9be724eabf491fea-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="7fa9c2be9be724eabf491fea-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-7fa9c2be9be724eabf491fea-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="7fa9c2be9be724eabf491fea-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="7fa9c2be9be724eabf491fea-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="7fa9c2be9be724eabf491fea-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

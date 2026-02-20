@@ -1,0 +1,1783 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 1721, de 17 de fevereiro de 2023</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2023/1862-ato-1721">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Requisitos Técnicos, Fios Telefônicos, Externo Binado, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Dispõe requisitos técnicos para avaliação da conformidade de fios telefônicos dos tipos DG, externo binado FEB, FE, FE-AA, FE-AA-80-PEAD-X e FI, conforme o anexo a este Ato.">
+	<title>Anatel - Ato nº 1721, de 17 de fevereiro de 2023</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1442690166" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1209288629" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1207477439" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141310" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2023">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2023">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2023">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2023" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2023" class="pathway">2023</a> <span class="separator">&gt;</span> <span>Ato nº 1721, de 17 de fevereiro de 2023</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;949057114a87cb39&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 1721, de 17 de fevereiro de 2023		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quinta, 20 Abril 2023 18:06			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quarta, 26 Abril 2023 14:05			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 1271			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico de <a href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=11115950&amp;id_orgao_publicacao=0">20/4/2023</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL,&nbsp;</b>no uso das atribuições que lhe foram conferidas pela <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao/461-portaria-419">Portaria nº 419, de 24 de maio de 2013</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a href="http://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art19">Art. 19</a> da&nbsp;Lei nº 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO que&nbsp;os Requisitos Técnicos estabelecem os parâmetros e critérios técnicos verificados na Avaliação da Conformidade de um ou mais tipos de produto para telecomunicações, nos termos do <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715#art22Anexo">art. 22</a> do Regulamento para Avaliação da Conformidade e Homologação de Produtos para Telecomunicações, aprovado pela&nbsp;Resolução nº 715, de 23 de outubro de 2019;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlHD9ya6Zw2YLDqBr9C1cTvx960BlPuoGqNwTZok3o_n1">processo nº&nbsp;53500.066738/2021-06</a> &nbsp;;</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha texto-recuo-1a-linha resolve" style="text-align: justify;">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art1"></a>Art. 1º&nbsp;Aprovar os requisitos técnicos para avaliação da conformidade de fios&nbsp;telefônicos dos tipos DG, externo binado FEB, FE, FE-AA, FE-AA-80-PEAD-X e FI, conforme o <a href="#Anexo">anexo</a> a este Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art2"></a>Art. 2º Revogar,&nbsp;180 dias após a data da publicação deste Ato,&nbsp;os requisitos técnicos relativos à avaliação da conformidade de Fio Telefônico Externo (FE), aprovados pelo <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1251-ato-413">Ato nº 413, de 21 de janeiro de 2018</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art3"></a>Art. 3º Revogar,&nbsp;180 dias após a data da publicação deste Ato,&nbsp;os requisitos técnicos relativos à avaliação da conformidade de Fio Telefônico Interno (FI), aprovados pelo <a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1249-ato-677">Ato nº 677, de 29 de janeiro de 2018</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art4"></a>Art. 4º Revogar,&nbsp;180 dias após a data da publicação deste Ato,&nbsp;os requisitos técnicos relativos à avaliação da conformidade de Fio Telefônico Externo Binado (FEB), aprovados pelo<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1250-ato-678">&nbsp;Ato nº 678, de 29 de janeiro de 2018</a>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art5"></a>Art. 5º Este Ato entra em vigor&nbsp;na data de sua publicação no&nbsp;Boletim de Serviços Eletrônico da Anatel, sendo mandatória a&nbsp;aplicação do seu anexo&nbsp;180 dias após a data de sua publicação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;">SIDNEY AZEREDO NINCE<br>Superintendente de Outorga e Recursos à Prestação, Substituto</p>
+<p style="text-align: center;"><strong>&nbsp;</strong></p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><span class="dark-mode-color-black"><a id="Anexo"></a>ANEXO AO ATO Nº 1721, DE 17 DE FEVEREIRO DE 2023</span></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong>REQUISITOS TÉCNICOS PARA A AVALIAÇÃO DA CONFORMIDADE&nbsp;DE&nbsp;FIOS TELEFÔNICOS</strong></p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item1"></a>1. <strong>OBJETIVO</strong></p>
+<div>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item1.1"></a>1.1 Este documento estabelece os requisitos mínimos a serem demonstrados na avaliação da conformidade de&nbsp;fios telefônicos, para efeito de homologação junto à Agência Nacional de Telecomunicações.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item2"></a>2. <strong>ABRANGÊNCIA</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item2.1"></a>2.1. Este documento se aplica&nbsp;aos fios telefônicos dos tipos&nbsp;DG, externo binado FEB, FE, FE-AA, FE-AA-80-PEAD-X e FI.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item3"></a>3. <strong>REFERÊNCIAS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item3.1"></a>3.1. Os documentos relacionados a seguir são indispensáveis à aplicação deste documento. Para referências datadas, aplicam-se somente as edições citadas. Para referências não datadas, aplicam-se as edições mais recentes do referido documento (incluindo emendas).</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.1"></a>3.1.1. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=V0Q2L2FVdHdnWmJmZzZ3TVk3WUM0dmtaRmJJL0wybDR3d1l3ZHBJblgzRT0=">ABNT NBR 6810:2010</a> – Fios e cabos elétricos - Tração a ruptura em componentes metálicos - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.2"></a>3.1.2.<a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=QkdIa3Y2MFF5MzhjckRnQmlETEpmQzhBNGJPQ2xKZjBmaGhaWEh2WWp0RT0="> ABNT NBR 6814:1986</a> – Fios e cabos elétricos - Ensaio de resistência elétrica - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.3"></a>3.1.3. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=b2JZMmZIL01DWjNWL0FxaUR5NkVqOE42c2ZDWjBDcmNDNmpKWHZEQy9DOD0=">ABNT NBR 8121:2021</a> – Cabos de fios de aço revestidos de cobre, nus, para fins elétricos – Especificação;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.4"></a>3.1.4. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=OWd4Y0E1VGtCcldmclpoMUxQUkRaUlZJaEhNREVnUVFFdmJna3RrMGE2RT0=">ABNT NBR 9058:1999</a> – Sistemas de ramais prediais de água - Tubos de polietileno PE - Determinação do teor de negro-de-fumo;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.5"></a>3.1.5. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=ZFFzSFNiNnIwa1grWThTSDdUVkEwbFJiY3VmcXVzRDdFVWl3ekc5QkV6UT0=">ABNT NBR 9128:2009</a> – Fios e cabos telefônicos - Ensaio de capacitância mútua - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.6"></a>3.1.6. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=Zk1TbmtZQWVPMFJsdHlwdklzaHdITHpBdW9KNEhaY0xNNXcxV3RGcCtQST0=">ABNT NBR 9130:2009</a> – Fios e cabos telefônicos - Ensaio de desequilíbrio resistivo - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.7"></a>3.1.7. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=RXdNVG1RcWlma3NXcWhvSm9HQnRTV3o4aEQyTzdwVlRONWRsYTFISDZVOD0=">ABNT NBR 9133:2011</a> – Fios e cabos telefônicos - Atenuação do sinal de transmissão - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.8"></a>3.1.8. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=SVhoK01HSUpWS2ljVC96dmdrWTVyNVYzTkRzOWJtZStqa2xWOVN3cDhLYz0=">ABNT NBR 9141:1998</a> – Cabos ópticos e fios e cabos telefônicos - Ensaio de tração e alongamento à ruptura - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.9"></a>3.1.9. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=b1BjODNqZ056ZHdjeVNKUFJPZHRERVFNSzRnem0vaXB0UG5Ec3BzYXFUST0=">ABNT NBR 9142:1999</a> – Fios e cabos telefônicos - Ensaio de resistência à fissuração - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.10"></a>3.1.10. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=dUlTNnR0NGJaTHFmNXhmc2kvTFRqZHpxNjZhMUZFL3B5dSs2ejFnaG95bz0=">ABNT NBR 9143:1999</a> – Fios e cabos telefônicos - Ensaio de contração - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.11"></a>3.1.11. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=YlFud0pNaU45T3VxeXJNVUlhQWdnQkx6ZUJ3ejZLeWJDY0Fnc2cxQno3VT0=">ABNT NBR 9145:2008</a> – Fios e cabos telefônicos - Ensaio de resistência de isolamento - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.12"></a>3.1.12. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=SGhLaUpSREQybnd2L0R4OUNNcFpLYUJFY1M4SHVNOFZWWE8vdXZIVWNFbz0=">ABNT NBR 9146:2012</a> – Fios e cabos telefônicos - Ensaio de tensão elétrica amplicada - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.13"></a>3.1.13. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=VFZ3SFJSblVTckNQSk5qZU1FcVgzTnorYXh1bXZPQUJCK0o0M1RDRGhiND0=">ABNT NBR 9147:2014</a> – Fios e cabos para telecomunicações – Fluidez - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.14"></a>3.1.14.<a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=b1ZVc2huY3UwdGVUb0F6cjlqUStOazRqOW1lVENINjNGanZ6MjJWd0wxbz0="> ABNT NBR 9148:1998</a> – Cabos ópticos e fios e cabos telefônicos - Ensaio de envelhecimento acelerado - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.15"></a>3.1.15.<a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=OVdUbVk0Y3VUdk85aVNaVTZHQXhpVnNYVmNVb2JmYlh5N3lzWlduOTZNST0="> ABNT NBR 9150:2013</a> – Fios e cabos telefônicos - Ensaio de separação das veias - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.16"></a>3.1.16. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=Tk80VDFlWm1aTjgydXcyUi91T3h5c3ZuY1BIalR1cGVtVGdMT1ByTXp2VT0=">ABNT NBR 13977:1997</a> – Cabos ópticos - Determinação do tempo de indução oxidativa (OIT) - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.17"></a>3.1.17. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=eVZodnpQSklaRWtucVFBaGs4NlFqcUhHMjBtZjEwTldHdGxuTU9sL1FsVT0=">ABNT NBR 14705:2010</a> – Cabos internos para telecomunicações - Classificação quanto ao comportamento frente à chama;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.18"></a>3.1.18. <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=L1hnVmhuOFNJTzcwTWYrV2h2SENKMVhmR0NaU2dVTGw3eWJwNjNEOVI3MD0=">ABNT NBR 14706:2001</a> – Cabos ópticos, fios e cabos telefônicos - Determinação do coeficiente de absorção de ultravioleta - Método de ensaio;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.19"></a>3.1.19. <a href="https://webstore.iec.ch/p-preview/info_iec60811-1-1%7Bed2.1%7Den_d.pdf">ABNT NBRNM IEC 60811-1-1:2001</a> – Métodos de ensaios comuns para os materiais de isolação e de cobertura de cabos elétricos – Parte 1: Métodos para aplicação geral – Capitulo 1: Medição de espessuras e dimensões externas – Ensaios para a determinação das propriedades mecânicas;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.20"></a>3.1.20. <a href="https://advsearch.iec.ch/ords/f?p=117:104:::::FSP_SEARCH_ORG_ID,FSP_SEARCH_AND,FSP_SEARCH_QUOTE,FSP_SEARCH_OR,FSP_SEARCH_NONE,FSP_SEARCH_DOCREF,FSP_SEARCH_STAGECODE,FSP_SEARCH_HEAD,FSP_SEARCH_TYPE,FSP_SEARCH_PUBPROJREF,FSP_SEARCH_DATERANGE,FSP_SEARCH_DATEFROM,FSP_SEARCH_DATETO,FSP_REQUEST:,60811-1-4,,,,,,,,,0,,,123&amp;cs=1H7OgYu8O4Q0jcGAa75U1GAQmUUI">ABNT NBRNM IEC 60811-1-4:2003</a> – Métodos de ensaios comuns para os materiais de isolação e de cobertura de cabos elétricos e ópticos - Parte 1: Métodos para aplicação geral - Capítulo 4: Ensaios a baixas temperaturas;</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item3.1.21"></a>3.1.21. <a href="https://www.astm.org/g0155-21.html">ASTM&nbsp;G155:2021</a> –&nbsp;<em>Standard Practice for Operating Xenon Arc Light Apparatus for Exposure of Non-Metallic Materials</em>.</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item4"></a>4. <strong>DEFINIÇÕES</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item4.1"></a>4.1. Para fins deste documento, são adotadas as definições a seguir relacionadas:</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.1"></a>4.1.1. Alongamento à ruptura dos condutores: alongamento percentual medido no instante da ruptura do condutor.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.2"></a>4.1.2. Alongamento à ruptura do isolamento: alongamento percentual medido no instante da ruptura da isolação.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.3"></a>4.1.3. Atenuação do sinal de transmissão: diminuição progressiva de potência do sinal em sua propagação.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.4"></a>4.1.4. Desequilíbrio resistivo: variação percentual da resistência elétrica medida entre dois condutores componentes de um par.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.5"></a>4.1.5. Fio telefônico DG:&nbsp;conjunto constituído por veias singelas ou mais veias torcidas entre si, até um máximo de 6 veias de cobre eletrolítico maciço, estanhado, com isolação em PVC.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.6"></a>4.1.6. Fio telefônico externo binado FEB:&nbsp;conjunto constituído por um par de condutores de cobre eletrolítico estanhados, isolados individualmente por material polimérico, protegido por um revestimento polimérico contendo elemento de sustentação metálico ou dielétrico.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.7"></a>4.1.7. ​Fio telefônico FE:&nbsp;conjunto constituído por dois condutores de liga de cobre em paralelo com diâmetro nominal de 1,00 ou 1,60mm e isolados com PVC, polietileno ou copolímero.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.8"></a>4.1.8. ​Fio telefônico FE-AA:&nbsp;conjunto constituído por dois condutores de cobre com alma de aço em paralelo com diâmetro nominal de 0,80, 1,00 e 1,60mm e isolados com PVC, polietileno ou copolímero.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.9"></a>4.1.9. ​Fio telefônico FE-AA-80-PEAD-X:&nbsp;conjunto constituído por dois condutores de cobre com alma de aço em paralelo com diâmetro nominal de 0,80mm e isolados com polietileno de alta densidade (PEAD). Possui características elétricas para transmissão em altas frequências (xDSL).​</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">​4.1.10. Fio telefônico FI:&nbsp;conjunto constituído por duas veias torcidas, de cobre eletrolítico maciço, estanhado, com isolação de cloreto de polivinila (PVC).​</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.11"></a>4.1.11. Resistência ao intemperismo: avaliação da estabilidade à luz ultravioleta do revestimento externo do fio, acompanhada pela variação do seu índice de fluidez.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.12"></a>4.1.12. Resistência à tração e alongamento à ruptura do revestimento externo: quociente da carga máxima observada na ruptura pela seção transversal inicial do revestimento e o alongamento percentual medido neste instante.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.13"></a>4.1.13. Resistência do isolamento: resistência elétrica medida entre duas partes condutoras separadas por materiais isolantes.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.14"></a>4.1.14. Retardância à chama: característica intrínseca de desempenho do material que, sob condições de queima pré-determinadas, a chama se extingue quando da retirada da fonte de calor.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.15"></a>4.1.15. Tensão elétrica aplicada: tensão elétrica máxima que um dielétrico suporta sem alterações em sua estrutura molecular.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item4.1.16"></a>4.1.16. Tempo de indução oxidativa (OIT,&nbsp;<em>Oxidative Induction Time</em>): tempo do processo de oxidação induzida de um material submetido à alta temperatura e à atmosfera oxidativa.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item5"></a>5. <strong>REQUISITOS GERAIS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1. <strong>Designação</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.1.1"></a>5.1.1. Os fios telefônicos externos são designados pelas iniciais FE, precedendo o número centesimal do diâmetro nominal do condutor. Por exemplo, para fios telefônicos de diâmetro nominal de 1,00 mm, a designação será&nbsp;FE-100. Quando o condutor utilizado é o cobre com alma de aço, são&nbsp;adicionadas&nbsp;as letras AA e a designação se&nbsp;torna&nbsp;FE-AA-80, para o caso do exemplo anterior de um condutor de 0,80 mm de diâmetro. O fio FE para aplicação em altas frequências (xDSL) tem a designação&nbsp;FE-AA-80-PEAD-X.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.1.2"></a>5.1.2. Os fios telefônicos externos binados - FEB são designados pelo código FEB-X-Y, onde X é o material do elemento de sustentação (DO: Dielétrico Figura 8; M: Metálico; DC: Dielétrico Circular) e Y é o número centesimal do diâmetro nominal do condutor.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.1.3"></a>5.1.3. Os fios telefônicos internos FI são designados pelas iniciais FI&nbsp;precedendo o número centesimal do diâmetro nominal do condutor (60: 0,60mm) e, dependendo da espessura da isolação, seguido da letra R, do seguinte modo: FI-60 ou FI-60-R.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.1.4"></a>5.1.4. Os fios telefônicos internos DG são designados pelas iniciais FDG-X-Y, onde X é o número centesimal do diâmetro nominal do condutor (50: 0,50mm ou 60: 0,60mm) e Y é o número de veias do fio (de 1 a 6).​</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2. <strong>Condutor</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.1"></a>5.2.1. Para os fios FE cada condutor deve ser constituído por um fio maciço de liga de cobre-estanho ou cobre-cádmio com diâmetro nominal de 1,00 ou 1,60 mm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.2"></a>5.2.2. Para os fios FE-AA cada condutor deve ser constituído por um fio maciço de cobre com alma de aço de diâmetro nominal de 0,80, 1,00 ou 1,60 mm.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.3"></a>5.2.3. A superfície do condutor não deve apresentar fissuras, escamas, estrias, rebarbas, asperezas ou inclusões.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.4"></a>5.2.4. Não são permitidas emendas nos condutores dos fios FE.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.5"></a>5.2.5. Os condutores utilizados na fabricação do fio FE-AA-80-PEAD-X devem estar conforme a norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=b2JZMmZIL01DWjNWL0FxaUR5NkVqMVdmby9XREQyZlRFdGNpa0xlYjRQaz0=">ABNT NBR 8121</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.6"></a>5.2.6. O diâmetro mínimo dos condutores é limitado pela resistência elétrica máxima.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.7"></a>5.2.7. Cada condutor do fio FE-AA-80-PEAD-X deve ser constituído por um fio sólido de aço&nbsp;recoberto por uma camada contínua de cobre&nbsp;metalurgicamente aderida por processo de caldeamento&nbsp;cobrindo totalmente o núcleo de aço.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.8"></a>5.2.8. Cada condutor do fio FEB deve ser constituído por um fio de cobre eletrolítico, maciço, estanhado, de 0,65&nbsp;ou 0,90 mm de diâmetro nominal, sendo seu diâmetro mínimo limitado pela resistência elétrica máxima.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.9"></a>5.2.9. O condutor do fio FEB pode ter emendas efetuadas por solda a frio ou a quente, desde que as características elétricas e mecânicas satisfaçam os requisitos deste documento.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.10"></a>5.2.10. Cada condutor do fio FI deve ser constituído por um fio de cobre eletrolítico, maciço, estanhado, de 0,60 mm de diâmetro nominal, sendo seu diâmetro mínimo limitado pela resistência elétrica máxima.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.2.11"></a>5.2.11. Cada condutor do fio FDG deve ser constituído por um fio de cobre eletrolítico, maciço, estanhado, de 0,50 ou 0,60 mm de diâmetro nominal, sendo seu diâmetro mínimo limitado pela resistência elétrica máxima.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.3"></a>5.3. ​<strong>Isolação</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.3.1"></a>5.3.1. A isolação dos fios FE deve ser constituída por uma camada de composto de cloreto de polivinila (PVC), polietileno (PE) ou copolímero, satisfazendo&nbsp;os requisitos deste documento.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.3.2"></a>5.3.2. A camada de material isolante aplicada sobre os condutores deve ser contínua, uniforme e homogênea, ao longo de todo o comprimento do condutor.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.3.3"></a>5.3.3. A isolação do fio FE-AA-80-PEAD-X deve ser com polietileno de alta densidade (PEAD) na cor preta.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.3.4"></a>5.3.4. Não são permitidos reparos na isolação dos condutores durante o processo de fabricação.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.3.5"></a>5.3.5. O isolamento do fio FE-AA-80-PEAD-X não deverá se contrair ao tempo em situação de estocagem em almoxarifado em repouso, durante ou mesmo após sua instalação em campo, devendo manter&nbsp;sua condição original.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.3.6"></a>5.3.6. A isolação dos fios FI e FDG deve ser constituída por uma camada de composto de cloreto de polivinila (PVC).</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item5.4"></a>5.4. <strong>Identificação</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.4.1"></a>5.4.1. As veias do fio FE-AA-80-PEAD-X devem ser de cor preta identificadas da seguinte forma:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Veia “a”, com a isolação perfeitamente lisa;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Veia “b”, com a isolação apresentando ao longo de todo o seu comprimento uma saliência sem aresta viva, de cerca de 0,5 mm de altura, sem alterar as características elétricas e mecânicas do fio.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item5.4.2"></a>5.4.2. Sobre o isolamento dos fios FE e FEB, em intervalos regulares de até 1 m, devem ser marcados de forma legível e permanente os seguintes dados:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Nome, marca ou código do fabricante e/ou marca comercial do requerente da homologação, quando devidamente autorizado pelo fabricante (detentor da tecnologia);</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Nome ou código do produto (exemplo: FE-100, FE-AA-80-PEAD-X, FEB-X-Y, etc);</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">c) Ano de fabricação;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">d) Marcação sequencial métrica, com uma precisão de leitura de -1,5% ao longo de todo o lance;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">e) A marcação deve ser feita com algarismos de altura, forma, espaçamento e método de gravação ou impressão adequada;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">f) Identificação do código da de homologação Anatel, conforme <a href="#item9">item 9</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="JUSTIFY"><a name="item5.4.3"></a>5.4.3. Os tipos de fios&nbsp;FI e DG&nbsp;devem conter em sua embalagem, de forma legível, os seguintes dados:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Nome, marca ou código do fabricante além de, opcionalmente, marca comercial do requerente da homologação, quando devidamente autorizado pelo fabricante (detentor da tecnologia).</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Nome ou código do produto (Exemplo: FE-100, FE-AA-80-PEAD-X, FEB-X-Y, etc.);</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">c) Ano de fabricação;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">d) Identificação do código de homologação Anatel, conforme <a href="#item9">item 9</a>.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item6"></a>6. <strong>REQUISITOS ESPECÍFICOS</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.1"></a>6.1. <strong>Requisitos Elétricos</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.1"></a>6.1.1. A resistência elétrica máxima de cada condutor, dada em Ohms&nbsp;[Ω], em corrente contínua e a 20°C, quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=QkdIa3Y2MFF5MzhjckRnQmlETEpmRGY0K3FiYVRGdGV3eG5xMkoxVVg2Zz0=">ABNT NBR 6814</a>, deve ser:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) 38,9 Ω/km para o fio FE-100;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) 15,2 Ω/km para o fio FE-160;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">c) 113 Ω/km para o fio FE-AA-80;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">d) 73 Ω/km para o fio FE-AA-100;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">e) 30 Ω/km para o fio FE-AA-160;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">f) 105 Ω/km para o fio FE-AA-80-PEAD-X;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">g) 57,9 Ω/km para o fio FEB 65;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">h) 30,2 Ω/km para o fio FEB 90;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">i) 68 Ω/km para o fio FI 60;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">j) 92,0 Ω/km para o fio FDG 50 singelo,&nbsp;1 veia; 95,0 Ω/km para o fio FDG 50 múltiplo, acima de uma veia;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">k) 64,0 Ω/km para o fio FDG 60 singelo, 1 veia; 66,0 Ω/km para o&nbsp;fio FDG 60 múltiplo,&nbsp;acima de uma veia.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.1.1"></a>6.1.1.1. A resistência elétrica de qualquer pedaço de condutor do fio FEB, do fio FI ou do fio FDG com 150 mm de comprimento contendo emenda&nbsp;não pode ser superior a 105% da resistência de um pedaço adjacente de igual comprimento que não contenha emenda.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.2"></a>6.1.2. O desequilíbrio resistivo em corrente contínua entre os dois condutores do fio FE-AA-80-PEAD-X e do fio FEB deve ser, no máximo, 7%&nbsp;quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=Zk1TbmtZQWVPMFJsdHlwdklzaHdITHpBdW9KNEhaY0xNNXcxV3RGcCtQST0=">ABNT NBR 9130</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.3"></a>6.1.3. A resistência de isolamento entre cada condutor e água a 20°C&nbsp;<u>+</u>&nbsp;2°C, quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=YlFud0pNaU45T3VxeXJNVUlhQWdnQkx6ZUJ3ejZLeWJDY0Fnc2cxQno3VT0=">ABNT NBR 9145</a>, deve ser no mínimo de:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) 1.000 MΩ.km para o fio FE com isolamento PVC;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) 10.000 MΩ.km para o fio FE com isolamento PE/PEAD;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">c) 15.000 MΩ.km para o fio FEB;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">d) 200 MΩ.km para o fio FI; e</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">e) 1.000 MΩ.km para o fio FDG.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.4"></a>6.1.4. O isolamento entre cada condutor e a água para o fio FE, fio FEB, fio FI e fio FDG deve suportar, sem ruptura, por&nbsp;no mínimo um minuto, um potencial de corrente contínua de valor não inferior a 1.500 V<sub>CC</sub>&nbsp;(tensão contínua) ou 1.100 V<sub>CA</sub>&nbsp;(tensão alternada em 60Hz), quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=SGhLaUpSREQybnd2L0R4OUNNcFpLYUJFY1M4SHVNOFZWWE8vdXZIVWNFbz0=">ABNT NBR 9146</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.1.5"></a>6.1.5. A capacitância mútua do par,&nbsp;quando ensaiada conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=ZFFzSFNiNnIwa1grWThTSDdUVkEwbFJiY3VmcXVzRDdFVWl3ekc5QkV6UT0=">ABNT NBR 9128</a>,&nbsp;deve ser de:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) 48&nbsp;<u>+</u>&nbsp;3 nF/km&nbsp;para o fio FE-AA-80-PEAD-X; e</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) 38&nbsp;<u>+</u>&nbsp;4 nF/km para o fio FEB.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.1.5.1"></a>6.1.5.1. O ensaio deverá ser realizado apenas no rolo.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="LEFT"><a name="item6.1.6"></a>6.1.6. A atenuação do fio FE-AA-80-PEAD-X deve estar em conformidade com os valores indicados na tabela 1 quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=RXdNVG1RcWlma3NXcWhvSm9HQnRTZnV1TldnSGZQaDBuTHJOMmNPT2N4cz0=">ABNT NBR 9133</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="LEFT">&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda" style="text-align: center;" align="LEFT"><a name="tabela1&nbsp;—"></a>&nbsp;Tabela 1&nbsp;— Atenuação.</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Frequência [kHz]</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Atenuação máxima</strong></p>
+<p class="Tabela_Texto_Centralizado"><strong>[dB/km]</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>150</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>772</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">11,5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>1.000</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>2.000</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">14</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p class="Tabela_Texto_Centralizado">Observação: Impedância de 125 Ω</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">​6.2.&nbsp;<strong>Requisitos Ambientais</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.1"></a>6.2.1. O composto de cloreto de polivinila (PVC) do isolamento dos fios FE quando submetido ao ensaio de envelhecimento acelerado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=b1ZVc2huY3UwdGVUb0F6cjlqUStOazRqOW1lVENINjNGanZ6MjJWd0wxbz0=">ABNT NBR 9148</a> deve apresentar as características indicadas a seguir:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Tração à ruptura: Depreciação máxima de 20%;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Alongamento à ruptura: Depreciação máxima de 40%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.2"></a>6.2.2. Os fios FE-AA-80-PEAD-X e FEB quando submetidos ao teste de intemperismo durante 2160 horas conforme norma <a href="https://www.astm.org/g0155-21.html">ASTM-G-155</a>, ciclo 1, não devem apresentar trincas ou rachaduras no revestimento externo e a variação do índice de fluidez em relação ao valor original não deve ser superior a 25%, conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=VFZ3SFJSblVTckNQSk5qZU1FcVgzTnorYXh1bXZPQUJCK0o0M1RDRGhiND0=">ABNT NBR 9147</a>.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.2.2.1"></a>6.2.2.1. Para&nbsp;o fio FEB a variação do índice de fluidez do revestimento externo em relação ao valor original não deve ser superior a 25%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.3"></a>6.2.3. O fio FE-AA-80-PEAD-X não deve apresentar rachaduras ou trincas no revestimento externo quando submetido ao ensaio de dobramento a frio a temperatura de -10<sup>o</sup>C&nbsp;<u>+</u>&nbsp;1<sup>o</sup>C&nbsp;, conforme norma <a href="https://advsearch.iec.ch/ords/f?p=117:104:::::FSP_SEARCH_ORG_ID,FSP_SEARCH_AND,FSP_SEARCH_QUOTE,FSP_SEARCH_OR,FSP_SEARCH_NONE,FSP_SEARCH_DOCREF,FSP_SEARCH_STAGECODE,FSP_SEARCH_HEAD,FSP_SEARCH_TYPE,FSP_SEARCH_PUBPROJREF,FSP_SEARCH_DATERANGE,FSP_SEARCH_DATEFROM,FSP_SEARCH_DATETO,FSP_REQUEST:,60811-1-4,,,,,,,,,0,,,123&amp;cs=1H7OgYu8O4Q0jcGAa75U1GAQmUUI">ABNT NBRNM IEC 60811-1-4</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.4"></a>6.2.4. O material do isolamento do fio FE-AA-80-PEAD-X, quando submetido ao ensaio de contração conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=dUlTNnR0NGJaTHFmNXhmc2kvTFRqYmlNVnovckxVdkMzY3BrMkF6R24vST0=">ABNT NBR 9143</a>, não deve apresentar uma contração superior a 5%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.5"></a>6.2.5. O material do isolamento do fio FE-AA-80-PEAD-X, após submetido a 70°C durante 336 horas em uma estufa com circulação de ar, deve apresentar o valor mínimo de tempo de indução oxidativa da isolação a 200°C&nbsp;<u>+</u>&nbsp;0,5°C de 20 minutos&nbsp;conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=Tk80VDFlWm1aTjgydXcyUi91T3h5c3ZuY1BIalR1cGVtVGdMT1ByTXp2VT0=">ABNT NBR 13977</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.2.6"></a>6.2.6. Os fios telefônicos FI e FDG, quando submetidos ao ensaio de comportamento frente à chama conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=eVZodnpQSklaRWtucVFBaGs4NlFqblc2emVoZDNmNlJhdXBPbVFhamRDST0=">ABNT NBR 14705</a>, devem ser classificados como CMX.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.3"></a>6.3. ​<strong>Requisitos Químicos</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.1"></a>6.3.1. O teor de negro de fumo do polietileno usado na isolação dos fios FE deve ser no mínimo 2,0% quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=OWd4Y0E1VGtCcldmclpoMUxQUkRaU0U0bzd2VjRoRFQ5bTdLKzE4TUp3RT0=">ABNT NBR 9058</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.2"></a>6.3.2. O polietileno usado na isolação dos fios FE não deve apresentar falha em 10 corpos de prova&nbsp;quando submetido ao ensaio de resistência à fissuração durante 24 horas, conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=b1BjODNqZ056ZHdjeVNKUFJPZHREQWdzVjdEN1lXWkd6WWZxaVBWdU9mST0=">ABNT NBR 9142</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.3.3"></a>6.3.3. Quando submetido ao ensaio de coeficiente de absorção no UV, o polietileno usado na isolação dos fios FE deve apresentar absorbância mínima de 4000 Abs/cm&nbsp;quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=L1hnVmhuOFNJTzcwTWYrV2h2SENKMjE1UE1UeC92VmNVY0RJdWR6T0t1UT0=">ABNT NBR 14706</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.4"></a>6.4. ​<strong>Requisitos Mecânicos</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.1"></a>6.4.1. A tração à ruptura de qualquer parte do condutor após a aplicação da isolação, quando ensaiado conforme norma<a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=V0Q2L2FVdHdnWmJmZzZ3TVk3WUM0dmtaRmJJL0wybDR3d1l3ZHBJblgzRT0="> ABNT NBR 6810</a>, deve ser no mínimo de:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) 42 kgf para o fio FE-AA-80;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) 73 kgf para o fio FE-AA-100;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">c) 42 kgf para o fio FE-AA-80-PEAD-X.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.2"></a>6.4.2. O alongamento à ruptura dos condutores do fio FE-AA-80-PEAD-X&nbsp;após a aplicação da isolação&nbsp;deve ser de, no mínimo, 0,8%&nbsp;quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=V0Q2L2FVdHdnWmJmZzZ3TVk3WUM0dmtaRmJJL0wybDR3d1l3ZHBJblgzRT0=">ABNT NBR 6810</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.3"></a>6.4.3. O polietileno utilizado como isolamento dos fios FE deve ter uma resistência mediana mínima a tração à ruptura de 11,7 MPa&nbsp;quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=SVhoK01HSUpWS2ljVC96dmdrWTVyNVYzTkRzOWJtZStqa2xWOVN3cDhLYz0=">NBR ABNT 9141</a>.</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.4.3.1"></a>6.4.3.1. Para o fio FE-AA-80-PEAD-X a resistência a tração do isolamento deve ser de, no mínimo, 16,5 MPa.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.4"></a>6.4.4. O polietileno utilizado como isolamento dos fios FE deve ter um alongamento mediano mínimo à ruptura de 400% quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=SVhoK01HSUpWS2ljVC96dmdrWTVyNVYzTkRzOWJtZStqa2xWOVN3cDhLYz0=">NBR ABNT 9141</a>..</p>
+<p class="Paragrafo_Numerado_Nivel4 texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;"><a name="item6.4.4.1"></a>6.4.4.1. Para o fio FE-AA-80-PEAD-X o alongamento à ruptura do isolamento deve ser de, no mínimo, 400%.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.5"></a>6.4.5. O fio FE-AA-80-PEAD-X, quando submetido ao ensaio de bipartimento, deve apresentar uma força de separação mínima de 15 N e máxima de 40 N, não devendo apresentar rasgamento do revestimento ou exposição dos condutores do par quando ensaiado conforme norma <a href="https://www.abntcatalogo.com.br/pnm.aspx?Q=OVdUbVk0Y3VUdk85aVNaVTZHQXhpVnNYVmNVb2JmYlh5N3lzWlduOTZNST0=">NBR ABNT 9150</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.6"></a>6.4.6. O rolo de fio FE-AA-80-PEAD-X, quando desenrolado, não deverá apresentar efeito mola. Para verificação desta propriedade, o mesmo deverá ser desenrolado manualmente, através de sua ponta externa junto a uma das faces do rolo, até uma distância de 20 m e solto naturalmente sobre o solo. Durante o desenrolamento as faces do rolo deverão ser invertidas a cada três voltas, para eliminação da torção do eixo do fio. Após alinhamento deste comprimento, não deverá haver retorno nem apresentação de espiras distantes do solo, devendo o fio se apresentar retilíneo sem desvios ao longo de seu comprimento, tanto em seu eixo longitudinal quanto axial.&nbsp;Para realização deste ensaio devem ser seguidos os seguintes procedimentos:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Marque no solo um ponto A inicial e um ponto B final&nbsp;distantes 20 metros um do outro;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Desembale um rolo do fio;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">c) De lado para o ponto A, com o rolo de fio sustentado pelo braço esquerdo, tome com a mão direita a ponta externa do rolo de fio e desenrole três voltas, caminhando no sentido do ponto B.&nbsp;Gire o corpo 180 graus, passe o rolo de fio para o outro braço e desenrole mais três voltas, assim sucessivamente caminhando e soltando o fio, até atingir o ponto B;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">d) Prendendo a extremidade inicial sobre o ponto A e tracionando a outra extremidade do fio solto&nbsp;até atingir o ponto B, fixe o fio solto sobre o solo&nbsp;no ponto B, soltando em seguida o fio no ponto A;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">e) O afastamento da extremidade inicial do fio em relação ao ponto A&nbsp;deverá ser inferior ou igual a 5%, ou seja, de no máximo 100 cm. Não deverá apresentar espiras com altura superior a 10 cm do solo&nbsp;ao longo do fio.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.7"></a>6.4.7. O condutor de aço cobreado do fio FE-AA-80-PEAD-X, sem material do revestimento, não deverá apresentar fraturas, nem fissuras, trincas ou outras deformações visíveis a olho nu ou ao tato, quando enrolado sobre um mandril de diâmetro 0,80 mm&nbsp;<u>+</u>&nbsp;0,025 mm ou em torno do próprio condutor por 6 voltas em hélice fechada.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.4.8"></a>6.4.8. O valor da força da aderência do isolamento ao condutor do fio FE-AA-80-PEAD-X deve estar compreendido entre 30 N e 90 N. Durante o ensaio o condutor não deve deslizar.&nbsp;Para realização deste ensaio devem ser seguidos os seguintes procedimentos:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) O corpo-de-prova deve ter um comprimento de 150 mm;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Com a ajuda de uma lâmina, retirar com cuidado 50 mm de comprimento do isolamento de uma das extremidades do fio, deixando os condutores expostos;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">c) Introduzir a extremidade do corpo-de-prova com os condutores expostos&nbsp;no orifício de um dispositivo de retenção do isolamento do fio, conforme figura 1;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">d) Fixar o corpo-de-prova na célula de carga e iniciar o ensaio de tração com velocidade constante de 100 mm/min.</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/ato-1721/magem1.png" alt="" width="299" height="350"></p>
+<p class="Texto_Centralizado" style="text-align: center;">Figura 1 —&nbsp;Ensaio de adesão do isolamento do condutor.</p>
+<p class="Texto_Alinhado_Esquerda">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item6.5"></a>6.5.&nbsp;<strong>Requisitos Dimensionais</strong></p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;" align="LEFT"><a name="item6.5.1"></a>6.5.1. O peso nominal dos fios FE deve ser de:</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) 22 kg/km para o fio FE-AA-80;</p>
+<p class="Item_Alinea_Letra texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) 30 kg/km para o fio FE-AA-100.</p>
+<p class="Paragrafo_Numerado_Nivel3 texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;"><a name="item6.5.2"></a>6.5.2. As características dimensionais do fio FE-AA-80-PEAD-X devem estar em conformidade com a tabela 2&nbsp;e atender a figura 2&nbsp;quando ensaiado conforme norma <a href="https://webstore.iec.ch/p-preview/info_iec60811-1-1%7Bed2.1%7Den_d.pdf">ABNT NBRNM-IEC 60811-1-1</a>.</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado"><a name="tabela2"></a>Tabela&nbsp;2 — Dimensionais do fio FE-AA-80-PEAD-X.</p>
+</caption>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Requisito</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Valores [mm]</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Diâmetro condutor</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">0,80 (nominal)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Espessura revestimento externo</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1,10 (mínimo)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Eixo maior</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">6,0 a 6,8 (min/max)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Eixo menor</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">3,0 a 3,5 (min/max)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Comprimento rolo</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">500 m (nominal)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Marcação métrica sequencial (medir 5 intervalos aleatórios em cada rolo)</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">1m (-1,5% + sem restrição)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Entre condutores</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">3,0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Centralizado">&nbsp;</p>
+<p class="Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Certificacao_Produtos/ato-1721/imagem2.png" alt="" width="425" height="217"></p>
+<p class="Texto_Centralizado" style="text-align: center;">Figura 2 – Dimensionais do Fio FE-AA-80-PEAD-X</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item7"></a>7.&nbsp;<strong>VERIFICAÇÃO DA CONFORMIDADE</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item7.1"></a>7.1. Os requisitos específicos dos fios telefônicos estão dispostos na tabela 3.</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado"><a name="tabela3"></a>Tabela 3 — Requisitos Específicos dos Fios Telefônicos.</p>
+</caption>
+<tbody>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">&nbsp;</p>
+</td>
+<td colspan="6" rowspan="1">
+<p class="Tabela_Texto_Centralizado">Tipo de Fio Telefônico</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Requisitos específicos dos&nbsp;fios telefônicos</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">FE</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">FE-AA</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">FE-AA-80-PEAD-X</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">FEB</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">FI</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">FDG</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Resistência elétrica dos condutores</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Desequilíbrio resistivo</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Resistência de isolamento</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Tensão elétrica aplicada</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Capacitância mútua</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Atenuação</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Envelhecimento acelerado</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Resistência ao intemperismo</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Dobramento a frio</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Contração do revestimento externo</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Envelhecimento térmico do fio</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Comportamento frente à&nbsp;chama</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Teor de negro de fumo</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Fissuração</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Coeficiente de absorção no UV</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Tração à ruptura dos condutores</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Alongamento à ruptura dos condutores</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Resistência à tração do isolamento</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Alongamento à ruptura do isolamento</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Bipartimento do fio</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Resistência ao efeito mola</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Ensaio de aderência no condutor de aço cobreado</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Ensaio de adesão de isolamento aos condutores</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Peso</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">Dimensionais</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>X</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>&nbsp;</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Alinhado_Esquerda"><strong>&nbsp;</strong></p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a name="item8"></a>8.<strong> AVALIAÇÃO DA CONFORMIDADE</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item8.1"></a>8.1.<strong> Amostragem para os Fios Telefônicos</strong>&nbsp;- Para a realização dos ensaios de conformidade em fios telefônicos o fornecedor deve apresentar uma amostra de fio com comprimento determinado pelo&nbsp;agente responsável pela avaliação da conformidade ou laboratório habilitado.&nbsp;Deve ser apresentada uma amostra por tipo de fio limitada à capacidade máxima de fabricação do interessado.</p>
+<p class="Texto_Alinhado_Esquerda texto-recuo-1a-linha" style="text-align: justify;"><a name="item9"></a>9.&nbsp;<strong>IDENTIFICAÇÃO DA HOMOLOGAÇÃO</strong></p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item9.1"></a>9.1. A marcação do selo Anatel e a identificação do código de homologação deverão constar na embalagem do produto, em conformidade com&nbsp;o procedimento operacional para marcação da identificação da homologação Anatel em produtos para telecomunicações, anexo ao<a href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2020/1451-ato-4088">&nbsp;ato nº 4088, de 31 de julho de 2020</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2 texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;"><a name="item9.2"></a>9.2. Para os fios dos tipos&nbsp;FE e FEB, deverá haver marcações&nbsp;no próprio fio conforme estabelecido no<a href="#item5.4"> item 5.4</a> deste requisitos.</p>
+</div> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1862"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20Técnicos" class="link-categoria">Requisitos Técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Fios%20Telefônicos" class="link-categoria">Fios Telefônicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Externo%20Binado" class="link-categoria">Externo Binado</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

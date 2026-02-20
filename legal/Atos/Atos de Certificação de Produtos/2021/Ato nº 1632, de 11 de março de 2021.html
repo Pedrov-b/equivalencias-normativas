@@ -1,0 +1,1221 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 1632, de 11 de março de 2021</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2021/1583-ato-1632">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Estabelecer, Requisitos Técnicos, Avaliação, Conformidade, Caixa Terminal Óptica Aérea, Selada, Ventilada, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Estabelecer os requisitos técnicos para avaliação da conformidade de Caixa Terminal Óptica Aérea, conforme disposto no Anexo a este Ato.">
+	<title>Anatel - Ato nº 1632, de 11 de março de 2021</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=822830116" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1475867738" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=866650119" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141458" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2021">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2021">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2021">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2021" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2021" class="pathway">2021</a> <span class="separator">&gt;</span> <span>Ato nº 1632, de 11 de março de 2021</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;949059b268bdcb39&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 1632, de 11 de março de 2021		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 13 Agosto 2021 11:39			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Terça, 17 Agosto 2021 18:48			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 10476			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico em <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO52zEdAyP-PRWp7rShJpRLDhx18Fryq41h9CmKvXAJ7xmsuJHY65obUYPvg8-6LaGtLUnFyda9w3MlDHq84P_Rs">13/8/2021</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES,&nbsp;</b>no uso das atribuições que lhe foram conferidas pelo §2º, do <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715#art22Anexo">art. 22</a>, do Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações, instituído pela Resolução nº 715, de 23 de outubro de 2019, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art19">Art. 19</a> da Lei nº 9.472, de 16 de julho de 1997 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO as contribuições recebidas na <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO5528qdQL0zoe63oTAom_9YaBLfT8eoBBJrKvmOMHpvqWwfUiqBcDKAkZhJbtXwLGa9114HpI83yVLNftAFb36s">Consulta Pública nº 34, de 28 de junho de 2019</a>; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlCGpgBOoc54E0Kq_xuIJaANkuYIJlqoeLzIXa92z1YeR">processo nº 53500.067849/2017-45</a>.</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art1"></a>Art. 1º&nbsp; Estabelecer os requisitos técnicos para avaliação da conformidade de Caixa Terminal Óptica Aérea, conforme disposto no <a href="#anexo">Anexo</a> a este Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><a id="art2"></a>Art. 2º&nbsp; Este&nbsp;Ato torna-se compulsório&nbsp;em 60 (sessenta) dias&nbsp;após a publicação no Boletim de Serviço&nbsp;Eletrônico da Anatel.</p>
+<p style="text-align: center;">VINICIUS OLIVEIRA CARAM GUIMARÃES</p>
+<p style="text-align: center;">Superintendente de Outorga e Recursos à Prestação</p>
+<p style="text-align: center;">&nbsp;</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="anexo"></a>ANEXO AO ATO Nº 1632, DE 11 DE MARÇO DE 2021</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>REQUISITOS TÉCNICOS PARA CERTIFICAÇÃO DE CAIXA TERMINAL ÓPTICA AÉREA</strong></p>
+<p class="Tabela_Texto_Alinhado_Esquerda">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item1"></a>1. OBJETIVO</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item1.1"></a>1.1. Este documento tem por objetivo estabelecer os requisitos para avaliação da conformidade técnica de Caixa terminal óptica aérea.&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item2"></a>2. REFERÊNCIAS NORMATIVAS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.1"></a>2.1. Regulamento para Avaliação da Conformidade e Homologação de Produtos para Telecomunicações,&nbsp;aprovado pela <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715">Resolução&nbsp;nº&nbsp;715, de 23 de outubro&nbsp;de 2019</a>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.2"></a>2.2. ABNT NBR IEC 6936 -<b>&nbsp;</b>Técnicas de ensaios elétricos de alta-tensão.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.3"></a>2.3. ABNT NBR IEC 60529 - Graus de proteção para invólucros de equipamentos elétricos (código IP).</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><em><a name="item2.4"></a>2.4. ABNT NBR 11003 - Tintas — Determinação da aderência.</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.5"></a>2.5. IEC 61300-3-1 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 3-1: Examinations and measurements - Visual examination</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.6"></a>2.6. IEC 61300-3-3 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 3-3: Examinations and measurements - Active monitoring of changes in attenuation and return loss.</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.7"></a>2.7. IEC 61300-2-26 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-26: Tests - Salt mist.</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.8"></a>2.8. IEC 61300-2-37 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-37: Tests - Cable bending for fibre optic closures</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.9"></a>2.9. IEC 61300-2-5 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-5: Tests - Torsion</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.10"></a>2.10. IEC 61300-2-4 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-4: Tests - Fibre/cable retention</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><em><a name="item2.11"></a>2.11. IEC 61300-2-22 -&nbsp;Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-22: Tests - Change of temperature.</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><em><a name="item2.12"></a>2.12. IEC 61300-2-1 -&nbsp;Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-1: Tests - Vibration (sinusoidal).</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><em><a name="item2.13"></a>2.13. ASTM G 155 – Ciclo 1 -&nbsp;Practice for Operating Xenon Arc Light Apparatus for Exposure of Non-Metallic Materials.</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><em><a name="item2.14"></a>2.14. ASTM D 638 -&nbsp;Standard Test Method for Tensile Properties of Plastics.</em></p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item3"></a>3. DEFINIÇÕES</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.1"></a>3.1. Para os efeitos deste documento, são adotadas as seguintes definições:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;">3.1.1.Caixa Terminal Óptica Aérea:&nbsp;utilizada na rede óptica de distribuição, tem como função principal realizar a interconexão entre as fibras ópticas do cabo óptico de distribuição com os cabos ópticos de acesso aos assinantes (<em>drop</em>). Como funções secundárias, pode permitir a realização de emendas, derivações e conectorização de fibras dos cabos de distribuição de baixa capacidade no segmento final da rede.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.1.2"></a>3.1.2. Caixa Terminal Óptica Aérea Selada: é a caixa na qual o ambiente interno à mesma&nbsp;<em><u>é vedado</u></em>&nbsp;em relação ao ambiente externo.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.1.3"></a>3.1.3. Caixa terminal Óptica Aérea Ventilada: é a caixa na qual o ambiente interno à mesma&nbsp;<em><u>não é vedado</u></em>&nbsp;em relação ao ambiente externo.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.1.4"></a>3.1.4. Caixa Terminal Óptica Subterrânea:<strong>&nbsp;</strong>utilizada na rede óptica de distribuição, tem como função principal realizar a interconexão entre as fibras ópticas do cabo óptico de distribuição com os cabos ópticos de acesso aos assinantes (<em>drop</em>). Como funções secundárias, pode permitir a realização de emendas, derivações e conectorização de fibras dos cabos de distribuição de baixa capacidade no segmento final da rede.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item4"></a>4. PRÉ-REQUISITOS PARA CERTIFICAÇÃO</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.1"></a>4.1. Quando utilizados cabos ópticos, divisores ópticos passivos, conectores, adaptadores ópticos convencionais ou adaptadores ópticos reforçados na montagem da caixa terminal óptica aérea, os mesmos devem estar certificados pela ANATEL.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.2"></a>4.2. Critério para certificação de caixas terminais ópticas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">a) Caixa terminal óptica aérea: Atender aos requisitos específicos.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">b) Caixa terminal óptica subterrânea: Atender aos requisitos específicos.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;">c) Caixa terminal óptica aérea e subterrânea: Atender aos requisitos específicos da caixa terminal óptica subterrânea e ao requisito de intemperismo da caixa terminal óptica aérea.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.3"></a>4.3. Corpos-de-prova</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item4.3.1"></a>4.3.1. A preparação dos corpos-de-prova deve ser executada pelo interessado, nas dependências do laboratório de ensaios, sob supervisão do mesmo, conforme o manual de montagem, instalação, operação e manutenção.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item4.3.2"></a>4.3.2. Os ensaios devem ser realizados sequencialmente dentro de cada grupo, conforme Tabela 1:</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela1:"></a>Tabela 1: Grupos para realização de ensaios.</p>
+<table class="tamanho-padrao" border="1" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Ensaio</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Corpos-de-Prova</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>GRUPO I</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Exame visual</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Todos&nbsp;<sup>(3)</sup></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>GRUPO II</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Exposição à névoa salina</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>GRUPO&nbsp;III</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Verificação de hermeticidade&nbsp;<sup>(1)</sup></p>
+</td>
+<td style="text-align: center;" rowspan="5">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Flexão</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Torção</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Tração</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Proteção contra água&nbsp;<sup>(2)</sup></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>GRUPO IV</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Variação de atenuação após acomodação da fibra no estojo</p>
+</td>
+<td style="text-align: center;" rowspan="4">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Verificação de hermeticidade&nbsp;<sup>(1)</sup></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Variação de temperatura</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Vibração</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>GRUPO V</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Intemperismo&nbsp;<sup>(3)</sup></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">30 (material polimérico)</p>
+<p class="Tabela_Texto_Centralizado">3 (material metálico)&nbsp;<sup>(4)</sup></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_8" style="padding-left: 30px;"><strong>Notas:</strong></p>
+<p class="Tabela_Texto_8" style="padding-left: 30px;">(1):&nbsp;<em>Ensaio não aplicável à caixa terminal aérea ventilada.</em></p>
+<p class="Tabela_Texto_8" style="padding-left: 30px;">(2):&nbsp;<em>Ensaio não aplicável à caixa terminal aérea selada</em>.</p>
+<p class="Tabela_Texto_8" style="padding-left: 30px;">(3): Ensaio aplicável para cada cor de material polimérico.</p>
+<p class="Tabela_Texto_8" style="padding-left: 30px;">(4) Ensaio&nbsp;aplicável quando a caixa for composta, integralmente ou em partes, por material metálico pintado.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item4.3.3"></a>4.3.3. O corpo-de-prova para o ensaio do Grupo I (exame visual) é definido como sendo a caixa terminal óptica aérea completa na sua condição de fornecimento.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item4.3.4"></a>4.3.4. O corpo-de-prova para o ensaio do Grupo II é definido como sendo a caixa terminal óptica aérea completa na sua condição de fornecimento, incluindo os acessórios de fixação para cada condição de aplicação.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item4.3.5"></a>4.3.5. O corpo-de-prova para o ensaio do Grupo, III é definido como sendo a caixa terminal óptica aérea, montada com cabos ópticos, utilizando o cabo principal na capacidade máxima&nbsp;(diâmetro externo máximo para o cabo)&nbsp;e 3&nbsp;cabos&nbsp;<em>drop</em>.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item4.3.6"></a>4.3.6. O corpo-de-prova para o ensaio do Grupo IV é definido como sendo a caixa terminal óptica aérea, montada com cabos ópticos monomodo, utilizando o cabo principal na capacidade máxima de fibras e com todos os cabos drop conectados ou emendados. A quantidade de estojos deve ser aquela correspondente à capacidade máxima da caixa terminal óptica aérea, sendo que todas as emendas devem estar agrupadas em apenas um estojo, ou em quantos forem necessários.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item4.3.7"></a>4.3.7. O corpo-de-prova para o ensaio do Grupo V é definido como 30 amostras&nbsp;para cada tipo de material polimérico utilizado na caixa terminal óptica ou para cada cor do polímero utilizado.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item4.3.8"></a>4.3.8. Quando forem utilizados conectores ópticos na preparação dos corpos-de-prova, os mesmos deverão atender à Classe III de perda por inserção.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item5"></a>5. REQUISITOS PARA CERTIFICAÇÃO</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1. Monitoramento da variação de atenuação óptica</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.1.1"></a>5.1.1. O monitoramento da variação de atenuação do sinal óptico pode ser realizado através do método de medição direta, utilizando fonte e medidor de potência ou através de um reflectômetro óptico no domínio do tempo (OTDR), conforme a IEC&nbsp;61300-3-3.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.1.2"></a>5.1.2. As medições devem ser efetuadas no comprimento de onda de 1550&nbsp;nm ± 20&nbsp;nm.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2. Exame visual</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.2.1"></a>5.2.1. Todas as partes e componentes da caixa terminal óptica aérea devem estar isentos de rebarbas, trincas, empenamentos, quebras e descolorações visíveis a olho nu, ou quaisquer outras imperfeições capazes de comprometer a aparência do produto. Os componentes metálicos devem estar isentos de corrosão e livres de depósito de qualquer outro material.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.2.2"></a>5.2.2. Os procedimentos de ensaios são os descritos na seguinte norma:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) IEC 61300-3-1 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 3-1: Examinations and measurements - Visual examination</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.3"></a>5.3. Exposição à névoa salina</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.3.1"></a>5.3.1. Quando submetida a 360&nbsp;h de exposição à névoa salina a caixa terminal óptica aérea, seu corpo e demais partes metálicas, incluindo acessórios de fixação, não devem apresentar:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Para aço zincado ou niquelado – Mais de 5% da superfície com corrosão vermelha;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) Para cobre e suas ligas – Corrosão verde.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) Para aço inox e ligas de alumínio – Corrosão por Pitting (furo).</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) Metal revestido com cromo e níquel – Corrosão vermelha.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.3.2"></a>5.3.2. Os procedimentos de ensaios são os descritos nas seguintes normas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) IEC 61300-2-26 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-26: Tests - Salt mist</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.4"></a>5.4. Verificação de hermeticidade</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.4.1"></a>5.4.1. Quando submetida ao ensaio para o segundo numeral característico&nbsp;7, segundo a ABNT NBR IEC 60529, a caixa terminal óptica aérea selada não deve evidenciar a entrada de água no seu interior após 30&nbsp;min quando submersa em água. A presença de água fluorescente tingida no interior da caixa terminal óptica aérea deve constituir falha.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.4.2"></a>5.4.2. A verificação da hermeticidade dos corpos-de-prova consiste em:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Imergir o corpo-de-prova em um tanque com água com altura suficiente para cobri-lo com, pelo menos, 0,15&nbsp;m de água, deixando as extremidades dos cabos para fora da água;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) A água a ser utilizada deve ser tingida com fluoresceína sódica, estando a concentração da mistura na faixa de 0,01&nbsp;% a 0,1&nbsp;%;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) Após 30&nbsp;min a caixa terminal óptica aérea selada deve ser retirada e cuidadosamente enxugada;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) Estando externamente seca, a caixa terminal óptica aérea selada deve ser aberta e examinada internamente com fonte de luz ultravioleta, e verificada a possível contaminação fluorescente, o que revelará a penetração de água.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.4.3"></a>5.4.3. Os procedimentos de ensaios são os descritos na seguinte norma:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) ABNT NBR IEC 60529 - Graus de proteção para invólucros de equipamentos elétricos (código IP).</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.5"></a>5.5. Flexão</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.5.1"></a>5.5.1. Quando aplicados 2&nbsp;ciclos de flexão em cada cabo, com ângulo variando de –30º a +30º em relação a sua posição normal, em cada um dos dois eixos mutuamente perpendiculares, a caixa terminal óptica aérea não deve apresentar sinais de deslocamento longitudinal em cada cabo.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.5.2"></a>5.5.2. O ensaio deve ser realizado nas seguintes condições:</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item5.5.2.1"></a>5.5.2.1. Cargas para aplicação nos cabos:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 120px;">a) Cabo principal: quando o cabo principal for um cabo&nbsp;<em>drop</em>, usar 100 N de carga. Nos demais casos, a carga a ser aplicada será de 440&nbsp;N; e</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 120px;">b) Cabos&nbsp;<em>drop</em>: 100&nbsp;N.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item5.5.2.2"></a>5.5.2.2. Duração do ciclo: 10&nbsp;min, com tempo de permanência de 5&nbsp;min nos ângulos de –30º e +30º.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.5.3"></a>5.5.3. Os procedimentos de ensaios são os descritos na seguinte norma:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) IEC 61300-2-37 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-37: Tests - Cable bending for fibre optic closures</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.6"></a>5.6. Torção</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.6.1"></a>5.6.1. Quando aplicados 2&nbsp;ciclos de torção em cada cabo, com ângulo variando de –90º a +90º em relação a sua posição normal, a caixa terminal óptica aérea não deve apresentar sinais de deslocamento longitudinal em cada cabo.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.6.2"></a>5.6.2. O ensaio deve ser realizado nas seguintes condições:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Cargas para aplicação nos cabos: Conforme tabela 2 (IEC 61300-2-5);</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) Distância de torção: 400&nbsp;mm do da entrada do cabo na caixa terminal;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) Duração do ciclo: 10&nbsp;min, com tempo de permanência de 5&nbsp;min nos ângulos de –90º e +90º.</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a name="tabela2:"></a>Tabela 2: Carga de tensionamento (IEC 61300-2-5)</p>
+<table class="tamanho-padrao" style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Diâmetro nominal do cabo&nbsp;</strong>[mm]</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Carga recomendada&nbsp;</strong>[N]</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">≤2,5</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">15</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">de 2,6 até 4,0</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">25</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">de 4,1 até 6,0</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">40</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">de 6,1 até 9,0</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">45</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">de 9,1 até 13,0</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">50</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">de 13,1 até 18,0</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">55</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2">
+<p class="Tabela_Texto_Centralizado">Nota:&nbsp;<em>A carga recomendada para os cabos de secção não circular dependerá da maior dimensão axial do cabo. As cargas devem ser aplicadas de acordo com os valores apresentados.</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.6.3"></a>5.6.3. Os procedimentos de ensaios são os descritos nas seguintes normas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) IEC 61300-2-5 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-5: Tests - Torsion</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.7"></a>5.7. Tração</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.7.1"></a>5.7.1. Quando submetida a uma carga axial aplicada em cada cabo, a caixa terminal óptica aérea não deve apresentar:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Sinais de deslocamento longitudinal em cada cabo;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) Sinais de penetração de água, quando submetida à verificação de hermeticidade, para caixa terminal aérea selada.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.7.2"></a>5.7.2. O ensaio deve ser realizado nas seguintes condições:</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item5.7.2.1"></a>5.7.2.1. Cargas a serem aplicadas nos cabos:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 120px;">a) Cabo principal: quando o cabo principal for um cabo&nbsp;<em>drop</em>, usar 100 N de carga. Nos demais casos, a carga a ser aplicada será de 440&nbsp;N; e</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 120px;">b) Cabo&nbsp;<em>drop</em>: 100&nbsp;N.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item5.7.2.2"></a>5.7.2.2. Tempo de aplicação da carga: 2&nbsp;h em cada cabo.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.7.3"></a>5.7.3. Os procedimentos de ensaios são os descritos nas seguintes normas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) IEC 61300-2-4 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-4: Tests - Fibre/cable retention</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.8"></a>5.8. Proteção contra água</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.8.1"></a>5.8.1. A caixa terminal óptica aérea não deve evidenciar a entrada de água no seu interior, quando submetida ao ensaio de chuva artificial com uma taxa de precipitação de 1,0&nbsp;mm/min a 2,0&nbsp;mm/min para cada componente (vertical e horizontal). É permitida a medição da componente vertical da chuva, desde que se assegure um ângulo de precipitação de aproximadamente de 45º. Manter a chuva artificial sobre a caixa terminal óptica aérea durante 15&nbsp;min. A evidência da penetração de água no interior da caixa terminal óptica aérea deve constituir falha.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><em><a name="item5.8.2"></a>5.8.2. Para a verificação da penetração de água no interior da caixa terminal algumas técnicas podem ser utilizadas, tais como:</em></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><em>a) Colocação de papel especial, em pontos estratégicos, para a detecção de água (ex. WATESMO paper).</em></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;"><em>b) Espalhar talco no interior da caixa terminal.</em></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.8.3"></a>5.8.3. Os procedimentos de ensaios são os descritos na seguinte norma:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) ABNT NBR IEC 6936 -<b>&nbsp;</b>Técnicas de ensaios elétricos de alta-tensão.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.9"></a>5.9. Variação da atenuação após acomodação da fibra no estojo</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.9.1"></a>5.9.1. Quando montadas as fibras ópticas no interior do estojo, utilizando sua capacidade máxima, com os procedimentos definidos pelo fabricante na documentação do produto, não deve ocorrer variação na atenuação da fibra maior do que 0,1&nbsp;dB, para cada fibra individualmente.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.9.2"></a>5.9.2. Este ensaio não é aplicável a caixas terminais ópticas pré-terminadas (com coto e sem estojos para execução de emendas).</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.9.3"></a>5.9.3. Os procedimentos de ensaios são os descritos nas seguintes normas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) IEC 61300-3-3 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 3-3: Examinations and measurements - Active monitoring of changes in attenuation and return loss.</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.10"></a>5.10. Variação de temperatura</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.10.1"></a>5.10.1. Quando submetida a 28&nbsp;ciclos de temperatura de 6&nbsp;h cada, com uma reentrada a cada 7&nbsp;ciclos (quando aplicável), a caixa terminal óptica aérea não deve apresentar:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Variação de atenuação &gt; 0,5&nbsp;dB durante o ensaio e &gt; 0,2&nbsp;dB após o ensaio, para cada fibra individualmente;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) Deformações maiores do que 5&nbsp;% nas suas dimensões características;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) Qualquer dano ou deformação no sistema de fechamento;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) Sinais de penetração de água, quando submetida à verificação de hermeticidade, para caixa terminal aérea selada.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.10.2"></a>5.10.2. O ensaio deve ser realizado nas seguintes condições:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Condicionamento:</p>
+<ul style="text-align: justify; margin-left: 65px;">
+<li>
+<p class="Texto_Justificado">Alta temperatura = +75°C;</p>
+</li>
+<li>
+<p class="Texto_Justificado">Baixa temperatura = -25°C.</p>
+</li>
+</ul>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) Recuperação: 2&nbsp;h a 25°C;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) A atenuação deve ser medida, pelo menos, a cada 10&nbsp;minutos.</p>
+<p class="Tabela_Texto_Centralizado"><img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT0AAAC+CAIAAADIqk8IAAAMI0lEQVR4nO2dMWsjSRaAO3BwDGhhmGBgExs8OJpEmR0MeIIdDM4GX24UGiYbEOw/uD8g0D9YdOllggkd6TYbhYtgk6Mjg35AX1A79Wq7pVa3urpVr+r7IlvufvXq6X0udbekzgoA0EZ26gQAoDV4C6APvAXQB94C6ANvAfSxw9vnxSz7O7PF8zDZ/OvXX1+22yN2NDlPpvM831yMRqPRxSbPi6JYr5avzs7MLCbTeVEU8+lkyBkB9MHe9TbPN+9/fm+6fxjyfPNhfH+0t0bL//7n38vV+nkxmy2e83zz7vXb5WpdFMV2+3J7eW50nU8neAuqaert0921u2qtV8vL8fhiNDKPmL+eX95++/abffz67qm643w6efPmjVkP7Z/cLa/vntar5cf7L2bcL/cfx+NLu4sb0OxlsN666+18OjEPlsBb0E4jb58XMyuJafr1avn29btNnhtPjAZPd9efHx/N4+bXm5ub0o7z6cQ8YuXcbl8+XV0tV2u73la9tUGqe5nHrbcu+/zEW9BOI2/NMaFlMp27/tyPP1hRPz8+WuWqx8mT6dxdA23Ys7NX9d66Tpb2smNVvS09+Mf699/XfxR4C/pput6WrKjxtrTelna03tofdq63V1efXrZbc4Dqelvdyzy+09vq8a0dGm9BNa2Pb83J2Bpv9x3fmh2tePZM79nZq/H40pxGuhiNzi9v//zfn7eX51mWjUYX4/Gl6211L/P4Tm+LXeeTC7wF/Xi+fuu+xB2Sfd7upMbbLOOCNiggHm/dFbWGmuu3ZlnuITsAz9Cmgn09f+pEAA5Aj/6Fe9771LkAHIAe/YvSJatTpwNQBw1aFBVp8RYCJ84Gdd8LaS8FHbz2g7GghZjb1FzvMZ8xaLI93oIWom3TPN88PHwtflz4cd8UuQ+8BS1E26alN1dYjUu4B7Q7f675U8PNukdoPlCv+UA4RPt8fH14MO++/HL/0bz5+YTe9qrTMAN5pNfnPRHiLOJ2+/L4+dF8BN+cl+J1cke8VIYK+4IiCnTVPnxVhiXXF1RQoKX2gbehQQUFWmoffstCkbtDBQW83Un24wSVl1Aeo6UM5RPwdid4GyCUT8DbneBtgFA+AW+r2IJ4vw5EqbtA7QS8rdJfQSh1F6idgLdVWG/DhNoJeFvCrUYf75ei2kdD4QS8LYG3wULhBLwt0Xc1qPbRUDgBb11KpehjvfUVNkGomoC3LngbMlRNwFsXvA0ZqibgraVah5689RU5NSiZgLcWvA0cSibgrQVvA4eSCXhr2FkEvA0KSibgrWFgb30FTwrqJeCtYfgiUPa2UC8Bb4v9CrHeBgX1EvC2OJG3vuKnA8US8LbAWyVQLAFvTzj9xCvfFool4G3N9Pteb30NkQhUSsBbvNUClRIS97Z+7ngbFFRKwNuj/9p8iAFGSQHKJODtqVMIIgcVUCYhZW8PTpz1Nigok4C3XTZoOMowA0UPNRLwtssGDUfBWy9QIyFZb4OadVDJBAs1EvC24zZNggw2VtxQICFNbxtOGW+DggIJeNt9s4NB8NYLFEjA2+6bHQwy5HARQ3WEBL1tPl+8DQqqI+Ctly3rg+CtF6iOgLdetqwPMvCIsUJphNS8bTVZvA0KSiPgbVAEnt5poTQC3vrauCbI8INGCXURkvK27UzxNiioi4C3HrffFwRvvUBdBLwNEC15DgxFEdLx9ohpnmS99TVufFAUAW/97rIzCN56gaIIeOt3l51BTjV0ZFARIRFvj5sj3gYFFRHwNkzUJTwAVETAW+97VYOw3nqBiggpeHv0BE/ora/RY4JyCHjbx46lIHjrBcoh4G2wKE27PyiHEL23XWZ32vXWVwLRQC0EvO1pXzcI3nqBWgh429O+bhC89QK1EOL2NoKpRTAFX1AIAW/7290GOfmaHwcUQsDb/na3QfDWCxRCiNjb7vMKwVtfaUQAVRDwttcIBd76I9oqrFfLV2dnZ2evlqu1/TXLstnied8ueBs+0UykI9FW4cv9x+Vq/byYXd89FUXxvJjVGGuI1VtfS6WXIIGs/NqJvARW1/l0kmWZXX53grcDBMFbL8RcgjzfPDx8rX/EBW8HCIK3Xoi2BHm+ef/z+02em1/Ny+YEvY1vRkWkk2pFtPN/urs2Hprj29JpKkv2g30/1/yp4WYllA5UQ38z6nvietGdvV8ieDqr+JqUryDhJKOa1OfvEsd/YhePM8LboEh9/i54Wx/KVz6BJKOa1OfvEqW3p04BeoHnVXBPXZw6Fw+4p2F8ReseJJxkVJP6/F3w9mC07kHCSUY1qc/fBW8PRuseJJxkVJP6/F2i9BaihKdWcFcD7U3vTiScJS6oZFST+vxd8LZJwI5BwklGNanP3wVvmwTsGCScZFST+vxdSl2ltzn0Zg4N4QkWovQ2qCUuqGRUk/r8XfC2YcwuQcJJRjWpz9+l2lUa+6M6hXBUCSoZ1aQ+fxe8bR726CDhJKOa1OfvEqW3ECU8x0KU3ga1xAWVjGpSn7/Lzq7S1SI78w9HlaCSUU3q83fB21aRjwsSTjKqSX3+LlF6C1HC0yzsWw20yLAv+XCWuKCSUU3q83fB27bBjwgSTjKqSX3+LnjbNvgRQcJJRjWpz9+lpqvCb5SazMNRJahkVJP6/F28eFt/K5OG7Lu7Qg14mxSpz9+lu7fGN3Nnky6UbgLaBLxNitTn7xLOemtocs9eC94mRerzd6nvqoa94svbVnHq0w5HlaCSUU3q83cJx9vSTUAPQh+nBs+3EI63pZuAHoT1NjVSn7/Lwa4Ks10O5hyOKkElo5pU5p/nm4vRKMuymjM9eHv0KM2DhJOMalKZ/3w6mS2e83zzYXz/st3u3CZKbyFKUnnKvz48mNM89ocqTVaDJpL4EsnLWEMmM1icoJI5CVrzbgveDpDMYHE8JuPrpfvA6Mv4OPa9Ts4AfnDC/myLply7sPO81Kn7BILjhC3aCjWJDkDDZ+7gNr6efi8DDZbMkHE8JqPOWIOydHvFl7eDEU4mStForEFl0j2Bt6AFnnih+X/fEIQJIYdgeV7MSgeuzT9Z1XaUyXS+Xi0/3n+xj8+nk55GtPDcC7689XUIN8AocdP24xlteV7MJtN5URQlb4sf1y96GrfAW5f4vDULQqvvzaiy3b7cjz90737zpQIdF6JWQUre2k9rWNkux2NzlWEynZu/nl/efvv2m33cfK5j38c8XG/tLueXty/bLd4OR6uzFDVbDuBtwyG+f/9etPz8fZXnxWw0uujubcc0DOabQBpu7HrrfnmIkWq9Wr59/W6T5+Yaocnt6e768+Ojedz8enNzY3d8urt2p+B6a3bZbl8+XV0tV2u8HQ5f3g5A89E7Wrfdvjx+fvznL79099Yc9XVZ/I0VP/30j4ZBXG/N6Bb3oNR9QWG8tS96zQsWa6AVtfSr+zrZ/GfB2+GIb701VI++mmMWyZo3h7aly+eT7WrWMEhpvXWVK5yyVL09Yr3F25PR9mrevo379rZ5fNNDXVSxy5SvL7vr+L0CrYLsO741S2iNt0cc3+LtyYjP2yO+z3UnXtZbL8n4mlH9EA1fnlTXcAveDkdQ3g4QH3bSylt7dtqF67eD4svbvsFboAOEtt4WexTq9XUy0kKBty54C1qgCQS8BS3QBMIR3hbDioS0YKAPBF/e9rfe4i0Y6AMBb0EL9IFwnLdFRaeevEVasNAKgi9vewJvwUIrCEGtt/2FhQigFYSgvOV1MtRAKwhHe1v8Xao+vEVacKEbBLwFLdANgi9v+wBvwYVuELp4WzhqeV9vkRZK0BAC3oIWaAgBb0ELNITQ0duiH8GQFqrQE4Ivb/2ut3gLVegJAW9BC9H2ROmL/5rcnwJvQQvR9oT5Glt7d4kmN7no7q2vIN5DQWRE3hZW1yY3ucBb0ELMbVH9Vvv677kPytvsB91DQXxE0halLs+yrHSPiX33p3B33PlzzZ/qN/Myo+5xIEoi6YysQumeLvvuT9GTt74YvJCgAzpDQBXQAm0q4C1ogTYV8Ba0QJsKeAtaoE0FvAUt0KYC3oIWaFMBb0ELtKmAt6AF2lTAW9ACbSrgLWiBNhXwFrRAmwp4C1qgTQW8BS3QpgLeghZoUwFvQQu0qYC3oAXaVMBb0AJtKuAtaIE2FfAWtPB/f4o75Ei4KLAAAAAASUVORK5CYII=" alt=""></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Figura 1: Ciclo de temperatura</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.10.3"></a>5.10.3. Após o 7º, 14º e o 21º ciclos, a caixa terminal deve permanecer durante 2&nbsp;h a 25°C e em seguida deve ser realizada a operação de re-entrada.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.10.4"></a>5.10.4. Os procedimentos de ensaios são os descritos nas seguintes normas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) IEC 61300-2-22 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-22: Tests - Change of temperature.</em></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) IEC 61300-3-3 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 3-3: Examinations and measurements - Active monitoring of changes in attenuation and return loss.</em></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) ABNT NBR IEC 60529 - Graus de proteção para invólucros de equipamentos elétricos (código IP).</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.11"></a>5.11. Vibração</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.11.1"></a>5.11.1. Quando submetida ao ensaio de vibração, a caixa terminal óptica aérea não deve apresentar:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Variação de atenuação maior que 0,1&nbsp;dB, para cada fibra individualmente;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) Desacomodação dos componentes internos que possa ter ocorrido, proveniente de qualquer deficiência de fixação;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) Sinais de penetração de água, quando submetida à verificação de hermeticidade, para caixa terminal aérea selada.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.11.2"></a>5.11.2. O ensaio deve ser realizado nas seguintes condições:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) Frequência: 5 Hz a 500 Hz;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) Velocidade: 1 oct/min;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) Número de ciclos: 10 ciclos por eixo;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) Amplitude: 3,5 mm abaixo de 9 Hz;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">e) Aceleração: 9,8 m/s<sup>2</sup>&nbsp;acima de 9 Hz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.11.3"></a>5.11.3. Os procedimentos de ensaios são os descritos nas seguintes normas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) IEC 61300-2-1 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 2-1: Tests - Vibration (sinusoidal).</em></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) IEC 61300-3-3 -&nbsp;<em>Fibre optic interconnecting devices and passive components - Basic test and measurement procedures - Part 3-3: Examinations and measurements - Active monitoring of changes in attenuation and return loss.</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.12"></a>5.12. Intemperismo acelerado</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.12.1"></a>5.12.1. Aplicado ao material polimérico da caixa terminal óptica: Quando submetidos a 10&nbsp;períodos contínuos de 8&nbsp;dias, com intervalo de 1&nbsp;dia entre períodos, em câmara de intemperismo, os corpos-de-prova não devem apresentar variação superior a 20% nas propriedades de resistência à tração e alongamento à ruptura.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.12.2"></a>5.12.2. Aplicado à pintura do material metálico da caixa terminal óptica: A pintura dos corpos-de-prova não deve apresentar empolamentos visíveis a olho nu, nem aderência menor do que GR&nbsp;2, antes e após serem submetidos a 10&nbsp;períodos contínuos de 8&nbsp;dias, em câmara de intemperismo acelerado, com intervalo de 1&nbsp;dia entre períodos. Este ensaio deve ser realizado apenas quando a caixa for composta, integralmente ou em partes, por material metálico pintado.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.12.3"></a>5.12.3. Os procedimentos de ensaios são os descritos nas seguintes normas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) ASTM G 155 – Ciclo 1 -&nbsp;<em>Practice for Operating Xenon Arc Light Apparatus for Exposure of Non-Metallic Materials.</em></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) ASTM D 638 -&nbsp;<em>Standard Test Method for Tensile Properties of Plastics.</em></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) NBR 11003 - Tintas — Determinação da aderência.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1583"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Estabelecer" class="link-categoria">Estabelecer</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20Técnicos" class="link-categoria">Requisitos Técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação" class="link-categoria">Avaliação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Conformidade" class="link-categoria">Conformidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Caixa%20Terminal%20Óptica%20Aérea" class="link-categoria">Caixa Terminal Óptica Aérea</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Selada" class="link-categoria">Selada</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ventilada" class="link-categoria">Ventilada</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

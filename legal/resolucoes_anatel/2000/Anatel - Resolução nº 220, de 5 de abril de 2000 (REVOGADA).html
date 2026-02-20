@@ -1,0 +1,2874 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="pt-br">
+ <!--<![endif]-->
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+  </script>
+  <script type="0b3adbd19e0e7b2a9947187e-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+  </script>
+  <!-- Compilar normas -->
+  <script type="0b3adbd19e0e7b2a9947187e-text/javascript">
+   // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+  </script>
+  <title>
+   Anatel - Resolução nº 220, de 5 de abril de 2000 (REVOGADA)
+  </title>
+  <title>
+   Agência Nacional de Telecomunicações
+  </title>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Informações sobre a Agência Nacional de Telecomunicações" name="Description">
+   <meta content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência" name="keywords"/>
+   <meta content="ANATEL" name="author"/>
+   <meta content="index, follow" name="robots"/>
+   <!-- Telecomunicações, ANATEL, Regulação -->
+   <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+   <link href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" rel="stylesheet" type="text/css"/>
+   <link href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" rel="stylesheet" type="text/css"/>
+   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+   <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+   <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+   <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+   <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2000/161-resolucao-220"/>
+   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+   <meta content="Aprovação, Regulamento, Direito de exploração de satélite, Sinalização de telecomunicações, Licitação, Exploradora de satélite, Comunicação por satélite, NormaSatelite, RecursosPrestacao, ResolucaoRevogada" name="keywords"/>
+   <meta content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." name="rights"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="Aprova o Regulamento sobre o Direito de Exploração de Satélite para Transporte de Sinais de Telecomunicações. (Revogada pela Resolução nº 748/2021)" name="description"/>
+   <title>
+    Anatel - Resolução nº 220, de 5 de abril de 2000 (REVOGADA)
+   </title>
+   <link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=2835645" rel="stylesheet" type="text/css"/>
+    <link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1538385618" rel="stylesheet" type="text/css"/>
+    <link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     #scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+    </style>
+    <script class="joomla-script-options new" type="application/json">
+     {"csrf.token":"08da4b8343bde750e3d919aa7dead979","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}
+    </script>
+    <script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+    </script>
+    <script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+    </script>
+    <script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+    </script>
+    <script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+    </script>
+    <script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1678456850" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+    </script>
+    <script type="0b3adbd19e0e7b2a9947187e-text/javascript">
+     jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css"/>
+    <!--CHAMADA CUSTOMIZACAO -->
+    <script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+    </script>
+    <link href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?16022026164358" rel="stylesheet" type="text/css">
+     <style type="text/css">
+      @font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}
+     </style>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body id="main-navigation">
+  <a accesskey="1" href="#conteudo">
+   <a accesskey="2" href="#main-navigation">
+    <a accesskey="3" href="#search">
+     <a accesskey="4" href="#portal-footer">
+      <a class="hide" href="#accessibility" id="topo">
+       Ir direto para menu de acessibilidade.
+      </a>
+      <noscript>
+       <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+       </div>
+      </noscript>
+      <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+      <div class="layout">
+       <header class="super-destaque">
+        <div class="noticia-destaque">
+         <div class="container tmpl-custom">
+          <!-- fim .row-fluid -->
+          <div class="row-fluid">
+           <div class="span4" id="logo">
+            <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+             <span class="portal-title-1">
+             </span>
+             <span class="portal-description">
+              Ministério das Comunicações
+             </span>
+            </a>
+           </div>
+           <!-- fim .span4 -->
+           <div class="span8" id="menulateral">
+            <nav class="row" id="">
+             <p class="hidden">
+              Opções de acessibilidade
+             </p>
+             <ul class="pull-right" id="portal-siteactions">
+              <li class="item-478 siteaction-outros">
+               <a accesskey="0" class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo">
+                Órgãos do Governo
+               </a>
+              </li>
+              <li class="item-479 siteaction-outros">
+               <a accesskey="1" class="siteaction-outros" href="http://www.acessoainformacao.gov.br">
+                Acesso à Informação
+               </a>
+              </li>
+              <li class="item-480 siteaction-outros">
+               <a accesskey="2" class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao">
+                Legislação
+               </a>
+              </li>
+              <li class="item-481 siteaction-outros">
+               <a accesskey="3" class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-260 toggle-contraste">
+               <a accesskey="4" class="toggle-contraste" href="#">
+                ⠀
+               </a>
+              </li>
+              <li class="item-263 siteaction-vlibras">
+               <a accesskey="5" class="siteaction-vlibras" href="https://acesso.gov.br/">
+                ⠀
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <nav class="row" id="">
+             <p class="hidden">
+              Seleção de Idioma
+             </p>
+             <div class="mod-languages">
+              <ul class="lang-inline">
+               <li class="lang-active" dir="ltr">
+                <a href="/legislacao/resolucoes/2000/161-resolucao-220">
+                 PT
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/en/">
+                 EN
+                </a>
+               </li>
+               <li dir="ltr">
+                <a href="/legislacao/es/">
+                 ES
+                </a>
+               </li>
+              </ul>
+             </div>
+            </nav>
+           </div>
+           <!-- fim .span8 -->
+          </div>
+          <!-- fim .row-fluid -->
+         </div>
+         <!-- fim div.container -->
+         <div class="sobre" id="search">
+          <div class="container tmpl-custom">
+           <div class="menu-servicos">
+            <div class="header-icons">
+             <i class="fas fa-bars">
+             </i>
+            </div>
+            <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+             <h1 class="portal-title corto">
+              Agência Nacional de Telecomunicações
+             </h1>
+            </a>
+            <nav>
+             <p class="hide">
+              Pesquisar
+             </p>
+             <nav id="portal-searchbox">
+              <form action="/legislacao/resolucoes/2000" class="pull-right" method="post">
+               <fieldset>
+                <legend class="hide">
+                 Busca
+                </legend>
+                <h2 class="hidden">
+                 Buscar no portal
+                </h2>
+                <div class="input-append">
+                 <label class="hide" for="portal-searchbox-field">
+                  Busca:
+                 </label>
+                 <input class="searchField" id="portal-searchbox-field" name="searchword" placeholder="O que você procura?" title="O que você procura?" type="text"/>
+                 <button class="btn searchButton" type="submit">
+                  <span class="hide">
+                   Buscar
+                  </span>
+                  <i class="fas fa-search">
+                  </i>
+                 </button>
+                </div>
+                <input name="task" type="hidden" value="search">
+                 <input name="option" type="hidden" value="com_search"/>
+                 <input name="Itemid" type="hidden" value="254"/>
+                </input>
+               </fieldset>
+              </form>
+             </nav>
+             <div class="header-search">
+              <a href="/legislacao/component/pesquisa/view-results/module-188">
+               <i class="fas fa-search">
+               </i>
+              </a>
+             </div>
+            </nav>
+           </div>
+           <!-- .container -->
+          </div>
+         </div>
+         <!-- fim .sobre -->
+         <div id="conteudo">
+         </div>
+        </div>
+       </header>
+       <main>
+        <div class="container tmpl-custom">
+         <div class="row-fluid">
+          <section>
+           <div class="rastro-navegacao row-flutuante">
+            <a href="https://www.gov.br/anatel/pt-br" title="Voltar para a Página Inicial">
+             <i class="fas fa-home">
+             </i>
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/">
+             Legislação
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes">
+             Resoluções
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <a class="pathway" href="/legislacao/resolucoes/2000">
+             2000
+            </a>
+            <span class="separator">
+             &gt;
+            </span>
+            <span>
+             Resolução nº 220, de 5 de abril de 2000 (REVOGADA)
+            </span>
+           </div>
+          </section>
+         </div>
+         <div class="row-fluid">
+          <!-- Menus Principal -->
+          <div class="navigation-wrapper">
+           <div class="container tmpl-custom tmpl-before">
+            <div id="navigation">
+             <section id="navigation-section">
+              <!-- <span class="hide">Início do menu principal</span> -->
+              <nav class="super-menus">
+               <!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="Legislação-da-Anatel">
+                <span>
+                 Legislação da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-105 active deeper parent">
+                 <a href="/legislacao/resolucoes">
+                  Resoluções
+                 </a>
+                 <ul>
+                  <li class="item-516">
+                   <a href="/legislacao/resolucoes/2025">
+                    2025
+                   </a>
+                  </li>
+                  <li class="item-501">
+                   <a href="/legislacao/resolucoes/2024">
+                    2024
+                   </a>
+                  </li>
+                  <li class="item-493">
+                   <a href="/legislacao/resolucoes/2023">
+                    2023
+                   </a>
+                  </li>
+                  <li class="item-488">
+                   <a href="/legislacao/resolucoes/2022">
+                    2022
+                   </a>
+                  </li>
+                  <li class="item-438">
+                   <a href="/legislacao/resolucoes/2021">
+                    2021
+                   </a>
+                  </li>
+                  <li class="item-430">
+                   <a href="/legislacao/resolucoes/2020">
+                    2020
+                   </a>
+                  </li>
+                  <li class="item-367">
+                   <a href="/legislacao/resolucoes/2019">
+                    2019
+                   </a>
+                  </li>
+                  <li class="item-312">
+                   <a href="/legislacao/resolucoes/2018">
+                    2018
+                   </a>
+                  </li>
+                  <li class="item-299">
+                   <a href="/legislacao/resolucoes/2017">
+                    2017
+                   </a>
+                  </li>
+                  <li class="item-294">
+                   <a href="/legislacao/resolucoes/2016">
+                    2016
+                   </a>
+                  </li>
+                  <li class="item-255">
+                   <a href="/legislacao/resolucoes/2015">
+                    2015
+                   </a>
+                  </li>
+                  <li class="item-226">
+                   <a href="/legislacao/resolucoes/2014">
+                    2014
+                   </a>
+                  </li>
+                  <li class="item-164">
+                   <a href="/legislacao/resolucoes/2013">
+                    2013
+                   </a>
+                  </li>
+                  <li class="item-165">
+                   <a href="/legislacao/resolucoes/2012">
+                    2012
+                   </a>
+                  </li>
+                  <li class="item-166">
+                   <a href="/legislacao/resolucoes/2011">
+                    2011
+                   </a>
+                  </li>
+                  <li class="item-167">
+                   <a href="/legislacao/resolucoes/2010">
+                    2010
+                   </a>
+                  </li>
+                  <li class="item-168">
+                   <a href="/legislacao/resolucoes/2009">
+                    2009
+                   </a>
+                  </li>
+                  <li class="item-169">
+                   <a href="/legislacao/resolucoes/2008">
+                    2008
+                   </a>
+                  </li>
+                  <li class="item-170">
+                   <a href="/legislacao/resolucoes/2007">
+                    2007
+                   </a>
+                  </li>
+                  <li class="item-171">
+                   <a href="/legislacao/resolucoes/2006">
+                    2006
+                   </a>
+                  </li>
+                  <li class="item-172">
+                   <a href="/legislacao/resolucoes/2005">
+                    2005
+                   </a>
+                  </li>
+                  <li class="item-173">
+                   <a href="/legislacao/resolucoes/2004">
+                    2004
+                   </a>
+                  </li>
+                  <li class="item-174">
+                   <a href="/legislacao/resolucoes/2003">
+                    2003
+                   </a>
+                  </li>
+                  <li class="item-175">
+                   <a href="/legislacao/resolucoes/2002">
+                    2002
+                   </a>
+                  </li>
+                  <li class="item-176">
+                   <a href="/legislacao/resolucoes/2001">
+                    2001
+                   </a>
+                  </li>
+                  <li class="item-177 current active">
+                   <a href="/legislacao/resolucoes/2000">
+                    2000
+                   </a>
+                  </li>
+                  <li class="item-178">
+                   <a href="/legislacao/resolucoes/1999">
+                    1999
+                   </a>
+                  </li>
+                  <li class="item-179">
+                   <a href="/legislacao/resolucoes/1998">
+                    1998
+                   </a>
+                  </li>
+                  <li class="item-180">
+                   <a href="/legislacao/resolucoes/1997">
+                    1997
+                   </a>
+                  </li>
+                  <li class="item-181">
+                   <a href="/legislacao/resolucoes/resolucoes-conjuntas">
+                    Resoluções Conjuntas
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="item-118">
+                 <a href="/legislacao/sumulas">
+                  Súmulas
+                 </a>
+                </li>
+                <li class="item-182">
+                 <a href="/legislacao/portarias-de-delegacao">
+                  Portarias de Delegação
+                 </a>
+                </li>
+                <li class="item-319 parent">
+                 <a href="/legislacao/portarias-normativas">
+                  Portarias Normativas
+                 </a>
+                </li>
+                <li class="item-435">
+                 <a href="/legislacao/resolucoes-internas">
+                  Resoluções Internas
+                 </a>
+                </li>
+                <li class="item-264">
+                 <a href="/legislacao/metodologias-de-calculo-de-multa">
+                  Metodologias de Cálculo de Multa
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Atos da Anatel
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-342 parent">
+                 <a href="/legislacao/atos-de-certificacao-de-produtos">
+                  Atos de Certificação de Produtos
+                 </a>
+                </li>
+                <li class="item-369 parent">
+                 <a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">
+                  Atos de Requisitos Técnicos de Gestão do Espectro
+                 </a>
+                </li>
+                <li class="item-483">
+                 <a href="/legislacao/atos-de-numeracao">
+                  Atos de Numeração
+                 </a>
+                </li>
+                <li class="item-543">
+                 <a href="/legislacao/atos-complementares-de-regulacao">
+                  Atos Complementares de Regulação
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Demais Normas
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-106">
+                 <a href="/legislacao/leis">
+                  Leis
+                 </a>
+                </li>
+                <li class="item-107">
+                 <a href="/legislacao/decretos">
+                  Decretos
+                 </a>
+                </li>
+                <li class="item-108">
+                 <a href="/legislacao/normas-do-mc">
+                  Normas do MC
+                 </a>
+                </li>
+                <li class="item-293">
+                 <a href="/legislacao/instruções-do-dentel">
+                  Instruções do Dentel
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Fiscalização
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-203">
+                 <a href="/legislacao/procedimentos-de-fiscalizacao">
+                  Procedimentos de Fiscalização
+                 </a>
+                </li>
+                <li class="item-202">
+                 <a href="/legislacao/instrucoes-de-fiscalizacao">
+                  Instruções de Fiscalização
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <nav class="super-menus">
+               <!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+               <h2 class="">
+                <span>
+                 Glossário
+                </span>
+                <i class="icon-chevron-up pull-right">
+                </i>
+               </h2>
+               <ul>
+                <li class="item-256">
+                 <a href="/legislacao/glossario-anatel">
+                  Termos de Telecomunicações
+                 </a>
+                </li>
+               </ul>
+              </nav>
+              <span class="hide">
+               Fim do menu principal
+              </span>
+             </section>
+            </div>
+           </div>
+          </div>
+          <!-- fim Menus Principal -->
+          <div class="span9 internas" id="content">
+           <section id="content-section">
+            <div class="banner-destaque">
+            </div>
+            <!-- <span class="hide">Início do conteúdo da página</span> -->
+            <!-- Chamada da posição paginas de Serviços -->
+            <!--Fim da chamada de paginas de Serviços -->
+            <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (menutraducao.php) -->
+            <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+            <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Local: template - html - mod_menu (default.php) -->
+            <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid module">
+             <!-- Escreve conteúdo das páginas internas -->
+             ﻿﻿﻿
+             <div class="content-header-options-1 row-fluid redes-sociais">
+              <div class="btns-social-like span5 hide">
+               <style>
+                @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+               </style>
+               <body>
+                <!-- Contêiner dos botões fixos -->
+                <div class="fixed-buttons">
+                 <div class="facebook" title="Compartilhar no Facebook">
+                  <span class="facebook-share" data-js="facebook-share">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </span>
+                 </div>
+                 <div class="twitter" title="Compartilhar no Twitter">
+                  <span class="twitter-share-button" data-js="twitter-share" data-lang="pt">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </span>
+                 </div>
+                 <p class="botao-imprime" title="Imprimir">
+                  <a data-cf-modified-0b3adbd19e0e7b2a9947187e-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();">
+                   <i class="fas fa-print">
+                   </i>
+                  </a>
+                 </p>
+                 <p class="botao-compila" title="Ativar Texto Compilado">
+                  <a data-cf-modified-0b3adbd19e0e7b2a9947187e-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;">
+                   <i class="fas fa-file-alt">
+                   </i>
+                  </a>
+                 </p>
+                </div>
+                <script type="0b3adbd19e0e7b2a9947187e-text/javascript">
+                 // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+                </script>
+                <script data-cf-settings="0b3adbd19e0e7b2a9947187e-|49" defer="" src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">
+                </script>
+               </body>
+              </div>
+             </div>
+             <div class="item-page">
+              <h1 class="documentFirstHeading">
+               Resolução nº 220, de 5 de abril de 2000 (REVOGADA)
+              </h1>
+              <ul class="actions">
+              </ul>
+              <div class="content-header-options-1 row-fluid">
+               <div class="documentByLine span7">
+                <span class="documentPublished">
+                 Publicado: Quinta, 06 Abril 2000 00:00
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentModified">
+                 Última atualização: Quinta, 20 Fevereiro 2025 11:51
+                </span>
+                <span class="separator">
+                 |
+                </span>
+                <span class="documentHits">
+                 Acessos: 35751
+                </span>
+               </div>
+              </div>
+              <!-- fim .content-header-options-1 -->
+              <table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 98%;">
+               <tbody>
+                <tr>
+                 <td valign="center" width="50%">
+                  <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1595-resolucao-748#art16">
+                   Revogada pela Resolução nº 748/2021
+                  </a>
+                 </td>
+                 <td valign="center" width="50%">
+                  <p style="text-align: justify;">
+                   Aprova o Regulamento sobre o Direito de Exploração de Satélite para Transporte de Sinais de Telecomunicações.
+                  </p>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <p style="text-align: justify;">
+              </p>
+              <p style="text-align: justify;">
+               <span style="color: #ff0000;">
+                <strong>
+                 Observação
+                </strong>
+               </span>
+               : Este texto não substitui o publicado no DOU de
+               <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=37&amp;data=06/04/2000" title="Acesse o DOU">
+                6/4/2000
+               </a>
+               .
+              </p>
+              <p style="text-align: justify;">
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong>
+                 O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+                </strong>
+                , no uso das atribuições que lhe foram conferidas pelo
+                <a href="/legislacao/leis/2-lei-9472#art22" rel="nofollow" title="Acesse o Artigo">
+                 art. 22
+                </a>
+                da Lei nº 9.472, de 16 de julho de 1997, e pelo
+                <a href="/legislacao/decretos/3-decreto-2338#art35" rel="nofollow" title="Acesse o Artigo">
+                 art. 35
+                </a>
+                do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO os comentários recebidos em decorrência da Consulta Pública nº 151, de 2 de julho de 1999, publicada no
+                <a href="http://www.in.gov.br/imprensa/pesquisa/pesquisa_resultado.jsp" rel="nofollow" title="Acesse o DOU">
+                 Diário Oficial da União de 5 de julho de 1999
+                </a>
+                ;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                CONSIDERANDO deliberação tomada em sua Reunião nº 110, realizada em 29 de março de 2000;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                <strong style="letter-spacing: 0.2em;">
+                 RESOLVE:
+                </strong>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º Aprovar o Regulamento sobre o Direito de Exploração de Satélite para Transporte de Sinais de Telecomunicações, na forma do Anexo a esta Resolução.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 2º Esta Resolução entra em vigor na data de sua publicação.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                RENATO NAVARRO GUERREIRO
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Presidente do Conselho
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                ANEXO À RESOLUÇÃO Nº 220, DE 5 DE ABRIL DE 2000
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through; font-size: medium;">
+                <strong>
+                 REGULAMENTO SOBRE O DIREITO DE EXPLORAÇÃO DE SATÉLITE PARA TRANSPORTE DE SINAIS DE TELECOMUNICAÇÕES
+                </strong>
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="cap1">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo I
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Das Disposições Gerais
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art1Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 1º Este Regulamento dispõe sobre as condições para conferir Direito de Exploração de Satélite, brasileiro ou estrangeiro, bem como seu uso para transporte de sinais de telecomunicações, em conformidade com a
+                <a href="/legislacao/leis/2-lei-9472" rel="noopener noreferrer" target="_blank" title="Acesse a Lei">
+                 Lei nº 9.472, de 16 de julho de 1997
+                </a>
+                , regulamentos, normas, observados, ainda, tratados, acordos e atos internacionais dos quais o Brasil faça parte.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art2Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 2º Direito de Exploração de Satélite Brasileiro para transporte de sinais de telecomunicações é o que assegura a ocupação da órbita e o uso das radiofreqüências destinadas ao controle e monitoração do satélite e à telecomunicação via satélite.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art3Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 3º Direito de Exploração de Satélite Estrangeiro para transporte de sinais de telecomunicações é o que permite o provimento de capacidade de satélite estrangeiro no Brasil e o uso das radiofreqüências destinadas à telecomunicação via satélite e, se for o caso, ao controle e monitoração do satélite.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art4Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 4º Visando a propiciar competição efetiva e a impedir a concentração econômica no mercado, a Agência Nacional de Telecomunicações poderá estabelecer restrições, limites ou condições a empresas ou grupos empresariais quanto à obtenção e transferência do direito de exploração de satélite.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art5Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 5º O direito de exploração de satélite brasileiro será conferido a título oneroso, podendo o pagamento, conforme dispuser a Agência, fazer-se na forma de quantia certa, em uma ou várias parcelas, bem como de parcelas anuais ou, complementarmente, de cessão de capacidade.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art6Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 6º As entidades interessadas em explorar satélite brasileiro deverão estar constituídas segundo as leis brasileiras, com sede e administração no País, e observar o disposto na
+                <a href="/legislacao/leis/2-lei-9472" rel="nofollow" title="Acesse a Lei">
+                 Lei nº 9.472/97
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art7Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 7º Cabe à Agência dispor sobre as condições de acesso por entidades brasileiras a segmento espacial estabelecido por meio de acordos intergovernamentais dos quais o Brasil faça parte.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art8Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 8º À Agência caberá o papel de administração brasileira, de acordo com o disposto no inciso II do
+                <a href="/legislacao/leis/2-lei-9472#art19" rel="nofollow" title="Acesse a Lei">
+                 art. 19 da Lei nº 9.472/97
+                </a>
+                .
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a name="cap2">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo II
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Das Definições
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art9Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 9º Para os fins deste Regulamento, aplicam-se as seguintes definições:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - Administração: qualquer departamento ou órgão governamental responsável pelo cumprimento das obrigações assumidas na Constituição, na Convenção e nos Regulamentos Administrativos da União Internacional de Telecomunicações – UIT;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - Coordenação Nacional: processo de interação, coordenado pela Agência, envolvendo operadores de sistemas terrestres e espaciais, estabelecidos no País, que possuam estações capazes de produzir ou sofrer interferências radioelétricas, com o objetivo de compatibilizar a operação entre sistemas;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - Coordenação Internacional: processo de interação entre a administração brasileira e administrações estrangeiras, de acordo com os procedimentos do Regulamento de Radiocomunicações da UIT, com o objetivo de avaliar e resolver interferências e impactos decorrentes de uma nova rede de satélites em relação a redes existentes e planejadas;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - Estação de Acesso: estação terrena que possibilita o tráfego de telecomunicações entre o segmento espacial e redes de telecomunicações, de forma integrada, por meio de enlaces de alimentação;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - Estação de Controle de Satélite: estação terrena que compreende um conjunto de instalações, equipamentos e demais meios de telecomunicações destinados ao rastreio, telemetria, controle e monitoração de satélites de telecomunicações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - Estação Espacial: estação localizada em um objeto que está situado, que se pretende situar ou que tenha estado situado além da maior parte da atmosfera terrestre;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VII - Estação Terrena: estação localizada sobre a superfície da Terra ou dentro da atmosfera terrestre que se comunica com uma ou mais estações espaciais ou, ainda, com uma ou mais estações do mesmo tipo por meio de um ou mais satélites refletores ou outros objetos no espaço;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VIII - Exploradora de Satélite: entidade à qual foi conferido o direito de exploração de satélite;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IX - Posição Orbital: posição na órbita de satélites geoestacionários caracterizada por uma longitude;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                X - Prestadora: é a entidade que detém concessão, permissão ou autorização para exploração de serviço de telecomunicações que contrata o provimento de capacidade espacial;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XI - Provimento de Capacidade Espacial: é o oferecimento de recursos de órbita e espectro radioelétrico à Prestadora de serviços de telecomunicações;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XII - Publicação Antecipada: procedimento, previsto no Regulamento de Radiocomunicações da UIT, que tem por objetivo informar a todas as administrações sobre qualquer sistema de satélite planejado e suas características principais;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XIII - Registro: notificação das características da rede de satélites junto ao Registro Mestre Internacional de Freqüências da UIT, visando a proteção internacional;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XIV - Satélite Brasileiro: é o que utiliza recursos de órbita e espectro radioelétrico notificados pelo País, ou a ele distribuídos ou consignados, cuja estação de controle e monitoração esteja instalada no território brasileiro;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XV - Satélite Estrangeiro: é aquele que utiliza recursos de órbita e espectro radioelétrico coordenados ou notificados por outros países;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XVI - Satélite Geoestacionário: satélite geossíncrono de órbita circular localizado no plano do equador terrestre que permanece aproximadamente fixo em relação à Terra;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XVII - Satélite Não-Geoestacionário: satélite cujas características orbitais não o enquadrem como satélite geoestacionário;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                XVIII - Segmento Espacial: são os satélites e as estações de rastreamento, telemetria, comando, controle, monitoração e equipamentos requeridos para suportar a operação desses satélites;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                <span style="text-align: justify;">
+                 <a id="cap3">
+                 </a>
+                 Capítulo III
+                 <br/>
+                 Da Preferência de Uso de Satélite Brasileiro
+                </span>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art10Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                <span style="text-align: justify;">
+                 Art. 10. Para a execução de serviços de telecomunicações via satélite, deverá ser dada preferência ao emprego de satélite brasileiro, quando este propiciar condições equivalentes às de terceiros.
+                </span>
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único: Haverá equivalência quando, concomitantemente, forem observadas as seguintes condições:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - os prazos forem compatíveis com as necessidades da prestadora;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - as condições de preço forem equivalentes ou mais favoráveis;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - os parâmetros técnicos atenderem os requisitos do projeto da prestadora.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="cap4">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo IV
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Do Direito de Exploração de Satélite Estrangeiro
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art11Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 11. A Agência poderá realizar consulta pública para determinar se é de interesse público conferir o direito de exploração de satélite estrangeiro requerido.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art12Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 12. Para obtenção de direito de exploração de satélite estrangeiro, a proprietária do segmento espacial ou a pessoa que detém o direito de operá-lo, total ou parcialmente, deverá atender os seguintes requisitos:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - formalização junto à Agência da indicação de seu representante legal no Brasil e do seu comprometimento de manter essa informação atualizada e de prover a capacidade do segmento espacial somente através do representante indicado;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - obtenção de reconhecimento, pela Agência, da realização de prévia coordenação técnica com a administração brasileira dos parâmetros orbitais e radiofreqüências associadas, conforme procedimentos do Regulamento de Radiocomunicações da UIT;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - apresentação das informações técnicas simplificadas relativas ao sistema de satélite, indicando seus possíveis usos, parâmetros orbitais, faixas de freqüências a serem utilizadas e área geográfica de cobertura, entre outras julgadas relevantes;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                IV - apresentação de documento, expedido pelo órgão competente, que demonstre as condições de uso do segmento espacial que foram autorizadas no país de origem;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                V - observância das condições legais, regulamentares e normativas para exploração de satélite, no que couber e, em especial, do disposto no
+                <a href="#cap8" rel="nofollow" title="Acesse o Capítulo">
+                 Capítulo VIII
+                </a>
+                ;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                VI - pagamento, por seu representante legal no País, pelo direito de exploração de satélite estrangeiro e uso das radiofreqüências associadas, de valor fixado pela Agência, considerando o disposto no
+                <a href="#art14" title="Acesse o artigo">
+                 art. 14
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O representante legal referido neste artigo deverá ser empresa constituída segundo as leis brasileiras, com sede e administração no País, devendo fazer comprovação desta condição, aplicando-se, no que couber, o disposto no
+                <a href="/legislacao/resolucoes/13-1998/164-resolucao-65#tituloIVcapII" rel="nofollow" title="Acesse o Regulamento">
+                 Capítulo II do Título IV do Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequências
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art13Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 13. No caso em que a coordenação de que trata o inciso II do
+                <a href="#art12" rel="nofollow" title="Acesse o Artigo">
+                 art. 12
+                </a>
+                não esteja concluída, a Agência poderá realizar consulta pública, concomitante àquela referida no
+                <a href="#art11" title="Acesse o artigo">
+                 art. 11
+                </a>
+                , para decidir se é de interesse público o uso das radiofreqüências associadas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A Agência poderá determinar ações e prazos a serem cumpridos, estando a manutenção do direito de exploração de satélite estrangeiro sujeita à implementação dos resultados obtidos no acordo de coordenação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Na hipótese de não se chegar a um acordo de coordenação, a Agência poderá extinguir o direito de exploração de satélite conferido.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art14Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 14. A Agência fixará os valores a serem pagos pelo direito de exploração de satélite estrangeiro e uso das radiofreqüências associadas, conforme regulamentação específica.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art15Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 15. A Agência, antes de conferir o direito de exploração de satélite estrangeiro, poderá considerar aspectos relativos à reciprocidade de tratamento com respeito a satélites e prestadores brasileiros de serviços de telecomunicações no país cuja administração é responsável pela coordenação ou notificação do satélite estrangeiro.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art16Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 16. O direito de exploração de satélite estrangeiro será conferido à proprietária do segmento espacial ou à pessoa que detenha o direito de operá-lo total ou parcialmente mediante termo expedido pela Agência, firmado pelo seu representante legal, do qual devem constar o nome ou a denominação social da entidade, o objeto, o prazo de vigência do direito, e a área geográfica de cobertura, bem como outras informações julgadas convenientes pela Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único O direito de exploração será conferido pelo prazo de até quinze anos, a contar da data de publicação do termo no Diário Oficial da União.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art17Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 17. O prazo do direito poderá ser prorrogado, uma única vez, por quinze anos, desde que a exploradora manifeste seu interesse até três anos antes do vencimento do prazo original e que sejam mantidas as mesmas características técnicas do satélite.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art18Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 18. A prorrogação do prazo implicará pagamento pelo direito de exploração de satélite estrangeiro e uso das radiofreqüências associadas, conforme regulamentação específica.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art19Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 19. O representante legal da exploradora de satélite estrangeiro poderá ser substituído desde que constatada a inexistência de encargos junto à Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art20Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 20. O direito poderá ser extinto caso o segmento espacial não entre em operação no prazo de três anos, a contar da data de publicação do termo no Diário Oficial da União.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art21Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 21. Aplicam-se, no que couber, os dispositivos dos
+                <a href="#capituloVI" rel="nofollow" title="Acesse os Capítulos">
+                 Capítulos VI, VII, IX, e XI
+                </a>
+                .
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="cap5">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo V
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Do Processo para Conferir o Direito de Exploração de Satélite Brasileiro
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Seção I
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Do Início do Processo
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art22Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 22. As entidades interessadas em explorar satélite utilizando recursos de órbita e espectro planejados pela administração brasileira deverão apresentar à Agência requerimento do qual devem constar:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - formulário padrão "Formulário de Solicitações", devidamente preenchido;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - informações técnicas simplificadas relativas ao sistema de satélite, indicando seus possíveis usos, parâmetros orbitais, as faixas de freqüências a serem utilizadas e a área geográfica de cobertura proposta, entre outras julgadas relevantes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art23Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 23. As entidades interessadas em utilizar recursos de órbita e espectro, cuja informação correspondente à publicação antecipada ainda não foi submetida à UIT pela administração brasileira, deverão encaminhar à Agência, em complemento às informações requeridas no
+                <a href="#art22" title="Acesse o Artigo">
+                 art. 22
+                </a>
+                :
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - informações necessárias à publicação antecipada e do pedido de coordenação, conforme estabelecido no Regulamento de Radiocomunicações da UIT;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - cálculos de densidade de fluxo de potência, quando apropriado;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                III - informações complementares para a análise técnica, de acordo com o § 1º.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º A Agência analisará as informações recebidas, que estarão acompanhadas de uma prévia verificação da compatibilidade com sistemas terrestres cadastrados no seu banco de dados e espaciais em coordenação ou notificados junto à UIT e, considerando-as satisfatórias, as encaminhará para a publicação antecipada.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Este procedimento não assegurará à entidade interessada privilégios ou preferências para a obtenção do direito de exploração de satélite.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art24Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 24. A Agência poderá publicar, no Diário Oficial da União, consulta pública sobre sua intenção de conferir direito de exploração de satélite, solicitando comentários sobre seus usos, características e área geográfica de cobertura, ou qualquer outro ponto considerado pertinente.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art25Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 25. As condições requeridas de cobertura do território brasileiro serão estabelecidas pela Agência.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Seção II
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Da Inexigibilidade de Licitação
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art26Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 26. Será inexigível a licitação para conferir direito de exploração de satélite para transporte de sinais de telecomunicações quando, mediante processo administrativo conduzido pela Agência, em conformidade com o Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofreqüências, a disputa for considerada inviável ou desnecessária.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Considera-se inviável a disputa quando apenas um interessado puder obter o direito, nas condições estipuladas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Considera-se desnecessária a disputa nos casos em que se admita a exploração de satélite por todos os interessados que atendam às condições requeridas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º O procedimento para verificação da inexigibilidade compreenderá chamamento público para apurar o número de interessados e verificar se os recursos de órbita e espectro disponíveis atendem a todos interessados habilitados técnica, legal e financeiramente.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art27Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 27. Nas hipóteses de inexigibilidade de licitação, o processo para conferir o direito de exploração de satélite dependerá de procedimento administrativo sujeito aos princípios da publicidade, moralidade, impessoalidade e contraditório, para verificar o preenchimento das condições relativas às qualificações técnico-operacional ou profissional e econômico-financeira, à regularidade fiscal e às garantias do termo de direito de exploração de satélite.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. As condições deverão ser compatíveis com o objeto e proporcionais a sua natureza e dimensão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art28Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 28. No caso de inexigibilidade, a Agência fixará os valores a serem pagos pelo direito de exploração de satélite e uso das radiofreqüências associadas, conforme regulamentação específica.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <span style="text-decoration: line-through;">
+                Seção III
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Do Procedimento Licitatório
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art29Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 29. Aplicam-se às licitações para conferir direito de exploração de satélite brasileiro para transporte de sinais de telecomunicações os procedimentos previstos no
+                <a href="/legislacao/resolucoes/13-1998/164-resolucao-65" rel="nofollow" title="Acesse o Regulamento">
+                 Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequências
+                </a>
+                .
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a name="cap6">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo VI
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Da Formalização do Direito de Exploração de Satélite Brasileiro
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art30Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 30. O direito de exploração de satélite brasileiro será conferido mediante termo expedido pela Agência, do qual devem constar o nome ou a denominação social da entidade, o objeto, o prazo de vigência do direito e a área geográfica de cobertura, bem como outras informações julgadas convenientes pela Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º O direito de exploração será conferido pelo prazo de quinze anos, a contar da data de publicação do termo no Diário Oficial da União, prorrogável conforme disposto no
+                <a href="#cap10" rel="nofollow" title="Acesse o Capítulo">
+                 Capítulo X
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º O direito de exploração poderá ser extinto caso o segmento espacial objeto do direito de exploração conferido não entre em operação no prazo e condições estabelecidos pela Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art31Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 31. Nos casos em que ocorrer procedimento licitatório, a Agência convocará a entidade vencedora da licitação, por meio de aviso publicado no Diário Oficial da União ou por qualquer outro meio com comprovante de recebimento, para assinar o termo de direito de exploração de satélite.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Do aviso constará o nome e qualificação da entidade, local, data e horários em que poderá assinar o termo.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º É facultado à Agência, quando a entidade vencedora não atender ao disposto neste artigo, retomar a licitação com análise da documentação da licitante melhor classificada, entre as remanescentes que, caso habilitada, será convocada para assinar o termo, nas condições técnicas e econômicas por ela ofertadas inicialmente ou, na hipótese prevista no
+                <a href="/legislacao/resolucoes/13-1998/164-resolucao-65#art26" rel="nofollow" title="Acesse o Regulamento">
+                 art. 26 do Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequências
+                </a>
+                , pela última de suas propostas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art32Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 32. O termo será publicado resumidamente no Diário Oficial da União, como condição para sua eficácia, no prazo de até cinco dias úteis da sua assinatura.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art33Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 33. Do termo de direito de exploração de satélite, além das condições legais, regulamentares e normativas a serem obedecidas pela exploradora de satélite, deverão constar cláusulas relativas ao processo de coordenação nacional e internacional.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art34Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 34. A exploradora de satélite está obrigada a dar continuidade à coordenação, bem como a prover as informações relevantes para notificação e registro das características da rede de satélites junto à UIT.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art35Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 35. Nos casos em que ocorrer procedimento licitatório, deverão constar do termo, além do previsto nos
+                <a href="#art33" rel="nofollow" title="Acesse os Artigos">
+                 arts. 33 e 34
+                </a>
+                , os compromissos, os termos, os prazos, as condições e os valores da proposta da entidade vencedora da licitação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. O descumprimento das cláusulas deste artigo implicará extinção do direito, salvo se este for resultado de caso fortuito ou força maior, devidamente comprovado e aceito pela Agência.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a name="cap7">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo VII
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Da Implantação de Segmento Espacial
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art36Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 36. A exploradora de satélite deverá dispor de projeto de seu segmento espacial, que permanecerá em seu poder, devendo mantê-lo atualizado e, a qualquer tempo, disponível à Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art37Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 37. Com respeito às edificações, torres e antenas, bem como a instalação de linhas físicas em logradouros públicos, a exploradora de satélite deverá observar as posturas municipais e outras exigências legais pertinentes a cada local.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. As instalações das estações terrenas que possam causar acidentes ou danos às pessoas devem ser construídas de forma a evitar a proximidade ou o contato de pessoas leigas ou não autorizadas, incluindo dispositivos de advertência claramente visíveis.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art38Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 38. A exploradora de satélite deverá informar à Agência, com pelo menos noventa dias de antecedência, o início da implantação ou alterações de características técnicas de seu segmento espacial, por intermédio de resumo do projeto, incluindo descrição técnica e operacional, devidamente avalizado por profissional habilitado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Tendo havido processo licitatório, as eventuais alterações deverão estar em conformidade com as disposições nele contidas, ou condicionar-se à aprovação da Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art39Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 39. A exploradora de satélite que efetue alterações às características técnicas em seu sistema, que possam causar interferência maior que aquela já coordenada, deverá submeter, as informações correspondentes estabelecidas no
+                <a href="#art23" title="Acesse o Artigo">
+                 art. 23
+                </a>
+                e outras, julgadas relevantes pela Agência, para realização do processo de coordenação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art40Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 40. Dentro do prazo estabelecido para início da exploração comercial, a exploradora de satélite, com a finalidade de realizar testes em estações, poderá operá-las em caráter experimental, pelo período de noventa dias, desde que comunique o fato à Agência com antecedência de cinco dias úteis do início dos testes.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art41Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 41. A exploradora de satélite brasileiro, após a efetiva implantação do segmento espacial, requererá à Agência emissão da respectiva Licença de Funcionamento de Estação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º O requerimento deverá ser instruído com termo de responsabilidade, assinado por profissional habilitado, certificando que as instalações correspondem às características técnicas previstas no resumo do projeto, acompanhado da Anotação de Responsabilidade Técnica - ART, relativa à instalação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º O pedido será deferido de plano pela Agência que expedirá a licença, a ser entregue à exploradora de satélite contra recolhimento das taxas de fiscalização de instalação para que o segmento espacial possa entrar em funcionamento.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 3º Constatada qualquer irregularidade, a Agência determinará a imediata regularização, sujeitando-se a exploradora de satélite às sanções cabíveis.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art42Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art.42. A exploradora de satélite deverá informar à Agência a ativação do segmento espacial com antecedência mínima de dez dias.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art43Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art.43. Os equipamentos utilizados na exploração de satélite, instalados ou em operação no País, deverão, se cabível, ser certificados ou ter a certificação aceita pela Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art44Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art.44. As estações de acesso deverão cumprir o disposto nos
+                <a href="#art36" rel="nofollow" title="Acesse os Artigos">
+                 arts. 36 a 43
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art45Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art.45. A entrada em operação de estações terrenas depende de licença de funcionamento, conforme disposto em regulamentação.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art46Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art.46. A Agência poderá determinar à exploradora de satélite ou seu representante legal que faça cessar imediatamente a transmissão que esteja causando interferência prejudicial em serviço de telecomunicações regularmente instalado.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A exploradora de satélite ou seu representante legal deverá envidar todos os esforços no sentido de eliminar a interferência prejudicial.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art47Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 47. A interconexão das estações de acesso a outras redes de telecomunicações deverá observar o disposto no Regulamento Geral de Interconexão.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art48Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 48. Será admitida a substituição do satélite, dentro do prazo de vigência do direito de exploração, desde que comprovados os motivos que justifiquem tal substituição, mantidas as mesmas caraterísticas técnicas do satélite original, permanecendo inalteradas as condições do termo de exploração de satélite.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a name="cap8">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo VIII
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Da Exploração do Satélite
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art49Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 49. A exploradora de satélite somente poderá prover capacidade espacial à entidade que detenha concessão, permissão ou autorização para exploração de serviços de telecomunicações ou às Forças Armadas.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art50Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 50. A exploradora deverá atender, desde que tecnicamente viável e compatível com o projeto do sistema de satélite, todos os pedidos feitos por entidades que detenham concessão, permissão ou autorização de serviços de telecomunicações, tratando-as de forma não discriminatória quanto a, entre outros, preços, condições de acesso ao segmento espacial e condições contratuais, quando as solicitações forem similares.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. Quando a exploradora de satélite for também prestadora de serviços de telecomunicações, deverão ser mantidos registros contábeis separados.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art51Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 51. A exploradora de satélite brasileiro responsabilizar-se-á:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - por colocar em operação o satélite nas condições previstas no termo;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - pela operação da estação de controle do satélite que, necessariamente, deverá estar localizada em território brasileiro.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art52Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 52. No cumprimento de seus deveres, a exploradora de satélite poderá, observadas as condições e limites estabelecidos pela Agência:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - empregar equipamentos e infra-estruturas que não lhe pertençam;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - contratar com terceiros o desenvolvimento de atividades inerentes, acessórias ou complementares à exploração de satélite, bem como a implementação de projetos associados.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 1º Em qualquer caso a exploradora continuará sempre responsável perante a Agência e as concessionárias, permissionárias e autorizadas que utilizem a capacidade do segmento espacial.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                § 2º Serão regidos pelo direito comum as relações da exploradora com os terceiros, que não terão direitos frente à Agência.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art53Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 53. Diante de situação concreta ou de reclamação fundamentada sobre descumprimento deste Regulamento ou dos termos do direito de exploração conferido, abuso de preço, tratamento discriminatório ou ações tendentes a eliminar deslealmente a competição, a Agência, poderá, após análise, determinar a implementação das medidas cabíveis, sem prejuízo de o reclamante representar o caso perante outros órgãos governamentais competentes.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a name="cap9">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo IX
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Da Transferência do Direito de Exploração de Satélite Brasileiro
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art54Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 54. A transferência do direito de exploração de satélite ou alteração que possa caracterizar transferência de controle da exploradora de satélite, sem prévia anuência da Agência, implicará em caducidade do direito.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art55Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 55. Somente será aprovada a transferência do direito de exploração de satélite ou do controle, se não for prejudicial à competição e não colocar em risco a execução do termo de direito de exploração e desde que a pretendente:
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                I - atenda às exigências compatíveis com a exploração do segmento espacial, em relação à qualificação técnica, à qualificação econômico-financeira, à habilitação jurídica e à regularidade fiscal;
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                II - comprometa-se a cumprir todas as cláusulas do termo de direito de exploração em vigor, sub-rogando-se nos direitos e obrigações da primitiva exploradora.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art56Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 56. A transferência do direito de exploração de satélite ou do controle da exploradora somente poderá ser efetuada após a entrada em operação do segmento espacial.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A disposição prevista neste artigo não se aplica às hipóteses da transferência do direito, pela exploradora, para empresa controlada ou para sua controladora e de sucessão hereditária ou cisão, casos em que a transferência dar-se-á a qualquer momento, observado o disposto no
+                <a href="#art55" rel="nofollow" title="Acesse o Artigo">
+                 art. 55
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art57">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 57. A exploradora de satélite pode, sem a anuência da Agência, realizar alterações em seus atos constitutivos, bem assim transferências de ações ou cotas ou, ainda, realizar aumento de capital social, desde que essas operações não firam outros dispositivos legais e regulamentares e não impliquem transferência do controle da exploradora, devendo esta informar à Agência das alterações de seus atos constitutivos, para fins de registro, no prazo de sessenta dias contado de suas efetivações.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art58">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 58. Aplicam-se, no que couber, as disposições do
+                <a href="/legislacao/resolucoes/14-1999/182-resolucao-101" rel="nofollow" title="Acesse o Regulamento">
+                 Regulamento para Apuração de Controle e de Transferência de Controle em Empresas Prestadoras de Serviços de Telecomunicações
+                </a>
+                .
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a name="cap10">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo X
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Da Prorrogação do Prazo do Direito de Exploração de Satélite Brasileiro
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art59Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 59. O prazo do direito para exploração de satélite poderá, nos termos do
+                <a href="/legislacao/leis/2-lei-9472#art172" rel="nofollow" title="Acesse a Lei">
+                 art. 172 da Lei nº 9.472/97
+                </a>
+                , ser prorrogado, uma única vez, desde que a exploradora tenha cumprido satisfatoriamente as condições previstas no termo e manifeste expresso interesse na prorrogação, pelo menos, trinta meses antes de expirar o prazo do direito.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art60Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 60. A prorrogação do prazo implicará pagamento pelo direito de exploração de satélite e uso das radiofreqüências associadas, conforme disposto no
+                <a href="#art28" title="Acesse o Artigo">
+                 art. 28
+                </a>
+                .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art61Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 61. Quando da prorrogação do direito de exploração de satélite, poderá ser exigido da exploradora a apresentação das informações previstas nos Capítulos II, III, IV e V do
+                <a href="/legislacao/resolucoes/13-1998/164-resolucao-65#tituloIV" rel="noopener noreferrer" target="_blank" title="Acesse o Título">
+                 Título IV
+                </a>
+                do Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequências, para a aferição da qualificação técnica, da qualificação econômico-financeira, da habilitação jurídica e da regularidade fiscal.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a name="cap11">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo XI
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Das Infrações e Sanções
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art62Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 62. Infrações às disposições deste Regulamento, sujeitará a exploradora de satélite brasileiro e, no que couber, a de satélite estrangeiro, às sanções estabelecidas em regulamentação específica, sem prejuízo das sanções de natureza civil e penal.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a name="cap12">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo XII
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Da Extinção do Direito de Exploração
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art63Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 63. O direito de exploração poderá ser extinto nas hipóteses previstas em lei, em especial através da caducidade ou pelo esgotamento de seu prazo de vigência, caso não tenha sido solicitada sua prorrogação ou esta não tenha sido aprovada pela Agência .
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <span style="text-decoration: line-through;">
+                Parágrafo único. A declaração de extinção não elidirá a aplicação das penalidades cabíveis pelas infrações praticadas pela exploradora de satélite, de conformidade com o disposto em regulamentação específica e no termo de direito de exploração.
+               </span>
+              </p>
+              <p style="text-align: center;">
+               <a id="cap13">
+               </a>
+               <span style="text-decoration: line-through;">
+                Capítulo XIII
+               </span>
+               <br/>
+               <span style="text-decoration: line-through;">
+                Das Disposições Finais
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art64Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 64. As disposições deste Regulamento não se aplicam aos satélites brasileiros de uso exclusivamente militar e àqueles utilizados para os serviços de Meteorologia por Satélite, Exploração da Terra por Satélite, Operação Espacial e Pesquisa Espacial.
+               </span>
+              </p>
+              <p class="texto-recuo-1a-linha" style="text-align: justify;">
+               <a id="art65Anexo">
+               </a>
+               <span style="text-decoration: line-through;">
+                Art. 65. Este Regulamento substitui os regulamentos e normas em vigor, nos termos do inciso I, do
+                <a href="/legislacao/leis/2-lei-9472#art214" rel="nofollow" title="Acesse a Lei">
+                 art. 214 da Lei nº 9.472/97
+                </a>
+                .
+               </span>
+              </p>
+              <div class="attachmentsContainer">
+               <div class="attachmentsList" id="attachmentsList_com_content_default_161">
+               </div>
+              </div>
+             </div>
+             <div class="below-content">
+              <div class="line">
+               registrado em:
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes" rel="tag">
+                 Resoluções da Anatel
+                </a>
+               </span>
+               <span class="separator">
+                ,
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/resolucoes/2000" rel="tag">
+                 2000
+                </a>
+               </span>
+              </div>
+              <div class="line">
+               Assunto(s):
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação">
+                 Aprovação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento">
+                 Regulamento
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Direito%20de%20exploração%20de%20satélite">
+                 Direito de exploração de satélite
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Sinalização%20de%20telecomunicações">
+                 Sinalização de telecomunicações
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Licitação">
+                 Licitação
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Exploradora%20de%20satélite">
+                 Exploradora de satélite
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Comunicação%20por%20satélite">
+                 Comunicação por satélite
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=NormaSatelite">
+                 NormaSatelite
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RecursosPrestacao">
+                 RecursosPrestacao
+                </a>
+                <span class="separator">
+                 ,
+                </span>
+               </span>
+               <span>
+                <a class="link-categoria" href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoRevogada">
+                 ResolucaoRevogada
+                </a>
+               </span>
+              </div>
+             </div>
+             <!--<span class="hide">Fim do conteúdo da página</span> -->
+            </div>
+           </section>
+          </div>
+          <!-- fim #content.span9 -->
+         </div>
+         <!-- fim .row-fluid -->
+        </div>
+        <!-- fim .container -->
+        <!-- Chamada da posição paginas de Serviços -->
+        <!--Fim da chamada de chamada-segundaria-destaque -->
+        <!-- Chamada da posição chamada de chamada segundaria destaque -->
+        <!--Fim da chamada de chamada de chamada segundaria destaque -->
+       </main>
+       <footer id="portal-footer">
+        <div class="footer-atalhos">
+         <div class="container tmpl-custom">
+          <div class="pull-right voltar-ao-topo">
+           <a href="#main-navigation">
+            Voltar ao topo
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="container tmpl-custom container-menus">
+         <div class="govbr-logo">
+         </div>
+         <div class="row footer-menus" id="footer">
+          <span class="hide">
+           Início da navegação de rodapé
+          </span>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Assuntos
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-443">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/5G">
+                5G
+               </a>
+              </li>
+              <li class="item-502">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">
+                Acessibilidade
+               </a>
+              </li>
+              <li class="item-540">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">
+                Adaptação
+               </a>
+              </li>
+              <li class="item-541">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">
+                Agenda 2030
+               </a>
+              </li>
+              <li class="item-441">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">
+                Atuação Internacional
+               </a>
+              </li>
+              <li class="item-442">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">
+                Celular Legal
+               </a>
+              </li>
+              <li class="item-503">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">
+                Coronavírus
+               </a>
+              </li>
+              <li class="item-504">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">
+                Dicas contra Fraudes
+               </a>
+              </li>
+              <li class="item-440">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias">
+                Notícias
+               </a>
+              </li>
+              <li class="item-505">
+               <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">
+                Processo Sancionador
+               </a>
+              </li>
+              <li class="item-444">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica">
+                Segurança Cibernética
+               </a>
+              </li>
+              <li class="item-445">
+               <a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica">
+                Segurança Pública
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Acesso à Informação
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-446">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional">
+                Institucional
+               </a>
+              </li>
+              <li class="item-447">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas">
+                Ações e Programas
+               </a>
+              </li>
+              <li class="item-448">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social">
+                Participação Social
+               </a>
+              </li>
+              <li class="item-449">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">
+                Auditorias
+               </a>
+              </li>
+              <li class="item-450">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">
+                Convênios e Transferências
+               </a>
+              </li>
+              <li class="item-451">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas">
+                Receitas e Despesas
+               </a>
+              </li>
+              <li class="item-452">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">
+                Licitações e Contratos
+               </a>
+              </li>
+              <li class="item-454">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">
+                Servidores
+               </a>
+              </li>
+              <li class="item-455">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas">
+                Informações Classificadas
+               </a>
+              </li>
+              <li class="item-456">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">
+                Serviço de Informação ao Cidadão (SIC)
+               </a>
+              </li>
+              <li class="item-458">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes">
+                Perguntas Frequentes
+               </a>
+              </li>
+              <li class="item-457">
+               <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+                Dados Abertos
+               </a>
+              </li>
+              <li class="item-506">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">
+                Governança
+               </a>
+              </li>
+              <li class="item-453">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+                Tratamento de Dados Pessoais
+               </a>
+              </li>
+              <li class="item-459">
+               <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">
+                Transparência e Prestação de Contas
+               </a>
+              </li>
+              <li class="item-507">
+               <a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">
+                Pesquisa Pública do SEI
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Canais de Atendimento
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-471">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">
+                Aplicativo
+               </a>
+              </li>
+              <li class="item-472">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">
+                Internet
+               </a>
+              </li>
+              <li class="item-473">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">
+                Presencial
+               </a>
+              </li>
+              <li class="item-474">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone">
+                Telefone
+               </a>
+              </li>
+              <li class="item-475">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">
+                Ouvidoria
+               </a>
+              </li>
+              <li class="item-476">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">
+                Imprensa
+               </a>
+              </li>
+              <li class="item-477">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">
+                Sistemas
+               </a>
+              </li>
+              <li class="item-542">
+               <a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">
+                Apoio Institucional
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Centrais de Conteúdo
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-464">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes">
+                Publicações
+               </a>
+              </li>
+              <li class="item-465">
+               <a href="https://www.flickr.com/photos/anatel_informa/albums">
+                Imagens
+               </a>
+              </li>
+              <li class="item-466">
+               <a href="https://www.youtube.com/user/Anatel">
+                Vídeos
+               </a>
+              </li>
+              <li class="item-468">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">
+                Processo Eletrônico (SEI)
+               </a>
+              </li>
+              <li class="item-470">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia">
+                Repositório de Jurisprudência
+               </a>
+              </li>
+              <li class="item-469">
+               <a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas">
+                Solicitação de Vistas de Processo e Documento
+               </a>
+              </li>
+              <li class="item-467">
+               <a href="https://informacoes.anatel.gov.br/legislacao/">
+                Legislação
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Composição
+            </h2>
+            <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row-fluid" id="menu-contexto">
+             <ul class="menuspanfooter">
+              <li class="item-460">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">
+                Estrutura Organizacional
+               </a>
+              </li>
+              <li class="item-461">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor">
+                Conselho Diretor
+               </a>
+              </li>
+              <li class="item-462">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo">
+                Conselho Consultivo
+               </a>
+              </li>
+              <li class="item-508">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">
+                Ceadi
+               </a>
+              </li>
+              <li class="item-463">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">
+                Comissão de Ética
+               </a>
+              </li>
+              <li class="item-509">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/comites">
+                Comitês
+               </a>
+              </li>
+              <li class="item-510">
+               <a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">
+                Grupos de Trabalho
+               </a>
+              </li>
+             </ul>
+            </div>
+            <!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+           </nav>
+          </div>
+          <div class="spanfooter">
+           <nav class="row nav">
+            <h2>
+             Consumidor
+            </h2>
+            <ul>
+             <li class="item-410">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">
+               Quer Reclamar?
+              </a>
+             </li>
+             <li class="item-411">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">
+               Conheça Seus Direitos
+              </a>
+             </li>
+             <li class="item-412">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates">
+               Participe dos Debates
+              </a>
+             </li>
+             <li class="item-413">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">
+               Compare as Prestadoras
+              </a>
+             </li>
+             <li class="item-511">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">
+               Habilidades Digitais
+              </a>
+             </li>
+             <li class="item-512">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">
+               Oi Móvel
+              </a>
+             </li>
+             <li class="item-513">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">
+               Projetos pró Consumidor
+              </a>
+             </li>
+             <li class="item-514">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">
+               Telemarketing
+              </a>
+             </li>
+             <li class="item-482">
+              <a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter break width">
+           <nav class="row nav">
+            <h2>
+             Dados
+            </h2>
+            <ul>
+             <li class="item-519">
+              <a href="https://www.gov.br/anatel/pt-br/dados/paineis">
+               Painéis
+              </a>
+             </li>
+             <li class="item-520">
+              <a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">
+               Coleta de Dados Setoriais
+              </a>
+             </li>
+             <li class="item-417">
+              <a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">
+               Infraestrutura
+              </a>
+             </li>
+             <li class="item-414">
+              <a href="https://www.gov.br/anatel/pt-br/dados/qualidade">
+               Qualidade
+              </a>
+             </li>
+             <li class="item-415">
+              <a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">
+               Relatórios de Acompanhamento
+              </a>
+             </li>
+             <li class="item-416">
+              <a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">
+               Utilidade Pública
+              </a>
+             </li>
+             <li class="item-521">
+              <a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">
+               Dados Abertos
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Legislação
+            </h2>
+            <ul>
+             <li class="item-183">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">
+               Resoluções
+              </a>
+             </li>
+             <li class="item-196">
+              <a href="https://informacoes.anatel.gov.br/legislacao/sumulas">
+               Súmulas
+              </a>
+             </li>
+             <li class="item-522">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">
+               Portarias de Delegação
+              </a>
+             </li>
+             <li class="item-523">
+              <a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">
+               Portarias Normativas
+              </a>
+             </li>
+             <li class="item-524">
+              <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">
+               Resoluções Internas
+              </a>
+             </li>
+             <li class="item-525">
+              <a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">
+               Metodologias de Cálculo de Multa
+              </a>
+             </li>
+             <li class="item-526">
+              <a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">
+               Glossário
+              </a>
+             </li>
+             <li class="item-527">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/atos">
+               Atos
+              </a>
+             </li>
+             <li class="item-528">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-529">
+              <a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">
+               Demais Normas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <div class="spanfooter width">
+           <nav class="row nav">
+            <h2>
+             Regulado
+            </h2>
+            <ul>
+             <li class="item-530">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">
+               Acompanhamento e Controle
+              </a>
+             </li>
+             <li class="item-531">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">
+               Agenda Regulatória
+              </a>
+             </li>
+             <li class="item-418">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">
+               Arrecadação
+              </a>
+             </li>
+             <li class="item-422">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">
+               Certificação de Produtos
+              </a>
+             </li>
+             <li class="item-532">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/competicao">
+               Competição
+              </a>
+             </li>
+             <li class="item-533">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/espectro">
+               Espectro
+              </a>
+             </li>
+             <li class="item-534">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">
+               Fiscalização
+              </a>
+             </li>
+             <li class="item-421">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">
+               Numeração
+              </a>
+             </li>
+             <li class="item-420">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/outorga">
+               Outorga
+              </a>
+             </li>
+             <li class="item-535">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">
+               Prestadoras de Pequeno Porte
+              </a>
+             </li>
+             <li class="item-419">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">
+               Radiodifusão
+              </a>
+             </li>
+             <li class="item-536">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">
+               Radiofrequência
+              </a>
+             </li>
+             <li class="item-537">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/satelite">
+               Satélite
+              </a>
+             </li>
+             <li class="item-538">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">
+               Universalização e Ampliação do Acesso
+              </a>
+             </li>
+             <li class="item-539">
+              <a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">
+               Perguntas Frequentes
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+          <span class="hide">
+           Fim da navegação de rodapé
+          </span>
+         </div>
+         <!-- fim .row -->
+         <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+         <div class="container-redes-anatel">
+          <div class="redes-sociais">
+           <h3>
+            Redes Sociais
+           </h3>
+           <ul class="portal-redes">
+            <li class="portalredes-twitter portalredes-item">
+             <a href="https://twitter.com/anatel_oficial">
+              Twitter
+             </a>
+            </li>
+            <li class="portalredes-youtube portalredes-item">
+             <a href="https://www.youtube.com/anatel">
+              YouTube
+             </a>
+            </li>
+            <li class="portalredes-facebook portalredes-item">
+             <a href="https://www.facebook.com/anatel.oficial">
+              Facebook
+             </a>
+            </li>
+            <li class="portalredes-flickr portalredes-item">
+             <a href="https://www.flickr.com/photos/anatel_informa/albums">
+              Flickr
+             </a>
+            </li>
+            <li class="portalredes-instagram portalredes-item">
+             <a href="https://www.instagram.com/anatel.oficial">
+              Instagram
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- Final do container redes sociais -->
+        </div>
+        <!-- fim .container -->
+        <div class="footer-logos">
+         <div class="container tmpl-custom">
+          <!-- separador para fins de acessibilidade -->
+          <span class="hide">
+          </span>
+          <!-- fim separador para fins de acessibilidade -->
+          <a class="brasil pull-right" href="http://www.brasil.gov.br/">
+           <img alt="Brasil - Governo Federal" src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg"/>
+          </a>
+          <a class="logo-acesso pull-right" href="http://www.acessoainformacao.gov.br/">
+           <img alt="Acesso a Informação" src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png"/>
+          </a>
+         </div>
+        </div>
+        <div class="footer-ferramenta">
+         <div class="container tmpl-custom">
+          Todo o conteúdo deste site está publicado sob a licença
+          <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">
+           Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada
+          </a>
+          .
+         </div>
+        </div>
+       </footer>
+      </div>
+      <!-- fim div#wrapper -->
+      <!-- scripts principais do template -->
+      <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script src="/legislacao/templates/padraogoverno01/js/template.js" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <script type="0b3adbd19e0e7b2a9947187e-text/javascript">
+       var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+      </script>
+      <noscript>
+       <!-- item para fins de acessibilidade -->
+      </noscript>
+      <!-- debug -->
+      <!--****************************** COOKIES HTML CODE START HERE ******************************-->
+      <div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+       <div class="inner1">
+        <div class="inner3 eb_contentwrap">
+         <div class="heading_title">
+          Nós protegemos seus dados
+         </div>
+         <p>
+          Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso
+          <a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade" style="color: #ffffff;">
+           Aviso de Privacidade
+          </a>
+          . Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.
+         </p>
+        </div>
+        <div class="button_message eb_privacypolicy">
+         <a aria-label="Cookie Policy" class="button_cookie eb_papbtn" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais">
+          Saiba mais
+         </a>
+         <a class="button_cookie" data-cf-modified-0b3adbd19e0e7b2a9947187e-="" href="javascript:void(0);" id="hideme" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()">
+          Aceitar cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--****************************** COOKIES HTML CODE END HERE ******************************-->
+      <!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+      <script type="0b3adbd19e0e7b2a9947187e-text/javascript">
+       check_cookie(getBaseURL());
+      </script>
+      <!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+      <!--****************************** COOKIES CSS START HERE ******************************-->
+      <style>
+       .notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+      </style>
+      <!--****************************** COOKIES CSS END HERE ******************************-->
+      <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="0b3adbd19e0e7b2a9947187e-text/javascript">
+      </script>
+      <!-- Piwik -->
+      <script type="0b3adbd19e0e7b2a9947187e-text/javascript">
+       var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+      </script>
+      <noscript>
+       <p>
+        <img alt="" src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;"/>
+       </p>
+      </noscript>
+      <!-- End Piwik Code -->
+     </a>
+    </a>
+   </a>
+  </a>
+ </body>
+</html>

@@ -1,0 +1,2181 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Portaria nº 784, de 26 de agosto de 2014</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa/800-portaria-784">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Metodologia, Cálculo, Sanções, Multa, Descumprimento, Metas, Qualidade, Procedimento, Cálculo, Consolidação, Indicadores de qualidade, PortariaVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Dispõe sobre a metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos às metas de qualidade e dos procedimentos de coleta, cálculo e consolidação dos indicadores de qualidade previstos na regulamentação.">
+	<title>Anatel - Portaria nº 784, de 26 de agosto de 2014</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1079070649" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1719087179" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"f53e3088cbd505732d450e3fc3d55853","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1121459891" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025010254" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/metodologias-de-calculo-de-multa/800-portaria-784">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/metodologias-de-calculo-de-multa" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/metodologias-de-calculo-de-multa" class="pathway">Metodologias de Cálculo de Multa</a> <span class="separator">&gt;</span> <span>Portaria nº 784, de 26 de agosto de 2014</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264 current active"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;948bd16eba52f633&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Portaria nº 784, de 26 de agosto de 2014		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quarta, 03 Setembro 2014 10:53			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Segunda, 01 Julho 2024 16:37			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 10629			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p>Dispõe sobre a metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos às metas de qualidade e dos procedimentos de coleta, cálculo e consolidação dos indicadores de qualidade previstos na regulamentação.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de <a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=62&amp;data=03/09/2014" rel="nofollow">3/9/2014</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><strong>O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</strong>, no uso das atribuições que lhe foram conferidas pelo <a title="Acesse o Artigo" href="/legislacao/leis/2-lei-9472#art22" rel="nofollow">art. 22</a> da Lei nº 9.472, de 16 de julho de 1997, e pelo <a title="Acesse o Artigo" href="/legislacao/decretos/3-decreto-2338#art35" rel="alternate">art. 35</a> do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o disposto no <a title="Acesse ao Artigo" href="/legislacao/resolucoes/2012/191-resolucao-589#art39" rel="nofollow">art. 39</a> do Regulamento de Aplicação de Sanções Administrativas, aprovado pela Resolução nº 589, de 7 de maio de 2012;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO os trabalhos desenvolvidos no âmbito do Grupo de Trabalho de Metodologias, criado por meio da Portaria nº 192, de 28 de fevereiro de 2012;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO as contribuições recebidas em decorrência da <a title="Acesse à Consulta Pública" href="http://sistemas.anatel.gov.br/SACP/Contribuicoes/TextoConsulta.asp?CodProcesso=C1661&amp;Tipo=1&amp;Opcao=finalizadas" rel="nofollow">Consulta Pública nº 11, de 27 de fevereiro de 2013</a>, publicada no Diário Oficial da União de 28 de fevereiro de 2013, e as manifestações e comentários recebidos nas Audiências Públicas realizadas;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo" href="http://sistemas.anatel.gov.br/sicap/web/displayWeb.asp?id=4105308" rel="nofollow">Processo nº 53500.018143/2012</a>;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO deliberação tomada em sua <a title="Acesse à Ata" href="http://www.anatel.gov.br/Portal/verificaDocumentos/documento.asp?numeroPublicacao=316096&amp;assuntoPublicacao=Ata%20da%20755ª%20reunião%20do%20Conselho%20Diretor&amp;caminhoRel=-Agendas%20e%20Reuniões-&amp;filtro=1&amp;documentoPath=316096.pdf" rel="nofollow">Reunião nº 755, realizada em 21 de agosto de 2014</a>,</p>
+<p class="resolve" style="text-align: justify;">RESOLVE:</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art1"></a>Art. 1º Aprovar, na forma do Anexo a esta Portaria, a metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos às metas de qualidade e dos procedimentos de coleta, cálculo e consolidação dos indicadores de qualidade previstos na regulamentação.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art2"></a>Art. 2º Esta Portaria entra em vigor na data de sua publicação.</p>
+<p style="text-align: center;">JOÃO BATISTA DE REZENDE</p>
+<p style="text-align: center;">Presidente do Conselho</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">MANUAL DE APLICAÇÃO DA METODOLOGIA DE CÁLCULO DO VALOR BASE DAS SANÇÕES DE MULTA RELATIVA A DESCUMPRIMENTOS ÀS METAS DE QUALIDADE E DOS PROCEDIMENTOS DE COLETA, CÁLCULO E CONSOLIDAÇÃO DOS INDICADORES DE QUALIDADE PREVISTOS NA REGULAMENTAÇÃO</p>
+<p style="text-align: justify;"><a id="item1"></a>1. OBJETIVO</p>
+<p style="text-align: justify;">Este documento descreve a metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos à regulamentação de qualidade, em observância ao disposto na legislação e regulamentação aplicáveis.</p>
+<p style="text-align: justify;"><a id="item2"></a>2. ESCOPO</p>
+<p style="text-align: justify;">Aplicação de sanções de multa, decorrente de infração ocasionada pelo não atendimento de metas de qualidade ou falha nos processos de coleta de dados, previstas nos regulamentos de qualidade dos seguintes serviços:</p>
+<p style="text-align: justify;">Serviço Telefônico Fixo Comutado destinado ao Uso do Público em Geral - STFC;</p>
+<p style="text-align: justify;">Serviço Móvel Pessoal - SMP;</p>
+<p style="text-align: justify;">Serviço de Comunicação Multimídia - SCM; e,</p>
+<p style="text-align: justify;">TV por Assinatura.</p>
+<p style="text-align: justify;"><a id="item3"></a>3. REFERÊNCIAS</p>
+<p style="text-align: justify;"><a title="Acesse à Lei" href="/legislacao/leis/2-lei-9472" rel="nofollow">Lei nº 9.472, de 16 de julho de 1997</a> – Lei Geral de Telecomunicações;</p>
+<p style="text-align: justify;"><a title="Acesse à Lei" href="http://www.planalto.gov.br/ccivil_03/leis/l9784.htm" rel="nofollow">Lei nº 9.784, de 29 de janeiro de 1999</a>, que regula o processo administrativo no âmbito da Administração Pública Federal;</p>
+<p style="text-align: justify;"><a title="Acesse à Resolução" href="/legislacao/resolucoes/2012/191-resolucao-589" rel="nofollow">Resolução nº 589, de 7 de maio de 2012</a> – Regulamento de Aplicação de Sanções Administrativas; e,</p>
+<p style="text-align: justify;"><a title="Acesse à Resolução" href="/legislacao/resolucoes/2013/450-resolucao-612" rel="nofollow">Resolução nº 612, de 29 de abril de 2013</a>, que aprova o Regimento Interno da Anatel.</p>
+<p style="text-align: justify;"><a id="item4"></a>4. DEFINIÇÕES</p>
+<p style="text-align: justify;">Para fins desta metodologia, aplicam-se as seguintes definições, além daquelas previstas na regulamentação e na legislação:</p>
+<p style="padding-left: 30px; text-align: justify;">a) Acessos da Prestadora: número de acessos em operação da Prestadora infratora;</p>
+<p style="padding-left: 30px; text-align: justify;">b) Ponderação de Gravidade da Infração: fator que possibilita considerar critérios de proporcionalidade entre infrações classificadas como de mesma Gradação da Infração;</p>
+<p style="padding-left: 30px; text-align: justify;">c) Gradação da Infração: classificação da infração em Leve, Média ou Grave, de acordo com o Regulamento para Aplicação de Sanções Administrativas da Anatel; e,</p>
+<p style="padding-left: 30px; text-align: justify;">d) Período de Análise: período, em meses, no qual os dados de análise de um regulamento de qualidade específico são agrupados para avaliação da qualidade, e.g., trimestral, semestral, anual, etc.</p>
+<p style="text-align: justify;"><a id="item5"></a>5. CONSIDERAÇÕES INICIAIS</p>
+<p style="text-align: justify;">A aplicação da metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos à regulamentação de qualidade considera duas dimensões: i) Método de Coleta; e, ii) Meta Realizada.</p>
+<p style="text-align: justify;">A dimensão de “Método de Coleta” busca aferir os descumprimentos relativos a erros quanto aos procedimentos de coleta, cálculo e consolidação dos indicadores de qualidade informados à Anatel. Neste aspecto, deve ser utilizada a formulação prevista no&nbsp;<a title="acesse ao item" href="#item6" rel="alternate">item 6</a> para cada indicador de qualidade que tenha apresentado esse tipo de erro dentro do Período de Análise definido. Nos casos de erros referentes a esta dimensão, o Relatório de Fiscalização deve, se possível, recalcular os valores realizados para os indicadores de qualidade em questão, sendo esse recálculo utilizado na avaliação da dimensão “Meta Realizada”.</p>
+<p style="text-align: justify;">A dimensão “Meta Realizada” busca aferir se as metas estabelecidas na regulamentação foram ou não alcançadas pela prestadora. Neste aspecto, deve ser utilizada a formulação prevista no&nbsp;<a title="acesse ao item" href="#item7" rel="alternate">item 7</a> para cada indicador de qualidade que não teve sua meta cumprida dentro do Período de Análise definido, considerando o recálculo apresentado no Relatório de Fiscalização, quando possível.</p>
+<p style="text-align: justify;">Na determinação dos indicadores descumpridos deve ser feita a diferenciação para cada Período de Maior Movimento (PMM) e/ou Período de Maior Tráfego (PMT), quando existir, bem como para os tipos de indicadores.</p>
+<p style="text-align: justify;">Exemplo:</p>
+<p style="text-align: justify;">Para o indicador Taxa de Atendimento pela Telefonista/Atendente em Sistemas de Auto-Atendimento (SMP12) constante do RGQ-SMP, cuja definição é transcrita abaixo:</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art31"></a>Art. 31 O tempo para o atendimento pela telefonista/atendente em sistemas de autoatendimento, quando esta opção for selecionada pelo usuário, deve ser de até 20 (vinte) segundos, no mês, no mínimo em 90% (noventa por cento) dos casos.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">§ 1º Em nenhum caso, o atendimento deve se dar em mais de 60 (sessenta) segundos.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">§ 2º A opção de acesso à telefonista/atendente deve estar sempre disponível ao usuário em todos os níveis do sistema de auto-atendimento.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">(...)</p>
+<p style="text-align: justify;">Neste caso, teremos dois indicadores referentes ao SMP12 do RGQ-SMP:</p>
+<p style="text-align: justify;">SMP12; e,</p>
+<p style="text-align: justify;">SMP12-gatilho.</p>
+<p style="text-align: justify;">Para o indicador: Taxa de chamadas locais originadas completadas, previsto para o STFC, cuja definição é transcrita abaixo, tem-se:</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art5"></a>Art. 5º As tentativas de originar chamadas locais e de longa distância nacionais, no Período de Maior Movimento, devem resultar em comunicação com o assinante chamado em, no mínimo, 70% dos casos.</p>
+<p style="text-align: justify;">Como para o PGMQ-STFC o PMM é aplicado aos períodos matutino e noturno, tem-se dois indicadores a se considerar:</p>
+<p style="text-align: justify;">taxa de chamadas locais originadas completadas – PMM Matutino; e,</p>
+<p style="text-align: justify;">taxa de chamadas locais originadas completadas – PMM Noturno.</p>
+<p style="text-align: justify;"><a id="item6"></a>6. FÓRMULA DE CÁLCULO – MÉTODO DE COLETA</p>
+<p style="padding-left: 30px; text-align: justify;"><a id="item6.1"></a>6.1. Valor base</p>
+<p style="padding-left: 30px; text-align: justify;">O valor base das sanções de multa relativa a descumprimentos aos métodos de coleta dos indicadores de qualidade previstos na regulamentação é determinado pela seguinte fórmula, para cada indicador em análise:</p>
+<p style="padding-left: 30px;"><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig1.png" alt="fórmula" width="327" height="69"></span></p>
+<p style="padding-left: 30px; text-align: justify;">VBase = valor de multa referente a uma infração, sobre o qual ainda serão consideradas as circunstâncias atenuantes e agravantes, bem como os limites mínimos e máximos para aplicação de multa, nos termos do Regulamento de Aplicação de Sanções Administrativas;</p>
+<p style="padding-left: 30px; text-align: justify;">Nº prej = quantidade de vezes nos quais o método de coleta do indicador foi descumprido dentro do Período de Análise;</p>
+<p style="padding-left: 30px; text-align: justify;">m = multiplicador que varia de acordo com categoria da informação do resultado do indicador apresentado pela prestadora, conforme tabela abaixo:</p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td width="92"><br>
+<p><strong>Categoria</strong></p>
+</td>
+<td width="104">
+<p><strong>Informação Prestadora</strong></p>
+</td>
+<td width="142">
+<p><strong>Aferição Anatel</strong></p>
+</td>
+<td width="117">
+<p><strong>Multiplicador</strong></p>
+<p><strong>(m)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="92">
+<p>1</p>
+</td>
+<td width="104">
+<p>cumprido</p>
+</td>
+<td width="142">
+<p>cumprido</p>
+</td>
+<td width="117">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="92">
+<p>2</p>
+</td>
+<td width="104">
+<p>cumprido</p>
+</td>
+<td width="142">
+<p>descumprido</p>
+</td>
+<td width="117">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td width="92">
+<p>3</p>
+</td>
+<td width="104">
+<p>descumprido</p>
+</td>
+<td width="142">
+<p>cumprido</p>
+</td>
+<td width="117">
+<p>0,5</p>
+</td>
+</tr>
+<tr>
+<td width="92">
+<p>4</p>
+</td>
+<td width="104">
+<p>descumprido</p>
+</td>
+<td width="142">
+<p>descumprido</p>
+</td>
+<td width="117">
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px; text-align: justify;">Nos casos em que se constata a ocorrência de erro no método de coleta, contudo não seja possível a aferição pela Anatel do valor final do indicador, o multiplicador deverá assumir o valor 1;</p>
+<p style="padding-left: 30px; text-align: justify;">FG: Fator de Gravidade. Fator referente à Gradação da Infração, podendo assumir os seguintes valores: 5 (quando Leve), 2 (quando Média) e 1 (quando Grave); e,</p>
+<p style="padding-left: 30px; text-align: justify;">V<sub>Ref </sub>= valor correspondente a um percentual “k” da Receita Operacional Líquida – ROL da prestadora, da época da sanção.</p>
+<p style="padding-left: 30px; text-align: justify;">Não sendo esse levantamento possível, deve-se utilizar a receita operacional anual mais próxima da aplicação da sanção. O valor da ROL deve ser obtido pela relação da ROL anual dividida por 12. A ROL deve ser ponderada em função da quantidade de Acessos, de Assinantes ou de outro fator mensurável da Prestadora que propicie a realização de uma ponderação adequada da área geográfica de avaliação do indicador. O valor do k varia conforme a quantidade de erros de coleta durante o ciclo de avaliação, até o limite de 1%, conforme a Tabela 1, a seguir:</p>
+<p style="text-align: center;"><a id="tabela1"></a>Tabela 1 - Fator k</p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td width="99">
+<p><strong>k</strong></p>
+</td>
+<td width="20">
+<p><strong>0,08%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,17%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,25%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,33%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,42%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,50%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,58%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,67%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,75%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,83%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,92%</strong></p>
+</td>
+<td width="55">
+<p><strong>1,00%</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Quantidade de descumprimentos</p>
+</td>
+<td width="20">
+<p>1</p>
+</td>
+<td width="55">
+<p>2</p>
+</td>
+<td width="55">
+<p>3</p>
+</td>
+<td width="55">
+<p>4</p>
+</td>
+<td width="55">
+<p>5</p>
+</td>
+<td width="55">
+<p>6</p>
+</td>
+<td width="55">
+<p>7</p>
+</td>
+<td width="55">
+<p>8</p>
+</td>
+<td width="55">
+<p>9</p>
+</td>
+<td width="55">
+<p>10</p>
+</td>
+<td width="55">
+<p>11</p>
+</td>
+<td width="55">
+<p>12</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px; text-align: justify;">Declarar:</p>
+<p style="padding-left: 30px; text-align: justify;">A 6.2. Aplicação da Fórmula de Cálculo</p>
+<p style="padding-left: 60px; text-align: justify;"><a id="item6.2.1"></a>6.2.1 Levantamento de Dados</p>
+<p style="padding-left: 90px; text-align: justify;">a) Quantidade de Descumprimentos de Método (Nº Prej): Identificar a quantidade de vezes em que foram verificados erros no procedimento de coleta, cálculo e consolidação de determinado indicador dentro do Período de Análise.</p>
+<p style="padding-left: 90px; text-align: justify;">b) Gradação da infração: Identificar se a infração cometida é de natureza leve, média ou grave.</p>
+<p style="padding-left: 90px; text-align: justify;">c) ROL: Levantar a Receita Operacional Líquida anual da infratora no Período da aplicação da sanção, ou na falta desta, a mais próxima do período.</p>
+<p style="padding-left: 90px; text-align: justify;">d) Fator “k”: Identificar, conforme a quantidade de erros de coleta durante o ciclo de avaliação.</p>
+<p style="padding-left: 60px; text-align: justify;"><a id="item6.2.2"></a>6.2.2 Procedimento de Cálculo</p>
+<p style="padding-left: 60px; text-align: justify;">Exemplo de cálculo:</p>
+<p style="padding-left: 90px; text-align: justify;">i. Considerando-se que uma determinada prestadora do STFC, com ROL anual de R$ 60.000.000,00, tenha desobedecido aos procedimentos de coleta de dados, cálculo e/ou consolidação de dois índices de qualidade previstos no RIQ-STFC (Ind1 e Ind2);</p>
+<p style="padding-left: 90px; text-align: justify;">ii. Para a determinação do Nº<sub>prej</sub>, considerou-se que a Prestadora descumpriu os procedimentos de coleta de dados, cálculo e/ou consolidação do indicador Ind1 em dois meses (janeiro e março) e do indicador Ind2 em quatro meses (janeiro, março, julho e outubro);</p>
+<p style="padding-left: 60px; text-align: justify;">Para a determinação do Nºprej, considerou-se que a Prestadora descumpriu os procedimentos de coleta de dados, cálculo e/ou consolidação do indicador Ind1 em dois meses (janeiro e março) e do indicador Ind2 em quatro meses (janeiro, março, julho e outubro);</p>
+<p style="padding-left: 90px; text-align: justify;">iii. Para determinação do multiplicador m, considerou-se que a prestadora, apesar de ter descumprido os procedimentos de coleta, informou o cumprimento dos dois indicadores e a Anatel auferiu que eles estavam realmente cumpridos para todos os erros observados, assim m=1;</p>
+<p style="padding-left: 90px; text-align: justify;">iv. As infrações, no exemplo, serão consideradas de natureza Grave, assim o Fator de Gravidade (FG) é igual a 1 (um).</p>
+<p style="padding-left: 60px; text-align: justify;">Resumo:</p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td width="122">
+<p><em>Indicador</em></p>
+</td>
+<td width="93">
+<p><em>Nºprej</em></p>
+</td>
+<td width="171">
+<p><em>ROL ANUAL (R$)</em></p>
+</td>
+<td width="189">
+<p><em>V<sub>Ref</sub> (R$)</em></p>
+</td>
+</tr>
+<tr>
+<td width="122">
+<p><em>Ind1</em></p>
+</td>
+<td width="93">
+<p><em>2</em></p>
+</td>
+<td width="171">
+<ol>
+<li><em>000.000,00</em></li>
+</ol>
+</td>
+<td width="189">
+<p><em>(0,17%) 8.500,00</em></p>
+</td>
+</tr>
+<tr>
+<td width="122">
+<p><em>Ind2</em></p>
+</td>
+<td width="93">
+<p><em>4</em></p>
+</td>
+<td width="171">
+<ol>
+<li><em>000.000,00</em></li>
+</ol>
+</td>
+<td width="189">
+<p><em>(0,33%) 16.500,00</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 90px; text-align: justify;">v. Com base nos critérios estabelecidos nesta metodologia, tem-se o seguinte, para o indicador Ind1:</p>
+<p style="padding-left: 120px; text-align: justify;"><em>a. Obtém-se a Quantidade de Descumprimentos de Método</em> <em>(Nº desc): 2</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>b. Obtém-se a gradação da infração: Grave (FG=1)</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>c. Obtém-se o “k” referente à Quantidade de Descumprimentos de Método : 0,17%</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>d. Obtém-se o V<sub>Ref</sub>: R$8.500,00</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>e. Substituem-se os fatores na fórmula de cálculo e obtém o Valor Base (V<sub>Base</sub>) para a infração:</em></p>
+<p><span style="color: #ff0000;"><span style="color: #ff0000;"><em><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig2.png" alt="Fórmula" width="481" height="62"></em></span></span></p>
+<p style="padding-left: 90px; text-align: justify;">vi. Com base nos critérios estabelecidos nesta metodologia, tem-se o seguinte, para o indicador Ind2:</p>
+<p style="padding-left: 120px; text-align: justify;"><em>a. Obtém-se a Quantidade de Descumprimentos de Método</em> <em>(Nº desc): 4</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>b. Obtém-se a gradação da infração: Grave (FG=1)</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>c. Obtém-se o “k” referente ao serviço avaliado: 0,33%</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>d. Obtém-se o V<sub>Ref</sub>: R$16.500,00</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>e. Substituem-se os fatores na fórmula de cálculo e obtém o Valor Base (V<sub>Base</sub>) para a infração:</em></p>
+<p><em><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig3.png" alt="fórmula" width="518" height="59"></span></em></p>
+<p style="text-align: justify;"><a name="item7"></a>7. FÓRMULA DE CÁLCULO – META REALIZADA</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item7.1"></a>7.1. Valor base</p>
+<p style="padding-left: 30px; text-align: justify;">O valor base das sanções de multa relativa a descumprimentos às metas de qualidade previstas na regulamentação é determinado pela seguinte fórmula, para cada indicador em análise:</p>
+<p><em><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig4.png" alt="fórmula" width="338" height="59"></span></em></p>
+<p style="padding-left: 30px; text-align: justify;">Onde:</p>
+<p style="padding-left: 30px; text-align: justify;">V<sub>Base</sub>: Valor base de multa referente a uma infração, sobre o qual ainda serão consideradas as circunstâncias atenuantes e agravantes, bem como os limites mínimos e máximos para aplicação de multa, nos termos do Regulamento de Aplicação de Sanções Administrativas;</p>
+<p style="padding-left: 30px; text-align: justify;">Nº desc: Quantidade de vezes nos quais a meta do indicador em particular foi descumprida dentro do Período de Análise;</p>
+<p style="padding-left: 30px; text-align: justify;">PondDT: Ponderação da Gravidade da Infração obtida da seguinte forma:</p>
+<p><em><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig5.png" alt="fórmula" width="124" height="51"></span></em></p>
+<p style="padding-left: 30px; text-align: justify;">Onde “D” (Desvio) refere-se à diferença entre a meta estabelecida e o valor efetivamente alcançado pela infratora em determinado indicador (podendo variar de 1 a 5) e “T” (Tendência) refere-se ao comportamento de melhora, piora ou manutenção do indicador avaliado (podendo variar de 1 a 3) dentro do Período de Análise, conforme item 7.2.</p>
+<p style="padding-left: 30px; text-align: justify;">FG: Fator de Gravidade. Fator referente à Gradação da Infração, podendo assumir os seguintes valores: 5 (quando Leve), 2 (quando Média) e 1 (quando Grave).</p>
+<p style="padding-left: 30px; text-align: justify;">V<sub>Ref</sub>: Valor correspondente a um percentual “k” da Receita Operacional Líquida – ROL da prestadora, da época da sanção.</p>
+<p style="padding-left: 30px; text-align: justify;">Não sendo esse levantamento possível, deve-se utilizar a receita operacional anual mais próxima da aplicação da sanção. O valor da ROL deve ser obtido pela relação da ROL anual dividida por 12. A ROL deve ser ponderada em função da quantidade de Acessos, de Assinantes ou de outro fator mensurável da Prestadora que propicie a realização de uma ponderação adequada da área geográfica de avaliação do indicador. O valor do k para os serviços: SMP, STFC, TV por Assinatura e SCM, varia conforme a quantidade de descumprimentos do indicador durante o ciclo de avaliação, conforme a Tabela 2, a seguir:</p>
+<p style="text-align: center;"><span style="font-weight: normal;"><a name="tabela2"></a>Tabela 2 - Valor do k por quantidade de descumprimentos</span></p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td width="99">
+<p><strong>k</strong></p>
+</td>
+<td width="20">
+<p><strong>0,08%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,17%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,25%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,33%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,42%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,50%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,58%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,67%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,75%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,83%</strong></p>
+</td>
+<td width="55">
+<p><strong>0,92%</strong></p>
+</td>
+<td width="55">
+<p><strong>1,00%</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Quantidade de descumprimentos</p>
+</td>
+<td width="20">
+<p>1</p>
+</td>
+<td width="55">
+<p>2</p>
+</td>
+<td width="55">
+<p>3</p>
+</td>
+<td width="55">
+<p>4</p>
+</td>
+<td width="55">
+<p>5</p>
+</td>
+<td width="55">
+<p>6</p>
+</td>
+<td width="55">
+<p>7</p>
+</td>
+<td width="55">
+<p>8</p>
+</td>
+<td width="55">
+<p>9</p>
+</td>
+<td width="55">
+<p>10</p>
+</td>
+<td width="55">
+<p>11</p>
+</td>
+<td width="55">
+<p>12</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px; text-align: justify;">7.2.Fator de Ponderação da Gravidade da Infração (PondDT)</p>
+<p style="padding-left: 30px; text-align: justify;">A finalidade do Pond<sub>DT</sub> é possibilitar valores de multa diferenciados e proporcionais, de acordo com a conduta no caso concreto, ainda que as infrações sejam classificadas como de mesma gradação (leve, média, grave), da seguinte forma:</p>
+<p><em><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig6.png" alt="fórmula" width="124" height="51"></span></em></p>
+<p style="padding-left: 30px; text-align: justify;">Para sua determinação, devem-se classificar os indicadores nas seguintes categorias:</p>
+<p style="padding-left: 30px; text-align: justify;">Indicador meta “P”</p>
+<p style="padding-left: 30px; text-align: justify;">Tipo de Indicador que representa uma proporção entre o numerador e o denominador.</p>
+<p style="padding-left: 30px; text-align: justify;">Por exemplo:</p>
+<p style="padding-left: 30px; text-align: justify;">O indicador sobre completamento de chamadas se refere a uma proporção entre o número de chamadas completadas e o número total de tentativas de chamadas;</p>
+<p style="padding-left: 30px; text-align: justify;">Ou seja, o valor desse tipo de indicador varia entre 0 (zero) e 100 (cem) por cento.</p>
+<p style="padding-left: 30px; text-align: justify;">Indicador meta “M”</p>
+<p style="padding-left: 30px; text-align: justify;">Tipo de Indicador que representa uma média aritmética entre numerador e denominador, dessa forma, o numerador não é um subconjunto do denominador.</p>
+<p style="padding-left: 30px; text-align: justify;">Por exemplo:</p>
+<p style="padding-left: 30px; text-align: justify;">Quantidade de reclamações dividida pela quantidade de acessos em operação.</p>
+<p style="padding-left: 30px; text-align: justify;">Ou seja, esse tipo de indicador não apresenta valor máximo.</p>
+<p style="padding-left: 30px; text-align: justify;">Indicador gatilho “G”</p>
+<p style="padding-left: 30px; text-align: justify;">Tipo de Indicador que informa um valor absoluto. Por exemplo:</p>
+<p style="padding-left: 30px; text-align: justify;">Número de correspondências respondidas em tempo superior a 10 (dez) dias úteis.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item7.3"></a>7.3. Como calcular o Desvio (D):</p>
+<p style="padding-left: 30px; text-align: justify;">Para indicador meta “P” ou “M”</p>
+<p style="padding-left: 30px; text-align: justify;">O cálculo do fator D é feito a partir do desvio da média de desempenho do indicador para o Período de Análise relativamente à meta estipulada para esse período. Portanto, somam-se os valores obtidos do indicador de todos os meses dentro do Período de Análise e divide-se pela quantidade de meses do Período de Análise. Para obtenção do desvio percentual, calcula-se a diferença deste valor médio com relação à meta estabelecida e divide-se esse resultado pela meta estabelecida, multiplicando-se por 100.</p>
+<p style="padding-left: 30px; text-align: justify;">Fórmula:</p>
+<p><em><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig7.png" alt="fórmula" width="421" height="156"></span></em></p>
+<p style="padding-left: 30px; text-align: justify;">Passo-a-passo da fórmula:</p>
+<p style="padding-left: 60px; text-align: justify;">a) Obtém-se o somatório dos valores obtidos para o indicador dentro do Período de Análise;</p>
+<p style="padding-left: 60px; text-align: justify;">b) Divide-se o resultado obtido em “a” pela quantidade de meses do Período de Análise;</p>
+<p style="padding-left: 60px; text-align: justify;">c) Subtrai-se o resultado de “b” da meta estabelecida para o indicador na regulamentação;</p>
+<p style="padding-left: 60px; text-align: justify;">d) Divide-se o resultado de “c” pela meta estabelecida para o indicador na regulamentação;</p>
+<p style="padding-left: 60px; text-align: justify;">e) Multiplica-se o resultado de “d” por 100 para um resultado em percentual;</p>
+<p style="padding-left: 60px; text-align: justify;">f) Determina-se o valor de D com base na tabela 3 abaixo.</p>
+<p style="text-align: center;"><a name="tabela3"></a>Tabela 3 – Critérios de avaliação do fator D de indicador “P” ou “M”</p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="text-align: justify;" width="57">
+<p><strong>D</strong></p>
+</td>
+<td style="text-align: justify;" width="688">
+<p><strong>Desvio</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: justify;" width="57">
+<p>5</p>
+</td>
+<td style="text-align: justify;" width="688">
+<p>P – Se o desvio for de 20% ou mais em relação ao valor da meta estipulada.</p>
+<p>M – Se o desvio for 500% ou mais além do valor da meta para o indicador</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: justify;" width="57">
+<p>4</p>
+</td>
+<td style="text-align: justify;" width="688">
+<p>P – Se o desvio estiver entre 10% e 20% em relação ao valor da meta estipulada.</p>
+<p>M – Se o desvio estiver entre 300% e 500% acima do valor da meta para o indicador</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: justify;" width="57">
+<p>3</p>
+</td>
+<td style="text-align: justify;" width="688">
+<p>P – Se o desvio estiver entre 5% e 10% em relação ao valor da meta estipulada.</p>
+<p>M – Se o desvio estiver entre 50% e 300% acima do valor da meta para o indicador</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: justify;" width="57">
+<p>2</p>
+</td>
+<td style="text-align: justify;" width="688">
+<p>P – Se o desvio estiver entre 2% e 5% em relação ao valor da meta estipulada.</p>
+<p>M – Se o desvio estiver entre 20% e 50% acima do valor da meta para o indicador</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: justify;" width="57">
+<p>1</p>
+</td>
+<td style="text-align: justify;" width="688">
+<p>P – Se o desvio for menor que 2% em relação ao valor da meta estipulada.</p>
+<p>M – Se o desvio for menor que 20% acima do valor da meta para o indicador</p>
+<p>Ou</p>
+<p>Descumprimento pontual.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px; text-align: justify;">Exemplo de cálculo:</p>
+<p style="padding-left: 30px; text-align: justify;"><em>Considerando-se um indicador meta “P” com meta 95 e os seguintes valores dentro de um Período de Análise de 12 meses:</em></p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td width="73">
+<p>Mês</p>
+</td>
+<td width="59">
+<p>Jan</p>
+</td>
+<td width="60">
+<p>Fev</p>
+</td>
+<td width="60">
+<p>Mar</p>
+</td>
+<td width="60">
+<p>Abr</p>
+</td>
+<td width="60">
+<p>Mai</p>
+</td>
+<td width="60">
+<p>Jun</p>
+</td>
+<td width="59">
+<p>Jul</p>
+</td>
+<td width="60">
+<p>Ago</p>
+</td>
+<td width="59">
+<p>Set</p>
+</td>
+<td width="60">
+<p>Out</p>
+</td>
+<td width="60">
+<p>Nov</p>
+</td>
+<td width="60">
+<p>Dez</p>
+</td>
+</tr>
+<tr>
+<td width="73">
+<p>Resultado</p>
+</td>
+<td width="59">
+<p>74,79</p>
+</td>
+<td width="60">
+<p>60,18</p>
+</td>
+<td width="60">
+<p>96,74</p>
+</td>
+<td width="60">
+<p>99,02</p>
+</td>
+<td width="60">
+<p>63,16</p>
+</td>
+<td width="60">
+<p>98,85</p>
+</td>
+<td width="59">
+<p>100</p>
+</td>
+<td width="60">
+<p>98,43</p>
+</td>
+<td width="59">
+<p>99,20</p>
+</td>
+<td width="60">
+<p>99,69</p>
+</td>
+<td width="60">
+<p>95,31</p>
+</td>
+<td width="60">
+<p>88,24</p>
+</td>
+</tr>
+<tr>
+<td width="73">
+<p>Meta</p>
+</td>
+<td colspan="12" width="715">
+<p>95</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 60px; text-align: justify;"><em>a) </em><em>Somatório dos valores obtidos: 1.073,61</em></p>
+<p style="padding-left: 60px; text-align: justify;"><em>b) </em><em>1.073,61 dividido por 12 (meses do Período de Análise) = 89,47;</em></p>
+<p style="padding-left: 60px; text-align: justify;"><em>c) </em><em>Meta menos resultado de “b”: (95 – 89,47) = 5,53;</em></p>
+<p style="padding-left: 60px; text-align: justify;"><em>d) </em><em>Resultado de “c” dividido pela meta: (5,53 / 95) = 0,0582;</em></p>
+<p style="padding-left: 60px; text-align: justify;"><em>e) </em><em>Resultado de “d” vezes 100: (0,0582 x 100) = 5,82 %;</em></p>
+<p style="padding-left: 60px; text-align: justify;"><em>f) </em><em>Determina-se o valor de D com base na tabela 3. D = 3</em></p>
+<p style="padding-left: 30px; text-align: justify;">Para o indicador “G”</p>
+<p style="padding-left: 30px; text-align: justify;">O cálculo do Fator D é feito pela proporção do total dos descumprimentos do tipo “G” e o denominador do indicador.</p>
+<p style="padding-left: 30px; text-align: justify;">Fórmula:</p>
+<p><em><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig8.png" alt="fórmula" width="336" height="52"></span></em></p>
+<p style="padding-left: 30px; text-align: justify;">Passo-a-passo da fórmula:</p>
+<p style="padding-left: 60px; text-align: justify;">a) Obtém-se o somatório dos descumprimentos do tipo G do indicador no período de análise;</p>
+<p style="padding-left: 60px; text-align: justify;">b) Obtém-se o somatório do universo de ocorrências do indicador da prestadora no período de análise;</p>
+<p style="padding-left: 60px; text-align: justify;">c) Divide-se o resultado obtido em “a” pelo valor obtido em “b”;</p>
+<p style="padding-left: 60px; text-align: justify;">d) Multiplica-se o resultado de “c” por 100;</p>
+<p style="padding-left: 60px; text-align: justify;">e) Determina-se o valor de D com base na Tabela 4 abaixo.</p>
+<p style="text-align: center;"><a name="tabela4"></a>Tabela 4 – Critérios de avaliação do fator D em indicador “G”</p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td width="57">
+<p><strong>D</strong></p>
+</td>
+<td width="688">
+<p><strong>Desvio</strong></p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p>5</p>
+</td>
+<td width="688">
+<p>O valor de “c” for maior ou igual a 10%.</p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p>4</p>
+</td>
+<td width="688">
+<p>O valor de “c” for maior que 5% e menor que 10%.</p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p>3</p>
+</td>
+<td width="688">
+<p>O valor de “c” for maior que 2% e menor que 5%.</p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p>2</p>
+</td>
+<td width="688">
+<p>O valor de “c” for maior que 1% e menor que 2%.</p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p>1</p>
+</td>
+<td width="688">
+<p>O valor de “c” for menor que 1%.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px; text-align: justify;">Exemplo de cálculo:</p>
+<p style="padding-left: 30px; text-align: justify;">Tem-se que o Indicador SMP13 é estabelecido pelo seguinte dispositivo regulamentar:</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art32"></a>Art. 32 Todas as solicitações de serviços ou pedidos de informação recebidos em qualquer Setor de Relacionamento, Setor de Atendimento e/ou Venda e Centros de Atendimento da prestadora, e que não possam ser respondidos ou efetivados de imediato, devem ser respondidos em até 5 (cinco) dias úteis, em 95% (noventa e cinco por cento) dos casos, no mês.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">§ 1º Em nenhum caso, a resposta deve se dar em mais de 10 (dez) dias úteis.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">§ 2º Esta meta será avaliada pelo indicador Taxa de Resposta ao Usuário (SMP13).</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">§ 3º As reclamações de usuários não devem ser computadas no cálculo deste indicador.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;">§ 4º Para fins de cálculo do indicador considera-se:</p>
+<p style="padding-left: 60px; text-align: justify;">I - Representação Matemática:</p>
+<p><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig9.png" alt="fórmula" width="141" height="51"></span></p>
+<p style="padding-left: 30px; text-align: justify;">Onde:</p>
+<p style="padding-left: 60px; text-align: justify;">A - número total de solicitações de serviços ou pedidos de informação recebidos pela prestadora, respondidos em até 5 (cinco) dias úteis, no mês;</p>
+<p style="padding-left: 60px; text-align: justify;">B - número total de solicitações de serviços ou pedidos de informação, recebidos pela prestadora no respectivo mês;</p>
+<p style="padding-left: 60px; text-align: justify;">C - número total de solicitações de serviços ou pedidos de informação, relativos aos meses anteriores, ainda não respondidos ao usuário.</p>
+<p style="padding-left: 30px; text-align: justify;">Seja o caso hipotético,</p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td rowspan="2" width="61">
+<p>Item</p>
+</td>
+<td colspan="12" width="736">
+<p><strong>Período de análise</strong></p>
+</td>
+</tr>
+<tr>
+<td width="61">
+<p>jan</p>
+</td>
+<td width="61">
+<p>fev</p>
+</td>
+<td width="61">
+<p>mar</p>
+</td>
+<td width="61">
+<p>abr</p>
+</td>
+<td width="61">
+<p>mai</p>
+</td>
+<td width="61">
+<p>jun</p>
+</td>
+<td width="61">
+<p>jul</p>
+</td>
+<td width="61">
+<p>ago</p>
+</td>
+<td width="61">
+<p>set</p>
+</td>
+<td width="61">
+<p>out</p>
+</td>
+<td width="61">
+<p>nov</p>
+</td>
+<td width="61">
+<p>dez</p>
+</td>
+</tr>
+<tr>
+<td width="61">
+<p>I</p>
+</td>
+<td width="61">
+<p><a id="item75.078"></a>75.078</p>
+</td>
+<td width="61">
+<p><a name="item65.848"></a>65.848</p>
+</td>
+<td width="61">
+<p><a name="item74.256"></a>74.256</p>
+</td>
+<td width="61">
+<p><a name="item65.248"></a>65.248</p>
+</td>
+<td width="61">
+<p><a name="item70.145"></a>70.145</p>
+</td>
+<td width="61">
+<p><a name="item80.897"></a>80.897</p>
+</td>
+<td width="61">
+<p><a name="item60.231"></a>60.231</p>
+</td>
+<td width="61">
+<p><a name="item65.893"></a>65.893</p>
+</td>
+<td width="61">
+<p><a name="item68.975"></a>68.975</p>
+</td>
+<td width="61">
+<p><a name="item71.254"></a>71.254</p>
+</td>
+<td width="61">
+<p><a name="item76.824"></a>76.824</p>
+</td>
+<td width="61">
+<p><a name="item73.568"></a>73.568</p>
+</td>
+</tr>
+<tr>
+<td width="61">
+<p>II</p>
+</td>
+<td width="61">
+<p><a name="item82.298"></a>82.298</p>
+</td>
+<td width="61">
+<p><a name="item80.542"></a>80.542</p>
+</td>
+<td width="61">
+<p><a name="item79.853"></a>79.853</p>
+</td>
+<td width="61">
+<p><a name="item75.689"></a>75.689</p>
+</td>
+<td width="61">
+<p><a name="item80.152"></a>80.152</p>
+</td>
+<td width="61">
+<p><a name="item85.015"></a>85.015</p>
+</td>
+<td width="61">
+<p><a name="item28.954"></a>28.954</p>
+</td>
+<td width="61">
+<p><a name="item75.212"></a>75.212</p>
+</td>
+<td width="61">
+<p><a name="item72.154"></a>72.154</p>
+</td>
+<td width="61">
+<p><a name="item77.698"></a>77.698</p>
+</td>
+<td width="61">
+<p><a name="item79.356"></a>79.356</p>
+</td>
+<td width="61">
+<p><a name="item80.154"></a>80.154</p>
+</td>
+</tr>
+<tr>
+<td width="61">
+<p>III</p>
+</td>
+<td width="61">
+<p><a name="item35.177"></a>35.177</p>
+</td>
+<td width="61">
+<p><a name="item15.004"></a>15.004</p>
+</td>
+<td width="61">
+<p><a name="item4.215"></a>4.215</p>
+</td>
+<td width="61">
+<p><a name="item2.015"></a>2.015</p>
+</td>
+<td width="61">
+<p><a name="item5.421"></a>5.421</p>
+</td>
+<td width="61">
+<p><a name="item2.102"></a>2.102</p>
+</td>
+<td width="61">
+<p><a name="item2.156"></a>2.156</p>
+</td>
+<td width="61">
+<p><a name="item3.562"></a>3.562</p>
+</td>
+<td width="61">
+<p><a name="item3.564"></a>3.564</p>
+</td>
+<td width="61">
+<p><a name="item2.456"></a>2.456</p>
+</td>
+<td width="61">
+<p><a name="item3.698"></a>3.698</p>
+</td>
+<td width="61">
+<p><a name="item3.789"></a>3.789</p>
+</td>
+</tr>
+<tr>
+<td width="61">
+<p>IV</p>
+</td>
+<td width="61">
+<p><a name="item1.087"></a>1.087</p>
+</td>
+<td width="61">
+<p><a name="item3.512"></a>3.512</p>
+</td>
+<td width="61">
+<p><a name="item4.105"></a>4.105</p>
+</td>
+<td width="61">
+<p><a name="item1.045"></a>1.045</p>
+</td>
+<td width="61">
+<p><a name="item3.561"></a>3.561</p>
+</td>
+<td width="61">
+<p><a name="item3.561"></a>3.561</p>
+</td>
+<td width="61">
+<p><a name="item3.645"></a>3.645</p>
+</td>
+<td width="61">
+<p><a name="item2.564"></a>2.564</p>
+</td>
+<td width="61">
+<p><a name="item2.658"></a>2.658</p>
+</td>
+<td width="61">
+<p><a name="item3.567"></a>3.567</p>
+</td>
+<td width="61">
+<p><a name="item3.147"></a>3.147</p>
+</td>
+<td width="61">
+<p><a name="item3.210"></a>3.210</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 60px; text-align: justify;">Legenda:</p>
+<p style="padding-left: 90px; text-align: justify;">I - Número Total de reclamações e solicitação de serviços respondidos em até 5 dias úteis</p>
+<p style="padding-left: 90px; text-align: justify;">II - Número Total de reclamações e solicitação de serviços no mês</p>
+<p style="padding-left: 90px; text-align: justify;">III - Número Total de reclamações e solicitação de serviços relativos aos meses anteriores e ainda não respondidos</p>
+<p style="padding-left: 90px; text-align: justify;">IV - Número Total de reclamações e solicitação de serviços respondidos em mais de 10 dias úteis</p>
+<p style="padding-left: 60px; text-align: justify;">Aplicando a metodologia para o cálculo do Desvio (D) para o caso hipotético:</p>
+<p style="padding-left: 90px; text-align: justify;">a) Para o período em análise, o total dos descumprimentos do tipo G do indicador é 35.662;</p>
+<p style="padding-left: 90px; text-align: justify;">b) Para o período em análise, o somatório do denominador do indicador é 980.236;</p>
+<p style="padding-left: 90px; text-align: justify;">c) A divisão do resultado obtido em “a” pelo valor obtido em “b” é 0,036;</p>
+<p style="padding-left: 90px; text-align: justify;">d) A multiplicação do resultado de “c” por 100 é 3,6%;</p>
+<p style="padding-left: 90px; text-align: justify;">e) O valor de D é igual a 3(três) com base na tabela 4.</p>
+<p style="padding-left: 30px; text-align: justify;"><a id="item7.4"></a>7.4.Como calcular a Tendência (T):</p>
+<p style="padding-left: 30px; text-align: justify;">Para indicador “P”, “M” ou “G”</p>
+<p style="padding-left: 30px; text-align: justify;">O cálculo do fator T é feito a partir da obtenção da curva de tendência dos valores do indicador em observação durante o Período de Análise. Em um gráfico de índices obtidos do indicador <em>versus</em> mês de avaliação, deve-se traçar uma reta de tendência e avaliar sua inclinação.</p>
+<p style="padding-left: 30px; text-align: justify;">Fórmula:</p>
+<p><em><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig10.png" alt="fórmula" width="230" height="53"></span></em></p>
+<p style="padding-left: 30px; text-align: justify;">Onde:</p>
+<p style="padding-left: 30px; text-align: justify;">x = meses do período de análise (por ex.: janeiro = 1, fevereiro = 2, etc);</p>
+<p style="padding-left: 30px; text-align: justify;">y = índices obtidos do indicador;</p>
+<p style="padding-left: 30px; text-align: justify;">n = número de meses do Período de Análise.</p>
+<p style="padding-left: 30px; text-align: justify;">Passo-a-passo da fórmula:</p>
+<p style="padding-left: 60px; text-align: justify;">a) Obtém-se o somatório do produto de x com y;</p>
+<p style="padding-left: 60px; text-align: justify;">b) Multiplica-se n pelo resultado obtido em “a”;</p>
+<p style="padding-left: 60px; text-align: justify;">c) Multiplica-se o somatório de x com o somatório de y;</p>
+<p style="padding-left: 60px; text-align: justify;">d) Subtrai-se o resultado de “b” pelo resultado de “c”;</p>
+<p style="padding-left: 60px; text-align: justify;">e) Obtém-se o somatório do quadrado de x e multiplica-se esse valor por n;</p>
+<p style="padding-left: 60px; text-align: justify;">f) Obtém-se o quadrado do somatório de x;</p>
+<p style="padding-left: 60px; text-align: justify;">g) Subtrai-se o resultado de “e” pelo resultado de “f”;</p>
+<p style="padding-left: 60px; text-align: justify;">h) Divide-se o resultado de “d” pelo resultado de “g”;</p>
+<p style="padding-left: 60px; text-align: justify;">i) Determina-se o valor de T com base na Tabela 5 abaixo.</p>
+<p style="text-align: center;"><a name="tabela5"></a>Tabela 5 – Critérios de avaliação do fator T em indicador “P”, “M” ou “G”</p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td width="57">
+<p><strong>T</strong></p>
+</td>
+<td width="688">
+<p><strong>Tendência</strong></p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p>3</p>
+</td>
+<td width="688">
+<p>Tendência divergente ou no sentido de piora do indicador.</p>
+<p>Se a inclinação for inferior a -0,268 (-15º em radianos), para indicadores que apresentem o comportamento “quanto maior o valor, melhor”; ou</p>
+<p>a inclinação for inferior a +0,268 ( +15º em radianos), para indicadores que apresentem o comportamento “quanto menor o valor, melhor”</p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p>2</p>
+</td>
+<td width="688">
+<p>Tendência de manutenção dos índices obtidos, ou seja, se a inclinação estiver entre +0,268 (+15º em radianos) e –0,268 (–15º em radianos)</p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p>1</p>
+</td>
+<td width="688">
+<p>Tendência convergente ou no sentido de melhora do indicador, ou seja:</p>
+<p>se a inclinação for superior a +0,268 (+15º em radianos), para indicadores que apresentem o comportamento “quanto maior o valor, melhor”; ou</p>
+<p>se a inclinação for inferior a –0,268 ( -15º em radianos), para indicadores que apresentem o comportamento “quanto menor o valor, melhor”</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px; text-align: justify;">Exemplo de cálculo:</p>
+<p style="padding-left: 30px; text-align: justify;">Considerando-se um indicador “P” com meta 95% e os seguintes valores dentro de um Período de Análise de 12 meses:</p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1" width="767">
+<tbody>
+<tr>
+<td width="45">
+<p>Mês</p>
+</td>
+<td width="59">
+<p>Jan</p>
+</td>
+<td width="59">
+<p>Fev</p>
+</td>
+<td width="59">
+<p>Mar</p>
+</td>
+<td width="59">
+<p>Abr</p>
+</td>
+<td width="59">
+<p>Mai</p>
+</td>
+<td width="59">
+<p>Jun</p>
+</td>
+<td width="59">
+<p>Jul</p>
+</td>
+<td width="59">
+<p>Ago</p>
+</td>
+<td width="59">
+<p>Set</p>
+</td>
+<td width="59">
+<p>Out</p>
+</td>
+<td width="71">
+<p>Nov</p>
+</td>
+<td width="60">
+<p>Dez</p>
+</td>
+</tr>
+<tr>
+<td width="45">
+<p>y</p>
+</td>
+<td width="59">
+<p>74,79</p>
+</td>
+<td width="59">
+<p>60,18</p>
+</td>
+<td width="59">
+<p>96,74</p>
+</td>
+<td width="59">
+<p>99,02</p>
+</td>
+<td width="59">
+<p>63,16</p>
+</td>
+<td width="59">
+<p>98,85</p>
+</td>
+<td width="59">
+<p>100,00</p>
+</td>
+<td width="59">
+<p>98,43</p>
+</td>
+<td width="59">
+<p>99,20</p>
+</td>
+<td width="59">
+<p>99,69</p>
+</td>
+<td width="71">
+<p>95,31</p>
+</td>
+<td width="60">
+<p>88,24</p>
+</td>
+</tr>
+<tr>
+<td width="45">
+<p>x</p>
+</td>
+<td width="59">
+<p>1</p>
+</td>
+<td width="59">
+<p>2</p>
+</td>
+<td width="59">
+<p>3</p>
+</td>
+<td width="59">
+<p>4</p>
+</td>
+<td width="59">
+<p>5</p>
+</td>
+<td width="59">
+<p>6</p>
+</td>
+<td width="59">
+<p>7</p>
+</td>
+<td width="59">
+<p>8</p>
+</td>
+<td width="59">
+<p>9</p>
+</td>
+<td width="59">
+<p>10</p>
+</td>
+<td width="71">
+<p>11</p>
+</td>
+<td width="60">
+<p>12</p>
+</td>
+</tr>
+<tr>
+<td width="45">
+<p>xy</p>
+</td>
+<td width="59">
+<p>74,79</p>
+</td>
+<td width="59">
+<p>120,36</p>
+</td>
+<td width="59">
+<p>290,22</p>
+</td>
+<td width="59">
+<p>396,08</p>
+</td>
+<td width="59">
+<p>315,80</p>
+</td>
+<td width="59">
+<p>593,10</p>
+</td>
+<td width="59">
+<p>700,00</p>
+</td>
+<td width="59">
+<p>787,44</p>
+</td>
+<td width="59">
+<p>892,80</p>
+</td>
+<td width="59">
+<p>996,90</p>
+</td>
+<td width="71">
+<p>1048,41</p>
+</td>
+<td width="60">
+<p>1058,88</p>
+</td>
+</tr>
+<tr>
+<td width="45">
+<p>x<sup>2</sup></p>
+</td>
+<td width="59">
+<p>1,00</p>
+</td>
+<td width="59">
+<p>4,00</p>
+</td>
+<td width="59">
+<p>9,00</p>
+</td>
+<td width="59">
+<p>16,00</p>
+</td>
+<td width="59">
+<p>25,00</p>
+</td>
+<td width="59">
+<p>36,00</p>
+</td>
+<td width="59">
+<p>49,00</p>
+</td>
+<td width="59">
+<p>64,00</p>
+</td>
+<td width="59">
+<p>81,00</p>
+</td>
+<td width="59">
+<p>100,00</p>
+</td>
+<td width="71">
+<p>121,00</p>
+</td>
+<td width="60">
+<p>144,00</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 60px; text-align: justify;">a) Obtém-se o somatório do produto de x com y = 7.274,78;</p>
+<p style="padding-left: 60px; text-align: justify;">b) Multiplica-se n pelo resultado obtido em “a” = 87.297,36;</p>
+<p style="padding-left: 60px; text-align: justify;">c) Multiplica-se o somatório de x com o somatório de y = 78*1.073,61 = 83.741,58;</p>
+<p style="padding-left: 60px; text-align: justify;">d) Subtrai-se o resultado de “b” pelo resultado de “c” = 3.555,78;</p>
+<p style="padding-left: 60px; text-align: justify;">e) Obtém-se o somatório do quadrado de x e multiplica-se esse valor por n = 650*12 =7.800;</p>
+<p style="padding-left: 60px; text-align: justify;">f) Obtém-se o quadrado do somatório de x = 78^2 = 6.084;</p>
+<p style="padding-left: 60px; text-align: justify;">g) Subtrai-se o resultado de “e” pelo resultado de “f” = 7.800 – 6.084 = 1.716;</p>
+<p style="padding-left: 60px; text-align: justify;">h) Divide-se o resultado de “d” pelo resultado de “g” = 3.555,78 / 1.716 = +2,072;</p>
+<p style="padding-left: 60px; text-align: justify;">i) Determina-se o valor de T com base na Tabela 5. T = 1.</p>
+<p style="padding-left: 30px; text-align: justify;"><a name="item7.5"></a>7.5. Aplicação da Fórmula de Cálculo</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item7.5.1"></a>7.5.1 Levantamento de Dados</p>
+<p style="padding-left: 90px; text-align: justify;">a) Quantidade de Descumprimentos de Meta (Nº Desc): Identificar a quantidade de vezes em que a prestadora não alcançou as metas estabelecidas para determinado indicador dentro do Período de Análise.</p>
+<p style="padding-left: 90px; text-align: justify;">b) Ponderação (PondDT): Calcular a ponderação do perfil de cumprimento e descumprimentos das metas estabelecidas conforme procedimentos descritos anteriormente.</p>
+<p style="padding-left: 90px; text-align: justify;">c) Gradação da infração: Identificar se a infração cometida é de natureza leve, média ou grave.</p>
+<p style="padding-left: 90px; text-align: justify;">d) ROL: Levantar a Receita Operacional Líquida anual da infratora no período de aplicação da sanção, ou na falta desta, a mais próxima do período.</p>
+<p style="padding-left: 90px; text-align: justify;">e) Fator “k”: Identificar, conforme a quantidade de descumprimentos do indicador durante o ciclo de avaliação.</p>
+<p style="padding-left: 60px; text-align: justify;"><a name="item7.5.2"></a>7.5.2 Procedimento de Cálculo</p>
+<p style="text-align: justify;">Exemplo de cálculo:</p>
+<p style="padding-left: 90px; text-align: justify;">i. Considerando-se que uma determinada prestadora do SMP, com ROL anual de R$ 1.200.000.000,00, tenha descumprido um indicador de qualidade com meta de 95% da seguinte forma:</p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td width="78">
+<p>Mês</p>
+</td>
+<td width="59">
+<p>Jan</p>
+</td>
+<td width="59">
+<p>Fev</p>
+</td>
+<td width="59">
+<p>Mar</p>
+</td>
+<td width="59">
+<p>Abr</p>
+</td>
+<td width="59">
+<p>Mai</p>
+</td>
+<td width="59">
+<p>Jun</p>
+</td>
+<td width="58">
+<p>Jul</p>
+</td>
+<td width="59">
+<p>Ago</p>
+</td>
+<td width="59">
+<p>Set</p>
+</td>
+<td width="59">
+<p>Out</p>
+</td>
+<td width="59">
+<p>Nov</p>
+</td>
+<td width="59">
+<p>Dez</p>
+</td>
+</tr>
+<tr>
+<td width="78">
+<p>Resultado</p>
+</td>
+<td width="59">
+<p>74,79</p>
+</td>
+<td width="59">
+<p>60,18</p>
+</td>
+<td width="59">
+<p>96,74</p>
+</td>
+<td width="59">
+<p>99,02</p>
+</td>
+<td width="59">
+<p>63,16</p>
+</td>
+<td width="59">
+<p>98,85</p>
+</td>
+<td width="58">
+<p>100</p>
+</td>
+<td width="59">
+<p>98,43</p>
+</td>
+<td width="59">
+<p>99,20</p>
+</td>
+<td width="59">
+<p>99,69</p>
+</td>
+<td width="59">
+<p>95,31</p>
+</td>
+<td width="59">
+<p>88,24</p>
+</td>
+</tr>
+<tr>
+<td width="78">
+<p>Meta</p>
+</td>
+<td colspan="12" width="709">
+<p>95</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 90px; text-align: justify;">ii. Com base nos critérios estabelecidos nesta metodologia, considerando uma infração Grave, tem-se o seguinte:</p>
+<p style="padding-left: 120px; text-align: justify;"><em>a. Obtém-se a Quantidade de Descumprimentos de Meta (Nº desc): 4</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>b. Obtém-se a gradação da infração: Grave (FG=1)</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>c. Obtém-se o “k” referente ao serviço avaliado: 0,33%</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>d. Obtém-se o V<sub>Ref</sub>: R$330.000,00</em></p>
+<p style="padding-left: 120px; text-align: justify;"><em>e. Calcula-se a ponderação (PondDT), conforme apresentado anteriormente. No presente exemplo, D=3 e T=1, portanto:</em></p>
+<p><em><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig11.png" alt="fórmula" width="201" height="51"></span></em></p>
+<p style="padding-left: 120px; text-align: justify;">f. Substituem-se os fatores na fórmula de cálculo e obtém o Valor Base (V<sub>Base</sub>) para a infração:</p>
+<p><em><span style="color: #ff0000;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Portarias/port784/fig12.png" alt="fórmula" width="465" height="97"></span></em></p>
+<p style="text-align: justify;"><a id="item8"></a>8. DETERMINAÇÃO DO VALOR FINAL DA MULTA</p>
+<p style="text-align: justify;">Após determinado o valor base (V<sub>Base</sub>) da multa, deve-se:</p>
+<p style="padding-left: 30px; text-align: justify;">a) Determinar, caso estimável, a vantagem auferida com a infração;</p>
+<p style="padding-left: 30px; text-align: justify;">b) Aplicar os fatores agravantes ao maior valor identificado entre o valor base calculado pela metodologia e o dobro da vantagem auferida;</p>
+<p style="padding-left: 30px; text-align: justify;">c) Sobre o valor resultante do item (b), aplicar os atenuantes; e,</p>
+<p style="padding-left: 30px; text-align: justify;">d) Verificar se o valor resultante do item (c) encontra-se dentro dos limites estabelecidos no&nbsp;<a title="acesse á resolução" href="/legislacao/resolucoes/2012/191-resolucao-589" target="_blank" rel="alternate noopener noreferrer">RASA</a> (Anexo), considerando o porte da infratora e a classificação da infração. Caso esse valor seja inferior ao limite mínimo, considerar-se-á o valor mínimo do RASA. Caso esse valor seja superior ao limite máximo, considerar-se-á o valor máximo do RASA.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_800"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/portarias-de-sancoes">Metodologias de Cálculo de Multa</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Metodologia" class="link-categoria">Metodologia</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Cálculo" class="link-categoria">Cálculo</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Sanções" class="link-categoria">Sanções</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Multa" class="link-categoria">Multa</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Descumprimento" class="link-categoria">Descumprimento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Metas" class="link-categoria">Metas</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Qualidade" class="link-categoria">Qualidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Procedimento" class="link-categoria">Procedimento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Cálculo" class="link-categoria">Cálculo</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Consolidação" class="link-categoria">Consolidação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Indicadores%20de%20qualidade" class="link-categoria">Indicadores de qualidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PortariaVigente" class="link-categoria">PortariaVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>

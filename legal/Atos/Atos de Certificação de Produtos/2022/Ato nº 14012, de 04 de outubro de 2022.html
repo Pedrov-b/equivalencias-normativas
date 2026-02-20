@@ -1,0 +1,1165 @@
+<html class="no-js" lang="pt-br" dir="ltr"><!--<![endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" defer="" async="" src="https://sistemas.anatel.gov.br/piwik/piwik.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-03YG4NMTZD&amp;cx=c&amp;gtm=457e55s2za200&amp;tag_exp=101509157~103116026~103200004~103233427~103252644~103252646~103351866~103351868~104481633~104481635~104559073~104559075~104612245~104612247"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 14012, de 04 de outubro de 2022</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações">
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência">
+      <meta name="author" content="ANATEL">
+      <meta name="robots" content="index, follow">
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type="text/css">
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type="text/css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2022/1764-ato-14012">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Atualização, Ato, Requisitos Técnicos, Avaliação, Conformidade, Terminais Móveis de Acesso, Serviços de Telecomunicações, Satélite, AtoVigente">
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Atualização do anexo ao Ato nº 940, de 08 de fevereiro de 2018, que aprova os requisitos técnicos para avaliação da conformidade de terminais móveis de acesso dos serviços de telecomunicações por satélite, na forma do anexo a este ato.">
+	<title>Anatel - Ato nº 14012, de 04 de outubro de 2022</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=1718000339" rel="stylesheet" type="text/css">
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1789734326" rel="stylesheet" type="text/css">
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac2fbbd6d6a820838467ac11e7d83cbb","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=565975039" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel="stylesheet" type="text/css">
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01062025141355" type="text/css">
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+<style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+</a><a href="#main-navigation" accesskey="2">
+</a><a href="#search" accesskey="3">  
+</a><a href="#portal-footer" accesskey="4">     
+
+    </a><a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo" accesskey="0">Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br" accesskey="1">Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao" accesskey="2">Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" accesskey="3">Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#" accesskey="4">⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/" accesskey="5">⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-certificacao-de-produtos/2022">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-certificacao-de-produtos/2022">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-certificacao-de-produtos/2022">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav>
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-certificacao-de-produtos/2022" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search">
+        <input type="hidden" name="option" value="com_search">
+        <input type="hidden" name="Itemid" value="254">
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </nav></div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class="fas fa-home"></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos" class="pathway">Atos de Certificação de Produtos</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-certificacao-de-produtos/2022" class="pathway">2022</a> <span class="separator">&gt;</span> <span>Ato nº 14012, de 04 de outubro de 2022</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid">
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes">Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas">Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 active deeper parent"><a href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a><ul><li class="item-494"><a href="/legislacao/atos-de-certificacao-de-produtos/2024">2024</a></li><li class="item-490"><a href="/legislacao/atos-de-certificacao-de-produtos/2023">2023</a></li><li class="item-484 current active"><a href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></li><li class="item-436"><a href="/legislacao/atos-de-certificacao-de-produtos/2021">2021</a></li><li class="item-432"><a href="/legislacao/atos-de-certificacao-de-produtos/2020">2020</a></li><li class="item-368"><a href="/legislacao/atos-de-certificacao-de-produtos/2019">2019</a></li><li class="item-343"><a href="/legislacao/atos-de-certificacao-de-produtos/2018">2018</a></li><li class="item-344"><a href="/legislacao/atos-de-certificacao-de-produtos/2017">2017</a></li><li class="item-345"><a href="/legislacao/atos-de-certificacao-de-produtos/2016">2016</a></li><li class="item-346"><a href="/legislacao/atos-de-certificacao-de-produtos/2015">2015</a></li><li class="item-347"><a href="/legislacao/atos-de-certificacao-de-produtos/2014">2014</a></li><li class="item-348"><a href="/legislacao/atos-de-certificacao-de-produtos/2013">2013</a></li><li class="item-349"><a href="/legislacao/atos-de-certificacao-de-produtos/2012">2012</a></li><li class="item-350"><a href="/legislacao/atos-de-certificacao-de-produtos/2011">2011</a></li><li class="item-351"><a href="/legislacao/atos-de-certificacao-de-produtos/2010">2010</a></li><li class="item-352"><a href="/legislacao/atos-de-certificacao-de-produtos/2009">2009</a></li><li class="item-353"><a href="/legislacao/atos-de-certificacao-de-produtos/2008">2008</a></li><li class="item-354"><a href="/legislacao/atos-de-certificacao-de-produtos/2007">2007</a></li><li class="item-355"><a href="/legislacao/atos-de-certificacao-de-produtos/2006">2006</a></li><li class="item-356"><a href="/legislacao/atos-de-certificacao-de-produtos/2005">2005</a></li><li class="item-357"><a href="/legislacao/atos-de-certificacao-de-produtos/2004">2004</a></li><li class="item-358"><a href="/legislacao/atos-de-certificacao-de-produtos/2003">2003</a></li><li class="item-359"><a href="/legislacao/atos-de-certificacao-de-produtos/2002">2002</a></li><li class="item-360"><a href="/legislacao/atos-de-certificacao-de-produtos/2001">2001</a></li><li class="item-361"><a href="/legislacao/atos-de-certificacao-de-produtos/2000">2000</a></li><li class="item-362"><a href="/legislacao/atos-de-certificacao-de-produtos/1999">1999</a></li><li class="item-363"><a href="/legislacao/atos-de-certificacao-de-produtos/1998">1998</a></li><li class="item-364"><a href="/legislacao/atos-de-certificacao-de-produtos/1997">1997</a></li><li class="item-515"><a href="/legislacao/atos-de-certificacao-de-produtos/2025">2025</a></li></ul></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao">Atos de Numeração</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis">Leis</a></li><li class="item-107"><a href="/legislacao/decretos">Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc">Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel">Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao">Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao">Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2 class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel">Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+
+
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();"><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;"><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;94905829887acb39&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;6aa298c0bfcd4a9192fc688232d191e3&quot;}" crossorigin="anonymous"></script>
+</div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 14012, de 04 de outubro de 2022		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quarta, 23 Novembro 2022 17:13			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Sexta, 25 Novembro 2022 15:56			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 1029			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle">&nbsp;</td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no Boletim de Serviço Eletrônico de <a title="Acesse o Boletim de Serviço Eletrônico" href="https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&amp;id_documento=10435020&amp;id_orgao_publicacao=0">23/11/2022</a>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><strong>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO - ANATEL</strong>,&nbsp;no uso das atribuições que lhe foram conferidas pela <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715">Resolução nº 715, de 23 de outubro de 2019</a>, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência dada pelos Incisos XIII e XIV do <a title="Acesse o artigo" href="https://www.planalto.gov.br/ccivil_03/leis/l9472.htm#art19">art. 19</a> da&nbsp;Lei nº 9.472/97&nbsp;– Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO que&nbsp;os Requisitos Técnicos estabelecem os parâmetros e critérios técnicos verificados na Avaliação da Conformidade de um ou mais tipos de produto para telecomunicações, nos termos do <a title="Acesse o artigo" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715#art22Anexo">art. 22</a> do Regulamento para Avaliação da Conformidade e Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº 715, de 23 de outubro de 2019;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO&nbsp;as&nbsp;tecnologias e equipamentos utilizados na&nbsp;banda Ka de radiofrequências, que proporcionam&nbsp;o acesso a soluções com&nbsp;maiores taxas de transmissão e o aumento na&nbsp;eficiência das redes dos serviços de telecomunicações&nbsp;em&nbsp;benefício de melhores experiências aos usuários;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o surgimento de soluções de&nbsp;conectividade às redes de comunicações por satélite em meios urbanos, rurais e&nbsp;de rodovias;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO&nbsp;a&nbsp;necessidade da publicação de&nbsp;requisitos mínimos de qualidade, segurança,&nbsp;interoperabilidade e proteção do espectro radioelétrico aplicados aos dispositivos&nbsp;a serem inseridos nas&nbsp;redes móveis por satélite, considerados&nbsp;essenciais&nbsp;para o atendimento&nbsp;da crescente demanda pelo aumento da&nbsp;capacidade das&nbsp;redes de comunicação; e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlIz0nh0kugpfaoTut-LcJw4F6dqXRlMqf719x4A1COfV">processo nº&nbsp;53500.026317/2022-15</a>,</p>
+<p class="resolve" style="text-align: justify;">RESOLVE:</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art1"></a>Art. 1º Atualizar o <a title="Acesse o anexo" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1180-ato-940#AnexoI">anexo</a> ao&nbsp;Ato nº 940, de 08 de fevereiro de 2018, que aprova os&nbsp;requisitos técnicos para avaliação da conformidade de&nbsp;terminais móveis de acesso dos serviços de telecomunicações por satélite, na forma do <a title="Acesse o anexo" href="#anexo">anexo</a> a este ato.</p>
+<p class="texto-recuo-1a-linha" style="text-align: justify;"><a id="art2"></a>Art. 2º Este ato&nbsp;entra em vigor na data de sua publicação no boletim de serviço&nbsp;eletrônico da Anatel.</p>
+<p style="text-align: center;">VINICIUS OLIVEIRA CARAM GUIMARÃES<br>Superintendente de Outorga e Recursos à Prestação</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><a id="anexo"></a>ANEXO AO&nbsp;ATO Nº 14012, DE 04 DE OUTUBRO DE 2022</p>
+<p style="text-align: center;"><strong>ATUALIZAÇÃO DOS REQUISITOS TÉCNICOS PARA AVALIAÇÃO DA CONFORMIDADE DE&nbsp;TERMINAIS MÓVEIS DE ACESSO DOS SERVIÇOS DE TELECOMUNICAÇÕES POR SATÉLITE</strong></p>
+<p style="text-align: center;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a id="item1"></a>1. Incluir&nbsp;o <a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1180-ato-940#item5.2.8">item&nbsp;5.2.8</a> e seus subitens com o seguinte texto:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha_Esp_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">"5.2.8.&nbsp;Os requisitos especificados no item&nbsp;5.2.8.1 se aplicam&nbsp;a&nbsp;terminais móveis de acesso&nbsp;transportáveis&nbsp;ou instalados em&nbsp;veículos, embarcações marítimas,&nbsp;aeronaves e&nbsp;trens (estações terrenas em plataforma móvel) dos serviços de telecomunicações por satélite&nbsp;geoestacionário, não destinadas ao socorro marítimo, e que transmitem em partes ou em toda a faixa de frequências de 29,5 GHz a 30 GHz.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha_Esp_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">5.2.8.1.&nbsp;Para as estações terrenas em plataforma móvel do item&nbsp;5.2.8 no estado “portadora ligada”, a EIRP em qualquer faixa de frequências de resolução RBW (resolução da faixa de frequências do analisador de espectro na qual componentes espectrais são medidas) de 1 MHz das emissões indesejáveis em qualquer direção e fora da faixa de frequências de 29,5 GHz a 30 GHz não deve exceder os limites especificados na tabela 9a.''</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha_Esp_Simples" style="text-align: justify; padding-left: 30px;">&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado" style="text-align: center;">Tabela 9a – Limites para a EIRP das emissões indesejáveis em qualquer faixa de 1 MHz de largura fora da faixa de frequências de 29,5 GHz a 30 GHz dos terminais móveis de acesso do item&nbsp;5.2.8 no estado “portadora ligada"</p>
+</caption>
+<tbody>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">Faixa de frequências [MHz]</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">Limites de EIRP [dBW]</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">1000 a 2000</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">-67</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">2000 a 3400</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">-61</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">3400 a 10700</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">-55</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">10700 a 21200</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">-49</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">21200 a 27350</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">-43</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">27350 a 27500</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">-35</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">27500 a 30000</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">-35</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">30000 a 31000</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">-35</p>
+</td>
+</tr>
+<tr style="text-align: center;">
+<td>
+<p class="Tabela_Texto_Centralizado">31000 a 31150</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">-35</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">31150 a 60000</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">-43</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Na tabela 9a, os limites inferiores devem ser utilizados nas frequências de transição.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Técnicas de medidas de valor médio devem ser usadas nos ensaios destinados a comprovar a conformidade com os requisitos especificados na tabela 9a."</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a id="item2"></a>2. Incluir o <a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1180-ato-940#item5.3.6">item 5.3.6</a> e seus subitens com o seguinte texto:</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">"5.3.6.&nbsp;Os requisitos especificados nos itens 5.3.6.1 a 5.3.6.3 se aplicam&nbsp;a terminais móveis de acesso&nbsp;transportáveis&nbsp;ou instalados em&nbsp;veículos, embarcações marítimas,&nbsp;aeronaves e&nbsp;trens&nbsp;(estações terrenas em plataforma móvel) dos serviços de telecomunicações por satélite&nbsp;geoestacionário, não destinadas ao socorro marítimo, e que transmitem em partes ou em toda a faixa de frequências de 29,5 GHz a 30 GHz.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">5.3.6.1.&nbsp;Para as estações terrenas em plataforma móvel&nbsp;do item 5.3.6 no estado “portadora ligada”, a densidade espectral EIRP das emissões indesejáveis em qualquer faixa de 1 MHz de largura situada entre as frequências de 29,5 GHz a 30 GHz e fora da faixa de frequências centrada na portadora com 5 vezes a largura da banda ocupada&nbsp;não deve exceder o limite de 14-K dBW. O limite não deve ser excedido durante mais de 0,01% do tempo.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) O limite acima definido pode ser excedido em uma banda de 5 vezes a largura de banda ocupada centrada na frequência da portadora. Neste caso, a densidade espectral EIRP da radiação espúria fora da banda indicada&nbsp;não pode exceder 28-K dBW em qualquer faixa de 1 MHz. O limite não deve ser excedido durante mais de 0,01% do tempo.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">5.3.6.2.&nbsp;K&nbsp;é o fator que representa uma redução no nível de radiação espúria no eixo no caso de múltiplos terminais operando na mesma frequência para o mesmo satélite, e o valor é dado por um dos seguintes casos:</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">I - Se apenas um terminal transmite a qualquer momento em uma determinada frequência da portadora, o valor de K é 0.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">II - Para o caso em que se espera que vários terminais transmitam simultaneamente em uma determinada frequência da portadora de mesma potência EIRP, então K = 10 log (N), onde N é o número máximo de terminais transmitindo simultaneamente. O valor de N e as condições operacionais do sistema devem ser declarados pelo solicitante.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">III - Para o caso em que se espera que vários terminais transmitam simultaneamente em uma determinada frequência da portadora com diferentes valores de EIRP, então K = 10 log (EIRP<sub>Aggregate</sub>/EIRP<sub>term</sub>), onde:</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) EIRP<sub>term</sub>&nbsp;é o valor EIRP (Watts) no eixo de transmissão com o terminal operando na largura de banda designada.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) O valor de EIRP<sub>Aggregate</sub>&nbsp;é a soma de&nbsp;EIRP (Watts) dentro da largura de banda indicada da rede. Tal valor e&nbsp;as condições operacionais da rede do terminal&nbsp;devem ser declarados pelo solicitante.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">5.3.6.3.&nbsp;Para terminais projetados para transmitir várias portadoras em diferentes frequências simultaneamente (operação multiportadora), os limites acima se aplicam apenas a cada portadora individual quando transmitida sozinha."</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a id="item3"></a>3. Incluir o <a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1180-ato-940#item5.4.7">item 5.4.7</a> e seus subitens com o seguinte texto:</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">"5.4.7.&nbsp;Os requisitos especificados nos itens 5.4.7.1 se&nbsp;aplicam&nbsp;a terminais móveis de acesso&nbsp;transportáveis&nbsp;ou instalados em&nbsp;veículos, embarcações marítimas, aeronaves e&nbsp;trens&nbsp;(estações terrenas em plataforma móvel) dos serviços de telecomunicações por satélite&nbsp;geoestacionário, não destinadas ao socorro marítimo, e que transmitem em partes ou em toda a faixa de frequências de 29,5 GHz a 30 GHz.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">5.4.7.1.&nbsp;Para as estações terrenas em plataforma móvel&nbsp;do item 5.4.7 no estado “portadora desligada”, a EIRP das emissões indesejáveis em qualquer direção na faixa de frequências de resolução RBW (resolução da faixa de frequências do analisador de espectro na qual componentes espectrais são medidas) não deve exceder os limites especificados na tabela 23a.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples">&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado">Tabela 23a – Limites para a EIRP das emissões indesejáveis dos terminais móveis de acesso do item 5.4.7 no estado “portadora desligada”</p>
+</caption>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Faixa de Frequências [MHz]</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Limites de EIRP [dBW]</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">RBW [MHz]</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1000 a 2000</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-68</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2000 a 10700</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-62</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">10700 a 21200</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-56</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">21200 a 60000</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-50</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples">&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a) Na tabela 23a, os limites inferiores devem ser utilizados nas frequências de transição.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) Técnicas de medidas de valor médio devem ser usadas nos ensaios destinados a comprovar a conformidade com os requisitos especificados na tabela 23a."</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a id="item4"></a>4. Incluir o <a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1180-ato-940#item5.6.3">item 5.6.3</a> &nbsp;e seus subitens com o seguinte texto:</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">"5.6.3.&nbsp;Os requisitos especificados nos itens 5.6.3.1 a 5.6.3.2 se aplicam&nbsp;a terminais móveis de acesso&nbsp;transportáveis&nbsp;ou instalados em&nbsp;veículos, embarcações marítimas,&nbsp;aeronaves e&nbsp;trens&nbsp;(estações terrenas em plataforma móvel) dos serviços de telecomunicações por satélite&nbsp;geoestacionário, não destinadas ao socorro marítimo, e que transmitem em partes ou em toda a faixa de frequências de 29,5 GHz a 30 GHz.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">5.6.3.1.&nbsp;Para as&nbsp;estações terrenas em plataforma móvel&nbsp;do item 5.6.3 com antenas direcionais, dado qualquer ângulo&nbsp;<img class="img-base64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAAAAXNSR0IArs4c6QAAAM5JREFUOE+Nkv8NQUEQhL/XAS1oAR3QAS3QAVGCEuhA6IAS5HVAC3RAvuRWzvvBu+T+uNzszOzOFvw+M+AUkOIPeAHsu4AHgPfSBfxlwYI2GzKugR1QtjHLNgbOycIVWAJb4J4zHxPIhnrAKPlVxb9hgO16DkyTZNXvC+gH+JbkovN8ZKo8Avx5AM/EnINV2eQ2lAmV3K+1qmqxDIAjcgJGK5N2VLGxQ0SeT2OVADZpoQpOJqw1hvK1D/nuNCVYi7ktwYlJpVtbyCpzqwUr3411LDKZROJUAAAAAElFTkSuQmCC">&nbsp;fora do eixo e dentro de ±3 graus na direção perpendicular ao arco geoestacionário relativo ao eixo do feixe principal igual ou superior a 2,0°, a componente copolarizada da densidade de EIRP na banda de 40 kHz&nbsp;não deve exceder os limites da tabela 23b.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples">&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado">Tabela 23b – Densidade de EIRP por ângulo relativo ao eixo do feixe principal</p>
+</caption>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Densidade de EIRP [dBW]</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Faixa de ângulos</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAAARCAYAAAD32L9UAAAAAXNSR0IArs4c6QAABCdJREFUaEPtmYmNFDEQRf9mwJEBZMARAZABRwRABiAiQJDBQgQcGQARcGQARMCRAeit/EdFjT3tZqbbEqyl1e5Ou+2qX79+lT1H+v/GJUlPJF2XdFHSlwEQ3JT0esC++M3eFyQ9k/Qm2cGzVwWT46NgIGDx8l1JnyqG8/yWpM+Srkp6uCKwDySdl3SmOHacnMJZnHpb7GPeDUn3d9j4ayA57pXgDODHCSEY4JOHifOUB5ADYPkQYD9KulwhB88flWdeEJKwwdKZB2Ehg/ch8D9K4GE/Ax9wmt8/iy9T5B1FDmzkB7xHDPwGmxMChEGMwXgjDFE5mMeLNXIQDBQlSiEBY5CdSw5IiGJFNWNvlwWTg3IxR6pHkWNUSQEnMKoJAEr2siTWJpY95IDlVonIdhYkq88uyYyiEjDdKsF27Eupsf3YOJIcqBmKNTWwE18gd610T72/73MwAzvjht23WyVuDjmyokAOnIQcPcDs61h8nxJyLpQ5l0bbQaPJnF3SXVMO11zWATgCmNcA3G/FGPog/kaO3YfV/GRdnrv0fSiKy1pLl+VoD32Z+zGS6Z2kay2i9pDD5QZpj7Lt7F2747eSRbLiMGSNdbRWjiJQmRxueslsD8iPDFu18JnhOYD9vlK/c0AgBWtg55VCODfR+LHWoD14HMiA/ZSTamvQSw6Ap/mEIBE4Pl9bOQgWQYtlpgYucwhArSs34U1sN7nZFxPROEE4iOEkgVB3UqMebQEfMLMNud+AoGvhZ1/AzYqVy/MfOPaSg5dwFDABKBIkr+FnNIwxC3dlBwyeCjbv4wz798wlcJywWj1RVA6f72u+MI/gUl6yUmAPoMekiX5iK1np0hSPsC1CLoWf24DoowmDjVuYziFHDu5U1hxaKnGOUSNGzmjm5eYr2/M35IDwKJKVALJQs2s9Vy34kRy164FDY5bLG2TIZSz3b5t3eskBKN9T44K8owxrnNfZH7BjzxOBxhayNzZ3c8qKMyhLvI9+/hzC0dcQWN+n7AooBIwnA/cbvDPVEx2aKPQbJFZWc6vm1hVGjRyW0Ggc4EMCL0xgWGzpOw5sIEDsQ5Z6xBtQl7x4Tuf512Jj6zSQG9LcbLIuBCOIbnSZ82LGMZT3fUXti0ZIhS+sM+deZh+ytK4jvCbE2WpMIQdAUpt9HPTxLYJAgMheDxzsqfv7OBQNx8Y82D+SE8Iyz9fsrWOiycZ8gkMAY0/gOwv6K04iMYAGOeLAsZS9WgqK2oAXSQdRWB/b1zr+Y5vjl/3FDzelLtkbTFvN5CGC+q+tQVDJeH9fw//ctQD88wmVsrqtlVAHwf6UHP0wWgFqAY7lo7XiyGvzfi/DzFNy9MPmr/pr9ya1hjiuTEmm91nzNrTfs8bMU3LMgxCCcOkV73roTeK3xrUVR35FP8/DMPs3T50yl+nrR88AAAAASUVORK5CYII="></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAARCAYAAADwtqMEAAAAAXNSR0IArs4c6QAAA15JREFUaEPlmIttFjEQhCcdQOgAOoDQAXQAogKgA6JUEJEOgAoQdAB0AHQAHfDogOiTvGhxznfrtS8KiqUI9J+9Hs/syz7Q5Y9nkm5Iei/p++Vvv7jjo4LnisCZDuMfzg+c+ReSbhVBbkt6lSDigaS7kn5LuiPpg6SPbg9s8ofYJ5LeSvo64Yg40eGAE0HK6wk4MBHF8lLSj4IZvvz42cFLN+cmOgBMDAP+S9LzDjIQ+42kew79F0mPy8H4flTZY9/jAbIhGBs4KXYyDsRa/rxzZiD1YnkniQyzNKK8pzg30b8VcTxpOAFeRMRGBlFdZweyB+s5BAAhl7RuIys6dlgL0VmxDcNoas9iaZ0dzs4ihJdM2s25iU5UQ55PcYACgC8Ba1j+lCj3joPT4NE3y8LR9I49cJIO+Xe0J7AMAa7eLDGKhfV1dukNghTna4ISudRJn65bohPFpHKi2gthvyO61a1MI0c0ki0Q5tTZCgbEhWnYu18iBeE/F/uQvuVIs7EYOHjBCbb2t/lpzluiQwQpH8EjEYDX4iQt0evfo2JxMDIFkUgWqhueqB0/D3tgxR7lgT4Dsjkz31pOvgcWwwUOGtue/ibNeUt0otaIjhDb8roWsIhNX/exn7lN1PsQTTSWD8uHup6TLn1WqteTCWZh8bat7EUCbCvSNzlfEp2DEeU9V5hWZoBUq+mjUUp/8aTTGWvROBdlwmqpv6oRbfQ2a6KbvRlYPDacLdo72bo05/VGkMDoEdxAAJwI8s0JonONs0auJ8Jbc7M1dUlULzp2SbGRHsZ3/qO9xghHKc696KQFeynzzUXUAaiTRLWfT0TQMJFSZw/rnml8Ig0Y+/uI8vWcb0vX1ijmDBazTWqnr+hxNlub4txEp07hsYhmA1KIXH5n2H30aaOhsoNbvWSNf5yJEtg7D+xEqDVna+shmHm8FRBhZCXKDufmddC/IfTiYH4PFi8c//e82bddOPf3dESuB1FronOgTwv3eb8GIgFK9NmVaPSlK0P+2hqyD0JDMg7AuWfdDDJYcUR7d6jX78J5b/MAqNEXrAwxe6yZ+d6+B746mEaz0F9711n0/8l5p2LtFX3q5oHwsD4hMLXrHo9dSlD09Yv998KydbbpnF910bcIyX6/tqkdws4BLRYTlyO/2/4AAAAASUVORK5CYII="></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAANCAYAAAAaGGZEAAAAAXNSR0IArs4c6QAAAYZJREFUSEvdlu0xBFEQRc9moMiADAgBGSAEMiAERQYrBGSAEMiAFMiAOmp669XbWbPvo/aH/jnzXnff27fvzIz/ETfACbAL3AFPwGMCzXcPwAcwnzVivgR2gK2h4Dwr1pi+6LpAjeORW0HIre9aQMuuIGXPEPgncDGwXdRxh8PfwBXwCyybsj2+xbMW0O/AaZpsIOEI2OsAoiTFPvAKHGT9nAP3wFearAW0U5VZdyjC6Sv5lrwlYOOsNa0ddVXd2SrF9W7OvdoeGK9pvvaOJiVQ99mpvwCH2dQXuXuC1jmVfC6xWiAl91TddQJSEpS1/rIUPUG7UxpbKveSxmvPBtnWVeKa1p9rJmiNx91cJ2RwDJRFnPIU4B618j41K8lOBxhEjH5JekzaosYU4HVIrTnjIATpWqWx0l9aQTs5DST9+5GETRLgPlsvV2v8hS15TAtoXVL5yHREOOiogdSMceJOyFjXfh45KyFLhtYC2oSCzEPWNwFaH5F41abS3OsUeJhZrN6ipx/mV0yEIBON6QAAAABJRU5ErkJggg=="></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAARCAYAAADwtqMEAAAAAXNSR0IArs4c6QAAA7dJREFUaEPlmOmNFDEQhd9mwJEBmwFHBpABaCMAMgARAYIMgAgQmwGQAZABZMCRAeiTXFKtsdtVbs9oEZbmz7S7/Oq9utwnOv56JOmKpHNJ345/fPPE+wXPJYGzHMYFzk+K+ReSvhcRflVH/pD0JQjjrqSbkrBxKum9pA/u3VeS+CH2M0lvE7a3IBBE13YEEaS8Dvo42pbBAl8PJH2VdEfS0wkfnki6XhLpRuGXhLL1F+cm+jtJRHtrPQ4SgthvJN1yRj4XpxCZ57crWwQbjs4uCMYGzmInGpz+PN7l54NzBk8WC3wT+J4vxL+XEB7fLYnADIafkkyzJuc+01vkE0UvgwyQ1QDwUcb7ZDwgAAC5/vms6NjhXZycFdvc2lvaZ7EgzsOKD/hjwVdkESRUCh/s2KCCwHuTcxOdTXWkZwX5XaLWA8AuVeRq8WBvecceItM+ZkphTaRVCHBlq8QeLJxrWe15p83Au/E1Ep7AgQffmnifZDNtu+W9Ns7hgIkOWkQUpZzo8u/Y/zhhs8LMIEc2Ev0I89zZGpHSe449eijVCQE+FfsQNvJ5BRYTndLugw1uEMnzlfURn5hvfNtoDnLeMCWTXpPptUQ9h/VEr/+POkLQUCkggmiuh8yoHb8Pe2DFHr4yZxDgCMEzT5Z/bzUWKiOluW531hJHwdfyvRdMF/ZaCfB/WjnIlLtepveCISMW2Yf9el7I2LC9RDxEMyyx6n6OEFtZthoLOMBjCx/BOJvpVFtLkC4/LdFxvPX/Fsm9CINU6+l7s5QMOIs4tQGUPkqbsD7qr2o2+UYIX4EFmJxPFQSXFz7LP+8SkNgZXj1r44jEtSs6SHh+CRYi1w8me+xt9eOZ/t4S1YveukKNqsmK/u7PsGDqtZgeHvxgDQVnUy06pYEelz0UW/RJstofjBMMTL6EjYiMPrfpmd4XGcCw66uY7+c8a11/DokF/PWHL8ozs1TmmwF27Aun4d382FSLjnAs63neabuPcrdslWoTwb/rP85ECczuo98zeNpwtvU+Qc0+hieyFHLxhWDl66AfqrI42J/BAjecbwMzQpFs/o4+4pzz2A9+WwQAGnTv+q1Mtztw7TQHfGzcC/0+iAQo2WdXokzUzhCdfYfqg48QQwBA0qqbQQYLfJIotsBUl+cR59zTwV8v7IRFj4De+wUrcsYx9qz83n5ovEs5n5kSlwI4NFsb9v8lP5ZizYq+9PCA4DYnBLam7vHYpQVlPoAcCsvIt+WcX3bRR4TMPv9vSzuE/QGQSw6X9wc1PwAAAABJRU5ErkJggg=="></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAARCAYAAAAG0+TZAAAAAXNSR0IArs4c6QAAA+lJREFUaEPtmoltVDEQhicdcHQAHXBUAHTA0UHoAEQFCDoIVBCgA6ACIB0AFSDoAPQh/6vJrO1nJ89rEdZSlOPN81z/zPz25sD+z3XDzF6Y2V0zu25m3yaE4b6ZvZugF7/Rfc3MXpnZ+2AHz96mmBwdOAOfmNlVM7uUXj7KONAiM8rnJd04jGMfzOxr8uOemT2uAOD3RIAcpgSNildtX0DBIj5xCTwveSCAgCoAoUoCJD9TcEEZq0VmlLMtugEIjvP9VwLK04XuMAsg2MgXYJ6x8JvY/AWBW4ADDJzobwIIFffAP0iAUQtGvkVmlLMtugk4o6Onbc8CyKzxQn6I0RczuxnyTUd7k4prk0cBhG4BotQt1DFo6z0yowDSYt9sgNB16VxLCzuJNR17U6lLL634nJzSkZVX7H5YGneeg0QbaNdXEtJK9rXIrOjbqa2ibgJPZSpJkE9kam0810E0g9mH4JHEuAcB/pGsgbfxM635dkp+zmf25bnG4Oc0wtlrlyQZnoZf8A+6yUczu1MCawkgBJu2HtuQd7xFZhQ4crpxmjbp52puNHmbIkBEhKlwLSqdluy5GM8kQ8A/Zea514MMwGAP7LyVQCdiTZx3tejGzx0gsI3RApnfWiWAEBAC40dOfLlFZpTTrbrxgSTk2Dq2eYCImF8Oo0Jg9HwNcIjrAKpHlU4LaOF3siHyD2yIOkfFTb6QV3UuvnsqcUp3DiC8QOXVwNEigyJIrq/GmuMguaZT77bqRh7Hn6UE5HR7gOj8n4sJciSYURM7BvYQeECQW8SS6tSY8sfbEii1z9rxQzdF430UaLBxK/4xGGzAqiWqRWZUBdR0kwhf2QKIJ2TRrrMAhKQRZHUEAMMMzxHUHAA8QAAlAN7ViMFWABH1FbmkBwiO45A/JsbLnBaZUeBY0s3YoYo94esZMaqk2O51LNTf6UrwHBHipbsMQOhPDOIfxGmJI60dS/gHxR+7urrnFueU4QSBFgPCtMR0RV5aZNZ2SPu16I7neOz/nqqldEqIJJVuw4oklUSK/CJz3HFEBaS6ziYRAIpuQ6zZp+fe5jzxVQFoVMa9AM8WWfV3HAQ0LtAmgLDBksx5HKi926obkGCjPjIoHSEFOORJEEn0HEF3GhyVOaH4JCrQspdkc2RFV6mb0HWQIzmAhf2Jbcu9yRoxxTZ8pgtHf9lfRFX0YnOiqd2DrGHYRduDxFL5+nyH37krIvivF7oVsZj5+cuZcrEHSF/Y1AlyJN6PktKuM6/Y+zxN0nuA9IVN/yaQu1fJkWS/O+0dLrTLW9M+7zLSe4D0hxCQcDEGcdWCq/hPw3O7/nPjBSf+AAuNKJeDLML0AAAAAElFTkSuQmCC"></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHUAAAARCAYAAADjYePwAAAAAXNSR0IArs4c6QAAA6JJREFUaEPl2IuNFDEMBmBfBzw6gA54dAAdgKgA6ABEBQg6gA4QdABUwKMD6IBHB6DvNEYmN7czyc6eThDppNvdxPn9/7bj5CjOfjyIiAsR8SYivp799rM73pnwnBM43TD+4vSoLL8VEXcj4ktE3IyIxwOkP4qIy5NoVyLiRUOWz/6I+SQiXkXE524XTi4QJJcG8KYlpLzcAAcTo1iuRcS9ifcKRcDR49vE7YclTlNUC5F8vVgj7u0Oop4VwdK5HxHxcCIM6BsNedYIntGBQDYEEDsjAWKtv3ejIKZ1+2LBNwz4yiHRjIpN4kgKlW6W0xQV+fdnIoDBuskuv4GS6ZVYWQnY1QkA8oDJMSoqO9YiclTMxLBv6d0Ci0ohgb43fL+edPlZOMvgoQtRT3BKVF9mVtaIsBHiLq6MYIGB4FrGrBdZGTz7ll8BYg9OjhwPrSuZ4XD1ZvlWWAhTk6cmEVENyVKD0FGTPJ/gtIqq9FbHiGoBUWukrNT4eNrb6ayrZX2kUZJNnIXv6R54KjHOKfgI+3GyLwiXmretseR5juu2MhL804QpxZbR7ZE12yj9mqKhLY2yTOlccnRO6KwAbbD0BAWnRCuHReZocNU92SMme0qZc16FgtdvNQDrukNgqQ3anKj2h4uwsArq0/D9wZplMWt6TXOb+H40UwFJMXqEbOfKHoS2nfSITf7wUbQb7XkquHf5uyWWLLtZHedEzfNTsJmflWRnA1uvNByWlc7XHDaqc9YSaXN2trom2FfV0PLvEygwKWPZO9RMQaC+YE0Qb4GlvUbNiaqiCMKsUDC+n7KWVrNjl2AJfDHdG8vAGlsKWrcYPdPmRKvEzl3rloJ4FIt98VqPE7Z8FnDu7/6XHLV6Jp6dFSVF1clpp2ujpHw6kHvub+zka1EC2PJiX0nO7tN5v6bBsRYZ6XM9T/02dyVbEjV/H8HS2paVfMmGKB9v8qio882d+/54TjpIQOJlV5WRVNvrvI+5z841LGq++dmGs484m6+9664lsc6zr4eTbH522VDizNMQygw+8wVm2VEbxUNjWRLV73Dp9muy8VcQPV8qvzkx53G0LZ/mqOftXTTXOI+I2A52DilqL/mOFf4JNgLDvFVn3YvF/HwerMdWPqX6PZ9ePRMa+Zp06l4jTdC+LzAjjh9izaGOhUNg7bL5P4v6rwTnCcF7RT1rIrIBWROpPfdYdpWxnkeVQ2FZ41vXnPMuapczHZP/2dKLg9+W5QSXiZQq1gAAAABJRU5ErkJggg=="></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAANCAYAAAAUsRgrAAAAAXNSR0IArs4c6QAAAcRJREFUSEvll+sxREEQhb/NACGQASUCZIAMkAElAkUGSwQeGSAEMiAFMqA+Nb01NXdu2bovP8yfrZrZmek+fc6ZvjP+z7gE9oF14Bp4BB6y9F27B96B+WwAXHYBLz0CXivnub4JfAIbKaCnAe7tcoRgOPYqmwO0K9f6ACPyHmaSL8BWBRgBuUlrEYv/PUiV6ZJcnz1fwBnwk3zBFpmyKGwfYPKDvbAGjBWaF5Q9Tcw56ZNhh70WqVbAY+AuMXpx7NjA1ABTWmp5tUNyfbZYECUfOa8Ah8lvGueOCUxUSF+RpjFiXmD0namGxRAM/cUYnoGdFl/s5TG/SUlmKKU2YMr5sQH6AC4yIARKCVUl/ReMaQNsTGB8KN6SbJSTDPZXeVUxcNJAdeplhijbA5Sj5iURTGnK0S+0SWmIeMr4NFgfgRyEiE/GNHIakzEGJ2BqOu9bBMYnfErztaACYZHyodTXKvOjeowBeHHJMum7nXqZZVg6xH/0F1lRKiPY22g1hmRMyQwTClnknebUDV5IphafMQpaw4T7AOPTd54oKvJ2jUrmtngCo9XW8GSKLJrqk0CD9Wm2QH4X6TP53WHAAiSjFi/UN20NdYReFdXBAAAAAElFTkSuQmCC"></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAARCAYAAAAIVljzAAAAAXNSR0IArs4c6QAAA49JREFUaEPlmImNFTEQRGsz4MgAMuDIADIAEQGQAYgIEGQARIAgAyACjgwgA44MQA+5UONvj8fHandhpK/d/8duV1d1t9s+0vrnnqRzkl5L+rLe/JDFWwnP0OQzMukv3o8qoK9IuiPpYfYegq5L+irpoqT3GWHPJPFB0EeSXkr6tIAYAuXCRKDg9PMFODDRi+WGpCeS7la4aHHKmthAkx+SLkt6I+lt8OeA95qwn9PE+2EyxnmiwQeJbLKTha9lBOJQHhw9/EIiNi4lOyNBwlw+EXcPBo/txcKaiMa6HyVdLQjb4pS14fVFmm8s2LuduC/yXhKW6L4p6ZukKOyrFHVETe4s41gAZxDZz6iw2GEuZBIYI4Iaw2wZXoHlZ0XYFqf4QHaSkZFXEorMrfKeC4s4PBY0F5Z3REokjRLpMjdbiolghCR4+Du7RzvTwdUbHCuxbAnb4rQ0F2wExfkkRLMUey9iYBTYJYESANkWnMzOS+1I80RWYRPyHydhR8plDDh6AaIdcT8k+1SBVrCsxgKmmrAk0hanfk92Rtz+HWFdQavNU2wwSsICEJIAQolEBPaNmQeARB7rkfWxzI/axR6CYg+c7Pvsc2DnXQ3zcWCxDzVhW5ySmfhSEzb//Q9nLsUuwS5XJWHdPEAO4x39ZG0rC7ZEwg728n1kRFiCk60CTDz5/grBMcrzNVZiibZrwrY4rWVsTfADYfPjQElYIgfSnFWAepeygsiZfWgIOGI5e0fs0c1T0t0BR7/A+70hrNdcgWWPsC1OqTL4lHfUBKz32GKVI2NxnolxABP5DkGcRfmfaI6NUywzW1nQK9DoHlcSLgqLXc7WPdvHKJbc51LGuttuccpcKlA8roGLI5CbpwOOa+dYIik2SYAgk1zioiHGln7vFTQf764UHHuaHuZDgn2K+yvviHxI7O2OmTuCpZWxezmFX7IzXrBQUWgOS0Hxe929wjIW43SskRj2AJx+OqvixnzWINPcEG0tRfAxjjOfLweoNmCn8sSz4AjkHiy5sHnW7eXUQRWTJ15QFP0onWPZ5yhhPESJrwj5TqRwlciVIg/ZNEvWCMFbc8CImBCByGTuqo67ByvrEpC+gSIhvLXF5NjDKUGKHfj2MW7zJq2WsT0OnNaxK++HT6uPVVz/srCzV4lnTswI+KSF9f6xh8Secy52KVs95+vjwrLHt+VjTlrY5Q4lg/91GYaDX0T+JJeoAAgIAAAAAElFTkSuQmCC"></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Alinhado_Esquerda">&nbsp;</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">a)&nbsp;<img class="img-base64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAAAAXNSR0IArs4c6QAAAM5JREFUOE+Nkv8NQUEQhL/XAS1oAR3QAS3QAVGCEuhA6IAS5HVAC3RAvuRWzvvBu+T+uNzszOzOFvw+M+AUkOIPeAHsu4AHgPfSBfxlwYI2GzKugR1QtjHLNgbOycIVWAJb4J4zHxPIhnrAKPlVxb9hgO16DkyTZNXvC+gH+JbkovN8ZKo8Avx5AM/EnINV2eQ2lAmV3K+1qmqxDIAjcgJGK5N2VLGxQ0SeT2OVADZpoQpOJqw1hvK1D/nuNCVYi7ktwYlJpVtbyCpzqwUr3411LDKZROJUAAAAAElFTkSuQmCC">&nbsp;é o ângulo, em graus, entre o eixo principal do feixe e a direção considerada.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 90px;">b) K definido no item 5.3.6.2.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 60px;">5.6.3.2.&nbsp;Terminais com baixos ângulos de elevação podem exceder os níveis definidos no item 5.6.3.1 pelos valores constantes da tabela 23c.</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples">&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="1" cellpadding="1"><caption>
+<p class="Texto_Centralizado">Tabela 23c&nbsp;– Níveis para terminais com baixos ângulos de elevação</p>
+</caption>
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Ângulo de elevação do satélite (<img class="img-base64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAJCAYAAAAPU20uAAAAAXNSR0IArs4c6QAAAHxJREFUKFONz1ENAlEMRNGzDggSkIAGJKABHEBQQLCwGnCw64CABCQQJJAhr7A/JPSraW9npp1vzXDCAnM8sO/aPssDjni22TJgARv0E7VPW8Aa9zaNxVhKU4srbrg0+JyDvywi/6Z/ZQiQ5PGtylerHJbFDtsGJuxQX70AZ0UVgKd6l6EAAAAASUVORK5CYII=">)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Incremento da densidade EIRP [dB]</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAOCAYAAABpcp9aAAAAAXNSR0IArs4c6QAAAYtJREFUSEvVlu1Nw0AQRF864KMD6AAoATqAFqADEBWg0AF0EKAD6ABBB0AHiBLQk3ali7F9joOQsZQfye3tzszOrjPj/z2nwAbwALzPJoR/B7gHnoC3AHkEnAk0cN4Afvx+CSymRuARkMhXELkowO8BB8BtIfr8rwgI6jOAdTXdGEFqjbbHM2PK8yUC+moeQVtRUAVe17CZRW214M2lsmMJeK/TQoK30FVRxOIS0ZOrPsfhXS1hy/uAZ27V9V7G7gLeb9ZvHWJ/LL21KmDjFcE8Dp5KdVmhK3fevy4CHOaTPhfkDMg8J10lZD1ENWsZrz3slh1cx3JNcgphfkVpfZKA7F+i+HOQGaLgYaw+VRpjtVqnz8PamzUC61jotzqgXexkKZwEXCyd29ID7TNE7ZpauQgktBiRUwfYybRybp2qhXLySwsIRnuMJWZHBeMWKYeyTwTv3BWzJ4YPYL9BailHtsZW+cp2cFUg119N9dq5IuRfgXJFd93LFbkdW037lB35cW9Kb+KaGK3n3zN4W4VV6W6GAAAAAElFTkSuQmCC"></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAQCAYAAAAI0W+oAAAAAXNSR0IArs4c6QAAAUFJREFUOE+9lPE1A0EQh7/rAOlAOqAF6SBKIB3wlEAHUQI6QAl0IEqgBO/Lm43JubOX8579K7ndne83v5nZhu91AUyAPeAQWAIPab/20zv3wBPwFnFmwAJYNXH7OgKv4r+wjzh0WyPEvqDHEPkZwEsh7heQCk6B1xTUjE6A6Q6goz4XCkj10rN6s9TOcqbGM6MqqCuINhwAxzVCsm4OaJtLJ4xhzXrVqk47hWQ7f2Na13PgJh3alKTPlpdojqGN0CfAOit61gWyNir5K0S4Nb4C9tsgU3eNgSjOhsqzJ0jhTQbZyvqcDwoeCtVuR6TMooJ/WGdbOsFOdllCy2T7Ta9Vd5Y6K9dGUXdpz/vv0VCbl8E5cqO9zEYBLsU8d8xbG2ac8pQpbOtlGDgq62POyi5v4PrS0KnPQv4FNAoyJqPRoC/eVUARn27zwAAAAABJRU5ErkJggg=="></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAAOCAYAAAA/pHIsAAAAAXNSR0IArs4c6QAAAsdJREFUWEftmOsxBUEUhFsGHhmQgUcGZEDJgAwoESgyQAQeGZCBIgNE4JEB9VVNq2PM3p3dO8oPpur+2Z1HT3efntk7o2FtR9KspCtJj8OG/vcODHzhcSa9WJR0KelG0kMiekPSbiD7RBI/yD+QdC7p/o9RC3k0jLgm6VbSccbBuqRlSW+SliRdJ17d7RuPUQQ6IwaDEWM/CMCkq5JOw4JHqc9f0YH9YtDIwXviwELA05mklUDKnaStxGWRxygCHYiZUuMdAsX3rURg3pck/m8JWoOB/cIDCeH2mgwLyTSMjNMjT3upIkiVIo+1IrBA6zgCELGGAFQdFTipEQEQAWHzYdw0kTgUQ8QHHkSAXFcHlUEVREzEE1E/lwZPjKPNQEQpy5ijxcHMOgDHNYDvI98ZjGCHoT8EIgbRObSNwZCvgcO3Q/SAh+iBu3hp8XNE8F6LBzOq8iIeMuQfZTaN0wzc81PKebnWEAi2mMU1Y/I+02LwfGBx5mMmNxyPsbpEyJ9/DnQclTYFWZR+zMChm2c8UYNjcfFYQXGu3cWcuL+mgsDbCkO+d8TApPzA0lUJXeJUiUC5EQHOsqECOAsBOSYy8vyl1BGRayGCdF0i4riWGEr7x/kYjMpAbNIjPxMwkM+EonFcCQzGsfmpzkE4qVr6hGnlwmniqBUGiMyrmbQAm/Oeg5nkiKZDBK6tnWY2wfEua2JbxFE8E6gqCOEjr8bFHssmhvTvMgZnwlgMdjlVHbEgDPjMI5XBs3h+kSh82Pka+w2fB6PmRchZAD+l0mr994SzFMD512aJQN/aorvAR9SMFWcoBnCRCvF2Zo545n2AiUSJ52jJ4F/2GaPG16aF9FnOoq0FyPPaf4vEzZWEwE30JVPB5OttXxz2vYe0WgzMBQ74eU7uLlU1pqFywEkF5H9bdFZCH9iffF/ztfqT6/sG9Wtf7R9zvMqFIcw/vQAAAABJRU5ErkJggg=="></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><img class="img-base64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAQCAYAAABJJRIXAAAAAXNSR0IArs4c6QAAAg1JREFUWEftlo0tNVEQhh8dfOiADogO6ICoAB0QFQgdoAKhA1QgdIAK/HRAnps9MY49e3dP7kok3yY3udk9Z37eed+ZmePr2W3+/gPWgDvgJHwf8+86sAK8A8vANXBT4VA7x8AO8ND3/lxz0IuPwFm4+AEc/AIQJn8OrAbf98AW8NQzkSVgswHOu9qqAsFgNoLTt8aowYz5WPVT4Co42W8YsVfh2OJVgZD7UhKCYBCRHRUxTb3SFrS0vgTmp97+eaALBPOS9TJnAXiV7UkOuSkrsZ1RtCKeqVdkn/S1D0Tqp/eCYJ8Y8pRAEIBD4CjY1M9CDoLNMWmzhopDgvWsFVcOJRDy933sl0Awt1ZWl5jgBXuBv6GV6BNoOlNiQgmcPrZLINg4E9uUg9NnklsJBL9ZIXUTu3YMwkCdHn0e9d1WBYNxKuWNzIBTTxhahC45KD2nhuNfQCbNOIGgQ7USx4odW0bU6LIPMOmMQTuV4l4gCI7NWTbGTjmkakj9OKYExmC62DIk2dJZGZczxcbswlYzntuYYB4xt2+xxGUpdk076XPDjrG3xiSruKPky5KFSpvgNHmUmOW9yDZz1PdVrLLoLwIvTRUuutCbBQWCDStloupUBuRrsw30tulBbb0ljb+0OSprEzaHJHHzc+IJhn70MbE1NtVnjNVEnkVa1zr7D8IfY8IoLPhrchgNhE+MuICHqvYxlwAAAABJRU5ErkJggg=="></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Centralizado" style="text-align: center; padding-left: 30px;">NOTA: A terminais em ângulos de elevação mais baixos deve&nbsp;ser permitido&nbsp;o uso de&nbsp;níveis mais altos de EIRP em relação aos mesmos terminais em ângulos de elevação mais altos para compensar o efeito combinado de maior distância e absorção atmosférica. Isso garantirá as mesmas densidades de fluxo de energia no satélite para terminais em ângulos de elevação mais baixos, como para terminais em altitudes altas."</p>
+<p class="Texto_Centralizado" style="text-align: center; padding-left: 30px;">&nbsp;</p>
+<p class="Paragrafo_Numerado_Nivel1 texto-recuo-1a-linha" style="text-align: justify;"><a id="item5"></a>5. Incluir o <a title="Acesse o item" href="https://informacoes.anatel.gov.br/legislacao/atos-de-certificacao-de-produtos/2018/1180-ato-940#item5.8">item 5.8</a> com o seguinte texto:</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples texto-recuo-1a-linha" style="text-align: justify; padding-left: 30px;">"5.8. Concomitantemente ao atendimento aos requisitos técnicos estabelecidos neste documento, deverão ser respeitados&nbsp;os requisitos técnicos e operacionais para sistemas de comunicação via satélite&nbsp;operando&nbsp;sobre o território brasileiro publicados pela Anatel."</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1764"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos">Atos de Certificação de Produtos</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-certificacao-de-produtos/2022">2022</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Atualização" class="link-categoria">Atualização</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Ato" class="link-categoria">Ato</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisitos%20Técnicos" class="link-categoria">Requisitos Técnicos</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Avaliação" class="link-categoria">Avaliação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Conformidade" class="link-categoria">Conformidade</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Terminais%20Móveis%20de%20Acesso" class="link-categoria">Terminais Móveis de Acesso</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviços%20de%20Telecomunicações" class="link-categoria">Serviços de Telecomunicações</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Satélite" class="link-categoria">Satélite</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </div></section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G"> 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade">Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030">Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional">Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal">Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus">Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes">Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias"> Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador">Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica"> Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica"> Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional"> Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas"> Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social"> Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias">Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias">Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas"> Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos">Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores">Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas"> Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes"> Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca">Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais"> Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas">Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0">Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo">Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet">Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial">Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone"> Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria">Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa">Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas">Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional">Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes"> Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums">Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel">Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico">Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia"> Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas"> Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/">Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional">Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor"> Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo"> Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi">Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica">Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites">Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho">Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar">Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos">Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates"> Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras">Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais">Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel">Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor">Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing">Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis">Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais">Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura">Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade">Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento">Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica">Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos">Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes">Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas">Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao">Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas">Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas">Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa">Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel">Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos">Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao">Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas">Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle">Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria">Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao">Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos">Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao">Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro">Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao">Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao">Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga">Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte">Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao">Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia">Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite">Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao">Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes">Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies" style="display: block;">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ <div><div vw="" class="enabled"><div vw-access-button="" class="active"></div><div vw-plugin-wrapper=""><div class="vw-plugin-top-wrapper"></div><div class="vw-links"><ul></ul></div></div></div></div><script src="https://vlibras.gov.br/app2/vlibras-plugin.js" type="text/javascript"></script><div id="scrollToTop" title="scroll top" class="scrollToTop" style="display: none;">Voltar ao topo</div></body></html>
